@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Run backward compatibility for Persistent Chat Server
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 The Lync Server 2013, Persistent Chat Server endpoint provides a way to create a simple URL that points to a Persistent Chat Server pool. This is useful for legacy clients (Microsoft Office Communications Server 2007 R2 Group Chat Server or Lync Server 2010, Group Chat) because users can enter a simple URL in the manual configuration when trying to point the legacy client to a computer running Lync 2013, Persistent Chat. This endpoint isn’t used by Persistent Chat, and is required for legacy clients only. This is useful for the interim period where rooms may be migrated, but the Lync 2013 clients have not been deployed throughout the organization. Users running Lync 2010 Group Chat (client) can then still connect to the Persistent Chat Server Back End Server.
 
@@ -64,23 +51,8 @@ To add the Persistent Chat Server endpoint by using Windows PowerShell command-l
 
     New-CsPersistentChatEndpoint -SipAddress sip:persistentchat@contoso.com -PersistentChatPoolFqdn pcpool.contoso.com
 
-<div>
-
 ## See Also
 
 
-[Migration from Lync Server 2010, Group Chat or Office Communications Server 2007 R2 Group Chat to Lync Server 2013, Persistent Chat Server](migration-from-lync-server-2010-group-chat-or-office-communications-server-2007-r2-group-chat-to-lync-server-2013-persistent-chat-server.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Migration from Lync Server 2010, Group Chat or Office Communications Server 2007 R2 Group Chat to Lync Server 2013, Persistent Chat Server](migration-from-lync-server-2010-group-chat-or-office-communications-server-2007-r2-group-chat-to-lync-server-2013-persistent-chat-server.md)
 

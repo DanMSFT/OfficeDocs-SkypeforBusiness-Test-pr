@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lync 2013 compatibility
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-07_
 
 This section describes the compatibility of Lync 2013 with various versions of Microsoft Office suites, Microsoft Exchange Server, Windows operating systems, and selected public instant messaging (IM) clients.
-
-<div>
 
 ## Office and Lync 2013
 
@@ -181,10 +166,6 @@ The following features are available only with Office 2010 or Office 2013:
 
   - Presence menu extensibility
 
-</div>
-
-<div>
-
 ## Exchange Server and Lync 2013
 
 The following table describes Lync 2013 support for various versions of Exchange Server. Outlook must be installed on the client computer to handle Extended MAPI calls, and some features require the use of Exchange Web Services (EWS).
@@ -206,13 +187,12 @@ The following table describes Lync 2013 support for various versions of Exchange
 <tr class="odd">
 <td><p>Exchange Server 2013</p></td>
 <td><p>Same as Exchange Server 2010 support, with the addition of Unified Contact Store, high-resolution pictures, and archiving integration.</p>
-<div>
 
 > [!NOTE]
 > For details, see <A href="lync-server-2013-integrating-with-microsoft-exchange-server-2013.md">Integrating Microsoft Lync Server 2013 and Microsoft Exchange Server 2013</A>.
 
 
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Exchange Server 2010</p></td>
@@ -236,25 +216,13 @@ The following table describes Lync 2013 support for various versions of Exchange
 </table>
 
 
-</div>
-
-<div>
-
 ## Windows and Lync 2013
 
 For information about Lync 2013 and Windows supportability, see [Lync client software support in Lync Server 2013](lync-server-2013-lync-client-software-support.md) in the Planning documentation.
 
-</div>
-
-<div>
-
 ## Macintosh and Lync 2013
 
 Lync Server 2013 supports certain clients on computers that are running Macintosh operating systems. For details, see [Lync client software support in Lync Server 2013](lync-server-2013-lync-client-software-support.md) in the Planning documentation.
-
-</div>
-
-<div>
 
 ## Public Instant Messaging Clients and Lync 2013
 
@@ -302,8 +270,6 @@ In addition, the XMPP integration feature of Lync Server 2013 lets users exchang
 
 \*A/V is supported with the latest version of Windows Live Messenger. If you are implementing audio/video (A/V) federation with Windows Live Messenger, you must also modify the server encryption level. By default, the encryption level is Required. You must change this setting to Supported by using the Lync Server Management Shell.
 
-<div>
-
 
 > [!IMPORTANT]
 > <UL>
@@ -316,12 +282,6 @@ In addition, the XMPP integration feature of Lync Server 2013 lets users exchang
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -331,18 +291,5 @@ In addition, the XMPP integration feature of Lync Server 2013 lets users exchang
 [Lync Windows Store app requirements for Lync Server 2013](lync-server-2013-lync-windows-store-app-requirements.md)  
 
 
-[Client system requirements for Lync Server 2013](lync-server-2013-client-system-requirements.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Client system requirements for Lync Server 2013](lync-server-2013-client-system-requirements.md)
 

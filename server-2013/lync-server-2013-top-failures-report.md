@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Top Failures Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 The Top Failures Report provides a look at the most-commonly reported failures and their trends over time. Failures are based on a combination of the following two metrics:
 
@@ -34,15 +21,9 @@ The Top Failures Report provides a look at the most-commonly reported failures a
 
 Information is reported not only for the total number of sessions where a failure occurred but also for the total number of users who were impacted by the failure.
 
-<div>
-
 ## Accessing the Top Failures Report
 
 The Top Failures Report is accessed from the Monitoring Reports home page. Clicking the Reported sessions metric will take you to the [Failure Distribution Report in Lync Server 2013](lync-server-2013-failure-distribution-report.md).
-
-</div>
-
-<div>
 
 ## Making the Best Use of the Top Failures Report
 
@@ -55,10 +36,6 @@ Do that, and only failed calls that reported at least one of those five diagnost
 If you hold your mouse over a Response code you'll see a tooltip that tells you what the Response code in question means. For example, if you hold the mouse over the Response code 486 you'll see this message:
 
 Busy Here.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -139,10 +116,6 @@ The following table lists the filters that you can use with the Top Failures Rep
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics
 
 The following table lists the information provided in the Top Failures Report.
@@ -190,17 +163,4 @@ The following table lists the information provided in the Top Failures Report.
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

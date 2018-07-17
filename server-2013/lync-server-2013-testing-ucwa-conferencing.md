@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing UCWA conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-03_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-11-03_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsUcwaConference** cmdlet verifies that a pair of test users can schedule, join, and then conduct an online conference using the Unified Communications Web API (UCWA). To do this, the cmdlet uses the Lync Server web ticket service to authenticate the two test users and register them with Lync Server. The cmdlet then starts a conference using the organizer credentials and invites the participant to join the meeting. After the meeting is joined, the **Test-CsUcwaConference** cmdlet verifies that the users can do such things as exchange instant message and conduct pools, then disconnects the conference and unregisters the two test users. The scheduled conference will also be deleted when the test is finished.
@@ -60,10 +45,6 @@ The **Test-CsUcwaConference** cmdlet verifies that a pair of test users can sche
 The **Test-CsUcwaConference** cmdlet can also be used to determine whether anonymous users can join online conferences.
 
 Note that the **Test-CsUcwaConference** cmdlet should not be run against a Microsoft Lync Server 2010 pool unless UCWA was installed on that pool. If UCWA has not been installed then the call to the **Test-CsUcwaConference** cmdlet will fail.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -78,10 +59,6 @@ With the two credential objects in hand, the third command in the example determ
     $cred1 = Get-Credential "litwareinc\pilar"
     $cred2 = Get-Credential "litwareinc\kenmyer"
     Test-CsUcwaConference -TargetFqdn atl-cs-001.litwareinc.com -OrganizerSipAddress "sip:pilar@litwareinc.com" -OrganizerCredential $cred1 -ParticipantSipAddress "sip:kenmyer@litwareinc.com" -ParticipantCredential $cred2
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -133,10 +110,6 @@ At line:1 char:1
 
 eticTransactions.TestUcwaConferenceCmdlet
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsUcwaConference** might fail:
@@ -147,27 +120,10 @@ Here are some common reasons why **Test-CsUcwaConference** might fail:
 
   - This command will fail if the Edge Server is misconfigured or not yet deployed.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsASConference](test-csasconference.md)  
-[Test-CsDataConference](test-csdataconference.md)  
-[Test-CsAVConference](test-csavconference.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsASConference](https://technet.microsoft.com/en-us/library/jj205227\(v=ocs.15\))  
+[Test-CsDataConference](https://technet.microsoft.com/en-us/library/jj205219\(v=ocs.15\))  
+[Test-CsAVConference](https://technet.microsoft.com/en-us/library/gg412749\(v=ocs.15\))
 

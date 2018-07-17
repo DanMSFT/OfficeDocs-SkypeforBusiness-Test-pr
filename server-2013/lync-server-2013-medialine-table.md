@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # MediaLine table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-21_
 
 Each record represents one media line. (One audio session usually contains one audio media line. One audio and video (A/V) session usually contains one audio media line and one video media line, although the session might contain two video media lines if a conferencing device is used or if Gallery View is used.
 
@@ -174,13 +161,13 @@ Each record represents one media line. (One audio session usually contains one a
 <tr class="even">
 <td><p><strong>CallerVPN</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The caller's link. 1 is virtual private network (VPN), 0 is non-VPN.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CallerLinkSpeed</strong></p></td>
 <td><p>decimal(18,0)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The network link speed, in bps, for the caller's endpoint.</p></td>
 </tr>
 <tr class="even">
@@ -192,7 +179,7 @@ Each record represents one media line. (One audio session usually contains one a
 <tr class="odd">
 <td><p><strong>CalleePort</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Port used by the call receiver.</p></td>
 </tr>
 <tr class="even">
@@ -282,13 +269,13 @@ Each record represents one media line. (One audio session usually contains one a
 <tr class="even">
 <td><p><strong>AppliedBandwidthLimit</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>This is the actual bandwidth applied to the given send side stream given various policy settings (TURN, API, SDP, Policy Server, and so on). This is not to be confused with the effective bandwidth because there can be a lower effective bandwidth based on the bandwidth estimate. This is basically the maximum bandwidth the send stream can take barring limits imposed by the bandwidth estimate.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>AppliedBandwidthSourceKey</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>This is the source of the bandwidth cap being imposed. It describes where the bandwidth limit is coming from (“Policy Server”, “TURN Server”, “Modality”, and so on). Referenced from the <a href="lync-server-2013-appliedbandwidthsource-table.md">AppliedBandwidthSource table in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
@@ -306,28 +293,28 @@ Each record represents one media line. (One audio session usually contains one a
 <tr class="even">
 <td><p><strong>MidCallReport</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Indicates whether the report is for a portion of the session or for the complete session.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ClassifiedPoorCall</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Indicates whether a call was classified as a poor call (value of 1) or as a good call (0).</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CallerConnectivityICE</strong></p></td>
 <td><p>tinyInt</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Indicates whether the caller connected to the network using the ICE protocol (Internet Connectivity Establishment).</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CalleeConnectivityICE</strong></p></td>
 <td><p>tinyint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Indicates whether the caller connected to the network using the ICE protocol (Internet Connectivity Establishment).</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
@@ -375,15 +362,4 @@ Each record represents one media line. (One audio session usually contains one a
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

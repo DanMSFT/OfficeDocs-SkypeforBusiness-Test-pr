@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Defining your requirements for monitoring in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-05_
 
 Streamlining the deployment and installation of monitoring in Microsoft Lync Server 2013 has also streamlined the processes involved in defining your organization's requirements for monitoring. Nevertheless, there are still several key issues that should be addressed before you begin to install and configure Lync Server 2013:
 
@@ -51,14 +38,4 @@ This is important for planning purposes simply because mirroring will require yo
 However, there might also be times when you want to apply different settings to different sites. For example, perhaps you want to use both CDR and QoE monitoring in your Redmond site, but only use CDR monitoring in your Dublin site. Likewise, you might want to retain monitoring data for 60 days in the Redmond site but only need to maintain this type of data for 30 days in the Dublin site. Lync Server 2013 allows you to create separate collections of CDR and QoE configuration settings at the site scope; that enables you to manage each site differently. (This includes both enabling and disabling monitoring as well as configuring management settings such as how long data is to be retained.)
 
 Note that you can make this decision before you deploy monitoring or after you deploy monitoring. For example, you can deploy monitoring and then manage the entire organization by using the global settings. If you later change your mind, you can create a separate collection of settings for, say, the Redmond site, and then use those settings to manage monitoring for Redmond. (Settings applied at the site scope always take precedence over settings applied at the global scope.) If you change your mind again, you can simply delete the configuration settings applied to the Redmond site. When a collection of site settings is removed then the global collection of settings will automatically be applied to that site.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

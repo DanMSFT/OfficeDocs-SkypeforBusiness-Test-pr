@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing user connection to Exchange UM in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-01_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-11-01_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsExUMConnectivity** cmdlet verifies that the specified user can connect to the Microsoft Exchange Server 2013 unified messaging service. Note that this cmdlet only verifies that a connection can be made to the service. It does not test the service itself. To test the unified messaging service (by running a synthetic transaction cmdlet that actually leaves a voice mail message in a user's mailbox) use the Test-CsExUMVoiceMail cmdlet.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -79,10 +60,6 @@ The command shown in the next example is a variation of the command just shown. 
     $credential = Get-Credential "litwareinc\kenmyer" 
     Test-CsExUMConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential -OutLoggerVariable ExumTest 
     $ExumTest.ToXML() | Out-File C:\Logs\ExumTest.xml 
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -124,10 +101,6 @@ has failed to respond 10.188.116.96:5061
 
 Diagnosis :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsExUMConnectivity** might fail:
@@ -138,25 +111,8 @@ Here are some common reasons why **Test-CsExUMConnectivity** might fail:
 
   - This command will fail if the Exchange Server is not reachable over your network.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsExUMVoiceMail](test-csexumvoicemail.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsExUMVoiceMail](https://technet.microsoft.com/en-us/library/jj205058\(v=ocs.15\))
 

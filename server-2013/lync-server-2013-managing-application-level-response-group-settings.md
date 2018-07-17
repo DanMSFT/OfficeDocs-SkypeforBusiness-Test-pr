@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Managing application-level Response Group settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Application-level settings for Response Group application include the default music-on-hold configuration, the default music-on-hold audio file, the agent ringback grace period, and the call context configuration. You can define only one set of application-level settings per pool. To view application-level settings, use the **Get-CsRgsConfiguration** cmdlet. To modify the application-level settings, use the **Set-CsRgsConfiguration** cmdlet.
 
 The default music on hold is played when a call is placed on hold only if no custom music on hold is defined. Call context is available only for queues assigned to interactive workflows. If call context is enabled, an agent can see information such as caller wait time or workflow questions and answers when the call is received.
-
-<div>
 
 ## To modify Response Group application-level settings
 
@@ -51,27 +36,10 @@ The default music on hold is played when a call is placed on hold only if no cus
         $x = Import-CsRgsAudioFile -Identity "service:ApplicationServer:redmond.contoso.com" -FileName "MusicWhileYouWait.wav" -Content (Get-Content C:\Media\ MusicWhileYouWait.wav -Encoding byte -ReadCount 0)
         Set-CsRgsConfiguration -Identity "service:ApplicationServer:redmond.contoso.com" -DefaultMusicOnHoldFile <$x>
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsRgsConfiguration](get-csrgsconfiguration.md)  
-[Set-CsRgsConfiguration](set-csrgsconfiguration.md)  
-[Import-CsRgsAudioFile](import-csrgsaudiofile.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsRgsConfiguration](https://technet.microsoft.com/en-us/library/gg412762\(v=ocs.15\))  
+[Set-CsRgsConfiguration](https://technet.microsoft.com/en-us/library/gg425728\(v=ocs.15\))  
+[Import-CsRgsAudioFile](https://technet.microsoft.com/en-us/library/gg412830\(v=ocs.15\))
 

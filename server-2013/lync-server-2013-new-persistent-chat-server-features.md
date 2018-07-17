@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # New Persistent Chat Server features in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-29_
 
 Lync Server 2013, Persistent Chat Server enables you to participate in multiparty, topic-based conversations that persist over time. Persistent Chat Server can help your organization do the following:
 
@@ -62,8 +49,6 @@ For additional details about the latest version of Persistent Chat Server, see t
 
   - The Persistent Chat Server Documentation.msi file (Windows Installer file) lets users access comprehensive offline documentation about Persistent Chat Server.
 
-<div>
-
 ## Key Topology Changes for Persistent Chat Server
 
 The following high-level changes for Persistent Chat Server include:
@@ -88,15 +73,11 @@ Having these services run on each Persistent Chat Server provides high availabil
 
 Additionally, to support the file upload and download in Persistent Chat rooms, Persistent Chat Server includes a web service. Previously, this service was collocated on the Persistent Chat Server, Front End Server and required Internet Information Services (IIS) to be installed as a prerequisite. In Lync Server 2013 Persistent Chat Server, the File Upload/Download web service is collocated with the Lync Server 2013 Front End Server. As a side effect, Internet Information Services (IIS) is no longer a prerequisite for Persistent Chat Server. The File Upload/Download web service is identified as **PersistentChat** in the Internet Information Services (IIS) Manager.
 
-<div>
-
 
 > [!IMPORTANT]
 > The <STRONG>PersistentChatService</STRONG> role can run on the same server as a Lync Server 2013&nbsp;Front End Server only if that Front End Server is a Standard Edition&nbsp;Front End Server. The <STRONG>PersistentChatService</STRONG> role cannot run independently of a Lync Server 2013&nbsp;Front End Server. It can be installed only in the context of a Lync Server 2013 deployment.
 
 
-
-</div>
 
 In Persistent Chat Server, Lookup service has been eliminated. In Lync Server 2010, Group Chat, the Lookup service ran on every Group Chat Server Front End Server, and performed routing to one of the Channel Servers. Lync Server 2013 relies on routing by using contact objects, where each Persistent Chat Server pool is represented by a contact object that is used by the Lync Server Front End Servers to identify and route requests to an appropriate Persistent Chat Server pool, and to one of the computers running Persistent Chat Server in the pool.
 
@@ -106,23 +87,16 @@ In Lync Server 2013, there are Compliance service modifications:
 
   - The Message Queuing (also known as MSMQ) queue that is shared by the Persistent Chat service and the Compliance service on each Persistent Chat Server Front End Server is now a private queue shared only by the two services. All compliance services write to the same Compliance Back End database. They also all read from that database, for the purpose of sending the data to their instance of the adapter. The Compliance Back End Server is represented as a new Back End Server role.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > As in previous versions, all compliance data is processed only once. The data may be processed by any of the adapter instances invoked by the compliance service running on the various Lync Server 2013, Persistent Chat Server computers. In Persistent Chat Server, any one of the adapter instances could process the data.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!NOTE]
     > For information about installing Message Queuing, see <A href="lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md">Install operating systems and prerequisite software on servers for Lync Server 2013</A> in the Deployment documentation.
 
-    
-    </div>
+
 
 In Lync Server 2013, there are improvements in both high availability and disaster recovery:
 
@@ -131,10 +105,6 @@ In Lync Server 2013, there are improvements in both high availability and disast
   - Disaster recovery improvements: Persistent Chat Server supports a stretched pool architecture that enables a single Persistent Chat Server pool to be stretched across two sites (that is, a single logical pool in the topology, with servers in the pool physically located across two sites). SQL Server Log Shipping is used for cross-site disaster recovery.
 
 For more information about high availability and disaster recovery, see [Configuring Persistent Chat Server for high availability and disaster recovery in Lync Server 2013](lync-server-2013-configuring-persistent-chat-server-for-high-availability-and-disaster-recovery.md) in the Deployment documentation.
-
-</div>
-
-<div>
 
 ## Key Administration and Management Changes for Persistent Chat Server
 
@@ -148,25 +118,13 @@ Lync Server 2013 has made it easier to administer and manage Persistent Chat Ser
     
       - Support to define deny lists as well as allowed lists (scopes) for current MindAlign customers who are planning to migrate to Persistent Chat Server.
 
-</div>
-
-<div>
-
 ## What’s Different about User Roles from Previous Group Chat Server Versions?
 
 Lync Server 2010, Group Chat had a user administrator role, a chat room administrator role and a Lync Server administrator role that could manage add-ins. Persistent Chat Server simply provides a Persistent Chat Administrator role (which is similar to other Lync Server role-based access control (RBAC) roles). Anyone who is a member of this RBAC role can manage chat rooms, add-ins, and categories (and therefore gain user access for these categories), and configuration of the Persistent Chat Server pool.
 
-</div>
-
-<div>
-
 ## What’s Different about Chat Room Categories from Previous Group Chat Server Versions?
 
 Chat room categories can no longer be nested, and the root category can no longer be modified. AllowedMembers/DeniedMembers comprise what a scope used to be in legacy Group Chat Server versions (except that it didn’t support specifying a Denied list). Scopes can no longer be overridden, because there are no nested categories. A Persistent Chat Administrator in Lync Server 2013 can create and manage chat room categories. As part of creating and managing chat room categories, a Persistent Chat Administrator can configure principals (Active Directory groups/containers/users) that have access to be members/creators of chat rooms of a particular category. A Persistent Chat Administrator can also add DeniedMembers to a category, and these become explicit exclusions to the allowed list. DeniedMembers override what’s in AllowedMembers.
-
-</div>
-
-<div>
 
 ## What’s Different about Chat Room Properties from Previous Group Chat Server Versions?
 
@@ -184,43 +142,18 @@ The following chat room properties that were included in previous versions of Pe
 
   - Invites: A room always inherits the Invites setting for the category; or it can be turned off on the room. A room cannot turn on Invites if the category was previously set to Invites off.
 
-</div>
-
-<div>
-
 ## What’s Different about Policies from Previous Group Chat Server Versions?
 
 Persistent Chat Server has a new Lync policy enabled with Persistent Chat, per user/pool/site/global settings. In the Lync 2013 client, the Persistent Chat environment is available only for users who are enabled by policy for Persistent Chat (either directly or through the pool/site/global setting).
 
 Previous versions of Group Chat Server did not have any policies integrated into the Lync Server policies. On a per user and per category/room basis, by using the **Can Upload Files** per user feature, you could make the user a User administrator, a chat room administrator, or configure the user’s ability to upload files. The Persistent Chat Server **File Upload** feature is just per category.
 
-</div>
-
-<div>
-
 ## Logging
 
 Logging for Persistent Chat Server and System Center Operations Manager is integrated into the Lync Server 2013 trace logging.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Planning for Persistent Chat Server in Lync Server 2013](lync-server-2013-planning-for-persistent-chat-server.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for Persistent Chat Server in Lync Server 2013](lync-server-2013-planning-for-persistent-chat-server.md)
 

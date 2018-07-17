@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a normalization rule by using Build a Normalization Rule in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Complete the following steps if you want to create or modify a normalization rule in Lync Server Control Panel. Alternatively, if you want to create or modify a normalization rule manually, see [Create or modify a normalization rule manually in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-manually.md).
-
-<div>
 
 ## To define a rule by using Build a Normalization Rule
 
@@ -68,14 +53,11 @@ Complete the following steps if you want to create or modify a normalization rul
 
 9.  (Optional) Enter a number to test the normalization rule, and then click **Go**. The test results are displayed under **Enter a number to test**.
     
-    <div>
-    
 
     > [!NOTE]
     > You can save a normalization rule that does not yet pass the test and then reconfigure it later. For details, see <A href="lync-server-2013-test-voice-routing.md">Test voice routing in Lync Server 2013</A>.
 
-    
-    </div>
+
 
 10. Click **OK** to save the normalization rule.
 
@@ -83,18 +65,11 @@ Complete the following steps if you want to create or modify a normalization rul
 
 12. On the **Dial Plan** page, click **Commit**, and then click **Commit all**.
     
-    <div>
-    
 
     > [!NOTE]
     > Whenever you create or change a normalization rule, you must run the <STRONG>Commit all</STRONG> command to publish the configuration change. For details, see <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">Publish pending changes to the voice routing configuration in Lync Server 2013</A> in the Operations documentation.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -105,18 +80,5 @@ Complete the following steps if you want to create or modify a normalization rul
 [Publish pending changes to the voice routing configuration in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
 
 
-[Test voice routing in Lync Server 2013](lync-server-2013-test-voice-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test voice routing in Lync Server 2013](lync-server-2013-test-voice-routing.md)
 

@@ -8,37 +8,18 @@ ms.date: 02/07/2017
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lync Web App supported platforms for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2017-02-07_
 
 To use Lync Web App, you must have one of the following supported operating system and browser combinations.
-
-<div>
 
 
 > [!NOTE]
 > A plug-in is required for certain Lync Web App features, including computer-based voice, video, sharing, and viewing of ongoing screen sharing. You can install the sharing plug-in either when you join the meeting or when you initiate one of these features. 1<BR>
 
 
-
-</div>
-
-<div>
 
 ## Supported Operating System and Browser Combinations for Lync Web App
 
@@ -172,23 +153,7 @@ To use Lync Web App, you must have one of the following supported operating syst
 
 3 On supported Windows Server 2008 operating systems, computer-based voice and video are not available. Application viewing, application sharing, desktop viewing, and desktop sharing are available.
 
-</div>
-
-<div>
-
 ## Hardware Requirements
 
 Computer hardware requirements are determined by the operating system and browser. Voice and telephony features require a microphone and speakers, headset with microphone, or equivalent device compatible with the computer. Video features require a video device compatible with the computer. For detailed information about video hardware support and expected video quality, see [Lync client video requirements for Lync Server 2013](lync-server-2013-lync-client-video-requirements.md).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

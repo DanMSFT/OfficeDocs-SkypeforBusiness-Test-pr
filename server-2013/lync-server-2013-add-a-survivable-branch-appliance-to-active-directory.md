@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Add a Survivable Branch Appliance to Active Directory in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-23_
 
 If you plan to deploy a Survivable Branch Appliance, you must add the Survivable Branch Appliance to Active Directory Domain Services. Perform this procedure at the central site.
-
-<div>
 
 
 > [!IMPORTANT]
 > Perform this procedure only if you are deploying a Survivable Branch Appliance. Do not perform it if you are deploying a Survivable Branch Server.
 
 
-
-</div>
-
-<div>
 
 ## To add an Survivable Branch Appliance to Active Directory Domain Services
 
@@ -52,14 +33,11 @@ If you plan to deploy a Survivable Branch Appliance, you must add the Survivable
 
 5.  In the **Select User or Group** dialog box, add the RTCUniversalSBATechnicians group and then click **OK**.
     
-    <div>
-    
 
     > [!NOTE]
     > A member of the RTCUniversalSBATechnicians group at the branch site will add this device to the domain later.
 
-    
-    </div>
+
 
 6.  Click **OK** to save the Survivable Branch Appliance computer object.
 
@@ -84,16 +62,4 @@ If you plan to deploy a Survivable Branch Appliance, you must add the Survivable
 16. Repeat Steps 12-15 for each branch site technician.
 
 **Next step**: [Add branch sites to your topology in Lync Server 2013](lync-server-2013-add-branch-sites-to-your-topology.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Clients for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-01-23_
 
 Lync Server 2013 supports several types of client software that you can deploy to your organization’s users, including computer-installed client software, web-based clients, and mobile devices. This topic outlines the clients that you can use. For a detailed comparison of the features provided by Lync Server 2013 clients, see [Client comparison tables for Lync Server 2013](lync-server-2013-desktop-client-comparison-tables.md).
-
-<div>
 
 ## Lync 2013
 
@@ -36,25 +21,13 @@ Lync 2013 is the full-featured client for Lync Server. The Lync 2013 user interf
 
 Lync 2013 client setup is part of the Office setup program on the installation media.
 
-</div>
-
-<div>
-
 ## Online Meeting Add-in for Lync 2013
 
 The Online Meeting Add-in for Lync 2013 supports meeting management from within Microsoft Outlook messaging and collaboration client. The Online Meeting Add-in for Lync 2013 software installs automatically with Lync 2013.
 
-</div>
-
-<div>
-
 ## Lync Web Scheduler
 
 Lync Web Scheduler is a web-based meeting scheduling and management tool for users who don’t have access to Microsoft Outlook, or who are on an operating system not based on Windows. With Lync Web Scheduler, users can create new meetings, modify existing meetings, and send invitations using their preferred email program.
-
-</div>
-
-<div>
 
 ## Lync Web App
 
@@ -64,33 +37,17 @@ If Lync 2013 is not installed on a user’s computer and the user clicks a meeti
 
 Because of the enhancements to Lync Web App, an updated version of Microsoft Lync 2010 Attendee is not available for Lync Server 2013. Lync Web App is the client of choice for participants outside your organization. With Lync Web App, no local client installation is required, although audio, video, and sharing features require installation of a plug-in during first use.
 
-</div>
-
-<div>
-
 ## Lync 2013 Basic
 
 Lync 2013 Basic is a downloadable client for customers who have a licensed, on-premises Lync Server 2013 deployment and customers who subscribe to a Microsoft Office 365 plan that does not include the full Lync 2013 client. The Lync Basic client includes enhanced presence, contacts, instant messaging (IM), Lync meetings, and basic voice functionality. Features not supported in Lync Basic include multiparty video, OneNote integration, virtual desktop infrastructure (VDI) support, skill search, recording, Enterprise Voice features, and advanced call handling (for example, call forwarding and Team Call). For details, see [Client comparison tables for Lync Server 2013](lync-server-2013-desktop-client-comparison-tables.md).
-
-</div>
-
-<div>
 
 ## Lync Windows Store App
 
 The Lync Windows Store app is a touch-optimized Lync app designed specifically for Windows 8.1, Windows 8, and Windows RT. Users can download the app through the Windows Store by searching for "Lync." For more information, see [Client comparison tables for Lync Server 2013](lync-server-2013-desktop-client-comparison-tables.md), [Lync Windows Store app requirements for Lync Server 2013](lync-server-2013-lync-windows-store-app-requirements.md), and [Deploying Lync Windows Store app in Lync Server 2013](lync-server-2013-deploying-lync-windows-store-app.md).
 
-</div>
-
-<div>
-
 ## Lync 2013 for Mobile Devices
 
 Lync 2013 mobile apps now include voice over IP (VoIP) and video over IP capabilities, in addition to contacts, presence, and IM features. Mobile users can choose to communicate with others through IM, voice calls, or video calls by using either Wi-Fi or their cellular data connection. With a single click of the meeting link in a calendar item, mobile users can join voice and video meetings. For more information about Lync 2013 mobile apps, see [Planning for mobile clients in Lync Server 2013](lync-server-2013-planning-for-mobile-clients.md).
-
-</div>
-
-<div>
 
 ## Supported Clients from Previous Releases
 
@@ -104,25 +61,8 @@ Lync Server 2013 supports the following clients from previous server releases. Y
 
   - **Lync 2010 Attendant**   The Microsoft Lync 2010 Attendant integrated call-management program enables a receptionist to manage multiple conversations at the same time through rapid call handling, IM, and onscreen routing.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Client interoperability in Lync 2013](lync-server-2013-client-interoperability-in-lync-2013.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Client interoperability in Lync 2013](lync-server-2013-client-interoperability-in-lync-2013.md)
 

@@ -8,37 +8,18 @@ ms.date: 01/21/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Add or remove a Front End Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-01-21_
 
 When you add a Front End Server to a pool, or remove a Front End Server from a pool, you then need to restart the pool. To prevent any interruption of service to users, use the following procedure when adding or removing a Front End Server.
-
-<div>
 
 
 > [!NOTE]
 > If you're adding new servers to the pool, update your new pool servers to be at the same Cumulative Update level as the existing servers in the Pool.
 
 
-
-</div>
-
-<div>
 
 ## To add or remove Front End servers
 
@@ -59,16 +40,4 @@ When you add a Front End Server to a pool, or remove a Front End Server from a p
     If the pool has three or more servers, then at least three of those servers must be running when you type this cmdlet.
 
 6.  Restart all Front End Servers in the pool, one at a time.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

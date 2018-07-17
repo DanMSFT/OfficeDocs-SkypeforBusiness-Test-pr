@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Running forest preparation for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-29_
 
 You can use Setup or Lync Server Management Shell cmdlets to prepare the forest. The cmdlet that prepares the forest is **Enable-CsAdForest**.
 
 After you prepare the forest, you must verify that global settings have been replicated before running domain preparation.
-
-<div>
 
 ## To use Setup to prepare the forest
 
@@ -44,24 +29,17 @@ After you prepare the forest, you must verify that global settings have been rep
 
 5.  On the **Prepare Forest** page, click **Next**.
     
-    <div>
-    
 
     > [!NOTE]
     > Forest Preparation allows you to choose where to place the Universal Groups for Lync Server 2013. Choose a location that is consistent with the requirements of your organization.
 
-    
-    </div>
+
 
 6.  On the **Executing Commands** page, look for **Task status: Completed**, and then click **View Log**.
 
 7.  Under the **Action** column, expand **Forest Prep**, look for a **\<Success\>** Execution Result at the end of each task to verify that forest preparation completed successfully, close the log, and then click **Finish**.
 
 8.  Wait for Active Directory replication to complete, or force replication to all domain controllers listed in the **Active Directory Sites and Services** snap-in for the forest root domain controller, before running domain preparation. Force replication between the domain controllers in all Active Directory sites to cause replication within the sites to occur within minutes.
-
-</div>
-
-<div>
 
 ## To use cmdlets to prepare the forest
 
@@ -97,28 +75,11 @@ After you prepare the forest, you must verify that global settings have been rep
     
     This cmdlet returns a value of **LC\_FORESTSETTINGS\_STATE\_READY** if forest preparation was successful.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Using cmdlets to reverse forest preparation for Lync Server 2013](lync-server-2013-using-cmdlets-to-reverse-forest-preparation.md)  
 
 
-[Preparing the forest for Lync Server 2013](lync-server-2013-preparing-the-forest.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Preparing the forest for Lync Server 2013](lync-server-2013-preparing-the-forest.md)
 

@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # ClientVersions view in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 The ClientVersions view stores information about the various client types and versions that have participated in sessions recorded in the database. Each record in the view represents one client version. This view was introduced in Microsoft Lync Server 2013.
-
-<div>
 
 
 > [!NOTE]
 > There may be multiple records for certain columns.
 
 
-
-</div>
 
 
 <table>
@@ -75,15 +58,4 @@ The ClientVersions view stores information about the various client types and ve
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

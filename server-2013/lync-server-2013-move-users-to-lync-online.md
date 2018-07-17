@@ -8,35 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Move users to Lync Online in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-29_
 
 Before you start migrating users to Lync Online, you should backup the user data associated with the accounts to be moved. Not all user data is moved with the user account. For information, see [Backup and restoration requirements in Lync Server 2013: data](lync-server-2013-backup-and-restoration-requirements-data.md).
-
-<div>
 
 ## Migrate User Settings to Lync Online
 
 User settings are moved with the user account. Some on-premises settings are not moved with the user account.
-
-</div>
-
-<div>
 
 ## Moving Pilot Users to Lync Online
 
@@ -44,13 +25,9 @@ Before you begin to move users to Lync Online, you may want to move a few pilot 
 
 To move an on-premises user to your Lync Online tenant, run the following cmdlets in the Lync Server Management Shell, using the administrator credentials for your Microsoft Office 365 tenant. Replace "username@contoso.com" with the information for the user that you want to move.
 
-   ```
     $creds=Get-Credential
-   ```
 
-   ```
     Move-CsUser -Identity username@contoso.com -Target sipfed.online.lync.com -Credential $creds -HostedMigrationOverrideUrl <URL>
-   ```
 
 The format of the URL specified for the **HostedMigrationOverrideUrl** parameter must be the URL to the pool where the Hosted Migration service is running, in the following format: Https://\<Pool FQDN\>/HostedMigration/hostedmigrationService.svc.
 
@@ -76,23 +53,15 @@ You can determine the URL to the Hosted Migration Service by viewing the URL for
     
     `https://admin0a.online.lync.com/HostedMigration/hostedmigrationservice.svc`
 
-</div>
-
-<div>
-
 ## Moving Users to Lync Online
 
-You can move multiple users by using the [Get-CsUser](get-csuser.md) cmdlet with the –Filter parameter to select the users with a specific property assigned to the user accounts, such as RegistrarPool. You can then pipe the returned users to the [Move-CsUser](move-csuser.md) cmdlet, as shown in the following example.
+You can move multiple users by using the [Get-CsUser](https://technet.microsoft.com/en-us/library/gg398125\(v=ocs.15\)) cmdlet with the –Filter parameter to select the users with a specific property assigned to the user accounts, such as RegistrarPool. You can then pipe the returned users to the [Move-CsUser](https://technet.microsoft.com/en-us/library/gg398528\(v=ocs.15\)) cmdlet, as shown in the following example.
 
     Get-CsUser -Filter {UserProperty -eq "UserPropertyValue"} | Move-CsUser -Target sipfed.online.lync.com -Credential $creds -HostedMigrationOverrideUrl <URL>
 
 You can also use the –OU parameter to retrieve all users in the specified OU, as shown in the following example.
 
     Get-CsUser -OU "cn=hybridusers,cn=contoso.." | Move-CsUser -Target sipfed.online.lync.com -Credentials $creds -HostedMigrationOverrideUrl <URL>
-
-</div>
-
-<div>
 
 ## Verify Lync Online User Settings and Features
 
@@ -103,16 +72,4 @@ You can verify that the user was moved successfully in the following ways:
   - Run the following cmdlet:
     
         Get-CsUser -Identity
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 03/29/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Certificate requirements for external user access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-03-29_
 
 Microsoft Lync Server 2013 communications software supports the use of a single public certificate for access and web conferencing Edge external interfaces, plus the A/V Authentication service. The Edge internal interface typically uses a private certificate issued by an internal certification authority (CA), but can also use a public certificate, provided that it is from a trusted public CA. The reverse proxy in your deployment uses a public certificate and encrypts the communication from the reverse proxy to clients and the reverse proxy to internal servers by using HTTP (that is, Transport Layer Security over HTTP).
 
@@ -38,27 +25,20 @@ Following are the requirements for the public certificate used for access and we
 
   - The subject name of the certificate is the Access Edge service external interface fully qualified domain name (FQDN) or hardware load balancer VIP (for example, access.contoso.com). ). The subject name can’t have a wildcard character, it must be an explicit name.
     
-    <div>
-    
 
     > [!NOTE]
     > For Lync Server 2013, this is no longer a requirement, but it is still recommended for compatibility with Office Communications Server.
 
-    
-    </div>
+
 
   - The subject alternative name list contains the FQDNs of the following:
     
       - The Access Edge service external interface or hardware load balancer VIP (for example, sip.contoso.com).
         
-        <div>
-        
 
         > [!NOTE]
         > Even though the certificate subject name is equal to the access Edge FQDN, the subject alternative name must also contain the access Edge FQDN because Transport Layer Security (TLS) ignores the subject name and uses the subject alternative name entries for validation.
 
-        
-        </div>
     
       - The web conferencing Edge external interface or hardware load balancer VIP (for example, webcon.contoso.com).
     
@@ -66,14 +46,11 @@ Following are the requirements for the public certificate used for access and we
     
       - The A/V Edge service does not use the subject name or the subject alternative names entries.
     
-    <div>
-    
 
     > [!NOTE]
     > The order of the FQDNs in the subject alternative names list does not matter.
 
-    
-    </div>
+
 
 If you are deploying multiple, load-balanced Edge Servers at a site, the A/V authentication service certificate that is installed on each Edge Server must be from the same CA and must use the same private key. Note that the certificate's private key must be exportable, regardless of whether it is used on one Edge Server or many Edge Servers. It must also be exportable if you request the certificate from any computer other than the Edge Server. Because the A/V authentication service does not use the subject name or subject alternative name, you can reuse the access Edge certificate as long as the subject name and subject alternative name requirements are met for the access Edge and the web conferencing Edge and the certificate’s private key is exportable.
 
@@ -105,23 +82,8 @@ The reverse proxy publishes the internal server Web Components URLs. The Web Com
 
 Wildcard entries are supported in the subject alternative name field of the certificate assigned to the reverse proxy. For details about how to configure the certificate request for the reverse proxy, see [Request and configure a certificate for your reverse HTTP proxy in Lync Server 2013](lync-server-2013-request-and-configure-a-certificate-for-your-reverse-http-proxy.md).
 
-<div>
-
 ## See Also
 
 
-[Wildcard certificate support in Lync Server 2013](lync-server-2013-wildcard-certificate-support.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Wildcard certificate support in Lync Server 2013](lync-server-2013-wildcard-certificate-support.md)
 

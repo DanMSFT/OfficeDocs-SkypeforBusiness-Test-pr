@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Port summary - Autodiscover in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-05_
 
 The Lync Server 2013 Autodiscover Service runs on the Director and Front End pool servers, and when published in DNS using the `lyncdiscover.<domain>` and `lyncdiscoverinternal.<domain>` host records, can be used by clients to locate Lync Server features. In order for mobile devices running Lync Mobile to use Autodiscover, you may first need to modify certificate subject alternative name lists on any Director and Front End Server running the Autodiscover Service. In addition, it may be necessary to modify the subject alternative name lists on certificates used for external web service publishing rules on reverse proxies.
 
@@ -34,14 +21,11 @@ The decision about whether to use subject alternative name lists on reverse prox
 
   - **Published on port 443**   The subject alternative name list on certificates used by the external web services publishing rule must contain a `lyncdiscover.<sipdomain>` entry for each SIP domain within your organization.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > For new installations or upgrades from Lync Server 2010 where you deployed Mobility, you either used Port 80 for Autodiscover of the Mobility service, or reissued certificates with the proper subject name and subject alternative names in place. Review the certificates on your Director and Front End Server to confirm which path you chose.
 
-    
-    </div>
+
 
 ### Firewall Details for Reverse Proxy Server: External Interface
 
@@ -109,15 +93,4 @@ The decision about whether to use subject alternative name lists on reverse prox
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

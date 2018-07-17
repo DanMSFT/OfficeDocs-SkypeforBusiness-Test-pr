@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enabling Location-Based Routing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-04-26_
 
 Once Enterprise Voice is deployed and network regions, sites and subnets are defined, you can enable Location-Based Routing. Location-Based Routing must be enabled for the following Enterprise Voice elements:
 
@@ -36,15 +23,13 @@ Once Enterprise Voice is deployed and network regions, sites and subnets are def
 
   - Routing configuration
 
-<div>
-
 ## Enable Location-Based Routing to Network Sites
 
 After you have deployed Enterprise Voice, and configured network sites, you are ready to configure Location-Based Routing. First, you create a voice routing policy to associate the network site with the appropriate PSTN usages. When assigning PSTN usages to a voice routing policy, make sure to only use PSTN usages that are associated to voice routes that use a PSTN gateway local to the site or a PSTN gateway that is located in a region where Location-Based Routing restrictions are not needed.Use the Lync Server Windows PowerShell command, New-CsVoiceRoutingPolicy, or Lync Server Control Panel to create voice routing policies.
 
     New-CsVoiceRoutingPolicy -Identity <voice routing policy ID> -Name <voice routing policy name> -PstnUsages <usages>
 
-For more information, see [New-CsVoiceRoutingPolicy](new-csvoiceroutingpolicy.md).
+For more information, see [New-CsVoiceRoutingPolicy](https://technet.microsoft.com/en-us/library/jj205135\(v=ocs.15\)).
 
 For this example, the following table and Windows PowerShell commands illustrate two voice routing policies and their associated PSTN usages defined in this scenario. Only settings that are specific to Location-Based Routing are included in the table for illustration purposes.
 
@@ -129,14 +114,6 @@ In this example, the following table illustrates Location-Based Routing for two 
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Enable Location-Based Routing to Trunks
 
@@ -144,7 +121,7 @@ Before a trunk configuration can be enabled for Location-Based Routing, you need
 
     New-CsTrunkConfiguration -Identity < trunk configuration ID>
 
-For more information, see [New-CsTrunkConfiguration](new-cstrunkconfiguration.md).
+For more information, see [New-CsTrunkConfiguration](https://technet.microsoft.com/en-us/library/gg413021\(v=ocs.15\)).
 
 For this example, the following Windows PowerShell commands illustrate creating one trunk configuration for each trunk in the deployment defined in this scenario.
 
@@ -157,7 +134,7 @@ Once a trunk configuration is configured per trunk, you can use the the Lync Ser
 
     Set-CsTrunkConfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
 
-For more information, see [New-CsTrunkConfiguration](new-cstrunkconfiguration.md).
+For more information, see [New-CsTrunkConfiguration](https://technet.microsoft.com/en-us/library/gg413021\(v=ocs.15\)).
 
 In this example, Location-Based Routing is enabled for each trunk that is associated to PSTN gateways in Delhi and Hyderabad:
 
@@ -215,14 +192,6 @@ The following table illustrates the trunk configuration of four trunks in two di
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Enable Location-Based Routing to Voice Policies
 
@@ -230,7 +199,7 @@ To enforce Location-Based Routing to specific users, configure those users’ vo
 
     Set-CsVoicePolicy -Identity <voice policy ID> -PreventPSTNTollBypass <$true|$false>
 
-For more information, see [New-CsVoicePolicy](new-csvoicepolicy.md).
+For more information, see [New-CsVoicePolicy](https://technet.microsoft.com/en-us/library/gg425856\(v=ocs.15\)).
 
 For this example, the following table and Windows PowerShell commands illustrate enabling the prevention of PSTN toll bypass to the Delhi and Hyderabad voice policies defined in this scenario. Only settings that are specific to Location-Based Routing are included in the table for illustration purposes.
 
@@ -271,14 +240,6 @@ For this example, the following table and Windows PowerShell commands illustrate
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Enable Location-Based Routing in the routing configuration
 
@@ -286,9 +247,7 @@ Finally, globally enable Location-Based Routing to your routing configuration. U
 
     Set-CsRoutingConfiguration -EnableLocationBasedRouting $true
 
-For more information, see [Set-CsRoutingConfiguration](set-csroutingconfiguration.md).
-
-<div>
+For more information, see [Set-CsRoutingConfiguration](https://technet.microsoft.com/en-us/library/gg412811\(v=ocs.15\)).
 
 
 > [!NOTE]
@@ -296,32 +255,9 @@ For more information, see [Set-CsRoutingConfiguration](set-csroutingconfiguratio
 
 
 
-</div>
-
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## See Also
 
 
-[Configuring Location-Based Routing in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring Location-Based Routing in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)
 

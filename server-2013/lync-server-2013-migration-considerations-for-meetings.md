@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Migration considerations for meetings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-10_
 
 The following topics are discussed in this section:
 
@@ -39,8 +26,6 @@ The following topics are discussed in this section:
   - User Experience during Office Communications Server 2007 R2 migration
 
   - Microsoft Lync 2013 compatibility with meetings on earlier server versions
-
-<div>
 
 ## Changes to Meetings in Lync Server 2013
 
@@ -60,14 +45,6 @@ The following topics are discussed in this section:
 
 During migration, Office Communicator 2007 R2 users should use Lync Web App 2013 to join Lync Server 2013 meetings until their clients are upgraded. Note that Office Communicator 2007 R2 users can continue to use their existing client against Lync Server 2013 for presence and IM features, but conferencing features are not supported.
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Migrating Users Based on Their Conferencing Needs
 
@@ -79,13 +56,7 @@ During migration, Office Communicator 2007 R2 users should use Lync Web App 2013
 
   - Leave the organizers homed on the earlier version of Office Communications Server, so they can continue to schedule server-based Live Meeting web conferences.
 
-</div>
-
-<div>
-
 ## Migrating Existing Meetings and Meeting Content
-
-<div>
 
 ## Migrating Meetings from Lync Server 2010
 
@@ -99,27 +70,15 @@ However, the following user account information does not move to the new server:
 
   - Meeting content, for example PowerPoint presentations, whiteboard content, and poll data
 
-To move the content that has been shared in meetings, use the MoveMeetingContent parameter of the Move-CsUser cmdlet. For details about using this cmdlet, see [Move-CsUser](move-csuser.md) in the Lync Server 2013 cmdlets documentation.
-
-</div>
-
-<div>
+To move the content that has been shared in meetings, use the MoveMeetingContent parameter of the Move-CsUser cmdlet. For details about using this cmdlet, see [Move-CsUser](https://technet.microsoft.com/en-us/library/gg398528\(v=ocs.15\)) in the Lync Server 2013 cmdlets documentation.
 
 ## Migrating Meetings from Office Communications Server 2007 R2
 
 Office Communications Server 2007 R2 meetings are either conference calls (conf:// URL prefix) or web conferences (meet:// URL prefix). Lync Server 2013 does not support these earlier conf:// and meet:// conferences, and they are not migrated along with the user account. After migration, you should instruct users to update the links for any online meetings they have scheduled. They can do this after installing the Lync 2013 client by opening a scheduled meeting invitation—which updates the meeting URL—and resending the invitation to participants.
 
-</div>
-
-</div>
-
-<div>
-
 ## User Experience during Lync Server 2010 Migration
 
 This section provides a summary of users’ conferencing experience when migrating from Lync 2010. For more details about how Lync Server 2013 clients can coexist and interact with previous client and server versions, see [Client interoperability in Lync 2013](lync-server-2013-client-interoperability-in-lync-2013.md).
-
-<div>
 
 ## Joining Lync Server 2010 Meetings with a Lync 2013 Client
 
@@ -133,25 +92,13 @@ During migration from Lync Server 2010, there may be a period of coexistence whe
 
   - When right-clicking a user in the participants list, the **Lock the Video Spotlight** and **Pin to Gallery** participant management options are unavailable.
 
-</div>
-
-</div>
-
-<div>
-
 ## User Experience during Office Communications Server 2007 R2 Migration
 
 This section provides a summary of users’ conferencing experience when migrating from Office Communications Server 2007 R2, both before and after Lync 2013 is installed. For more details about how Lync Server 2013 clients can coexist and interact with previous client and server versions, see [Client interoperability in Lync 2013](lync-server-2013-client-interoperability-in-lync-2013.md).
 
-<div>
-
 ## After User Account is Migrated, Before Lync 2013 Is Installed
 
 After a user is migrated to the Lync Server 2013 server, but before new clients are installed, Office Communicator 2007 R2 users can continue to use their existing client against Lync Server 2013 for presence and IM features, but conferencing features are not supported.
-
-</div>
-
-<div>
 
 ## After User Account is Migrated, After Lync 2013 Is Installed
 
@@ -161,25 +108,7 @@ When a migrated user installs Lync 2013, the Online Meeting Add-in for Lync 2013
 
   - In an IT-managed deployment of Lync 2013, the administrator has the option of uninstalling the Conferencing Add-in for Microsoft Office Outlook, which is used to schedule Live Meeting server and service-based meetings. However, you may have users who need to continue to schedule Live Meeting service meetings. In this case, you can allow both add-ins to coexist.
 
-</div>
-
-<div>
-
 ## Meetings with Federated Organizations that Use Previous Clients
 
 Users in federated organizations who are using Microsoft Office Communicator 2007 cannot join Lync Server 2013 meetings in your organization if those meetings are locked by the organizer. You have to reschedule these meetings in Lync Server 2013 so when federated participants join the meeting by using the new https:// meeting URL, they can use Lync Web App.
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

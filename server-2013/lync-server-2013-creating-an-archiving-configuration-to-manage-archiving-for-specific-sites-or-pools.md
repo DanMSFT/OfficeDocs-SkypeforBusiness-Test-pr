@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Creating an Archiving configuration in Lync Server 2013 to manage Archiving for specific sites or pools
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 In Lync Server 2013 Control Panel, you use Archiving configurations to control how archiving is implemented in your deployment. This includes the following Archiving configurations:
 
@@ -34,17 +21,11 @@ In Lync Server 2013 Control Panel, you use Archiving configurations to control h
 
 You initially set up Archiving configurations when you deploy Archiving, but you can change, add, and delete configurations after deployment. For details about how Archiving configurations are implemented, including which options you can specify and the hierarchy of Archiving configurations, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.
 
-<div>
-
 
 > [!NOTE]
 > To use archiving, you must configure Archiving policies to specify whether to enable archiving for internal communications, for external communications, or for both for users homed on Lync Server 2013. By default, archiving is not enabled for either internal or external communications. Before enabling Archiving in any policies, you should specify the appropriate Archiving configurations for your deployment and, optionally, for specific sites and pools, as described in this section. For details about enabling Archiving, see <A href="lync-server-2013-configuring-and-assigning-archiving-policies.md">Configuring and assigning Archiving policies in Lync Server 2013</A> in the Deployment documentation.<BR>If you decide after you deploy Archiving that you want to use Microsoft Exchange integration to store archiving data and files on Exchange 2013 servers and all your users are homed on your Exchange 2013 servers, you should remove the SQL Server database configuration from your topology. You must use Topology Builder to do this. For details, see <A href="lync-server-2013-changing-archiving-database-options.md">Changing Archiving database options in Lync Server 2013</A> in the Operations documentation.
 
 
-
-</div>
-
-<div>
 
 ## To create an archiving configuration for a site or pool
 
@@ -82,15 +63,9 @@ You initially set up Archiving configurations when you deploy Archiving, but you
 
 7.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Creating Archiving Configuration Settings by Using Windows PowerShell Cmdlets
 
 Archiving configuration settings can be created by using Windows PowerShell and the New-CsArchivingConfiguration cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To create a new collection of archiving configuration settings for a site
 
@@ -98,19 +73,11 @@ Archiving configuration settings can be created by using Windows PowerShell and 
     
         New-CsArchivingConfiguration -Identity "site:Redmond"
 
-</div>
-
-<div>
-
 ## To create a new collection of archiving configuration settings that only allow IM archiving
 
   - Because no parameters (other than the mandatory Identity parameter) were specified in the preceding command, the new collection of configuration settings will use the default values for all its properties. To create settings that use different property values, simply include the appropriate parameter and parameter value. For example, to create a collection of archiving configuration settings that, by default, allow archiving of instant messaging sessions, only use a command like this:
     
         New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly"
-
-</div>
-
-<div>
 
 ## To specify multiple property values when creating archiving configuration settings
 
@@ -118,13 +85,7 @@ Archiving configuration settings can be created by using Windows PowerShell and 
     
         New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly" -BlockOnArchiveFailure $True
 
-</div>
-
-For more information, see the help topic for the [New-CsArchivingConfiguration](new-csarchivingconfiguration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [New-CsArchivingConfiguration](https://technet.microsoft.com/en-us/library/gg398471\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
@@ -132,18 +93,5 @@ For more information, see the help topic for the [New-CsArchivingConfiguration](
 [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md)  
 
 
-[Managing Archiving configuration options in Lync Server 2013 for your organization, sites, and pools](lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing Archiving configuration options in Lync Server 2013 for your organization, sites, and pools](lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md)
 

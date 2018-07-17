@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Setting up support for large meetings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-12_
 
 Supporting large meetings of up to 1000 users requires creating an appropriate topology, meeting hardware and software prerequisites, and configuring the environment appropriately.
-
-<div>
 
 ## Topology Requirements
 
@@ -52,10 +37,6 @@ Additional notes about the topology include:
 
   - If you want to use Monitoring Server for the dedicated large-meeting pool, we recommend using the Monitoring Server and its database that are shared across all of the Front End Server pools in your Lync Server deployment.
 
-</div>
-
-<div>
-
 ## Hardware and Software Requirements
 
 The hardware requirements for servers in a dedicated large-meeting pool are the same as for your other Lync Server 2013 servers. For details about hardware requirements, see "[Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md).
@@ -69,10 +50,6 @@ Servers in a dedicated large-meeting pool must meet all Lync Server 2013 softwar
   - [Additional software requirements for Lync Server 2013](lync-server-2013-additional-software-requirements.md)
 
 Additionally, both Lync Server 2013 and all Lync Server 2013 clients must have the latest updates.
-
-</div>
-
-<div>
 
 ## Configuration Requirements
 
@@ -96,15 +73,11 @@ We recommend creating a new conferencing policy specifically for large meetings,
 
   - Set the **EnableMultiviewJoin** option to **False**.
 
-<div>
-
 
 > [!NOTE]
 > The support for 1000 user large meetings in Lync Server 2013 requires the <STRONG>AllowLargeMeetings</STRONG> setting in the conferencing policy for the meeting scheduler to be set to true. When this setting is set to true, the Lync experience will be optimized for extra large meetings when users joins such meeting. Specifically, in a large meeting, Lync will not show the initial or update of the full meeting participant list, which is a performance bottleneck for both the client and Lync Server 2013. Instead, Lync will only show information about the user and the list of presenters of the meeting. Lync will still properly shows total number of participants available in the large meetings.
 
 
-
-</div>
 
 Except for the **Maximum meeting size** setting, all the other conferencing policy settings specified here are required in order to disable conferencing capabilities that are not necessary in large meetings.
 
@@ -115,16 +88,4 @@ Additionally, you need to configure the dedicated large-meeting pool so that eac
   - Make sure that the **Assigned conference type by default** check box is not selected. This setting controls whether the Online Meeting Add-in for Lync 2013 always schedules conferences using the organizer’s assigned conference, which means that scheduled meetings have the same join URL and audio information. In small group collaboration scenarios, having such assigned conference type works well because everyone has their own individual assigned conference, and the constant join URL and audio information helps to facilitate faster meeting joining. However, in the large-meeting scenario, the large meeting support staff schedules the large meetings using a single set of user credentials, and then provides join URLs and audio information to the meeting requesters. In this case, using a different URL to join each meeting works better.
 
   - Ensure that the **Admit anonymous users by default** check box is not selected, unless it is required. This setting affects the default meeting access type scheduled by the Online Meeting Add-in for Lync 2013 when not using an assigned conference. The appropriate option for this setting depends on your organization’s needs. If most large meetings for your organization are internal meetings, do not select this option. If most large meetings require that external users be able to join, select this option.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

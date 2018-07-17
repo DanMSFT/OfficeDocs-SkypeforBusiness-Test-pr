@@ -8,23 +8,10 @@ ms.date: 05/01/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring port ranges in Lync Server 2013 for your Conferencing, Application, and Mediation servers
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-04-30_
 
 In order to implement Quality of Service, you should configure identical port ranges for audio, video, and application sharing on your Conferencing, Application, and Mediation servers; furthermore, those port ranges must not overlap in any way. To use a simple example, suppose you use ports 10000 through 10999 for video on your Conferencing servers. That means that you must also reserve ports 10000 through 10999 for video on your Application and Mediation servers. If you do not, QoS will not work as expected.
 
@@ -38,15 +25,11 @@ By default, audio and video port ranges do not overlap in Microsoft Lync Server 
     
     Get-CsService -MediationServer | Select-Object Identity, AudioPortStart, AudioPortCount
 
-<div>
-
 
 > [!WARNING]
 > As you can see in the preceding commands, each port type – audio, video, and application sharing – is assigned two separate property values: the port start and the port count. The port start indicates the first port used for that modality; for example, if the audio port start is equal to 50000 that means that the first port used for audio traffic is port 50000. If the audio port count is 2 (which is not a valid value, but is used here for illustration purposes) that means that only 2 ports are allocated for audio. If the first port is port 50000 and there are a total of two ports, that means the second port must be port 50001 (port ranges have to be contiguous). As a result, the port range for audio would be ports 50000 through 50001, inclusive.<BR>Note, too that Application server and Mediation server only support QoS for audio; you do not need to change video or application sharing ports in your Application servers or Mediation servers.
 
 
-
-</div>
 
 If you run the preceding three commands you'll see that that the default port values for Lync Server 2013 are configured like this:
 
@@ -122,14 +105,4 @@ If you want to make these changes on all your Conferencing servers you can run t
 After changing port settings you should stop and then restart each service affected by the changes.
 
 It is not mandatory that your Conferencing servers, Application servers, and Mediation servers share the exact same port range; the only true requirement is that you set aside unique port ranges on all your servers. However, administration will typically be easier if you use the same set of ports on all your servers.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

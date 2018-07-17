@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deciding how to deploy Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-03_
 
 When planning for Lync, the first major decision is how to deploy Microsoft Lync: as Lync Server 2013 on premises, or Lync Online with Microsoft Office 365 in the cloud.
 
@@ -33,8 +20,6 @@ When planning for Lync, the first major decision is how to deploy Microsoft Lync
   - **Lync Online in the cloud** Lync Online is designed for organizations that want the cost and agility benefits of cloud-based instant messaging, presence, and meetings without sacrificing the business-class capabilities of Lync Server. With Lync Online, Microsoft deploys and maintains the required server infrastructure, and handles ongoing maintenance, patches, and upgrades. Some features available in an on-premises deployment are not available in Lync Online.
 
 Which type of deployment would be best for you depends on the workloads you want to deploy, and your organization’s geographical and business status.
-
-<div>
 
 ## Lync Server
 
@@ -52,23 +37,7 @@ An on-premises Lync Server deployment is best for the following scenarios:
 
   - **Complete control over policies, reports, and upgrades**   With an on premises Lync Server deployment, you have access to the full set of server and client policies, Monitoring and other reports, and timing of upgrades. Lync Online provides a subset of policy setting and reports, and provides a limited, though significant, window for accepting upgrades.
 
-</div>
-
-<div>
-
 ## Lync Online
 
 If none of the factors in the preceding list are critical for you, you may want to choose Lync Online, for simpler deployment and manageability. Lync Online provides a robust IM, presence and conferencing feature set, and also enables voice and video calls over IP between users in your organization.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

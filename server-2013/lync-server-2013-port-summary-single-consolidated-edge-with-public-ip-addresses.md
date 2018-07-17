@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Port summary - Single consolidated edge with public IP addresses in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 The Lync Server 2013, Edge Server functionality described in this scenario architecture is very similar to what was implemented in Lync Server 2010. The most noticeable addition is the port **5269 over TCP** entry for the extensible messaging and presence protocol (XMPP). Lync Server 2013 optionally deploys an XMPP proxy on the Edge Server or Edge pool and the XMPP gateway server on the Front End Server or Front End pool. Planning information for the reverse proxy and federation are found in [Scenarios for reverse proxy in Lync Server 2013](lync-server-2013-scenarios-for-reverse-proxy.md) and [Planning for SIP, XMPP federation, and public instant messaging in Lync Server 2013](lync-server-2013-planning-for-sip-xmpp-federation-and-public-instant-messaging.md) sections, respectively.
 
@@ -33,8 +20,6 @@ In addition to IPv4, the Edge Server now supports IPv6. For clarity, only IPv4 i
 **Enterprise perimeter network for single consolidated edge with public IP addressing**
 
 ![f8c144c5-e5fb-498a-823e-eb39f26b6847](images/Gg425891.f8c144c5-e5fb-498a-823e-eb39f26b6847(OCS.15).jpg "f8c144c5-e5fb-498a-823e-eb39f26b6847")
-
-<div>
 
 ## Port and Protocol Details
 
@@ -182,25 +167,30 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 <td><p>XMPP/MTLS/TCP/23456</p></td>
 <td><p>Any (can be defined as Standard Edition server IP, Standard Edition server IP address, or pool IP address running the XMPP Gateway service)</p></td>
 <td><p>Edge Server internal interface</p></td>
-<td><p>Outbound XMPP traffic from XMPP Gateway service running on Front End Server or Front End pool</p></td>
+<td><p>Outbound XMPP traffic from XMPP Gateway service running on Front End Server or Front End pool</p>
+<p></p></td>
 </tr>
 <tr class="even">
 <td><p>SIP/MTLS/TCP/5061</p></td>
 <td><p>Any (can be defined as Director, Director pool IP address, Front End Server or Front End pool IP address)</p></td>
 <td><p>Edge Server IP, or pool that holds the internal interface</p></td>
-<td><p>Outbound SIP traffic (from Director, Director pool IP address, Front End Server or Front End pool IP address) to Edge Server internal interface</p></td>
+<td><p>Outbound SIP traffic (from Director, Director pool IP address, Front End Server or Front End pool IP address) to Edge Server internal interface</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>SIP/MTLS/TCP/5061</p></td>
 <td><p>Edge Server internal interface</p></td>
 <td><p>Any (can be defined as Director, Director pool IP address, Front End Server or Front End pool address)</p></td>
-<td><p>Inbound SIP traffic (to Director, Director pool IP address, Front End Server or Front End pool IP address) from Edge Server internal interface</p></td>
+<td><p>Inbound SIP traffic (to Director, Director pool IP address, Front End Server or Front End pool IP address) from Edge Server internal interface</p>
+<p></p></td>
 </tr>
 <tr class="even">
 <td><p>PSOM/MTLS/TCP/8057</p></td>
-<td><p>Any (can be defined as Front End Server IP address, or each Front End Server IP address in a Front End pool)</p></td>
+<td><p>Any (can be defined as Front End Server IP address, or each Front End Server IP address in a Front End pool)</p>
+<p></p></td>
 <td><p>Edge Server internal interface</p></td>
-<td><p>Web conferencing traffic from Front End Server or each Front End Server if in a pool, to Edge Server internal interface</p></td>
+<td><p>Web conferencing traffic from Front End Server or each Front End Server if in a pool, to Edge Server internal interface</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>SIP/MTLS/TCP/5062</p></td>
@@ -248,10 +238,6 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 </table>
 
 
-</div>
-
-<div>
-
 ## Firewall Summary for Federation
 
 
@@ -280,10 +266,6 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Firewall Summary – Public Instant Messaging Connectivity
 
@@ -344,10 +326,6 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 </table>
 
 
-</div>
-
-<div>
-
 ## Firewall Summary for Extensible Messaging and Presence Protocol
 
 
@@ -387,17 +365,4 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Capacity and availability management in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-08-18_
 
 The purpose of capacity management and availability management is to measure and control system performance. We recommend that you implement capacity management and availability management procedures so that you can measure and control system performance. You have to know whether the system is available and if it can handle the current and the projected demands by setting baselines and monitoring the system to look for trends.
-
-<div>
 
 ## Capacity management
 
@@ -76,10 +61,6 @@ Capacity management is the process of keeping the capacity of a system within ac
 
   - **Predicting future requirements**   Some capacity requirements change predictably over time. By tracking trends you can plan upgrades in advance. For example, available bandwidth between various Lync sites must be monitored to create a baseline. This baseline will allow you to predict when you have to add more bandwidth to these links as user count in these remote sites increases with time.
 
-</div>
-
-<div>
-
 ## Availability management
 
 Availability management is the process of making sure that any IT service consistently and cost effectively delivers the level of consistent, reliable service that is required by the customer. Availability management deals with minimizing loss of service and with making sure that appropriate action is taken if service is lost. In a Lync environment, you may be concerned about whether the Enterprise Voice service is available, whether users can join scheduled conferences, and so on. An SLA defines an acceptable frequency and length of outages and allows for certain periods when the system is unavailable for planned maintenance.
@@ -108,25 +89,8 @@ Availability management is the process of making sure that availability is maxim
 
 Capacity and availability measurements are repetitive tasks that are ideally suited to automated tools and scripts such as Microsoft System Center Operations Manager (formerly Microsoft Operations Manager), which is discussed later in this document.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Monitoring Lync Server 2013 with System Center Operations Manager](lync-server-2013-monitoring-lync-server-with-system-center-operations-manager.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Monitoring Lync Server 2013 with System Center Operations Manager](lync-server-2013-monitoring-lync-server-with-system-center-operations-manager.md)
 

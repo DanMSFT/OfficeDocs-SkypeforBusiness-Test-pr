@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing SQL Server Reporting Services in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-20_
 
 If you intend to use Microsoft Lync Server 2013 Monitoring Reports (see the next section of this documentation for more information) you must first install SQL Server Reporting Services; Reporting Services can be installed at the same time you install Microsoft SQL Server or any time after SQL Server has been installed. If you have not installed SQL Server, then follow the instructions provided earlier in this documentation. When installing SQL Server, make sure that, on the Feature Selection page, you select Reporting Services. That will install SQL Server Reporting Services.
 
@@ -59,14 +46,4 @@ If no database is listed next to the Report Server Database Name label then do t
 8.  In the Report Server Database Configuration wizard, in the Progress and Finish pane, click **Finish**.
 
 To verify that the Reporting Service URLs have been configured, click **Web Service URL**. You should see one or more URLs listed under the heading **Report Server Web Service URLs**. Click each of these URLs to verify that you can reach the home page for the local installation of SQL Server Reporting Services.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

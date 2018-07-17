@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or edit public SIP federated providers in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 Public instant messaging (IM) connectivity enables users in your organization to use IM to communicate with users of IM services provided by public IM service providers, including the Windows Live Messenger, Yahoo\!, and AOL.
 
@@ -33,8 +20,6 @@ Lync Server 2013 has public provider configurations for America Online, Windows 
 As a default setting, none of the public providers are enabled. You should complete license agreement and provisioning work before enabling the public providers. You can enable the provider before completing the licensing and provisioning work. Users will not be able to communicate with contacts on those providers until the pre-requisite work is completed. For details on licensing and provisioning of public providers, see [Configure policies to control public user access in Lync Server 2013](lync-server-2013-configure-policies-to-control-public-user-access.md).
 
 Use the following procedure to create or edit Public providers:
-
-<div>
 
 ## To create or edit public providers
 
@@ -62,26 +47,9 @@ Use the following procedure to create or edit Public providers:
 
 7.  When you are done configuring the settings, click **Commit** to save, or click **Cancel** to discard your changes.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Configure policies to control public user access in Lync Server 2013](lync-server-2013-configure-policies-to-control-public-user-access.md)  
-[Enable or disable federation and public IM connectivity in Lync Server 2013](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Enable or disable federation and public IM connectivity in Lync Server 2013](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)
 

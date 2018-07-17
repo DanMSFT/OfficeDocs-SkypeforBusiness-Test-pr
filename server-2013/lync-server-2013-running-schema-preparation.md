@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Running Active Directory schema preparation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-29_
 
 You can use Setup or Lync Server Management Shell cmdlets to prepare the Active Directory schema. The cmdlet that extends the Active Directory schema is **Install-CsAdServerSchema**.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ You can use Setup or Lync Server Management Shell cmdlets to prepare the Active 
 
 
 
-</div>
-
 After you complete schema preparation, manually verify that the schema partition has been replicated before proceeding to forest preparation. For details, see [Verifying Active Directory schema replication in Lync Server 2013](lync-server-2013-verifying-schema-replication.md).
-
-<div>
 
 ## To use Setup to prepare the schema of the current forest
 
@@ -69,10 +50,6 @@ After you complete schema preparation, manually verify that the schema partition
 12. Wait for Active Directory replication to complete or force replication.
 
 13. Manually verify that the schema changes replicated to all other domain controllers. For details, see [Verifying Active Directory schema replication in Lync Server 2013](lync-server-2013-verifying-schema-replication.md).
-
-</div>
-
-<div>
 
 ## To use cmdlets to prepare the schema of the current forest
 
@@ -110,28 +87,11 @@ After you complete schema preparation, manually verify that the schema partition
 
 7.  Manually verify that the schema changes replicated to all other domain controllers. For details, see [Verifying Active Directory schema replication in Lync Server 2013](lync-server-2013-verifying-schema-replication.md).
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Verifying Active Directory schema replication in Lync Server 2013](lync-server-2013-verifying-schema-replication.md)  
 
 
-[Preparing the Active Directory schema in Lync Server 2013](lync-server-2013-preparing-the-active-directory-schema.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Preparing the Active Directory schema in Lync Server 2013](lync-server-2013-preparing-the-active-directory-schema.md)
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing the Web scheduler in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-03_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-11-03_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsWebScheduler** cmdlet enables you to determine whether a specific user can schedule a meeting using the Web Scheduler. The Web Scheduler enables users who are not running Outlook to schedule online meetings. Among other things, this new feature (which incorporates the functionality found in the Web Scheduler tool that was included with the Microsoft Lync Server 2010 resource kit) enables users to:
@@ -69,10 +54,6 @@ The **Test-CsWebScheduler** cmdlet enables you to determine whether a specific u
 
   - Join an existing conference.
 
-</div>
-
-<div>
-
 ## Running the test
 
 The following example verifies the Web Scheduler for the pool atl-cs-001.litwareinc.com. This command will work only if test users are defined for the pool atl-cs-001.litwareinc.com. If they have, then the command will determine whether the first test user can schedule an online meeting using the Web Scheduler.
@@ -88,10 +69,6 @@ The second command then checks whether this user can log on to the pool atl-cs-0
     $credential = Get-Credential "litwareinc\kenmyer"
     
     Test-CsWebScheduler -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -137,10 +114,6 @@ Error Message : No matching cluster found in topology.
 
 Diagnosis :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsWebScheduler** might fail:
@@ -149,25 +122,8 @@ Here are some common reasons why **Test-CsWebScheduler** might fail:
 
   - This command will fail if the Web Scheduler is misconfigured or not yet deployed.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Set-CsWebServer](set-cswebserver.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Set-CsWebServer](https://technet.microsoft.com/en-us/library/gg398759\(v=ocs.15\))
 

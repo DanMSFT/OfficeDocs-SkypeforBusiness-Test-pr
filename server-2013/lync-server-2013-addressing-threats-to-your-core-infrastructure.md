@@ -8,27 +8,12 @@ ms.date: 08/01/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Addressing threats to your core infrastructure for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-08-01_
 
 In addition to following best practices for your Microsoft Lync Server 2013 deployment, you can help to ensure security by reviewing, understanding, and addressing any needs in specific areas of your deployment.
-
-<div>
 
 ## In This Section
 
@@ -45,16 +30,4 @@ In addition to following best practices for your Microsoft Lync Server 2013 depl
   - [Protecting IIS in Lync Server 2013](lync-server-2013-protecting-iis.md)
 
   - [Windows Update for Lync Server 2013](lync-server-2013-windows-update-for-lync-server.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

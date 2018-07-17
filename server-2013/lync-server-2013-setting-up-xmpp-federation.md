@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Setting up XMPP federation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-03_
 
 To deploy the XMPP Proxy on the Edge Server, you must configure the Edge Server for XMPP federation. To do this, you do the following steps.
-
-<div>
 
 ## Setting Up XMPP Federation
 
@@ -44,14 +29,11 @@ To deploy the XMPP Proxy on the Edge Server, you must configure the Edge Server 
 
 6.  On the Edge Server, in the Deployment Wizard, next to Step 3: Request, Install, or Assign Certificates, click Run again.
     
-    <div class=" ">
-    
 
     > [!TIP]
     > If you are deploying the Edge Server for the first time, you will see Run instead of Run Again.
 
-    
-    </div>
+
 
 7.  On the Available Certificate Tasks page, click Create a new certificate request.
 
@@ -81,14 +63,11 @@ To deploy the XMPP Proxy on the Edge Server, you must configure the Edge Server 
 
 17. On the Configure Additional Subject Alternate Names page, specify any additional subject alternative names that are required
     
-    <div class=" ">
-    
 
     > [!TIP]
     > If the XMPP proxy is installed, by default the domain name (such as contoso.com) is populated in the SAN entries. If you require more entries, add them in this step.
 
-    
-    </div>
+
 
 18. On the Request Summary page, review the certificate information to be used to generate the request.
 
@@ -100,66 +79,41 @@ To deploy the XMPP Proxy on the Edge Server, you must configure the Edge Server 
 
 22. After receiving, importing and assigning the public certificate, you must stop and restart the Edge Server services. You do this by typing in the Lync Server Management console:
     
-       ```
         Stop-CsWindowsService
-       ```
     
-       ```
         Start-CsWindowsService
-       ```
 
 23. To configure DNS for XMPP federation, you add the following SRV record to external DNS:\_xmpp-server.\_tcp.\<domain name\> The SRV record will resolve to the access edge FQDN of the Edge server, with a port value of 5269. Additionally, you configure an ‘A’ host record (for example, xmpp.contoso.com) that points to the IP address of the Access Edge Server.
-    
-    <div class=" ">
     
 
     > [!IMPORTANT]
     > If you have Edge pools in multiple sites, we recommend that you add multiple SRV records for XMPP federation. Add a SRV record for every Edge pool in your organization, and give each of those SRV records a different priority. When all Edge pools are running, XMPP requests will all be handled by the Edge pool with the first priority, but if that Edge pool goes down you won’t then have to add a new SRV record to regain XMPP federation functionality.
 
-    
-    </div>
+
 
 24. Configure a new External Access Policy to enable all users by opening the Lync Server Management Shell on the Front End and typing:
     
-       ```
         New-CsExternalAccessPolicy -Identity <name of policy to create.  If site scope, prepend with 'site:'> -EnableFederationAcces $true -EnablePublicCloudAccess $true
-       ```
     
-       ```
         New-CsExternalAccessPolicy -Identity FedPic -EnableFederationAcces $true -EnablePublicCloudAccess $true
-       ```
     
-       ```
         Get-CsUser | Grant-CsExternalAccessPolicy -PolicyName FedPic
-       ```
     
     Enable XMPP Access for External Users by typing:
     
-       ```
         Set-CsExternalAccessPolicy -Identity <name of the policy being used> EnableXmppAccess $true
-       ```
     
-       ```
         Set-CsExternalAccessPolicy -Identity FedPic -EnableXmppAccess $true
-       ```
 
 25. On the Edge Server where the XMPP Proxy is deployed, open a Command Prompt or a Windows PowerShell™ command-line interface and type the following:
     
-       ```
         Netstat -ano | findstr 5269
-       ```
     
-       ```
         Netstat -ano | findstr 23456
-       ```
     
     The command **netstat –ano** is a network statistics command, the parameters **–ano** request that netstat display all connections and listening ports, address and ports are displayed in a numerical form, and that the owning process ID is associated with each connection. The character **|** defines a pipe to the next command, **findstr**, or find string. The number 5269 and 23456 that is passed to findstr as a parameter instructs findstr to search the output of netstat for the strings 5269 and 23456. If XMPP is correctly configured, the result of the commands should result in listening and established connections, both on the external (port 5269) and the internal (port 23456) interfaces of the Edge Server.
     
     If the commands do not return established or listening ports on 5269 and 23456, check the following:
-
-</div>
-
-<div>
 
 ## Troubleshooting XMPP Federation
 
@@ -187,22 +141,15 @@ To deploy the XMPP Proxy on the Edge Server, you must configure the Edge Server 
 
 10. Publish the topology. For details, see [Publish your topology in Lync Server 2013](lync-server-2013-publish-your-topology.md)
     
-    <div class=" ">
-    
 
     > [!TIP]
     > Though not required and typically not necessary, you may find that you will need to restart the Edge Servers
 
-    
-    </div>
+
 
 11. Using the netstat process used previously, confirm that the Edge Server is now listening or has established sessions on port 5269 and port 23456.
 
 12. If you still are not seeing the expected sessions, check the Event Viewer for possible contributing causes for the communication problem.
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -210,18 +157,5 @@ To deploy the XMPP Proxy on the Edge Server, you must configure the Edge Server 
 [Example XMPP configuration in Lync Server 2013 – XMPP federation with Google Talk](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
 
 
-[Manage XMPP federated partners in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Manage XMPP federated partners in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Components used by Call Park in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-13_
 
 The Call Park application is automatically installed when you deploy Enterprise Voice. You enable Call Park by configuring voice policy. The following Lync Server 2013 components support the Call Park application:
 
@@ -39,14 +26,4 @@ The Call Park application is automatically installed when you deploy Enterprise 
   - **Lync Server Control Panel**   You can use Lync Server Control Panel to configure the call park orbit table and to enable Call Park for users.
 
   - **Lync Server Management Shell**   All Call Park application configuration can be performed by using Lync Server Management Shell cmdlets.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

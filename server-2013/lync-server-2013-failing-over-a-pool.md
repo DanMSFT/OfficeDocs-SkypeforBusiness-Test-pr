@@ -8,23 +8,10 @@ ms.date: 10/10/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Failing over a pool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-10-10_
 
 If a single Front End pool has failed and needs to be failed over, use the following procedure. In this procedure, Datacenter1 contains Pool1, and Pool1 has failed. You are failing over to Pool2 located in Datacenter2.
 
@@ -137,14 +124,4 @@ Additionally, if a Front End pool fails but the Edge pool at that site is still 
         access/Federation/Split-domain/XMPP features to stop working. Please use Topology Builder to
         change the Edge internal next hop setting to point to a different Front-end pool,  before you
         proceed.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

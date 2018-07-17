@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment process for Location-Based Routing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-09_
 
 This topic provides an overview of the process involved in configuring Location-Based Routing. You must deploy Lync Server Enterprise Edition or Standard Edition with Enterprise Voice before you configure Location-Based Routing. The components required by Location-Based Routing are already installed and enabled when you deploy Enterprise Voice.
 
@@ -60,7 +47,7 @@ CsServerAdministrator</p></td>
 </tr>
 <tr class="even">
 <td><p>Verify your Enterprise Voice deployment</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>CSVoiceAdmins<br />
 CsAdministrator<br />
 CsServerAdministrator</p></td>
@@ -92,21 +79,17 @@ Associate a Subnet with a Network Site</p></td>
 <td><p>CSVoiceAdmins<br />
 CsAdministrator<br />
 CsServerAdministrator</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 
-
-<div>
 
 ## Sample Deployment
 
 The following deployment is used to illustrate further the mechanisms enabled by Location-Based Routing.
 
 ![e1bd2230-44da-4784-b359-24572b6ce02d](images/JJ994055.e1bd2230-44da-4784-b359-24572b6ce02d(OCS.15).png "e1bd2230-44da-4784-b359-24572b6ce02d")
-
-<div>
 
 ## Incoming PSTN calls
 
@@ -142,10 +125,6 @@ The following table outlines the user experience of “Lync user 1” in this co
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Outgoing PSTN calls
 
@@ -187,10 +166,6 @@ The following table illustrates the user experience of Lync user 1 placing an ou
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Call transfers and forwards
 
@@ -254,10 +229,6 @@ The following table illustrates how Location-Based Routing affects how the call 
 </table>
 
 
-</div>
-
-<div>
-
 ## Simultaneous ringing
 
 Once location-based routing is configured in the sample topology, the following interactions are enforced.
@@ -320,27 +291,8 @@ The following table illustrates whether Location-Based Routing allows simultaneo
 </table>
 
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
-[Planning for Location-Based Routing in Lync Server 2013](lync-server-2013-planning-for-location-based-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for Location-Based Routing in Lync Server 2013](lync-server-2013-planning-for-location-based-routing.md)
 

@@ -8,37 +8,18 @@ ms.date: 02/09/2018
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Move users to another pool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2018-02-09_
 
 You can use Lync Server Control Panel to assign users to a specific server or pool.
-
-<div>
 
 
 > [!TIP]
 > Moving all existing users from a source pool that is running Lync Server 2010 or earlier to a Lync Server 2013 destination pool in a complex Active Directory environment might result in slower Active Directory replication. To avoid this, you can use search filters to move users from pools that are running Lync Server 2010 or earlier separately, or you can use Lync Server Management Shell to move users with cmdlets. Also, the filter functionality works with Lync Server 2013 users.
 
 
-
-</div>
-
-<div>
 
 ## To move selected users to a different server or pool
 
@@ -58,18 +39,11 @@ You can use Lync Server Control Panel to assign users to a specific server or po
 
 8.  (Optional) If the destination server or pool is unavailable, select the **Force** check box.
     
-    <div>
-    
 
     > [!WARNING]
     > If you select <STRONG>Force</STRONG>, the user account is moved, but associated user data such scheduled conferences and contacts is not moved.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To move all users from one server or pool to a different server or pool
 
@@ -87,18 +61,11 @@ You can use Lync Server Control Panel to assign users to a specific server or po
 
 7.  (Optional) If the destination server or pool is unavailable, select the **Force** check box.
     
-    <div>
-    
 
     > [!WARNING]
     > If you select <STRONG>Force</STRONG>, the user account is moved, but associated user data such scheduled conferences and contacts is not moved.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To move users from one pool to a different pool by using a filter
 
@@ -114,14 +81,11 @@ You can use Lync Server Control Panel to assign users to a specific server or po
 
 6.  On the **Action** menu, click **Move all users to pool**.
     
-    <div>
-    
 
     > [!NOTE]
     > When a filter is applied to an existing set of users, the option <STRONG>Move all users to pool</STRONG> is in the context of the filtered subset of users, not <STRONG><EM>all</EM></STRONG> possible users.
 
-    
-    </div>
+
 
 7.  In **Move Users**, select the pool that contains the user accounts that you want to move in **Source registrar pool**.
 
@@ -129,18 +93,11 @@ You can use Lync Server Control Panel to assign users to a specific server or po
 
 9.  (Optional) If the destination server or pool is unavailable, select the **Force** check box.
     
-    <div>
-    
 
     > [!WARNING]
     > If you select <STRONG>Force</STRONG>, the user account is moved, but associated user data such scheduled conferences and contacts is not moved.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To move users from one pool to another using Windows PowerShell cmdlets
 
@@ -166,25 +123,8 @@ You can use Lync Server Control Panel to assign users to a specific server or po
     
         Get-CsUser -Filter {RegistrarPool -eq "pool02.contoso.net"} | Move-CsUser -Target "pool01.contoso.net"
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Modifying user account properties in Lync Server 2013](lync-server-2013-modifying-user-account-properties.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Modifying user account properties in Lync Server 2013](lync-server-2013-modifying-user-account-properties.md)
 

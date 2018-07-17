@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete a PIN policy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Follow these steps to delete a personal identification number (PIN) policy.
-
-<div>
 
 
 > [!NOTE]
 > You cannot delete the global PIN policy.
 
 
-
-</div>
-
-<div>
 
 ## To delete a PIN policy in Lync Server 2013 Control Panel
 
@@ -54,15 +35,9 @@ Follow these steps to delete a personal identification number (PIN) policy.
 
 6.  Click **OK**.
 
-</div>
-
-<div>
-
 ## Removing PIN Policies by Using Windows PowerShell Cmdlets
 
 You can delete PIN policies by using Windows PowerShell and the Remove-CsPinPolicy cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To remove a specific PIN policy
 
@@ -70,19 +45,11 @@ You can delete PIN policies by using Windows PowerShell and the Remove-CsPinPoli
     
         Remove-CsPinPolicy -Identity "RedmondPinPolicy"
 
-</div>
-
-<div>
-
 ## To remove all the PIN policies applied to the site scope
 
   - This command removes all the PIN policies configured at the site scope:
     
         Get-CsPinPolicy -Filter "site:*" | Remove-CsPinPolicy
-
-</div>
-
-<div>
 
 ## To remove all the PIN policies that allow the use of common patterns
 
@@ -90,19 +57,5 @@ You can delete PIN policies by using Windows PowerShell and the Remove-CsPinPoli
     
         et-CsPinPolicy | Where-Object {$_.AllowCommonPatterns -eq $True} | Remove-CsPinPolicy
 
-</div>
-
-For more information, see the help topic for the [Remove-CsPinPolicy](remove-cspinpolicy.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [Remove-CsPinPolicy](https://technet.microsoft.com/en-us/library/gg398431\(v=ocs.15\)) cmdlet.
 

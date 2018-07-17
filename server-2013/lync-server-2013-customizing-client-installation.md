@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Customizing client installation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-03_
 
 Enterprise administrators can customize the Office 2013 Windows Installer-based (.msi) installation by using the methods discussed in this section. Because no single tool provides all customization options, you’ll likely use a combination of these methods in your Lync 2013 deployment. At a minimum, you might use the tools described in the following sections:
 
@@ -37,14 +24,4 @@ Enterprise administrators can customize the Office 2013 Windows Installer-based 
   - [Configuring client bootstrapping policies in Lync Server 2013](lync-server-2013-configuring-client-bootstrapping-policies.md) by using the Group Policy Object Editor MMC snap-in.
 
 There will probably be other options you’ll want to configure as you deploy the Office suite of products. The topics in this section give an overview of these customization tools and discuss Lync-specific considerations. Included are links to detailed Office help for each tool.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

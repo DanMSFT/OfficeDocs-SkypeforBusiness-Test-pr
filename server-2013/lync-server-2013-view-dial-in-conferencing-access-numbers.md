@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View dial-in conferencing access numbers in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 In Lync Server 2013 Control Panel, you provide dial-in access numbers to users so that they can join a meeting externally.
-
-<div>
 
 ## To view dial-in access numbers
 
@@ -42,15 +27,9 @@ In Lync Server 2013 Control Panel, you provide dial-in access numbers to users s
 
 5.  In **Edit**, select the **Show Details…** check box.
 
-</div>
-
-<div>
-
 ## Viewing Dial-in Conferencing Access Numbers by Using Windows PowerShell Cmdlets
 
 Dial-in conferencing access numbers can be viewed by using Windows PowerShell and the Get-CsDialInConferencingAccessNumber cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view dial-in conferencing access numbers
 
@@ -73,19 +52,5 @@ Dial-in conferencing access numbers can be viewed by using Windows PowerShell an
         HostingProvider    :
         Regions            : {US}
 
-</div>
-
-For more information, see the help topic for the [Get-CsDialInConferencingAccessNumber](get-csdialinconferencingaccessnumber.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [Get-CsDialInConferencingAccessNumber](https://technet.microsoft.com/en-us/library/gg413015\(v=ocs.15\)) cmdlet.
 

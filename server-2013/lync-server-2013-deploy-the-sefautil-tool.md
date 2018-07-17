@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploy the SEFAUtil tool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-30_
 
 To deploy and manage Group Call Pickup, you need to use the SEFAUtil resource kit tool. The tool is part of the Lync Server 2013 resource kit tools. Before you can install SEFAUtil, you must have a trusted application pool in your topology, specify SEFAUtil as a trusted application, and enable the topology.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -36,21 +21,13 @@ To deploy and manage Group Call Pickup, you need to use the SEFAUtil resource ki
 
 
 
-</div>
-
 You can run the SEFAUtil in any Front End pool in your deployment.
-
-<div>
 
 
 > [!NOTE]
 > For more details about running SEFAUtil, see the Technet blog article, "How to get SEFAutil running?" at <A href="http://go.microsoft.com/fwlink/?linkid=278940">http://go.microsoft.com/fwlink/?LinkId=278940</A>.
 
 
-
-</div>
-
-<div>
 
 ## To deploy SEFAUtil
 
@@ -66,14 +43,11 @@ You can run the SEFAUtil in any Front End pool in your deployment.
     
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
     
-    <div>
-    
 
     > [!NOTE]
     > You can use a different port if needed.
 
-    
-    </div>
+
 
 5.  Enable the topology with your changes. At the command line, run:
     
@@ -85,30 +59,14 @@ You can run the SEFAUtil in any Front End pool in your deployment.
     
     1.  Run the tool from the Windows command prompt with administrator privileges to display the call forwarding settings of a user in your deployment.
         
-        <div>
-        
 
         > [!NOTE]
         > The tool is located at \Program Files\Microsoft Lync Server 2013\Reskit.
 
-        
-        </div>
     
     2.  Display the call forwarding settings of a user. At the command line, run:
         
             SEFAUtil.exe <user SIP address> /server:<Lync Server/Pool FQDN>
         
         The call forwarding settings for the user will be displayed.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

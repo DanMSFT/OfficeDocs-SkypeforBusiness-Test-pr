@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure a static route for remote call control in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-22_
 
 Remote call control requires that every Lync Server pool is configured with a path from that pool to the SIP/CSTA gateway that connects to the private branch exchange (PBX). This path requires that each pool has one static route for each gateway to which the pool will proxy SIP call control messages associated with calls to the PBX. If you configure a global static route for remote call control, each pool that is not configured with a static route at the pool level will use the global static route.
-
-<div>
 
 ## To configure a static route for remote call control
 
@@ -38,14 +23,10 @@ Remote call control requires that every Lync Server pool is configured with a pa
 
 3.  To create a static route and put it in the variable $TLSRoute or $TCPRoute, do one of the following:
     
-    <div class="">
-    
 
     > [!TIP]
     > To match child domains of a domain, you can specify a wildcard value in the MatchUri parameter. For example, <STRONG>*.contoso.net</STRONG>. That value matches any domain that ends with the suffix <STRONG>contoso.net</STRONG>.
 
-    
-    </div>
     
       - For a Transport Layer Security (TLS) connection, type the following at the command prompt:
         
@@ -61,14 +42,10 @@ Remote call control requires that every Lync Server pool is configured with a pa
     
       - For a Transmission Control Protocol (TCP) connection, type the following at the command prompt:
         
-        <div class="">
-        
 
         > [!NOTE]
         > If you specify a fully qualified domain name (FQDN), you must configure a Domain Name System (DNS) A record first.
 
-        
-        </div>
         
             $TCPRoute = New-CsStaticRoute -TCPRoute -Destination <gateway IP address or FQDN> -Port <gateway SIP listening port> -MatchUri <destination domain>
         
@@ -90,34 +67,13 @@ Remote call control requires that every Lync Server pool is configured with a pa
 
 4.  To persist a newly created static route in the Central Management store, run one of the following, as appropriate:
     
-       ```
         Set-CsStaticRoutingConfiguration -Route @{Add=$TLSRoute}
-       ```
     
-       ```
         Set-CsStaticRoutingConfiguration -Route @{Add=$TCPRoute}
-       ```
-
-</div>
-
-<div>
 
 ## See Also
 
 
 [Configure a trusted application entry for remote call control in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)  
-[Define a SIP/CSTA gateway IP address in Lync Server 2013](lync-server-2013-define-a-sip-csta-gateway-ip-address.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Define a SIP/CSTA gateway IP address in Lync Server 2013](lync-server-2013-define-a-sip-csta-gateway-ip-address.md)
 

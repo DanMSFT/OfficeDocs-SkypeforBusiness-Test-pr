@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Integrating Microsoft Lync Server 2013 and Microsoft Outlook Web App 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-03_
 
 In addition to integrating with Microsoft Outlook 2013, Microsoft Lync Server 2013 can be fully integrated with Microsoft Outlook Web App 2013; among other things, this adds instant messaging and presence to Outlook Web App, and enables your unified contact list to be shared between Outlook Web App and Microsoft Lync 2013. In order to integrate Lync Server 2013 and Outlook Web App, you must first verify that the Unified Communications Managed API 4.0 Runtime has been installed in your Microsoft Exchange Server 2013 backend server. You can do this by looking for the existence of the following registry value:
 
@@ -44,15 +31,11 @@ If you have installed the Microsoft Exchange Unified Messaging Call Router servi
 
 Lync Server 2013 can autodiscover any Exchange servers that host a SipName UM dial plan; these servers are automatically added to the Lync Server Known Servers List. There is no need to create a trusted application pool and add these servers to the Known Servers List. In fact, doing so will cause Outlook Web App integration to stop working.
 
-<div>
-
 
 > [!NOTE]
-> This is due to the fact that the Lync Server topology will now have two entries for the same computer: the autodiscovered entry, and the manually-added entry. To fix the problem, and to get Outlook Web App working again, use Windows PowerShell to remove the trusted pool and trusted application entries for the server. See the help topics for the <A href="remove-cstrustedapplicationpool.md">Remove-CsTrustedApplicationPool</A> and <A href="remove-cstrustedapplication.md">Remove-CsTrustedApplication</A> cmdlets for more information.
+> This is due to the fact that the Lync Server topology will now have two entries for the same computer: the autodiscovered entry, and the manually-added entry. To fix the problem, and to get Outlook Web App working again, use Windows PowerShell to remove the trusted pool and trusted application entries for the server. See the help topics for the <A href="https://technet.microsoft.com/en-us/library/gg398750(v=ocs.15)">Remove-CsTrustedApplicationPool</A> and <A href="https://technet.microsoft.com/en-us/library/gg398176(v=ocs.15)">Remove-CsTrustedApplication</A> cmdlets for more information.
 
 
-
-</div>
 
 If these two services are running on separate computers then, after you have verified that the Unified Communications Managed API 4.0 Runtime has been installed, you must create a Lync Server trusted application pool and a trusted application associated with Outlook Web App; that will add the server to the Known Servers List. To do that, first run a command similar to this from within the Lync Server Management Shell:
 
@@ -80,15 +63,11 @@ With Lync Server correctly configured you can then begin to configure Outlook We
 
     Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -InstantMessagingEnabled $True -InstantMessagingType OCS
 
-<div>
-
 
 > [!NOTE]
 > By default, instant messaging is enabled when you install Outlook Web App; that is, the InstantMessagingEnabled property is set to True. However, you must still run the preceding command in order to set the instant messaging type to OCS. By default, InstantMessagingType is set to None.
 
 
-
-</div>
 
 Next you must add the following two lines to Outlook Web App Web.config file (this file is typically located in the folder C:\\Program Files\\Microsoft\\Exchange Server\\V15\\ClientAccess\\Owa). These two lines should be added under the \<AppSettings\> node in the Web.config file, and this procedure should be carried out only on the backend servers where Outlook Web App has been installed:
 
@@ -140,14 +119,4 @@ As noted previously, instant messaging is enabled by default in Outlook Web App.
 To verify that instant messaging and presence have been integrated with Outlook Web App, sign on to Outlook Web App 2013. In the upper right-hand corner of the screen, you will see your Exchange display name. If there is a presence icon next to your name (for example, a green icon indicating that your current status is Available) that indicates that you have successfully integrated Lync Server and Outlook Web App.
 
 After the initial sign-on to Outlook Web App, check to see if an event with the Event ID 112 (and the source MSExchange OWA) has been written to the event log on the mailbox server. This event indicates that the Instant Messaging Endpoint Manager was successfully initialized. If instant messaging does not appear to be working then, on the mailbox server, look for log files in the folder C:\\Program Files\\Microsoft\\Exchange server\\V15\\Logging\\OWA\\InstantMessaging. If either the Logging or the InstantMessaging folders do not exist that indicates that integration has failed. In that case, you can use SIPStack tracing on Lync Server (All Levels and All Flags) to try and determine why integration failed.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 03/04/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Client interoperability in Lync 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-03-04_
 
 This topic discusses the ability of Microsoft Lync Server 2013 clients to coexist and interact with clients from earlier versions of Lync Server and Office Communications Server.
-
-<div>
 
 ## Server and Client Compatibility
 
@@ -143,15 +128,9 @@ The following table shows the supported combinations of client versions and serv
 
 5 For limitations, see "Conferencing Feature Support for Lync 2013 Clients in Lync Server 2010 Meetings" later in this topic.
 
-</div>
-
-<div>
-
 ## Interoperability among Clients
 
 With the Lync Server 2013 release, various client versions can interact seamlessly in both peer-to-peer and conferencing scenarios. This section discusses feature availability when users interact with other users who are using different versions of clients and servers.
-
-<div>
 
 ## Peer-to-Peer Feature Support
 
@@ -163,15 +142,11 @@ Peer-to-peer features are supported for users who are homed on different version
 
 The following table compares feature availability in peer-to-peer sessions where the client is signed in to either Lync Server 2013 or Lync Server 2010.
 
-<div>
-
 
 > [!NOTE]
 > Lync Web App and Lync 2010 Attendee are meeting-only clients and aren’t included in this table.
 
 
-
-</div>
 
 
 <table style="width:100%;">
@@ -228,27 +203,27 @@ The following table compares feature availability in peer-to-peer sessions where
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Lync 2010 Mobile</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Lync Phone Edition</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Office Communicator 2007 R2</p></td>
@@ -263,10 +238,10 @@ The following table compares feature availability in peer-to-peer sessions where
 <td><p>Public IM (AOL, Yahoo!)</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Public IM (MSN, Windows Live Messenger)</p></td>
@@ -274,14 +249,12 @@ The following table compares feature availability in peer-to-peer sessions where
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 
-
-<div>
 
 
 > [!IMPORTANT]
@@ -295,23 +268,13 @@ The following table compares feature availability in peer-to-peer sessions where
 
 
 
-</div>
-
 1 In Office Communicator 2007 R2, only desktop sharing (and not program sharing) is available.
-
-<div>
 
 
 > [!NOTE]
 > Desktop sharing between Office Communicator 2007 R2 and Skype for Business 2015 cannot be initiated from the newer client when the Skype for Business 2015 client user interface is enforced.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Conferencing Feature Support for Lync 2013 Clients in Lync Server 2010 Meetings
 
@@ -324,10 +287,6 @@ When users join Lync Server 2010 meetings with a Lync 2013 client, they have acc
   - The participant list displays by default in video conferences.
 
   - When right-clicking a user in the participants list, the **Lock the Video Spotlight** and **Pin to Gallery** participant management options are unavailable.
-
-</div>
-
-<div>
 
 ## Conferencing Feature Support in Lync Server 2013 Meetings
 
@@ -409,13 +368,13 @@ In Lync Server 2013 meetings, certain conferencing features are supported for us
 <tr class="odd">
 <td><p>Office Communicator 2007 R2 4</p></td>
 <td><p>Yes</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -429,12 +388,6 @@ In Lync Server 2013 meetings, certain conferencing features are supported for us
 
 4The presence and IM features in Office Communicator 2007 R2 are compatible with Lync Server 2013, but conferencing features are not. During migration from Office Communications Server 2007 R2, Office Communicator 2007 R2 is suitable for presence and IM interoperability, but users should use Lync Web App 2013 to join Lync Server 2013 meetings.
 
-</div>
-
-</div>
-
-<div>
-
 ## Scheduling Add-in Support
 
 Server support for the various scheduling add-ins is consistent with server and client version compatibility. In general, the following scheduling add-ins are supported on Lync Server 2013. However, previous versions of add-ins do not provide new Lync 2013 add-in features, such as the option to mute all attendee audio and video upon meeting entry.
@@ -445,15 +398,11 @@ Server support for the various scheduling add-ins is consistent with server and 
 
   - **Office Communicator 2007 R2 Conferencing Add-in**   Provides scheduling for both Office Live Meeting conferences and Office Communicator 2007 R2 conferences. 
 
-<div>
-
 
 > [!NOTE]
 > Live Meeting conferences cannot be scheduled on Lync Server 2013.
 
 
-
-</div>
 
 
 <table>
@@ -500,37 +449,16 @@ Server support for the various scheduling add-ins is consistent with server and 
 </table>
 
 
-</div>
-
-<div>
-
 ## Support for Joining Meetings
 
 All of the clients that Lync Server 2013 supports are allowed to join Lync 2013 meetings. Because Lync Web App is a web component of the server, in cases where Lync Web App is used to join a Lync Server 2013 meeting, the newer version of Lync Web App is always used.
 
 Lync 2013 clients can join meetings hosted on Lync 2010 and Office Communications Server 2007 R2 with scaled-down functionality. In-meeting features are limited by the version of the server on which the meeting is hosted.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Lync Windows Store app requirements for Lync Server 2013](lync-server-2013-lync-windows-store-app-requirements.md)  
 [New conferencing features in Lync Server 2013](lync-server-2013-new-conferencing-features.md)  
-[What's new for clients in Lync Server 2013](lync-server-2013-what-s-new-for-clients.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[What's new for clients in Lync Server 2013](lync-server-2013-what-s-new-for-clients.md)
 

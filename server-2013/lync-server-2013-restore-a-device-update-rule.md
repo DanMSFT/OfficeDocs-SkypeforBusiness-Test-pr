@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Restore a Device Update rule in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 To uninstall a device update rule from the devices in your deployment, restore it. Restoring a device update rule both uninstalls the update and reinstalls the previous version of that rule.
 
 You can restore a device update rule by using either Lync Server Control Panel or Windows PowerShell.
-
-<div>
 
 ## To restore device update rules by using Lync Server Control Panel
 
@@ -48,15 +33,9 @@ You can restore a device update rule by using either Lync Server Control Panel o
 
 5.  Click the **Action** menu, and then click **Restore**.
 
-</div>
-
-<div>
-
 ## Restoring Device Update Rules by Using Windows PowerShell Cmdlets
 
 Device updates rules can also be restored by using Windows PowerShell and the **Restore-CsDeviceUpdateRule** cmdlet.. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
@@ -64,19 +43,11 @@ Device updates rules can also be restored by using Windows PowerShell and the **
 
 
 
-</div>
-
-<div>
-
 ## To restore a single device update rule on a server
 
   - The following command restores the device update rule d5ce3c10-2588-420a-82ac-dc2d9b1222ff9 on the Web server atl-cs-001.litwareinc.com:
     
         Restore-CsDeviceUpdateRule -Identity "service:WebServer:atl-cs-001.litwareinc.com/d5ce3c10-2588-420a-82ac-dc2d9b1222ff9"
-
-</div>
-
-<div>
 
 ## To restore all the device update rules on a server
 
@@ -84,19 +55,5 @@ Device updates rules can also be restored by using Windows PowerShell and the **
     
         Get-CsDeviceUpdateRule -Filter "service:WebServer:atl-cs-001.litwareinc.com*" | Restore-CsDeviceUpdateRule
 
-</div>
-
-For details, see the Help topic for the [Restore-CsDeviceUpdateRule](restore-csdeviceupdaterule.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see the Help topic for the [Restore-CsDeviceUpdateRule](https://technet.microsoft.com/en-us/library/gg398305\(v=ocs.15\)) cmdlet.
 

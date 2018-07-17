@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Import Device Update rules in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Device update rules can be imported only by using Windows PowerShell and the **Import-CsDeviceUpdate** cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
@@ -36,12 +21,6 @@ Device update rules can be imported only by using Windows PowerShell and the **I
 
 
 
-</div>
-
-<div>
-
-
-<div>
 
 ## To import device update rules to a single web server
 
@@ -49,40 +28,17 @@ Device update rules can be imported only by using Windows PowerShell and the **I
     
         Import-CsDeviceUpdate -Identity "service:WebServer:atl-cs-001.litwareinc.com" -FileName C:\Updates\UCUpdates.cab
 
-</div>
-
-<div>
-
 ## To import device update rules to all your web servers
 
   - In this example, device update rules are imported to all the Web servers deployed in your organization. For this command to work, the folder \\\\atl-fs-001.litwareinc.com\\Updates must be shared and available to all the Web servers.
     
         Get-CsService -WebServer | ForEach-Object {Import-CsDeviceUpdate -Identity $_.Identity -FileName \\atl-fs-001.litwareinc.com\Updates\UCUpdates.cab}
 
-</div>
-
-For details, see the Help topic for the [Import-CsDeviceUpdate](import-csdeviceupdate.md) cmdlet.
-
-</div>
-
-<div>
+For details, see the Help topic for the [Import-CsDeviceUpdate](https://technet.microsoft.com/en-us/library/gg398861\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
 [View information about Device Update rules in Lync Server 2013](lync-server-2013-view-information-about-device-update-rules.md)  
-[Approve a Device Update rule in Lync Server 2013](lync-server-2013-approve-a-device-update-rule.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Approve a Device Update rule in Lync Server 2013](lync-server-2013-approve-a-device-update-rule.md)
 

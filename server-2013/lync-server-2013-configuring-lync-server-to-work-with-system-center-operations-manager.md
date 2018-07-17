@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Lync Server 2013 to work with System Center Operations Manager
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 In order to configure your Microsoft Lync Server 2013 infrastructure to work with System Center Operations Manager you must do three things:
 
@@ -36,8 +23,6 @@ In order to configure your Microsoft Lync Server 2013 infrastructure to work wit
 
 The topics in this section contain instructions for carrying out each of these tasks.
 
-<div>
-
 ## In This Section
 
   - [Configuring the primary management server in Lync Server 2013](lync-server-2013-configuring-the-primary-management-server.md)
@@ -47,16 +32,4 @@ The topics in this section contain instructions for carrying out each of these t
   - [Configuring the Lync Server computers that will be monitored in Lync Server 2013](lync-server-2013-configuring-the-lync-server-computers-that-will-be-monitored.md)
 
   - [Installing and configuring watcher nodes in Lync Server 2013](lync-server-2013-installing-and-configuring-watcher-nodes.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

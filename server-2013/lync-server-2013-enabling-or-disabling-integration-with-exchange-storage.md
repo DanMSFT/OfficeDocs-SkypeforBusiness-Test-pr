@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enabling or disabling integration of Lync Server 2013 with Exchange storage
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-09_
 
 In Lync Server 2013 Control Panel, you use Archiving configurations to enable and disable integration with Exchange storage. This includes the following Archiving configurations:
 
@@ -33,8 +20,6 @@ In Lync Server 2013 Control Panel, you use Archiving configurations to enable an
   - Optional site-level and pool-level configurations that you can create and use to specify how archiving is implemented for specific sites or pools.
 
 For details about how Archiving configurations are implemented, including which options you can specify and the hierarchy of Archiving configurations, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.
-
-<div>
 
 ## To enable or disable integration with Microsoft Exchange storage
 
@@ -52,28 +37,11 @@ For details about how Archiving configurations are implemented, including which 
 
 5.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md)  
 
 
-[Managing Archiving configuration options in Lync Server 2013 for your organization, sites, and pools](lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing Archiving configuration options in Lync Server 2013 for your organization, sites, and pools](lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md)
 

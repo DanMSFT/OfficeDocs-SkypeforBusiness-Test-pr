@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying call management features in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-18_
 
 Enterprise Voice call management features control how incoming calls are routed and answered. Lync Server 2013 provides the following call management features:
 
@@ -38,8 +25,6 @@ Enterprise Voice call management features control how incoming calls are routed 
 
 This section describes how to configure these call management features during an Enterprise Voice deployment.
 
-<div>
-
 ## In This Section
 
   - [Configuring Call Park in Lync Server 2013](lync-server-2013-configuring-call-park.md)
@@ -49,16 +34,4 @@ This section describes how to configure these call management features during an
   - [Configuring Response Group in Lync Server 2013](lync-server-2013-configuring-response-group.md)
 
   - [Configuring announcements for unassigned numbers in Lync Server 2013](lync-server-2013-configuring-announcements-for-unassigned-numbers.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Monitoring back end Lync Server 2013 storage performance
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-02_
 
 The Lync Server 2013 back-end databases are a very important part of the Lync Server 2013 deployment. We recommend constantly monitoring the databases and respective transaction logs to help to make sure that the Lync Server 2013 back end is performing optimally.
 
@@ -46,55 +33,44 @@ The following table identifies performance counters that should be monitored to 
 <tbody>
 <tr class="odd">
 <td><p>Transactions/sec (RTC)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Transactions/sec (rtcdyn)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Transactions/sec (tempdb)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Log Flushes/sec (RTC)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Log Flushes/sec (rtcdyn)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Log Flushes/sec (tempdb)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Disk Transfers/sec (read+write) - RTC db</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Disk Transfers/sec - RTC log</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Disk Transfers/sec - rtcdyn db</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Disk Transfers/sec - rtcdyn log</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

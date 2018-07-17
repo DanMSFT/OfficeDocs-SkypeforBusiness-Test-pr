@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Archiving options at the global level in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-10_
 
 When you add Archiving to your topology and publish the topology, Lync Server creates a global configuration for Archiving. By default, no Archiving options are enabled in the global configuration. The global configuration controls which options are enabled for your entire deployment, unless you set up site or pool configurations, which override the global configuration.
 
 For details about how Archiving configurations work, including the hierarchy for global, site, and pool configurations, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.
-
-<div>
 
 
 > [!NOTE]
 > You should specify all appropriate options in the Archiving configurations before enabling Archiving.
 
 
-
-</div>
-
-<div>
 
 ## To configure archiving options at the global level
 
@@ -73,16 +54,4 @@ For details about how Archiving configurations work, including the hierarchy for
           - To limit purging to archiving data that has been exported, click **Purge exported archiving data only**.
 
 7.  Click **Commit**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

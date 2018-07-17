@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delegating administrative control of Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 In Lync Server 2013, administrative tasks are delegated to users by using the new role-based access control (RBAC) feature. When you install Lync Server, a number of RBAC roles are created for you. These roles correspond to universal security groups in Active Directory Domain Services. For example, the RBAC role CsHelpDesk corresponds to the CsHelpDesk group found in the Users container in Active Directory Domain Services. In addition, each RBAC role is associated with a set of Lync Server Windows PowerShell cmdlets. These cmdlets represent the tasks that can be carried out by users who have been assigned the given RBAC role. For example, the CsHelpDesk role has been assigned the Lock-CsClientPin and UnlockCsClientPin cmdlets. That means users who have been assigned the CsHelpDesk role can lock and unlock user PIN numbers. However, the CsHelpDesk role has not been assigned the New-CsVoicePolicy cmdlet. That means that users who have been assigned the CsHelpDesk role cannot create new voice policies.
-
-<div>
 
 ## Viewing Information about RBAC Roles
 
@@ -41,10 +26,6 @@ Keep in mind that the Identity of the RBAC role (for example, CsVoiceAdministrat
 To view a list of the cmdlets that have been assigned to a role, use a command similar to this:
 
     Get-CsAdminRole -Identity "CsHelpDesk" | Select-Object -ExpandProperty Cmdlets
-
-</div>
-
-<div>
 
 ## Assigning an RBAC Role to a User
 
@@ -66,19 +47,7 @@ To assign an RBAC role to a user, you must add that user to the appropriate Acti
 
 7.  In the **Properties** dialog box, click **OK**.
 
-To verify that the RBAC role has been assigned, use the [Get-CsAdminRoleAssignment](get-csadminroleassignment.md) cmdlet, passing the cmdlet the SamAccountName (Active Directory logon name) of the user. For example, run this command from within the Lync Server Management Shell:
+To verify that the RBAC role has been assigned, use the [Get-CsAdminRoleAssignment](https://technet.microsoft.com/en-us/library/gg398434\(v=ocs.15\)) cmdlet, passing the cmdlet the SamAccountName (Active Directory logon name) of the user. For example, run this command from within the Lync Server Management Shell:
 
     Get-CsAdminRoleAssignment  -Identity "kenmyer"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

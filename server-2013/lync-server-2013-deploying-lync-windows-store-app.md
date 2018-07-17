@@ -8,33 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying Lync Windows Store app in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-12-03_
 
 Before making Lync Windows Store app available to users, make sure that your deployment meets the [Lync Windows Store app requirements for Lync Server 2013](lync-server-2013-lync-windows-store-app-requirements.md). For details about configuring Lync Server 2013 to support Lync Windows Store app, see the NextHop Blog article, "Lync Server Autodiscover and the Lync Windows Store App," at [http://go.microsoft.com/fwlink/?LinkId=271966](http://go.microsoft.com/fwlink/?linkid=271966). After your server environment is configured correctly, you can direct users to download the Lync app from the Windows Store by searching for "Lync."
-
-<div>
 
 ## Enabling Multi-Factor Authentication for Lync Windows Store app
 
 Cumulative Updates for Lync Server 2013: June 2013 adds support for multi-factor authentication for Lync Windows Store app clients. In addition to user name and password, you can require additional authentication methods, such as smart cards or PINs, to authenticate external users when they sign in to Lync meetings. To enable multi-factor authentication, you deploy Active Directory Federation Service (AD FS) federation server and enable passive authentication in Lync Server 2013. After AD FS is configured, external users who attempt to join Lync meetings are presented with an AD FS multi-factor authentication webpage that contains the user name and password challenge along with any additional authentication methods that you have configured.
-
-<div class=" ">
 
 
 > [!IMPORTANT]
@@ -50,8 +33,6 @@ Cumulative Updates for Lync Server 2013: June 2013 adds support for multi-factor
 > <P>When you establish a relying party trust between Lync Server and AD FS servers, assign a token life that is long enough to span the maximum length of your Lync meetings. Typically, a token life of 240 minutes is sufficient.</P></LI></UL>
 
 
-
-</div>
 
 **To Configure Multi-Factor Authentication**
 
@@ -69,25 +50,13 @@ Cumulative Updates for Lync Server 2013: June 2013 adds support for multi-factor
 
 5.  Set the following relying party rules:
     
-       ```
         $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'$IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
-       ```
     
-       ```
         Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
-       ```
     
-       ```
         Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
-       ```
-
-</div>
-
-<div>
 
 ## Known Issues that Can Prevent Sign-in
-
-<div>
 
 ## The time and date are not set accurately on the device running Lync Windows Store app
 
@@ -95,17 +64,9 @@ The time setting on the device must be synchronized with the time setting on the
 
     w32tm /resync
 
-</div>
-
-<div>
-
 ## Lync Windows Store app cannot access the Lync server or services
 
 Lync Windows Store app may not be able to access the Lync server or services through network adapters, such as 4G LTE USB modems, that do not register with Windows 8 as physical devices. Lync Windows Store app may have this issue even when the desktop apps and browsers are able to access other servers and web sites.
-
-</div>
-
-<div>
 
 ## Lync Windows Store app cannot sign in with Lync Server 2010 and Office Communications Server 2007 R2 Edge Server
 
@@ -121,19 +82,9 @@ If your topology consists of Lync Server 2010 with Office Communications Server 
         
             Set-CsAutodiscoverConfiguration -ExternalSipClientAccessFqdn <FQDN of server used for external client access> -ExternalSipClientAccessPort 443
 
-</div>
-
-<div>
-
 ## Lync Windows Store App cannot sign in due to a certificate name validation failure
 
 A sign-in issue can occur for Office 365 users who are not running the latest version of Lync Windows Store app. This issue generally occurs when using multiple domains (for example, when the SIP URI is **userA@domainZ.com** but the Edge Server is **sip.domainX.com**). To fix the issue, users should install the latest version of Lync Windows Store app, which also requires Windows 8.1.
-
-</div>
-
-</div>
-
-<div>
 
 ## Use Lync Windows Store app logs to troubleshoot issues
 
@@ -166,16 +117,4 @@ Before you get the logs from a user, make sure that logging is turned on, and th
 3.  Swipe from the right side of the screen. If you’re using a mouse, point to the upper-right corner of the screen and then move the mouse pointer down the screen.
 
 4.  Select **Settings**, select **About**, and then select **Save logs**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

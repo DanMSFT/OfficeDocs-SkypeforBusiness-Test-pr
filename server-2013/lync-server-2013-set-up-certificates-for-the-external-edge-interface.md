@@ -8,25 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Set up certificates for the external edge interface for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-08_
-
-<div>
 
 
 > [!IMPORTANT]
@@ -34,15 +19,11 @@ _**Topic Last Modified:** 2012-09-08_
 
 
 
-</div>
-
 Each Edge Server requires a public certificate on the interface between the perimeter network and the Internet, and the certificate’s subject alternative name must contain the external names of the Access Edge service and Web Conferencing Edge service fully qualified domain names (FQDNs).
 
 For details about this and other certificate requirements, see [Certificate requirements for external user access in Lync Server 2013](lync-server-2013-certificate-requirements-for-external-user-access.md).
 
 For a list of public certification authorities (CAs) that provide certificates that comply with specific requirements for unified communications certificates and have partnered with Microsoft to ensure they work with the Lync Server 2013 Certificate Wizard, see Microsoft Knowledge Base article 929395, "Unified Communications Certificate Partners for Exchange Server and for Communications Server," at [http://go.microsoft.com/fwlink/p/?linkId=202834](http://go.microsoft.com/fwlink/p/?linkid=202834).
-
-<div>
 
 ## Configuring Certificates on the External Interfaces
 
@@ -64,20 +45,15 @@ When you request a certificate from an External CA, the credentials provided mus
 
 If you decide to use the Certificates Microsoft Management Console (MMC) to import the certificate chain and certificate, you must import them to the certificate store for the computer. If you import them to the user or service certificate store, the certificate will not be available for assignment in the Lync Server 2013 Certificate Wizard.
 
-<div>
-
 ## To create the certificate request for the external interface of the Edge Server
 
 1.  On the Edge Server, in the Deployment Wizard, next to **Step 3: Request, Install, or Assign Certificates**, click **Run again**.
-    
-    <div>
     
 
     > [!NOTE]
     > If your organization wants to support public instant messaging (IM) connectivity with AOL, you cannot use the Lync Server Deployment Wizard to request the certificate. Instead, perform the steps in the “To create a certificate request for the external interface of the Edge Server to support public IM connectivity with AOL” procedure later in this topic.<BR>If you have multiple Edge Servers in one location in a pool, you can run the Lync Server 2013 Certificate Wizard on any one of the Edge Servers.
 
-    
-    </div>
+
 
 2.  On the **Available Certificate Tasks** page, click **Create a new certificate request**.
 
@@ -123,10 +99,6 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
 
 16. Copy the output file to a location where you can submit it to the public CA.
 
-</div>
-
-<div>
-
 ## To create a certificate request for the external interface of the Edge Server to support public IM connectivity with AOL
 
 1.  When the required template is available to the CA, use the following Windows PowerShell cmdlet from at the Edge Server to request the certificate:
@@ -135,18 +107,11 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
     
     The default certificate name of the template provided in Lync Server 2013 is Web Server. Only specify the \<template name\> if you need to use a template that is different from the default template.
     
-    <div>
-    
 
     > [!NOTE]
     > If your organization wants to support public IM connectivity with AOL, you must use Windows PowerShell instead of the Certificate Wizard to request the certificate to be assigned to the external edge for the Access Edge service. This is because the Lync Server 2013 Web Server template that the Certificate Wizard uses to request a certificate does not support client EKU configuration. Before using Windows PowerShell to create the certificate, the CA administrator must create and deploy a new template that supports client EKU.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To submit a request to a public certification authority
 
@@ -168,10 +133,6 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
 
 5.  Copy the text from the email message and save the contents in a text file (.txt) on your local computer.
 
-</div>
-
-<div>
-
 ## To import the certificate for the external interface of the Edge Server
 
 1.  Log on as a member of the Administrators group to the same Edge Server on which you created the certificate request.
@@ -188,10 +149,6 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
 
 7.  If you are configuring an Edge Server pool, export the certificate with its private key as outlined in the “To export the certificate with the private key for Edge Servers in a pool” procedure later in this topic. Copy the exported certificate file to the other Edge Servers, and import it into the computer store on each Edge Server.
 
-</div>
-
-<div>
-
 ## To export the certificate with the private key for Edge Servers in a pool
 
 1.  Log on as a member of the Administrators group to the same Edge Server on which you imported the certificate.
@@ -206,27 +163,21 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
 
 6.  Double-click **Certificates (Local Computer)** to expand the certificate stores, double-click **Personal**, and then double-click **Certificates**.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > If there are no certificates in the Certificates Personal store for the local computer, there is no private key associated with the certificate that was imported. Review the request and import steps. If the problem persists, contact your certification authority administrator or provider.
 
-    
-    </div>
+
 
 7.  In the **Certificates Personal store for the local computer**, right-click the certificate that you are exporting, click **All Tasks**, and then click **Export**.
 
 8.  In the Certificate Export Wizard, click **Next**, select **Yes, export the private key**, and then click **Next**.
     
-    <div>
-    
 
     > [!NOTE]
     > If the selection <STRONG>Yes, export the private key</STRONG> is not available, the private key associated with this certificate was not marked for export. You will need to request the certificate again, ensuring that the certificate is marked to allow for the export of the private key before you can continue with the export. Contact your certification authority administrator or provider.
 
-    
-    </div>
+
 
 9.  On the Export File Formats dialog, select **Personal Information Exchange – PKCS\#12 (.PFX)** and then select the following:
     
@@ -234,14 +185,11 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
     
       - Export all extended properties
         
-        <div>
-        
 
         > [!WARNING]
         > When exporting the certificate from an Edge server, do not select <STRONG>Delete the private key if the export is successful</STRONG>. Selecting this option will require that you import the certificate and the private key to this Edge server.
 
-        
-        </div>
+
 
 10. Click **Next**.
 
@@ -255,10 +203,6 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
 
 15. Import the exported certificate file to the other Edge servers following the steps outlined in the “To import the certificate for the external interface of the Edge Server” procedure earlier in this topic.
 
-</div>
-
-<div>
-
 ## To assign the certificate for the external interface of the Edge Server
 
 1.  On each Edge Server, in the Deployment Wizard, next to **Step 3: Request, Install, or Assign Certificates**, click **Run again**.
@@ -271,14 +215,11 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
 
 5.  On the **Certificate Store** page, select the public certificate that you requested and imported for the external interface of the Edge Server.
     
-    <div>
-    
 
     > [!NOTE]
     > If the certificate you requested and imported is not in the list, one of the trouble shooting methods is to verify that subject name and subject alternative names of the certificate meet all requirements for the certificate and, if you manually imported the certificate and certificate chain instead of using the preceding procedures, that the certificate is in the correct certificate store (the computer certificate store, not the user or service certificate store).
 
-    
-    </div>
+
 
 6.  On the **Certificate Assignment Summary** page, review your settings, and then click **Next** to assign the certificates.
 
@@ -287,18 +228,4 @@ If you decide to use the Certificates Microsoft Management Console (MMC) to impo
 8.  After using this procedure to assign the edge certificate, open the Certificate snap-in on each server, expand **Certificates (Local computer)**, expand **Personal**, click **Certificates**, and then verify in the details pane that the certificate is listed.
 
 9.  If your deployment includes multiple Edge Servers, repeat this procedure for each Edge Server.
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

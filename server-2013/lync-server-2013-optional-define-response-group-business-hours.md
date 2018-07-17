@@ -8,31 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # (Optional) Define Response Group business hours in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
-
-<div>
 
 ## Defining Business Hours
 
 Business hour settings define when the workflow is available to answer calls and specify the actions to take for calls outside of business hours. Response Group administrators can use the **New-CsRgsHoursOfBusiness** cmdlet to create predefined schedules that you can use for any number of response groups.
-
-<div>
 
 
 > [!TIP]
@@ -40,29 +23,17 @@ Business hour settings define when the workflow is available to answer calls and
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > If a workflow is defined as a Managed workflow, then any user who is assigned the CsResponseGroupManager role can set and modify custom business hours for workflows that they manage.
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > Use 24-hour notation for the parameters in the following cmdlets (for example, 20:00=8:00 P.M.).
 
 
-
-</div>
-
-<div>
 
 ## To create a predefined business hours collection
 
@@ -85,12 +56,6 @@ Business hour settings define when the workflow is available to answer calls and
         $c = NewRgsTimeRange -Name "Saturday Afternoon Hours" -OpenTime "14:00" -CloseTime "18:00" 
         New-CsRgsHoursOfBusiness -Parent "ApplicationServer:Redmond.contoso.com" -Name "Help Desk Business Hours" -MondayHours1 $a -TuesdayHours1 $a -WednesdayHours1 $a -ThursdayHours1 $a -FridayHours1 $a -SaturdayHours1 $b -SaturdayHours2 $c
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -98,19 +63,6 @@ Business hour settings define when the workflow is available to answer calls and
 [Create or modify an interactive workflow in Lync Server 2013](lync-server-2013-create-or-modify-an-interactive-workflow.md)  
 
 
-[New-CsRgsTimeRange](new-csrgstimerange.md)  
-[New-CsRgsHoursOfBusiness](new-csrgshoursofbusiness.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsRgsTimeRange](https://technet.microsoft.com/en-us/library/gg399040\(v=ocs.15\))  
+[New-CsRgsHoursOfBusiness](https://technet.microsoft.com/en-us/library/gg398291\(v=ocs.15\))
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Check Lync Server 2013 server certificates
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-01_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-11-01_
 </table>
 
 
-<div>
-
 ## Description
 
 The Get-CsCertificate cmdlet enables you to retrieve information about each of your Lync Server certificates. That’s especially important because certificates have a built-in expiration date. For example,, privately-issued certificates typically expire after 12 months. If any of your Lync Server certificates expire then you'll lose the accompanying functionality until that certificate is renewed or replaced.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -80,10 +61,6 @@ Thumbprint Use
 \---------- ---
 
 A9D51A2911C74FABFF7F2A8A994B20857D399107 Default
-
-</div>
-
-<div>
 
 ## Reviewing the output
 
@@ -147,25 +124,8 @@ LYNC-SE.fabrikam.com
 
 Dialin.fabrikam.com
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsCertificate](get-cscertificate.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsCertificate](https://technet.microsoft.com/en-us/library/gg398227\(v=ocs.15\))
 

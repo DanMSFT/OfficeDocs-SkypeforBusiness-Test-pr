@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Best practices for backup and restoration for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 This section includes two types of best practices:
 
   - Best practices for backup and restoration.
 
   - Best practices for minimizing the impact of a disaster.
-
-<div>
 
 ## Best Practices for Backup and Restoration
 
@@ -54,10 +39,6 @@ To facilitate your backup and restoration process, apply the following best prac
 
   - Validate your backup and restoration processes in advance to make sure that they work as expected.
 
-</div>
-
-<div>
-
 ## Best Practices for Minimizing the Impact of a Disaster
 
 The best strategy for dealing with disastrous service interruptions (caused by unmanageable events such as power outages or sudden hardware failures) is to assume they will happen, and to plan accordingly.
@@ -77,16 +58,4 @@ The disaster management plans that you develop as part of your backup and restor
   - Keeping spare hardware available, or, if you have a service level agreement (SLA), contracting with hardware vendors and suppliers for prompt replacements.
 
   - Separating the location of your transaction log files (.ldf files) and database files (.mdf files).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Managing locations for ELIN gateways in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 To have Lync Server automatically provide locations for clients within a network, you need to perform the following tasks:
 
@@ -36,25 +23,17 @@ To have Lync Server automatically provide locations for clients within a network
 
 For details about how to perform these tasks, see [Configure the location database in Lync Server 2013](lync-server-2013-configure-the-location-database.md) in the Deployment documentation.
 
-<div>
-
 
 > [!NOTE]
 > Locations added to the central location database are not available to the client until they have been published by using a Lync Server Management Shell command and are replicated to the pool's local stores. For details, see <A href="lync-server-2013-publish-the-location-database.md">Publish the location database from Lync Server 2013</A> in the Deployment documentation.
 
 
 
-</div>
-
 This section describes things to consider as you plan to update and maintain the location database.
-
-<div>
 
 ## Planning Emergency Locations
 
 When you use ELIN gateways, you populate the Location Information service database with the civic address, a specific location within a building, and at least one ELIN for each location . During the planning phase, it is a good idea to decide how you want to name the locations and how you want to assign ELINs.
-
-<div>
 
 ## Planning Location Names
 
@@ -65,10 +44,6 @@ The Location Information service **Location** field, which holds the specific lo
   - A location identifier that helps users to easily see that their Lync client picked up the correct location. The Lync client automatically concatenates and displays the discovered **Location** and **City** fields in its header. A good practice is to add the street address of the building to each location identifier (for example, "1st Floor \<street number\>"). Without the street address, a generic location identifier such as "1st Floor" could apply to any building in the city.
 
   - If the location is approximate because it’s determined by a wireless access point, you may want to add the word Near (for example, "Near 1st Floor 1234").
-
-</div>
-
-<div>
 
 ## Planning ELINs
 
@@ -115,12 +90,6 @@ The locations you define should meet the following requirements:
 
   - Are specific enough to make it easy to locate the emergency caller.
 
-</div>
-
-</div>
-
-<div>
-
 ## Populating the Location Database
 
 The following questions will help you determine how to will populate the location database.
@@ -137,10 +106,6 @@ The following questions will help you determine how to will populate the locatio
 
 For details about populating the location database, see [Configure the location database in Lync Server 2013](lync-server-2013-configure-the-location-database.md) in the Deployment documentation.
 
-</div>
-
-<div>
-
 ## Maintaining the Location Database
 
 After you populate the location database, you need to develop a strategy for updating the database as the network configuration changes. The following questions will help you determine how to maintain the location database.
@@ -152,16 +117,4 @@ After you populate the location database, you need to develop a strategy for upd
 
   - **Will you use an SNMP application to match Lync client MAC addresses to port and switch identifiers?**  
     If you use an SNMP application, you need to develop a manual process for keeping the switch chassis and port information consistent between the SNMP application and the location database. If the SNMP application returns a chassis IP address or port ID that is not included in the database, the Location Information service will not be able to return a location to the client.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

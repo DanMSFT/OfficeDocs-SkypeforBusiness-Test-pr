@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Example: Gathering your requirements for call admission control in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 This example shows you how to plan for and implement call admission control (CAC). At a high level, this consists of the following activities:
 
@@ -42,8 +29,6 @@ This example shows you how to plan for and implement call admission control (CAC
 
 7.  Define a route between every pair of network regions.
 
-<div>
-
 ## Gather the Required Information
 
 To prepare for call admission control, gather the information described in the following steps:
@@ -60,14 +45,10 @@ To prepare for call admission control, gather the information described in the f
     
     ![Network Topology Example with 3 Network Regions](images/Gg425827.08937347-250f-488f-ba5f-c256e6afcd8b(OCS.15).jpg "Network Topology Example with 3 Network Regions")  
     
-    <div>
-    
 
     > [!NOTE]
     > A Multiprotocol Label Switching (MPLS) network should be represented as a network region in which each geographic location has a corresponding network site. For details, see the “<A href="lync-server-2013-call-admission-control-on-an-mpls-network.md">Call admission control on an MPLS network with Lync Server 2013</A>” topic in the Planning documentation.
 
-    
-    </div>
     
     In the preceding example network topology, there are three network regions, each with a Lync Server central site that manages CAC. The appropriate central site for a network region is chosen by the geographic vicinity. Because media traffic will be heaviest within network regions, the ownership by geographic vicinity makes it self-contained and will continue to be functional even if other central sites become unavailable.
     
@@ -104,14 +85,11 @@ To prepare for call admission control, gather the information described in the f
     </tbody>
     </table>
     
-    <div>
-    
 
     > [!NOTE]
     > Depending on your Lync Server topology, the same central site can be assigned to multiple network regions.
 
-    
-    </div>
+
 
 3.  For each network region, identify all of the network sites (offices or locations) whose WAN connections are not bandwidth-constrained. Because these sites are not bandwidth constrained, you do not need to apply CAC bandwidth policies to them.
     
@@ -280,16 +258,10 @@ To prepare for call admission control, gather the information described in the f
 
 6.  For every subnet in your network, specify its associated network site.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Every subnet in your network must be associated with a network site, even if the network site is not bandwidth constrained. This is because call admission control uses subnet information to determine at which network site an endpoint is located. When the locations of both parties in the session are determined, call admission control can determine if there is sufficient bandwidth to establish a call. When a session is established over a link that has no bandwidth limits, an alert is generated.<BR>If you deploy Audio/Video Edge Servers, the public IP addresses of each Edge Server must be associated with the network site where the Edge Server is deployed. Each public IP address of the A/V Edge Server must be added to your network configuration settings as a subnet with a subnet mask of 32. For example, if you deploy A/V Edge Servers in Chicago, then for each external IP address of those servers create a subnet with a subnet mask of 32 and associate network site Chicago with those subnets. For details about public IP addresses, see <A href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">Determine external A/V firewall and port requirements for Lync Server 2013</A> in the Planning documentation.
 
-    
-    </div>
-    
-    <div>
     
 
     > [!NOTE]
@@ -300,8 +272,6 @@ To prepare for call admission control, gather the information described in the f
     > <LI>
     > <P>Be sure that the 10.121.248.0/24 and 10.121.249.0/24 subnets are each associated with a network site.</P></LI></OL>
 
-    
-    </div>
     
     ### Network Sites and Associated Subnets (Bandwidth in kbps)
     
@@ -459,14 +429,10 @@ To prepare for call admission control, gather the information described in the f
 
 8.  Define a route between every pair of network regions.
     
-    <div>
-    
 
     > [!NOTE]
     > Two links are required for the route between the North America and APAC regions because there is no region link that directly connects them.
 
-    
-    </div>
     
     ### Region Routes
     
@@ -562,33 +528,12 @@ To prepare for call admission control, gather the information described in the f
     </table>
 
 
-<div>
-
 ## Next Steps
 
 After you have gathered the required information, you can perform CAC deployment either by using the Lync Server Management Shell or Lync Server Control Panel.
-
-<div>
 
 
 > [!NOTE]
 > Although you can perform most network configuration tasks by using Lync Server Control Panel, to create subnets and intersite links, you must use Lync Server Management Shell. For details, see the Lync Server Management Shell documentation for the <STRONG>New-CsNetworkSubnet</STRONG> cmdlet and the <STRONG>New-CsNetworkIntersitePolicy</STRONG> cmdlet.
 
-
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

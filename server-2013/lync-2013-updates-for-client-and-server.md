@@ -8,35 +8,16 @@ ms.date: 11/12/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Updates for Lync 2013 client and Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-12_
 
 To ensure that you have the latest version of Lync client, check out this frequently updated list of all client release versions for Microsoft Lync 2013.
-
-<div>
 
 ## Determining your Lync desktop client version
 
 To find out which version of Lync desktop client you are using, open the **About Lync** dialog by clicking the options icon. On the **Options** menu, select **Help** and then select **About Microsoft Lync**. The client version number is usually displayed in the first line on the **About Lync** dialog.
-
-</div>
-
-<div>
 
 ## Lync client updates
 
@@ -143,23 +124,7 @@ Each update for Lync client has its own version number. You can determine the ve
 </table>
 
 
-</div>
-
-<div>
-
 ## Lync Server Updates
 
 For information about updates for Lync Server 2013, see [Updates for Lync Server 2013](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2809243) on the Microsoft support web.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

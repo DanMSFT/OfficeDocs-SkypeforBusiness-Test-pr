@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Modify a voice route in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 This topic explains how to edit a voice route. To create a new route, see [Create a voice route in Lync Server 2013](lync-server-2013-create-a-voice-route.md).
-
-<div>
 
 ## To modify a voice route
 
@@ -62,64 +47,45 @@ This topic explains how to edit a voice route. To create a new route, see [Creat
 
 9.  To associate one or more public switched telephone network (PSTN) trunks with the voice route, click **Add**, and then select a trunk from the list.
     
-    <div>
-    
 
     > [!NOTE]
     > If your deployment includes any Microsoft Office Communications Server 2007 R2 Mediation Servers, they will also be available in the list.
 
-    
-    </div>
+
 
 10. To associate one or more PSTN usages with the voice route, click **Select** and choose a record from the list of PSTN usage records that have been defined for your Enterprise Voice deployment.
-    
-    <div>
     
 
     > [!NOTE]
     > To view the properties of each of the available PSTN usage records, see <A href="lync-server-2013-view-pstn-usage-records.md">View PSTN usage records in Lync Server 2013</A>.<BR>To create or edit PSTN usage records, see <A href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">Create a voice policy and configure PSTN usage records in Lync Server 2013</A> or <A href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">Modify a voice policy and configure PSTN usage records in Lync Server 2013</A>.
 
-    
-    </div>
+
 
 11. Arrange the PSTN usage records for optimum performance. To change a record’s position in the list, highlight the record name and click the up or down arrow.
-    
-    <div>
     
 
     > [!NOTE]
     > In contrast to a voice policy where the order in which PSTN usage records are listed is important, the order of PSTN usage records in a voice route is insignificant. However, we recommend that you organize the list by frequency of use, for example: RedmondLocal, RedmondLongDist, RedmondInternational, RedmondBackup. (Lync Server traverses the list from the top down.)
 
-    
-    </div>
+
 
 12. (Optional) Type a value into the **Enter a translated number to test** field and click **Go**. The test results are displayed under the field.
-    
-    <div>
     
 
     > [!NOTE]
     > You can save a voice route that does not yet pass the test and then reconfigure it later. For details, see <A href="lync-server-2013-test-voice-routing.md">Test voice routing in Lync Server 2013</A>.
 
-    
-    </div>
+
 
 13. Click **OK**.
 
 14. On the **Route** page, click **Commit**, and then click **Commit all**.
     
-    <div>
-    
 
     > [!NOTE]
     > Whenever you create or modify a voice route, you must run the <STRONG>Commit all</STRONG> command to publish the configuration change. For details, see <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">Publish pending changes to the voice routing configuration in Lync Server 2013</A> in the Operations documentation.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -131,18 +97,5 @@ This topic explains how to edit a voice route. To create a new route, see [Creat
 [Publish pending changes to the voice routing configuration in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
 
 
-[Test voice routing in Lync Server 2013](lync-server-2013-test-voice-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test voice routing in Lync Server 2013](lync-server-2013-test-voice-routing.md)
 

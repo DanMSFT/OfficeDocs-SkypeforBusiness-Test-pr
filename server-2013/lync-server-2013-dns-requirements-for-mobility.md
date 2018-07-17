@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS requirements for mobility with Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-13_
 
 When you deploy the Lync Server 2013 mobility feature, you can use the new URLs that are available with the Microsoft Lync Server 2013 Autodiscover Service, or you can use your existing Web Services URLs. If you use your existing URLs, users need to manually enter the URLs in their mobile device settings. This option is typically used for troubleshooting. When you use the new URLs, mobile clients can automatically discover Lync Server 2013 resources. When you support automatic discovery, you need to add new Domain Name System (DNS) records. This section describes the DNS records that are required for automatic discovery.
 
@@ -105,35 +92,19 @@ You need to create one of the following external DNS records:
 <td><p>_sipfederationtls._tcp. &lt;sipdomain&gt;</p>
 <p>Resolves to host (A or AAAA) record for the Access Edge service</p></td>
 <td><p>To support Push Notification Service and Apple Push Notification service, you create one SRV record for each SIP domain that has Microsoft Lync Mobile clients.</p>
-<div>
 
 > [!IMPORTANT]
 > This requirement applies only to Microsoft Lync Mobile clients on Apple or Microsoft based mobile devices. Andriod and Nokia Symbian devices do not use push notification.
 
 
-</div></td>
+</td>
 </tr>
 </tbody>
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > Lyncdiscover, also known as autodiscover, traffic goes through the reverse proxy. SRV record points to a record that resolves through the Access Edge service.
 
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

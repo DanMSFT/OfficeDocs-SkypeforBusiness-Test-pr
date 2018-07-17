@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # How Persistent Chat Server works in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-21_
 
 Lync Server 2013, Persistent Chat Server enables you to participate in multiparty, topic-based conversations that persist over time. Persistent Chat Server can help your organization do the following:
 
@@ -41,8 +28,6 @@ Lync Server 2013, Persistent Chat Server enables you to participate in multipart
   - Increase dispersion of important knowledge and information
 
 You can deploy Persistent Chat Server as an optional role with Lync Server 2013. Persistent Chat services run on a dedicated pool, and a Persistent Chat Server pool depends on a Lync Server pool to route messages to it. Clients use eXtensible Chat Communication Over SIP (XCCOS). The Lync Server Front End Servers are configured to route the traffic to a Persistent Chat Server pool.
-
-<div>
 
 ## High-Level Architecture
 
@@ -62,8 +47,6 @@ Two services run on the Persistent Chat Server Front End Servers:
 
   - Compliance
 
-<div>
-
 ## Persistent Chat (Channel) Service
 
 The Persistent Chat (Channel) service is the core service responsible for Persistent Chat Server. This service provides the following functions:
@@ -78,17 +61,9 @@ The Persistent Chat (Channel) service is the core service responsible for Persis
 
 The Persistent Chat (Channel) service stores and accesses chat room content and other system metadata (authorization rules, and so on) by using the Persistent Chat Store. This service stores files that are uploaded into chat rooms in the Persistent Chat File Store.
 
-</div>
-
-<div>
-
 ## Compliance Service
 
 The Compliance service is an optional component of Persistent Chat Server and is responsible for archiving chat content and events to the Persistent Chat Compliance Store. If your organization has regulations that require Persistent Chat activity to be archived, you can deploy the optional Persistent Chat Compliance service. The Compliance service is installed on each Persistent Chat Server in a Persistent Chat pool. When configured, Persistent Chat Server compliance records user activity such as joining and leaving rooms, and posting and reading of messages. The Compliance service stores files that need to be archived in the Persistent Chat Compliance File Store.
-
-</div>
-
-<div>
 
 ## Persistent Chat Web Services
 
@@ -97,12 +72,6 @@ On the Lync Server Front End Servers, two services run that depend on Internet 
   - **Persistent Chat Web Services for File Upload/Download** Responsible for posting and retrieving files from chat rooms.
 
   - **Persistent Chat Web Services for Chat Room Management** Responsible for providing users the ability to manage their chat rooms, and create new chat rooms.
-
-</div>
-
-</div>
-
-<div>
 
 ## How Do I Start Using Persistent Chat Server?
 
@@ -116,15 +85,9 @@ For details about how to enable users by policy such that they can leverage Pers
 
 If you deployed Persistent Chat compliance, see [Managing Lync Server 2013, Persistent Chat Server](managing-lync-server-2013-persistent-chat-server.md) for details about how to configure settings for compliance.
 
-</div>
-
-<div>
-
 ## Persistent Chat Call Flows
 
 The Persistent Chat client communicates with the Persistent Chat service by using XCCOS. The following sequences describe the sign-in process and a typical room subscription and message post scenario.
-
-<div>
 
 ## Sign-in
 
@@ -148,10 +111,6 @@ The following call flow diagram and steps describe the sign-in process.
 
 7.  The Persistent Chat client sends a SIP INFO message that contains a XCCOS **getinv** (that is, get invitation) command to request any new room invitations that the client has not yet seen. In a separate SIP INFO message, Persistent Chat Server returns a list of those rooms.
 
-</div>
-
-<div>
-
 ## Subscribe to a Room and Post a Message
 
 The following call flow diagram and steps describe a typical room subscription and message post scenario.
@@ -170,12 +129,6 @@ The following call flow diagram and steps describe a typical room subscription a
 
 5.  Persistent Chat Server sends a separate copy of the SIP INFO XCCOS **grpchat** message to User2, who has already entered the chat room.
 
-</div>
-
-</div>
-
-<div>
-
 ## Persistent Chat Compliance Call Flows
 
 Persistent Chat Server uses Message Queuing (also known as MSMQ) and an additional compliance database (mgccomp) to process compliance data. As an example of how compliance events are processed, the following sequence of events describes how a message post event is processed.
@@ -189,16 +142,4 @@ Persistent Chat Server uses Message Queuing (also known as MSMQ) and an addition
 4.  Periodically, the Persistent Chat Compliance server processes a set of events in the database, and sends them to the Persistent Chat Compliance adapter for processing.
 
 5.  If the adapter successfully processes the data, Persistent Chat Compliance server deletes the events from the mgccomp database.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

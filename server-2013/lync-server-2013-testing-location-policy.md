@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing location policy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsLocationPolicy cmdlet verifies that a location policy is assigned to a user. The location policy is used to apply settings that relate to E9-1-1 functionality and client location. The location policy determines whether a user is enabled for E9-1-1, and, if the answer is "yes,", what the behavior is of an emergency call. For example, you can use the location policy to define what number makes up an emergency call (911 in the United States), whether corporate security should be automatically notified, and how the call should be routed.
 
 You can test location policies on users or on network subnets. If you run the test against a subnet (by specifying a value for the Subnet parameter), the cmdlet will attempt to resolve the location policy for that subnet. If no location policy is assigned to the subnet, the location policy for the configured user will be retrieved. If the subnet policy is retrieved successfully, the output will include a LocationPolicyTagID value that begins with subnet-tagid. If a location policy for the subnet was not found, the LocationPolicyTagID will begin with user-tagid.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -74,11 +55,7 @@ To run this check using an actual user account, you must first create a Windows 
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsLocationPolicy -TargetFqdn "atl-cs-001.litwareinc.com"-UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsLocationPolicy](test-cslocationpolicy.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsLocationPolicy](https://technet.microsoft.com/en-us/library/gg425962\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -142,10 +119,6 @@ Registration hit against sip/atl-cs-001.litwareinc.com
 
 An exception 'The log on was denied. Check that the correct credentials are being used and the account is active.' occurred during the Workflow.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsLocationPolicy might fail:
@@ -159,16 +132,4 @@ Here are some common reasons why Test-CsLocationPolicy might fail:
         Get-CsUser "sip:kenmyer@litwareinc.com" | Select-Object Enabled
     
     If the Enabled property is set to False, that means that the user is currently not enabled for Lync Server.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

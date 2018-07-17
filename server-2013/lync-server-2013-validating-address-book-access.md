@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Validating address book access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsAddressBookService cmdlet provides a way for you to verify that a user can connect to the Address Book Download Web service. When you run the cmdlet, Test-CsAddressBookService connects to the Address Book Download Web service on the specified pool and requests the location of the Address Book files. If the Address Book Download Web service supplies that location, the test is considered successful. If the request is denied, then the test is considered a failure.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -72,11 +53,7 @@ To run this check using an actual user account, you must first create a Windows 
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsAddressBookService -TargetFqdn "atl-cs-001.litwareinc.com"-UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsAddressBookService](test-csaddressbookservice.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsAddressBookService](https://technet.microsoft.com/en-us/library/gg398661\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -132,10 +109,6 @@ TimeOut (msec) = 60000
 
 Successfully Downloaded the ABS file https://atl-cs-001.litwareinc.com:443/abs/handler/f-1299.lsabs
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsAddressBookService might fail:
@@ -150,25 +123,8 @@ Here are some common reasons why Test-CsAddressBookService might fail:
     
     If the Enabled property is set to False that means that the user is not currently enabled for Lync Server.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsAddressBookService](test-csaddressbookservice.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsAddressBookService](https://technet.microsoft.com/en-us/library/gg398661\(v=ocs.15\))
 

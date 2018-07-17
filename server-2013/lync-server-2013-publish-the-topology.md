@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Publish the topology in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-01_
 
 To successfully publish, enable, or disable a topology when adding or removing a server role, you should be logged in as a user who is a member of the RTCUniversalServerAdmins and Domain Admins groups. It is also possible to delegate the proper administrator rights and permissions. For details, see [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md). For other configuration changes, only membership in the RTCUniversalServerAdmins group is required.
 
 After you define your topology in Topology Builder, you must publish the topology to the Central Management store. The Central Management store provides a robust, schematized storage of the data needed to define, set up, maintain, administer, describe, and operate a Lync Server 2013 deployment. It also validates the data to help ensure configuration consistency. All changes to this configuration data happen at the Central Management store, eliminating “out-of-sync” issues. Read-only copies of the data are replicated to all servers in the topology, including Edge Servers.
-
-<div>
 
 
 > [!NOTE]
@@ -38,19 +23,11 @@ After you define your topology in Topology Builder, you must publish the topolog
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > For Enterprise Edition only: In order to publish the topology, the SQL Server-based Back End Server must be online and accessible with firewall exceptions in place. For details about specifying firewall exceptions, see <A href="lync-server-2013-understanding-firewall-requirements-for-sql-server.md">Understanding firewall requirements for SQL Server with Lync Server 2013</A>. For details about configuring SQL Server, see <A href="lync-server-2013-configure-sql-server-for-lync-server.md">Configure SQL Server for Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## To publish a topology
 
@@ -64,14 +41,11 @@ After you define your topology in Topology Builder, you must publish the topolog
 
 5.  On the **Create databases** page, select the databases you want to publish.
     
-    <div>
-    
 
     > [!NOTE]
     > If you don’t have the appropriate rights to create the databases, you can clear the check boxes next to those databases, and someone with appropriate rights can later create the databases. For details, see <A href="lync-server-2013-deployment-permissions-for-sql-server.md">Deployment permissions for SQL Server in Lync Server 2013</A>.
 
-    
-    </div>
+
 
 6.  Optionally click **Advanced**. The Advanced SQL Server data file placement options let you select between the following options:
     
@@ -97,25 +71,8 @@ After you define your topology in Topology Builder, you must publish the topolog
     
     When the topology has been published successfully, you can begin installing a local replica of the Central Management store on each server running Lync Server 2013 in your topology. We recommend that you begin with the first Front End pool.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Setting up Front End Servers and Front End pools for Lync Server 2013](lync-server-2013-setting-up-front-end-servers-and-front-end-pools.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Setting up Front End Servers and Front End pools for Lync Server 2013](lync-server-2013-setting-up-front-end-servers-and-front-end-pools.md)
 

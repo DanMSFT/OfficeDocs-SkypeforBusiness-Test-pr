@@ -8,23 +8,10 @@ ms.date: 05/16/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Operational dependencies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-05-15_
 
 The Reference Architecture discussed in this document will help ensure that you have a Lync Server 2013 deployment that not only scales to the organization’s requirements but is architected as per Microsoft best practices. Be that as it may the Lync Server 2013 implementation is a dynamic service and like any other service in the enterprise still requires monitoring and proactive management to maintain high level of service availability and service quality to the business.
 
@@ -50,55 +37,55 @@ The following table lists the typical dependency services for a Lync infrastruct
 <tbody>
 <tr class="odd">
 <td><p>Operating systems</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Server Hardware</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Active Directory</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Public Key Infrastructure</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Domain Naming Service</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Database Services</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Storage Services</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>System Management – Monitoring and distribution</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Security Services - Antivirus</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Network Infrastructure - Internet</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Network Infrastructure – Internal (LAN/WAN)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Telephony Infrastructure – IP-PBX and Gateways</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Cloud Services</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -132,7 +119,7 @@ Building on the information obtained above we now have a greater understanding o
 <td><p>Central sites</p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p></p></td>
 <td><p>Tether each pool to its nearest instance of the Monitoring Server role.</p></td>
 <td><p>Central sites</p>
 <p>Branch sites</p></td>
@@ -144,21 +131,21 @@ Building on the information obtained above we now have a greater understanding o
 <td><p>Central sites</p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p></p></td>
 <td><p>Make sure that Central Discovery to discovery of roles and components that need to be monitored are automatically completed based on a central discovery script that reads the topology document published in Central Management Database.</p></td>
 <td><p>Central Site</p>
 <p>Branch Site</p>
 <p>Edge Site</p></td>
 </tr>
 <tr class="odd">
-<td></td>
+<td><p></p></td>
 <td><p>Deploy System Centre Operations Manager 2007 agents to all deployed servers running Lync Server.</p></td>
 <td><p>Central Site</p>
 <p>Branch Site</p>
 <p>Edge Site</p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p></p></td>
 <td><p>Make sure Prioritized Alerts are configured for notification:</p>
 <p>High Priority Alerts</p>
 <p>Medium Priority Alerts</p>
@@ -168,14 +155,14 @@ Building on the information obtained above we now have a greater understanding o
 <p>Edge Site</p></td>
 </tr>
 <tr class="odd">
-<td></td>
+<td><p></p></td>
 <td><p>Configure Port monitoring for your deployment.</p></td>
 <td><p>Central Site</p>
 <p>Branch Site</p>
 <p>Edge Site</p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p></p></td>
 <td><p>Configure URL monitoring for your deployment</p></td>
 <td><p>Central Site</p></td>
 </tr>
@@ -186,7 +173,7 @@ Building on the information obtained above we now have a greater understanding o
 <p>Branch Site</p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p></p></td>
 <td><p>Ensure Media Quality warning thresholds are accurately configured. The following table indicates the maximum Network Mean Opinion Scores by Codec. In production these scores should be monitored for a set period and acceptable thresholds must be established based on the organization specific NMOS scores.</p></td>
 <td><p>Central Site</p>
 <p>Branch Site</p></td>
@@ -199,7 +186,7 @@ Building on the information obtained above we now have a greater understanding o
 <td><p>Central Site</p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p></p></td>
 <td><p>Deploying synthetic transactions watcher node.</p>
 <p>Refer to the MonitoringCS_withSCOM.docx document from UCTAP connect documentation.</p></td>
 <td><p>Central Site</p></td>
@@ -254,14 +241,4 @@ Building on the information obtained above we now have a greater understanding o
 
 
 Over and above the previous pro-active monitoring activities, maintenance tasks should be executed for Central, Edge and Branch sites on a recurring daily, weekly and monthly basis as defined in the Lync RA Operations Guide.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Monitoring and health configuration in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 Topics in this section provide step-by-step procedures for monitoring and health configuration tasks you can perform in Lync Server 2013 Control Panel and Lync Server 2013 Management Shell.
-
-<div>
 
 ## In This Section
 
@@ -40,25 +25,8 @@ Topics in this section provide step-by-step procedures for monitoring and health
 
   - [Using Monitoring Reports in Lync Server 2013](lync-server-2013-using-monitoring-reports.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Operations in Lync Server 2013](lync-server-2013-operations.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Operations in Lync Server 2013](lync-server-2013-operations.md)
 

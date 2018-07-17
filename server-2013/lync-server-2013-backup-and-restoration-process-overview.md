@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Backup and restoration process overview for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-26_
 
 This section provides an overview of how the backup and restoration process works for Lync Server 2013. You use the same process for all Standard Edition servers and Enterprise Edition servers, regardless of their location.
 
@@ -40,14 +27,11 @@ In general, the restoration process works as follows:
 
   - When a failure or outage occurs, you restore the data in the location referenced by **$Backup** to new or clean computers.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > This restoration process does not restore data onto an existing server state. That is, this process requires that the server is clean or new.
 
-    
-    </div>
+
 
   - To enable your user and conference information to be recoverable to the point of failure, you can implement a disaster recovery topology with paired Front End pools, as described in [Planning for high availability and disaster recovery in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md).
 
@@ -65,24 +49,11 @@ If a server running Lync Server fails, recovery includes the following steps:
 
   - In general, if the server hosted a server role, run step 1 through step 4 of the Lync Server Deployment Wizard to install the local configuration files, install the server role components, assign certificates, and start the services.
     
-    <div>
-    
 
     > [!NOTE]
     > If the server hosted a database collocated with the server role, running step 2 of the Lync Server Deployment Wizard recreates the database.
 
-    
-    </div>
+
 
   - If the server hosted a database, restore the backed up data.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

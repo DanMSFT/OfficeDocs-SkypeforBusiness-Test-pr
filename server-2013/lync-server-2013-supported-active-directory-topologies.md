@@ -8,23 +8,10 @@ ms.date: 10/02/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Supported Active Directory topologies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-10-02_
 
 Lync Server 2013 supports the same Active Directory Domain Services topologies as Microsoft Lync Server 2010 and Microsoft Office Communications Server 2007 R2. The following topologies are supported:
 
@@ -46,8 +33,6 @@ The following figure identifies the icons used in the illustrations in this sect
 
 ![Key to topology illustrations](images/Gg398173.0c3cc89f-6c43-4bc8-b2ec-61d89e391ee9(OCS.15).jpg "Key to topology illustrations")
 
-<div>
-
 ## Single Forest, Single Domain
 
 The simplest Active Directory topology supported by Lync Server, a single domain forest, is a common topology.
@@ -57,10 +42,6 @@ The following figure illustrates a Lync Server deployment in a single domain Act
 **Single domain topology**
 
 ![Single domain topology](images/Gg398173.258b3b3f-0558-4a36-a4c2-031be7299668(OCS.15).jpg "Single domain topology")
-
-</div>
-
-<div>
 
 ## Single Forest, Multiple Domains
 
@@ -78,10 +59,6 @@ The following figure illustrates a deployment in a single forest with multiple d
 
 ![Single forest with multiple domains](images/Gg398173.2b809c72-c3cd-4fad-afe6-8c2dae779750(OCS.15).jpg "Single forest with multiple domains")
 
-</div>
-
-<div>
-
 ## Single Forest, Multiple Trees
 
 A multiple-tree forest topology consists of two or more domains that define independent tree structures and separate Active Directory namespaces.
@@ -97,10 +74,6 @@ The following figure illustrates a single forest with multiple trees. In this fi
 **Single forest with multiple trees**
 
 ![Single forest with multiple trees](images/Gg398173.db30fa49-174a-4974-8695-41dd78e39432(OCS.15).jpg "Single forest with multiple trees")
-
-</div>
-
-<div>
 
 ## Multiple Forests, Central Forest
 
@@ -122,10 +95,6 @@ The following figure illustrates a central forest topology. In this figure, ther
 
 ![Central forest topology](images/Gg398173.7feb049a-453b-4134-9128-873b83ee1755(OCS.15).jpg "Central forest topology")
 
-</div>
-
-<div>
-
 ## Multiple Forests, Resource Forest
 
 In a resource forest topology, one forest is dedicated to running server applications, such as Microsoft Exchange Server and Lync Server. The resource forest hosts the server applications and a synchronized representation of the active user object, but it does not contain logon-enabled user accounts. The resource forest acts as a shared services environment for the other forests where user objects reside. The user forests have a forest-level trust relationship with the resource forest. When you deploy Lync Server in this type of topology, you create one disabled user object in the resource forest for every user account in the user forests. If Microsoft Exchange is already deployed in the resource forest, the disabled user accounts might already exist. A directory synchronization product, such as MIIS, Microsoft Forefront Identity Manager (FIM) 2010, or Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), manages the life cycle of user accounts. When a new user account is created in one of the user forests or a user account is deleted from a forest, the directory synchronization product synchronizes the corresponding user representation in the resource forest.
@@ -140,25 +109,9 @@ The following diagram illustrates a resource forest topology.
 
 ![Active Directory Resource Forest Topology](images/Gg398173.54ab82f1-e9e5-40f0-a54e-86e340b65c2a(OCS.15).jpg "Active Directory Resource Forest Topology")
 
-</div>
-
-<div>
-
 ## Multiple forests in a Lync resource forest topology with Exchange Online
 
 In this topology, one or more forests are located on-premises and are dedicated to hosting Active Directory user accounts. The resource forest is located off-premises and is maintained by a third-party hosting provider. The resource forest contains only the Lync Server deployment and a synchronized replication of the user accounts from the on-premises user accounts forest(s). It does not contain logon-enabled user accounts. Exchange is deployed either in the on-premises user account forest(s) integrated along with Exchange Online (Hybrid), or email services for the on-premises user accounts are provided exclusively by Exchange Online.
 
 The resource forest acts as a shared services environment for the on-premises Active Directory forest(s) where user objects reside. The user account forest(s) have a one way forest-level trust relationship with the resource forest. When you deploy Lync Server in this type of topology, you create one disabled user object in the resource forest for every user account in the user forests. A directory synchronization product, such as MIIS, Microsoft Forefront Identity Manager (FIM) 2010, or Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), manages the life cycle of user accounts. When a new user account is created in one of the user forests or a user account is deleted from a forest, the directory synchronization product synchronizes the corresponding user representation in the resource forest. For more information about configuring a multi-forest deployment, see [Deploying Lync in a Multi-Forest Architecture (Partner Hosted Lync with Exchange Hybrid)](http://go.microsoft.com/fwlink/p/?linkid=513216).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

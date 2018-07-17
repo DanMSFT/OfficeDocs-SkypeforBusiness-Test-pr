@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using rich logging for synthetic transactions in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 Synthetic transactions (introduced in Microsoft Lync Server 2010) provide a way for administrators to verify that users are able to successfully complete common tasks such as logging on to the system, exchanging instant messages, or making calls to a phone located on the public switched telephone network (PSTN). These tests (which are packaged as a set of Lync Server Windows PowerShell cmdlets) can be conducted manually by an administrator, or they can be automatically run by an application such as System Center Operations Manager.
 
@@ -56,8 +43,11 @@ Administrators have the option of including the OutLoggerVariable parameter foll
 
     Test-CsRegistration -TargetFqdn atl-cs-001.litwareinc.com -OutLoggerVariable RegistrationTest
 
+
 > [!NOTE]
 > Do not preface the variable name with the $ character. Use a variable name like RegistrationTest and not $RegistrationTest.
+
+
 
 The preceding command outputs content similar to the following:
 
@@ -79,15 +69,8 @@ These files can then be viewed using Internet Explorer, Visual Studio, or any ot
 
 Synthetic transactions run from inside of System Center Operations Manager will automatically generate these log files for failures. However, these logs will not be generated if the execution fails before Windows PowerShell is able to load and run the synthetic transaction.
 
+
 > [!IMPORTANT]
-> By default, Lync Server 2013 saves log files to a folder that is not shared. To make these logs readily accessible, you should share this folder (for example, \\\\atl-watcher-001.litwareinc.com\WatcherNode.
+> By default, Lync Server 2013 saves log files to a folder that is not shared. To make these logs readily accessible, you should share this folder (for example, \\atl-watcher-001.litwareinc.com\WatcherNode.
 
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 

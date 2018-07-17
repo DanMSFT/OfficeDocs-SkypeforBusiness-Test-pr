@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of A/V conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-13_
 
 A/V conferencing enables real-time audio and video communications between your users. When you deploy conferencing, you can choose to enable and use both web conferencing and A/V conferencing, or just web conferencing.
 
@@ -36,8 +23,6 @@ If you deploy audio conferencing in your network, your users will need audio dev
 
 The following sections describe the features for audio and video conferencing, including information about managing bandwidth and selecting the appropriate clients.
 
-<div>
-
 ## Audio Conferencing Features
 
 Lync Server 2013 provides several features that you can use to configure the audio conferencing experience for the user, including the following:
@@ -47,10 +32,6 @@ Lync Server 2013 provides several features that you can use to configure the aud
   - **Conferencing Entry/Exit Announcements**   If you have enabled dial-in conferencing, presenters can use this setting to turn entry and exit announcements on or off to minimize distractions while a conference is in progress.
 
   - **Adding a user by dialing out**   Presenters and attendees that have been given permission, can add PSTN numbers to the conferences and have the conference dial-out to those numbers.
-
-</div>
-
-<div>
 
 ## Video Conferencing Features
 
@@ -65,16 +46,4 @@ Lync Server 2013 provides several features that you can use to configure the vid
   - **HD video**   Users can experience resolutions up to HD 1080P in two-party calls and multiparty conferences.
 
   - **Video Spotlight**   Presenters can configure the meeting so that only the video from a selected participant who is a video source is seen by the other participants in the conference. This mode also applies to video captured and provided by RoundTable devices for panoramic video.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

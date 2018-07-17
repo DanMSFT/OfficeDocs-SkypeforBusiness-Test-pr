@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create a voice policy and configure PSTN usage records in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Follow these steps if you want to create a new voice policy. If you want to edit a voice policy, see [Modify a voice policy and configure PSTN usage records in Lync Server 2013](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md) for the procedure.
-
-<div>
 
 
 > [!NOTE]
 > Each voice policy must have at least one associated public switched telephone network (PSTN) usage record. To see a listing of all PSTN usage records available in your Enterprise Voice deployment and view their properties, see <A href="lync-server-2013-view-pstn-usage-records.md">View PSTN usage records in Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## To create a voice policy
 
@@ -56,14 +37,11 @@ Follow these steps if you want to create a new voice policy. If you want to edit
 
 5.  If the voice policy scope is User, enter a descriptive name for the policy in the **Name** field.
     
-    <div>
-    
 
     > [!NOTE]
     > If the voice policy scope is Site, the <STRONG>Name</STRONG> field in <STRONG>New Voice Policy</STRONG> is prepopulated with the site name and cannot be changed.
 
-    
-    </div>
+
 
 6.  (Optional) Enter additional descriptive information for the voice policy.
 
@@ -71,14 +49,10 @@ Follow these steps if you want to create a new voice policy. If you want to edit
     
       - **Voice mail escape** prevents calls from being immediately routed to the user’s mobile phone voice mail system when simultaneous ringing is configured and the phone is turned off, out of battery, or out of range.
         
-        <div>
-        
 
         > [!NOTE]
         > This feature is only configurable through the Lync Server Management Shell
 
-        
-        </div>
     
       - **Call forwarding** enables users to forward calls to other phones and client devices. Lync Server 2013 provides a significantly wider range of configuration options for call forwarding. For example, if an organization does not want to allow incoming calls to be forwarded externally to the PSTN, an administrator can apply a special voice policy to deploy this restriction. Enabled by default.
     
@@ -96,14 +70,10 @@ Follow these steps if you want to create a new voice policy. If you want to edit
     
       - **Bandwidth policy override** enables administrators to override call admission control policy decisions for a particular user. Disabled by default.
         
-        <div>
-        
 
         > [!NOTE]
         > The policy will be overridden only for incoming calls to the user and not for outgoing calls that are placed by the user. After the session is established, the bandwidth consumption will be accurately recorded. This setting should be used sparingly and should be reserved for appropriate call admission control decisions.
 
-        
-        </div>
     
       - **Malicious call tracing** enables users to report malicious calls (such as bomb threats) by using the client UI, which in turn flags the calls in the call detail records (CDRs). Disabled by default.
 
@@ -119,14 +89,10 @@ Follow these steps if you want to create a new voice policy. If you want to edit
         
         2.  In the **Name** field, enter a unique descriptive name for the record. For example, you may want to create a PSTN usage record named **Redmond** for full-time employees located in Redmond, and another named **RedmondTemps** for temporary employees.
             
-            <div>
-            
 
             > [!NOTE]
             > The PSTN usage record name must be unique within the Enterprise Voice deployment. After the record is saved, the <STRONG>Name</STRONG> field cannot be edited.
 
-            
-            </div>
         
         3.  Use any of the following methods to associate and configure routes for this PSTN usage record:
             
@@ -158,14 +124,11 @@ Follow these steps if you want to create a new voice policy. If you want to edit
 
 9.  Arrange the PSTN usage records for optimum performance. To change a record’s position in the list, highlight the record name and click the up or down arrow.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The order in which PSTN usage records are listed in the voice policy is significant. Lync Server traverses the list from the top down. We recommend that you organize the list by frequency of use, for example: RedmondLocal, RedmondLongDist, RedmondInternational, RedmondBackup.
 
-    
-    </div>
+
 
 10. To associate and configure PSTN usage records for call forwarding and simultaneous ringing in this voice policy, do any of the following:
     
@@ -185,14 +148,10 @@ Follow these steps if you want to create a new voice policy. If you want to edit
             
             2.  In the **Name** field, enter a unique descriptive name for the record.
                 
-                <div>
-                
 
                 > [!NOTE]
                 > The PSTN usage record name must be unique within the Enterprise Voice deployment. After the record is saved, the <STRONG>Name</STRONG> field cannot be edited.
 
-                
-                </div>
             
             3.  Use any of the following methods to associate and configure routes for this PSTN usage record:
                 
@@ -224,33 +183,23 @@ Follow these steps if you want to create a new voice policy. If you want to edit
 
 11. (Optional) Enter a number to test the voice policy and click **Go**. The test results are displayed under **Translated number to test**.
     
-    <div>
-    
 
     > [!NOTE]
     > You can save a voice policy that does not yet pass the test and then reconfigure it later. For details, see <A href="lync-server-2013-test-voice-routing.md">Test voice routing in Lync Server 2013</A>.
 
-    
-    </div>
+
 
 12. Click **OK**.
 
 13. On the **Voice Policy** page, click **Commit**, and then click **Commit all**.
     
-    <div>
-    
 
     > [!NOTE]
     > Any time you create or modify a voice policy, you must run the <STRONG>Commit all</STRONG> command to publish the configuration change. For details, see <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">Publish pending changes to the voice routing configuration in Lync Server 2013</A> in the Operations documentation.
 
-    
-    </div>
+
 
 14. (Optional) Voicemail Escape detects that a call was immediately answered by the user’s mobile phone voice mail, and disconnects the call to the mobile phone voice mail. This allows the call to continue to ring on the user’s other endpoints giving the user the opportunity to answer the call. For details on how to configure a voice mail policy, see [Configuring voice mail escape in Lync Server 2013](lync-server-2013-configuring-voice-mail-escape.md).
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -263,18 +212,5 @@ Follow these steps if you want to create a new voice policy. If you want to edit
 [Configuring voice mail escape in Lync Server 2013](lync-server-2013-configuring-voice-mail-escape.md)  
 
 
-[Test voice routing in Lync Server 2013](lync-server-2013-test-voice-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test voice routing in Lync Server 2013](lync-server-2013-test-voice-routing.md)
 

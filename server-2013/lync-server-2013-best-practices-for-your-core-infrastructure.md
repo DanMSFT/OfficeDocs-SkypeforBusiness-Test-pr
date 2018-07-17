@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Best practices for your core infrastructure in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-01-27_
 
 You have probably already taken steps to design fault tolerance in your system, using practices such as ensuring hardware redundancy, guarding against power loss, routinely installing security updates and antivirus measures, and Monitoring Server activity. These practices benefit not only your Microsoft Lync Server 2013 infrastructure, but also your entire network. If you have not implemented these practices, we recommend that you do so before deploying Lync Server 2013.
 
@@ -41,14 +28,4 @@ To help protect the servers in your Lync Server 2013 deployment from accidental 
   - Encrypt operating systems and disk drives where data is stored with a full-volume encryption system, unless you can guarantee constant and complete control of the servers, total physical isolation, and proper and secure decommissioning of replaced or failed disk drives.
 
   - Disable all external Direct Memory Access (DMA) ports of the server, unless you can guarantee very tight control over the physical access to the servers. DMA-based attacks, which can be initiated fairly easily, could expose very sensitive information, such as private encryption keys.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

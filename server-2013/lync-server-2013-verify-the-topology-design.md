@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Verify the topology design in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-01-02_
 
 Topology Builder automatically verifies the topology. Any topology error is identified as a validation error, indicated by the validation error icon next to the server role. It is important to also verify that the topology correctly represents the topology for your deployment.
-
-<div>
 
 ## To verify the topology prior to publication
 
@@ -43,16 +28,4 @@ Topology Builder automatically verifies the topology. Any topology error is iden
 5.  Verify that the servers exist in Active Directory Domain Services. This will happen automatically if you have joined the servers to the domain.
 
 When you have verified the topology and there are no validation errors, you should be ready to publish the topology. If there are validation errors, you must correct these before you can publish the topology. For details about publishing your topology, see [Publish the topology in Lync Server 2013](lync-server-2013-publish-the-topology.md).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

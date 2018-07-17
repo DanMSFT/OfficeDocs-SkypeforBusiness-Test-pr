@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS summary - Scaled consolidated edge with hardware load balancers in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-27_
 
 DNS record requirements for remote access to Lync Server 2013 are fairly straightforward compared to those for certificates and ports. Also, many records are optional, depending on how you configure clients running Lync 2013 and whether you enable federation.
 
@@ -33,8 +20,6 @@ For details about Lync 2013 DNS requirements, see [Determine DNS requirements fo
 For details about configuring automatic configuration of Lync 2013 clients if split-brain DNS is not configured, see the "Automatic Configuration without Split Brain DNS" section in [Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md).
 
 The following table contains a summary of the DNS records that are required to support the Scaled Consolidated Edge Topology (Hardware Load Balanced) figure. Note that certain DNS records are required only for automatic configuration for Lync clients. If you plan to use group policy objects (GPOs) to configure Lync clients, the associated records are not necessary.
-
-<div>
 
 ## IMPORTANT: Edge Server Network Adapter Requirements
 
@@ -54,28 +39,20 @@ You can configure two network adapters in each of your Edge Servers as follows:
     
     Three public IP addresses are assigned to this network adapter, for example 131.107.155.10 for Access Edge service, 131.107.155.20 for Web Conferencing Edge service, 131.107.155.30 for A/V Edge service.
     
-    <div>
-    
 
     > [!NOTE]
     > The IP addresses that are assigned to the actual external network interfaces of the Edge Server may depend on which hardware load balancer you choose. Refer to the documentation for your hardware load balancer to understand the actual IP address requirements.<BR>It is possible, though not recommended, to use a single IP address for all three Edge service interfaces. Though this does save IP addresses, it requires different port numbers for each service. The default port number is 443/TCP, which ensures that most remote firewalls will allow the traffic. Changing the port values to (for example) 5061/TCP for the Access Edge service, 444/TCP for the Web Conferencing Edge service and 443/TCP for the A/V Edge service might cause problems for remote users where a firewall that they are behind does not allow the traffic over 5061/TCP and 444/TCP. Additionally, three distinct IP addresses makes troubleshooting easier due to being able to filter on IP address.
 
     
-    </div>
-    
     Access Edge service IP address is primary with default gateway set to Internet-facing router (131.107.155.1).
     
     Web Conferencing Edge service and A/V Edge service IP addresses secondary.
-
-<div>
 
 
 > [!TIP]
 > Configuring the Edge Server with two network adapters is one of two options. The other option is to use one network adapter for the internal side and three network adapters for the external side of the Edge Server. The main benefit of this option is a distinct network adapter per Edge Server service, and potentially more concise data collection when troubleshooting is necessary
 
 
-
-</div>
 
 ### DNS Records Required for Scaled Consolidated Edge, Hardware Load Balanced (Example)
 
@@ -133,17 +110,4 @@ You can configure two network adapters in each of your Edge Servers as follows:
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

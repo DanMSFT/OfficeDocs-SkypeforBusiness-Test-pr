@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Hardware and software requirements for the Director in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-20_
 
 This section details the hardware and software requirements for the Director, and the supported collocation scenarios for the Director.
-
-<div>
 
 ## Hardware Requirements for the Director
 
@@ -78,10 +63,6 @@ The following table lists the hardware requirements for the Director:
 </table>
 
 
-</div>
-
-<div>
-
 ## Software Requirements for the Director
 
 The Director role can be deployed only on servers running Lync Server 2013 Enterprise Edition.
@@ -100,23 +81,7 @@ One of the following 64-bit operating systems is required for the Directors:
 
 Lync Server 2013 also requires installation of the following programs and updates detailed in the topic [Additional server support and requirements in Lync Server 2013](lync-server-2013-additional-server-support-and-requirements.md).
 
-</div>
-
-<div>
-
 ## Supported Collocation
 
 The Director server role cannot be collocated with any other server role in Lync Server 2013. However, if you do not deploy a Director, the Front End Servers will assume the role.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

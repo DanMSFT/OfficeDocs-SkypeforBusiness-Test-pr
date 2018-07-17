@@ -8,29 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # PurgeSettings table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 The PurgeSettings table contains information that specifies if (and when) outdated call detail records will automatically be deleted from the CDR database. Note that purging-related information can also be obtained from within the Microsoft Lync Server 2013 Management Shell by running the following command:
 
     Get-CsCdrConfiguration
 
-Administrators should treat the PurgeSettings table as read-only: changes to the call detail purge settings should only be made using the [New-CsCdrConfiguration](new-cscdrconfiguration.md) or [Set-CsCdrConfiguration](set-cscdrconfiguration.md) cmdlets.
+Administrators should treat the PurgeSettings table as read-only: changes to the call detail purge settings should only be made using the [New-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg399018\(v=ocs.15\)) or [Set-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg398774\(v=ocs.15\)) cmdlets.
 
 This table was introduced in Microsoft Lync Server 2013.
 
@@ -60,38 +47,27 @@ This table was introduced in Microsoft Lync Server 2013.
 <tr class="even">
 <td><p><strong>EnablePurge</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>When set to True (1) Microsoft Lync Server 2013 will periodically purge outdated records from the CDR database. Purging will take place each day at the tome specified by the PurgeHour setting. If set to False (0) then records will not be automatically purged from the database. The default value is True.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>KeepCallDetailForDays</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Specifies the age of CDR records (in days) that will be purged from the database: if purging is enabled, CDR records older than this value will be removed from the database. The default value is 60 days.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>KeepErrorReportForDays</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Specifies the age of error report records (in days) that will be purged from the database: if purging is enabled, error report records older than this value will be removed from the database. The default value is 60 days.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PurgeHour</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Specifies the local time of day when database purging will take place. The time of day is specified using a 24-hour clock, with 0 representing midnight (12:00 AM) and 23 representing 11:00 PM. Note that you can only specify the hour of the day: a value of 10 (indicating 10:00 AM) is allowed, but a value of 10:30 of 10.5 (indicating 10:30 AM) is not allowed. The default value is 2 (2:00 AM).</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

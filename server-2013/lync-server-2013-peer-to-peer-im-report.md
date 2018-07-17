@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Peer-to-Peer IM Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 The Peer-to-Peer IM Report provides trend information about peer-to-peer instant messaging (IM) sessions, broken down by pool and by authentication type. The report can show either the total number of sessions held during the specified time period (for example, day-by-day or hour-by-hour), or it can show the total number of instant messages sent during that time period.
-
-<div>
 
 ## Accessing the Peer-to-Peer IM Report
 
@@ -38,17 +23,9 @@ You can access the Peer-to-Peer IM Report only by opening the [Peer-to-Peer Acti
 
   - Total peer-to-peer IM messages
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Peer-to-Peer IM Report
 
 By default, the Peer-to-Peer IM Report shows you the message count per-hour (or day, depending on your settings). However, you can also choose to view the day by sessions per hour. To do that, click **Hide/Show Parameters** in the upper-right corner of the Reports window, and then click **Session Count** from the **Report by** list.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -111,10 +88,6 @@ Filters provide a way for you to return a more finely targeted set of data or to
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Peer-to-Peer IM Session by Pool
 
 The following table lists the information provided in the Peer-to-Peer IM Report.
@@ -153,10 +126,6 @@ The following table lists the information provided in the Peer-to-Peer IM Report
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for Peer-to-Peer IM Session by Authentication Type
 
@@ -200,17 +169,4 @@ The following table lists the information provided in the Peer-to-Peer IM Report
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

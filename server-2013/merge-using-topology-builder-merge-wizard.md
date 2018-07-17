@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Merge using Topology Builder Merge wizard
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 1.  Download the existing deployment using Topology Builder.
 
@@ -38,14 +25,11 @@ _**Topic Last Modified:** 2012-10-02_
 
 5.  In **Specify Edge Type**, enter the type of Edge Server configuration, and then click **Next**. This example uses the **Single Edge Server** option.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > <STRONG>Expanded Edge deployment</STRONG> is not a supported configuration. An <STRONG>Expanded Edge Server</STRONG> must first be converted to a <STRONG>Single Edge Server</STRONG> or a <STRONG>Load-balanced consolidated Edge</STRONG> Server.
 
-    
-    </div>
+
 
 6.  In **Specify Internal Edge Settings** , enter the relevant information for your Edge pool’s internal FQDN and ports as needed, and then click **Next**.
     
@@ -53,14 +37,11 @@ _**Topic Last Modified:** 2012-10-02_
 
 7.  In **Specify External Edge**, enter the web conferencing FQDN information for your Edge Server.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Before you click <STRONG>Next</STRONG>, do the next step in this procedure. It is very important that you do not miss this step.
 
-    
-    </div>
+
 
 8.  Check the **This Edge pool is used for federation and public IM connectivity** check box if you plan to use the legacy Office Communications Server 2007 R2 Edge Server for federation. If you have multiple Edge Servers deployed, only one of them will be enabled for federation. If you do not check this box and you decide later that you want to enable federation, you must run the Topology Builder Merge wizard and publish your topology again.
     
@@ -88,22 +69,8 @@ _**Topic Last Modified:** 2012-10-02_
 
 17. When the **Publishing wizard** completes, click **Finish**.
     
-    <div>
-    
 
     > [!NOTE]
     > It’s important that you complete the next topic, <A href="import-policies-and-settings.md">Import policies and settings</A>, to ensure that the legacy policy settings are imported into Lync Server 2013.
 
-    
-    </div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

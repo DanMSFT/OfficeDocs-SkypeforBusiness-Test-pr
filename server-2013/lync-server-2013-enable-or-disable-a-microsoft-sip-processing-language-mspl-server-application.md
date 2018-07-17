@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enable or disable a Microsoft SIP Processing Language (MSPL) server application in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 You can use Lync Server Control Panel to enable or disable Microsoft SIP Processing Language (MSPL) server applications that run in your Lync Server 2013 environment. These applications are script-only applications that use a scripting language instead of the Microsoft Lync 2013 Preview API.
 
 Not all scripts can be enabled or disabled. For instance, the DefaultRouting script is enabled and this option cannot be changed for DefaultRouting.
-
-<div>
 
 ## To enable or disable an MSPL server application
 
@@ -46,10 +31,6 @@ Not all scripts can be enabled or disabled. For instance, the DefaultRouting scr
 
 6.  Click **Enable application** or **Disable application** (that is, if the script supports this option).
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -59,18 +40,5 @@ Not all scripts can be enabled or disabled. For instance, the DefaultRouting scr
 [View Microsoft SIP Processing Language (MSPL) server applications in Lync Server 2013](lync-server-2013-view-microsoft-sip-processing-language-mspl-server-applications.md)  
 
 
-[Managing the Lync Server 2013 topology](lync-server-2013-managing-the-lync-server-topology.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing the Lync Server 2013 topology](lync-server-2013-managing-the-lync-server-topology.md)
 

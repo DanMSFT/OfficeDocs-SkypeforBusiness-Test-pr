@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Topology changes in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 Topology requirements and considerations for Lync Server 2013 are different from those for earlier releases, as described in this section.
-
-<div>
 
 ## New Front End Pools Architecture
 
@@ -41,8 +26,6 @@ This happens behind the scenes, and administrators do not need to know which Fro
 The Back End Server serves as backup storage for user and conference data, and is also the primary storage for other databases such as the Response Group database.
 
 These improvements also mean there are changes in how you plan and maintain your pools. We recommend that all your Enterprise Edition Front End pools include at least three Front End Servers, to provide the full number of replicas that the Front End pool architecture is designed for. Additionally, you must follow certain procedures when adding servers to a Front End pool, removing servers from it, or upgrading servers. For more information, see [Topologies and components for Front End Servers, instant messaging, and presence in Lync Server 2013](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md).
-
-<div>
 
 ## Server Role Topology Changes
 
@@ -59,18 +42,4 @@ Some server roles that previously ran on separate servers are now consolidated i
       - **PersistentChatStore:** Back End Server role
     
       - **PersistentChatComplianceStore:** Back End Server role for Persistent Chat Compliance
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

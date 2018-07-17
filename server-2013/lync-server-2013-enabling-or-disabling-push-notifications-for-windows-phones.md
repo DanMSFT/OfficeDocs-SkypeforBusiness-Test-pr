@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enabling or disabling push notifications for Windows Phones in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Push notifications, in the form of badges, icons, or alerts, can be sent to a Windows Phone even when the mobile application is inactive. Push notifications notify a user of events such as a new or missed IM invitation and voice mail. You can enable or disable push notifications for Windows Phone devices by using either Lync Server 2013 Control Panel or Lync Server 2013 Management Shell.
-
-<div>
 
 ## To enable push notifications for Windows Phone by using Lync Server Control Panel
 
@@ -44,10 +29,6 @@ Push notifications, in the form of badges, icons, or alerts, can be sent to a Wi
 
 6.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## To disable push notifications for Windows Phone by using Lync Server Control Panel
 
 1.  From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.
@@ -62,15 +43,9 @@ Push notifications, in the form of badges, icons, or alerts, can be sent to a Wi
 
 6.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Enabling or Disabling Push Notifications for Windows Phone by Using Windows PowerShell Cmdlets
 
 You can enable or disable push notifications for Windows Phone by using the **Set-CsPushNotificationConfiguration** cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To enable push notifications for Windows Phone
 
@@ -78,39 +53,16 @@ You can enable or disable push notifications for Windows Phone by using the **Se
     
         Set-CsPushNotificationConfiguration -Identity "site:Redmond" -EnableMicrosoftPushNotificationService $True
 
-</div>
-
-<div>
-
 ## To disable push notifications for Windows Phone
 
   - To disable push notifications for Windows Phone set the value of the EnableMicrosoftPushNotificationService property to False ($False). For example:
     
         Set-CsPushNotificationConfiguration -Identity "site:Redmond" -EnableMicrosoftPushNotificationService $False
 
-</div>
-
-For more information, see the help topic for the [Set-CsPushNotificationConfiguration](set-cspushnotificationconfiguration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Set-CsPushNotificationConfiguration](https://technet.microsoft.com/en-us/library/hh690013\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
-[Configuring for push notifications in Lync Server 2013](lync-server-2013-configuring-for-push-notifications.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring for push notifications in Lync Server 2013](lync-server-2013-configuring-for-push-notifications.md)
 

@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Running domain preparation for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-04-16_
 
 You can use Setup or Lync Server Management Shell cmdlets to prepare domains. The cmdlet that prepares a domain is **Enable-CsAdDomain**.
 
 Domain preparation is the final step in preparing Active Directory Domain Services for Lync Server 2013.
-
-<div>
 
 ## To use Setup to prepare domains
 
@@ -49,10 +34,6 @@ Domain preparation is the final step in preparing Active Directory Domain Servic
 7.  Under the **Action** column, expand **Domain Prep**, look for a **\<Success\>** Execution Result at the end of each task to verify that domain preparation completed successfully, close the log, and then click **Finish**.
 
 8.  Wait for Active Directory replication to complete or force replication to all the domain controllers listed in the Active Directory Sites and Services snap-in for the forest root domain controller.
-
-</div>
-
-<div>
 
 ## To use cmdlets to prepare the domain
 
@@ -88,22 +69,14 @@ Domain preparation is the final step in preparing Active Directory Domain Servic
     
         Get-CsAdDomain -Domain domain1.contoso.net -GlobalSettingsDomainController dc01.domain1.contoso.com
     
-    <div>
-    
 
     > [!NOTE]
     > The parameter GlobalSettingsDomainController allows you to indicate where global settings are stored. If your settings are stored in the System container (which is typical with upgrade deployments that have not had the global settings migrated to the Configuration container), you define a domain controller in the root of your Active Directory forest. If the global settings are in the Configuration container (which is typical with new deployments or upgrade deployments where the settings have been migrated to the Configuration container), you define any domain controller in the forest. If you do not specify this parameter, the cmdlet assumes that the settings are stored in the Configuration container and refers to any domain controller in AD&nbsp;DS.
 
     
-    </div>
-    
     If you do not specify the **Domain** parameter, the default is the local domain.
     
     This cmdlet returns a value of **LC\_DOMAINSETTINGS\_STATE\_READY** if domain preparation was successful.
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -111,18 +84,5 @@ Domain preparation is the final step in preparing Active Directory Domain Servic
 [Using cmdlets to reverse domain preparation for Lync Server 2013](lync-server-2013-using-cmdlets-to-reverse-domain-preparation.md)  
 
 
-[Preparing domains for Lync Server 2013](lync-server-2013-preparing-domains.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Preparing domains for Lync Server 2013](lync-server-2013-preparing-domains.md)
 

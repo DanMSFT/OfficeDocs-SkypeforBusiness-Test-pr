@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment process for integrating on-premises Unified Messaging and Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-17_
 
 If you want to integrate Exchange Unified Messaging (UM) with Lync Server 2013, you must perform the tasks described in this topic. Also be sure that you review the planning and deployment best practices described in [Guidelines for integrating on-premises Unified Messaging and Lync Server 2013](lync-server-2013-guidelines-for-integrating-on-premises-unified-messaging.md). This topic assumes that you have deployed Lync Server 2013 with a collocated Mediation Server and that you have enabled users for Lync Server 2013, but not necessarily that you have performed all deployment and configuration steps to enable Enterprise Voice, as described in [Deploying Enterprise Voice in Lync Server 2013](lync-server-2013-deploying-enterprise-voice.md) in the Deployment documentation.
 
-<div>
-
 ## Unified Messaging Integration Process
-
-<div>
 
 
 > [!IMPORTANT]
 > It is important that you coordinate with your organization’s Exchange administrators to confirm the tasks that each of you will perform to help ensure a smooth, successful integration.
 
 
-
-</div>
 
 
 <table>
@@ -117,8 +98,10 @@ If you want to integrate Exchange Unified Messaging (UM) with Lync Server 2013, 
 <td><p><a href="lync-server-2013-configure-unified-messaging-on-microsoft-exchange.md">Configure Unified Messaging on Microsoft Exchange for Lync Server 2013</a></p>
 <p>For Exchange 2007 SP1 or latest service pack, see also:</p>
 <p>&quot;How to Configure Security on a Unified Messaging Dial Plan&quot; at <a href="http://go.microsoft.com/fwlink/p/?linkid=268696">http://go.microsoft.com/fwlink/p/?LinkId=268696</a>.</p>
+<p></p>
 <p>For Exchange 2010 or latest service pack, see also:</p>
 <p>&quot;Configure VoIP Security on a UM Dial Plan&quot; <a href="http://go.microsoft.com/fwlink/p/?linkid=268697">http://go.microsoft.com/fwlink/p/?LinkId=268697</a>.</p>
+<p></p>
 <p>For Exchange 2013, see Unified Messaging at <a href="http://go.microsoft.com/fwlink/p/?linkid=266579">http://go.microsoft.com/fwlink/p/?LinkId=266579</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -128,6 +111,7 @@ If you want to integrate Exchange Unified Messaging (UM) with Lync Server 2013, 
 <p>Exchange Server administrators</p></td>
 <td><p>For Exchange 2007 SP1 or latest service pack, see &quot;How to Add Unified Messaging Server to a Dial Plan&quot; at <a href="http://go.microsoft.com/fwlink/p/?linkid=268681">http://go.microsoft.com/fwlink/p/?linkId=268681</a>.</p>
 <p>For Exchange 2010 or latest service pack, see &quot;View or Configure the Properties of a UM Server&quot; at <a href="http://go.microsoft.com/fwlink/p/?linkid=268682">http://go.microsoft.com/fwlink/p/?linkId=268682</a>.</p>
+<p></p>
 <p>For Exchange 2013, see Unified Messaging at <a href="http://go.microsoft.com/fwlink/p/?linkid=266579">http://go.microsoft.com/fwlink/p/?LinkId=266579</a>.</p></td>
 </tr>
 <tr class="even">
@@ -137,6 +121,7 @@ If you want to integrate Exchange Unified Messaging (UM) with Lync Server 2013, 
 <p>Exchange Recipient administrator</p></td>
 <td><p>For Exchange 2007 SP1 or latest service pack, see &quot;How to Add, Remove, or Modify a SIP Address for a UM-Enabled User&quot; at <a href="http://go.microsoft.com/fwlink/p/?linkid=268698">http://go.microsoft.com/fwlink/p/?LinkId=268698</a>.</p>
 <p>For Exchange 2010 or latest service pack, see &quot;Modify a SIP Address for a UM-Enabled User&quot; at <a href="http://go.microsoft.com/fwlink/p/?linkid=268699">http://go.microsoft.com/fwlink/p/?LinkId=268699</a>.</p>
+<p></p>
 <p>For Exchange 2013, see Unified Messaging at <a href="http://go.microsoft.com/fwlink/p/?linkid=266579">http://go.microsoft.com/fwlink/p/?LinkId=266579</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -154,21 +139,18 @@ If you want to integrate Exchange Unified Messaging (UM) with Lync Server 2013, 
 <tr class="even">
 <td><p>Configure Lync Server 2013 dial plans.</p></td>
 <td><p>If you are integrating with Exchange 2007 SP1 or latest service pack, or Exchange 2010, create a new Enterprise Voice dial plan with a name that matches the Exchange UM dial plan fully qualified domain name (FQDN).</p>
-<div>
 
 > [!NOTE]
 > You will need to do this for each UM Dial plan.
 
 
-</div>
 <p>If you are integrating with Exchange 2010 SP1, ensure that suitable global/site-level or pool-level Enterprise Voice dial plans have been configured.</p>
-<div>
 
 > [!NOTE]
 > If you are integrating with Exchange 2010 SP1, the Lync Server dial plan and Exchange UM SIP dial plan names do not need to match.
 
 
-</div></td>
+</td>
 <td><p>RTCUniversalServerAdmins</p></td>
 <td><p><a href="lync-server-2013-configuring-dial-plans.md">Configuring dial plans in Lync Server 2013</a></p></td>
 </tr>
@@ -181,20 +163,17 @@ If you want to integrate Exchange Unified Messaging (UM) with Lync Server 2013, 
 </ul>
 <p>This tool works by scanning the Active Directory for Exchange UM settings and allowing the Lync Server 2013 administrator to view, create, and edit contact objects.</p></td>
 <td><p>RTCUniversalServerAdmins <em>and</em> RTCUniversalUserAdmins</p>
-<div>
 
 > [!IMPORTANT]
 > To run ocsumutil.exe successfully, the user must belong to both of these groups.
 
 
-</div>
-<div>
 
 > [!NOTE]
 > To create Contact objects, the user who runs ocsumutil.exe must have the correct permission to the Active Directory organizational unit (OU) where the new contact objects are stored. This permission can be granted by running the <STRONG>Grant-CsOUPermission</STRONG> cmdlet. For details, see the Lync Server Management Shell documentation.
 
 
-</div></td>
+</td>
 <td><p><a href="lync-server-2013-configure-lync-server-2013-to-work-with-unified-messaging-on-microsoft-exchange-server.md">Configure Lync Server 2013 to work with Unified Messaging on Microsoft Exchange Server</a></p></td>
 </tr>
 <tr class="even">
@@ -222,21 +201,9 @@ If you want to integrate Exchange Unified Messaging (UM) with Lync Server 2013, 
 <td><p>Exchange Recipient administrator</p></td>
 <td><p>For Exchange 2007 SP1 or latest service pack, see &quot;How to Enable a User for Unified Messaging&quot; at <a href="http://go.microsoft.com/fwlink/p/?linkid=268700">http://go.microsoft.com/fwlink/p/?LinkId=268700</a>.</p>
 <p>For Exchange 2010 or latest service pack, see &quot;Enable a User for Unified Messaging&quot; at <a href="http://go.microsoft.com/fwlink/p/?linkid=268701">http://go.microsoft.com/fwlink/p/?LinkId=268701</a>.</p>
+<p></p>
 <p>For Exchange 2013, see Unified Messaging at <a href="http://go.microsoft.com/fwlink/p/?linkid=266579">http://go.microsoft.com/fwlink/p/?LinkId=266579</a>.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

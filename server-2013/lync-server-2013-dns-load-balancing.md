@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS load balancing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-01-15_
 
 Lync Server enables DNS load balancing, a software solution that can greatly reduce the administration overhead for load balancing on your network. DNS load balancing balances the network traffic that is unique to Lync Server, such as SIP traffic and media traffic.
 
@@ -34,15 +21,11 @@ If you use DNS load balancing, you may also be able to purchase lower-cost hardw
 
 DNS load balancing is supported for Front End pools, Edge Server pools, Director pools, and stand-alone Mediation Server pools.
 
-<div>
-
 ## DNS Load Balancing on Front End Pools and Director Pools
 
 You can use DNS load balancing for the SIP traffic on Front End pools and Director pools. With DNS load balancing deployed, you still need to also use hardware load balancers for these pools, but only for client-to-server HTTPS traffic. The hardware load balancer is used for HTTPS traffic from clients over ports 443 and 80.
 
 Although you still need hardware load balancers for these pools, their setup and administration will be primarily for HTTPS traffic, which the administrators of hardware load balancers are accustomed to.
-
-<div>
 
 ## DNS Load Balancing and Supporting Older Clients and Servers
 
@@ -56,10 +39,6 @@ Additionally, if you are using Exchange UM, you must use a minimum of Exchange 2
 
 All other Exchange UM scenarios will work properly.
 
-</div>
-
-<div>
-
 ## Deploying DNS Load Balancing on Front End Pools and Director Pools
 
 Deploying DNS load balancing on Front End pools and Director pools requires you to perform a couple of extra steps with FQDNs and DNS records.
@@ -70,20 +49,11 @@ Deploying DNS load balancing on Front End pools and Director pools requires you 
 
   - To support the FQDN used by DNS load balancing, you must provision DNS to resolve the pool FQDN (such as pool01.contoso.com) to the IP addresses of all the servers in the pool (for example, 192.168.1.1, 192.168.1.2, and so on). You should include only the IP addresses of servers that are currently deployed.
     
-    <div>
-    
 
     > [!WARNING]
     > If you have more than one Front End pool or Front End Server the external Web services FQDN must be unique. For example, if you define the external Web services FQDN of a Front End Server as <STRONG>pool01.contoso.com</STRONG>, you cannot use <STRONG>pool01.contoso.com</STRONG> for another Front End pool or Front End Server. If you are also deploying Directors, the external Web services FQDN defined for any Director or Director pool must be unique from any other Director or Director pool as well as any Front End pool or Front End Server. If decide to override the Internal web services with a self-defined FQDN, each FQDN must be unique from any other Front End pool, Director or a Director pool.
 
-    
-    </div>
 
-</div>
-
-</div>
-
-<div>
 
 ## DNS Load Balancing on Edge Server Pools
 
@@ -95,8 +65,6 @@ Using DNS load balancing on your Edge Servers causes a loss of failover ability 
 
   - Instant message exchange with users of public instant messaging (IM) services AOLand Yahoo\!, in addition to XMPP-based providers and servers, such as Google Talk.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > <UL>
@@ -105,8 +73,7 @@ Using DNS load balancing on your Edge Servers causes a loss of failover ability 
     > <LI>
     > <P>As of September 1st, 2012, the Microsoft Lync Public IM Connectivity User Subscription License (“PIC USL”) is no longer available for purchase for new or renewing agreements. Customers with active licenses will be able to continue to federate with Yahoo! Messenger until the service shut down date. An end of life date of June 2014 for AOL and Yahoo! has been announced. For details, see <A href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Support for public instant messenger connectivity in Lync Server 2013</A>.</P></LI></UL>
 
-    
-    </div>
+
 
 These scenarios will work as long as all Edge Servers in the pool are up and running, but if one Edge Server is unavailable, any requests for these scenarios that are sent to it will fail, instead of routing to another Edge Server.
 
@@ -120,8 +87,6 @@ All other Exchange UM scenarios will work properly.
 
 The internal Edge interface and external Edge interface must use the same type of load balancing. You cannot use DNS load balancing on one Edge interface and hardware load balancing on the other Edge interface.
 
-<div>
-
 ## Deploying DNS Load Balancing on Edge Server Pools
 
 To deploy DNS load balancing on the external interface of your Edge Server pool, you need the following DNS entries:
@@ -134,37 +99,15 @@ To deploy DNS load balancing on the external interface of your Edge Server pool,
 
 To deploy DNS load balancing on the internal interface of your Edge Server pool, you must add one DNS A record, which resolves the internal FQDN of the Edge Server pool to the IP address of each server in the pool.
 
-</div>
-
-</div>
-
-<div>
-
 ## Using DNS Load Balancing on Mediation Server Pools
 
 You can use DNS load balancing on stand-alone Mediation Server pools. All SIP and media traffic is balanced by DNS load balancing.
 
 To deploy DNS load balancing on a Mediation Server pool, you must provision DNS to resolve the pool FQDN (for example, mediationpool1.contoso.com) to the IP addresses of all the servers in the pool (for example, 192.168.1.1, 192.168.1.2, and so on).
 
-</div>
-
-<div>
-
 ## Blocking Traffic to a Server With DNS Load Balancing
 
 If you use DNS load balancing and you need to block traffic to a specific computer, it is not sufficient to just remove the IP address entries from the Pool FQDN. You must remove the DNS entry for the computer as well.
 
 Note that for server-to-server traffic, Lync Server 2013 uses topology-aware load balancing. Servers read the published topology in the Central Management store to obtain the FQDNs of servers in the topology, and automatically distribute the traffic among the servers. To block a server from receiving server-to-server traffic, you must remove the server from the topology.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring providers for Centralized Logging Service in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-03-19_
 
 The concepts and configuration of *providers* in Centralized Logging Service is one of the most important to grasp. The *providers* map directly to Lync Server server role components in the Lync Server tracing model. The provider defines the components of a Lync Server 2013 that will be traced, the type of messages (for example, fatal, error, or warning) to collect, and the flags (for example, TF\_Connection or TF\_Diag). Providers are the traceable components in each Lync Server server role. By using providers, you define the level and type of tracing on components (for example, S4, SIPStack, IM and Presence). The defined provider is used in a scenario to group all of the providers for a given logical collection that address a specific problem condition.
 
@@ -38,15 +25,11 @@ For example:
 
 The remainder of this topic focuses on how to define providers, modify a provider and what a provider definition contains to optimize your troubleshooting. There are two ways to issue Centralized Logging Service commands. You can use the CLSController.exe that is located, by default, in the directory C:\\Program Files\\Common Files\\Microsoft Lync Server 2013\\CLSAgent. Or, you can use the Lync Server Management Shell to issue Windows PowerShell commands. The important distinction is that when you use CLSController.exe at the command line there is a finite selection of scenarios available in which the providers are already defined and are not changeable, but you can define the log level. By using Windows PowerShell, you can define new providers for use in your logging sessions, and have complete control over their creation, what they collect, and at what level they collect data.
 
-<div class="">
-
 
 > [!IMPORTANT]
 > As mentioned, providers are very powerful. However, scenarios are more powerful because they contain the embodiment of all information needed to set and execute tracing on the components that the providers represent. With scenarios being a collection of providers, this could be loosely compared to running a batch file containing hundreds of commands to collect a lot of information versus issuing hundreds of commands, one at a time, at the command line.<BR>Instead of requiring you to dig deeply into the details of providers, the Centralized Logging Service provides a number of scenarios that are already defined for you. The provided scenarios cover the vast majority of possible issues that you will encounter. In rare cases, you may need to create and define providers and assign them to scenarios. We strongly recommend that you become familiar with each of the scenarios provided before you investigate the need to create new providers and scenarios. While information about creating providers is found here to familiarize you with how the scenarios use the provider elements to collect trace information, details on the providers themselves are not provided at this time.
 
 
-
-</div>
 
 Introduced in [Overview of the Centralized Logging Service in Lync Server 2013](lync-server-2013-overview-of-the-centralized-logging-service.md), the key elements of defining a provider for use in a scenario are:
 
@@ -80,8 +63,6 @@ Introduced in [Overview of the Centralized Logging Service in Lync Server 2013](
     
       - **All**   Sets all available flags available for the provider.
 
-<div>
-
 ## To review information about existing Centralized Logging Service scenario providers
 
 1.  Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.
@@ -99,10 +80,6 @@ Introduced in [Overview of the Centralized Logging Service in Lync Server 2013](
         Get-CsClsScenario -Identity "global/CAA" | Select-Object -ExpandProperty Provider
     
     The output of this command displays each provider displayed in a five line format with the provider name, type of logging, logging level, flags, GUID, and role, each one on a separate line.
-
-</div>
-
-<div>
 
 ## To define a new Centralized Logging Service scenario provider
 
@@ -124,10 +101,6 @@ After the variable $LyssProvider is defined, you can use it with the **New-CsCls
 
 Where $LyssProvider is the variable containing the defined scenario created with **New-CsClsProvider**.
 
-</div>
-
-<div>
-
 ## To change an existing Centralized Logging Service scenario provider
 
 1.  Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.
@@ -140,9 +113,7 @@ Where $LyssProvider is the variable containing the defined scenario created with
     
         Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider $LyssProvider
 
-The end result of the command is that the scenario site:Redmond/RedmondLyssInfo will have updated flags and level for the provider assigned to it. You can view the new scenario by using Get-CsClsScenario. For details, see [Get-CsClsScenario](get-csclsscenario.md).
-
-<div class="">
+The end result of the command is that the scenario site:Redmond/RedmondLyssInfo will have updated flags and level for the provider assigned to it. You can view the new scenario by using Get-CsClsScenario. For details, see [Get-CsClsScenario](https://technet.microsoft.com/en-us/library/jj205091\(v=ocs.15\)).
 
 
 > [!WARNING]
@@ -150,17 +121,11 @@ The end result of the command is that the scenario site:Redmond/RedmondLyssInfo 
 
 
 
-</div>
-
 If you want to add additional providers to this scenario, type the following:
 
     Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider @{Add=$ABSProvider, $CASProvider, S4Provider}
 
 Where each provider defined with the Add directive has already been defined using the **New-CsClsProvider** process.
-
-</div>
-
-<div>
 
 ## To remove a scenario provider
 
@@ -169,8 +134,6 @@ Where each provider defined with the Add directive has already been defined usin
 2.  The cmdlets provided allow you to update existing providers and create new providers. To remove a provider, you must use the Replace directive for the Provider parameter to **Set-CsClsScenario**. The only way to completely remove a provider is to replace it with a redefined provider of the same name and use the Update directive. For example, our provider LyssProvider is defined with WPP as the log type, level set to Debug, and flags set are TF\_CONNECTION and TF\_DIAG. You need to change the flags to “All”. To change the provider, type the following:
     
         $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Debug" -Flags "All"
-
-     &nbsp;
     
         Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider @{Replace=$LyssProvider}
 
@@ -182,40 +145,20 @@ Where each provider defined with the Add directive has already been defined usin
     
         Remove-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo"
     
-    <div class="">
-    
 
     > [!WARNING]
     > The cmdlet <STRONG>Remove-CsClsScenario</STRONG> does not prompt you for confirmation. The scenario is deleted, along with the providers that were assigned to it. You can recreate the scenario by re-running the commands used to create it initially. There is no procedure to recover removed scenarios or providers.
 
-    
-    </div>
+
 
 When you remove a scenario by using the **Remove-CsClsScenario** cmdlet, you completely remove the scenario from the scope. To use the scenarios that you created and the providers that were a part of the scenario, you create new providers and assign them to a new scenario.
-
-</div>
-
-<div>
 
 ## See Also
 
 
-[Get-CsClsScenario](get-csclsscenario.md)  
-[New-CsClsScenario](new-csclsscenario.md)  
-[Remove-CsClsScenario](remove-csclsscenario.md)  
-[Set-CsClsScenario](set-csclsscenario.md)  
-[New-CsClsProvider](new-csclsprovider.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsClsScenario](https://technet.microsoft.com/en-us/library/jj205091\(v=ocs.15\))  
+[New-CsClsScenario](https://technet.microsoft.com/en-us/library/jj205022\(v=ocs.15\))  
+[Remove-CsClsScenario](https://technet.microsoft.com/en-us/library/jj205010\(v=ocs.15\))  
+[Set-CsClsScenario](https://technet.microsoft.com/en-us/library/jj204622\(v=ocs.15\))  
+[New-CsClsProvider](https://technet.microsoft.com/en-us/library/jj619187\(v=ocs.15\))
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create Response Group agent groups Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-12_
 
 When you create an agent group, you select the agents that are assigned to the group and specify additional group settings, such as the routing method and whether an agent can sign in to and out of the group.
 
@@ -32,31 +19,13 @@ An agent who must sign in and out of the group, which is different from signing 
 
 An agent who does not sign in or out of the group is called an *informal agent*. Informal agents are automatically signed in to the group when they sign in to Lync Server, and they cannot sign out of the group.
 
-<div>
-
 
 > [!NOTE]
 > Only on-premises users can be agents. If an agent is moved from on-premises to online, Response Group calls will not be routed to that agent.
 
 
 
-</div>
-
-<div>
-
 ## In This Section
 
 [Create or modify an agent group in Lync Server 2013](lync-server-2013-create-or-modify-an-agent-group.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

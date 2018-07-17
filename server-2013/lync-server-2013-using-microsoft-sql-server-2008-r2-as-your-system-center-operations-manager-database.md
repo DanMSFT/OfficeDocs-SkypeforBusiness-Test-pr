@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using Microsoft SQL Server 2008 R2 as your System Center Operations Manager database for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-29_
 
 To use SQL Server 2008 R2 as your back-end database, complete the steps detailed in this topic.
-
-<div>
 
 ## Configuring SQL Server 2008 R2 and SQL Server Reporting Services
 
@@ -60,10 +45,6 @@ After updating the Report Server configuration file you must then assign the cor
 
 6.  Close Reporting Services Configuration Manager.
 
-</div>
-
-<div>
-
 ## Creating a System Center Operations Manager database for use with SQL Server 2008 R2
 
 If you want to configure System Center Operations Manager to use a SQL Server 2008 R2 database, you will need to "manually" create the Operations Manager database on the computer running SQL Server 2008 R2. (Again, these steps are not required if you are using SQL Server 2005 or SQL Server 2008 as your back-end database.)
@@ -81,10 +62,6 @@ To manually create an Operations Manager database do the following:
 5.  On the **Operations Manager Error Reports** page click **Next**.
 
 6.  On the **Summary** page click **Finish**.
-
-</div>
-
-<div>
 
 ## Creating a System Center Operations Manager data warehouse for use with SQL Server 2008 R2
 
@@ -105,10 +82,6 @@ In order to use these new reports you must install a System Center Operations Ma
 3.  On the **Database Information** page, select **Operations Manager Data Warehouse Database** from the **Database Type** dropdown list and then click **Next**.
 
 4.  On the **Summary** page click **Finish**.
-
-</div>
-
-<div>
 
 ## Installing the System Center Operations Manager console
 
@@ -147,10 +120,6 @@ To install the System Center Operations Manager console:
 15. On the **Completing the System Center Operations Manager Setup** page, clear the **Backup Encryption Key** and **Start the console checkboxes** and then click **Finish**.
 
 16. In System Center Operations Manager Setup click **Exit**.
-
-</div>
-
-<div>
 
 ## Installing System Center Reporting Services
 
@@ -213,16 +182,4 @@ After System Center reporting has been installed you then use the following proc
 5.  Close Server Manager.
 
 If the System Center Operations Console is open you will need to close the application and then restart it; if you do not do this the **Reporting** tab will not appear in the Operations Console user interface. Note that, after restarting the Operations Console the first time, it could take several minutes before all the Monitoring Reports appear on the **Reporting** tab.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

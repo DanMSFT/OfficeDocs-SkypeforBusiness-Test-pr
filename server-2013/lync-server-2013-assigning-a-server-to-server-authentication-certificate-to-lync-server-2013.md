@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Assigning a server-to-server authentication certificate to Microsoft Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-24_
 
 To determine whether or not a server-to-server authentication certificate has already been assigned to Microsoft Lync Server 2013, run the following command from the Lync Server 2013 Management Shell:
 
@@ -56,15 +43,11 @@ On July 1, 2012 the new certificate will be configured as the current OAuthToken
 
 If you do not want to use Windows PowerShell you can also use the Certificates MMC console to export a certificate from one Front End Server and then import that same certificate on all your other Front End Servers. If you do this, make sure that you export the private key along with the certificate itself.
 
-<div>
-
 
 > [!WARNING]
 > In this case, the procedure must be performed on each Front End Server. When exporting and importing certificates in this manner Lync Server 2013 will not replicate that certificate to each Front End Server.
 
 
-
-</div>
 
 After the certificate has been imported to all your Front End Servers, that certificate can then be assigned by using the Lync Server Deployment Wizard instead of Windows PowerShell. To assign a certificate by using the Deployment Wizard, complete the following steps on a computer where the Deployment Wizard has been installed:
 
@@ -85,14 +68,4 @@ After the certificate has been imported to all your Front End Servers, that cert
 8.  On the Executing Commands page, click **Finish**.
 
 9.  Close the Certificate Wizard and the Deployment Wizard.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,37 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Gallery View in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-30_
 
 In Lync Server 2013, you configure Gallery View video conferencing in conferencing policy. Gallery View is turned on by default. If you do not want to allow Gallery View, or want to allow it for only some users, you need to turn off the feature in conferencing policy.
 
 When a conference participant's video is not available, the users' Gallery View experience can be enhanced if you deploy high-resolution photos, a new feature in Lync Server 2013. High-resolution photos provide an alternative to the smaller, limited resolution contact photos stored in Active Directory Domain Services. High-resolution photos are stored in a user's Exchange 2013 mailbox, and, therefore, require you to integrate Lync Server 2013 with Exchange 2013. For details, see the NextHop blog article, "Integrating Exchange 2013 and Lync Server 2013," at [http://go.microsoft.com/fwlink/p/?LinkId=260987](http://go.microsoft.com/fwlink/p/?linkid=260987).
-
-<div>
 
 
 > [!NOTE]
 > The content of each blog and its URL are subject to change without notice.
 
 
-
-</div>
 
 You can view or modify the Gallery View parameters by using Lync Server 2013 Control Panel or by using one of the following cmdlets:
 
@@ -70,25 +53,11 @@ Configure Gallery View with the following conferencing policy settings:
 
 The following procedure is an example of using Lync Server Management Shell to enable Gallery View video conferencing.
 
-<div>
-
 ## To modify conferencing policy for Gallery View video conferencing
 
 1.  Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.
 
 2.  At the command line, run the following cmdlet to edit conferencing policy:
     
-        Set-CsConferencingPolicy -Identity Pool01ConferencingPolicy -AllowMultiview $true -EnableMultiviewJoin $true 
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+        Set-CsConferencingPolicy -Identity Pool01ConferencingPolicy -AllowMultiview $true -EnableMultiviewJoin $true
 

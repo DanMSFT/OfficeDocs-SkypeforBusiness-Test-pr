@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Check trunk configuration against a phone number in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-20_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-05-20_
 </table>
 
 
-<div>
-
 ## Description
 
 SIP trunks connect the Lync Server internal Enterprise Voice network to any of the following:
@@ -64,10 +49,6 @@ SIP trunks connect the Lync Server internal Enterprise Voice network to any of t
   - A Session Border Controller (SBC).
 
 The Test-CsTrunkConfiguration cmdlet verifies that a phone number (as dialed by a user) can be converted to the E.164 network and routed over a specified SIP trunk.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -85,10 +66,6 @@ If you have multiple collections of SIP trunk configuration settings, you can us
 
 For more information, see the Help documentation for the Test-CsTrunkConfiguration cmdlet.
 
-</div>
-
-<div>
-
 ## Determining success or failure
 
 If Test-CsTrunkConfiguration can place a call to the dialed number then the translated phone number (in the E.164 format) and the rule used to translate that phone number will both be displayed on screen:
@@ -104,10 +81,6 @@ If the test fails, Test-CsTrunkConfiguration will return empty property values:
 TranslatedNumber MatchingRule
 
 \---------------- ------------
-
-</div>
-
-<div>
 
 ## Reasons why the test might have failed
 
@@ -127,25 +100,8 @@ Name : NoAreaCode
 
 At that point, you check the value of the Pattern property (which is a [regular expression](http://go.microsoft.com/fwlink/?linkid=400464) string) to see whether any of the translation rules are configured to handle the dialed number. If not, you'll either have to change one of the existing rules (Set-CsOutboundTranslationRule) or use the New-CsOutboundTranslationRule cmdlet to add a new rule to the collection.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsTrunkConfiguration](https://technet.microsoft.com/en-us/library/gg398137\(v=ocs.15\))
 

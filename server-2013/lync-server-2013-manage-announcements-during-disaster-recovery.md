@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Manage announcements during disaster recovery in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Lync Server 2013 supports announcements for calls to unassigned numbers during outages. Restoring announcement functionality during an outage is optional. If you choose to restore announcements during an outage, you need recreate your announcement configuration in the backup pool. This section describes what you need to do if you choose to restore announcements during disaster recovery.
 
 This section applies to unassigned number ranges that use the Announcement application. This section does not apply to unassigned number ranges that use Exchange Unified Messaging (UM) Auto Attendant.
-
-<div>
 
 ## Before an Outage
 
@@ -51,15 +36,9 @@ If you do not have backup copies of customized audio files, and the original aud
     Where X-ApplicationServer-X refers to the service ID of the Application Server of the pool (for example, 1-ApplicationServer-1")
 
 
-</div>
-
-<div>
-
 ## During an Outage
 
 To use the Announcement application during an outage, you need to recreate the announcement configuration in the backup pool by performing the tasks described in this section.
-
-<div>
 
 
 > [!NOTE]
@@ -67,17 +46,11 @@ To use the Announcement application during an outage, you need to recreate the a
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > These steps are not required for number ranges that use an Exchange UM Auto Attendant phone number.
 
 
-
-</div>
 
 **To recreate the announcement configuration in the backup pool**
 
@@ -87,14 +60,11 @@ To use the Announcement application during an outage, you need to recreate the a
     
     2.  Recreate each announcement by using the **New-CsAnnouncement** cmdlet and specifying the backup pool for the Parent parameter.
     
-    <div>
-    
 
     > [!NOTE]
     > For details about using these parameters to create announcements in the backup pool, see <A href="lync-server-2013-create-an-announcement.md">Create an announcement in Lync Server 2013</A>.
 
-    
-    </div>
+
 
 2.  After all announcements are recreated in the backup pool, redirect all the unassigned number ranges that use announcements in the primary pool to the recreated announcements in the backup pool.
     
@@ -102,23 +72,15 @@ To use the Announcement application during an outage, you need to recreate the a
     
         Set-CsUnassignedNumber -Identity "<name of number range>" -AnnouncementService "<FQDN of backup pool>" -AnnouncementName "<announcement name in backup pool>"
 
-</div>
-
-<div>
-
 ## After the Outage
 
 When the primary pool becomes available, you need to redirect the unassigned number ranges that you changed for the outage back to the primary pool.
-
-<div>
 
 
 > [!NOTE]
 > These steps are not required for number ranges that use an Exchange UM Auto Attendant phone number.
 
 
-
-</div>
 
 **To restore announcements in the primary pool**
 
@@ -144,16 +106,4 @@ When the primary pool becomes available, you need to redirect the unassigned num
     
         Remove-CsAnnouncement -Identity "ApplicationServer:redmond.contoso.com/1951f734-c80f-4fb2-965d-51807c792b90"
 
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

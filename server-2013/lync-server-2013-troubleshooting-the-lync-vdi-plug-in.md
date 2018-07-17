@@ -8,25 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Troubleshooting the Lync VDI plug-in in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-10_
-
-<div>
 
 ## Troubleshooting Issues with Installing the Lync VDI Plug-in on a Thin Client
 
@@ -35,10 +20,6 @@ If there are issues with installing the VDI plug-in on a thin client, check the 
   - Ensure that there is sufficient space in the folder that you specified in the TEMP and TMP system variables.
 
   - Ensure that write-protect is turned off. Refer to your device manufacturer’s documentation for instructions.
-
-</div>
-
-<div>
 
 ## Troubleshooting Issues with Pairing
 
@@ -77,16 +58,4 @@ The following are possible reasons for failures and the corrective actions you c
   - **The Lync client is running on the local computer.**
     
     To use the Lync VDI plugin, a Lync client must not be running on the local computer, otherwise pairing will fail. As a best practice, the user should not install a Lync client on the local computer.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a Group Call Pickup number range in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-30_
 
 Use the following procedure to create or modify a call pickup group number range in the call park orbit table.
-
-<div>
 
 
 > [!NOTE]
@@ -36,17 +21,11 @@ Use the following procedure to create or modify a call pickup group number range
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > The call pickup group number range must be assigned a type of GroupPickup. Users are enabled for Group Call Pickup only if the group number that they are assigned is type GroupPickup.
 
 
-
-</div>
 
 The call pickup group number ranges must comply with the following rules:
 
@@ -59,8 +38,6 @@ The call pickup group number ranges must comply with the following rules:
   - If the number range begins with the character \* or \#, the range must be greater than 100.
 
   - Valid values: Must match the regular expression string (\[\\\*|\#\]?\[1-9\]\\d{0,7})|(\[1-9\]\\d{0,8}). This means the value must be a string beginning with either the character \* or \# or a number 1 through 9 (the first character cannot be a zero). If the first character is \* or \#, the following character must be a number 1 through 9 (it cannot be a zero). Subsequent characters can be any number 0 through 9 up to seven additional characters (for example, "\#6000", "\*92000", "\*95551212", and "915551212"). If the first character is not \* or \#, the first character must be a number 1 through 9 (it cannot be zero), followed by up to eight characters, each a number 0 through 9 (for example, "915551212", "41212", "300").
-
-<div>
 
 ## To create or modify a call pickup group range
 
@@ -82,18 +59,11 @@ The call pickup group number ranges must comply with the following rules:
     
         Set-CsCallParkOrbit -Identity "Redmond call pickup" -Type GroupPickup
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Use this cmdlet to change the type assigned to number ranges only if you initially specified the incorrect type and the group range is not yet in use. If you change the number range from CallPark to GroupPickup or vice versa and the number range is already in use, either Call Park or Group Call Pickup will stop working for that number range. For example, if you change a number range from CallPark to GroupPick, the Call Park application can no longer use that range of orbits to park calls.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -101,19 +71,6 @@ The call pickup group number ranges must comply with the following rules:
 [Delete a Call Park orbit range in Lync Server 2013](lync-server-2013-delete-a-call-park-orbit-range.md)  
 
 
-[New-CsCallParkOrbit](new-cscallparkorbit.md)  
-[Set-CsCallParkOrbit](set-cscallparkorbit.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsCallParkOrbit](https://technet.microsoft.com/en-us/library/gg398936\(v=ocs.15\))  
+[Set-CsCallParkOrbit](https://technet.microsoft.com/en-us/library/gg398796\(v=ocs.15\))
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Modify existing Registrar configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 You can use the Registrar to configure proxy server authentication protocols. For information about the available protocols, see [Create Registrar configuration settings in Lync Server 2013](lync-server-2013-create-registrar-configuration-settings.md).
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ You can use the Registrar to configure proxy server authentication protocols. Fo
 
 
 
-</div>
-
 Follow these steps to modify an existing Registrar.
-
-<div>
 
 ## To modify existing registrar configuration settings
 
@@ -61,16 +42,4 @@ Follow these steps to modify an existing Registrar.
       - **Enable certificate authentication** to have the servers in the pool issue certificates to clients.
 
 6.  Click **Commit**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

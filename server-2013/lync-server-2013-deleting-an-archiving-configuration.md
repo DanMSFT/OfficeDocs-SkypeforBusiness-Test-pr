@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deleting an Archiving configuration in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 You can delete a site configuration or pool configuration. The global configuration cannot be removed. If you delete the global configuration, it is automatically reset to the default values. For details about how Archiving configurations are implemented, including which options you can specify and the hierarchy of Archiving configurations, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.
-
-<div>
 
 ## To delete a site or pool configuration for archiving
 
@@ -42,15 +27,9 @@ You can delete a site configuration or pool configuration. The global configurat
 
 5.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Removing Archiving Configuration Settings by Using Windows PowerShell Cmdlets
 
 Archiving configuration settings can be deleted by using Windows PowerShell and the **Remove-CsArchivingConfiguration** cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To remove a specified collection of archiving configuration settings
 
@@ -58,19 +37,11 @@ Archiving configuration settings can be deleted by using Windows PowerShell and 
     
         Remove-CsArchivingConfiguration -Identity "site:Redmond"
 
-</div>
-
-<div>
-
 ## To remove all the archiving configuration settings applied to the site scope
 
   - This command removes all the archiving configuration settings applied to the service scope:
     
         Get-CsArchivingConfiguration -Filter "site:*" | Remove-CsArchivingConfiguration
-
-</div>
-
-<div>
 
 ## To remove archiving configuration settings based on a specified property value
 
@@ -78,13 +49,7 @@ Archiving configuration settings can be deleted by using Windows PowerShell and 
     
         Get-CsArchivingConfiguration | Where-Object {$_.EnableExchangeArchiving -eq $False} | Remove-CsArchivingConfiguration
 
-</div>
-
-For more information, see the help topic for the [Remove-CsArchivingConfiguration](remove-csarchivingconfiguration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Remove-CsArchivingConfiguration](https://technet.microsoft.com/en-us/library/gg398951\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
@@ -92,18 +57,5 @@ For more information, see the help topic for the [Remove-CsArchivingConfiguratio
 [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md)  
 
 
-[Managing the Archiving of internal and external communications in Lync Server 2013](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing the Archiving of internal and external communications in Lync Server 2013](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md)
 

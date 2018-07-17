@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Technical requirements for Front End Servers, instant messaging, and presence in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-18_
 
 Instant messaging (IM) and presence always run on Enterprise Edition Front End pools and Standard Edition servers. For information on supported hardware, operating systems, and database software, see the following:
 
@@ -32,21 +19,7 @@ Instant messaging (IM) and presence always run on Enterprise Edition Front End 
 
   - [Server software and infrastructure support in Lync Server 2013](lync-server-2013-server-software-and-infrastructure-support.md)
 
-<div>
-
 ## Supported Collocation
 
 The Front End Server role can be collocated with Mediation Server. You can also run Monitoring and Archiving on Front End Servers. Front End Server cannot be collocated with Edge Server or Director.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

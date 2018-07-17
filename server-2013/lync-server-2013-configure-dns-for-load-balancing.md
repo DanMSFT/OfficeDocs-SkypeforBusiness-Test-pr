@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure DNS for load balancing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 To successfully complete this procedure, you should be logged on to the server or domain minimally as a member of the Domain Admins group or a member of the DnsAdmins group.
 
 Domain Name System (DNS) Load Balancing balances the network traffic that is unique to Lync Server 2013, such as SIP traffic and media traffic. DNS load balancing is supported for Front End pools, Edge pools, Director pools, and stand-alone Mediation pools. A pool that is configured to use DNS load balancing must have two fully qualified domain names (FQDNs) defined: the regular pool FQDN that is used by DNS load balancing (for example, pool1.contoso.com) and that resolves to the physical IPs of the servers in the pool, and another FQDN for the pool’s Web Services (for example, web1.contoso.net), which resolves to the virtual IP address of the pool. For details about DNS Load Balancing, see [DNS load balancing in Lync Server 2013](lync-server-2013-dns-load-balancing.md) in the Planning documentation.
-
-<div>
 
 
 > [!NOTE]
@@ -38,35 +23,25 @@ Domain Name System (DNS) Load Balancing balances the network traffic that is uni
 
 
 
-</div>
-
 Before you can use DNS load balancing, you must do the following:
 
 1.  Override the internal Web Services pool FQDN.
-    
-    <div>
     
 
     > [!WARNING]
     > If decide to override the Internal web services with a self-defined FQDN, each FQDN must be unique from any other Front End pool, Director or a Director pool.
 
-    
-    </div>
+
 
 2.  Create DNS A host records to resolve the pool FQDN to the IP addresses of all the servers in the pool.
 
 3.  Enable IP Address randomization or, for Windows Server DNS, enable round robin.
     
-    <div>
-    
 
     > [!NOTE]
     > Round robin should be enabled by default.
 
-    
-    </div>
 
-<div>
 
 ## To override internal Web services FQDN
 
@@ -83,10 +58,6 @@ Before you can use DNS load balancing, you must do the following:
 6.  Below **External web services**, type the external pool FQDN that resolves to the virtual IP addresses of the pool, and then click **OK**.
 
 7.  From the console tree, click **Lync Server 2013**, and then in the **Actions** pane, click **Publish Topology**.
-
-</div>
-
-<div>
 
 ## To create DNS Host (A) Records for all internal pool servers
 
@@ -141,10 +112,6 @@ Before you can use DNS load balancing, you must do the following:
     
     For details about creating DNS Host (A) records, see [Configure DNS Host records for Lync Server 2013](lync-server-2013-configure-dns-host-records.md).
 
-</div>
-
-<div>
-
 ## To enable round robin for Windows Server
 
 1.  Click **Start**, click **All Programs**, click **Administrative Tools**, and then click **DNS**.
@@ -155,35 +122,14 @@ Before you can use DNS load balancing, you must do the following:
     
     ![DNS Round Robin dialog box](images/Gg398251.e7bf6125-8d78-4460-8401-0a8e7e21d305(OCS.15).jpg "DNS Round Robin dialog box")
 
-<div>
-
 
 > [!NOTE]
 > This feature should be enabled by default.
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
-[DNS load balancing in Lync Server 2013](lync-server-2013-dns-load-balancing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[DNS load balancing in Lync Server 2013](lync-server-2013-dns-load-balancing.md)
 

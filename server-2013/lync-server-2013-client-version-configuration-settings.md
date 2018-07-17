@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Client version configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-12_
 
 Client version configuration settings are used to turn client version control on or off, either globally or for particular sites. Use the following procedures to configure client version configuration settings for Lync Server 2013.
-
-<div>
 
 ## In This Section
 
@@ -41,16 +26,4 @@ Client version configuration settings are used to turn client version control on
   - [View client version configuration settings in Lync Server 2013](lync-server-2013-view-client-version-configuration-settings.md)
 
   - [Delete an existing collection of client version configuration settings in Lync Server 2013](lync-server-2013-delete-an-existing-collection-of-client-version-configuration-settings.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

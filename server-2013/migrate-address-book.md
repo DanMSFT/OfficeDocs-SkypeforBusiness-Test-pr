@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Migrate Address Book
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-09_
 
 In general, the Lync Server 2010 Address Book is migrated along with the rest of your topology. However, you might need to perform some post-migration steps if you customized the following in your Lync Server 2010 environment:
 
@@ -42,34 +29,25 @@ If you set the **PartitionbyOU** WMI property to True to create address books fo
 
 If you customized Address Book normalization rules in your Lync Server 2010 environment, you must migrate the customized rules to your pilot pool. If you did not customize Address Book normalization rules, you have nothing to migrate for Address Book service. The default normalization rules for Lync Server 2013 are the same as the default rules for Lync Server 2010. Follow the procedure later in this section to migrate customized normalization rules.
 
-<div>
-
 
 > [!NOTE]
 > If your organization uses remote call control and you customized Address Book normalization rules, you must perform the procedure in this topic before you can use remote call control. The procedure requires membership in the RTCUniversalServerAdmins group or equivalent rights.
 
 
 
-</div>
-
 **UseNormalizationRules Set to False**
 
 If you set the value for **UseNormalizationRules** to False so that users can use phone numbers as they are defined in Active Directory Domain Services without having Lync Server 2013 apply normalization rules, you need to set the **UseNormalizationRules** and **IgnoreGenericRules** parameters to True. Follow the procedure later in this section to set these parameters to True.
-
-<div>
 
 ## To migrate Address Book customized normalization rules
 
 1.  Find the Company\_Phone\_Number\_Normalization\_Rules.txt file in the root of the Address Book shared folder, and copy it to the root of the Address Book shared folder in your Lync Server 2013 pilot pool.
     
-    <div>
-    
 
     > [!NOTE]
     > The sample Address Book normalization rules have been installed in your ABS Web component file directory. The path is <STRONG>$installedDriveLetter:\Program Files\Microsoft Lync Server 2013\Web Components\Address Book Files\Files\ Sample_Company_Phone_Number_Normalization_Rules.txt,</STRONG>. This file can be copied and renamed as &nbsp;<STRONG>Company_Phone_Number_Normalization_Rules.txt</STRONG> &nbsp;to the address book shared folder’s root directory. For example, the address book shared in <STRONG>$serverX</STRONG>,&nbsp;the path will be similar to: <STRONG>\\$serverX \LyncFileShare\2-WebServices-1\ABFiles</STRONG>.
 
-    
-    </div>
+
 
 2.  Use a text editor, such as Notepad, to open the Company\_Phone\_Number\_Normalization\_Rules.txt file.
 
@@ -82,10 +60,6 @@ If you set the value for **UseNormalizationRules** to False so that users can us
     The following string would not cause the normalization rule to fail:
     
         \s*\(?\s*\d\d\d\s*\)?\s*\-?\s*\d\d\d\s*\-?\s*\d\d\d\d
-
-</div>
-
-<div>
 
 ## To set UseNormalizationRules and IgnoreGenericRules to true
 
@@ -110,16 +84,4 @@ If you set the value for **UseNormalizationRules** to False so that users can us
 6.  Run the following cmdlet on each Lync Server 2013 pool in your deployment:
     
         Update-CsAddressBook
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

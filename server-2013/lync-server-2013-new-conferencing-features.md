@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # New conferencing features in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-08_
 
 Lync Server 2013 introduces several new features that enhance conferencing, as described in the following list.
 
@@ -50,14 +37,11 @@ Lync Server 2013 introduces several new features that enhance conferencing, as d
     
     In video conferences, users can see videos of up to five conference participants at the same time.
     
-    <div>
-    
 
     > [!NOTE]
     > Gallery View is experienced in conferences with up to 75 participants. When the conference gets larger than 75 participants, the experience reverts to single view.
 
-    
-    </div>
+
 
   - **HD Video**
     
@@ -83,23 +67,8 @@ Lync Server 2013 introduces several new features that enhance conferencing, as d
     
     Administrators can customize email invitations for online meetings using Lync Server Control Panel or Lync Server Management Shell. Customizations can include URLs for logos, help text, legal text, and footer text. All subsequent invitations will include the customizations.
 
-<div>
-
 ## See Also
 
 
-[Planning for conferencing in Lync Server 2013](lync-server-2013-planning-for-conferencing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for conferencing in Lync Server 2013](lync-server-2013-planning-for-conferencing.md)
 

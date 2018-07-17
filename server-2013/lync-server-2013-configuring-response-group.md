@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Response Group in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-30_
 
 Response Group is an Enterprise Voice feature that routes and queues incoming calls to groups of people, called *agents*, such as a help desk or a customer service desk.
 
@@ -32,17 +19,11 @@ The components that Response Group requires are installed and enabled automatica
 
 This section guides you through the configuration of Lync Server 2013 Response Group. It assumes that you have already read the planning sections related to Response Group and have deployed an Enterprise Edition server or a Standard Edition server with Enterprise Voice.
 
-<div>
-
 
 > [!TIP]
 > For details about creating a Response Group by using Lync Server Management Shell, including a sample script, see "Creating Your First Response Group Using Lync Server Management Shell" at <A href="http://go.microsoft.com/fwlink/p/?linkid=204108">http://go.microsoft.com/fwlink/p/?linkId=204108</A>.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -64,25 +45,8 @@ This section guides you through the configuration of Lync Server 2013 Response 
 
   - [(Optional) Verify Response Group deployment in Lync Server 2013](lync-server-2013-optional-verify-response-group-deployment.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)
 

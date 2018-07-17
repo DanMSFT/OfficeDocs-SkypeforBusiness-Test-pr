@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Determine external A/V firewall and port requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-29_
 
 Audio/Video (A/V) communication can be a complex. Because of the nature of protocols used in A/V and how clients and servers use the protocols, a special section is warranted to explain the differences between client and server versions.
 
@@ -57,8 +44,6 @@ Use the following A/V Firewall and Port table to determine firewall requirements
 </tbody>
 </table>
 
-
-<div>
 
 ## External A/V Firewall Port Requirements for External User Access
 
@@ -156,19 +141,11 @@ If your policies require both inbound and outbound firewall rule definitions, th
 </table>
 
 
-<div>
-
 
 > [!IMPORTANT]
 > Microsoft Office Communications Server 2007 requires a slightly different configuration. The TCP and UDP port range of 50,000-59,999 must be open inbound and outbound. This requirement is only for Office Communicator 2007. Office Communications Server 2007 R2, Lync Server 2010 and Lync Server 2013 only require TCP range 50,000-59,999 open outbound.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## NAT Requirements for External User Access
 
@@ -176,15 +153,11 @@ NAT has typically been a routing function, but newer devices such as firewalls a
 
 Lync Server 2013 communications software does not support NAT for traffic to or from the Edge internal interface, but for the Edge external interface, the following NAT behavior is required.
 
-<div>
-
 
 > [!IMPORTANT]
 > You must configure symmetric NAT for incoming and outgoing traffic. Symmetric NAT is the NAT technology described in this topic.
 
 
-
-</div>
 
 This documentation uses the acronyms ChangeDST and ChangeSRC in tables and drawings to define the following required behavior:
 
@@ -217,16 +190,4 @@ The key points are:
   - Traffic that is inbound to the server running the A/V Edge service, the source IP address does not change but the destination IP address changes from 131.107.155.30 to the translated IP address of 10.45.16.10.
 
   - Traffic that is outbound from the server running the A/V Edge service back to the workstation, the source IP address changes from the server’s public IP address to the public IP address of the server running the A/V Edge service. The destination IP remains the workstation’s public IP address. After the packet leaves the first NAT device outbound, the rule on the NAT device changes the source IP address of the server running the A/V Edge service external interface IP address (10.45.16.10) to its public IP address (131.107.155.30).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

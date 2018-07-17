@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing sharing in conferences in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-01_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-11-01_
 </table>
 
 
-<div>
-
 ## Description
 
 In Lync Server 2013, a data conference is any conference where collaborative activities such as whiteboarding or annotations are used. The **Test-CsDataConference** cmdlet enables you to verify that a pair of users are able to take part in a data conference.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -74,10 +55,6 @@ With the credential objects in hand, the third command determines whether or not
     $credential1 = Get-Credential "litwareinc\pilar" 
     $credential2 = Get-Credential "litwareinc\kenmyer" 
     Test-CsDataConference -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:pilar@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:kenmyer@litwareinc.com" -ReceiverCredential $credential2
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -121,10 +98,6 @@ has failed to respond
 
 Diagnosis :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsDataConference** might fail:
@@ -134,16 +107,4 @@ Here are some common reasons why **Test-CsDataConference** might fail:
   - The ability to conduct a data conference depends on the conferencing policy that has been assigned to the user who organized the conference (in the case of the **Test-CsDataConference** cmdlet, that is the "sender"). If the organizer is not allowed to include collaborative activities in his or her meeting (for example, if his or her conferencing policy has the EnableDataCollaboration property set to False) then the **Test-CsDataConference** cmdlet will fail.
 
   - This command will fail if the Edge Server is misconfigured or not yet deployed.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

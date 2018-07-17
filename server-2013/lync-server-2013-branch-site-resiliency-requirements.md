@@ -8,33 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Branch-site resiliency requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-25_
 
 This topic will help you to prepare users for branch-site resiliency and voice mail survivability, and also specifies the relevant hardware and software requirements.
-
-<div>
 
 ## Preparing Branch Users for Branch-Site Resiliency
 
 Prepare users for branch-site resiliency by setting their Registrar pool as the Survivable Branch Appliance (SBA) or Survivable Branch Server.
-
-<div>
 
 ## Registrar Assignments for Branch Users
 
@@ -46,15 +29,9 @@ If a branch site does not have a DNS server, there are two alternative ways to c
 
   - Configure the Survivable Branch Appliance or Survivable Branch Server to respond to DHCP 120 queries.
 
-</div>
-
-<div>
-
 ## Voice Routing for Branch Users
 
 We recommend that you create a separate user-level Voice over Internet Protocol (VoIP) policy for users in a branch site. This policy should include a primary route that uses the Survivable Branch Appliance or branch server gateway, and one or more backup routes that use a trunk with a public switched telephone network (PSTN) gateway at the central site. If the primary route is unavailable, the backup route that uses one or more central site gateways is used instead. This way, regardless of where a user is registered—on the branch site Registrar or the backup Registrar pool at the central site—the user’s VoIP policy is always in effect. This is an important consideration for failover scenarios. For example, if you need to rename the Survivable Branch Appliance or reconfigure the Survivable Branch Appliance to connect to a backup Registrar pool at the central site, then you must move branch site users to the central site for the duration. (For details about renaming or reconfiguring a Survivable Branch Appliance, see [Appendix B: Managing a Survivable Branch Appliance in Lync Server 2013](lync-server-2013-appendix-b-managing-a-survivable-branch-appliance.md) in the Deployment documentation.) If those users do not have user-level VoIP policies or user-level dial plans, when the users are moved to another site, the site-level VoIP policies and site-level dial plans of the central site apply to the users by default, instead of the branch site site-level VoIP policies and dial plans,. In this scenario, unless the site-level VoIP policies and site-level dial plans used by the backup Registrar pool can also apply to the branch site users, their calls will fail. For example, if users from a branch site located in Japan are moved to a central site in Redmond, then a dial plan with normalization rules that prepend +1425 to all 7-digit calls is unlikely to appropriately translate calls for those users.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -62,11 +39,7 @@ We recommend that you create a separate user-level Voice over Internet Protocol 
 
 
 
-</div>
-
 To help ensure that inbound calls to branch site users will reach those users when the branch gateway or the Windows component of the Survivable Branch Appliance site is unavailable (which would happen, for example, if the Survivable Branch Appliance or branch gateway were down for maintenance), create a failover route on the gateway (or work with your Direct Inward Dialing (DID) provider) to redirect incoming calls to the backup Registrar pool at the central site. From there, the calls will be routed over the WAN link to branch users. Be sure that the route translates numbers to comply with the PSTN gateway or other trunk peer’s accepted phone number formats. For details about creating a failover route, see [Configuring a failover route in Lync Server 2013](lync-server-2013-configuring-a-failover-route.md). Also create service-level dial plans for the trunk associated with the gateway at the branch site to normalize incoming calls. If you have two Survivable Branch Appliances at a branch site, you can create a site-level dial plan for both unless a separate service-level plan for each is necessary.
-
-<div>
 
 
 > [!NOTE]
@@ -74,11 +47,7 @@ To help ensure that inbound calls to branch site users will reach those users wh
 
 
 
-</div>
-
 We also recommend that you create a user-level dial plan and voice policy, and then assign it to branch site users. For details, see [Create a dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md) and [Create the VoIP routing policy for branch users in Lync Server 2013](lync-server-2013-create-the-voip-routing-policy-for-branch-users.md) in the Deployment documentation.
-
-<div>
 
 ## Routing Extension Numbers
 
@@ -188,14 +157,6 @@ Whether or not a WAN link is available, if your organization does not have DID n
 
 For details about calls from a central site user to a branch site user when the WAN link between the sites is unavailable, see "Preparing for Voice Mail Survivability" later in this topic. For details about dial plans and normalization rules, including other sample rules, see [Dial plans and normalization rules in Lync Server 2013](lync-server-2013-dial-plans-and-normalization-rules.md) in the Planning documentation and [Configuring dial plans in Lync Server 2013](lync-server-2013-configuring-dial-plans.md) in the Deployment documentation. For details about outbound translation rules, see [Translation rules in Lync Server 2013](lync-server-2013-translation-rules.md) in the Planning documentation and [Defining translation rules in Lync Server 2013](lync-server-2013-defining-translation-rules.md) in the Deployment documentation.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Preparing for Voice Mail Survivability
 
 Exchange Unified Messaging (UM) is usually installed only at a central site and not at branch sites. A caller should be able to leave a voice mail message, even if the WAN link between branch site and central site is unavailable. As a result, configuring the Line URI for the Exchange UM Auto Attendant phone number that provides voice mail for branch site users requires special considerations, in addition to the voice policy, dial plan, and normalization rules applicable to that voice mail number.
@@ -214,15 +175,9 @@ We recommend the following configurations for voice mail survivability for branc
 
   - When the WAN link is unavailable, calls to branch site users can be routed to the user’s Exchange Unified Messaging (UM) voice mailbox, but only if the voice policy applied to the call specifies a voice mail phone number that is unique and does not include an extension number.
 
-</div>
-
-<div>
-
 ## Hardware and Software Requirements for Branch-Site Resiliency
 
 The hardware and software requirements vary, depending on your resiliency solution.
-
-<div>
 
 ## Requirements for Survivable Branch Appliances
 
@@ -230,15 +185,11 @@ Required hardware and software is built into the Survivable Branch Appliance. Ho
 
 If the enterprise DNS servers are located only in central sites, branch site users will be unable to connect to them during a WAN outage, and therefore Lync Server discovery that uses DNS SRV (service (SRV) resource record) will fail. To assure prompt rerouting during a WAN outage, DNS records must be cached at the branch site. If the branch router supports it, turn on DNS caching. Or, you can deploy a DNS server at the branch. This can be a stand-alone server or a version of the Survivable Branch Appliance that supports DNS capabilities. For details, contact your Survivable Branch Appliance provider.
 
-<div>
-
 
 > [!NOTE]
 > It is not necessary to have a domain controller at a branch site. The Survivable Branch Appliance authenticates clients by using a special certificate that it sends the client in response to the client’s certificate request when it signs in.
 
 
-
-</div>
 
 Lync clients can discover the Lync Server by using DHCP Option 120 (SIP Registrar Option). This can be configured in one of two ways:
 
@@ -250,33 +201,11 @@ Additionally, for larger branch sites that have multiple subnets, DHCP relay age
 
 Finally, branch site users must be configured for Enterprise Voice and provisioned with an appropriate unified communications endpoint.
 
-</div>
-
-<div>
-
 ## Requirements for Survivable Branch Servers
 
 The requirements for Survivable Branch Servers are the same as the requirements for a Front End Server. For details, see [Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md) in the Planning documentation.
 
-</div>
-
-<div>
-
 ## Requirements for Full-Scale Lync Server Branch-Site Deployments
 
 For details, see [Determining your infrastructure requirements for Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) in the Planning documentation.
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

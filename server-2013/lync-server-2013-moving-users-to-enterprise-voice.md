@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Moving users to Enterprise Voice in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-18_
 
 If you are moving users from an existing PBX telephony infrastructure to Enterprise Voice, the deployment process includes some steps that are not part of the planning process already described in [Planning for Enterprise Voice in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice.md). For information about migrating users from an earlier Enterprise Voice deployment, see the migration documents that were included with your installation media.
 
@@ -45,8 +32,6 @@ The process of moving users from an existing telephony infrastructure to Enterpr
 7.  Move users to Exchange Unified Messaging (UM) (recommended).
 
 This topic describes the planning that is necessary for each of these steps.
-
-<div>
 
 ## Step 1. Designate primary phone numbers
 
@@ -70,14 +55,11 @@ After a primary number is chosen, it must be:
 
   - Copied to the Active Directory **msRTCSIP-line** attribute.
     
-    <div>
-    
 
     > [!NOTE]
     > <STRONG>Coexisting with remote call control (RCC)</STRONG><BR>RCC is the ability to use Lync Server to monitor and control a desktop PBX phone. Control is routed through the server, which acts as a gateway to the PBX. Although you cannot configure a user for both RCC and Enterprise Voice, the Line URI setting designates a user’s primary phone number in either case.<BR>If you have an existing PBX infrastructure that you want selected users to continue using, you can introduce Enterprise Voice incrementally into your organization. For details about this deployment scenario, see <A href="lync-server-2013-direct-sip-deployment-options.md">Direct SIP deployment options in Lync Server 2013</A> in the Planning documentation.<BR>In previous releases, you could enable both RCC and Enterprise Voice for a user, but only if you also configured the user for dual forking, a feature in which an incoming call will ring a user’s PBX phone and Communicator simultaneously. In Lync Server 2010, dual-forking is not supported.
 
-    
-    </div>
+
 
 There are three methods for populating the **msRTCSIP-line** attribute:
 
@@ -101,26 +83,15 @@ The expected format of the number specified in this attribute is:
 
   - Tel:5550100 (for unique enterprise wide extensions)
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The normalization performed by the Address Book Service (ABS) does not replace or otherwise eliminate the need to normalize each user's primary phone number in Active Directory Domain Services because ABS does not have access to Active Directory Domain Services and therefore cannot copy primary numbers to the <STRONG>msRTCSIP-line</STRONG> attribute.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## Step 2. Enable users for Enterprise Voice
 
 Other than identifying which users are to be enabled, no special planning is required to complete this step.
-
-</div>
-
-<div>
 
 ## Step 3. Prepare dial plans for users.
 
@@ -128,17 +99,9 @@ Users who are enabled for Enterprise Voice will not be able to make calls to the
 
 For information about preparing dial plans, see [Dial plans and normalization rules in Lync Server 2013](lync-server-2013-dial-plans-and-normalization-rules.md).
 
-</div>
-
-<div>
-
 ## Step 4. Plan user voice policies
 
 User class-of-service settings on a legacy PBX, such as the right to make long-distance or international calls from company phones, must be reconfigured as VoIP policies for users moved to Enterprise Voice. For details about planning and creating policies for Enterprise Voice, see [Voice policies in Lync Server 2013](lync-server-2013-voice-policies.md).
-
-</div>
-
-<div>
 
 ## Step 5. Plan outbound call routes
 
@@ -146,17 +109,9 @@ Call routes specify how Lync Server handles outbound calls placed by Enterprise 
 
 For details about planning call routes, see [Voice routes in Lync Server 2013](lync-server-2013-voice-routes.md).
 
-</div>
-
-<div>
-
 ## Step 6. Configure PBX or SIP Trunk to reroute calls for Enterprise Voice users
 
 Users who formerly were hosted on a traditional PBX or on a SIP Trunk connection to an Internet Telephony Service Provider (ITSP) retain their phone numbers after the move. The only requirement is that after the move, the PBX or SIP Trunk must be reconfigured to route incoming calls for Enterprise Voice users to the Mediation Server.
-
-</div>
-
-<div>
 
 ## Step 7. Move users to Exchange Unified Messaging (recommended)
 
@@ -165,16 +120,4 @@ Moving users to Exchange Unified Messaging consists of the following tasks:
   - Configure Exchange Unified Messaging and Lync Server to work together.
 
   - Enable users for Exchange Unified Messaging call answering and Outlook Voice Access. This task is performed on the Exchange Unified Messaging server. For details, see the Exchange Server 2010 TechNet Library at [http://go.microsoft.com/fwlink/p/?linkID=139372](http://go.microsoft.com/fwlink/p/?linkid=139372).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

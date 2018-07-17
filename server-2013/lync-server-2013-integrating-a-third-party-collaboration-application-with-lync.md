@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Integrating a third-party collaboration application with Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-20_
 
 You can integrate Lync 2013 with any third-party online collaboration application by adding information about the application to the registry. You can use Lync 2013 to start data conferencing sessions hosted on an in-house server, an Internet-based service, or both. The collaboration or data conferencing session can be started from the Contacts list or from an existing instant messaging, voice, or video session. Lync 2013 acts only as the vehicle for starting the application. Any existing Lync 2013 conversations remain active after the online collaboration session has begun.
 
 The following sections describe how to integrate Lync 2013 with Internet-based and server-based collaboration applications.
-
-<div>
 
 ## Integrating an Internet-Based Collaboration Application with Lync 2013
 
@@ -167,10 +152,6 @@ The following example registry settings integrate ADatum Collaboration Client wi
     "Param2"="admin"
     "Param3"="abcdefg123"
 
-</div>
-
-<div>
-
 ## Integrating a Server-Based Collaboration Application with Lync 2013
 
 The settings to add commands for starting a server-based collaboration application from within Lync 2013 are similar to those described in the previous section, Integrating an Internet-Based Collaboration Application with Lync 2013. However, the OriginatorPath is not required, and some values are changed. Registry entries are placed in the following location:
@@ -250,16 +231,4 @@ The following example adds commands to start ADatum Collaboration Client from wi
     "Name"="ADatum Collaboration Client"
     "MCUType"="Data"
     "Extensiblemenu"="MainWindowActions;MainWindowRightClick;ConversationWindowActions;ConversationWindowRightClick"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

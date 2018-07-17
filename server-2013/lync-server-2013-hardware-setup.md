@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Hardware setup for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 Setting up the hardware and other components required in the infrastructure that you need to implement your topology requires that, prior to publishing your topology in Topology Builder, you do the following:
 
@@ -38,14 +25,11 @@ Setting up the hardware and other components required in the infrastructure that
     
     For details about updating using file shares in a Distributed File System (DFS), see [Configure file storage for Lync Server 2013](lync-server-2013-configure-dfs-file-storage.md).
     
-    <div>
-    
 
     > [!WARNING]
     > The file share for Lync Server 2013, Enterprise Edition cannot be located on the Front End Server.
 
-    
-    </div>
+
 
   - Install and set up the hardware load balancer for Web Services. With Domain Name System (DNS) load balancing deployed, you still need to also use hardware load balancers for these pools, but only for HTTP/HTTPS traffic. The hardware load balancer is used for HTTPS traffic from clients over ports 443 and 80. Although you still need hardware load balancers for these pools, their setup and administration will be primarily for HTTP/HTTPS traffic, which the administrators of the hardware load balancers are accustomed to.
 
@@ -58,14 +42,4 @@ After you complete all of the preparation tasks as described in this topic, but 
   - [Configure SQL Server for Lync Server 2013](lync-server-2013-configure-sql-server-for-lync-server.md)
 
   - [Configure DNS records in Lync Server 2013 for a Front End pool or Standard Edition server](lync-server-2013-configure-dns-records-for-a-front-end-pool-or-standard-edition-server.md)
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

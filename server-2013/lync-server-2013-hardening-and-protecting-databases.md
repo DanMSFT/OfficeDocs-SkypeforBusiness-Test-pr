@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Hardening and protecting the databases of Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-12-05_
 
 Microsoft Lync Server 2013 also depends on SQL Server databases for storing user information, conference state, archiving data, and Call Detail Records (CDRs). You can maximize the availability of Lync Server 2013 data on Lync Server back-end databases, by partitioning the application data in a way that improves fault tolerance and simplifies troubleshooting. To achieve these goals, partition the application data by:
 
@@ -44,14 +31,10 @@ On any Lync Server 2013 server except Standard Edition server, the SQL Server Ex
     
       - Lync Server 2013 uses the TCP/IP protocol. It supports IP version 4 (IPv4), but not IP version 6 (IPv6).
         
-        <div>
-        
 
         > [!NOTE]
         > Lync Server 2013 can function in a network with dual IP stack enabled.
 
-        
-        </div>
     
       - Lync Server 2013 supports multiple IP address (multi-homed network address cards). You can specify that SQL Server listen only to specific IP addresses (individual address or by subnet) and only use specific protocols.
     
@@ -59,35 +42,16 @@ On any Lync Server 2013 server except Standard Edition server, the SQL Server Ex
 
   - Run SQL Server on a static (non-default) port, and do not run SQL Server Browser (so it cannot report the listening port to the client). This requires a custom configuration on each SQL Server client, including Front End Servers, Monitoring Server, Archiving Server, and administrative consoles (running Lync Server Management Shell, Lync Server Control Panel, or Topology Builder), and all other servers running Lync Server databases).
 
-<div>
-
 
 > [!NOTE]
 > Access to databases must be limited to trusted database administrators. A malicious database administrator could insert or modify data into the databases to acquire privileges over the Lync Server 2013 servers or obtain sensitive information from the services, even if the database administrator has not been granted direct access or control of the Lync Server 2013 servers.
 
 
 
-</div>
-
 For details about custom configurations and hardening SQL Server databases, see the NextHop blog article, "Using Lync Server 2010 with a Custom SQL Server Network Configuration," at [http://go.microsoft.com/fwlink/p/?LinkId=214008](http://go.microsoft.com/fwlink/p/?linkid=214008).
-
-<div>
 
 
 > [!NOTE]
 > You can also harden operating systems and applications servers, and you can use Group Policy to implement security lockdowns in your Lync Server deployment. For details, see <A href="lync-server-2013-hardening-and-protecting-servers-and-applications.md">Hardening and protecting servers and applications for Lync Server 2013</A>.
 
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

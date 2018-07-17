@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing ability to employ group expansion in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,19 +38,13 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsGroupExpansion cmdlet lets you determine whether group expansion is working within your organization. When group expansion is enabled, users configure distribution groups as a contact. That means that those users can then send the same instant message to all the group members by addressing the message to the group instead of to individual members of that group. Group expansion enables you to quickly and easily view all the group members and their current status.
 
 With the Test-CsGroupExpansion cmdlet, you specify an Active Directory distribution group by using the group’s email address. Test-CsGroupExpansion then uses group expansion to retrieve the group membership and compare the retrieved list to the membership of the group email address that you supplied. If the two lists match, then group expansion is working correctly. Note that you can test group expansion in two ways: by testing the service itself or by testing the associated web service.
 
-For more information, see the Help documentation for the [Test-CsGroupExpansion](test-csgroupexpansion.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsGroupExpansion](https://technet.microsoft.com/en-us/library/gg399009\(v=ocs.15\)) cmdlet.
 
 ## Running the test
 
@@ -76,11 +57,7 @@ To run this check using an actual user account, you must first create a Lync Ser
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsGroupExpansion -TargetFqdn "atl-cs-001.litwareinc.com" -GroupEmailAddress "Sales@litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsGroupExpansion](test-csgroupexpansion.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsGroupExpansion](https://technet.microsoft.com/en-us/library/gg399009\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -138,10 +115,6 @@ DLX Web Service Response Status is: NotFound.
 
 'VerifyDistributionList' activity completed in '0.2597923' secs.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsGroupExpansion might fail:
@@ -159,16 +132,4 @@ Here are some common reasons why Test-CsGroupExpansion might fail:
   - Group expansion might be disabled. It is possible to turn off group expansion. If group expansion was disabled then the Test-CsGroupExpansion cmdlet will fail. To determine whether group expansion is enabled, use a command similar to this:
     
         Get-CsWebServiceConfiguration | Select-Object Identity, EnableGroupExpansion
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

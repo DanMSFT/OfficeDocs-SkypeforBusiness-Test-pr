@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Components and topologies for Mediation Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 This topic describes the components on which the Mediation Server is dependent and the topologies in which the Mediation Server can be deployed
-
-<div>
 
 ## Dependencies
 
@@ -39,10 +24,6 @@ The Mediation Server has the following dependencies:
   - **Monitoring Server.** Optional but highly recommended. The Monitoring Server allows the Mediation Server to record quality metrics associated with its media sessions.
 
   - **Edge Server.** Required for external user support. The Edge Server allows the Mediation Server to interact with users who are located behind a NAT or firewall.
-
-</div>
-
-<div>
 
 ## Topologies
 
@@ -77,16 +58,4 @@ The next figure shows a simple topology where the Mediation Server is collocated
 For details about planning for PBX topologies, see [Deployment guidelines for Mediation Server in Lync Server 2013](lync-server-2013-deployment-guidelines-for-mediation-server.md) and [Direct SIP deployment options in Lync Server 2013](lync-server-2013-direct-sip-deployment-options.md).
 
 The last figure in this topic shows a topology where the Mediation Server is connected to the SBC of an Internet Telephony Service Provider. For details about SIP trunk topologies, see [SIP trunking in Lync Server 2013](lync-server-2013-sip-trunking.md).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

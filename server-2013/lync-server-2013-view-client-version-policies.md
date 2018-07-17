@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View client version policies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Client version policies are used to apply a set of client versioning rules globally or to a particular site, pool, or group of users. You can view the client version policies that have been configured in your Lync Server 2013 environment from Lync Server 2013 Control Panel or Lync Server 2013 Management Shell.
-
-<div>
 
 ## To view client version policies by using Lync Server Control Panel
 
@@ -40,15 +25,9 @@ Client version policies are used to apply a set of client versioning rules globa
 
 4.  If you want to view the rules for a client version policy, on the **Client Version Policy** page, double-click the policy you want to view.
 
-</div>
-
-<div>
-
 ## Viewing Client Version Policies by Using Windows PowerShell Cmdlets
 
 You can view client version policies by using the **Get-CsClientVersionPolicy** cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view client version policies
 
@@ -78,19 +57,5 @@ You can view client version policies by using the **Get-CsClientVersionPolicy** 
                       UserAgentFullName=;Enabled=True;CompareOp=LEQ...}
         Description :
 
-</div>
-
-For details, see the Help topic for the [Get-CsClientVersionPolicy](get-csclientversionpolicy.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see the Help topic for the [Get-CsClientVersionPolicy](https://technet.microsoft.com/en-us/library/gg398957\(v=ocs.15\)) cmdlet.
 

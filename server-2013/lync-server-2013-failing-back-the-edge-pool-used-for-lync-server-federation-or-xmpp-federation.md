@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Failing back the Edge pool used for Lync Server federation or XMPP federation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 After a failed Edge pool that used to host federation has been brought back online, use this procedure to fail back the Lync Server federation route and/or the XMPP federation route to again use this restored Edge pool.
-
-<div>
 
 ## Failing Back Federation to a Restored Edge Pool
 
@@ -70,10 +55,6 @@ After a failed Edge pool that used to host federation has been brought back onli
 
 5.  If the Front End pool at the same site as the failed Edge pool also failed, you can now use Invoke–CsPoolFailback to fail back the Front End pool.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -81,18 +62,5 @@ After a failed Edge pool that used to host federation has been brought back onli
 [Failing over the Edge pool used for XMPP federation in Lync Server 2013](lync-server-2013-failing-over-the-edge-pool-used-for-xmpp-federation.md)  
 
 
-[Edge Server disaster recovery in Lync Server 2013](lync-server-2013-edge-server-disaster-recovery.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Edge Server disaster recovery in Lync Server 2013](lync-server-2013-edge-server-disaster-recovery.md)
 

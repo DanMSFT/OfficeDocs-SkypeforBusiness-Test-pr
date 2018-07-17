@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Performing and monitoring backups in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-15_
 
 Your business priorities should drive the specification of backup and restoration requirements for your organization. Performing backups of the servers and data is the first line of defense in planning for a disaster.
 
@@ -44,25 +31,10 @@ Regular testing of the Disaster Recovery Plan for your Lync Server 2013 infrastr
 
 Note that the backup frequency can be adjusted, based on your Restore Point and Recovery Point objectives. As a best practice, take regular, periodic snapshots throughout the day. Generally, you should perform full backups every 24 hours.
 
-<div>
-
 ## See Also
 
 
-[Import-CsConfiguration](import-csconfiguration.md)  
-[Export-CsConfiguration](export-csconfiguration.md)  
-[SQL best practices](http://go.microsoft.com/fwlink/p/?linkid=290716)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Import-CsConfiguration](https://technet.microsoft.com/en-us/library/gg398800\(v=ocs.15\))  
+[Export-CsConfiguration](https://technet.microsoft.com/en-us/library/gg398627\(v=ocs.15\))  
+[SQL best practices](http://go.microsoft.com/fwlink/p/?linkid=290716)
 

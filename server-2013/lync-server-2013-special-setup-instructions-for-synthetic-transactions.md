@@ -8,27 +8,12 @@ ms.date: 11/16/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Special setup instructions for synthetic transactions in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-11-16_
 
 Most synthetic transactions can run on a watcher node as-is; that is, as soon as the synthetic transaction has been added to the watcher node configuration settings, the watcher node can begin using the synthetic transaction during its test passes. However, this is not true for all synthetic transactions. The exceptions—synthetic transactions that require special setup instructions—are discussed in the following sections.
-
-<div>
 
 ## Dealing With Server Timeout Errors
 
@@ -37,10 +22,6 @@ In some cases you might find that your synthetic transactions are failing with s
 To resolve this issue, you should manually create inbound firewall rules for both MonitoringHost.exe and PowerShell.exe on the local machine. This can be done via Windows firewall or a third-party local firewall software, depending on your server's preexisting configuration.
 
 If you're employing a network firewall device between the synthetic transaction host machine and the Lync Servers you're attempting to monitor, you should treat the host as a client machine, and observer all firewall port requirements from [Ports and protocols for internal servers in Lync Server 2013](lync-server-2013-ports-and-protocols-for-internal-servers.md).
-
-</div>
-
-<div>
 
 ## Data Conferencing Synthetic Transactions
 
@@ -61,21 +42,13 @@ The following message will appear in the command window:
 
 This message means that you have disabled the Internet Explorer proxy settings for the Network Service account.
 
-</div>
-
-<div>
-
 ## Exchange Unified Messaging Synthetic Transactions
 
 The Exchange Unified Messaging (UM) synthetic transaction verifies that test users can connect to voicemail accounts homed in Exchange. These test users will need to be preconfigured with voicemail accounts before they can use the Exchange UM tests.
 
-</div>
-
-<div>
-
 ## Persistent Chat Synthetic Transactions
 
-To use the Persistent Chat synthetic transaction, administrators must first create a channel and give the test users permissions to use it. The [Test-CsPersistentChatMessage](test-cspersistentchatmessage.md) cmdlet can be used to properly configure these test users:
+To use the Persistent Chat synthetic transaction, administrators must first create a channel and give the test users permissions to use it. The [Test-CsPersistentChatMessage](https://technet.microsoft.com/en-us/library/jj204656\(v=ocs.15\)) cmdlet can be used to properly configure these test users:
 
     $cred1 = Get-Credential "litwareinc\kenmyer"
     $cred2 = Get-Credential "litwareinc\pilar"
@@ -92,13 +65,9 @@ In the preceding command, the Setup parameter was included and set to True ($Tru
 
 The chat room that is created by Test-CsPersistentChatMessage can be deleted only by an administrator.
 
-</div>
-
-<div>
-
 ## PSTN Peer-to-Peer Call Synthetic Transactions
 
-The [Test-CsPstnPeerToPeerCall](test-cspstnpeertopeercall.md) synthetic transaction verifies the ability to place and receive calls via the public switched telephone network (PSTN).
+The [Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/en-us/library/gg398662\(v=ocs.15\)) synthetic transaction verifies the ability to place and receive calls via the public switched telephone network (PSTN).
 
 To run this synthetic transaction, administrators must configure:
 
@@ -109,10 +78,6 @@ To run this synthetic transaction, administrators must configure:
   - Voice policies and voice routes that enable calls to the receiver’s number to reach the PSTN gateway.
 
   - A PSTN gateway that accepts calls, and media that route calls backs to a receiver’s home pool based on the number dialed.
-
-</div>
-
-<div>
 
 ## Unified Contact Store Synthetic Transactions
 
@@ -132,10 +97,6 @@ Note the use of the Setup parameter used in the preceding command. If the Setup 
 
     Test-CsUnifiedContactStore -TargetFqdn atl-cs-001.litwareinc.com -UserSipAddress "sip:kenmyer@litwareinc.com" -RegistrarPort 5061 -Authentication TrustedServer
 
-</div>
-
-<div>
-
 ## XMPP Synthetic Transactions
 
 The XMPP (Extensible Messaging and Presence Protocol) IM synthetic transaction requires that the XMPP feature be configured with one or more federated domains.
@@ -145,16 +106,4 @@ To enable the XMPP synthetic transaction, an XmppTestReceiverMailAddress paramet
     Set-CsWatcherNodeConfiguration -Identity pool0.contoso.com -Tests @{Add="XmppIM"} -XmppTestReceiverMailAddress user1@litwareinc.com
 
 In this example, a Lync Server 2013 rule will need to exist to route messages for litwareinc.com to an XMPP gateway.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

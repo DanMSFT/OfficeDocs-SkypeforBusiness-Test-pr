@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Setting up SQL Server Log Shipping between the primary mirror and the Log Shipping secondary database in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 Perform the following steps for log shipping to continue if the primary Persistent Chat database is failed over to its mirror database.
 
@@ -46,27 +33,21 @@ Perform the following steps for log shipping to continue if the primary Persiste
 
 9.  If the backup folder is located on the primary server, type the local path to the backup folder in the **If the backup folder is located on the primary server, type a local path to the folder** box. (If the backup folder is not on the primary server, you can leave this box empty.)
     
-    <div>
-    
 
     > [!IMPORTANT]
     > If the SQL Server service account on your primary server runs under the local system account, you must create your backup folder on the primary server and specify a local path to that folder.
 
-    
-    </div>
+
 
 10. Configure the **Delete files older than** and **Alert if no backup occurs within** parameters.
 
 11. Look at the backup schedule listed in the **Schedule** box under **Backup job**. To customize the schedule for your installation, click **Schedule**, and adjust the SQL Server Agent schedule, as required.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Use the same settings that you used for the primary database.
 
-    
-    </div>
+
 
 12. Under **Compression**, select **Use the default server setting**, and click **OK**.
 
@@ -86,37 +67,19 @@ Perform the following steps for log shipping to continue if the primary Persiste
 
 20. Select and run the first half of the query (see step 18) up to the line: -- \*\*\*\*\*\* End: Script to be run at Primary: \*\*\*\*\*\*.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Manually running this script is necessary because SQL Server Management Studio does not support multiple primary databases in a SQL Server Log Shipping configuration.
 
-    
-    </div>
+
 
 21. Select **Cancel** to close the Log File shipping configuration panel and to establish a working setup that correctly implements the log file shipping for both the primary and mirrored database (in case of failover).
 
 22. Manually fail back the primary Persistent Chat database to the primary. This is done by using the Lync Server Management Shell, and the **Invoke-CsDatabaseFailover** cmdlet. For details, see "Using Lync Server Management Shell Cmdlets" in [Deploying SQL mirroring for Back End Server high availability in Lync Server 2013](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md).
 
-<div>
-
 ## See Also
 
 
 [Deploying SQL mirroring for Back End Server high availability in Lync Server 2013](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md)  
-[Deploying SQL mirroring for Back End Server high availability in Lync Server 2013](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying SQL mirroring for Back End Server high availability in Lync Server 2013](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md)
 

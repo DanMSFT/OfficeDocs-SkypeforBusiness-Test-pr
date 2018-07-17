@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Assigning per-user presence policies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-11_
 
 A presence policy is a set of limits and restrictions that affect presence. The following table describes the presence policy settings available in Lync Server 2013.
 
@@ -53,13 +40,12 @@ A presence policy is a set of limits and restrictions that affect presence. The 
 <td><p>Maximum Number of Subscriber Category Subscriptions</p></td>
 <td><p>Limits the number of subscriber category subscriptions. For example, when Communicator subscribes to a user’s presence, it obtains a category subscription for each of the contact card, calendar data, notes, services, and state categories.</p>
 <p>A setting of 0 means that the user or contact object cannot be subscribed to by others.</p>
-<div>
 
 > [!NOTE]
 > This setting can have a significant impact on performance if it is set to a high number, and the average user has a large number of users subscribing to his or her presence.
 
 
-</div></td>
+</td>
 <td><p>Integer</p></td>
 <td><p>0-3000</p></td>
 </tr>
@@ -109,15 +95,4 @@ By default, the **Default Policy** and **Service: Medium** presence policies are
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

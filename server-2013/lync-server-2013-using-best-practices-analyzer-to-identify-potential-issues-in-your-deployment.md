@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using Best Practices Analyzer to identify potential issues in your Lync Server 2013 deployment
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 To use Best Practices Analyzer to scan your Lync Server 2013 environment, your system must meet specific prerequisites before you start the scan. After you ensure that your system meets the prerequisites, you can complete the scan process by using Best Practices Analyzer.
-
-<div>
 
 ## In This Section
 
@@ -37,16 +22,4 @@ To use Best Practices Analyzer to scan your Lync Server 2013 environment, your s
   - [Checking for updates to Best Practices Analyzer in Lync Server 2013](lync-server-2013-checking-for-updates-to-best-practices-analyzer.md)
 
   - [Using Best Practices Analyzer to scan your Lync Server 2013 deployment for potential issues](lync-server-2013-using-best-practices-analyzer-to-scan-your-deployment-for-potential-issues.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using Topology Builder to configure high availability and disaster recovery in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-06_
 
 Perform the following steps within Topology Builder to configure high availability and disaster recovery for Persistent Chat Server.
 
@@ -43,14 +30,4 @@ Perform the following steps within Topology Builder to configure high availabili
     5.  Add the SQL Server store mirror for the secondary database.
     
     6.  Publish the topology.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Test telephone number against a voice policy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-20_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-05-20_
 </table>
 
 
-<div>
-
 ## Description
 
 The ability of Enterprise Voice users to make outgoing phone calls over the Public Switched Telephone network (PSTN) hinges, in large part, on three things:
@@ -66,10 +51,6 @@ The ability of Enterprise Voice users to make outgoing phone calls over the Publ
 The PSTN usage is especially important: it’s the property that connects a voice policy to a voice route. (A voice policy and a voice route are said to be connected if they have at least one PSTN usage in common.) Voice policies can be configured without specifying a PSTN usage. In that case, users who were assigned that policy won't be able to make outgoing calls over the PSTN network. Likewise, voice routes that do not have at least one specified PSTN usage will be unable to route calls to the PSTN network.
 
 The Test-CsVoicePolicy cmdlet verifies that a given voice policy has a PSTN usage and that the usage is shared by at least one voice route. If the verification run by Test-CsVoicePolicy succeeds, the cmdlet will report back the name of the first valid voice route it finds, and also the name of the PSTN usage that connects the policy to the route.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -89,10 +70,6 @@ Note that the TargetNumber must be specified by using the E.164 format. Test-CsV
 
 For more information, see the Help documentation for the Test-CsVoicePolicy cmdlet.
 
-</div>
-
-<div>
-
 ## Determining success or failure
 
 If the voice policy can find both a matching voice route and a matching PSTN usage, then both the route and the usage will be displayed on-screen:
@@ -109,10 +86,6 @@ FirstMatchingRoute MatchingUsage
 
 \------------------ -------------
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 If Test-CsVoicePolicy does not return a match that could mean that the voice policy does not share a PSTN usage with a voice route. To verify that, use a cmdlet similar to the following to verify that PSTN usages assigned to the voice policy:
@@ -125,25 +98,8 @@ Next, run this command to determine the PSTN usages assign to each of your voice
 
 If you see any matches (that is, if you see one or more voice routes that share at least one PSTN usage with your voice policy), you should then run the Test-CsVoiceRoute cmdlet to verify that the voice route can dial the supplied phone number.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsVoicePolicy](test-csvoicepolicy.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsVoicePolicy](https://technet.microsoft.com/en-us/library/gg398310\(v=ocs.15\))
 

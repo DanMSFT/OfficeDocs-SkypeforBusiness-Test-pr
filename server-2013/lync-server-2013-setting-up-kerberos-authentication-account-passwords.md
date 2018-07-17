@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Setting up Kerberos authentication account passwords in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2010-11-03_
 
 After you create the computer object for the Kerberos authentication account, you can set up the password for the account. You run the Windows PowerShell cmdlet for setting the Kerberos account password on one server. You can set the password on the object that you created for the Kerberos authentication. The password can be set to a known value, but by default is a random password. The password is available to all Kerberos authentication sources that use the account. You use Windows PowerShell cmdlets to set up and manage Kerberos account passwords.
-
-<div>
 
 
 > [!NOTE]
@@ -36,25 +21,9 @@ After you create the computer object for the Kerberos authentication account, yo
 
 
 
-</div>
-
-<div>
-
 ## In This Section
 
   - [Set a Kerberos authentication account password on a server in Lync Server 2013](lync-server-2013-set-a-kerberos-authentication-account-password-on-a-server.md)
 
   - [Synchronize a Kerberos authentication account password to IIS in Lync Server 2013](lync-server-2013-synchronize-a-kerberos-authentication-account-password-to-iis.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using cmdlets to reverse forest preparation for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-06-19_
 
 Use the **Disable-CsAdForest** cmdlet to reverse the forest preparation step.
-
-<div>
 
 
 > [!WARNING]
 > If you run the <STRONG>Disable-CsAdForest</STRONG> cmdlet in an environment where you also have a previous version of Lync Server deployed, the global settings for the previous version will also be deleted.
 
 
-
-</div>
-
-<div>
 
 ## To use cmdlets to reverse forest preparation
 
@@ -58,28 +39,11 @@ Use the **Disable-CsAdForest** cmdlet to reverse the forest preparation step.
     
     If you do not specify the GroupDomain parameter, the default value is the local domain.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Running forest preparation for Lync Server 2013](lync-server-2013-running-forest-preparation.md)  
 
 
-[Preparing the forest for Lync Server 2013](lync-server-2013-preparing-the-forest.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Preparing the forest for Lync Server 2013](lync-server-2013-preparing-the-forest.md)
 

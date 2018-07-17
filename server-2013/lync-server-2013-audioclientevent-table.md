@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # AudioClientEvent table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-17_
 
 Each record contains a client event for one endpoint in an audio call. Usually, one call has two records, one for caller and one for callee.
 
@@ -160,7 +147,7 @@ Each record contains a client event for one endpoint in an audio call. Usually, 
 <tr class="odd">
 <td><p><strong>DeviceMultipleEndpointsEventCount</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Number of times during session the DeviceMultipleEndpoints event was fired for ‘Bad’ state. Multiple audio endpoints in the same session detected and the system has compensated by reducing render volume.</p></td>
 </tr>
 <tr class="even">
@@ -172,28 +159,17 @@ Each record contains a client event for one endpoint in an audio call. Usually, 
 <tr class="odd">
 <td><p><strong>DeviceRenderZeroVolumeEventRatio</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Percentage of session the DeviceRenderZeroVolume event was fired for being in the “Bad’ state. The render device was set to zero volume.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DeviceRenderMuteEventRatio</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Percentage of session the DeviceRenderMute event was fired for being in the “Bad’ state. The render device was muted.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

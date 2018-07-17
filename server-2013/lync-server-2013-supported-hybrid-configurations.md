@@ -8,27 +8,12 @@ ms.date: 05/10/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Supported Lync Server 2013 hybrid configurations
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-05-10_
 
 You can configure Lync Server 2013 deployments for integration with both Microsoft Exchange Server 2010 and Microsoft Exchange Server 2013 and SharePoint Server, both on-premises and online. The features listed in the following table are supported with all clients unless otherwise specified. For more information about client support, see [Client comparison tables for Lync Server 2013](lync-server-2013-desktop-client-comparison-tables.md) and Skype for Business Online client comparison tables at [Clients for Skype for Business Online](http://go.microsoft.com/fwlink/p/?linkid=281902).
-
-<div>
 
 ## Integration with Exchange Server
 
@@ -65,42 +50,38 @@ The following table lists the features supported in a hybrid deployment when int
 <li><p>Publish status based on Outlook calendar free/busy information</p></li>
 <li><p>Contact List (via Unified Contact Store)</p>
 <p>For more information, see <a href="lync-server-2013-configuring-lync-server-to-use-the-unified-contact-store.md">Configuring Microsoft Lync Server 2013 to use the unified contact store</a></p>
-<div>
 
 > [!NOTE]
 > Requires Exchange 2013.<BR>A Lync 2013 desktop client is required.
 
 
-</div></li>
+</li>
 <li><p>High-resolution Contact Photo in Lync 2013 client and Lync Web App.</p>
 <p>For more information, see <a href="lync-server-2013-configuring-the-use-of-high-resolution-photos.md">Configuring the use of high-resolution photos in Microsoft Lync Server 2013</a></p>
-<div>
 
 > [!NOTE]
 > Requires Exchange 2013.
 
 
-</div></li>
+</li>
 <li><p>Meeting delegation</p>
 <p>Supported only when both users are homed online in the same forest, or both are homed on-premises.</p></li>
 <li><p>Missed Conversations history and Call Logs are written to user’s exchange mailbox</p></li>
 <li><p>Archiving Content (IM and Meeting) in Exchange</p>
 <p>For more information, see <a href="lync-server-2013-deployment-checklist-for-archiving.md">Deployment checklist for Archiving in Lync Server 2013</a></p>
-<div>
 
 > [!NOTE]
 > Requires Exchange 2013.
 
 
-</div></li>
+</li>
 <li><p>Search archived content</p>
-<div>
 
 > [!NOTE]
 > Requires Exchange 2013.
 
 
-</div></li>
+</li>
 <li><p>Voice mail</p>
 <p>For more information, see <a href="lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md">Deploying on-premises Exchange UM to provide Lync Server 2013 voice mail</a></p></li>
 </ul></td>
@@ -116,13 +97,12 @@ The following table lists the features supported in a hybrid deployment when int
 <li><p>Join online meeting in Mobile clients</p></li>
 <li><p>Publish status based on Outlook calendar free/busy information</p></li>
 <li><p>Contact List (via Unified Contact Store). For more information, see <a href="lync-server-2013-configuring-lync-server-to-use-the-unified-contact-store.md">Configuring Microsoft Lync Server 2013 to use the unified contact store</a></p>
-<div>
 
 > [!NOTE]
 > Lync Server 2013 only. A Lync 2013 desktop client is required.
 
 
-</div></li>
+</li>
 <li><p>High-resolution Contact Photo in Lync 2013 client and Lync Web App.</p>
 <p>For more information, see <a href="lync-server-2013-configuring-the-use-of-high-resolution-photos.md">Configuring the use of high-resolution photos in Microsoft Lync Server 2013</a>.</p></li>
 <li><p>Meeting delegation</p>
@@ -142,13 +122,12 @@ The following table lists the features supported in a hybrid deployment when int
 <li><p>IM/Presence in Mobile clients</p></li>
 <li><p>Missed Conversations history and Call Logs are written to user’s exchange mailbox</p></li>
 <li><p>High-resolution Contact Photo in Lync 2013 client.</p>
-<div>
 
 > [!NOTE]
 > Requires Microsoft Exchange Server 2013. This is not supported in Lync Web App when users are homed on Skype for Business Online.
 
 
-</div></li>
+</li>
 <li><p>Join online meeting in Mobile clients</p></li>
 <li><p>Publish status based on Outlook calendar free/busy information</p></li>
 <li><p>Meeting delegation</p>
@@ -164,13 +143,12 @@ The following table lists the features supported in a hybrid deployment when int
 <li><p>Publish status based on Outlook calendar free/busy information</p></li>
 <li><p>Missed Conversations history and Call Logs are written to user’s exchange mailbox</p></li>
 <li><p>Contact List (via Unified Contact Store)</p>
-<div>
 
 > [!NOTE]
 > Lync Server 2013 client Required
 
 
-</div></li>
+</li>
 <li><p>High-resolution Contact Photo in Lync 2013 client and Lync Web App</p></li>
 <li><p>Meeting delegation</p>
 <p>Supported only when both users are homed online in the same forest, or both are homed on-premises.</p></li>
@@ -182,10 +160,6 @@ The following table lists the features supported in a hybrid deployment when int
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Integration with SharePoint
 
@@ -227,17 +201,4 @@ The following table lists the features supported in a Lync Server 2013 hybrid de
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

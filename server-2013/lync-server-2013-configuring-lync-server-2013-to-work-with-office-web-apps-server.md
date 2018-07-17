@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Lync Server 2013 to work with Office Web Apps Server
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-04-22_
 
 Before you can configure Lync Server 2013 to use Office Web Apps Server, Office Web Apps Server must be deployed and configured. See the document **Guide to Deploying Office Web Apps Server and Office Web Apps** for detail information on how to install and configure a single Office Web Apps Server, or for information on how to install and configure an Office Web Apps Server Farm for high availability.
 
@@ -59,14 +46,4 @@ After you have added the discovery URL to the topology you must then publish thi
 3.  On the **Publishing wizard complete** page, click **Finish**.
 
 4.  Close Topology Builder.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Call Admission Control Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-29_
 
 The Call Admission Control Report provides information about peer-to-peer and conferencing sessions that were conducted under restrictions set in place by Call Admission Control. Call Admission Control, introduced in Microsoft Lync Server 2010, provides a way for administrators to allow (or not allow) communication sessions based on bandwidth constraints. For example, administrators can create policies that impose a limit on the amount of bandwidth available for voice and video calls. If that bandwidth limit has been reached, then no new voice or video calls can be placed until one of the current calls has ended and freed up the required network resources.
-
-<div>
 
 ## Accessing the Call Admission Control Report
 
@@ -38,10 +23,6 @@ The Call Admission Control Report is accessed from the Monitoring Reports home p
 
   - Peer-to-Peer Session Detail Report – To access this report, click the Details metric for a peer-to-peer session.
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Call Admission Control Report
 
 To get a list of calls that failed because of insufficient bandwidth, select Calls rejected because of call admission control from the Call category dropdown list. Most of the returned calls will likely have a diagnostic ID of 5:
@@ -49,10 +30,6 @@ To get a list of calls that failed because of insufficient bandwidth, select Cal
 Insufficient bandwidth to establish session. Attempt PSTN re-route.
 
 That indicates that Call Admission Control limitations were preventing the call from being made on the VoIP network.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -120,10 +97,6 @@ The following table lists the filters that you can use with the Call Admission C
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Peer-to-Peer Sessions
 
 The following table lists the information provided in the Call Admission Control Report for peer-to-peer sessions (that is, sessions involving just two participants).
@@ -188,10 +161,6 @@ The following table lists the information provided in the Call Admission Control
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Conferencing Sessions
 
 The following table lists the information provided in the Call Admission Control Report for conferencing sessions (that is, sessions involving three or more participants).
@@ -240,10 +209,6 @@ The following table lists the information provided in the Call Admission Control
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for Individual Conference Participants
 
@@ -302,17 +267,4 @@ The following table lists the information provided in the Call Admission Control
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

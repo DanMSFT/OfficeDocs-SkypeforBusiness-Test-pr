@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # ProgressReport table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 Progress reports are based on data uploaded by the client to the database after a call or session is completed. Progress reports will be written only for calls and sessions that Lync Server 2013 determines might be useful for diagnostic purposes.
 
@@ -75,7 +62,7 @@ The ErrorTime, ErrorReportSeq and ProgressReportSeq fields don’t necessarily r
 <tr class="odd">
 <td><p><strong>MsDiagId</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Diagnostic ID of the progress report.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
@@ -88,41 +75,30 @@ The ErrorTime, ErrorReportSeq and ProgressReportSeq fields don’t necessarily r
 <tr class="odd">
 <td><p><strong>ApplicationId</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The Lync Server process that the report is about. See the Application Table for more information.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Detail</strong></p></td>
 <td><p>image</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Progress report details, stored in binary format to save space.This data can be converted to text format using this syntax:</p>
 <p>cast(cast(Detail as varbinary(max)) as varchar(max))</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TelemetryId</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Unique identifier that correlates join time information for the different components involved in a conference.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionSetupTime</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Time (in milliseconds) for a specific component to join a conference.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

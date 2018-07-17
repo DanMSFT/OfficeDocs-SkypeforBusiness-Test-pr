@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View Lync Phone Edition configuration settings information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 You can view configuration information about devices running Lync Phone Edition. The information is organized into collections. When you install Lync Server, you get a collection of Lync Phone Edition settings that apply to all the devices running Lync Phone Edition in your deployment. You can also create new collections of settings for a specific site. Site settings take precedence over global settings. Each collection of settings consists of a name, the scope (global or site), SIP security setting, logging level, voice quality of service (QoS) level, phone-lock setting, and phone-lock details, that is, the minimum length of the unlock personal identification number (PIN) and time before the phone locks itself.
-
-<div>
 
 ## To view configuration information about devices running Lync Phone Edition
 
@@ -40,15 +25,9 @@ You can view configuration information about devices running Lync Phone Edition.
 
 4.  On the **Device Configuration** page, click the collection of settings you want to view information about. The name, scope, SIP security setting, voice quality level, and phone lock setting are listed on the main page. To view the logging level and phone lock details, click the **Edit** menu, and then click **Show details**.
 
-</div>
-
-<div>
-
 ## Viewing Lync Phone Edition Configuration Information by Using Windows PowerShell Cmdlets
 
 You can view Lync Phone Edition configuration settings by using Lync Server Management Shell and the **Get-CsUCPhoneConfiguration** cmdlet. You can run this cmdlet can from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view Lync Phone Edition configuration information
 
@@ -68,13 +47,7 @@ You can view Lync Phone Edition configuration settings by using Lync Server Mana
         Voice8021p           : 0
         LoggingLevel         : Off
 
-</div>
-
-For details, see [Get-CsUCPhoneConfiguration](get-csucphoneconfiguration.md).
-
-</div>
-
-<div>
+For details, see [Get-CsUCPhoneConfiguration](https://technet.microsoft.com/en-us/library/gg398070\(v=ocs.15\)).
 
 ## See Also
 
@@ -82,18 +55,5 @@ For details, see [Get-CsUCPhoneConfiguration](get-csucphoneconfiguration.md).
 [Create or modify a collection of Lync Phone Edition configuration settings in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md)  
 [Delete an existing collection of Lync Phone Edition configuration settings in Lync Server 2013](lync-server-2013-delete-an-existing-collection-of-lync-phone-edition-configuration-settings.md)  
 [Configure security settings for Lync Phone Edition in Lync Server 2013](lync-server-2013-configure-security-settings-for-lync-phone-edition.md)  
-[Enforce phone locking in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Enforce phone locking in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)
 

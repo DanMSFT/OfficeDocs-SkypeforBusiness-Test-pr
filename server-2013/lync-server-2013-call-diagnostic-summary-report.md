@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Call Diagnostic Summary Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-06_
 
 The Call Diagnostic Summary Report provides an overall look at failed peer-to-peer and conferencing sessions. The report shows the overall failure rate for both types of sessions, and further breaks the failure information down by session modality type:
 
@@ -38,8 +25,6 @@ The Call Diagnostic Summary Report provides an overall look at failed peer-to-pe
 
   - Video
 
-<div>
-
 ## Accessing the Call Diagnostic Summary Report
 
 The Call Diagnostic Summary Report is accessed from the Monitoring Reports Home page. From the Call Diagnostic Summary Report you can access the [Peer-to-Peer Activity Diagnostic Report in Lync Server 2013](lync-server-2013-peer-to-peer-activity-diagnostic-report.md) by clicking the Failure rate metric under the Peer-to-Peer Session Summary section of the report. You can also access the [Conference Diagnostic Report in Lync Server 2013](lync-server-2013-conference-diagnostic-report.md) by clicking any of the following conference metrics:
@@ -50,17 +35,9 @@ The Call Diagnostic Summary Report is accessed from the Monitoring Reports Home 
 
   - MCU failure rate
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Call Diagnostic Summary Report
 
 The Call Diagnostic Summary Report includes graphs that compare failure rates for the various modalities used in Microsoft Lync Server 2013. The columns in these graphs are actually hotlinks; for example, if you click the Instant messaging column for peer-to-peer sessions, you'll drill down to an instance of the [Peer-to-Peer Activity Diagnostic Report in Lync Server 2013](lync-server-2013-peer-to-peer-activity-diagnostic-report.md), a report that provides additional details about all the instant messaging sessions included in the Call Diagnostic Summary Report.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -121,10 +98,6 @@ The following table lists the filters that you can use with the Call Diagnostic 
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Peer-to-Peer Sessions
 
 The following table lists the information provided in the Call Diagnostic Summary Report for peer-to-peer sessions (that is, sessions involving just two participants).
@@ -158,10 +131,6 @@ The following table lists the information provided in the Call Diagnostic Summar
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for Conferencing Sessions
 
@@ -220,17 +189,4 @@ The following table lists the information provided in the Call Diagnostic Report
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

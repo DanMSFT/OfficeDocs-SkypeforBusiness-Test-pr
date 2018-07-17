@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Mobility policies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-18_
 
 Use the following procedures to configure mobility policies for Lync Server 2013.
-
-<div>
 
 ## In This Section
 
@@ -38,25 +23,8 @@ Use the following procedures to configure mobility policies for Lync Server 2013
 
   - [Enforce phone locking in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Planning for mobility in Lync Server 2013](lync-server-2013-planning-for-mobility.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for mobility in Lync Server 2013](lync-server-2013-planning-for-mobility.md)
 

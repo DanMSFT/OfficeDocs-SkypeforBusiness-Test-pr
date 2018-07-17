@@ -8,23 +8,10 @@ ms.date: 04/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Port summary - Scaled consolidated edge with hardware load balancers in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-04-27_
 
 The Lync Server 2013, Edge Server functionality described in this scenario architecture is very similar to what was implemented in Lync Server 2010. The most noticeable addition is the port **5269 over TCP** entry for the extensible messaging and presence protocol (XMPP). Lync Server 2013 optionally deploys an XMPP proxy on the Edge Server or Edge pool and the XMPP gateway server on the Front End Server or Front End pool.
 
@@ -33,8 +20,6 @@ In addition to IPv4, the Edge Server now supports IPv6. For clarity, only IPv4 i
 **Scaled Consolidated Edge using Hardware Load Balancing**
 
 ![Edge Server Perimeter Network ports and protocols](images/Gg398739.063f7dd1-16db-4cc7-8708-bca9bc41184d(OCS.15).jpg "Edge Server Perimeter Network ports and protocols")
-
-<div>
 
 ## Port and Protocol Details
 
@@ -230,15 +215,11 @@ When configuring hardware load balancers, consider the following requirements:
 
   - The HLB Access Edge service VIP will act as the default gateway for each Edge server interface
 
-<div>
-
 
 > [!NOTE]
 > For further information on NAT planning and functionality, please refer to <A href="lync-server-2013-hardware-load-balancer-requirements.md">Hardware load balancer requirements for Lync Server 2013</A>.
 
 
-
-</div>
 
 ![Edge Server ports and protocols details](images/Gg398739.1c193b80-98ab-4d59-a854-dbfdb5e209e2(OCS.15).jpg "Edge Server ports and protocols details")
 
@@ -368,17 +349,4 @@ When configuring hardware load balancers, consider the following requirements:
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Verify configuration settings
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 After you merge the topology and run the **Import-CsLegacyConfiguration** cmdlet, verify that your Office Communications Server 2007 R2 policies and settings were imported to Lync Server 2013. The following table lists the policies and settings that you should verify.
-
-<div>
 
 ## Policies and Settings to Verify after Migration
 
@@ -78,10 +63,6 @@ After you merge the topology and run the **Import-CsLegacyConfiguration** cmdlet
 </table>
 
 
-</div>
-
-<div>
-
 ## To verify policies and settings
 
 1.  In your Office Communications Server 2007 R2 environment, make note of the names of dial plans (formerly known as location profiles), dial-in access numbers (Conferencing Attendant access phone numbers and regions), voice routes, and the policies listed in the preceding table, in addition to the URLs used for Communicator Web Access.
@@ -90,54 +71,37 @@ After you merge the topology and run the **Import-CsLegacyConfiguration** cmdlet
 
 3.  To verify imported conferencing policies, in the left pane, click **Conferencing**, click **Conferencing Policy**, and then verify that all the conferencing policies in your Office Communications Server 2007 R2 environment are included in the list.
     
-    <div>
-    
 
     > [!NOTE]
     > The <STRONG>Meeting</STRONG> policy from previous versions of Office Communications Server is now known as the conferencing policy in Lync Server 2013. Additionally, the <STRONG>Anonymous Particpants</STRONG> setting from previous versions of Office Communications Server is now a setting in the Lync Server 2013 conferencing policy.
 
-    
-    </div>
-    
-    <div>
     
 
     > [!NOTE]
     > In Office Communications Server 2007 R2, if the conferencing policy is not set to <STRONG>use per user</STRONG>, only global policy settings are imported. No other conference policies are imported in this situation.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!NOTE]
     > If <STRONG>Anonymous Participants</STRONG> is set to <STRONG>Enforce per user</STRONG> in your Office Communications Server 2007 R2 conferencing policy, two conferencing policies are created during migration: one with <STRONG>AllowAnonymousParticipantsInMeetings</STRONG> set to <STRONG>True</STRONG> and one with <STRONG>AllowAnonymousParticipantsInMeetings</STRONG> set to <STRONG>False</STRONG>.
 
-    
-    </div>
+
 
 4.  To verify imported dial plans, click **Voice Routing**, click **Dial Plan**, and then verify that all the dial plans in your Office Communicator 2007 R2 environment are included in the list.
-    
-    <div>
     
 
     > [!NOTE]
     > In Lync Server 2013, <STRONG>location profiles</STRONG> are now referred to as <STRONG>dial-plans</STRONG>.
 
-    
-    </div>
+
 
 5.  To verify imported voice policies, click **Voice Routing**, click **Voice Policy**, and then verify that all the voice policies in your Office Communicator 2007 R2 environment are included in the list.
-    
-    <div>
     
 
     > [!NOTE]
     > If voice policy is not set to <STRONG>use per user</STRONG> in your Office Communications Server 2007 R2 environment, only global policy settings are imported. No other voice policies are imported in this situation.
 
-    
-    </div>
+
 
 6.  To verify imported voice routes, click **Voice Routing**, click **Route**, and then verify that all the voice routes in your Office Communicator 2007 R2 environment are included in the list.
 
@@ -154,10 +118,6 @@ After you merge the topology and run the **Import-CsLegacyConfiguration** cmdlet
         Get-CsPresencePolicy
     
     By looking at the name in the **Identity** parameter, verify that all the presence policies in your Office Communications Server 2007 R2 environment were imported.
-
-</div>
-
-<div>
 
 ## To verify policies and settings by using cmdlets
 
@@ -228,17 +188,4 @@ After you merge the topology and run the **Import-CsLegacyConfiguration** cmdlet
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

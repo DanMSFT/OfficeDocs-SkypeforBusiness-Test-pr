@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # IMReportSummary table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-08-20_
 
 The IMReportSummaryTable provides an overall report on the instant messaging sessions held in an organization. This table was introduced in Microsoft Lync Server 2013.
 
@@ -55,7 +42,7 @@ The IMReportSummaryTable provides an overall report on the instant messaging ses
 <td><p><strong>TimePeriod</strong></p></td>
 <td><p>char(1)</p></td>
 <td><p>Primary</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PoolFQDN</strong></p></td>
@@ -72,26 +59,15 @@ The IMReportSummaryTable provides an overall report on the instant messaging ses
 <tr class="odd">
 <td><p><strong>SessionCount</strong></p></td>
 <td><p>bigint</p></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MsgCount</strong></p></td>
 <td><p>bigint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Total number of instant messages exchanged during the session.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

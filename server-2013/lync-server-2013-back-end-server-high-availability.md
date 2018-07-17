@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Back End Server high availability in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-08-12_
 
 To ensure high availability for your Back End Servers, you can use either synchronous SQL mirroring or SQL clustering. Using one of these solutions optional, but is recommended to maintain your organization's business continuity. Asynchronous SQL mirroring is not supported for Back End Server high availability in Lync Server 2013. In the rest of this document, SQL mirroring means synchronous SQL mirroring, unless otherwise explicitly stated.
 
@@ -42,15 +29,9 @@ If you use a witness, you can use a single witness for multiple pairs of Back En
 
 For more information about SQL clustering support, see [Database software support in Lync Server 2013](lync-server-2013-database-software-support.md). For details on deploying SQL clustering, see [Configure SQL Server clustering for Lync Server 2013](lync-server-2013-configure-sql-server-clustering.md).
 
-<div>
-
 ## Recovery Time for Automatic Back End Server Failover with SQL Mirroring
 
 For automatic Back End failover with SQL mirroring, the engineering target for recovery time objective (RTO) is 5 minutes. Because of the synchronous SQL mirroring, we do not anticipate data loss during Back End Server failures except in rare occasions when both the Front End Servers and the Back End Server go down simultaneously while data is being moved between the servers. The engineering target for recovery point objective (RPO) is 5 minutes.
-
-</div>
-
-<div>
 
 ## User Experience During Back End Server Failure with SQL Mirroring
 
@@ -61,16 +42,4 @@ If you use SQL mirroring and have a witness configured, and the principal fails,
 If there is no witness configured, it will take some time for the administrator to manually invoke the failover. During that time, active users may be affected. They will continue their sessions as normal for about 30 minutes. If the primary is still not restored, or an administrator has not failed over to the backup, then users are switched to Resiliency mode, meaning that they are unable to perform tasks that require a persistent change on Lync Server (such as adding a contact).
 
 If both the principal and the mirror Back End Servers fail, or if one of those servers and the witness fails, the Back End Server will become unavailable (even if it is the principal that is still working). In this case, active users are switched to Resiliency mode after some time.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

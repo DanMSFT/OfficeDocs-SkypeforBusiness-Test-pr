@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # (Optional) Define Response Group holiday sets in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-07_
 
 Holiday settings define the days that a response group is closed for business and specify the action to take on those days. A holiday set is the collection of holidays that apply to a response group.
-
-<div>
 
 
 > [!NOTE]
 > If a workflow is defined as a Managed workflow, then any user is assigned the CsResponseGroupManager role can set and modify holidays for workflows that they manage.
 
 
-
-</div>
-
-<div>
 
 ## To create a holiday set
 
@@ -60,10 +41,6 @@ Holiday settings define the days that a response group is closed for business an
         $b = New-CsRgsHoliday -Name "Independence Day" -StartDate "7/4/2013 12:00 AM" -EndDate "7/5/2013 12:00 AM" 
         New-CsRgsHolidaySet -Parent "ApplicationServer:Redmond.contoso.com -Name "2013 Holidays" -HolidayList ($a, $b)
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -71,19 +48,6 @@ Holiday settings define the days that a response group is closed for business an
 [Create or modify an interactive workflow in Lync Server 2013](lync-server-2013-create-or-modify-an-interactive-workflow.md)  
 
 
-[New-CsRgsHoliday](new-csrgsholiday.md)  
-[New-CsRgsHolidaySet](new-csrgsholidayset.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsRgsHoliday](https://technet.microsoft.com/en-us/library/gg398075\(v=ocs.15\))  
+[New-CsRgsHolidaySet](https://technet.microsoft.com/en-us/library/gg398403\(v=ocs.15\))
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Routing E9-1-1 calls by using an ELIN gateway in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-05_
 
 Some partners in the Unified Communications Open Interoperability Program provide qualified Emergency Location Identification Number (ELIN)-capable gateways, which can serve as an alternative to a SIP trunk connection to a qualified E9-1-1 service provider. ELIN gateways support ISDN or Centralized Automatic Message Accounting (CAMA) connectivity to public switched telephone network (PSTN)-based E9-1-1 services. For details about partners who provide ELIN gateways and links to their documentation, see [http://go.microsoft.com/fwlink/p/?LinkId=248425](http://go.microsoft.com/fwlink/p/?linkid=248425).
 
@@ -36,15 +23,11 @@ When a Lync client obtains its location from the Location Information service, t
 
 ELIN gateways support emergency calls only from within your organization's network. They do not support emergency calls made from outside your network.
 
-<div>
-
 
 > [!NOTE]
 > For details about using a SIP trunk connection for emergency calls, see <A href="lync-server-2013-routing-e9-1-1-calls-by-using-a-sip-trunk.md">Routing E9-1-1 calls by using a SIP trunk in Lync Server 2013</A>.
 
 
-
-</div>
 
 The following diagram shows how an emergency call is routed from Lync Server to the PSAP when you use an ELIN gateway.
 
@@ -63,14 +46,4 @@ The following diagram shows how an emergency call is routed from Lync Server to 
 5.  If you configured the location policy for notifications, one or more of your organization’s security officers are sent a special Lync emergency notification instant message. This message always pops up on the security officers’ screen(s) and contains the caller’s name, phone number, time, and location, enabling security personnel to quickly respond to the emergency caller by using an instant message or voice.
 
 6.  If the call is broken prematurely, the PSAP uses the ELIN to contact the caller directly. The ELIN gateway swaps the ELIN for the caller's DID.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

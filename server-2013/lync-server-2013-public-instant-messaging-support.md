@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Public instant messaging support in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-07_
 
 Lync Server 2013 supports the use of licensed public instant messaging (IM) connectivity providers, as well as the use of eXtensible Messaging and Presence Protocol (XMPP) to implement a special type of federation that enables a Lync Server to access configured XMPP domain partners by using the Lync 2013 client.
-
-<div>
 
 ## Public IM Connectivity Provider Support
 
@@ -42,8 +27,6 @@ The currently supported public instant messaging connectivity partners are:
 
 For communications with Windows Live users, Lync Server 2013 supports peer-to-peer IM and audio and video calls. For communications with AOL and Yahoo\!, Lync Server 2013 supports peer-to-peer IM. A separate license may be required.
 
-<div>
-
 
 > [!IMPORTANT]
 > <UL>
@@ -56,12 +39,6 @@ For communications with Windows Live users, Lync Server 2013 supports peer-to-pe
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## XMPP Federation Support
 
 XMPP federation supports Lync users communication with configured XMPP domain users who use a public provider, such as GTalk. Communications with these users can include the following:
@@ -69,16 +46,4 @@ XMPP federation supports Lync users communication with configured XMPP domain us
   - Peer-to-peer IM and presence
 
   - Creation of XMPP federated contacts in the Lync client
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

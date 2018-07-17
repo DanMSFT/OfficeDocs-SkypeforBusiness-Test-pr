@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Port summary - Scaled consolidated edge, DNS load balancing with public IP addresses in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-04-03_
 
 The Lync Server 2013, Edge Server functionality described in this scenario architecture is very similar to what was implemented in Lync Server 2010. The most noticeable addition is the port **5269 over TCP** entry for the extensible messaging and presence protocol (XMPP). Lync Server 2013 optionally deploys an XMPP proxy on the Edge Server or Edge pool and the XMPP gateway server on the Front End Server or Front End pool.
 
@@ -32,9 +19,7 @@ In addition to IPv4, the Edge Server now supports IPv6. For clarity, only IPv4 i
 
 **Enterprise perimeter network for Scaled Consolidated Edge, DNS Load Balancing with Public IP Addresses**
 
-![96f5a8f5-16d2-464d-b86e-7c7ecfc89ead](images/JJ205394.96f5a8f5-16d2-464d-b86e-7c7ecfc89ead(OCS.15).jpg "96f5a8f5-16d2-464d-b86e-7c7ecfc89ead")
-
-<div>
+![96f5a8f5-16d2-464d-b86e-7c7ecfc89ead](images/Gg412756.96f5a8f5-16d2-464d-b86e-7c7ecfc89ead(OCS.15).jpg "96f5a8f5-16d2-464d-b86e-7c7ecfc89ead")
 
 ## Port and Protocol Details
 
@@ -248,10 +233,6 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 </table>
 
 
-</div>
-
-<div>
-
 ## Firewall Summary for Federation
 
 
@@ -280,10 +261,6 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Firewall Summary – Public Instant Messaging Connectivity
 
@@ -344,10 +321,6 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 </table>
 
 
-</div>
-
-<div>
-
 ## Firewall Summary for Extensible Messaging and Presence Protocol
 
 
@@ -387,17 +360,4 @@ For remote access to work for any edge service, it is mandatory that SIP traffic
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

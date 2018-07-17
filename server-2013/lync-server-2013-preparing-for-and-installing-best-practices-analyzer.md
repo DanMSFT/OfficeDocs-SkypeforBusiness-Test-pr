@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Preparing for and installing Best Practices Analyzer in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-07_
 
 You must be logged on as a member of the Administrators group to perform the tasks that are described in this topic.
-
-<div>
 
 ## System Requirements for Best Practices Analyzer Installation
 
@@ -68,33 +53,13 @@ The computer must also be running the following:
 
 You can install Best Practices Analyzer on computers with a supported operating system that are not running Lync Server 2013, Core Components or WMI Backward Compatibility Package, but you can use Best Practices Analyzer on those computers only to view reports, not to run scans.
 
-</div>
-
-<div>
-
 ## Choosing a Computer for Installation
 
 We recommend that you install Lync Server 2013, Best Practices Analyzer on a computer that is dedicated to Lync Server 2013 management. You can install the tool on a server running Lync Server 2013 or an administrative computer running Lync Server 2013 administrative tools. If you install the tool on a server that is running Lync Server, we recommend that you use the tool to scan only that server.
-
-</div>
-
-<div>
 
 ## Installing Best Practices Analyzer
 
 You can download the Best Practices Analyzer for Lync Server 2013 at [http://go.microsoft.com/fwlink/p/?linkId=266539](http://go.microsoft.com/fwlink/p/?linkid=266539).
 
 To install Best Practices Analyzer, start the Microsoft Installer file RtcBPA.msi on the computer where you want to install the tool, and then follow the instructions on the screen. The default location for installing the program files is \<system drive\>\\Program Files\\Lync Server 2013\\BPA.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

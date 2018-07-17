@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Run voice routing test cases in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-24_
 
 You can run all of the test cases in your voice routing test case suite, or you can run one or more selected test cases.
-
-<div>
 
 ## To run all voice routing test cases
 
@@ -54,18 +39,11 @@ You can run all of the test cases in your voice routing test case suite, or you 
     
     5.  **First route:** The first voice route in the first PSTN usage record that matches the dialed number.
         
-        <div>
-        
 
         > [!NOTE]
         > The <STRONG>Expected PSTN usage record</STRONG> and <STRONG>Expected route</STRONG> fields are optional in voice routing test case configuration. If the test case does not specify these values, the corresponding field in the test results will be empty.
 
-        
-        </div>
 
-</div>
-
-<div>
 
 ## To run one or more selected voice routing test cases
 
@@ -93,35 +71,15 @@ You can run all of the test cases in your voice routing test case suite, or you 
     
     5.  **First route:** The first voice route in the first PSTN usage record that matches the dialed number.
         
-        <div>
-        
 
         > [!NOTE]
         > The <STRONG>Expected PSTN usage record</STRONG> and <STRONG>Expected route</STRONG> fields are optional in voice routing test case configuration. If the test case does not specify these values, the corresponding field in the test results will be empty.
 
-        
-        </div>
 
-</div>
-
-<div>
 
 ## See Also
 
 
 [Test voice routing in Lync Server 2013](lync-server-2013-test-voice-routing.md)  
-[Running voice routing tests in Lync Server 2013](lync-server-2013-running-voice-routing-tests.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Running voice routing tests in Lync Server 2013](lync-server-2013-running-voice-routing-tests.md)
 

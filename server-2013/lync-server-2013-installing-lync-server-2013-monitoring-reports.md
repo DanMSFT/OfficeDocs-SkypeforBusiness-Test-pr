@@ -8,35 +8,18 @@ ms.date: 02/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing Lync Server 2013 Monitoring Reports
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-02-27_
 
 Microsoft Lync Server 2013 Monitoring Reports provide you with a wealth of information about the quality and quantity of the communication sessions that take place in your organization. However, Monitoring Reports are not automatically installed when you install Lync Server 2013; instead, you must install Monitoring Reports separately, and only after Lync Server has been installed on the computer.
-
-<div>
 
 
 > [!NOTE]
 > It is recommended that you install Monitoring Reports on the same computer where the monitoring database is installed. This simplifies the process of assigning permissions for accessing the reports: installing Monitoring Reports on the computer that hosts the monitoring store means that you will not have to configure permissions that allow a database on one computer to interact with Reporting Services running on a second computer.
 
 
-
-</div>
 
 Lync Server Monitoring Reports include over 30 reports designed to provide detailed information about conferences, peer-to-peer IM sessions, user registrations, the Response Group application, and much more. For the 2013 version, Lync Server Monitoring Reports include a number of enhancements:
 
@@ -48,15 +31,11 @@ Lync Server Monitoring Reports include over 30 reports designed to provide detai
 
 More information on the individual reports can be found in the Monitoring Reports documentation.
 
-<div>
-
 
 > [!NOTE]
 > There is another new report – QoE Call Detail Subreport – included in Lync Server 2013. However, this report is primarily for internal use, and is not intended to be directly accessed.
 
 
-
-</div>
 
 There are two ways to install Lync Server Monitoring Reports: you can use the Lync Server Deployment Wizard or you can use a Windows PowerShell script included with the Lync Server 2013 installation files. Regardless of the method you use to install the reports you must first make sure that you:
 
@@ -148,14 +127,4 @@ In the preceding command, the ReportingUrl property should be set to the Report 
 3.  In Reporting Services Configuration Manager, click Report Manager URL. One or more URLs should appear in the Report Manager URL pane. Any of these URLs can be used as the Reporting URL although, again, it is recommended that the ReportingUrl use the HTTPS protocol.
 
 If you have set up a mirror database for your monitoring database then you must also associate the Monitoring Reports with the mirror database. See the article [Associating Monitoring Reports with a mirror database in Lync Server 2013](lync-server-2013-associating-monitoring-reports-with-a-mirror-database.md) for details.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

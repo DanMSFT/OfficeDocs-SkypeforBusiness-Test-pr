@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete an existing collection of CDR configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Call Detail Recording (CDR) enables you to track usage of such things as peer-to-peer instant messaging sessions, Voice over Internet Protocol (VoIP) phone calls, and conferencing calls. This usage data includes information about who called whom, when they called, and how long they talked.
 
@@ -32,9 +19,7 @@ When you install Microsoft Lync Server 2013, a single, global collection of CDR 
 
 Note that you can also “delete” the global settings. However, the global settings will not actually be removed. Instead, all the properties in that collection will be reset to their default values. For example, by default purging is enabled in a collection of CDR configuration settings. Suppose you modify the global collection so that purging is disabled. If you later delete the global settings, all the properties will be reset to their default values. In this case, that means that purging will once again be enabled.
 
-You can remove CDR configuration settings by using the Lync Server Control Panel or the [Remove-CsCdrConfiguration](remove-cscdrconfiguration.md) cmdlet.
-
-<div>
+You can remove CDR configuration settings by using the Lync Server Control Panel or the [Remove-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg398451\(v=ocs.15\)) cmdlet.
 
 ## To remove CDR configuration settings with Lync Server Control Panel
 
@@ -46,15 +31,9 @@ You can remove CDR configuration settings by using the Lync Server Control Panel
 
 4.  In the Lync Server Control Panel dialog box, click **OK**.
 
-</div>
-
-<div>
-
 ## Removing CDR Configuration Settings by Using Windows PowerShell Cmdlets
 
 You can delete call detail recording configuration settings by using Windows PowerShell and the **Remove-CsCdrConfiguration** cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To remove a specified collection of CDR configuration settings
 
@@ -62,19 +41,11 @@ You can delete call detail recording configuration settings by using Windows Pow
     
         Remove-CsCdrConfiguration -Identity "site:Redmond"
 
-</div>
-
-<div>
-
 ## To remove all the CDR configuration settings applied to the site scope
 
   - This command removes all the CDR configuration settings applied to the site scope:
     
         Get-CsCdrConfiguration -Filter "site:*" | Remove-CsCdrConfiguration
-
-</div>
-
-<div>
 
 ## To remove all the CDR configuration settings that disable call detail recording
 
@@ -82,19 +53,5 @@ You can delete call detail recording configuration settings by using Windows Pow
     
         Get-CsCdrConfiguration | Where-Object {$_.EnableCDR -eq $False} | Remove-CsCdrConfiguration
 
-</div>
-
-For more information, see the help topic for the [Remove-CsCdrConfiguration](remove-cscdrconfiguration.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [Remove-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg398451\(v=ocs.15\)) cmdlet.
 

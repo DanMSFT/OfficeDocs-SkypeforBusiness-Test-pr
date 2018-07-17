@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing user presence publishing and subscribing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 Test-CsPresence is used to determine whether a pair of test users can log on to Lync Server and then exchange presence information. To do this, the cmdlet first logs the two users on to the system. If both logons succeed, the first test user then asks to receive presence information from the second user. The second user publishes this information, and Test-CsPresence verifies that the information was successfully transmitted to the first user. After the exchange of presence information, the two test users are then logged off from Lync Server.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -73,11 +54,7 @@ To run this check using actual user accounts, you must create two Windows PowerS
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsPresence -TargetFqdn "atl-cs-001.litwareinc.com" -PublisherSipAddress "sip:kenmyer@litwareinc.com" -PublisherCredential $credential1 -SubscriberSipAddress "sip:davidlongmire@litwareinc.com" -SubscriberCredential $credential2
 
-For more information, see the Help documentation for the [Test-CsPresence](test-cspresence.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsPresence](https://technet.microsoft.com/en-us/library/gg398148\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -139,10 +116,6 @@ An exception 'Presence notification is not received within 25 secs.' occurred ru
 
 The fact that the presence notification was not received within 25 seconds might indicate that network issues are preventing information from being exchanged.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsPresence might fail:
@@ -156,16 +129,4 @@ Here are some common reasons why Test-CsPresence might fail:
         Get-CsUser "sip:kenmyer@litwareinc.com" | Select-Object Enabled
     
     If the Enabled property is set to False that means that the user is currently not enabled for Lync Server.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

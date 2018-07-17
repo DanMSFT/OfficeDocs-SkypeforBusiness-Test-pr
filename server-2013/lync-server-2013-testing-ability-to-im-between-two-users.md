@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing ability to IM between two users in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsIM cmdlet verifies that a pair of test users can exchange instant messages. When called, the Test-CsIM cmdlet starts off by trying to log on a pair of test users to Lync Server. Assuming the two logons are successful, the cmdlet then starts an IM session between the two test users. (User 1 invites User 2 to an IM session, and User 2 accepts the invitation.) After verifying that messages can be exchanged between the two users, Test-CsIM then ends the IM session and logs both users off the system.
 
-For more information, see the Help documentation for the [Test-CsIM](test-csim.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsIM](https://technet.microsoft.com/en-us/library/gg425802\(v=ocs.15\)) cmdlet.
 
 ## Running the Test
 
@@ -75,11 +56,7 @@ To run this check using actual user accounts, you must create two Windows PowerS
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsIm -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:davidlongmire@litwareinc.com" -ReceiverCredential $credential2
 
-For more information, see the Help documentation for the [Test-CsIM](test-csim.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsIM](http://technet.microsoft.com/en-us/library/gg425802\(v=ocs.14\).aspx) cmdlet.
 
 ## Determining Success or Failure
 
@@ -137,10 +114,6 @@ Registration hit against sip/atl-cs-001.litwareinc.com
 
 An exception 'The log on was denied. Check that the correct credentials are being used and the account is active.' occurred during the Workflow.
 
-</div>
-
-<div>
-
 ## Reasons Why the Test Might Have Failed
 
 Here are some common reasons why Test-CsIM might fail:
@@ -170,16 +143,4 @@ Here are some common reasons why Test-CsIM might fail:
     You can then ping the appropriate server to verify that it is available. For example:
     
         ping atl-archiving-001.litwareinc.com
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

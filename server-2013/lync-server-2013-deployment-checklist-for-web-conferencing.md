@@ -8,35 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment checklist for web conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-30_
 
 As with deployment of your other Lync Server 2013 components, deployment of web conferencing requires that you use Topology Builder to create and publish a topology that incorporates conferencing.
-
-<div>
 
 ## Deployment Sequence
 
 You can deploy conferencing at the same time that you deploy your initial topology or after you have deployed at least one Front End pool or Standard Edition server.
-
-</div>
-
-<div>
 
 ## Conferencing Deployment Process
 
@@ -62,18 +43,18 @@ The following table provides an overview of the steps required to deploy confere
 <tr class="odd">
 <td><p><strong>Install prerequisite hardware and software</strong></p></td>
 <td><p>Conferencing runs on Front End Servers in a Front End pool and Standard Edition servers. It has no additional hardware or software requirements beyond what is required to install those servers.</p>
-<div>
 
 > [!NOTE]
 > Lync Server 2013 uses Office Web Apps and the Office Web Apps Server to handle sharing and rendering of PowerPoint presentations. For information about installing and configuring the Office Web Apps Server, see <A href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">Configuring integration with Office Web Apps Server and Lync Server 2013</A>.
 
 
-</div></td>
+</td>
 <td><p>Domain user who is a member of the local Administrators group</p></td>
 <td><p><a href="lync-server-2013-supported-hardware.md">Supported hardware for Lync Server 2013</a> in the Supportability documentation</p>
 <p><a href="lync-server-2013-server-software-and-infrastructure-support.md">Server software and infrastructure support in Lync Server 2013</a> in the Supportability documentation</p>
 <p><a href="lync-server-2013-determining-your-system-requirements.md">Determining your system requirements for Lync Server 2013</a> in the Planning documentation.</p>
-<p><a href="lync-server-2013-technical-requirements-for-archiving.md">Technical requirements for Archiving in Lync Server 2013</a> in the Planning documentation.</p></td>
+<p><a href="lync-server-2013-technical-requirements-for-archiving.md">Technical requirements for Archiving in Lync Server 2013</a> in the Planning documentation.</p>
+<p></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Create the appropriate internal topology to support conferencing</strong></p></td>
@@ -115,16 +96,4 @@ Lync Server 2013 now includes the **MaxUploadFileSizeMb** setting, which limits 
                     </security>
 
 You must update the web.config file for each Front End Server.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure certificates for servers in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-17_
 
 To successfully complete this procedure you should be logged on as a user who is a member of the RTCUniversalServerAdmins group or have the correct permissions delegated. For details about delegating permissions, see [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md). Depending on your organization and requirements for requesting certificates, you may require other group memberships. Consult with the group that manages your public key infrastructure (PKI) certification authority (CA).
-
-<div>
 
 
 > [!NOTE]
@@ -36,33 +21,21 @@ To successfully complete this procedure you should be logged on as a user who is
 
 
 
-</div>
-
-<div>
-
 
 > [!WARNING]
 > The selection of which hash digest and signing algorithm is dependent on the clients and the servers that will use the certificate, and other computers and devices that clients and servers will communicate with who must also know how to use the algorithms used in the certificate. For information on which digest lengths are supported in the operating system and some client applications, see<A href="http://go.microsoft.com/fwlink/?linkid=287002">http://go.microsoft.com/fwlink/?LinkId=287002</A>.
 
 
 
-</div>
-
 Each Standard Edition server or Front End Server requires up to four certificates: the oAuthTokenIssuer certificate, a default certificate, a web internal certificate, and a web external certificate. However, it is possible to request and assign a single default certificate with appropriate subject alternative name entries as well as the oAuthTokenIssuer certificate. For details about the certificate requirements, see [Certificate requirements for internal servers in Lync Server 2013](lync-server-2013-certificate-requirements-for-internal-servers.md). For details about requesting, assigning and installing the oAuthTokenIssuer certificate, see [Managing server-to-server authentication (OAuth) and partner applications in Lync Server 2013](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)
 
 Use the following procedure to request, assign, and install the Standard Edition server or Front End Server certificates. Repeat the procedure for each Front End Server.
-
-<div>
 
 
 > [!IMPORTANT]
 > The following procedure describes how to configure certificates from an internal enterprise PKI deployed by your organization and with offline request processing. For information about obtaining certificates from a public CA, see <A href="lync-server-2013-certificate-requirements-for-internal-servers.md">Certificate requirements for internal servers in Lync Server 2013</A> in the Planning documentation. Also, this procedure describes how to request, assign, and install certificates during set up of the Front End Server. If you requested certificates in advance, as described in the <A href="lync-server-2013-request-certificates-in-advance-optional.md">Request certificates in advance (optional) for Lync Server 2013</A> section of this Deployment documentation, or you do not use an internal enterprise PKI deployed in your organization to obtain certificates, you must modify this procedure as appropriate.
 
 
-
-</div>
-
-<div>
 
 ## To configure certificates for a Front End Server
 
@@ -80,25 +53,19 @@ Use the following procedure to request, assign, and install the Standard Edition
 
 7.  On the **Specify Alternate Certificate Template** page, to use the default Web Server template, click **Next**.
     
-    <div>
-    
 
     > [!NOTE]
     > If your organization has created a template for use as an alternative for the default Web server CA template, select the check box, and then enter the name of the alternate template. You will need the template name as defined by the CA administrator.
 
-    
-    </div>
+
 
 8.  On the **Name and Security Settings** page, specify a **Friendly Name** that should allow you to identify the certificate and purpose. If you leave it blank, a name will be generated automatically. Set the **Bit length** of the key, or accept the default of 2048 bits. Select the **Mark the certificate’s private key as exportable** if you determine that the certificate and private key needs to be moved or copied to other systems, and then click **Next**.
-    
-    <div>
     
 
     > [!NOTE]
     > Lync Server 2013 has minimal requirements for an exportable private key. One such place is on the Edge Servers in a pool, where the Media Relay Authentication Service uses copies of the certificate, rather than individual certificates for each instance in the pool.
 
-    
-    </div>
+
 
 9.  On the **Organization Information** page, optionally provide organization information, and then click **Next**.
 
@@ -120,14 +87,11 @@ Use the following procedure to request, assign, and install the Standard Edition
 
 18. On the **Certificate Store** page, select the certificate that you requested. If you want to view the certificate, click **View Certificate Details**, and then click **Next** to continue.
     
-    <div>
-    
 
     > [!NOTE]
     > If the <STRONG>Online Certificate Request Status</STRONG> page reported an issue with the certificate, such as the certificate not being valid, viewing the actual certificate can assist in resolving the issue. Two specific issues that can cause a certificate to not be valid is the previously mentioned missing Trusted Root CA certificate, and a missing private key that is associated with the certificate. Refer to your CA documentation to resolve these two issues.
 
-    
-    </div>
+
 
 19. On the **Certificate Assignment Summary** page, review the information presented to make sure that this is the certificate that should be assigned, and then click **Next**.
 
@@ -135,25 +99,8 @@ Use the following procedure to request, assign, and install the Standard Edition
 
 21. On the **Certificate Wizard** page, verify that the **Status** of the certificate is “Assigned,” and then click **Close**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Certificate infrastructure requirements for Lync Server 2013](lync-server-2013-certificate-infrastructure-requirements.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Certificate infrastructure requirements for Lync Server 2013](lync-server-2013-certificate-infrastructure-requirements.md)
 

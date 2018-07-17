@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring your Lync Server 2013 environment for the Lync Room System Administrative Web Portal
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-22_
 
 To use the Lync Room System (LRS) Administrative Web Portal, you will need to install or configure the following prerequisites.
-
-<div>
 
 
 > [!IMPORTANT]
 > If the server is configured with both Kerberos and NTLM authentication, and LRS is running on a computer that is not joined to the domain, Kerberos authentication will fail and the user will not see the status of LRS in the administrative portal. To resolve this issue, configure the server with NTLM authentication or both NTLM and TLS-DSK authentication (without Kerberos), or join the LRS computer to the domain.
 
 
-
-</div>
 
 1.  Install Lync Server 2013 Cumulative Updates: July 2013 in the Lync Server topology.
     
@@ -73,14 +56,4 @@ To use the Lync Room System (LRS) Administrative Web Portal, you will need to in
      
 
 7.  Install ASP.NET MVC 4 for Visual Studio 2010 SP1 and Visual Web Developer 2010 SP1, available in the Microsoft Download Center at [http://go.microsoft.com/fwlink/p/?LinkId=323967](http://go.microsoft.com/fwlink/p/?linkid=323967).
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

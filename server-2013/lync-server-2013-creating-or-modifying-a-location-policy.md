@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Creating or modifying a location policy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 In Lync Server 2013, you can use the location policy to apply settings that relate to Enhanced 9-1-1 (E9-1-1) functionality and to location settings for users or contacts. The location policy determines whether a user is enabled for E9-1-1, and if so what the behavior is of an emergency call. For example, you can use the location policy to define what number constitutes an emergency call (for example, 911 in the United States), whether corporate security should be automatically notified, and how the call should be routed.
 
 You can configure location policies from the **Network Configuration** group in Lync Server 2013 Control Panel. From Lync Server Control Panel you can view, create, modify, or delete location policies. Use the procedures in this section to create or modify a location policy. For details on deleting location policies, see [Deleting a location policy in Lync Server 2013](lync-server-2013-deleting-a-location-policy.md).
 
 In Lync Server 2013, you can override the default amount of time between client requests for a location update from the Location Information service. The default value is 4 hours. Use the **Set-CsLocationPolicy** cmdlet with the LocationRefreshInterval parameter to override the default value.
-
-<div>
 
 ## To create a new location policy in Lync Server Control Panel
 
@@ -58,16 +43,12 @@ In Lync Server 2013, you can override the default amount of time between client 
         
           - **Not Required**   The user will not be prompted for a location. When a call is made with no location information, the emergency services provider will answer the call and ask for a location.
         
-          - **Disclaimer**   This option is the same as **Required** except that the user cannot dismiss the prompt without entering location information. The user can still complete an emergency call, but no other calls can be completed without entering the information. In addition, disclaimer text will be displayed to the user that can alert them to the consequences of declining to enter location information. To set the disclaimer text, you must use Lync Server Management Shell to run the **Set-CsLocationPolicy** cmdlet or the **New-CsLocationPolicy** cmdlet with the EnhancedEmergencyServiceDisclaimer parameter. For details, see [Set-CsLocationPolicy](set-cslocationpolicy.md) or [New-CsLocationPolicy](new-cslocationpolicy.md) in the Lync Server Management Shell documentation.
-            
-            <div>
+          - **Disclaimer**   This option is the same as **Required** except that the user cannot dismiss the prompt without entering location information. The user can still complete an emergency call, but no other calls can be completed without entering the information. In addition, disclaimer text will be displayed to the user that can alert them to the consequences of declining to enter location information. To set the disclaimer text, you must use Lync Server Management Shell to run the **Set-CsLocationPolicy** cmdlet or the **New-CsLocationPolicy** cmdlet with the EnhancedEmergencyServiceDisclaimer parameter. For details, see [Set-CsLocationPolicy](https://technet.microsoft.com/en-us/library/gg412987\(v=ocs.15\)) or [New-CsLocationPolicy](https://technet.microsoft.com/en-us/library/gg398231\(v=ocs.15\)) in the Lync Server Management Shell documentation.
             
 
             > [!NOTE]
             > In Lync Server 2013, you can use location policy to set different disclaimers for different locales or different sets of users, unlike in Lync Server 2010 where you could specify only a global disclaimer for the entire organization.
 
-            
-            </div>
     
       - **Use location for emergency services only**   Lync can use location information for various reasons (for example, to notify teammates of your current location). Select this check box to ensure location information is available only for use with an emergency call.
     
@@ -77,14 +58,10 @@ In Lync Server 2013, you can override the default amount of time between client 
     
       - **Emergency dial mask**   A number that you want to translate into the value of the emergency dial number value when it is dialed. For example, if you enter a value of 212 in this field and the emergency dial number field has a value of 911, if a user dials 212 the call will be made to 911. This allows for alternate emergency numbers to be dialed and still have the call reach emergency services (for example, if someone from a country or region with a different emergency number attempts to dial that country or region’s number rather than the number for the country or region they are currently in). You can define multiple emergency dial masks by separating the values with semicolons. For example, 212;414. Maximum length of the string is 100 characters. Each character must be a digit 0 through 9.
         
-        <div>
-        
 
         > [!IMPORTANT]
         > Ensure that the specified dial mask value is not the same as a number in a call park orbit range. Call park routing will take precedence over emergency dial string conversion. To see the existing call park orbit ranges, click <STRONG>Voice Features</STRONG> in the left navigation bar and then click <STRONG>Call Park</STRONG>. For details, see <A href="lync-server-2013-configure-phone-number-extensions-for-parking-calls.md">Configure phone number extensions for parking calls in Lync Server 2013</A>.
 
-        
-        </div>
     
       - **Notification URI**   One or more SIP Uniform Resource Identifiers (URIs) to be notified when an emergency call is made. For example, the company security office could be notified through an instant message whenever an emergency call is made. If the caller’s location is available that location will be included in the notification. Multiple SIP URIs can be included as a comma-separated list. For example, "sip:security@litwareinc.com","sip:kmyer@litwareinc.com". Distribution lists are supported. The string must be from 1 to 256 characters in length and must begin with the prefix "sip:". Before you click in the Notification URI field an example is displayed.
     
@@ -98,18 +75,11 @@ In Lync Server 2013, you can override the default amount of time between client 
 
 6.  Click **Commit**.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > When you create a user policy, initially that policy does not apply to any users or network sites. To apply the policy to a user, click <STRONG>Users</STRONG> in the left navigation bar. Find the user to which you want to apply the policy. On the <STRONG>Edit</STRONG> menu, click <STRONG>Show details</STRONG>. On the <STRONG>Edit Lync Server User</STRONG> page, select the new location policy from the <STRONG>Location policy</STRONG> drop-down list and then click <STRONG>Commit</STRONG>.<BR>To apply the policy to a network site, click <STRONG>Network Configuration</STRONG> in the left navigation bar and then click <STRONG>Site</STRONG>. Find the network site to which you want to apply the policy. On the <STRONG>Edit</STRONG> menu, click <STRONG>Show details</STRONG>. In <STRONG>Edit Site</STRONG>, select the new location policy from the <STRONG>Location policy</STRONG> drop-down list and then click <STRONG>Commit</STRONG>.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To modify a location policy in Lync Server Control Panel
 
@@ -127,10 +97,6 @@ In Lync Server 2013, you can override the default amount of time between client 
 
 7.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -140,18 +106,5 @@ In Lync Server 2013, you can override the default amount of time between client 
 [Defining the location policy for Lync Server 2013](lync-server-2013-defining-the-location-policy.md)  
 
 
-[Configure phone number extensions for parking calls in Lync Server 2013](lync-server-2013-configure-phone-number-extensions-for-parking-calls.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configure phone number extensions for parking calls in Lync Server 2013](lync-server-2013-configure-phone-number-extensions-for-parking-calls.md)
 

@@ -8,31 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Administering users in a hybrid Lync Server 2013 deployment
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-29_
 
 You can manage user settings and policies for users migrated to Lync Online by using the User Management features available in the Microsoft Office 365 online portal. You must sign in by using your tenant administrator account to perform administration tasks.
 
-<div>
-
 ## Moving Users Back to On-premises
-
-<div class="">
 
 
 > [!IMPORTANT]
@@ -40,17 +23,11 @@ You can manage user settings and policies for users migrated to Lync Online by u
 
 
 
-</div>
-
   - Run the following cmdlets to move a user from Lync Online back to Lync on-premises:
     
-       ```
         $cred=Get-Credential
-       ```
     
-       ```
         Move-CsUser -Identity username@contoso.com -Target localpool.contoso.com -Credential $cred -HostedMigrationOverrideUrl <URL>
-       ```
 
 The format of the URL specified for the **HostedMigrationOverrideUrl** parameter must be the URL to the pool where the Hosted Migration service is running, in the following format:
 
@@ -75,16 +52,4 @@ Https://\<Pool FQDN\>/HostedMigration/hostedmigrationService.svc. You can determ
     The resulting URL, which is the value of the **HostedMigrationOverrideUrl**, should look like the following:
     
     `https://admin0a.online.lync.com/HostedMigration/hostedmigrationservice.svc`
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

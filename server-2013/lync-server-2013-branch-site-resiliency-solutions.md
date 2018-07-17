@@ -8,29 +8,14 @@ ms.date: 12/11/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Branch-site resiliency solutions in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-12-10_
 
 There are obvious advantages to providing branch-site resiliency to your organization. Specifically, if you lose the connection to the central site, branch site users will continue to have Enterprise Voice service and voice mail (if you configure voice mail rerouting settings; for details, see [Branch-site resiliency requirements for Lync Server 2013](lync-server-2013-branch-site-resiliency-requirements.md)). However, for sites with fewer than 25 users, a resiliency solution may not provide a sufficient return on investment.
 
 If you decide to provide branch-site resiliency, you have three options. The following table can help you determine the best option for your organization.
-
-<div>
 
 
 
@@ -69,8 +54,6 @@ If you decide to provide branch-site resiliency, you have three options. The fol
 </table>
 
 
-<div>
-
 ## Resiliency Topologies
 
 The following figure shows the recommended topologies for branch-site resiliency.
@@ -78,10 +61,6 @@ The following figure shows the recommended topologies for branch-site resiliency
 **Branch site resiliency options**
 
 ![Voice Branch Resiliency Options](images/Gg398234.47eecd19-08ae-4d82-acbe-61f0de760306(OCS.15).jpg "Voice Branch Resiliency Options")
-
-</div>
-
-<div>
 
 ## Survivable Branch Appliance Details
 
@@ -101,17 +80,11 @@ If the branch site’s WAN connection to a central site becomes unavailable, int
 
 Lync Server supports up to two Survivable Branch Appliance at a branch site.
 
-<div>
-
 
 > [!NOTE]
 > Users who are homed on a Lync Server Survivable Branch Appliance are unable to create new Chat Rooms or view the Room Card for existing rooms.
 
 
-
-</div>
-
-<div>
 
 ## Survivable Branch Appliance Deployment Overview
 
@@ -160,37 +133,12 @@ For details about these phases, see [Deploying a Survivable Branch Appliance or 
 </table>
 
 
-</div>
-
-</div>
-
-<div>
-
 ## Survivable Branch Server Details
 
 In Topology Builder create the branch site, add the Survivable Branch Server to that site, and then run the Lync Server Deployment Wizard on the computer where you want to install the role.
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
-[Deploying Lync Server 2013](lync-server-2013-deploying-lync-server.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying Lync Server 2013](lync-server-2013-deploying-lync-server.md)
 

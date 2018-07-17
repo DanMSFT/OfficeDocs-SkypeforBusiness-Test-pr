@@ -8,23 +8,10 @@ ms.date: 06/22/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for security in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-06-22_
 
 Use this security section to assess and manage security risks to your deployment of Lync Server 2013.
 
@@ -32,17 +19,11 @@ Even if your Lync Server 2013 deployment is modest, you probably have components
 
 Use this section as a starting point to address the security of your Lync Server 2013 deployment. It provides general guidelines and best practices for assessing and managing the most common security risks. Additional product and security resources are listed at the end of each topic.
 
-<div>
-
 
 > [!IMPORTANT]
 > Security is a constantly evolving topic. As new threats and solutions arise, outdated documents, solutions, methods, and procedures should be replaced with up-to-date material.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -57,16 +38,4 @@ Use this section as a starting point to address the security of your Lync Server
   - [Addressing threats to your core infrastructure for Lync Server 2013](lync-server-2013-addressing-threats-to-your-core-infrastructure.md)
 
   - [Deploying a SQL Server nonstandard port and alias in Lync Server 2013](deploying-a-sql-server-nonstandard-port-and-alias-in-lync-server-2013.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

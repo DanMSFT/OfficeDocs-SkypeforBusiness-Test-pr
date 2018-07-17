@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring custom presence states in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-10_
 
 To define custom presence states in Lync 2013, create an XML custom presence configuration file, and then specify its location by using the Lync Server Management Shell cmdlets **New-CSClientPolicy** or **Set-CSClientPolicy** with the parameter CustomStateURL.
 
@@ -39,8 +26,6 @@ Configuration files have the following properties:
   - A maximum of four custom presence states can be added.
 
   - The CustomStateURL parameter specifies the location of the configuration file. In Lync 2013, SIP high security mode is enabled by default, so you will need to store the custom presence configuration file on a web server that has HTTPS enabled. Otherwise, Lync 2013 clients will be unable to connect to it. For example, a valid address would be `https://lspool.corp.contoso.com/ClientConfigFolder/CustomPresence.xml`.
-
-<div>
 
 
 > [!NOTE]
@@ -57,11 +42,7 @@ Configuration files have the following properties:
 
 
 
-</div>
-
 Localize your custom presence state by specifying one or more locale ID (LCID) schema in the XML configuration file. The example later in this topic shows localization into English - United States (1033), Norwegian - Bokmål (1044), French - France (1036), and Turkish (1055). For a list of LCIDs, see Locale IDs Assigned by Microsoft at <http://go.microsoft.com/fwlink/p/?linkid=157331>.
-
-<div>
 
 ## To add custom presence states to Lync 2013
 
@@ -99,9 +80,7 @@ Localize your custom presence state by specifying one or more locale ID (LCID) s
 
 5.  Use the **Grant-CSClientPolicy** cmdlet to assign this new policy to users.
 
-For details, see [New-CsClientPolicy](new-csclientpolicy.md) and [Grant-CsClientPolicy](grant-csclientpolicy.md) in the Lync Server Management Shell documentation.
-
-<div>
+For details, see [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/gg425949\(v=ocs.15\)) and [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/gg412942\(v=ocs.15\)) in the Lync Server Management Shell documentation.
 
 
 > [!NOTE]
@@ -111,19 +90,4 @@ For details, see [New-CsClientPolicy](new-csclientpolicy.md) and [Grant-CsClient
 > <LI>
 > <P>If you want to continue using Group Policy settings from previous releases, such as CustomStateURL, Lync 2013 will recognize the settings if they are located in the new policy registry hive (HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\15.0\Lync). However, server-based client policies take precedence.</P></LI></UL>
 
-
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

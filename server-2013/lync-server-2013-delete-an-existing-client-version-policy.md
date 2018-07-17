@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete an existing client version policy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 If you want to delete a client version policy that was previously configured, you can delete it from Lync Server 2013 Control Panel or Lync Server 2013 Management Shell.
-
-<div>
 
 ## To delete client version policies by using Lync Server Control Panel
 
@@ -40,15 +25,9 @@ If you want to delete a client version policy that was previously configured, yo
 
 4.  On the **Client Version Policy** page, select the client version policy or policies you want to delete, click **Edit**, and then click **Delete**.
 
-</div>
-
-<div>
-
 ## Deleting Client Version Policies by Using Windows PowerShell Cmdlets
 
 You can delete client version policies by using the **Remove-CsClientVersionPolicy** cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To remove a specific client version policy
 
@@ -56,19 +35,11 @@ You can delete client version policies by using the **Remove-CsClientVersionPoli
     
         Remove-CsClientVersionPolicy -Identity site:Redmond
 
-</div>
-
-<div>
-
 ## To remove all the client version policies applied to the site scope
 
   - This command removes all the client version policies configured at the site scope:
     
         Get-CsClientVersionPolicy -Fiter "site:*" | Remove-CsClientVersionPolicy
-
-</div>
-
-<div>
 
 ## To remove client version policies that do not include a specific user agent
 
@@ -76,19 +47,5 @@ You can delete client version policies by using the **Remove-CsClientVersionPoli
     
         Get-CsClientVersionPolicy | Where-Object {$_.Rules -notmatch "UserAgent=WPLync" | Remove-CsClientVersionPolicy
 
-</div>
-
-For details, see the Help topic for the [Remove-CsClientVersionPolicy](remove-csclientversionpolicy.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see the Help topic for the [Remove-CsClientVersionPolicy](https://technet.microsoft.com/en-us/library/gg425801\(v=ocs.15\)) cmdlet.
 

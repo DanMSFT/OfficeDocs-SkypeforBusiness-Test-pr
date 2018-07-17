@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Viewing network site information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Network sites are the offices or locations configured within each region of a call admission control (CAC) or Enhanced 9-1-1 deployment. You can view network site information in either Lync Server 2013 Control Panel or Lync Server Management Shell . For details about creating or modifying network sites, see [Creating or modifying network sites in Lync Server 2013](lync-server-2013-creating-or-modifying-network-sites.md).
-
-<div>
 
 ## To view network site information in Lync Server Control Panel
 
@@ -40,26 +25,17 @@ Network sites are the offices or locations configured within each region of a ca
 
 4.  On the **Site** page, click the site that you want to view.
     
-    <div>
-    
 
     > [!NOTE]
     > You can only view information for one site at a time.
 
-    
-    </div>
+
 
 5.  On the **Edit** menu, click **Show details**.
-
-</div>
-
-<div>
 
 ## Viewing Network Site Information by Using Windows PowerShell Cmdlets
 
 You can view network site information by using Windows PowerShell and the Get-CsNetworkSite cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view network site information
 
@@ -77,30 +53,11 @@ You can view network site information by using Windows PowerShell and the Get-Cs
         BWPolicyProfileID :
         LocationPolicy    :
 
-</div>
-
-For more information, see the help topic for the [Get-CsNetworkSite](get-csnetworksite.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Get-CsNetworkSite](https://technet.microsoft.com/en-us/library/gg398766\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
 [Creating or modifying network sites in Lync Server 2013](lync-server-2013-creating-or-modifying-network-sites.md)  
-[Deleting an existing network site in Lync Server 2013](lync-server-2013-deleting-an-existing-network-site.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deleting an existing network site in Lync Server 2013](lync-server-2013-deleting-an-existing-network-site.md)
 

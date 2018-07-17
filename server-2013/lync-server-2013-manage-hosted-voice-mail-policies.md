@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Manage hosted voice mail policies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-20_
 
 A *hosted voice mail policy* provides information to the Lync Server 2013 ExUM Routing application about where to route calls for users whose mailboxes are located on a hosted Exchange service.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ A *hosted voice mail policy* provides information to the Lync Server 2013 ExUM R
 
 
 
-</div>
-
 For details about planning hosted voice mail policies, see [Hosted voice mail policies in Lync Server 2013](lync-server-2013-hosted-voice-mail-policies.md) in the Planning documentation.
-
-<div>
 
 ## In This Section
 
@@ -51,16 +32,4 @@ For details about planning hosted voice mail policies, see [Hosted voice mail po
   - [Create a per-user hosted voice mail policy in Lync Server 2013](lync-server-2013-create-a-per-user-hosted-voice-mail-policy.md)
 
   - [Assign a per-user hosted voice mail policy in Lync Server 2013](lync-server-2013-assign-a-per-user-hosted-voice-mail-policy.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

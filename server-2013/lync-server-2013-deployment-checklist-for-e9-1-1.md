@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment checklist for E9-1-1 in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-03_
 
 To plan effectively for Enhanced 9-1-1 (E9-1-1), be sure to include the following deployment requirements:
 
@@ -32,15 +19,9 @@ To plan effectively for Enhanced 9-1-1 (E9-1-1), be sure to include the followin
 
   - Steps that are required to deploy E9-1-1.
 
-<div>
-
 ## Deployment Prerequisites for E9-1-1
 
 Before you deploy E9-1-1, you must already have deployed your Lync Server internal servers, including a Central Management store, a Front End pool or a Standard Edition server, one or more Mediation Servers or Mediation Server pools, and Lync Server clients. In addition, an E9-1-1 deployment requires a SIP trunk to a qualified E9-1-1 service provider or an Emergency Location Identification Number (ELIN) gateway to your public switched telephone network (PSTN). Lync Server supports using E9-1-1 service providers only inside the United States.
-
-</div>
-
-<div>
 
 ## Deployment Process
 
@@ -82,7 +63,8 @@ The following table provides an overview of the E9-1-1 deployment process. For d
 <li><p>Assign the location policy to network sites.</p></li>
 <li><p>Add the appropriate subnets to the network site.</p></li>
 <li><p>(Optional) Assign the location policy to user policies.</p></li>
-</ol></td>
+</ol>
+<p></p></td>
 <td><p>CSVoiceAdmin</p>
 <p>CSLocationAdmin (except for creating Location Policies)</p></td>
 <td><p><a href="lync-server-2013-create-location-policies.md">Create location policies in Lync Server 2013</a></p>
@@ -115,17 +97,4 @@ The following table provides an overview of the E9-1-1 deployment process. For d
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

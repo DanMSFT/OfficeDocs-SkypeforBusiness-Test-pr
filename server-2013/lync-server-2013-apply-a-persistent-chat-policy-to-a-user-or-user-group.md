@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Apply a Persistent Chat policy to a user or user group in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-06_
 
 If a user has been enabled for Lync Server 2013, you can apply appropriate policies to specific users to enable or disable them for Persistent Chat Server.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ If a user has been enabled for Lync Server 2013, you can apply appropriate polic
 
 
 
-</div>
-
 Use the procedure in this topic to apply a previously created Persistent Chat user policy to one or more user accounts or user groups.
-
-<div>
 
 ## To apply a Persistent Chat user policy to a user account
 
@@ -54,26 +35,11 @@ Use the procedure in this topic to apply a previously created Persistent Chat us
 
 5.  In **Edit Lync Server User** under **Persistent Chat policy**, select the Persistent Chat user policy that you want to apply.
     
-    <div>
-    
 
     > [!NOTE]
     > The <STRONG>&lt;Automatic&gt;</STRONG> settings apply the default effective policy. These settings are applied automatically by the server.
 
-    
-    </div>
+
 
 6.  Click **Commit**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

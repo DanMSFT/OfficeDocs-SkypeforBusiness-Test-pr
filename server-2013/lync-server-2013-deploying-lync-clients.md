@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying Lync clients in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-03_
 
 Lync 2013 introduces a different approach to client deployment. In a departure from previous releases, Lync 2013 no longer has its own installer. Instead, Lync is included with the Office 2013 setup program. To deploy Lync 2013 to your users, you can use Office 2013 installation methods and customization tools.
 
@@ -33,8 +20,6 @@ Lync 2013 introduces a different approach to client deployment. In a departure f
   - **Office 2013 Click-to-Run** is an installation program that streams Office setup files to the user from the Microsoft Office 365 portal. Administrators can customize installation by using the Office Deployment Tool for Click-to-Run. Because Office 2013 Click-to-Run is primarily used in the Microsoft Office 365 environment, this installation method is not described in detail in this section. Detailed information about using and customizing Click-to-Run installation is available in the Office 2013 Resource Kit documentation. Administrators can also download the Office 2013 Click-to-Run program and language source files to an on-premises location, which is useful when you want to minimize the demand on the network or prevent users from installing software from the Internet because of corporate security requirements.
 
 The topics in this section focus on how to deploy clients by using the Office 2013 MSI-based installer. Your primary reference should be the Office 2013 Resource Kit documentation, which describes in detail how to prepare your infrastructure, customize setup, and deploy Office 2013. However, you should use the Office documentation in conjunction with topics in this section, which point out deployment considerations that are specific to Lync 2013.
-
-<div>
 
 
 > [!NOTE]
@@ -45,10 +30,6 @@ The topics in this section focus on how to deploy clients by using the Office 20
 > <P>The Office 2013 setup program does not uninstall previous versions of Lync or Office Communicator. The Lync 2013 client installs side-by-side with other Lync or Office Communicator clients</P></LI></UL>
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -63,16 +44,4 @@ The topics in this section focus on how to deploy clients by using the Office 20
   - [Configuring supported client versions in Lync Server 2013](lync-server-2013-configuring-supported-client-versions.md)
 
   - [Configuring enhanced presence privacy mode in Lync Server 2013](lync-server-2013-configuring-enhanced-presence-privacy-mode.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

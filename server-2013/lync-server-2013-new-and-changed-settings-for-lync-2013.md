@@ -8,27 +8,12 @@ ms.date: 12/08/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # New and changed settings for Lync 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-12-05_
 
 This topic discusses changes to Lync Server Management Shell cmdlets that relate directly to client management. Lync Server 2013 introduces several new parameters, and deprecates parameters for features that can be configured through other means.
-
-<div>
 
 ## New Client Management Parameters
 
@@ -107,8 +92,6 @@ This topic discusses changes to Lync Server Management Shell cmdlets that relate
 </table>
 
 
-<div>
-
 ## Deprecated Client Management Parameters
 
 
@@ -163,19 +146,4 @@ This topic discusses changes to Lync Server Management Shell cmdlets that relate
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

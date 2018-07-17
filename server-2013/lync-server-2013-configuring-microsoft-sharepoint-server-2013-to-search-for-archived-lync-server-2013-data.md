@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Microsoft SharePoint Server 2013 to search for archived Microsoft Lync Server 2013 data
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-04_
 
 One of the major advantages to storing instant messaging and Web conferencing transcripts in Microsoft Exchange Server 2013 instead of Microsoft Lync Server 2013 is the fact that storing data in the same location enables administrators to use a single tool to search for archived Exchange data and/or archived Lync Server data. Because all the data is stored in the same place (Exchange) any tool that can search for archived Exchange data can also search for archived Lync Server data.
 
@@ -55,15 +42,11 @@ After Exchange Web Services has been installed you must then configure server-to
     $service.AllowOAuthOverHttp = $False
     $service.Update()
 
-<div>
-
 
 > [!NOTE]
 > Be sure and use the URI for your autodiscover service. Do not use the sample URI https://autodiscover.litwareinc.com/autodiscover/metadata/json/1.
 
 
-
-</div>
 
 After you have created the token issuer and configured the token service, run these commands, making sure to substitute the URL of your SharePoint site for the sample URL http://atl-sharepoint-001:
 
@@ -91,15 +74,11 @@ After server-to-server authentication has been established between Exchange and 
     $template = Get-SPWebTemplate | Where-Object {$_.Title -eq "eDiscovery Center"}
     New-SPSite -Url "https://atl-sharepoint-001/sites/discovery" -OwnerAlias "kenmyer" -Template $Template -Name "Discovery Center"
 
-<div>
-
 
 > [!NOTE]
 > "eDiscovery" is short for "electronic discovery," and typically refers to the process of looking through electronic archives for items that can be "reasonably calculated to lead to admissible evidence" in a court of law.
 
 
-
-</div>
 
 When the new site is ready, the next step is to configure Exchange 2013 to act as a result source for SharePoint. You can do that by completing the following procedure from the SharePoint 2013 Central Administration page:
 
@@ -134,14 +113,4 @@ Finally, create a new eDiscovery case and a new eDiscovery set by completing the
 8.  On the eDiscovery set page, click **Save** to save the new eDiscovery set.
 
 At this point you can search the specified mailbox (kenmyer) and/or enable In-Place holds the same way you would for any other SharePoint content or result source.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

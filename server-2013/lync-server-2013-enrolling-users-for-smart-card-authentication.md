@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enrolling users for smart card authentication in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-03_
 
 There are generally two methods for enrolling users for smart card authentication. The easier method involves having users enroll directly for smart card authentication using web enrollment, while the more complex method involves using an enrollment agent. This topic focuses on self-enrollment for smartcard certificates.
 
 For more information on enrolling on behalf of users as an enrollment agent, see Enroll for Certificates on Behalf of Other Users at [http://go.microsoft.com/fwlink/p/?LinkID=313367](http://go.microsoft.com/fwlink/p/?linkid=313367).
-
-<div>
 
 ## To Enroll Users for Smart Card Authentication
 
@@ -40,14 +25,11 @@ For more information on enrolling on behalf of users as an enrollment agent, see
 
 3.  Browse to the **Certificate Authority Web Enrollment** page (e.g. https://MyCA.contoso.com/certsrv).
     
-    <div>
-    
 
     > [!NOTE]
     > If you are using Internet Explorer 10, you may need to view this website in Compatibility Mode.
 
-    
-    </div>
+
 
 4.  On the **Welcome** Page, select **Request a certificate**.
 
@@ -85,18 +67,13 @@ For more information on enrolling on behalf of users as an enrollment agent, see
 
 10. When prompted, enter the PIN that was used to create the virtual smart card.
     
-    <div>
-    
 
     > [!NOTE]
     > The default virtual smart card PIN value is ‘12345678’.
 
-    
-    </div>
+
 
 11. Once the certificate has been issued, click **Install this certificate** to complete the enrollment process.
-    
-    <div>
     
 
     > [!NOTE]
@@ -109,18 +86,4 @@ For more information on enrolling on behalf of users as an enrollment agent, see
     > <LI>
     > <P>Select the Reset all zones to default level setting under the Security tab in the Internet Explorer options menu.</P></LI></OL>
 
-    
-    </div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

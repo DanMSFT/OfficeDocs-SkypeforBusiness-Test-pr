@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Modify settings for Device Update log files in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 You can change settings for how device update information is logged in your organization by using Lync Server Control Panel or Lync Server Management Shell. The following table shows which settings are modifiable, and which tool(s) you use to modify the settings.
 
@@ -83,8 +70,6 @@ Log settings can be changed and applied globally, or per site.
 </table>
 
 
-<div>
-
 ## To change logging settings by using Lync Server Control Panel
 
 1.  Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel. For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).
@@ -105,15 +90,9 @@ Log settings can be changed and applied globally, or per site.
 
 5.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Changing Logging Settings by Using Windows PowerShell Cmdlets
 
 Device update log file settings can be modified by using Windows PowerShell and the **Set-CsDeviceUpdateConfiguration** cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
@@ -121,11 +100,7 @@ Device update log file settings can be modified by using Windows PowerShell and 
 
 
 
-</div>
-
 The following examples show a couple of the ways that you can use **Set-CsDeviceUpdateConfiguration** to modify settings.
-
-<div>
 
 ## To modify the maximum log file size and the log cleanup interval
 
@@ -133,29 +108,11 @@ The following examples show a couple of the ways that you can use **Set-CsDevice
     
         Set-CsDeviceUpdateConfiguration -Identity "site:Redmond" -MaxLogFileSize 204800 -LogCleanUpInterval 14.00:00:00
 
-</div>
-
-<div>
-
 ## To modify the log cleanup time of day
 
   - This command sets the log cleanup time for the Redmond site to 3:00 AM.
     
         Set-CsDeviceUpdateConfiguration -Identity "site:Redmond" -LogCleanupTimeOfDay 03:00
 
-</div>
-
-For details, see the Help topic for the [Set-CsDeviceUpdateConfiguration](set-csdeviceupdateconfiguration.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see the Help topic for the [Set-CsDeviceUpdateConfiguration](https://technet.microsoft.com/en-us/library/gg398320\(v=ocs.15\)) cmdlet.
 

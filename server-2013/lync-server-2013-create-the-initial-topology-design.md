@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create the initial topology design for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 After you have finished installing the Lync Server 2013, Planning Tool, you are ready to start the Planning Tool and begin designing the proposed Lync Server 2013 infrastructure.
-
-<div>
 
 
 > [!NOTE]
 > The Planning Tool is a wizard-driven tool with detailed guides to inform your decision-making process in designing your sites and topology. This topic is intended not as an exhaustive guide, but simply to help get you started using the Planning Tool in your design sessions.
 
 
-
-</div>
-
-<div>
 
 ## To get started using the Planning Tool and create the initial design
 
@@ -56,27 +37,21 @@ After you have finished installing the Lync Server 2013, Planning Tool, you are 
 
 4.  Answer each section by selecting the appropriate criteria for your design, and then click **Next** to proceed to the next Wizard page. Click **Back** to make changes on previous pages.
     
-    <div>
-    
 
     > [!TIP]
     > Each page has a description of the selection criteria, and recommendations based on preferred practices and capacity planning. If you require additional details, click <STRONG>Learn more</STRONG> to read detailed information from the Lync Server 2013 Planning documentation on the Microsoft TechNet website. You must have Internet connectivity to access the Microsoft TechNet website.
 
-    
-    </div>
+
 
 5.  Select the appropriate options for your design. After the initial criteria are defined, a page will confirm that your Features Overview is complete.
 
 6.  Click **Design Sites** to define your central site.
     
-    <div>
-    
 
     > [!NOTE]
     > Each Lync Server 2013 topology will have at least one central site. Your design may have a single central site, a central site with a number of branch sites, a number of central sites, or a number of central sites with branch sites associated with each central site.
 
-    
-    </div>
+
 
 7.  In **Site Name**, type the name that will identify this central site.
 
@@ -86,14 +61,11 @@ After you have finished installing the Lync Server 2013, Planning Tool, you are 
 
 10. Modify the selections for Online Collaboration, Users, Voice, Additional Deployment Options, or Server Applications, as needed.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > At this point in the design, you can only select or clear options for your deployment. However, you can configure more options in a later phase of the Planning Tool. There are also options that are unavailable and cannot be cleared. In addition, you may have to clear one option in order to clear another. For example, if you clear the <STRONG>Enterprise Voice</STRONG> option under Voice, then the <STRONG>Response Group</STRONG>, <STRONG>Announcement</STRONG>, and <STRONG>Call Park</STRONG> options under Server Applications (all of which are features of Enterprise Voice) are also cleared.
 
-    
-    </div>
+
 
 11. After defining a site name and number of users, click **Next**.
 
@@ -107,25 +79,8 @@ After you have finished installing the Lync Server 2013, Planning Tool, you are 
 
 16. The Planning Tool displays the Global Topology page. You can now begin editing, updating, or changing the topology by using the tools available in the Planning Tool.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Editing the design in Lync Server 2013](lync-server-2013-editing-the-design.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Editing the design in Lync Server 2013](lync-server-2013-editing-the-design.md)
 

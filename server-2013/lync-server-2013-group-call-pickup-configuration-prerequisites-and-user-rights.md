@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Group Call Pickup configuration prerequisites and user rights in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-30_
 
 Group Call Pickup is a call management feature that is installed by default when you deploy Enterprise Voice. This topic describes what you need to have in place before you can configure Group Call Pickup and the user rights that you need to perform configuration tasks.
 
 This section assumes that you have read the planning documentation related to Group Call Pickup (see [Planning for Group Call Pickup in Lync Server 2013](lync-server-2013-planning-for-group-call-pickup.md)).
-
-<div>
 
 ## Group Call Pickup Configuration Prerequisites
 
@@ -41,10 +26,6 @@ Group Call Pickup requires the following components:
   - Call Park application
 
 These components are installed automatically when you deploy Enterprise Voice.
-
-</div>
-
-<div>
 
 ## Group Call Pickup Configuration User Rights
 
@@ -66,19 +47,11 @@ Configuring Group Call Pickup requires any of the following administrative roles
 
   - **CsAdministrator:** This administrator role can perform all of the tasks of CsVoiceAdministrator, CsServerAdministrator, and CsUserAdministrator.
 
-<div>
-
 
 > [!NOTE]
 > For details about administrative rights, see <A href="lync-server-2013-planning-for-role-based-access-control.md">Planning for role-based access control in Lync Server 2013</A> in the Planning documentation.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -86,18 +59,5 @@ Configuring Group Call Pickup requires any of the following administrative roles
 [Deploying Enterprise Voice in Lync Server 2013](lync-server-2013-deploying-enterprise-voice.md)  
 
 
-[Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)
 

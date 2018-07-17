@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Defining the scope of the E9-1-1 deployment in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-06_
 
 Before you configure Microsoft Lync Server 2013 for E9-1-1, you need to plan your E9-1-1 deployment. Some of the questions to consider include:
 
@@ -46,27 +33,14 @@ Before you configure Microsoft Lync Server 2013 for E9-1-1, you need to plan you
   - **Will you enable E9-1-1 for users working outside the network?**  
     Automatic location acquisition is available only for clients located inside the organization’s network, so your organization needs to decide whether it will support E9-1-1 calls made from Lync clients while off-premises. For example, will you enable users to place emergency calls if they are working from home or from a customer site? If a client is located outside the enterprise network, the client can be configured to prompt the user for a location. However, because these user-provided locations cannot be prevalidated against the Master Street Address Guide (MSAG), the emergency services service provider dispatcher will need to confirm the validity of the location verbally with the caller before routing the call to the Public Safety Answering Point (PSAP).
     
-    <div>
-    
 
     > [!NOTE]
     > Lync clients of users who connect to your organization’s network by using VPN can pick up internal IP address information, but because these addresses cannot be used to identify the user’s actual location, it is essential that VPN subnets are excluded from the Location Information service.
 
-    
-    </div>
+
 
 <!-- end list -->
 
   - **Do you want to provide emergency call routing to sites outside the U.S.?**  
     You may want to provide emergency routing to areas of your company not served by an emergency services service provider (for example, international locations). To do this, create a new site, and then assign voice policies to the sites that refer to a PSTN usage that routes the call through the local PSTN gateway.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

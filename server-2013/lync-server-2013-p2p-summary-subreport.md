@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # P2P Summary Subreport in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-21_
 
 The P2P Summary Subreport provides an overall view of your failed peer-to-peer communication sessions.
-
-<div>
 
 ## Filters
 
@@ -76,10 +61,6 @@ Filters provide a way for you to return a more finely targeted set of data or to
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics
 
 The following table lists the information provided in the P2P Summary Subreport.
@@ -122,17 +103,4 @@ The following table lists the information provided in the P2P Summary Subreport.
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

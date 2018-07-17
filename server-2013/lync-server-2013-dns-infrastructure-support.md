@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS infrastructure support in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-08_
 
 Lync Server 2013 requires Domain Name System (DNS) and uses it in the following ways:
 
@@ -42,33 +29,14 @@ Lync Server 2013 requires Domain Name System (DNS) and uses it in the following 
 
   - For DNS load balancing.
 
-<div>
-
 
 > [!NOTE]
 > Lync Server 2013 does not support internationalized domain names (IDNs).
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > The name you specify must be identical to the computer name configured on the server. By default, the computer name of a computer that is not joined to a domain is a short name, not a fully qualified domain name (FQDN). Topology Builder uses FQDNs, not short names. So, you must configure a DNS suffix on the name of the computer to be deployed as an Edge Server that is not joined to a domain. <STRONG>Use only standard characters</STRONG> (including A–Z, a–z, 0–9, and hyphens) when assigning FQDNs of your Lync Servers, Edge Servers, and pools. Do not use Unicode characters or underscores. Nonstandard characters in an FQDN are often not supported by external DNS and public CAs (that is, when the FQDN must be assigned to the SN in the certificate).
 
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

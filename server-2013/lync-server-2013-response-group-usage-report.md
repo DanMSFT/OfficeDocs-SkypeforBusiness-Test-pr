@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Response Group Usage Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 The Response Group application provides a way for Microsoft Lync Server 2013 to answer and route phone calls based on the number that was dialed and, optionally, on the caller's responses to a series of questions. Typically, Response Group calls are not routed to an individual person but, instead, are routed to a team of people referred to as an agent group. For example, if someone calls the phone number for your help desk, Lync Server 2013 can automatically route that call to the first available help desk agent. Alternatively, Lync Server could ask a series of questions ("Press 1 if you are having hardware problems. Press 2 if you are having software problems. Press 3 if you are having network problems.") and then route the call to the most appropriate help desk agent based on the answer to those questions.
 
@@ -48,8 +35,6 @@ If you are looking at the Response Group Usage Report and can't remember the def
 
 The Response Group Usage Report allows you to filter on a workflow URI (the SIP address associated with that workflow). However, workflow URIs do not actually appear on the report itself. If you would like to know things such as which workflows are answering the most calls or which workflows are experiencing the most transferred calls, click the appropriate metric to open the Response Group Call List Report for that given time period. That reports does list the workflow URIs.
 
-<div>
-
 ## Accessing the Response Group Usage Report
 
 The Response Group Usage Report is accessed from the Monitoring Reports home page. You can drill down to the [Response Group Call List Report in Lync Server 2013](lync-server-2013-response-group-call-list-report.md) by clicking any of the following metrics:
@@ -64,23 +49,15 @@ The Response Group Usage Report is accessed from the Monitoring Reports home pag
 
   - Transferred calls
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Response Group Usage Report
 
 One of the more interesting uses of the Response Group Usage Report might not be readily apparent: the ability to retrieve usage information for a single Response Group workflow.
-
-<div>
 
 
 > [!WARNING]
 > A Response Group workflow is basically a set of instructions that determines what Lync Server does when a user dials a particular phone number. To that end, each workflow is uniquely associated with a phone number. When someone calls that number, the workflow determines how the call will be handled. For example, the workflow might cause the call to be routed to a series of interactive voice response (IVR) questions that prompt the caller to enter additional information ("Press 1 for hardware support. Press 2 for software support."). Alternatively, the workflow might cause the call to be placed in a queue , with the caller put on hold until an agent is available to answer the call. The availability of agents to answer calls is also dictated by the workflow: workflows are used to configure both business hours (the days of the week and the times of day when agents are available to answer calls) and holidays (days when no agents are available to answer calls). Any time you dial a phone number that belongs to the Response Group application you are essentially calling a Response Group workflow.
 
 
-
-</div>
 
 Although workflow URIs do not appear in the Response Group Usage Report, it's still possible to view the usage statistics for a single workflow, something that is often extremely useful. For example, suppose you recently unveiled a new ad campaign and are curious to know whether people are calling in to ask about that product. If you have associated a Response Group workflow with the phone number given in the ad campaign, you can easily check to see how many people (if any) are calling that number.
 
@@ -101,10 +78,6 @@ That will return data similar to this:
 This command returns information for a single workflow, the one with the name New Ad Campaign:
 
     Get-CsRgsWorkflow -Name "New Ad Campaign" | Select-Object Name, PrimaryUri
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -165,10 +138,6 @@ The following table lists the filters that you can use with the Response Group U
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics
 
@@ -235,17 +204,4 @@ The following table lists the information provided in the Response Group Usage R
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

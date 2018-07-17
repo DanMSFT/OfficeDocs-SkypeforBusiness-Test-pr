@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Server table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 The Server table is a supporting table. Each record represents one server.
 
@@ -67,26 +54,15 @@ The Server table is a supporting table. Each record represents one server.
 <tr class="even">
 <td><p><strong>PoolName</strong></p></td>
 <td><p>nvarchar(512)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Pool the server belongs to. Only applicable for the A/V Conferencing Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NextUpdateTS</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>For internal use only.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

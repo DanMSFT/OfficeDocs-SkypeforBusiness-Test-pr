@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Migrate response groups
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-09-23_
 
 After your users are moved to Lync Server 2013 pools, you can migrate your response groups. Migrating response groups includes copying agent groups, queues, workflows, audio files, and moving Response Group contact objects from the legacy deployment to the Lync Server 2013 pool. After you migrate your legacy response groups, calls to the response groups are handled by the Response Group application in the Lync Server 2013 pool. Calls to response groups are no longer handled by the legacy pool.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ After your users are moved to Lync Server 2013 pools, you can migrate your respo
 
 
 
-</div>
-
 Before you migrate response groups, you must have deployed a Lync Server 2013 pool that includes the Response Group application. The Response Group application is installed and activated by default when you deploy Enterprise Voice. You can ensure that the Response Group application is installed by running the **Get-CsService –ApplicationServer** cmdlet.
-
-<div>
 
 
 > [!NOTE]
@@ -48,11 +29,7 @@ Before you migrate response groups, you must have deployed a Lync Server 2013 po
 
 
 
-</div>
-
 To migrate response groups from a legacy pool to the Lync Server 2013, you run the **Move-CsRgsConfiguration** cmdlet.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -60,13 +37,9 @@ To migrate response groups from a legacy pool to the Lync Server 2013, you run t
 
 
 
-</div>
-
 After you migrate the response groups, you need to use Lync Server Control Panel or Lync Server Management Shell cmdlets to verify that all agent groups, queues, and workflows moved successfully.
 
 When you migrate response groups, the Lync Server 2010 response groups are not removed. When you manage response groups after migration by using either Lync Server Control Panel or Lync Server Management Shell, you can see both the Lync Server 2010 response groups and the Lync Server 2013 response groups. You should apply updates only to the Lync Server 2013 response groups. The Lync Server 2010 response groups are retained only for rollback purposes.
-
-<div>
 
 
 > [!WARNING]
@@ -74,25 +47,17 @@ When you migrate response groups, the Lync Server 2010 response groups are not r
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > We recommend that you do not remove any data from your previous deployment until you decommission the pool. In addition, we strongly recommend that you export response groups immediately after you migrate. If a Lync Server 2010 response group should get removed, you can then restore your response groups from the backup to get Lync Server 2013 response groups running again.
 
 
 
-</div>
-
 Lync Server 2013 introduces a new Response Group feature called **Workflow Type**. **Workflow Type** can be **Managed** or **Unmanaged**. All response groups are migrated with **Workflow Type** set to **Unmanaged** and with an empty Manager list.
 
 When you run the **Move-CsRgsConfiguration** cmdlet, the agent groups, queues, workflows, and audio files remain in the legacy pool for rollback purposes. If you do need to roll back to the legacy pool, however, you need to run the **Move-CsApplicationEndpoint** cmdlet to move contact objects back to the legacy pool.
 
 The following procedure for migrating Response Group configurations assumes that you have a one-to-one relationship between your legacy pools and the Lync Server 2013 pools. If you plan to consolidate or split up pools during your migration and deployment, you need to plan which legacy pool maps to which Lync Server 2013 pool.
-
-<div>
 
 ## To migrate Response Group configurations
 
@@ -110,10 +75,6 @@ The following procedure for migrating Response Group configurations assumes that
 
 4.  After you migrate response groups and agents to the Lync Server 2013 pool, the URL that agents use to sign in and sign out is a Lync Server 2013 URL and is available from the **Tools** menu. Remind agents to update any references, such as bookmarks, to the new URL.
 
-</div>
-
-<div>
-
 ## To verify Response Group migration by using Lync Server Control Panel
 
 1.  Log on to the computer with an account that is a member of RTCUniversalReadOnlyAdmins group or is minimally a member of the CsViewOnlyAdministrator role.
@@ -127,10 +88,6 @@ The following procedure for migrating Response Group configurations assumes that
 5.  Click the **Queue** tab, and verify that all the queues in your Lync Server 2010 environment are included in the list.
 
 6.  Click the **Group** tab, and verify that all the agent groups in your Lync Server 2010 environment are included in the list.
-
-</div>
-
-<div>
 
 ## To verify Response Group migration by using Lync Server Management Shell
 
@@ -159,16 +116,4 @@ The following procedure for migrating Response Group configurations assumes that
         Get-CsRgsWorkflow
 
 8.  Verify that all the workflows in your Lync Server 2010 environment are included in the list.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

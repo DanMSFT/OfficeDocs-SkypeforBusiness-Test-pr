@@ -8,25 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create a voice routing test case in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-07_
-
-<div>
 
 ## To create a test case
 
@@ -60,20 +45,12 @@ _**Topic Last Modified:** 2014-02-07_
 
 14. Click **Commit**, and then click **Commit all**.
     
-    <div>
-    
 
     > [!NOTE]
     > Whenever you create a voice routing test case, you must run the <STRONG>Commit all</STRONG> command to publish the configuration change. For details, see <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">Publish pending changes to the voice routing configuration in Lync Server 2013</A> in the Operations documentation.
 
     
-    </div>
-    
     If the dial plan being employed in the test normalizes phone numbers that begin with a plus sign (for example, +12065551219), that plan might cause the voice routing test to fail. (The dial plan and the voice route will work; in fact, Test-CsDialPlan will succeed. However, the voice routing test might fail.) This is something to keep in mind when testing voice routes.
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -83,18 +60,5 @@ _**Topic Last Modified:** 2014-02-07_
 
 
 [Configuring dial plans in Lync Server 2013](lync-server-2013-configuring-dial-plans.md)  
-[Configuring voice policies, PSTN usage records, and voice routes in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring voice policies, PSTN usage records, and voice routes in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)
 

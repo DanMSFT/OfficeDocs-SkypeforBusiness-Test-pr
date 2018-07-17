@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Key Health Indicators in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-10_
 
 This article is a companion to the [Key Health Indicators: The Foundation for Maintaining Healthy Lync Servers](http://go.microsoft.com/fwlink/?linkid=391838) poster, which you can download from the Download Center.
 
@@ -52,10 +39,6 @@ The poster explains the following areas:
 
   - Edge Servers
 
-<span id="WhatIs"></span>
-
-<div>
-
 ## What are Key Health Indicators?
 
 Key Health Indicators are performance counters with thresholds aimed at revealing user experience issues. Gathering KHI data is usually the first step to implementing the Call Quality Methodology (CQM), which is focused on ensuring a quality audio experience for Lync users.
@@ -66,12 +49,6 @@ Collect the KHI performance counters and populate the KHI spreadsheet accompanyi
 
 Download the [Lync Server Networking Guide](http://go.microsoft.com/fwlink/p/?linkid=390677) to see the full list of KHIs and to get the related spreadsheets.
 
-</div>
-
-<span id="ToCollect"></span>
-
-<div>
-
 ## To Collect KHI Data
 
 1.  Run the KHI script included with the Lync Server Networking Guide on each Lync Server. This will create a Data Collector inside of Performance Monitor and name it KHI. By default, data will be polled every 15 seconds.
@@ -81,12 +58,6 @@ Download the [Lync Server Networking Guide](http://go.microsoft.com/fwlink/p/?li
 3.  At the end of that day, stop the KHI Data Collector and copy the data to a central location.
 
 4.  After using Performance Monitor to fill in the KHI spreadsheet included with the Lync Server Networking Guide download, compare the results to the recommended targets.
-
-</div>
-
-<span id="Remidiation"></span>
-
-<div>
 
 ## Remediation Flow for all Server Roles
 
@@ -105,12 +76,6 @@ Begin by collecting KHI  Performance Data for all servers. For each of the sys
   - Network Queue Length \< 2
 
   - Discarded Packets (in / out) = 0
-
-</div>
-
-<span id="Glossary"></span>
-
-<div>
 
 ## Glossary
 
@@ -133,12 +98,6 @@ SIP Stack = Contains Lync’s core SIP implementation
 Data Proxy = Used for edge conferencing
 
 LySS = Lync Storage Service
-
-</div>
-
-<span id="Front"></span>
-
-<div>
 
 ## Front-end Servers
 
@@ -197,12 +156,6 @@ The following recommended KHI targets are specific to front-end servers in addit
 </table>
 
 
-</div>
-
-<span id="BackEnd"></span>
-
-<div>
-
 ## Backend SQL Servers
 
 The following recommended KHI targets are specific to SQL servers in addition to basic component health:
@@ -228,12 +181,6 @@ The following recommended KHI targets are specific to SQL servers in addition to
 </tbody>
 </table>
 
-
-</div>
-
-<span id="Mediation"></span>
-
-<div>
 
 ## Mediation Servers
 
@@ -264,12 +211,6 @@ The following recommended KHI targets are specific to mediation servers in addit
 </tbody>
 </table>
 
-
-</div>
-
-<span id="Edge"></span>
-
-<div>
 
 ## Edge Servers
 
@@ -315,27 +256,10 @@ The following recommended KHI targets are specific to edge servers in addition t
 </table>
 
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Lync Server Networking Guide](http://go.microsoft.com/fwlink/p/?linkid=390677)  
 [Key Health Indicators: The Foundation for Maintaining Healthy Lync Servers](http://go.microsoft.com/fwlink/?linkid=391838)  
-[Lync Call Quality Methodology](http://go.microsoft.com/fwlink/?linkid=391841)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Lync Call Quality Methodology](http://go.microsoft.com/fwlink/?linkid=391841)
 

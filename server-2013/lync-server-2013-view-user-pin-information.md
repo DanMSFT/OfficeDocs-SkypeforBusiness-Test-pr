@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View user PIN information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 To join a dial-in conference as an authenticated user, a Lync Server 2013 user with Active Directory Domain Services (AD DS) credentials requires a personal identification number (PIN). You can view a user’s PIN information from Lync Server 2013 Control Panel.
-
-<div>
 
 
 > [!NOTE]
 > You can view PIN status information such as whether the PIN has been set or when the PIN was last changed, but you cannot see the current PIN by looking at the PIN status. If a user has lost their PIN, you can reset it by following the procedures in <A href="lync-server-2013-set-a-user-s-dial-in-conferencing-pin.md">Set a user's dial-in conferencing PIN in Lync Server 2013</A>
 
 
-
-</div>
-
-<div>
 
 ## To view a user’s PIN in Lync Server Control Panel
 
@@ -64,37 +45,24 @@ To join a dial-in conference as an authenticated user, a Lync Server 2013 user w
     
     4.  Depending on the user property you selected, enter the criteria that you want to use to filter the search results by typing it or by clicking the arrow in the drop-down list.
         
-        <div>
-        
 
         > [!TIP]
         > To add additional search clauses to your query, click <STRONG>Add Filter</STRONG>.
 
-        
-        </div>
     
     5.  Click **Find**.
-    
-    <div>
     
 
     > [!NOTE]
     > If the PIN is locked, you must unlock the PIN before you can set it. To unlock the PIN, click the user, click <STRONG>Action</STRONG>, and then click <STRONG>Unlock PIN</STRONG>.
 
-    
-    </div>
+
 
 6.  Click a user in the search results, click **Action**, and then click **View PIN status**.
-
-</div>
-
-<div>
 
 ## Viewing User PIN Information by Using Windows PowerShell cmdlets
 
 You can view user PIN information by using the Get-CsClientPinInfo cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view user PIN information
 
@@ -110,30 +78,11 @@ You can view user PIN information by using the Get-CsClientPinInfo cmdlet. This 
         LastPinChangeTime : 9/25/2012 1:35:03 PM
         PinExpirationTime :
 
-</div>
-
-For more information, see the help topic for the [Get-CsConferenceDisclaimer](get-csconferencedisclaimer.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Get-CsConferenceDisclaimer](https://technet.microsoft.com/en-us/library/gg425714\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
 [Set a user's dial-in conferencing PIN in Lync Server 2013](lync-server-2013-set-a-user-s-dial-in-conferencing-pin.md)  
-[Lock or unlock a user PIN in Lync Server 2013](lync-server-2013-lock-or-unlock-a-user-pin.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Lock or unlock a user PIN in Lync Server 2013](lync-server-2013-lock-or-unlock-a-user-pin.md)
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning outbound voice routing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 Outbound call routing applies to calls that are destined for a public switched telephone network (PSTN) gateway, trunk, or private branch exchange (PBX). When a user places a call, the server normalizes the phone number to E.164 format, if necessary, and attempts to match it to a SIP URI. If the server cannot make the match, it applies outbound call routing logic based on the supplied dial string. You define that logic by configuring the server settings that are described in the following table.
 
@@ -66,44 +53,25 @@ Outbound call routing applies to calls that are destined for a public switched t
 </table>
 
 
-<div>
-
 ## In This Section
 
 This section provides guidelines for configuring the following outbound call routing server settings:
 
-  - <span></span>  
+  -  
     [Dial plans and normalization rules in Lync Server 2013](lync-server-2013-dial-plans-and-normalization-rules.md)
 
-  - <span></span>  
+  -  
     [Voice policies in Lync Server 2013](lync-server-2013-voice-policies.md)
 
-  - <span></span>  
+  -  
     [PSTN usage records in Lync Server 2013](lync-server-2013-pstn-usage-records.md)
 
-  - <span></span>  
+  -  
     [Voice routes in Lync Server 2013](lync-server-2013-voice-routes.md)
-
-</div>
-
-<div>
 
 ## See Also
 
 
 [SIP trunking in Lync Server 2013](lync-server-2013-sip-trunking.md)  
-[Direct SIP connections in Lync Server 2013](lync-server-2013-direct-sip-connections.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Direct SIP connections in Lync Server 2013](lync-server-2013-direct-sip-connections.md)
 

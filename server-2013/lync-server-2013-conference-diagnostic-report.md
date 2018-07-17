@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Conference Diagnostic Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 The Conference Diagnostic Report provides information about the success and failure of all conferencing sessions. Note that Microsoft Lync Server distinguishes between different kinds of failure:
 
@@ -63,8 +50,6 @@ Note that the Success, Expected failure, and Unexpected failure metrics might no
 
 If you add 2024 + 469 + 16 you get a total of 2,509 sessions and yet, the Total sessions column shows a total of 2,521 sessions. The "missing" 12 sessions for are sessions that the system was unable to categorize as successful or unsuccessful. That will sometimes be the case when a third-party product introduces a new diagnostic code that is unfamiliar to Monitoring Server. When that happens, calls made using that product, and reporting that diagnostic code, cannot always be categorized as being a Success, an Expected failure, or an Unexpected failure.
 
-<div>
-
 ## Accessing the Conference Diagnostic Report
 
 The Conference Diagnostic Report is accessed from the Monitoring Reports home page. You can access the [Failure Distribution Report in Lync Server 2013](lync-server-2013-failure-distribution-report.md) by clicking either of the following metrics:
@@ -73,17 +58,9 @@ The Conference Diagnostic Report is accessed from the Monitoring Reports home pa
 
   - Expected failure volume
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Conference Diagnostic Report
 
 The Conference Diagnostic Report includes a series of graphs. Each of the columns shown in the graph is actually a hyperlink. If you click a column, you'll drill down to the [Failure Distribution Report in Lync Server 2013](lync-server-2013-failure-distribution-report.md) for that time period and that conference type.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -156,10 +133,6 @@ The following table lists the filters that you can use with the Conference Diagn
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics
 
 The following table lists the information provided in the Conference Diagnostic Report for each type of conferencing session.
@@ -219,17 +192,4 @@ The following table lists the information provided in the Conference Diagnostic 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using search on capture logs created by the Centralized Logging Service in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 The search features in the Centralized Logging Service are useful and powerful for the following reasons:
 
@@ -50,8 +37,6 @@ For example:
 
 The remainder of this topic focuses on how to define a search to optimize your troubleshooting.
 
-<div>
-
 ## To run a basic search by using the Centralized Logging Service
 
 1.  Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.
@@ -60,22 +45,14 @@ The remainder of this topic focuses on how to define a search to optimize your t
     
         Search-CsClsLogging -OutputFilePath <string value of path and file to write the output file>
     
-    <div>
-    
 
     > [!NOTE]
     > By default, Search-CsClsLogging sends the results of the search to the console. If you want to save the search results to a file, use –OutputFilePath &lt;string fully qualified file path&gt;. To define the –OutputFilePath parameter, supply a path and a filename as part of the parameter in a string format enclosed in quotation marks (for example; C:\LogFiles\SearchOutput.txt). In this example, you must ensure that the directory C:\LogFiles exists and that you have permissions to Read and Write (NTFS permission Modify) files in the folder. The output is appended to and is not overwritten. If you need separate files, define a distinct file name for each search.
 
     
-    </div>
-    
     For example:
     
         Search-CsClsLogging -OutputFilePath "C:\LogFiles\logfile.txt"
-
-</div>
-
-<div>
 
 ## To run a basic search on a pool or computer by using the Centralized Logging Service
 
@@ -103,10 +80,6 @@ The remainder of this topic focuses on how to define a search to optimize your t
     
         Search-CsClsLogging -Pools "pool01.contoso.net", "pchatpool01.contoso.net", "intedgepool01.contoso.net" -OutputFilePath "C:\Logfiles\logfile.txt"
 
-</div>
-
-<div>
-
 ## To run a search by using time parameters
 
 1.  Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.
@@ -117,14 +90,11 @@ The remainder of this topic focuses on how to define a search to optimize your t
     
         Search-CsClsLogging -Pools "pool01.contoso.net" -StartTime "11/20/2012 08:00:00 AM" -EndTime "11/20/2012 09:00:00 AM" -OutputFilePath "C:\Logfiles\logfile.txt"
     
-    <div>
-    
 
     > [!NOTE]
     > The time and date string that you specify can be "date time" or "time date. " The command will parse the string and use the appropriate values for date and time.
 
-    
-    </div>
+
 
 3.  If you want to retrieve logs beginning at 11:00:00 AM on 11/20/2012, you define the –StartTime. The default time range for the search is 30 minutes unless you define a specific –EndTime. The resulting search will return logs from the defined computer or pools from 11:00:00 AM to 11:30:00 AM.
     
@@ -137,10 +107,6 @@ The remainder of this topic focuses on how to define a search to optimize your t
     For example:
     
         Search-CsClsLogging -Computers "edge01.contoso.net" -StartTime "11/20/2012 1:00:00 PM" -EndTime "11/20/2012 2:45:00 PM" -OutputFilePath "C:\Logfiles\logfile.txt"
-
-</div>
-
-<div>
 
 ## To run an advanced search by using other criteria and matching options
 
@@ -167,16 +133,4 @@ The remainder of this topic focuses on how to define a search to optimize your t
 5.  If your scenarios are set to run constantly, such as AlwaysOn, or you have defined a long-running scenario logs may roll off of the local machine onto the file share. You define the file share by using the CacheFileNetworkFolder parameter by using New-CsClsConfiguration to create a new configuration or modifying an existing configuration with Set-CsClsConfiguration. If you do not want the search to include the file share in the collection of logs to search, use the SkipNetworkLogs parameter as follows:
     
         Search-CsClsLogging -Components "SIPStack","S4","UserServices" -StartTime "11/1/2012 00:00:01 AM" -EndTime "11/20/2012 2:45:00 PM" -SkipNetworkLogs -OutputFilePath "C:\Logfiles\logfile.txt"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Define a PSTN gateway for a branch site in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 Perform this procedure at the central site, which contains at least one Front End pool or Standard Edition server.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -40,10 +25,6 @@ Perform this procedure at the central site, which contains at least one Front En
 > <P>Mediation Server must be deployed at the central site.</P></LI></UL>
 
 
-
-</div>
-
-<div>
 
 ## To define a PSTN gateway
 
@@ -59,46 +40,22 @@ Perform this procedure at the central site, which contains at least one Front En
 
 6.  In the **SIP Transport Protocol** list, click the transport protocol the gateway uses, and then click **OK**.
     
-    <div>
-    
 
     > [!NOTE]
     > For security reasons, we strongly recommend that you use a PSTN gateway that supports Transport Layer Security (TLS).
 
-    
-    </div>
 
-<div>
 
 
 > [!TIP]
-> Use the cmdlet <STRONG>Set-CsPstnGateway</STRONG> to modify properties of a PSTN gateway. For details, see <A href="set-cspstngateway.md">Set-CsPstnGateway</A>, in the Lync Server Management Shell Help.
+> Use the cmdlet <STRONG>Set-CsPstnGateway</STRONG> to modify properties of a PSTN gateway. For details, see <A href="https://technet.microsoft.com/en-us/library/gg398408(v=ocs.15)">Set-CsPstnGateway</A>, in the Lync Server Management Shell Help.
 
 
-
-</div>
 
 **Next step** for branch-site resiliency: [Configuring users for branch site resiliency in Lync Server 2013](lync-server-2013-configuring-users-for-branch-site-resiliency.md)
-
-</div>
-
-<div>
 
 ## See Also
 
 
-[PSTN gateway deployment options in Lync Server 2013](lync-server-2013-pstn-gateway-deployment-options.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[PSTN gateway deployment options in Lync Server 2013](lync-server-2013-pstn-gateway-deployment-options.md)
 

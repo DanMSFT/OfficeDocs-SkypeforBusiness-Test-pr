@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create location policies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-11_
 
 Lync Server uses a location policy to enable Lync clients for E9-1-1 during client registration. A location policy contains the settings that define how E9-1-1 will be implemented.
 
@@ -107,20 +94,15 @@ For details about working with location policies, see the Lync Server Management
 
   - Grant-CsLocationPolicy
 
-<div>
-
 ## To create location policies
 
 1.  Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.
-    
-    <div>
     
 
     > [!NOTE]
     > CsLocationPolicy will fail if the setting for <STRONG>PstnUsage</STRONG> is not already in the Global list of PstnUsages.
 
-    
-    </div>
+
 
 2.  Optionally, run the following cmdlet to edit the global Location Policy:
     
@@ -133,16 +115,4 @@ For details about working with location policies, see the Lync Server Management
 4.  Run the following cmdlet to apply the tagged Location Policy created in step 3 to a user policy.
     
         (Get-CsUser | where { $_.Name -match "UserName" }) | Grant-CsLocationPolicy -PolicyName Redmond
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

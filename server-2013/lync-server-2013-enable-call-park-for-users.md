@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enable Call Park for users in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-11_
 
 Users cannot park calls or retrieve parked calls until they are enabled for Call Park in voice policy.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ Users cannot park calls or retrieve parked calls until they are enabled for Call
 
 
 
-</div>
-
 You can enable Call Park at the global scope, or at the site scope or user scope. User scope takes precedence over site scope, and site scope takes precedence over global scope. If you have multiple voice policies, review all the policies to enable Call Park, not just the global policy.
-
-<div>
 
 ## To Use Lync Server Control Panel to Enable Call Park for Users
 
@@ -58,10 +39,6 @@ You can enable Call Park at the global scope, or at the site scope or user scope
 
 7.  Click **OK** to save the voice policy
 
-</div>
-
-<div>
-
 ## To Use Cmdlets to Enable Call Park for Users
 
 1.  Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the CsVoiceAdministrator, CsServerAdministrator, or CsAdministrator administrative role.
@@ -76,25 +53,8 @@ You can enable Call Park at the global scope, or at the site scope or user scope
     
         Set-CsVoicePolicy -EnableCallPark $true
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Create a voice policy and configure PSTN usage records in Lync Server 2013](lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Create a voice policy and configure PSTN usage records in Lync Server 2013](lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md)
 

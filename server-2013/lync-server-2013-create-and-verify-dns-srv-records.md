@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create and verify DNS SRV records in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 To successfully complete this procedure, you should be logged on to the server or domain minimally as a member of the Domain Admins group or a member of the DnsAdmins group.
 
 This topic describes how to configure the Domain Name System (DNS) records that you are required to create in Lync Server 2013 deployments and those required for automatic client sign in. When you create a Front End pool, Setup creates Active Directory objects and settings for the pool, including the pool fully qualified domain name (FQDN). Similar objects and settings are created for a Standard Edition server. For clients to be able to connect to the pool or Standard Edition server, the FQDN of the pool or Standard Edition server must be registered in DNS. You must create DNS SRV records in your internal DNS for every SIP domain. This procedure assumes that your internal DNS has zones for your SIP user domains.
-
-<div>
 
 ## To configure a DNS SRV record
 
@@ -51,10 +36,6 @@ This topic describes how to configure the Domain Name System (DNS) records that 
 8.  Click **Host offering this service**, and then type the FQDN of the pool or Standard Edition server.
 
 9.  Click **OK**, and then click **Done**.
-
-</div>
-
-<div>
 
 ## To verify the creation of a DNS SRV record
 
@@ -90,10 +71,6 @@ This topic describes how to configure the Domain Name System (DNS) records that 
 
 7.  When you are finished, at the command prompt, type **exit**, and then press ENTER.
 
-</div>
-
-<div>
-
 ## To verify that the FQDN of the Front End pool or Standard Edition server can be resolved
 
 1.  Log on to a client computer in the domain.
@@ -105,16 +82,4 @@ This topic describes how to configure the Domain Name System (DNS) records that 
 4.  At the command prompt, type **nslookup** \<FQDN of the Front End pool\> or \<FQDN of the Standard Edition server\>, and then press ENTER.
 
 5.  Verify that you receive a reply that resolves to the appropriate IP address for the FQDN.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

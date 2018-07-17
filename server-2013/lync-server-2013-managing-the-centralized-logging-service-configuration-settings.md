@@ -8,44 +8,25 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Managing the Centralized Logging Service configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 The Centralized Logging Service is controlled and configured by settings and parameters that are created and used by the Centralized Logging Service Controller (CLSController) to send commands to the individual computer’s Centralized Logging Service Agent (CLSAgent). The agent processes the commands that are sent to it and (in the case of a Start command) uses the configuration of the scenarios, providers, log size, trace duration, and flags to begin collecting trace logs according to the configuration information provided.
-
-<div>
 
 
 > [!IMPORTANT]
 > Not all Windows PowerShell cmdlets listed for the Centralized Logging Service are intended for use with Lync Server 2013 on-premises deployments. Although they may appear to work, the following cmdlets are not designed to function with Lync Server 2013 on-premises deployments: 
 > <UL>
 > <LI>
-> <P><STRONG>CsClsRegion cmdlets:</STRONG> <A href="get-csclsregion.md">Get-CsClsRegion</A>, <A href="set-csclsregion.md">Set-CsClsRegion</A>, <A href="new-csclsregion.md">New-CsClsRegion</A>, and <A href="remove-csclsregion.md">Remove-CsClsRegion</A>.</P>
+> <P><STRONG>CsClsRegion cmdlets:</STRONG> <A href="https://technet.microsoft.com/en-us/library/jj204879(v=ocs.15)">Get-CsClsRegion</A>, <A href="https://technet.microsoft.com/en-us/library/jj204746(v=ocs.15)">Set-CsClsRegion</A>, <A href="https://technet.microsoft.com/en-us/library/jj204658(v=ocs.15)">New-CsClsRegion</A>, and <A href="https://technet.microsoft.com/en-us/library/jj204971(v=ocs.15)">Remove-CsClsRegion</A>.</P>
 > <LI>
-> <P><STRONG>CsClsSearchTerm cmdlets:</STRONG> <A href="get-csclssearchterm.md">Get-CsClsSearchTerm</A> and <A href="set-csclssearchterm.md">Set-CsClsSearchTerm</A>.</P>
+> <P><STRONG>CsClsSearchTerm cmdlets:</STRONG> <A href="https://technet.microsoft.com/en-us/library/jj205061(v=ocs.15)">Get-CsClsSearchTerm</A> and <A href="https://technet.microsoft.com/en-us/library/jj204911(v=ocs.15)">Set-CsClsSearchTerm</A>.</P>
 > <LI>
-> <P><STRONG>CsClsSecurityGroup cmdlets:</STRONG> <A href="get-csclssecuritygroup.md">Get-CsClsSecurityGroup</A>, <A href="set-csclssecuritygroup.md">Set-CsClsSecurityGroup</A>, <A href="new-csclssecuritygroup.md">New-CsClsSecurityGroup</A>, and <A href="remove-csclssecuritygroup.md">Remove-CsClsSecurityGroup</A>.</P></LI></UL>The settings defined in these cmdlets will not hinder or cause any adverse behavior, but they are designed for use with Microsoft Office 365 and will not yield the expected results in on-premises deployments. This is not to say that there is no use for these cmdlets in on-premises deployments, but their use is a more advanced topic that is not covered in this documentation.
+> <P><STRONG>CsClsSecurityGroup cmdlets:</STRONG> <A href="https://technet.microsoft.com/en-us/library/jj205285(v=ocs.15)">Get-CsClsSecurityGroup</A>, <A href="https://technet.microsoft.com/en-us/library/jj204700(v=ocs.15)">Set-CsClsSecurityGroup</A>, <A href="https://technet.microsoft.com/en-us/library/jj205359(v=ocs.15)">New-CsClsSecurityGroup</A>, and <A href="https://technet.microsoft.com/en-us/library/jj204958(v=ocs.15)">Remove-CsClsSecurityGroup</A>.</P></LI></UL>The settings defined in these cmdlets will not hinder or cause any adverse behavior, but they are designed for use with Microsoft Office 365 and will not yield the expected results in on-premises deployments. This is not to say that there is no use for these cmdlets in on-premises deployments, but their use is a more advanced topic that is not covered in this documentation.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -57,26 +38,9 @@ The topics in this section define the configuration options, parameters, and set
 
   - [Configuring scenarios for the Centralized Logging Service in Lync Server 2013](lync-server-2013-configuring-scenarios-for-the-centralized-logging-service.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Overview of the Centralized Logging Service in Lync Server 2013](lync-server-2013-overview-of-the-centralized-logging-service.md)  
-[Centralized Logging cmdlets in Lync Server 2013](lync-server-2013-centralized-logging-cmdlets.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Centralized Logging cmdlets in Lync Server 2013](https://technet.microsoft.com/en-us/library/jj205064\(v=ocs.15\))
 

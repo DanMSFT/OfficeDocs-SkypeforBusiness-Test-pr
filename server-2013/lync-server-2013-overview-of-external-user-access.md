@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of external user access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-07_
 
 In this documentation, we use the term *external user* to define a large category of users who communicate with your Lync Server 2013 and Lync 2013 users from outside the firewall. External users that you can authorize to communicate Lync Server 2013 with internal users (that is, users who sign in to Lync Server from inside the firewall) can include the following:
 
@@ -32,14 +19,11 @@ In this documentation, we use the term *external user* to define a large categor
 
   - **Federated users**   Users who have an account with a trusted customer or partner organization, such as Lync Server 2010, Lync Server 2013 or Office Communications Server 2007 R2. Federated users can also be members of defined partner organizations using extensible messaging and presence protocol (XMPP) by way of the XMPP proxy on the Edge Server and XMPP gateway on the Front End Server or pool. A defined trust relationship, called a federation, is not related to or dependent upon an Active Directory Domain Services trust relationship.
     
-    <div>
-    
 
     > [!NOTE]
     > An end of life date of June 2014 for AOL and Yahoo! has been announced. For details, see <A href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Support for public instant messenger connectivity in Lync Server 2013</A>.
 
-    
-    </div>
+
 
   - **Public Instant Messaging Connectivity users**   Contacts that your users establish through public instant messaging connectivity services (Windows Live, Yahoo\! and AOL).
 
@@ -67,23 +51,8 @@ Lync Server 2013 roles that are used to provide external access:
 
 **Reverse Proxy**   A reverse proxy is a general term for specialized servers that publish resources available on the internal network and retrieve information for clients from the published resource. Lync Server 2013 uses the reverse proxy to publish a number of features, such as conferencing meetings, conference join locations, the address book, distribution list expansion, downloading meeting content, device updates, Mobility services, and more. Any reverse proxy that can meet the requirements for publishing the necessary resource locations can be used. Microsoft Forefront Threat Management Gateway (TMG) 2010 is used as an example for the purposes of illustrating the publishing rules necessary, but Forefront TMG 2010 is not required.
 
-<div>
-
 
 > [!IMPORTANT]
 > Lync Server 2013 supports both IPv4 and IPv6. Windows Server&nbsp;2008&nbsp;R2, Windows Server 2012, and Windows Server 2012 R2 use a dual stack that can use both IPv4 and IPv6 concurrently. This is important because of the transitional nature of a deployment moving from IPv4 to IPv6. IPv4 can be supported in some areas, where in other areas of the deployment, IPv6 can be used. This is especially important where the Internet and internal deployments are concerned. External clients must communicate through the reverse proxy to use services such as mobility, meetings, address book download, and others. Currently, Forefront Threat Management Gateway 2010 and Internet Security and Acceleration Server 2006 do not support IPv6 addressing, regardless of the operating system version that they are deployed on. You must plan accordingly in relation to your use of IPv6 and IPv4 as they relate to external clients.
 
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

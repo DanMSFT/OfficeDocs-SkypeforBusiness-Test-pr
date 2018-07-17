@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Capacity planning for Group Call Pickup in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-12_
-
-<div id="sectionSection0" class="section">
 
 The following table describes the Group Call Pickup user model that you can use as the basis for capacity planning requirements.
-
-<div>
 
 
 > [!IMPORTANT]
 > Group Call Pickup is based on the Call Park application. Keep in mind that, for disaster recovery capacity planning, each pool of a paired pool should be able to handle the workloads for Call Park services, including Group Call Pickup, in both pools.
 
 
-
-</div>
 
 ### Group Call Pickup User Model
 
@@ -85,8 +66,6 @@ The following table describes the Group Call Pickup user model that you can use 
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > <UL>
@@ -95,19 +74,4 @@ The following table describes the Group Call Pickup user model that you can use 
 > <LI>
 > <P>You can increase or decrease the recommended number of users per group and number of groups as long as you do not exceed the maximum number of users per pool. For example, your Standard Edition server can have 120 groups with 25 users per group because the number of users enabled for Group Call Pickup is still within the user model maximum (that is, 120 groups times 25 users is 3,000 users enabled for Group Call Pickup).</P></LI></UL>
 
-
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring a watcher node to use credential authentication in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-20_
 
 If your watcher node computer lies outside the perimeter network, then you must follow a slightly different procedure in order to configure that watcher node to run synthetic transactions. Specifically, you should not create a trusted application pool and a trusted application, and you must install a certificate that enables the watcher node to send alerts to a computer inside the perimeter network. This means that you will need to complete two separate tasks:
 
   - Update the membership in the computer's RTC Local Read-only Administrators Group
 
   - Install the watcher node configuration files
-
-<div>
 
 ## Updating Membership in the RTC Local Read-Only Administrators Group
 
@@ -56,17 +41,11 @@ If your watcher node lies outside the perimeter network, you must add the Networ
 
 Restart the watcher node computer.
 
-</div>
-
-<div>
-
 ## Installing the Watcher Node Configuration Files
 
 After the watcher node computer has restarted, your next step is to run the file Watchernode.msi. To run this file, open the Lync Server 2013 Management Shell by clicking **Start**, clicking **All Programs**, clicking **Lync Server 2013**, and then clicking **Lync Server Management Shell**. In the Lync Server Management Shell, type the following command and then press ENTER (be sure and specify the actual path to your copy of Watchernode.msi):
 
     C:\Tools\Watchernode.msi Authentication=Negotiate
-
-<div>
 
 
 > [!NOTE]
@@ -74,19 +53,5 @@ After the watcher node computer has restarted, your next step is to run the file
 
 
 
-</div>
-
 The Negotiate mode is used any time the watcher node cannot be set up as a trusted application pool. In this mode, administrators will need to manage test user passwords on the watcher node.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

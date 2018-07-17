@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing Lync Server services in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 Test-CsComputer verifies the status of all the Lync Server 2013 services that are running on the local computer. (Test-CsComputer can only be run locally, it cannot be run from a remote instance of Windows PowerShell.) The cmdlet also checks whether the appropriate firewall ports are opened on the computer, and determines whether the Active Directory groups that were created when you installed Lync Server 2013 were added to the corresponding local groups. For example, Test-CsComputer will verify that the Active Directory group RTCUniversalUserAdmins was added to the Administrators group.
 
-For more information, see the Help documentation for the [Test-CsComputer](test-cscomputer.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsComputer](https://technet.microsoft.com/en-us/library/gg398162\(v=ocs.15\)) cmdlet.
 
 ## Running the test
 
@@ -71,19 +52,11 @@ The following sample command runs Test-CsComputer and saves the output to a file
 
     Test-CsComputer -Report "C:\Logs\ComputerTest.html" -Verbose
 
-For more information, see the Help documentation for the [Test-CsComputer](test-cscomputer.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsComputer](http://technet.microsoft.com/en-us/library/gg398162\(v=ocs.14\).aspx) cmdlet.
 
 ## Determining success or failure
 
 Because of the number of verification checks that it performs, Test-CsComputer does not report back a simple **Yes, the test succeeded** or **No, the test failed**. Instead, you have to view the generated HTML file by using Internet Explorer to determine the success or failure of each test.
-
-</div>
-
-<div>
 
 ## Reasons why the test might have failed
 
@@ -104,16 +77,4 @@ Here are some common reasons why Test-CsComputer might fail:
   - The topology might have to be enabled. If you change the Lync Server topology (changes that might affect the local computer), then you must enable the new topology. You can enable the topology at any time by running this command:
     
         Enable-CsTopology
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

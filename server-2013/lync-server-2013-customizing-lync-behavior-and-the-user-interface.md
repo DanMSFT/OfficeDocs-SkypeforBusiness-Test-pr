@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Customizing Lync behavior and the user interface in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-22_
 
 This section describes how to add custom features to Lync 2013.
-
-<div>
 
 ## In This Section
 
@@ -47,16 +32,4 @@ This section describes how to add custom features to Lync 2013.
   - [Starting Lync from another application](lync-server-2013-starting-lync-from-another-application.md)
 
   - [Configuring default picture options in Lync Server 2013](lync-server-2013-configuring-default-picture-options.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

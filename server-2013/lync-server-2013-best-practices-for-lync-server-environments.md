@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Best practices for Lync Server 2013 environments
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-08-04_
 
 The following general principles should be applied to ongoing operations of your system:
 
@@ -37,8 +24,6 @@ The following general principles should be applied to ongoing operations of your
     This document can be used in environments deploying only instant messaging/presence (IM/P) components or IM/P with Enterprise Voice. When tasks or checklist items are specific to Enterprise Voice, this is mentioned and if your environment does not include Enterprise Voice the portion may be skipped.
 
   - **Deploy the tools that are required for operating Lync Server 2013**   Many tools are available to help troubleshoot issues, automate tasks, and help monitor and maintain the Lync Server 2013 environment. Define a standard set of tools for your organization so the tasks that are performed by the operations team are performed accurately, efficiently, consistently, and in a controlled manner. You should also implement processes to track incidents and major configuration changes.
-
-<div>
 
 ## Reference
 
@@ -62,10 +47,6 @@ Typical tasks for Lync administrators include the following:
 
   - **Documentation**   Document standard procedures, such as configuration information and lessons learned, and make them available to the staff members that need them. As changes to the configuration are made, update the documentation accordingly.
 
-</div>
-
-<div>
-
 ## Related Sections
 
 Review the following topics concerning system operations before proceeding:
@@ -86,25 +67,8 @@ Review the following topics concerning system operations before proceeding:
 
   - [Emergency procedures in Lync Server 2013](lync-server-2013-emergency-procedures.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Microsoft Operations Framework 4.0](http://go.microsoft.com/fwlink/p/?linkid=40939)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Microsoft Operations Framework 4.0](http://go.microsoft.com/fwlink/p/?linkid=40939)
 

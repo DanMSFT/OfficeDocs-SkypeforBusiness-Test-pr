@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # tblPrincipalType in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-12_
 
 tblPrincipalType contains principal types to categorize what is in the tblPrincipal table.
 
@@ -112,7 +99,7 @@ tblPrincipalType contains principal types to categorize what is in the tblPrinci
 <td><p>1</p></td>
 <td><p>Any</p></td>
 <td><p>Generic principal with no known type. Not used in tblPrincipal table.</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>2</p></td>
@@ -124,13 +111,13 @@ tblPrincipalType contains principal types to categorize what is in the tblPrinci
 <td><p>3</p></td>
 <td><p>AnyGroup</p></td>
 <td><p>Generic principal with group semantic. Not used in tblPrincipal table.</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>4</p></td>
 <td><p>SystemUser</p></td>
 <td><p>Principal used internally by Persistent Chat Server.</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>5</p></td>
@@ -142,41 +129,26 @@ tblPrincipalType contains principal types to categorize what is in the tblPrinci
 <td><p>8</p></td>
 <td><p>DC</p></td>
 <td><p>Active Directory Domain Services domain controller.</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>9</p></td>
 <td><p>Group</p></td>
 <td><p>Active Directory security group.</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>10</p></td>
 <td><p>Folder</p></td>
 <td><p>Active Directory container or organizational unit.</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<div>
-
 ## See Also
 
 
-[tblPrincipal in Lync Server 2013](lync-server-2013-tblprincipal.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[tblPrincipal in Lync Server 2013](lync-server-2013-tblprincipal.md)
 

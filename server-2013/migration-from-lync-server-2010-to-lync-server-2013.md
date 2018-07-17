@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Migration from Lync Server 2010 to Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-17_
 
 The topics in this section guide you through the process of migrating from Lync Server 2010 to Lync Server 2013.
-
-<div>
 
 
 > [!IMPORTANT]
 > This document describes the steps generally required to accomplish each phase of migration. It does not address every possible legacy deployment topology or every possible migration scenario. Therefore, you may not need to perform every step described, or you may need to perform additional steps, depending on your deployment. This document also provides examples of verification steps. These verification steps are provided to help you understand what you need to look for to ensure that each phase completes successfully as you progress through your migration. Tailor these verification steps to your specific migration process.
 
 
-
-</div>
 
 This guide provides information specific to upgrading your existing deployment. It does not explain how to change your existing topology. This guide does not cover the implementation of new features. When a detailed procedure is documented elsewhere, this guide directs you to the appropriate document or document section.
 
@@ -60,8 +43,6 @@ This document defines terms as specified in the following list.
   - *interoperability*  
     The ability of your deployment to operate successfully during the period of coexistence.
 
-<div>
-
 ## In This Section
 
   - [Before you begin the migration](before-you-begin-the-migration.md)
@@ -81,16 +62,4 @@ This document defines terms as specified in the following list.
   - [Phase 7: Complete post-migration tasks](phase-7-complete-post-migration-tasks.md)
 
   - [Phase 8: Decommission legacy pools](phase-8-decommission-legacy-pools.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

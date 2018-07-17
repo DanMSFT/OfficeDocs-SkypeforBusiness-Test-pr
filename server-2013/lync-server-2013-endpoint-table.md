@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Endpoint table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 The Endpoint table is a supporting table that stores information about the endpoints that have participated in sessions recorded in the database. Each record in the table represents one endpoint.
 
@@ -66,25 +53,25 @@ The Endpoint table is a supporting table that stores information about the endpo
 <tr class="even">
 <td><p><strong>CPUName</strong></p></td>
 <td><p>nvarchar(128)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>CPU name of the endpoint.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CPUNumberOfCores</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Number of CPU cores of the endpoint.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CPUProcessorSpeed</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>CPU processor speed of the endpoint.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VirtualizationFlag</strong></p></td>
 <td><p>tinyint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Bit flag that indicates if the system is running in a virtualized environment:</p>
 <ul>
 <li><p>0x0000 – None</p></li>
@@ -96,15 +83,4 @@ The Endpoint table is a supporting table that stores information about the endpo
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

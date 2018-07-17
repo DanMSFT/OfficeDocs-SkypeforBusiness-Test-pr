@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Assign an external user access policy to a Lync enabled user in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 If a user has been enabled for Lync Server, you can configure SIP federation, XMPP federation, remote user access, and public instant messaging (IM) connectivity in the Lync Server Control Panel by applying the appropriate policies to specific users. For example, if you created a policy to support remote user access, you must apply it to the user before the user can connect to Lync Server from a remote location and collaborate with internal users from the remote location.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ If a user has been enabled for Lync Server, you can configure SIP federation, XM
 
 
 
-</div>
-
 Use the procedure in this topic to apply a previously created external user access policy to one or more user accounts.
-
-<div>
 
 ## To apply an external user policy to a user account
 
@@ -54,24 +35,15 @@ Use the procedure in this topic to apply a previously created external user acce
 
 5.  In **Edit Lync Server User** under **External access policy**, select the user policy that you want to apply.
     
-    <div>
-    
 
     > [!NOTE]
     > The <STRONG>&lt;Automatic&gt;</STRONG> settings apply the default server or global policy settings.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## Assigning Per-User External Access Policies by Using Windows PowerShell Cmdlets
 
 Per-user external access policies can be assigned by using Windows PowerShell and the Grant-CsExternalAccessPolicy cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To assign a per-user external access policy to a single user
 
@@ -79,19 +51,11 @@ Per-user external access policies can be assigned by using Windows PowerShell an
     
         Grant-CsExternalAccessPolicy -Identity "Ken Myer" -PolicyName "RedmondExternalAccessPolicy"
 
-</div>
-
-<div>
-
 ## To assign a per-user external access policy to multiple users
 
-  - This command assigns the per-user external access policy USAExternalAccessPolicy to all the users who have accounts in the UnitedStates OU in Active Directory. For more information on the OU parameter used in this command, see the documentation for the [Get-CsUser](get-csuser.md) cmdlet.
+  - This command assigns the per-user external access policy USAExternalAccessPolicy to all the users who have accounts in the UnitedStates OU in Active Directory. For more information on the OU parameter used in this command, see the documentation for the [Get-CsUser](https://technet.microsoft.com/en-us/library/gg398125\(v=ocs.15\)) cmdlet.
     
         Get-CsUser -OU "ou=UnitedStates,dc=litwareinc,dc=com" | Grant-CsExternalAccessPolicy -PolicyName "USAExternalAccessPolicy"
-
-</div>
-
-<div>
 
 ## To unassign a per-user external access policy
 
@@ -99,19 +63,5 @@ Per-user external access policies can be assigned by using Windows PowerShell an
     
         Grant-CsExternalAccessPolicy -Identity "Ken Myer" -PolicyName $Null
 
-</div>
-
-For more information, see the help topic for the [Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [Grant-CsExternalAccessPolicy](https://technet.microsoft.com/en-us/library/gg425942\(v=ocs.15\)) cmdlet.
 

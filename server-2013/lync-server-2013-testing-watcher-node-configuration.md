@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing watcher node configuration in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-03_
 
 
 <table>
@@ -51,27 +38,17 @@ _**Topic Last Modified:** 2014-11-03_
 </table>
 
 
-<div>
-
 ## Description
 
 If you are using Microsoft System Center Operations Manager to monitor Lync Server 2013 then you have the option of setting up "watcher nodes": computers that periodically, and automatically, run synthetic transactions to verify that Lync Server is working as expected. Watcher nodes are assigned to pools, and are managed by using the **CsWatcherNodeConfiguration** cmdlets. Note that you do not need to install watcher nodes if you are using System Center Operations Manager. You can still monitor your system without using watcher nodes. The only difference is that any synthetic transactions that you want to run must be invoked manually instead of automatically invoked by Operations Manager.
 
 The **Test-CsWatcherNodeConfiguration** cmdlet enables you to verify that a watcher node was configured correctly and is assigned to a valid Lync Server 2013 pool. Note that the **Test-CsWatcherNodeConfiguration** cmdlet must be run on the watcher node itself. The cmdlet cannot be run against remote computers.
 
-</div>
-
-<div>
-
 ## Running the test
 
 The following command verifies the configuration settings for each watcher node that is being used in the organization.
 
     Test-CsWatcherNodeConfiguration
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -117,10 +94,6 @@ Software\\Microsoft\\Real-Time Communications. Make sure watcher node .msi is
 
 installed properly.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsWatcherNodeConfiguration** might fail:
@@ -129,28 +102,11 @@ Here are some common reasons why **Test-CsWatcherNodeConfiguration** might fail:
 
   - No test users are configured.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsWatcherNodeConfiguration](get-cswatchernodeconfiguration.md)  
-[New-CsWatcherNodeConfiguration](new-cswatchernodeconfiguration.md)  
-[Remove-CsWatcherNodeConfiguration](remove-cswatchernodeconfiguration.md)  
-[Set-CsWatcherNodeConfiguration](set-cswatchernodeconfiguration.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsWatcherNodeConfiguration](https://technet.microsoft.com/en-us/library/jj204739\(v=ocs.15\))  
+[New-CsWatcherNodeConfiguration](https://technet.microsoft.com/en-us/library/jj205254\(v=ocs.15\))  
+[Remove-CsWatcherNodeConfiguration](https://technet.microsoft.com/en-us/library/jj204926\(v=ocs.15\))  
+[Set-CsWatcherNodeConfiguration](https://technet.microsoft.com/en-us/library/jj204620\(v=ocs.15\))
 

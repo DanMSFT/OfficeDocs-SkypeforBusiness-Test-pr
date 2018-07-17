@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Editing the design in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 After completing the initial interview questions, you can edit the fully qualified domain name (FQDN) and IP addresses for the site. To do this, on the **Global Topology** page, double-click the site that you want to edit.
 
@@ -50,32 +37,14 @@ The Planning Tool displays the site topology for the selected site. At the botto
 
   - Site Summary – The site summary presents an overview of the selections that you made by either answering the initial interview questions or filling in the values in **Design Sites**. Capacity information is also presented.
     
-    <div>
-    
 
     > [!NOTE]
     > The information on the Site Summary page is customized for each design and may not contain all sections or information detailed here.
 
-    
-    </div>
 
-<div>
 
 ## See Also
 
 
-[Editing the network configuration diagram in Lync Server 2013](lync-server-2013-editing-the-network-configuration-diagram.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Editing the network configuration diagram in Lync Server 2013](lync-server-2013-editing-the-network-configuration-diagram.md)
 

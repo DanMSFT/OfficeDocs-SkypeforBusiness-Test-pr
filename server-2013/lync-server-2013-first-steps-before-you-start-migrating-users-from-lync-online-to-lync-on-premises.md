@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # First steps before you start migrating users from Lync Online to Lync on-premises in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-08_
 
 Before you start moving Lync Online users to your on-premises environment, check that all of the following are true:
 
@@ -36,39 +23,21 @@ Before you start moving Lync Online users to your on-premises environment, check
     
     After you install the module, you can establish a remote session by typing the following cmdlets in the Lync Server Management Shell:
     
-       ```
         Import-Module LyncOnlineConnector
-       ```  
     
-       ```
         $cred = Get-Credential
-       ``` 
     
-       ```
         $CSSession = New-CsOnlineSession -Credential $cred
-       ```
     
-       ```
         Import-PSSession $CSSession -AllowClobber
-       ```
     
-    For more information about how to establish a remote PowerShell session with Lync Online, see [Connecting to Lync Online by using Windows PowerShell](connecting-to-skype-for-business-online-by-using-windows-powershell.md).
+    For more information about how to establish a remote PowerShell session with Lync Online, see [Connecting to Lync Online by using Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795\(v=ocs.15\)).
     
-    For more information about using the Lync Online PowerShell module, see [Using Windows PowerShell to manage Lync Online](skype-for-business-online-using-windows-powershell-to-manage-your-tenant.md).
+    For more information about using the Lync Online PowerShell module, see [Using Windows PowerShell to manage Lync Online](https://technet.microsoft.com/en-us/library/dn362831\(v=ocs.15\)).
 
   - Your Lync Online must be configured for Shared SIP Address Space. To do this, first start a remote Powershell session with Lync Online. Then run the following cmdlet:
     
         Set-CsTenantFederationConfiguration -SharedSipAddressSpace $True
 
 After you’ve finished these steps, you can move on to [Migrating Lync Online users to Lync on-premises in Lync Server 2013](lync-server-2013-migrating-lync-online-users-to-lync-on-premises.md).
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing messaging using XMPP in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-03_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-11-03_
 </table>
 
 
-<div>
-
 ## Description
 
 The Extensible Messaging and Presence Protocol (XMPP) is a standard communications protocol (based on XML) used for sending messages across the Internet. XMPP was originally named Jabber, and is supported by several Internet messaging and communication applications, such as Google Talk and Facebook Chat. The **Test-CsXmppIM** cmdlet verifies that a user can exchange instant messages with a user on an XMPP network. Note that, for this test to succeed, you must have a valid SIP address for the XMPP user, and that SIP address must be on a network that was configured as an allowed XMPP partner.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -76,10 +57,6 @@ The second command then checks whether this user can log on to the pool atl-cs-0
     $credential = Get-Credential "litwareinc\kenmyer"
     
     Test-CsXmppIM -TargetFqdn "atl-cs-001.litwareinc.com" -Receiver "adelany@contoso.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -133,10 +110,6 @@ has failed to respond 10.188.116.96:5061
 
 Diagnosis :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsXmppIM** might fail:
@@ -145,25 +118,8 @@ Here are some common reasons why **Test-CsXmppIM** might fail:
 
   - This command will fail if XMPP gateway configuration is misconfigured or not yet deployed.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Set-CsXmppGatewayConfiguration](set-csxmppgatewayconfiguration.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Set-CsXmppGatewayConfiguration](https://technet.microsoft.com/en-us/library/jj204769\(v=ocs.15\))
 

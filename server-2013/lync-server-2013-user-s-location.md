@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # User's location in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-09_
 
 Location-Based Routing leverages the same network regions, sites and subnets as defined in Lync Server used by E9-1-1, CAC and Media Bypass to apply call routing restrictions to prevent PSTN toll bypass. A user’s location is determined by the IP subnet of the user’s Lync endpoint(s) are connected from. Each IP subnet is associated to a network site, which are aggregated into network regions defined by the administrator. Location-Based Routing is enforced based on the user’s network site.
 
@@ -40,23 +27,8 @@ A user location can be categorized in the following ways:
 
   - When a user is located in a network site that is unknown to the Lync Server deployment, the routing of outbound calls will be based on the voice policy assigned to the user to PSTN gateways not bound to Location-Based Routing restrictions. Incoming PSTN calls will not be routed to endpoints that are located in unknown network sites to prevent PSTN toll bypassing.
 
-<div>
-
 ## See Also
 
 
-[Guidance for Location-Based Routing in Lync Server 2013](lync-server-2013-guidance-for-location-based-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Guidance for Location-Based Routing in Lync Server 2013](lync-server-2013-guidance-for-location-based-routing.md)
 

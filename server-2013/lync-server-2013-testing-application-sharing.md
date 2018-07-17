@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing application sharing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-01_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-11-01_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsASConference** cmdlet verifies that a pair of test users can participate in an online conference that includes application sharing. To do this, the cmdlet registers the two users with Lync Server 2013, and then it uses one of the user accounts to create a new conference that includes applications sharing. The cmdlet then verifies that the second user is able to join that conference.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -78,10 +59,6 @@ With the credential objects in hand, the third command determines whether or not
     $cred1 = Get-Credential "litwareinc\pilar" 
     $cred2 = Get-Credential "litwareinc\kenmyer" 
     Test-CsASConference -TargetFqdn atl-cs-001.litwareinc.com -SenderSipAddress "sip:pilar@litwareinc.com" -SenderCredential $cred1 -ReceiverSipAddress "sip:kenmyer@litwareinc.com" -ReceiverCredential $cred2
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -125,10 +102,6 @@ Diagnosis :
 
 For example, the previous output includes the note “the connected party did not properly respond” That typically indicates a problem with the Edge Server.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsASConference** might fail:
@@ -139,26 +112,9 @@ Here are some common reasons why **Test-CsASConference** might fail:
 
   - This command will fail if the Edge Server is misconfigured or not yet deployed.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsConferencingPolicy](get-csconferencingpolicy.md)  
-[Test-CsDataConference](test-csdataconference.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsConferencingPolicy](https://technet.microsoft.com/en-us/library/gg398293\(v=ocs.15\))  
+[Test-CsDataConference](https://technet.microsoft.com/en-us/library/jj205219\(v=ocs.15\))
 

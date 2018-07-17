@@ -8,27 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring watcher node test users and configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-29_
 
 After configuring the computer that will act as a watcher node, you must:
 
-1.  Create the test accounts to be used by these watcher nodes. If you are using the Negotiate authentication method, you must also use the [Set-CsTestUserCredential](set-cstestusercredential.md) cmdlet to enable these test accounts for use on the watcher node.
+1.  Create the test accounts to be used by these watcher nodes. If you are using the Negotiate authentication method, you must also use the [Set-CsTestUserCredential](https://technet.microsoft.com/en-us/library/jj205341\(v=ocs.15\)) cmdlet to enable these test accounts for use on the watcher node.
 
 2.  Update the watcher node configuration settings.
 
@@ -43,8 +30,6 @@ This section covers:
   - Adding and Removing Synthetic Transactions
 
   - Viewing and Testing the Watcher Node Configuration
-
-<div>
 
 ## Configuring Test User Accounts
 
@@ -72,10 +57,6 @@ Information similar to this should be returned for each user:
     --------                        --------
     Litwareinc\watcher1              System.Security.SecureString
 
-</div>
-
-<div>
-
 ## Configuring a Basic Watcher Node with the Default Synthetic Transactions
 
 After the test users have been created you can then create a watcher node by using a command similar to this:
@@ -83,10 +64,6 @@ After the test users have been created you can then create a watcher node by usi
     New-CsWatcherNodeConfiguration -TargetFqdn "atl-cs-001.litwareinc.com" -PortNumber 5061 -TestUsers @{Add= "sip:watcher1@litwareinc.com","sip:watcher2@litwareinc.com", "sip:watcher3@litwareinc.com"}
 
 This command creates a new watcher node that uses the default settings and runs the default set of synthetic transactions. The new watcher node also uses the test users watcher1@litwareinc.com, watcher2@litwareinc.com, and watcher3@litwareinc.com. If the watcher node is using TrustedServer authentication, the three test accounts can be any valid user accounts enabled for Active Directory and Lync Server. If the watcher node is using the Negotiate authentication method, you must also enable these user accounts for watcher node by using the **Set-CsTestUserCredential** cmdlet.
-
-</div>
-
-<div>
 
 ## Configuring Extended Tests
 
@@ -144,10 +121,6 @@ This also means that the following components will not be tested by default:
 
   - UnifiedContactStore
 
-</div>
-
-<div>
-
 ## Adding and Removing Synthetic Transactions
 
 After a watcher node has been configured, you can use the **Set-CsWatcherNodeConfiguration** cmdlet to add or remove synthetic transactions from the node. For example, to add the PersistentChatMessage test to the watcher node, use the Add method and a command similar to this:
@@ -174,10 +147,6 @@ You can also use the Replace method to replace all the currently-enabled tests w
 
 When you run the preceding command, all synthetic transactions on the specified watcher node will be disabled except for IM.
 
-</div>
-
-<div>
-
 ## Viewing and Testing the Watcher Node Configuration
 
 If you want to view the tests that have been assigned to a watcher node, use a command similar to this:
@@ -195,15 +164,11 @@ The preceding command will return information similar to this, depending on the 
     PersistentChatMessage
     DataConference
 
-<div>
-
 
 > [!TIP]
 > To view the synthetic transactions in alphabetical order, use this command instead:<BR>Get-CsWatcherNodeConfiguration –Identity "atl-cs-001.litwareinc.com" | Select-Object –ExpandProperty Tests | Sort-Object
 
 
-
-</div>
 
 To verify that a watcher node has been created, type the following command from within the Lync Server Management Shell:
 
@@ -232,16 +197,4 @@ The preceding command will test each watcher node in your deployment and tell yo
   - Your ports been configured correctly.
 
   - Your assigned test users have the required credentials.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

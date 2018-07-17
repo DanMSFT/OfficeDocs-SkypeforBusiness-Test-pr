@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Define a gateway in Topology Builder in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-04_
 
 Follow these steps to use Topology Builder to define a *peer* with which you can associate a Mediation Server to provide connectivity to the public switched telephone network (PSTN) for users enabled for Enterprise Voice. A peer to the Mediation Server can be a PSTN gateway, an IP-PBX, or a Session Border Controller (SBC) for an Internet Telephony Service Provider (ITSP) to which you connect by configuring a SIP trunk.
-
-<div>
 
 
 > [!NOTE]
 > This topic assumes that you have set up at least one internal Front End pool or Standard Edition server in at least one central site with a collocated or stand-alone Mediation Server, as described in <A href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">Define and configure a Front End pool or Standard Edition server in Lync Server 2013</A> and <A href="lync-server-2013-publish-the-topology.md">Publish the topology in Lync Server 2013</A> in the Deployment documentation. This topic also assumes that you have verified that your infrastructure meets the prerequisites described in <A href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">Software prerequisites for Enterprise Voice in Lync Server 2013</A> and <A href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">Security and configuration prerequisites for Enterprise Voice in Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## To Define a Peer for the Mediation Server
 
@@ -52,14 +33,11 @@ Follow these steps to use Topology Builder to define a *peer* with which you can
     
     ![8017ba5e-41bc-48d4-97d9-fd306cd322b8](images/Gg425945.8017ba5e-41bc-48d4-97d9-fd306cd322b8(OCS.15).png "8017ba5e-41bc-48d4-97d9-fd306cd322b8")
     
-    <div>
-    
 
     > [!NOTE]
     > If you specify Transport Layer Security (TLS) as the transport type, you must specify the FQDN instead of the IP address of the peer of the Mediation Server.
 
-    
-    </div>
+
 
 4.  Define the listening mode (IPv4 or IPv6) of the IP address of your new PSTN gateway, and click **Next**.
     
@@ -79,31 +57,23 @@ Follow these steps to use Topology Builder to define a *peer* with which you can
 
 7.  Under **SIP Transport Protocol**, click the transport type that the peer uses, and then click **OK**.
     
-    <div>
-    
 
     > [!NOTE]
     > For security reasons, we strongly recommend that you deploy a peer to the Mediation Server that can use TLS.
 
-    
-    </div>
+
 
 8.  Under **Associated Mediation Server**, select the Mediation Server pool to associate with the root trunk of this this PSTN Gateway.
 
 9.  Under **Associated Mediation Server port**, type the listening port that the Mediation Server will use for SIP messages from the gateway.
     
-    <div>
-    
 
     > [!NOTE]
     > With multiple trunk support in Lync Server 2013, multiple SIP signaling ports can be defined on the Mediation Server to be used for communication with multiple PSTN gateways. When defining a trunk, the <STRONG>Associated Mediation Server port</STRONG> must be within the range of the listening ports for the respective protocol allowed by the Mediation Server. This port range is defined under Lync Server 2013 and Mediation Pools. Right-click the Mediation Server pool of interest, and select <STRONG>Edit Properties</STRONG>. Specify the port range in the <STRONG>Listening ports</STRONG> field.
 
-    
-    </div>
+
 
 10. Click **Finish**.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -111,29 +81,10 @@ Follow these steps to use Topology Builder to define a *peer* with which you can
 
 
 
-</div>
-
 Next, to add the peer to the topology, follow the procedures in [Publish the topology in Lync Server 2013](lync-server-2013-publish-the-topology.md) in the Deployment documentation. You must publish your topology each time that you use Topology Builder to build or modify your topology, so that the data can be used to install the files for servers that are running Lync Server.
-
-</div>
-
-<div>
 
 ## See Also
 
 
-[Modify a trunk in Topology Builder in Lync Server 2013](lync-server-2013-modify-a-trunk-in-topology-builder.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Modify a trunk in Topology Builder in Lync Server 2013](lync-server-2013-modify-a-trunk-in-topology-builder.md)
 

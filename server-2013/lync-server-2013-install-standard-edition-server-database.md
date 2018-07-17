@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Install Standard Edition server database for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 Setting up a Standard Edition server as the only server in your infrastructure that homes users differs from other server installations in that there is a selection in the **Deployment Wizard** specifically for setting up the initial server.
-
-<div>
 
 ## To install a Standard Edition server
 
@@ -42,28 +27,13 @@ Setting up a Standard Edition server as the only server in your infrastructure t
 
 5.  On the **Executing Commands** page, the SQL Server 2012 Express is installed as the Central Management store. Necessary firewall rules are created. When the installation of the database and prerequisite software is completed, click **Finish**.
     
-    <div>
-    
 
     > [!NOTE]
     > The initial installation may take some time with no visible updates to the command output summary screen. This is due to the installation of the SQL Server Express. If you need to monitor the installation of the database, use Task Manager to monitor the setup.
 
-    
-    </div>
+
 
 6.  On the Lync Server Deployment Wizard page, click **Install Topology Builder** if you have not previously installed the administrative tools. For details, see [Install Lync Server 2013 administrative tools](lync-server-2013-install-lync-server-administrative-tools.md).
 
 7.  Confirm that there are green check marks next to “Prepare Active Directory,” “Prepare first Standard Edition server,” and “Install Topology Builder.”
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for Location-Based Routing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-31_
 
 The information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
 Location-Based Routing makes it possible to restrict the routing of calls between VoIP endpoints and PSTN endpoints based on the location of the parties in the call. Location-Based Routing is part of the Lync Server 2013 Enterprise Voice infrastructure. Location-Based Routing is a call management feature that controls how calls are routed by Lync Server 2013 CU1. It enforces call authorization rules on whether calls can be routed to PBX or PSTN endpoints based on the Lync caller’s geographic location.
-
-<div>
 
 ## In This Section
 
@@ -50,25 +35,8 @@ Location-Based Routing makes it possible to restrict the routing of calls betwee
 
   - [Location-Based Routing for conferencing in Lync Server 2013](lync-server-2013-location-based-routing-for-conferencing.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Planning for Enterprise Voice in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for Enterprise Voice in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice.md)
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing civic addresses against the master street address guide in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsLisCivicAddress cmdlet is used to verify locations that were added to your Location Information service (LIS) database. The cmdlet works by comparing locations against the locations found in the Master Street Address Guide (MSAG) that belongs to your E9-1-1 Network Routing Provider. If you do not have a network routing provider or if the provider cannot be reached, then your tests will fail.
 
 If you add the optional switch parameter UpdateValidationStatus to your command, then the corresponding MSAGValid database property will be set to True for each address passing the test.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -73,19 +54,11 @@ By comparison, this command tests all the addresses currently in your LIS databa
 
     Get-CsLisCivicAddress | Test-CsLisCivicAddress -UpdateValidationStatus
 
-For more information, see the Help documentation for the [Test-CsRegistration](test-csregistration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsRegistration](https://technet.microsoft.com/en-us/library/gg412737\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
 Test-CsLisCivicAddress will report back Success or Failure for the supplied addresses. An address test will fail if the address cannot be found or if the service provider cannot be contacted.
-
-</div>
-
-<div>
 
 ## Reasons why the test might have failed
 
@@ -96,16 +69,4 @@ Here are some common reasons why Test-CsLisCivicAddress might fail:
         Get-CsLisConfiguration 
     
     You can then ping that URL to verify that the service provider is available.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

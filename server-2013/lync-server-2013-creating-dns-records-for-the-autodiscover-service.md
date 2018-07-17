@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Creating DNS records for the Autodiscover Service in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-20_
 
 Your Lync Mobile users will need you to enable autodiscovery, and a part of that involves creating some Domain Name System (DNS) records. Depending on your needs, you need the following:
 
@@ -35,8 +22,6 @@ Your Lync Mobile users will need you to enable autodiscovery, and a part of that
 Why both? You need to create both an internal DNS record and an external DNS record for each SIP domain.
 
 The DNS records you create can be either A (host) records or CNAME records. To help you out, we’ll walk through how to create these internal and external DNS records below. If you need to do some further reading about the DNS requirements for mobile users, you can check out [Technical requirements for mobility in Lync Server 2013](lync-server-2013-technical-requirements-for-mobility.md).
-
-<div>
 
 ## Creating an internal DNS CNAME record
 
@@ -60,10 +45,6 @@ The DNS records you create can be either A (host) records or CNAME records. To h
 
 10. You must create a new Autodiscover CNAME record in the forward lookup zone of each SIP domain that you support in your Lync Server 2013 environment.
 
-</div>
-
-<div>
-
 ## Creating an external DNS CNAME record
 
 1.  To create an external DNS CNAME record, you’re going to need to connect to your public DNS provider, and then follow our steps. We can’t describe exactly where you’re going in your DNS provider’s environment as there may be different ways of managing your external DNS, but we hope these steps help.
@@ -83,10 +64,6 @@ The DNS records you create can be either A (host) records or CNAME records. To h
 8.  There should also be some form of a **Fully qualified domain name (FQDN) for target host** text box, here’s where you’ll enter the external Web Services FQDN for your Director pool (for example, lyncwebexdir01.contoso.com) and then click OK or take whatever action in the external DNS to accept the creation of this entry. As noted in Step 4, above, if you don’t have a Director pool, you’ll need to use the Front End pool FQDN or the single-server FQDN you have set up, as appropriate.
 
 9.  You’ll need to make a new Autodiscover CNAME record in the forward lookup zone of each SIP domain that’s supported in your Lync 2013 environment.
-
-</div>
-
-<div>
 
 ## Creating an internal DNS A record
 
@@ -114,10 +91,6 @@ The DNS records you create can be either A (host) records or CNAME records. To h
 
 12. When you are finished creating A (for IPv6, AAAA) records, click **Done**.
 
-</div>
-
-<div>
-
 ## Creating an external DNS A record
 
 1.  To create an external DNS record, connect to your public DNS provider, and then follow our steps. We can’t describe exactly where you’re going in your DNS provider’s environment as there may be different ways of managing your external DNS, but we hope these steps help.
@@ -137,16 +110,4 @@ The DNS records you create can be either A (host) records or CNAME records. To h
 8.  There should also be an **IP Address** text box, here’s where you’ll enter the IP for your for your Director pool (for example, lyncwebexdir01.contoso.com) or possibly the IP of your pool’s load balancer (or a reverse proxy IP that leads to the same) and then click OK or take whatever action in the external DNS to accept the creation of this entry. As noted in Step 4, above, if you don’t have a Director pool, you’ll need to use the Front End pool IP address or the single-server IP address you have set up, as appropriate.
 
 9.  You’ll need to make a new Autodiscover A or AAAA record in the forward lookup zone of each SIP domain that’s supported in your Lync 2013 environment.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

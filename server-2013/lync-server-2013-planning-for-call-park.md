@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for Call Park in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-07_
 
 The Lync Server Call Park application makes it possible for Enterprise Voice users to put a call on hold and then retrieve it later from any phone. The user who parked the call can either dial the orbit number provided by Call Park to retrieve the parked call or use an external mechanism, such as instant messaging or a paging system, to ask someone else to retrieve the call. This section includes planning information that is specific to Call Park.
-
-<div>
 
 ## In This Section
 
@@ -43,16 +28,4 @@ The Lync Server Call Park application makes it possible for Enterprise Voice us
   - [Capacity planning for Call Park in Lync Server 2013](lync-server-2013-capacity-planning-for-call-park.md)
 
   - [Deployment process for Call Park in Lync Server 2013](lync-server-2013-deployment-process-for-call-park.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

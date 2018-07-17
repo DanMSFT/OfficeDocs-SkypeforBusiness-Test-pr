@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Start Edge Servers in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-01-16_
 
 After completing the set up of the Edge Servers and load balancers, you need to start the services on each Edge Server.
-
-<div>
 
 ## To start the services
 
@@ -41,16 +26,4 @@ After completing the set up of the Edge Servers and load balancers, you need to 
 4.  Under **Step 4: Start Services**, click **Services Status (Optional)**.
 
 5.  In the **Services** Microsoft Management Console (MMC) on the server, verify that all of the Lync Server 2013 services are running.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

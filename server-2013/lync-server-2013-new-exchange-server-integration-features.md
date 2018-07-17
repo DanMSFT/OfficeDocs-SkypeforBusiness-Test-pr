@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # New Exchange Server integration features in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-24_
 
 Lync Server 2013 supports new features when it is deployed alongside Microsoft Exchange Server 2013, as described in the following list. For each of these features to work, both Lync Server 2013 and Exchange 2013 must be deployed.
 
@@ -34,24 +21,9 @@ Lync Server 2013 supports new features when it is deployed alongside Microsoft E
 
   - You can enable **Lync Archiving integration**, which integrates Lync Server 2013 Archiving into the Exchange 2013 In-Place Hold feature, for users homed on Exchange 2013, which enables one common experience for administrators around compliance and eDiscovery.
 
-<div>
-
 ## See Also
 
 
 [Planning and deploying unified contact store in Lync Server 2013](lync-server-2013-planning-and-deploying-unified-contact-store.md)  
-[How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md)
 

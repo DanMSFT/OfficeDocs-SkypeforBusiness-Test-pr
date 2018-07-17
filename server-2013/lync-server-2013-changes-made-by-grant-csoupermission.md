@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Changes made by Grant-CsOUPermission in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-20_
 
 To delegate Lync Server 2013 administration, you can add permissions to specified organizational units (OUs) so that members of the RTC universal groups created by forest preparation can access the OUs without being members of the Domain Admins group.
 
 The **Grant-CsOuPermission** cmdlet grants permissions to objects in the specified OU as specified in the following tables.
-
-<div>
 
 ## Granting Permission for User Objects
 
@@ -94,10 +79,6 @@ When you run the **Grant-CsOuPermission** cmdlet for User objects on an OU, grou
 </table>
 
 
-</div>
-
-<div>
-
 ## Granting Permission for Computer Objects
 
 When you run the **Grant-CsOuPermission** cmdlet for Computer objects on an OU, groups are granted permissions as shown in the following table.
@@ -152,10 +133,6 @@ When you run the **Grant-CsOuPermission** cmdlet for Computer objects on an OU, 
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Granting Permission for Contact or AppContact Objects
 
@@ -223,10 +200,6 @@ When you run the **Grant-CsOuPermission** cmdlet for Contact objects or AppConta
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Granting Permission for Device Objects
 
@@ -309,10 +282,6 @@ When you run the **Grant-CsOuPermission** cmdlet for Device objects on an OU, gr
 </table>
 
 
-</div>
-
-<div>
-
 ## Granting Permission for InetOrgPerson Objects
 
 When you run the **Grant-CsOuPermission** cmdlet for InetOrgPerson objects on an OU, groups are granted permissions as shown in the following table.
@@ -373,17 +342,4 @@ When you run the **Grant-CsOuPermission** cmdlet for InetOrgPerson objects on an
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

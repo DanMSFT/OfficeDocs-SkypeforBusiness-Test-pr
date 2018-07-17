@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing the Lync Server 2013 core files and the RTCLocal database
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-20_
 
 To install the Lync Server 2013 core files on a computer, complete the following procedure. The RTCLocal database is automatically installed when you install the core files. Note that you do not need to install SQL Server on the watcher nodes. Instead, SQL Server Express is automatically installed for you.
 
@@ -57,14 +44,4 @@ You will receive information similar to the following, depending on the number o
     MaximumLogonAttempts :
 
 If you see information about your PIN policies, it means that you have successfully installed the core components.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

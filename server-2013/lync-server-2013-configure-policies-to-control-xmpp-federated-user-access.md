@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure policies to control XMPP federated user access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 This is preliminary documentation and is subject to change. Blank topics are included as placeholders.
 
 When you configure policies for support of extensible messaging and presence protocol (XMPP) federated partners, the policies apply to users of XMPP federated domains, but not to users of session initiation protocol (SIP) instant messaging (IM) service providers (for example, Windows Live), or SIP federated domains. You configure an **XMPP Federated Partner** for each XMPP federated domain that you want to allow your users to add contacts and communicate with. XMPP federated partners policies are only available in a single scope, though it is not defined as a global policy, acts as a global policy. To define a global, site or user policy for XMPP Federation Partners, you configure the policy scope by first creating and configuring the External Access Policy for the scope you require. For details about the types of policies that you can configure for external access and federation, see [Managing federation and external access to Lync Server 2013](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md) in the Operations documentation.
-
-<div>
 
 
 > [!NOTE]
 > All <STRONG>Federation and External Access</STRONG> policies are applied through in-band provisioning. The policies that apply to the user, belong to a site, or are global in scope are communicated to the client during login. You can configure policies to control XMPP federated partner access, even if you have not enabled XMPP federation for your organization. However, the policies that you configure take effect only when you have XMPP partner federation deployed, enabled and configured for your organization. For details about deploying and configuring XMPP partner federation, see <A href="lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md">Configuring SIP federation, XMPP federation and public instant messaging in Lync Server 2013</A> in the Deployment documentation. Additionally, if you specify a user policy in External Access Policy to control XMPP federated partners, the policy applies only to users that are enabled for Lync Server 2013 and configured to use the policy.
 
 
-
-</div>
-
-<div>
 
 ## To edit a global policy for XMPP federated partners
 
@@ -62,10 +43,6 @@ When you configure policies for support of extensible messaging and presence pro
 
 9.  Click **Commit** to save your changes to the Global policy.
 
-</div>
-
-<div>
-
 ## To create a site or user policy for XMPP federated partners
 
 1.  Click **New**, and then click **Site policy** or **User policy**. In **Select a Site**, click the appropriate site from the list and then click **OK**.
@@ -78,10 +55,6 @@ When you configure policies for support of extensible messaging and presence pro
 
 5.  Click **Commit** to save your changes to the site or user policy.
 
-</div>
-
-<div>
-
 ## To edit an existing policy for XMPP federated partners
 
 1.  To change an existing policy, select the appropriate policy in the list, click **Edit**, and then click **Show details**.
@@ -93,10 +66,6 @@ When you configure policies for support of extensible messaging and presence pro
 4.  Select or unselect **Enable communications with XMPP federated users**.
 
 5.  Click **Commit** to save your changes to the policy.
-
-</div>
-
-<div>
 
 ## To edit an existing policy for XMPP federated partners by using Windows PowerShell
 
@@ -112,10 +81,6 @@ When you configure policies for support of extensible messaging and presence pro
     
         Set-CsExternalAccessPolicy -Identity global -EnableFederationAccess $true -EnableXmppAccess $true
 
-</div>
-
-<div>
-
 ## To create a site or user policy for XMPP federated partners using Windows PowerShell
 
 1.  From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.
@@ -129,10 +94,6 @@ When you configure policies for support of extensible messaging and presence pro
     An example command that will set a site policy for the Redmond site for Federated user access to enabled and XMPP domain access to enabled:
     
         New-CsExternalAccessPolicy -Identity site:Redmond -EnableFederationAccess $true -EnableXmppAccess $true
-
-</div>
-
-<div>
 
 ## To delete an existing policy for XMPP federated partners by using Windows PowerShell
 
@@ -152,10 +113,6 @@ When you configure policies for support of extensible messaging and presence pro
     
         Remove-CsExternalAccessPolicy -Identity global
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -164,22 +121,9 @@ When you configure policies for support of extensible messaging and presence pro
 
 
 [Manage XMPP federated partners in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
-[Set-CsExternalAccessPolicy](set-csexternalaccesspolicy.md)  
-[New-CsExternalAccessPolicy](new-csexternalaccesspolicy.md)  
-[Get-CsExternalAccessPolicy](get-csexternalaccesspolicy.md)  
-[Remove-CsExternalAccessPolicy](remove-csexternalaccesspolicy.md)  
-[Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Set-CsExternalAccessPolicy](https://technet.microsoft.com/en-us/library/gg398916\(v=ocs.15\))  
+[New-CsExternalAccessPolicy](https://technet.microsoft.com/en-us/library/gg398441\(v=ocs.15\))  
+[Get-CsExternalAccessPolicy](https://technet.microsoft.com/en-us/library/gg425805\(v=ocs.15\))  
+[Remove-CsExternalAccessPolicy](https://technet.microsoft.com/en-us/library/gg399057\(v=ocs.15\))  
+[Grant-CsExternalAccessPolicy](https://technet.microsoft.com/en-us/library/gg425942\(v=ocs.15\))
 

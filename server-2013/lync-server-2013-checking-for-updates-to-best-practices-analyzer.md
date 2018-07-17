@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Checking for updates to Best Practices Analyzer in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 When you start Best Practices Analyzer, the tool provides you with an option to search for the latest updates to the tool. If an update is available, you can download the update. If you choose not to download updates, or if Best Practices Analyzer cannot access the Internet, you can continue to use the version that is already on the computer.
-
-<div>
 
 
 > [!NOTE]
@@ -36,27 +21,11 @@ When you start Best Practices Analyzer, the tool provides you with an option to 
 
 
 
-</div>
-
 To update Best Practices Analyzer rules, you must run the tool as an Administrator on the local computer. If you are not logged on using an account that is a member of the Administrators group and updates are detected, close Best Practices Analyzer, and then use the following procedure to start the program.
-
-<div>
 
 ## To open Best Practices Analyzer as Administrator to check for updates
 
 1.  On a computer on which Best Practices Analyzer is installed, click **Start**, point to **Microsoft Lync Server 2013**, right-click **Best Practices Analyzer**, and then click **Run as administrator**.
 
 2.  Specify credentials of an account that is a member of the Administrators group.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

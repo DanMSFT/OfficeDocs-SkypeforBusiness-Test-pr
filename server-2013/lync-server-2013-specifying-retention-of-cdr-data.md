@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Specifying retention of CDR data in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 By default, call detail recording (CDR) data is purged after 60 days. You can use the settings on the **Call Detail Recording** page to retain the data for a longer or shorter period of time. If you disable CDR, data that was captured before CDR was enabled will also be subject to purging.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ By default, call detail recording (CDR) data is purged after 60 days. You can us
 
 
 
-</div>
-
 Use the following procedures to configure purge settings for CDR data.
-
-<div>
 
 ## To specify retention of CDR data
 
@@ -60,15 +41,9 @@ Use the following procedures to configure purge settings for CDR data.
 
 8.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Specifying CDR Retention by Using Windows PowerShell Cmdlets
 
 You can create CDR retention settings by using Windows PowerShell and the Set-CsCdrConfiguration cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To specify CDR retention for a specific location
 
@@ -76,39 +51,16 @@ You can create CDR retention settings by using Windows PowerShell and the Set-Cs
     
         Set-CsCdrConfiguration -Identity "site:Redmond" -EnablePurging -KeepCallDetailForDays 20 -KeepErrorReportForDays 20
 
-</div>
-
-<div>
-
 ## To specify CDR retention for multiple locations
 
   - This command configures CDR retention for all the CDR configuration settings in use in an organization.
     
         Get-CsCdrConfiguration | Set-CsCdrConfiguration-EnablePurging -KeepCallDetailForDays 20 -KeepErrorReportForDays 20
 
-</div>
-
-For more information, see the help topic for the [Set-CsCdrConfiguration](set-cscdrconfiguration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Set-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg398774\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
-[Call detail recording (CDR) in Lync Server 2013](lync-server-2013-call-detail-recording-cdr.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Call detail recording (CDR) in Lync Server 2013](lync-server-2013-call-detail-recording-cdr.md)
 

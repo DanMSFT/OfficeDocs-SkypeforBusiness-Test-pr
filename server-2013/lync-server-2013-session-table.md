@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Session table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-09-09_
 
 Each record represents one session which involves audio or audio and video. It contains overall information about the session. A session is defined as an audio or video Session Initiation Protocol (SIP) dialog between two endpoints.
 
@@ -78,13 +65,13 @@ Each record represents one session which involves audio or audio and video. It c
 <tr class="even">
 <td><p><strong>MediationServerBypassFlag</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Flag indicating if the call was bypassed or not.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MediaBypassWarningFlag</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>This field, if present, indicates why a call was not bypassed even if the bypass IDs matched. For Lync Server, only one value is defined.</p>
 <p>0x0001 – Unknown bypass ID for Default network adapter.</p></td>
 </tr>
@@ -139,13 +126,13 @@ Each record represents one session which involves audio or audio and video. It c
 <tr class="even">
 <td><p><strong>CallPriority</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The priority of this call.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ClassifiedPoorCall</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>This column has been deprecated and is not used in Microsoft Lync Server 2013. Instead, this information is reported on a per-media line bases. Refer to the <a href="lync-server-2013-medialine-table.md">MediaLine table in Lync Server 2013</a> for more information.</p></td>
 </tr>
 <tr class="even">
@@ -174,15 +161,4 @@ Each record represents one session which involves audio or audio and video. It c
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

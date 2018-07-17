@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lync Server sites for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-16_
 
 In Lync Server, you define *sites* on your network that contain Lync Server components. A site is a set of computers that is well-connected by a high-speed, low-latency network, such as a single local area network (LAN) or two networks connected by a high-speed fiber optic network. Note that Lync Server sites are a separate concept from Active Directory Domain Services sites and Microsoft Exchange Server sites. Your Lync Server sites do not need to correspond to your Active Directory sites.
-
-<div>
 
 ## Site Types
 
@@ -44,19 +29,11 @@ Each branch site contains one of the following:
 
 A branch office with a resilient wide area network (WAN) link to a central site can use the third option—a PSTN gateway, and, optionally, a Mediation Server. Branch office sites with less-resilient links should use a Survivable Branch Appliance or Survivable Branch Server, which provide resiliency in times of wide-area network failures. For example, in a site with a Survivable Branch Appliance or Survivable Branch Server deployed, users can still make and receive Enterprise Voice calls if the WAN connecting the branch site to the central site is down. For details about the Survivable Branch Appliance, Survivable Branch Server, and resiliency, see [Planning for Enterprise Voice resiliency in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice-resiliency.md) in the Planning documentation.
 
-</div>
-
-<div>
-
 ## Site Topologies
 
 Your deployment must include at least one central site, and can include zero to many branch sites. Each branch site is affiliated with one central site. The central site provides the Lync Server services to the branch site that are not hosted locally at the branch site, such as presence and conferencing.
 
 If you have multiple sites, you can pair together the Front End pools at different sites to enable disaster recovery abilities. For details, see [High availability and disaster recovery support in Lync Server 2013](lync-server-2013-high-availability-and-disaster-recovery-support.md).
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -65,18 +42,5 @@ If you have multiple sites, you can pair together the Front End pools at differe
 [High availability and disaster recovery support in Lync Server 2013](lync-server-2013-high-availability-and-disaster-recovery-support.md)  
 
 
-[Planning for Enterprise Voice resiliency in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice-resiliency.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for Enterprise Voice resiliency in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice-resiliency.md)
 

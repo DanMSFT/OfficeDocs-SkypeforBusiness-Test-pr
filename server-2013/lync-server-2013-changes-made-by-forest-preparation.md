@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Changes made by forest preparation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-30_
 
 This section describes the global settings and objects, and the universal service and administration groups that are created by the forest preparation step.
-
-<div>
 
 ## Active Directory Global Settings and Objects
 
 If you store global settings in the Configuration container (as is the case for all new Lync Server 2013 deployments), forest preparation uses the existing Services container and adds an **RTC Service** object under the Configuration\\Services object. Under the RTC Service object, forest preparation adds a **Global Settings** object of type msRTCSIP-GlobalContainer. The global settings object holds all the settings that apply to the Lync Server deployment. If you store global settings in the System container, forest preparation uses a Microsoft container under the root domain System container and an RTC Service object under the System\\Microsoft object.
 
 Forest preparation also adds a new **msRTCSIP-Domain** object for the root domain in which the procedure is run.
-
-</div>
-
-<div>
 
 ## Active Directory Universal Service and Administration Groups
 
@@ -226,15 +207,11 @@ Forest preparation creates both private and public ACEs. It creates private ACEs
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > <STRONG>*</STRONG>ACEs that are not inherited do not grant access to child objects under these containers. ACEs that are inherited grant access to child objects under these containers.
 
 
-
-</div>
 
 On the Configuration container, under the Configuration naming context, forest preparation performs the following tasks:
 
@@ -247,16 +224,4 @@ On the Configuration container, under the Configuration naming context, forest p
   - Adds **msRTCSIP-PrimaryUserAddress** under the **extraColumns** attribute of each language organizational unit (OU) display specifier (for example, CN=organizationalUnit-Display,CN=409,CN=DisplaySpecifiers) and copies the values of the **extraColumns** attribute of the default display (for example, CN=default-Display, CN=409,CN=DisplaySpecifiers).
 
   - Adds **msRTCSIP-PrimaryUserAddress**, **msRTCSIP-PrimaryHomeServer**, and **msRTCSIP-UserEnabled** filtering attributes under the **attributeDisplayNames** attribute of each language display specifier for Users, Contacts, and InetOrgPerson objects (for example, in English: CN=user-Display,CN=409,CN=DisplaySpecifiers).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

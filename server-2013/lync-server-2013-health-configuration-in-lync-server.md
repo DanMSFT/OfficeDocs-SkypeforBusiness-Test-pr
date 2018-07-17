@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Health configuration in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 Between various websites, Microsoft Knowledge Base articles, and Lync Server Resource Kit tools, administrators who encounter problems when running Lync Server are never far from a way to solve those problems.
 
@@ -32,15 +19,11 @@ Obviously there is no way to guarantee that you will never encounter problems wi
 
 In a similar fashion, administrators can use System Center Operations Manager to do such things as issue real-time alerts when specified events occur, and to run synthetic transactions that proactively test the system. Synthetic transactions are used in Lync Server to verify that users are able to successfully complete common tasks such as logging on to the system, exchanging instant messages, or making calls to a phone located on the public switched telephone network (PSTN). For example, periodically running these tests can alert you to potential problems with users logging on to Lync Server, and give you a chance to correct the problem before your support team is flooded with calls from users unable to make a connection. By using System Center Operations Manager to run these synthetic transactions, administrators can routinely monitor their deployment of Lync Server continuously for 24 hours every day without having to do much of anything beyond responding to any alerts that might be issued.
 
-<div>
-
 
 > [!NOTE]
 > For Lync Server 2013, the Management Pack for System Center Operations Manager is also able to detect "external" issues that can adversely affect Lync Server. For example, administrators can be notified if Internet Information Services (IIS) goes offline, system resources on a Lync Server computer fall below a specified amount, or a Lync Server computer experiences a hardware failure.
 
 
-
-</div>
 
 Health configuration in Lync Server 2013 is built around System Center Operations Manager and the use of Lync Server Management Packs. These Management Packs include a number of new features and enhancements, including:
 
@@ -102,8 +85,6 @@ The alerts issued by the system have been classified into three general categori
 
   - **Other alerts.** These are alerts from components that might affect a specific user or subset of users. For example, perhaps the Address Book service could not parse the Active Directory entry of a given user. The expectation for these alerts is that administrators will get to them when they have time available.
 
-<div>
-
 ## In This Section
 
   - [Configuring Lync Server 2013 to work with System Center Operations Manager](lync-server-2013-configuring-lync-server-to-work-with-system-center-operations-manager.md)
@@ -111,16 +92,4 @@ The alerts issued by the system have been classified into three general categori
   - [Using rich logging for synthetic transactions in Lync Server 2013](lync-server-2013-using-rich-logging-for-synthetic-transactions.md)
 
   - [Using Microsoft SQL Server 2008 R2 as your System Center Operations Manager database for Lync Server 2013](lync-server-2013-using-microsoft-sql-server-2008-r2-as-your-system-center-operations-manager-database.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

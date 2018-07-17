@@ -8,23 +8,10 @@ ms.date: 06/02/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lync for iPhone and iPad requirements in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-06-01_
 
 To support Microsoft Lync 2013 for iPhone or Microsoft Lync 2013 for iPad, the device must meet the following requirements:
 
@@ -37,14 +24,4 @@ To support Microsoft Lync 2013 for iPhone or Microsoft Lync 2013 for iPad, the d
   - iPad 2 or a later version mobile digital device with Apple iOS 7 or the latest version.
 
   - iPad mini mobile digital device with Apple iOS 7 or the latest version.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

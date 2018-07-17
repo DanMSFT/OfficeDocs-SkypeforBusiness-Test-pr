@@ -8,23 +8,10 @@ ms.date: 05/23/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure DFS file storage for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-05-23_
 
 Lync Server 2013 supports using file shares on a Distributed File System (DFS). For details about DFS for Windows Server 2008, see the DFS Step-by-Step Guide for Windows Server 2008 at [http://go.microsoft.com/fwlink/p/?linkId=202835](http://go.microsoft.com/fwlink/p/?linkid=202835).To use a DFS, Lync Server 2013 requires the following:
 
@@ -36,19 +23,13 @@ Lync Server 2013 setup requires that permissions on shared folder allow full acc
 
 For more details about File Share requirements, see [File storage support in Lync Server 2013](lync-server-2013-file-storage-support.md) in the Supportability documentation.
 
-<div>
-
 
 > [!NOTE]
 > You may be looking for information on configuring a non-DFS share. If so, check out <A href="lync-server-2013-hardware-setup.md">Hardware setup for Lync Server 2013</A>.
 
 
 
-</div>
-
 The following procedure describes how to correctly configure shared folder permissions using the DFS Namespace Wizard (as described in DFS setup guide).
-
-<div>
 
 ## To configure shared folder permissions
 
@@ -69,16 +50,4 @@ The following procedure describes how to correctly configure shared folder permi
       - **Read**
 
 6.  Click **Apply**, and then click **OK**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

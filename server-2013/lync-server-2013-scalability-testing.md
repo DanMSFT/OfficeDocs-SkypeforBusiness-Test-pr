@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Scalability testing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 Lync Server 2013 provides the server infrastructure for all Lync Server real-time communications, including instant messaging (IM) and presence, conferencing, and Enterprise Voice. This includes any features that use the hardware resources of a Lync Server 2013 pool and, therefore, affect performance and scale. All organizations do not use all features equally.
 
@@ -35,14 +22,4 @@ To determine scalability support for Lync Server, we conduct testing by using al
 In our scalability tests, we set up Lync Server 2013 pools according to the recommended hardware and software specifications, including infrastructure components, such as Active Directory Domain Services, hardware load balancers, and firewalls. We set up Lync Server environments as closely as possible to typical real-world environments. We then use the Lync Server 2013 Stress and Performance Tool to simulate Lync Server 2013 loads (based on our user model). .
 
 We do multiple iterations of scalability tests (including multiple three-week test runs). We use the results of all tests to help with performance tuning and to verify support for the scalability numbers in our user model.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

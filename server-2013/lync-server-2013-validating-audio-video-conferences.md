@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Validating audio/video conferences in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -34,8 +21,8 @@ _**Topic Last Modified:** 2014-06-05_
 </colgroup>
 <tbody>
 <tr class="odd">
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Verification schedule</p></td>
@@ -55,19 +42,13 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsAVConference cmdlet checks whether two test users can participate in an audio/video (A/V) conference. When the cmdlet runs, the two users are logged on to the system. After they face successfully logged on, the first user creates an A/V conference, and then waits for the second user to join that conference. After a brief exchange of data, the conference is deleted and the two tests users are logged off.
 
 Note that Test-CsAVConference does not conduct an actual A/V conference between the two test users. Instead, the cmdlet verifies that the two users can make all the connections necessary to conduct such a conference.
 
-Further examples for this command can be found at [Test-CsAVConference](test-csavconference.md).
-
-</div>
-
-<div>
+Further examples for this command can be found at [Test-CsAVConference](https://technet.microsoft.com/en-us/library/gg412749\(v=ocs.15\)).
 
 ## Running the test
 
@@ -81,11 +62,7 @@ To run this check using actual user accounts, you must create two Windows PowerS
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsAVConference -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:davidlongmire@litwareinc.com" -ReceiverCredential $credential2
 
-For more information, see the Help documentation for the [Test-CsAVConference](test-csavconference.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsAVConference](https://technet.microsoft.com/en-us/library/gg412749\(v=ocs.15\)) cmdlet.
 
 ## Determining Success or Failure
 
@@ -161,10 +138,6 @@ An exception 'The endpoint was unable to register. See the ErrorCode for specifi
 
 The last line in that output indicates that the user sip:kenmyer@litwareinc.com was unable to register with Lync Server. That means that you should verify that the SIP address sip:kenmyer@litwareinc.com is valid, and that the associated user is enabled for Lync Server.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsAVConference might fail:
@@ -178,16 +151,4 @@ Here are some common reasons why Test-CsAVConference might fail:
         Get-CsUser "sip:kenmyer@litwareinc.com" | Select-Object Enabled
     
     If the Enabled property is set to False that means that the user is currently not enabled for Lync Server.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # SQL Server data and log file placement for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 During the planning and deployment of Microsoft SQL Server 2012 or Microsoft SQL Server 2008 R2 SP1 for your Lync Server 2013 Front End pool, an important consideration is the placement of data and log files onto physical hard disks for performance. The recommended disk configuration is to implement a 1+0 RAID set using 6 spindles. Placing all database and log files that are used by the Front End pool and associated server roles and services (that is, Archiving and Monitoring Server, Lync Server Response Group service, Lync Server Call Park service) onto the RAID drive set using the Lync Server Deployment Wizard will result in a configuration that has been tested for good performance. The database files and what they are responsible for is detailed in the following table.
-
-<div>
 
 
 > [!NOTE]
 > If your policies and SQL Server configurations require a more specialized installation, the database and log files can be installed to any pre-defined location using the Lync Server Management Shell. See <A href="lync-server-2013-database-installation-using-lync-server-management-shell.md">Database installation using Lync Server Management Shell in Lync Server 2013</A> for more details.
 
 
-
-</div>
 
 ### Data and Log Files for Central Management Store
 
@@ -215,14 +198,4 @@ In this topic, references are made to disk and to RAID set. Note that in the con
 In reference to RAID sets, there are a number of different RAID technologies from various vendors. And, with the proliferation of storage area networks (SAN), RAID sets dedicated to a single system are rarer. You should consult with your RAID or SAN vendor to determine what the best configuration is for your disk layout when configuring for SQL Server performance with Lync Server 2013.
 
 Note also that not all disk drives are created equally; some perform better than others. Even drives from the same manufacturer can vary in performance because of rotational speed, hardware cache size, and other factors.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Backup and restoration requirements in Lync Server 2013: data
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-26_
 
 Lync Server uses settings and configuration information that are stored in databases, and data that is stored in databases and file stores. This topic describes the data that you need to back up to be able to restore service if your organization experiences a failure or outage, and also identifies the data and components used by Lync Server that you need to back up separately.
-
-<div>
 
 ## Settings and Configuration Requirements
 
@@ -73,10 +58,6 @@ The following table identifies the settings and configuration information that y
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Data Requirements
 
@@ -146,10 +127,6 @@ The following table identifies the data that you need to back up and restore.
 </table>
 
 
-</div>
-
-<div>
-
 ## File Store Data Requirements
 
 In an Enterprise Edition deployment, the Lync Server file store is typically located on a file server. In a Standard Edition deployment, the Lync Server file store is located by default on the Standard Edition server. Typically, there is one Lync Server file store that is shared for a site. The Persistent Chat file store uses the same file share as the Lync Server file store.
@@ -183,10 +160,6 @@ The following table identifies the file stores you need to back up and restore.
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Additional Backup Requirements
 
@@ -229,16 +202,4 @@ To help ensure your ability to restore Lync Server services in the event of a fa
         **Scenario 2:** User contacts were previously stored in the unified contact store, but then rolled back. A restore is performed from a Lync Server backup taken when the user contacts were stored in the unified contact store. In this scenario, an error message of `Error: Incorrect Exchange Version` in the client or Lyss server logs may indicate this as an issue. The user will be able to access their contact list in Lync 2013 directly from Exchange, but client’s state will not match the Lync Server state. To fix this, an administrator will need to run the **Invoke-CsUCSRollback** cmdlets for the affected users.
     
       - **Archiving Data** can be stored in Exchange 2013. This data is not critical to Lync Server, but it may be critical to your organization for regulatory purposes. If archiving data is stored in Exchange and is critical to your organization, then follow Exchange backup and restore procedures. Note that archiving data stored in Exchange cannot be moved back to Lync Server. Additionally, there is no way to move data already stored in the Lync archiving database to Exchange.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

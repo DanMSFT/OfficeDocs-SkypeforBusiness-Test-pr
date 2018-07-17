@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Managing Lync Server 2013 disaster recovery, high availability, and Backup Service
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-12_
 
 This section contains procedures for disaster recovery operations, as well as for maintaining the Backup Service which synchronizes the data in paired Front End pools.
 
@@ -35,8 +22,6 @@ The disaster recovery procedures in the rest of this section assume the followin
   - You have a deployment with paired Front End pools, located in different sites, as described in [Planning for high availability and disaster recovery in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md). The Backup Service has been running on these paired pools to keep them synchronized.
 
   - If the Central Management store is hosted on either pool, it is installed and running on both of the paired pools, with one of those pools hosting the active master and the other pool hosting the standby.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -50,10 +35,6 @@ The disaster recovery procedures in the rest of this section assume the followin
 > <P>If the administrator later wants to fail back those P2 users back to P2, the <EM>PoolFQDN</EM> is P2’s FQDN.</P></LI></OL>Note that step 1 above must be performed before step 2 to preserve pool integrity. If you try step 2 before step 1, the step 2 cmdlet will fail.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -75,25 +56,8 @@ The disaster recovery procedures in the rest of this section assume the followin
 
   - [Restoring conference contents using the Backup Service in Lync Server 2013](lync-server-2013-restoring-conference-contents-using-the-backup-service.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Planning for high availability and disaster recovery in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for high availability and disaster recovery in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)
 

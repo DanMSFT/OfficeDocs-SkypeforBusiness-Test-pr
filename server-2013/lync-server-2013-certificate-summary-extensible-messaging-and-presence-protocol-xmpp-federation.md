@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Certificate summary - Extensible messaging and presence protocol (XMPP) federation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-23_
 
 Certificate requirements for enabling and establishing communications with extensible messaging and presence protocol (XMPP) partners require the additional record of your XMPP domains. The record that is included on the certificate as a subject alternative name (SAN) will be the domain that can participate in XMPP communications. The domain can be the root-level domain (for example, contoso.com) if you want to enable XMPP for your entire domain, or can be selected child domains (for example, corp.contoso.com, finance.contoso.com) if you are enabling XMPP for a subset of users.
-
-<div>
 
 ## Certificate Summary for Extensible Messaging and Presence Protocol
 
@@ -62,10 +47,6 @@ Certificate requirements for enabling and establishing communications with exten
 </table>
 
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -76,19 +57,6 @@ Certificate requirements for enabling and establishing communications with exten
 
 
 [Set up Edge certificates for Lync Server 2013](lync-server-2013-set-up-edge-certificates.md)  
-[Request-CsCertificate](request-cscertificate.md)  
-[Set-CsCertificate](set-cscertificate.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Request-CsCertificate](https://technet.microsoft.com/en-us/library/gg425723\(v=ocs.15\))  
+[Set-CsCertificate](https://technet.microsoft.com/en-us/library/gg398518\(v=ocs.15\))
 

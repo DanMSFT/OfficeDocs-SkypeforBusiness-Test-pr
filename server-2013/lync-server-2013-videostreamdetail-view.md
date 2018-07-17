@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # VideoStreamDetail view in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-03_
 
 The VideoStreamDetail View stores information about each video stream in the database. This view was introduced in Microsoft Lync Server 2013.
 
@@ -270,7 +257,8 @@ The VideoStreamDetail View stores information about each video stream in the dat
 </tr>
 <tr class="even">
 <td><p>CalleeRelayIPAddr</p></td>
-<td><p>var(50)</p></td>
+<td><p>var(50)</p>
+<p></p></td>
 <td><p>IP Address key of the A/V Edge service used by the callee. See the <a href="lync-server-2013-ipaddress-table.md">IPAddress table in Lync Server 2013</a> for more information.</p></td>
 </tr>
 <tr class="odd">
@@ -460,15 +448,4 @@ The VideoStreamDetail View stores information about each video stream in the dat
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

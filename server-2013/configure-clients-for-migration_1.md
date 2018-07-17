@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure clients for migration
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-21_
 
 This topic contains the recommended client deployment steps you should take prior to migrating to Lync Server 2013. These configuration changes should be made on Office Communications Server 2007 R2. It is very important that you perform these steps prior to migrating. For details, see [Planning for clients and devices in Lync Server 2013](lync-server-2013-planning-for-clients-and-devices.md).
-
-<div>
 
 ## To configure clients prior to migration
 
@@ -76,17 +61,4 @@ This topic contains the recommended client deployment steps you should take prio
     </tr>
     </tbody>
     </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

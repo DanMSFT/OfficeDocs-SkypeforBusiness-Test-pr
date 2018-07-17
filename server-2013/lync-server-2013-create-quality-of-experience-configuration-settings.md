@@ -8,29 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create Quality of Experience configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Quality of Experience (QoE) metrics track the quality of audio and video calls made in your organization, including such things as the number of network packets lost, background noise, and the amount of "jitter" (differences in packet delay). These metrics are stored in a database apart from other data (such as call detail records), which allows you to enable and disable QoE independent of other data recording.
 
 When you install Microsoft Lync Server 2013, a single, global collection of QoE configuration settings is created for you. Administrators also have the option of creating custom settings at the site scope. Whenever these site-scoped settings are used, they take precedence over the global settings. For example, if you create site-scoped settings for the Redmond site then those settings (rather than the global settings) will be used to manage QoE in Redmond.
 
-QoE configuration settings can be created by using either Lync Server Control Panel or the [New-CsQoEConfiguration](new-csqoeconfiguration.md) cmdlet. If you are using Lync Server Control Panel to create new settings the following options will be available to you:
+QoE configuration settings can be created by using either Lync Server Control Panel or the [New-CsQoEConfiguration](https://technet.microsoft.com/en-us/library/gg398325\(v=ocs.15\)) cmdlet. If you are using Lync Server Control Panel to create new settings the following options will be available to you:
 
 
 <table>
@@ -71,17 +58,11 @@ QoE configuration settings can be created by using either Lync Server Control Pa
 </table>
 
 
-<div>
-
 
 > [!NOTE]
-> The New-CsQoEConfiguration cmdlet includes additional options not available in Lync Server Control Panel. For more information, see the <A href="new-csqoeconfiguration.md">New-CsQoEConfiguration</A> help topic.
+> The New-CsQoEConfiguration cmdlet includes additional options not available in Lync Server Control Panel. For more information, see the <A href="https://technet.microsoft.com/en-us/library/gg398325(v=ocs.15)">New-CsQoEConfiguration</A> help topic.
 
 
-
-</div>
-
-<div>
 
 ## To create QoE configuration settings by using Lync Server Control Panel
 
@@ -105,15 +86,9 @@ QoE configuration settings can be created by using either Lync Server Control Pa
 
 7.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Creating QoE Configuration Settings by Using Windows PowerShell Cmdlets
 
 You can create QoE configuration settings by using Windows PowerShell and the New-CsQoEConfiguration cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To create a new collection of QoE configuration settings
 
@@ -121,19 +96,11 @@ You can create QoE configuration settings by using Windows PowerShell and the Ne
     
         New-CsQoEConfiguration -Identity "site:Redmond"
 
-</div>
-
-<div>
-
 ## To create a new collection of QoE configuration settings where QoE monitoring is disabled
 
   - Because no parameters (other than the mandatory Identity parameter) were specified in the preceding command, the new collection of configuration settings will use the default values for all its properties. To create settings that use different property values, simply include the appropriate parameter and parameter value. For example, to create a collection of Quality of Experience configuration settings that, by default, allow disable QoE recording use a command like this:
     
         New-CsQoEConfiguration -Identity "site:Redmond" -EnableQoE $False
-
-</div>
-
-<div>
 
 ## To specify multiple property values when creating a new collection of QoE configuration settings
 
@@ -141,19 +108,5 @@ You can create QoE configuration settings by using Windows PowerShell and the Ne
     
         New-CsQoEConfiguration -Identity "site:Redmond" -KeepQoEDataForDays 30 -PurgeHourOfDay 3
 
-</div>
-
-For more information, see the help topic for the [New-CsQoEConfiguration](new-csqoeconfiguration.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [New-CsQoEConfiguration](https://technet.microsoft.com/en-us/library/gg398325\(v=ocs.15\)) cmdlet.
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Schema attributes and descriptions in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-06_
 
 This section describes all the schema attributes used by Lync Server 2013. For the classes associated with attributes, see [Schema attributes by class in Lync Server 2013](lync-server-2013-schema-attributes-by-class.md). For a list of classes and attributes that are new in Lync Server 2013, see [Schema changes in Lync Server 2013](lync-server-2013-schema-changes-in-lync-server-2013.md).
 
@@ -39,8 +26,6 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
   - 1100 (binary) has a decimal value of 12 (that is, bits 2 and 3 are set; properties represented by both bits are enabled).
 
   - 1111000001 (binary) has a decimal value of 961 (that is, bits 0, 6, 7, 8, and 9 are set; properties for each of these bits are enabled).
-
-<div id="sectionSection0" class="section">
 
 ### Schema Attributes for Lync Server 2013
 
@@ -328,13 +313,12 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
 <td><p>msRTCSIP-EnableBestEffortNotify (obsolete)</p></td>
 <td><p>This attribute controls whether a server generates a Best Effort NOTIFY (BENOTIFY) request, instead of a NOTIFY request, in response to a SUBSCRIBE request from a client. BENOTIFY is a performance-enhancing extension to the subscribe notification handshake where the server generates BENOTIFY requests, instead of regular NOTIFY requests. The performance benefit is that a BENOTIFY request does not require a 200 OK response from the client as the NOTIFY request does.</p>
 <p>The valid values are <strong>TRUE</strong> or <strong>FALSE</strong>.</p>
-<div>
 
 > [!NOTE]
 > Live Communications Server 2003 does not support BENOTIFY requests. To interoperate with server applications written with the Live Communications Server 2003 server API running on Live Communications Server 2005 and third-party servers, BENOTIFY requests can be disabled by setting its value to <STRONG>FALSE</STRONG>. BENOTIFY is not currently part of the IETF (Internet Engineering Task Force) SIP standardization process.
 
 
-</div></td>
+</td>
 <td><p>New in Live Communications Server 2005.</p>
 <p>Obsolete in Lync Server 2010.</p></td>
 </tr>
@@ -657,7 +641,8 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
 <tr class="even">
 <td><p>msRTCSIP-OwnerUrn</p></td>
 <td><p>This attribute is the Uniform Resource Name (URN) of the owner for an application contact.</p></td>
-<td><p>New in Lync Server 2010.</p></td>
+<td><p>New in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>msRTCSIP-Pattern (obsolete)</p></td>
@@ -846,7 +831,8 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
 <td><p>This multi-valued distinguished name (DN) attribute contains a list of route usage distinguished names.</p>
 <p>Forward link: <strong>Link ID 11032</strong></p>
 <p>This attribute is a forward link to the corresponding back link <strong>msRTCSIP-PhoneRouteBL</strong>.</p></td>
-<td><p>Obsolete in Lync Server 2010.</p></td>
+<td><p>Obsolete in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>msRTCSIP-RoutingPoolDN</p></td>
@@ -867,7 +853,8 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
 <tr class="even">
 <td><p>msRTCSIP-SearchMaxRequests (obsolete)</p></td>
 <td><p>This attribute limits the number of search results to be returned from a directory search when a user searches for a contact using Communicator. This attribute will override the value provided by the client.</p></td>
-<td><p>Obsolete in Lync Server 2010.</p></td>
+<td><p>Obsolete in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>msRTCSIP-SearchMaxResults (obsolete)</p></td>
@@ -941,17 +928,20 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
 <tr class="odd">
 <td><p>msRTCSIP-TargetPhoneNumber (obsolete)</p></td>
 <td><p>This single-valued string attribute contains a phone number pattern or range to route to the specified gateways defined in <strong>msRTCSIP-Gateways</strong>.</p></td>
-<td><p>Obsolete in Lync Server 2010.</p></td>
+<td><p>Obsolete in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="even">
 <td><p>msRTCSIP-TargetUserPolicies</p></td>
 <td><p>This attribute stores name-value pairs for target policies for Lync Server users.</p></td>
-<td><p>New in Lync Server 2010.</p></td>
+<td><p>New in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>msRTCSIP-TenantId</p></td>
 <td><p>This attribute stores the unique identifier for a tenant.</p></td>
-<td><p>New in Lync Server 2010.</p></td>
+<td><p>New in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="even">
 <td><p>msRTCSIP-Translation (obsolete)</p></td>
@@ -1050,12 +1040,14 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
 <li><p>4: UsePerUserUCPolicy (bit position 2)</p></li>
 </ul>
 <p>When this bit is set, the UC policy is defined per user.</p></td>
-<td><p>Obsolete in Lync Server 2010.</p></td>
+<td><p>Obsolete in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>msRTCSIP-UCPolicy (obsolete)</p></td>
 <td><p>This single-valued attribute contains the distinguished name (DN) of the UC policy that the administrator has assigned for this user.</p></td>
-<td><p>Obsolete in Lync Server 2010.</p></td>
+<td><p>Obsolete in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="even">
 <td><p>msRTCSIP-UserDomainList (obsolete)</p></td>
@@ -1082,7 +1074,8 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
 <tr class="even">
 <td><p>msRTCSIP-UserPolicies</p></td>
 <td><p>This attribute stores name-value pairs for user policies.</p></td>
-<td><p>New in Lync Server 2010.</p></td>
+<td><p>New in Lync Server 2010.</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>msRTCSIP-UserPolicy</p></td>
@@ -1152,17 +1145,4 @@ Some attributes have a bit-mask value. For these attributes, each setting is rep
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

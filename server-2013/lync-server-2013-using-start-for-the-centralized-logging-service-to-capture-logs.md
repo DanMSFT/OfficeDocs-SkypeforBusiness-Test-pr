@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using Start for the Centralized Logging Service to capture logs in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 To capture trace logs using the Centralized Logging Service, you issue a command to begin logging on one or more computers and pools. You also issue parameters that define which computers or pools, what scenarios to run (for example, AlwaysOn, another predefined scenario, or a scenario you have created), what Lync Server components (for example, S4, SipStack) to trace.
 
@@ -34,17 +21,11 @@ The default scenario is called **AlwaysOn**. The intended purpose for AlwaysOn i
 
 The Centralized Logging Service provides two ways to issue commands. A number of topics have been focused squarely on using Windows PowerShell through the Lync Server Management Shell. The ability to use a number of complex configurations and commands favors Windows PowerShell for Centralized Logging Service use. Because Windows PowerShell through the Lync Server Management Shell is nearly ubiquitous for all functions in Lync Server, only the Windows PowerShell commands are discussed.
 
-<div>
-
 
 > [!NOTE]
 > If you decide to use the limited command set available from the command line, you can get help with CLSController.exe by typing <CODE>ClsController.exe</CODE>. By default, <STRONG>ClsController.exe</STRONG> is installed in the directory C:\Program Files\Microsoft Lync Server 2013\ClsAgent.
 
 
-
-</div>
-
-<div>
 
 ## To run Start-CsClsLogging with Windows PowerShell using basic commands
 
@@ -58,25 +39,18 @@ The Centralized Logging Service provides two ways to issue commands. A number of
     
         Start-CsClsLogging -Scenario AlwaysOn
     
-    <div>
-    
 
     > [!NOTE]
-    > The AlwaysOn scenario has no default duration. This scenario will run until you explicitly stop it with the <STRONG>Stop-CsClsLogging</STRONG> cmdlet. For details, see <A href="stop-csclslogging.md">Stop-CsClsLogging</A>. For all other scenarios, the default duration is 4 hours.
+    > The AlwaysOn scenario has no default duration. This scenario will run until you explicitly stop it with the <STRONG>Stop-CsClsLogging</STRONG> cmdlet. For details, see <A href="https://technet.microsoft.com/en-us/library/jj619180(v=ocs.15)">Stop-CsClsLogging</A>. For all other scenarios, the default duration is 4 hours.
 
-    
-    </div>
+
 
 3.  Press Enter to run the command.
-    
-    <div>
     
 
     > [!NOTE]
     > It may take a short amount of time (30 to 60 seconds) for the commands to run and to receive the status back from the computers in your deployment.
 
-    
-    </div>
     
     ![Running Start-CsClsLogging.](images/JJ687958.c5be7413-8cef-4de7-9712-944d20cc2fa4(OCS.15).jpg "Running Start-CsClsLogging.")
 
@@ -84,18 +58,11 @@ The Centralized Logging Service provides two ways to issue commands. A number of
     
         Start-CsClsLogging -Scenario Authentication
     
-    <div>
-    
 
     > [!IMPORTANT]
-    > You can have a total of two scenarios running on any given computer at any time. If the command is global in scope, all of the computers in your deployment will run the scenario or scenarios. To start a third scenario, you must stop logging on the computer, pool, site, or global scope that you want to run the new scenario on. If you have started a global scope, you can stop logging for one or both of the scenarios on one or more computers and pools. For details about managing which scenarios are running, see <A href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">Using Stop for the Centralized Logging Service in Lync Server 2013</A> and <A href="stop-csclslogging.md">Stop-CsClsLogging</A>.
+    > You can have a total of two scenarios running on any given computer at any time. If the command is global in scope, all of the computers in your deployment will run the scenario or scenarios. To start a third scenario, you must stop logging on the computer, pool, site, or global scope that you want to run the new scenario on. If you have started a global scope, you can stop logging for one or both of the scenarios on one or more computers and pools. For details about managing which scenarios are running, see <A href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">Using Stop for the Centralized Logging Service in Lync Server 2013</A> and <A href="https://technet.microsoft.com/en-us/library/jj619180(v=ocs.15)">Stop-CsClsLogging</A>.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To run Start-CsClsLogging with Windows PowerShell using advanced commands
 
@@ -113,25 +80,8 @@ The Centralized Logging Service provides two ways to issue commands. A number of
     
     Note that in this example, the AlwaysOn scenario is running and the UserReplicator scenario is running.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Overview of the Centralized Logging Service in Lync Server 2013](lync-server-2013-overview-of-the-centralized-logging-service.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Overview of the Centralized Logging Service in Lync Server 2013](lync-server-2013-overview-of-the-centralized-logging-service.md)
 

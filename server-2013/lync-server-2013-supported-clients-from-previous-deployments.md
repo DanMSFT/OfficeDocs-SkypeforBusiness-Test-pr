@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Supported clients from previous deployments in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-14_
 
 In a coexistence scenario, Lync Server 2013 clients can interact with clients from earlier versions of Lync Server and Office Communications Server. Unlike previous releases, Lync Server 2010 supports the new Lync 2013 clients. This allows organizations who are upgrading from Lync Server 2010 to roll out new clients independent of Lync Server upgrades.
-
-<div>
 
 ## Supported Server and Client Combinations
 
@@ -127,25 +112,8 @@ The following table shows the supported combinations of client versions and serv
 
 3The presence and IM features in Office Communicator 2007 R2 are compatible with Lync Server 2013, but conferencing features are not. During migration from Office Communications Server 2007 R2, Office Communicator 2007 R2 is suitable for presence and IM interoperability, but users should use Lync Web App 2013 to join Lync Server 2013 meetings.
 
-<div>
-
 
 > [!NOTE]
 > For details about the ability of Lync Server 2013 clients to coexist and interact with clients from earlier versions of Lync Server and Office Communications Server, see <A href="lync-server-2013-client-interoperability-in-lync-2013.md">Client interoperability in Lync 2013</A> in the Planning documentation.
 
-
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

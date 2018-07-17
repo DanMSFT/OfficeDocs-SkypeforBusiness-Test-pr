@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enforce phone locking in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Lync Phone Edition devices can be locked for security purposes. If you enforce phone lock, the device running Lync Phone Edition locks after a period of time that you configure. When a phone is locked, a user can make calls but cannot access calendar and contact information, voice mail, or call logs or use search. To unlock the phone, the user enters a PIN.
 
 To enforce phone lock, enable and configure it by using Lync Server Control Panel or Lync Server PowerShell cmdlets. You can enforce phone lock globally or only within the site for which it is configured.
-
-<div>
 
 ## To configure and enforce the phone lock
 
@@ -50,15 +35,9 @@ To enforce phone lock, enable and configure it by using Lync Server Control Pane
 
 8.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Enforcing Phone Locking by Using Windows PowerShell Cmdlets
 
 Phone locking can be enforced by using the Set-CsUCPhoneConfiguration cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To enable phone locking
 
@@ -66,19 +45,11 @@ Phone locking can be enforced by using the Set-CsUCPhoneConfiguration cmdlet. Th
     
         Set-CsUCPhoneConfiguration -Identity" site:Redmond" -EnforcePhoneLock $True
 
-</div>
-
-<div>
-
 ## To enable phone locking and modify the phone lock timeout
 
   - This command enables phone locking and also sets the phone lock timeout to 30 minutes.
     
         Set-CsUCPhoneConfiguration -Identity" site:Redmond" -EnforcePhoneLock $True -PhoneLockTimeout "00:30:00"
-
-</div>
-
-<div>
 
 ## To enable phone locking throughout the organization
 
@@ -86,13 +57,7 @@ Phone locking can be enforced by using the Set-CsUCPhoneConfiguration cmdlet. Th
     
         Get-CsUCPhoneConfiguration | Set-CsUCPhoneConfiguration  -EnforcePhoneLock $True
 
-</div>
-
-For more information, see the help topic for the [Set-CsUCPhoneConfiguration](set-csucphoneconfiguration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Set-CsUCPhoneConfiguration](https://technet.microsoft.com/en-us/library/gg413042\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
@@ -100,18 +65,5 @@ For more information, see the help topic for the [Set-CsUCPhoneConfiguration](se
 [Managing Lync Server 2013 authentication](lync-server-2013-managing-lync-server-authentication.md)  
 
 
-[Managing devices, phones, and client applications in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing devices, phones, and client applications in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)
 

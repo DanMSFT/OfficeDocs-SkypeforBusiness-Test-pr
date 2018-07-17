@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Coexistence considerations
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-06_
 
 After migration, only a Lync Server 2013, Persistent Chat Server pool will exist, and you can decommission your legacy deployment.
 
@@ -41,14 +28,4 @@ These deployments can exist side by side. However the categories, rooms, and add
 Using manual configuration, a legacy client (Group Chat client) can connect to one pool at a time for Office Communications Server 2007 R2, Lync Server 2010, Group Chat, or Lync Server 2013.
 
 The Lync 2013 (client) can interact only with the Lync Server 2013, Persistent Chat Server pool, not with legacy Group Chat Server pools. To use Persistent Chat in a Lync 2013 (client), the user must be homed on Lync 2013 and enabled by policy.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

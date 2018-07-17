@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Navigating the Planning Tool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 You navigate the Microsoft Lync Server 2013, Planning Tool by using a combination of a toolbar, page-specific buttons and links, and context-specific panes. The context-specific panes provide design information for planning and capacity that is relevant to the selection options on a specific page.
 
@@ -48,8 +35,6 @@ Additionally, hardware information is displayed in the overview under the Action
 
 ![Planning Tool Actions Pane](images/Gg558601.9679d8fd-4de8-4a5a-bfcf-699da9aa7283(OCS.15).jpg "Planning Tool Actions Pane")
 
-<div>
-
 ## See Also
 
 
@@ -59,18 +44,5 @@ Additionally, hardware information is displayed in the overview under the Action
 [Editing the design in Lync Server 2013](lync-server-2013-editing-the-design.md)  
 
 
-[Reviewing the Administrator Reports in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Reviewing the Administrator Reports in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)
 

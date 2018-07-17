@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # ConferenceUris table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-05-25_
 
 The ConfereneUris table is a supporting table that stores a list of the various conference URIs that have participated in conference sessions recorded in the database. Each record in the table represents one conference URI.
 
@@ -60,13 +47,13 @@ The ConfereneUris table is a supporting table that stores a list of the various 
 <tr class="odd">
 <td><p><strong>ConferenceUri</strong></p></td>
 <td><p>nvarchar(450)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Conference URI.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Checksum</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Checksum of ConferenceUri. Used to increases the speed of database searches.</p></td>
 </tr>
 <tr class="odd">
@@ -77,15 +64,4 @@ The ConfereneUris table is a supporting table that stores a list of the various 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

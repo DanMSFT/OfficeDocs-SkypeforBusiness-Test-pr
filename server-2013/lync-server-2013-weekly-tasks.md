@@ -8,27 +8,12 @@ ms.date: 08/20/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Weekly tasks in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-08-17_
 
 Weekly tasks are generally related to collecting and analyzing logs and reports.
-
-<div>
 
 ## Archive event logs
 
@@ -36,19 +21,11 @@ If event logs are not configured to overwrite events as required, they must be r
 
 Your organization will have to define policies and procedures for log archiving.
 
-</div>
-
-<div>
-
 ## Create reports
 
 Create status reports to help with capacity planning, SLA reviews, and performance analysis. Use daily data from event log and System Monitor to create reports on disk, memory, and CPU usage. Use System Center Operations Manager to generate uptime and availability reports.
 
 Your organization will have to define policies and procedures for status reports.
-
-</div>
-
-<div>
 
 ## Incident reports
 
@@ -64,10 +41,6 @@ Perform a weekly audit of your organization’s incident reports that relate to 
 
 Since your organization’s incident tracking system is a choice independent of Lync Server, specific instructions or pointers are not available. Consult the documentation for the system your organization chose.
 
-</div>
-
-<div>
-
 ## Check IIS logs and performance
 
 Perform a weekly review of Internet Information Services (IIS) logs and performance. For more information about how to monitor IIS logs and performance, see [Windows Server 2003 Internet Information Services (IIS) Event Logging Overview](http://go.microsoft.com/fwlink/?linkid=36077). The review should include the following:
@@ -75,10 +48,6 @@ Perform a weekly review of Internet Information Services (IIS) logs and performa
   - Web Service Cache counters to monitor the WWW service cache.
 
   - Active Server Pages (ASPs) counters to monitor applications that run as ASPs.
-
-</div>
-
-<div>
 
 ## Generate database reports
 
@@ -100,17 +69,9 @@ Perform a weekly review of Internet Information Services (IIS) logs and performa
 
 To retrieve current conference summary statistics for the pool, expand **Conference Summary Reports**, click **Go**, and view the results.
 
-</div>
-
-<div>
-
 ## Check for security and Lync Server updates
 
 Identify any new service packs, hotfixes, or updates. If appropriate, test these in a test lab, and use the change control procedures to arrange for deployment to the production servers. Also, Lync Server component updates are now available as part of Windows update. All Lync Server component updates must be updated at the same time on all of the servers that are running Lync Server for which the updates are applicable.
-
-</div>
-
-<div>
 
 ## Run the Lync Server 2013 Best Practice Analyzer
 
@@ -136,25 +97,13 @@ With the correct network access, the tool can examine your AD DS and servers th
 
 Ensure that the RTCBPA.msi is installed on all Lync Server 2013 servers, and generate a weekly Health Check Report. Note the results and correct, if necessary.
 
-</div>
-
-<div>
-
 ## Review SLA performance figures
 
 Check the key performance data for the previous week. Review performance against the requirements of the SLA. Identify trends and items that have not met their targets.
 
-</div>
-
-<div>
-
 ## Review System Center Operations Manager Management Pack and quality of experience reports
 
 Obtain and review Lync Server 2013 Management Pack and Quality of Experience reports.
-
-</div>
-
-<div>
 
 ## Generating and viewing database reports for enterprise pools
 
@@ -217,10 +166,6 @@ For each Enterprise Pool, administrators can use the **Database** tab to view th
 </table>
 
 
-</div>
-
-<div>
-
 ## Running Bandwidth Utilization Analyzer
 
 Bandwidth Utilization Analyzer is a tool that creates reports about various views of bandwidth consumption by the UC endpoints across WAN links in the enterprise network. These reports can be used to understand the current bandwidth consumption pattern and to help with bandwidth capacity planning. It also iterates on the bandwidth capacity that is assigned to various links.
@@ -249,25 +194,8 @@ Bandwidth Utilization Analyzer can generate graphical plots of bandwidth capacit
 
 Documentation for this tool is available at [Lync Server 2013 Resource Kit Tools Documentation](http://go.microsoft.com/fwlink/?linkid=623245).
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Weekly task checklist](lync-server-2013-operations-checklists.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Weekly task checklist](lync-server-2013-operations-checklists.md)
 

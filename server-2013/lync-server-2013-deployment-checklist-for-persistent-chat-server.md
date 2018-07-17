@@ -8,35 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment checklist for Persistent Chat Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-16_
 
 Deployment of Lync Server 2013, Persistent Chat Server requires that you deploy it in the correct sequence and that you complete all required deployment steps.
-
-<div>
 
 ## Deployment Sequence
 
 You can deploy Persistent Chat Server after you deploy your initial topology, including at least one Lync Server 2013, Front End pool or one Lync Server 2013, Standard Edition server. This topic describes how to deploy Persistent Chat Server by adding it to an existing deployment.
-
-</div>
-
-<div>
 
 ## Deployment Process
 
@@ -133,25 +114,8 @@ The following table lists the basic steps to deploy Persistent Chat Server and p
 </table>
 
 
-<div>
-
 
 > [!IMPORTANT]
 > You can deploy one or more Persistent Chat Server pools. We support multiple Persistent Chat Server pools for regulatory reasons whereby data generated in a given region is required to stay in that region. For example, if you deploy a Persistent Chat Server pool in Chicago, and another in Zurich to comply with regulations for data in Switzerland, users can connect to rooms in both the Persistent Chat Server pools, provided they have access.
 
-
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

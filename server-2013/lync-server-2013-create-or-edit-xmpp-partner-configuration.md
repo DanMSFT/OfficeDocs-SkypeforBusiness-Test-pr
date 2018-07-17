@@ -8,27 +8,12 @@ ms.date: 09/03/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or edit XMPP partner configuration in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-09-03_
 
 Microsoft Lync Server 2013 integrates an Extensible Messaging and Presence Protocol (XMPP) proxy on the Edge Server and an XMPP Gateway on the Front End Server or Front End pool. To allow connections from other XMPP deployments, you must configure XMPP in the Lync Server Control Panel. You configure settings on an XMPP domain basis. To create a new partner association, you do the following:
-
-<div>
 
 ## To create a new federated partner or edit an existing configuration
 
@@ -68,54 +53,38 @@ Microsoft Lync Server 2013 integrates an Extensible Messaging and Presence Proto
     
       - **TLS Negotiation**. Defines the TLS negotiation rules. An XMPP service can require TLS, can make TLS optional, or you define that TLS is not supported. Choosing Optional leaves the requirement up to the XMPP service for a mandatory-to-negotiate decision. To view all possible settings and details for SASL, TLS and Dialback negotiation –including not valid and known error configurations - see [Negotiation settings for XMPP federated partners in Lync Server 2013](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md).
         
-          - <span></span>  
+          -  
             **Required**. The XMPP service requires TLS negotiation.
         
-          - <span></span>  
+          -  
             **Optional**. The XMPP service indicates that TLS is mandatory-to-negotiate.
         
-          - <span></span>  
+          -  
             **Not Supported**. The XMPP service does not support TLS.
     
       - **SASL negotiation**. Defines the SASL negotiation rules. An XMPP service can require SASL, can make SASL optional, or you define that SASL is not supported. Choosing Optional leaves the requirement up to the partner XMPP service for a mandatory-to-negotiate decision.
-        
-        <div>
         
 
         > [!WARNING]
         > SASL requires TLS. To use SASL, TLS must either be required or optional. Any configuration that defines SASL as either required or optional must have TLS support. When clicking <STRONG>Commit</STRONG> to save your changes, if you have not set TLS to required or optional, you will be warned that SASL must have TLS support and your changes are not saved. To resolve the error, set TLS to <STRONG>Required</STRONG> or <STRONG>Optional</STRONG>. If use of SASL is optional and TLS negotiation support is not possible, you must set SASL negotiation to <STRONG>Not Supported</STRONG>. Confirm with the XMPP service what the proper negotiation streams must be for TLS and SASL or service interruption will occur.
 
         
-        </div>
-        
-          - <span></span>  
+          -  
             **Required**. The XMPP service requires SASL negotiation.
         
-          - <span></span>  
+          -  
             **Optional**. The XMPP service indicates that SASL is mandatory-to-negotiate.
         
-          - <span></span>  
+          -  
             **Not Supported**. The XMPP service does not support SASL.
     
       - **Dialback negotiation**. Dialback negotiation is defined by the XSF in document **XEP-220 : Server Dialback** <http://xmpp.org/extensions/xep-0220.html>. The server dialback process uses the domain name system (DNS) and an authoritative server to verify that the request came from a valid XMPP partner. To do this, the originating server creates a message of a specific type with a generated dialback key and looks up the receiving server in DNS. The originating server sends the key in an XML stream to the resulting DNS lookup, presumably the receiving server. On receipt of the key over the XML stream, the receiving server does not respond to the originating server, but sends the key to a known authoritative server. The authoritative server verifies that the key is either valid or not valid. If not valid, the receiving server does not respond to the originating server. If the key is valid, the receiving server informs the originating server that the identity and key is valid and the conversation can commence.
         
         There are two valid states for **Dialback negotiation**:
         
-          - <span></span>  
+          -  
             **True**. The XMPP server is configured to use Dialback negotiation if a request should be received from an originating server
         
-          - <span></span>  
+          -  
             **False**. The XMPP server is not configured to use Dialback negotiation and if a request should be received from an originating server, it will be ignored
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

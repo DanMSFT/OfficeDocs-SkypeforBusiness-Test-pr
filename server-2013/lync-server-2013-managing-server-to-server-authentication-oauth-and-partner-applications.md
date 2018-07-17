@@ -8,23 +8,10 @@ ms.date: 05/15/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Managing server-to-server authentication (OAuth) and partner applications in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-05-14_
 
 Microsoft Lync Server 2013 must be able to securely, and seamlessly, communicate with other applications and server products. For example, you can configure Lync Server 2013 so that contact data and/or archiving data is stored in Microsoft Exchange Server 2013; however, this can only be done if Lync Server and Exchange are able to securely communicate with one another. Likewise, you can schedule a Lync Server conference from within Microsoft SharePoint Server; again, however, this can only be done if the two servers (SharePoint and Lync Server) trust one another. Although it's possible to use one authentication mechanism for Lync-to-Exchange communication and a separate mechanism for Lync-to-SharePoint communication, a better and more efficient approach is to use a standardized method for all server-to-server authentication and authorization.
 
@@ -32,15 +19,11 @@ Using a single, standardized method for server-to-server authentication is the a
 
 OAuth authentication typically involves three parties: a single authorization server and the two realms that need to communicate with one another. (You can also do server-to-server authentication without using an authorization server, a process that will be discussed later in this document.) Security tokens are issued by the authorization server (also known as a security token server) to the two realms that need to communicate; these tokens verify that communications originating from one realm should be trusted by the other realm. For example, the authorization server might issue tokens that verify that users from a specific Lync Server 2013 realm are able to access a specified Exchange 2013 realm, and vice-versa.
 
-<div>
-
 
 > [!NOTE]
 > A realm is simply a security container. By default, Lync Server 2013 uses your default SIP domain as its OAuth realm. Additional SIP namespaces are added to the Subject Alternate Name list in the OAuth certificate.
 
 
-
-</div>
 
 Lync Server 2013 supports three server-to-server authentication scenarios. With Lync Server 2013 you can:
 
@@ -66,36 +49,17 @@ In order to configure server-to-server authentication for an on-premises impleme
 
   - Configure the server that Lync Server 2013 will communicate with to be a "partner application." For example, if Lync Server 2013 needs to communicate with Exchange 2013 then you will need to configure Exchange to be a partner application.
 
-<div>
-
 
 > [!NOTE]
 > A "partner application" is any application that Lync Server 2013 can directly exchange security tokens with, without having to go through a third-party security token server.
 
 
 
-</div>
-
 Note that OAuth is a core part of the product and cannot be disabled or removed.
-
-<div>
 
 ## See Also
 
 
 [Assigning a server-to-server authentication certificate to Microsoft Lync Server 2013](lync-server-2013-assigning-a-server-to-server-authentication-certificate-to-lync-server-2013.md)  
-[Configuring Microsoft Lync Server 2013 in a cross-premises environment](lync-server-2013-configuring-lync-server-in-a-cross-premises-environment.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring Microsoft Lync Server 2013 in a cross-premises environment](lync-server-2013-configuring-lync-server-in-a-cross-premises-environment.md)
 

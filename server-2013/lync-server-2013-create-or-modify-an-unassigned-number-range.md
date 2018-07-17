@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify an unassigned number range in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Use one of the following procedures to configure unassigned number ranges for the Announcement application.
-
-<div>
 
 
 > [!IMPORTANT]
 > Before you configure the unassigned number table, you must have already defined one or more announcements or set up an Exchange Unified Messaging (UM) Auto Attendant.
 
 
-
-</div>
-
-<div>
 
 ## To use Lync Server Control Panel to configure unassigned phone numbers
 
@@ -52,20 +33,14 @@ Use one of the following procedures to configure unassigned number ranges for th
     
       - To create a new number range, click **New**. In **Name**, type an identifying name for this range of numbers.
         
-        <div>
-        
 
         > [!NOTE]
         > After you commit the new unassigned number range to the database, you cannot change this name.
 
-        
-        </div>
     
       - To modify an existing number range, type all or part of the name of the number range in the search field. In the resulting list of number ranges, click the name you want, click **Edit**, and then click **Show details**.
 
 5.  In the first **Number range** field, type the beginning number of the range, and in the second **Number range** field, type the ending number of the range.
-    
-    <div>
     
 
     > [!NOTE]
@@ -77,8 +52,7 @@ Use one of the following procedures to configure unassigned number ranges for th
     > <LI>
     > <P>The number must match the regular expression (tel:)?(\+)?[1-9]\d{0,17}(;ext=[1-9]\d{0,9})?. This means the number may begin with the string tel: (if you don’t specify that string, it will be automatically added for you), a plus sign (+), and a digit 1 through 9. The phone number can be up to 17 digits and may be followed by an extension in the format ;ext= followed by the extension number.</P></LI></UL>
 
-    
-    </div>
+
 
 6.  In **Announcement service**, do one of the following:
     
@@ -98,20 +72,13 @@ Use one of the following procedures to configure unassigned number ranges for th
 
 10. On the **Unassigned Number** page, be sure that the unassigned number ranges are arranged in the order that you want. To change a range's position in the table, click one or more consecutive names in the list of ranges, and then click the up arrow or the down arrow.
     
-    <div>
-    
 
     > [!TIP]
     > Lync Server searches the unassigned number table from top to bottom and uses the first range that matches the unassigned number. If you have overlapping ranges and one range specifies a last resort action, make sure that range is at the bottom of the list.
 
-    
-    </div>
+
 
 11. When you have the unassigned number ranges in the order that you want, click **Commit all**.
-
-</div>
-
-<div>
 
 ## To use Windows PowerShell to configure unassigned phone numbers
 
@@ -121,14 +88,10 @@ Use one of the following procedures to configure unassigned number ranges for th
 
 3.  Use **New-CsUnassignedNumber** to create a new unassigned number range. Use **Set-CsUnassignedNumber** to modify an existing unassigned number range.
     
-    <div>
-    
 
     > [!TIP]
     > If you have overlapping ranges and want the ranges to be applied in a specific order, include the Priority parameter. The range with the highest priority will be applied to the call.
 
-    
-    </div>
     
     At the command line, do one of the following:
     
@@ -152,30 +115,13 @@ Use one of the following procedures to configure unassigned number ranges for th
     
         Set-CsUnassignedNumber -Identity "Unassigned range 1" -NumberRangeStart "+14255551000" -NumberRangeEnd "+14255551900"
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Delete an unassigned number range in Lync Server 2013](lync-server-2013-delete-an-unassigned-number-range.md)  
 
 
-[New-CsUnassignedNumber](new-csunassignednumber.md)  
-[Set-CsUnassignedNumber](set-csunassignednumber.md)  
-[Get-CsUnassignedNumber](get-csunassignednumber.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/gg398651\(v=ocs.15\))  
+[Set-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/gg399033\(v=ocs.15\))  
+[Get-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/gg412792\(v=ocs.15\))
 

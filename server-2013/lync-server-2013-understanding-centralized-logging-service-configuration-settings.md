@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Understanding Centralized Logging Service configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 The Centralized Logging Service is configured to define what the logging service is intended to collect, how it collects, where it will collect from, and what the log settings are. You define these settings globally (that is, for the entire deployment) or for a site (that is, a named site in your deployment). Any logging that you define will use the settings that are appropriate for the identity that you use for commands to start, stop, flush, and search logs.
-
-<div>
 
 ## To display the current Centralized Logging Service configuration
 
@@ -38,14 +23,10 @@ The Centralized Logging Service is configured to define what the logging service
     
         Get-CsClsConfiguration
     
-    <div>
-    
 
     > [!TIP]
     > You can narrow or expand the scope of the configuration settings that are returned by defining <CODE>-Identity</CODE> and a scope, such as "Site:Redmond" to return only the CsClsConfiguration for the site Redmond. If you want details about a given portion of the configuration, you can pipe the output into another Windows PowerShell cmdlet. For example, to get details about the scenarios defined in the configuration for site "Redmond", type: <CODE>Get-CsClsConfiguration -Identity "site:Redmond" | Select-Object -ExpandPropery Scenarios</CODE>
 
-    
-    </div>
     
     ![Sample output from Get-CsClsConfiguration.](images/JJ688029.23f98ddc-fc48-499a-b6c5-752611f2a0b0(OCS.15).jpg "Sample output from Get-CsClsConfiguration.")
     
@@ -132,31 +113,14 @@ The Centralized Logging Service is configured to define what the logging service
     </table>
 
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Overview of the Centralized Logging Service in Lync Server 2013](lync-server-2013-overview-of-the-centralized-logging-service.md)  
 
 
-[Set-CsClsConfiguration](set-csclsconfiguration.md)  
-[Remove-CsClsConfiguration](remove-csclsconfiguration.md)  
-[New-CsClsConfiguration](new-csclsconfiguration.md)  
-[Get-CsClsConfiguration](get-csclsconfiguration.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Set-CsClsConfiguration](https://technet.microsoft.com/en-us/library/jj619182\(v=ocs.15\))  
+[Remove-CsClsConfiguration](https://technet.microsoft.com/en-us/library/jj619191\(v=ocs.15\))  
+[New-CsClsConfiguration](https://technet.microsoft.com/en-us/library/jj619177\(v=ocs.15\))  
+[Get-CsClsConfiguration](https://technet.microsoft.com/en-us/library/jj619179\(v=ocs.15\))
 

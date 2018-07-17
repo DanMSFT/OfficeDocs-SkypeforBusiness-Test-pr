@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Response Group Call List Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 The Response Group application provides a way for Microsoft Lync Server 2013 to answer and route phone calls based on the number that was dialed and, optionally, on the caller's responses to a series of questions. Typically, Response Group calls are not routed to an individual person but, instead, are routed to a team of people referred to as an agent group. For example, if someone calls the phone number for your help desk, Lync Server 2013 can automatically route that call to the first available help desk agent. Alternatively, Lync Server could ask a series of questions ("Press 1 if you are having hardware problems. Press 2 if you are having software problems. Press 3 if you are having network problems.") and then route the call to the most appropriate help desk agent based on the answer to those questions.
 
@@ -42,8 +29,6 @@ The Response Group Call List Report represents a collection of calls made for a 
 
   - **Transferred calls**. Total number of Response Group calls that were transferred because of a queue timeout or queue overflow.
 
-<div>
-
 ## Accessing the Response Group Call List Report
 
 The Response Group Call List Report can only be accessed by clicking one of the following metrics found on the [Response Group Usage Report in Lync Server 2013](lync-server-2013-response-group-usage-report.md):
@@ -57,10 +42,6 @@ The Response Group Call List Report can only be accessed by clicking one of the 
   - Answered calls
 
   - Transferred calls
-
-</div>
-
-<div>
 
 ## Making the Best Use of the Response Group Call List Report
 
@@ -90,10 +71,6 @@ That will information similar to this:
        31    North America Customer Support
        16    EMEA Customer Support
        14    Employment Opportunities
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -153,10 +130,6 @@ Filters provide a way for you to return a more finely-targeted set of data or to
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics
 
 The following table lists the information provided in the Response Group Call List Report for each call received by the Response Group application.
@@ -209,17 +182,4 @@ The following table lists the information provided in the Response Group Call Li
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # VideoClientEvent table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 Each record contains client event for one endpoint in a video call. Usually, one call has two records, one for caller and one for callee.
 
@@ -72,28 +59,17 @@ Each record contains client event for one endpoint in a video call. Usually, one
 </tr>
 <tr class="odd">
 <td><p><strong>NetworkBandwidthLowEventRatio</strong></p></td>
-<td></td>
+<td><p></p></td>
 <td><p> </p></td>
 <td><p>Percentage of session the LowBandwidth event was fired for ‘Bad’ state. The available bandwidth is insufficient for an acceptable voice experience.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NetworkReceiveQualityEventRatio</strong></p></td>
-<td></td>
+<td><p></p></td>
 <td><p> </p></td>
 <td><p>Percentage of session the ReceiveSendQuality event was fired for ‘Bad’ state.</p>
 <p>Network quality in terms of jitter or packet loss is severe and impacts the quality of audio being received.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

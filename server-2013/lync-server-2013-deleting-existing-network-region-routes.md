@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deleting existing network region routes in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Every region within a call admission control (CAC) configuration must have some way to access every other region. While region links set bandwidth limitations on the connections between regions and also represent the physical links, a route determines which linked path the connection will traverse from one region to another. You can use Lync Server Control Panel to configure network region routes. From Lync Server Control Panel, you can create, modify, or delete a network region route. Use this topic to delete existing network region routes. For details about creating or modifying network region routes, see [Creating or modifying network region routes in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md).
-
-<div>
 
 ## To delete a network region route
 
@@ -40,22 +25,15 @@ Every region within a call admission control (CAC) configuration must have some 
 
 4.  On the **Region Route** page, click the region route that you want to delete.
     
-    <div>
-    
 
     > [!NOTE]
     > You can delete more than one region route at a time. To do this, press CTRL and select multiple region routes while holding down the CTRL key. Or, to select all region routes, click <STRONG>Select all</STRONG> on the <STRONG>Edit</STRONG> menu.
 
-    
-    </div>
+
 
 5.  On the **Edit** menu, click **Delete**.
 
 6.  Click **OK**.
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -66,21 +44,8 @@ Every region within a call admission control (CAC) configuration must have some 
 [Configure a Network Region Route](https://technet.microsoft.com/en-us/library/gg133706\(v=ocs.15\))  
 
 
-[New-CsNetworkInterRegionRoute](new-csnetworkinterregionroute.md)  
-[Set-CsNetworkInterRegionRoute](set-csnetworkinterregionroute.md)  
-[Remove-CsNetworkInterRegionRoute](remove-csnetworkinterregionroute.md)  
-[Get-CsNetworkInterRegionRoute](get-csnetworkinterregionroute.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg398779\(v=ocs.15\))  
+[Set-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg398410\(v=ocs.15\))  
+[Remove-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg398743\(v=ocs.15\))  
+[Get-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg425817\(v=ocs.15\))
 

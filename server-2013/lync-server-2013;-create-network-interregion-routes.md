@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create network interregion routes in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-20_
 
 A *network interregion route* defines the route between a pair of network regions. Each pair of network regions in your call admission control deployment requires a network interregion route. This enables every network region within the deployment to access every other region.
 
@@ -32,17 +19,15 @@ While region links set bandwidth limitations on the connections between regions,
 
 For details about working with network interregion routes, see the Lync Server Management Shell documentation for the following cmdlets:
 
-  - [New-CsNetworkInterRegionRoute](new-csnetworkinterregionroute.md)
+  - [New-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg398779\(v=ocs.15\))
 
-  - [Get-CsNetworkInterRegionRoute](get-csnetworkinterregionroute.md)
+  - [Get-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg425817\(v=ocs.15\))
 
-  - [Set-CsNetworkInterRegionRoute](set-csnetworkinterregionroute.md)
+  - [Set-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg398410\(v=ocs.15\))
 
-  - [Remove-CsNetworkInterRegionRoute](remove-csnetworkinterregionroute.md)
+  - [Remove-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg398743\(v=ocs.15\))
 
 In the example topology, network interregion routes must be defined for each of the three region pairs: North America/EMEA, EMEA/APAC, and North America/APAC.
-
-<div>
 
 ## To create network interregion routes by using Lync Server Management Shell
 
@@ -50,30 +35,17 @@ In the example topology, network interregion routes must be defined for each of 
 
 2.  Run the **New-CsNetworkInterRegionRoute** cmdlet to define the required routes. For example, run:
     
-       ```
         New-CsNetworkInterRegionRoute -Identity NorthAmerica_EMEA_Route -NetworkRegionID1 NorthAmerica -NetworkRegionID2 EMEA -NetworkRegionLinkIDs "NA-EMEA-LINK"
-       ```
     
-       ```
         New-CsNetworkInterRegionRoute -Identity NorthAmerica_APAC_Route -NetworkRegionID1 NorthAmerica -NetworkRegionID2 APAC -NetworkRegionLinkIDs "NA-EMEA-LINK, EMEA-APAC-LINK"
-       ```
     
-       ```
         New-CsNetworkInterRegionRoute -Identity EMEA_APAC_Route -NetworkRegionID1 EMEA -NetworkRegionID2 APAC -NetworkRegionLinkIDs "EMEA-APAC-LINK"
-       ```
-    
-    <div class=" ">
     
 
     > [!NOTE]
     > The North America/APAC network interregion route requires two network region links because there is no direct network region link between them.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To create network interregion routes by using Lync Server Control Panel
 
@@ -93,28 +65,13 @@ In the example topology, network interregion routes must be defined for each of 
 
 8.  Click **Add** beside the **Network Region Links** field, and then add a network region link that will be used in the network interregion route.
     
-    <div class=" ">
-    
 
     > [!NOTE]
     > If you are creating a route for two network regions that do not have a direct network region link between them, you must add all the necessary links to complete the route. For example, the North America/APAC network interregion route requires two network region links because there is no direct network region link between them.
 
-    
-    </div>
+
 
 9.  Click **Commit**.
 
 10. To finish creating network interregion routes for your topology, repeat steps 4 through 9 with settings for other network interregion routes.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

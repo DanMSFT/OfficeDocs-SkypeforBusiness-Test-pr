@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring support for external user access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 Deploying an Edge Server or Edge pool is the first step to supporting external users. For details about deploying Edge Servers, see [Deploying external user access in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) in the Deployment documentation. An important consideration for the configuration of policies is to understand the precedence of policies and how the policies are applied. Lync Server policy settings that are applied at one policy level can override settings that are applied at another policy level. Lync Server policy precedence is: User policy (most influence) overrides a Site policy, and then a Site policy overrides a Global policy (least influence). This means that the closer the policy setting is to the object that the policy is affecting, the more influence it has on the object.
 
@@ -32,7 +19,7 @@ After completing the setup of an Edge Server or Edge pool, you must enable the t
 
 To support external user access, you must do both of the following:
 
-  - **Enable support for your organization**   To enable support for external user access in your deployment, you enable each type of external access that you want to support. You enable and disable support for external user access by editing the global settings or creating and configuring a site or user policy on the **External Access Policy** page in the **Federation and External Access** group of the Lync Server Control Panel or by using the Lync Server Management Shell and associated cmdlets. Cmdlets for managing the **External Access Policy** are found in the topic [Federation and external access cmdlets in Lync Server 2013](lync-server-2013-federation-and-external-access-cmdlets.md). Enabling support for external access specifies that your servers running the Lync Server Access Edge service support communications with external users and servers. Internal and external users cannot communicate while external user access is disabled or if policies have not yet been configured to support it.
+  - **Enable support for your organization**   To enable support for external user access in your deployment, you enable each type of external access that you want to support. You enable and disable support for external user access by editing the global settings or creating and configuring a site or user policy on the **External Access Policy** page in the **Federation and External Access** group of the Lync Server Control Panel or by using the Lync Server Management Shell and associated cmdlets. Cmdlets for managing the **External Access Policy** are found in the topic [Federation and external access cmdlets in Lync Server 2013](https://technet.microsoft.com/en-us/library/gg415651\(v=ocs.15\)). Enabling support for external access specifies that your servers running the Lync Server Access Edge service support communications with external users and servers. Internal and external users cannot communicate while external user access is disabled or if policies have not yet been configured to support it.
 
   - **Configure and assign one or more policies**   To support external user access, you configure policies to address requirements that include:
     
@@ -46,8 +33,6 @@ You can configure external user access settings, including any policies that you
 
 Your edge deployment authenticates the types of external users (except for anonymous users, who are authenticated by the conference ID and a passkey that is sent to the anonymous participant when you create the conference and invite participants) and controls access based on how you configure your edge support. In order to control communications, you can configure one or more policies and configure settings that define how users inside and outside your deployment communicate with each other. The policies and settings include the default global policy for external user access, in addition to site and user policies that you can create and configure to enable one or more types of external user access for specific sites or users.
 
-<div>
-
 ## In This Section
 
   - [Configure policies to control remote user access in Lync Server 2013](lync-server-2013-configure-policies-to-control-remote-user-access.md)
@@ -57,16 +42,4 @@ Your edge deployment authenticates the types of external users (except for anony
   - [Enable or disable anonymous user access in Lync Server 2013](lync-server-2013-enable-or-disable-anonymous-user-access.md)
 
   - [Assign conferencing policies to support anonymous users in Lync Server 2013](lync-server-2013-assign-conferencing-policies-to-support-anonymous-users.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

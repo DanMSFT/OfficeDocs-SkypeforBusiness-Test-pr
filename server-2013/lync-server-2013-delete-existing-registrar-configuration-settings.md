@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete existing Registrar configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Follow these steps to delete a Registrar.
-
-<div>
 
 ## To delete Registrar configuration settings
 
@@ -44,15 +29,9 @@ Follow these steps to delete a Registrar.
 
 6.  Click **OK**.
 
-</div>
-
-<div>
-
 ## Removing Registrar Configuration Settings by Using Windows PowerShell Cmdlets
 
 You can delete the Registrar configuration settings by using Windows PowerShell and the **Remove-CsProxyConfiguration** cmdlet. You can run this cmdlet from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To remove a specific set of Registrar security settings
 
@@ -60,19 +39,11 @@ You can delete the Registrar configuration settings by using Windows PowerShell 
     
         Remove-CsProxyConfiguration -Identity service:EdgeServer:atl-edge-011.litwareinc.com
 
-</div>
-
-<div>
-
 ## To remove all of the Registrar security settings applied to the site scope
 
   - The following command removes all the Registrar security settings applied to the Registrar service:
     
         Get-CsProxyConfiguration -Filter "service:Registrar:*" | Remove-CsProxyConfiguration
-
-</div>
-
-<div>
 
 ## To remove all of the Registrar security settings that allow NTLM authentication
 
@@ -80,19 +51,5 @@ You can delete the Registrar configuration settings by using Windows PowerShell 
     
         Get-CsProxyConfiguration | Where-Object {$_.UseNtlmForClientToProxyAuth -eq $True}| Remove-CsProxyConfiguration
 
-</div>
-
-For details, see [Remove-CsProxyConfiguration](remove-csproxyconfiguration.md).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see [Remove-CsProxyConfiguration](https://technet.microsoft.com/en-us/library/gg398553\(v=ocs.15\)).
 

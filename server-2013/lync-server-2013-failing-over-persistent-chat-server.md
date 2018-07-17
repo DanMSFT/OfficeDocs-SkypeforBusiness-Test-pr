@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Failing over Persistent Chat Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-05_
 
 Failover for Persistent Chat Server is designed to be mainly a manual process.
 
@@ -41,8 +28,6 @@ The procedure is based on two basic steps:
   - Establish mirroring for the new primary database.
 
 The Persistent Chat compliance database (mgccomp) is not failed over. The contents of this database are transient and are purged as the compliance adapter processes the data. It is your responsibility, as Persistent Chat Administrator, to correctly manage the adapter output to avoid data loss.
-
-<div>
 
 ## To fail over Persistent Chat Server
 
@@ -80,26 +65,10 @@ The Persistent Chat compliance database (mgccomp) is not failed over. The conten
 
 7.  Set the Persistent Chat Server active servers. From the Lync Server Command Shell, use the **Set-CsPersistentChatActiveServer** cmdlet to set the list of active servers.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > All the active servers must be located within the same data center as the new primary database, or in a data center that has a low latency/high bandwidth connection to the database.
 
     
-    </div>
-    
     At this point, the failover from the Persistent Chat Server primary database to the Persistent Chat Server backup database completes successfully.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

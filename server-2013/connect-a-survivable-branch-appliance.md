@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Connect a Survivable Branch Appliance
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 Every Survivable Branch Appliance (SBA) is associated with a Front End pool which serves as a backup registrar for the SBA. When the Front End pool is migrated to Lync Server 2013, the SBA must be disassociated from the Lync Server 2010 Front End pool while the pool is upgraded, Once the pool has been migrated to Lync Server 2013, the SBA can be re-associated with the upgraded Front End pool. This involves deleting the SBA from the legacy Lync Server 2010 topology in Topology Builder and then adding the SBA to the Lync Server 2013 topology. Users homed on the legacy Lync Server 2010 SBA must first be moved to another Front End pool before removing the SBA from the topology. Once the SBA is added to the Lync Server 2013 topology, those users can then be moved back to the SBA. These steps are summarized below:
 
@@ -70,26 +57,13 @@ Every Survivable Branch Appliance (SBA) is associated with a Front End pool whic
 
 9.  Follow the directions in the wizard that opens. For information about wizard items, see [Define a Survivable Branch Appliance or Server in Lync Server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md).
     
-    <div>
-    
 
     > [!NOTE]
     > A Lync Server 2010 Survivable Branch Appliance can only be associated with a Lync Server 2010 Monitoring Store.
 
-    
-    </div>
+
 
 10. If you are not using a Survivable Branch Appliance or Server at this site, clear the **Open the New Survivable Wizard when this wizard closes** check box, and then click **Finish**.
 
 11. Repeat the previous steps for each branch site you want to add to the topology.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

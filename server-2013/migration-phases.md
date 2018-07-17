@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Migration phases
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-17_
 
 In Lync Server 2013, you define sites on your network that contain Lync Server 2013 components. A site is a set of computers that are well-connected by a high-speed, low-latency network, such as a single local area network (LAN) or two networks connected by a high-speed fiber optic network.
 
@@ -47,14 +34,4 @@ The following phases describe the process of a pool migration from Lync Server 2
 7.  [Phase 7: Complete post-migration tasks](phase-7-complete-post-migration-tasks.md)
 
 8.  [Phase 8: Decommission legacy pools](phase-8-decommission-legacy-pools.md)
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

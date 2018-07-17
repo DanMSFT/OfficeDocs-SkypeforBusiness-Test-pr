@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Defining your mobility requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-14_
 
     Some information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
@@ -58,23 +45,16 @@ Here are the decisions that you must consider:
     
         Set-CsMcxConfiguration -Identity site:Redmond -ExposedWebURL Internal
     
-    <div>
-    
 
     > [!NOTE]
     > There are no additional configurations required for UCWA. UCWA does not have an equivalent internal-only configuration.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!IMPORTANT]
     > If you are using a Lync Server 2013&nbsp;Front End Server or Front End pools and <STRONG>you do not have</STRONG> any Lync Server 2010&nbsp;Front End Servers or Front End pools, <STRONG>there is no requirement for cookie-based persistence</STRONG>. If you need to retain any Lync Server 2010&nbsp;Front End Servers or Front End pools, the same rules still apply as in Lync Server 2010 for cookie-based persistence.
 
-    
-    </div>
+
 
   - **Do you want to support push notifications for Apple iOS devices and Windows Phones?**
     
@@ -82,25 +62,18 @@ Here are the decisions that you must consider:
     
     If you want to support push notifications over your Wi-Fi network, in addition to supporting push notifications over the mobile device providers' 3G or data networks, you must open port 5223 outbound on your enterprise Wi-Fi network. Supporting push notifications over the Wi-Fi network supports mobile devices that use only Wi-Fi and mobile devices that have poor indoor reception.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Opening port TCP 5223 is required only when supporting Apple devices running the Lync 2010 Mobile client.
 
     
-    </div>
-    
     If you do not support push notifications, users of Apple mobile devices and Windows Phones will not find out about events—such as instant message invitations or missed messages—that occur when the mobile application is inactive.
-    
-    <div>
     
 
     > [!NOTE]
     > Lync 2013 Mobile clients on Apple devices do not require push notification. The Lync 2013 Mobile clients on Windows Phone use push notification. Planning for push notification and the push notification clearinghouse remain the same for Lync Mobile on Windows Phone and Apple devices that are not able to run the Lync 2013 Mobile client.
 
-    
-    </div>
+
 
   - **Do you want all users to have access to mobility features, or do you want to be able to specify which users have access to these features?**
     
@@ -164,22 +137,17 @@ Here are the decisions that you must consider:
     </tbody>
     </table>
     
-    For a description of the policy settings that you can configure, and how to manage the policies, see [New-CsMobilityPolicy](new-csmobilitypolicy.md), [Set-CsMobilityPolicy](set-csmobilitypolicy.md), [Get-CsMobilityPolicy](get-csmobilitypolicy.md), [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md) and [Remove-CsMobilityPolicy](remove-csmobilitypolicy.md).
+    For a description of the policy settings that you can configure, and how to manage the policies, see [New-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh689987\(v=ocs.15\)), [Set-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh690021\(v=ocs.15\)), [Get-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh690017\(v=ocs.15\)), [Grant-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh690038\(v=ocs.15\)) and [Remove-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh690048\(v=ocs.15\)).
 
   - **Do you want users who are not enabled for Enterprise Voice to be able to use Click to Join to join conferences?**
     
     For users to have access to mobility features and Call via Work, they must be enabled for Enterprise Voice. However, users who are not enabled for Enterprise Voice can join conferences by clicking the link on their mobile device, if they have an appropriate voice policy assigned to them. You can either assign a specific voice policy to these users or make sure that a global policy or site-level policy exists that applies to them. The voice policy that you assign must have public switched telephone network (PSTN) usage records and routes that define the areas to which users can dial out to join a conference. For details about setting voice policy, PSTN usage records, and routes, see [Configuring voice policies, PSTN usage records, and voice routes in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md).
     
-    <div>
-    
 
     > [!NOTE]
     > Mobile users who want to use Click to Join require a voice policy, along with the related PSTN usage records and voice routes, because clicking the link on the mobile device results in an outbound call from Lync Server 2013.
 
-    
-    </div>
 
-<div>
 
 ## See Also
 
@@ -187,18 +155,5 @@ Here are the decisions that you must consider:
 [Technical requirements for mobility in Lync Server 2013](lync-server-2013-technical-requirements-for-mobility.md)  
 
 
-[Configuring voice policies, PSTN usage records, and voice routes in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring voice policies, PSTN usage records, and voice routes in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)
 

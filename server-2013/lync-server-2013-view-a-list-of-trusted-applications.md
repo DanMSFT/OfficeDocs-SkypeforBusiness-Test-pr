@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View a list of trusted applications in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 You can use Lync Server 2013 Control Panel to view a list of the trusted applications that you have deployed in your Lync Server 2013 environment. A trusted application is an application based on Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK that is trusted by Lync Server 2013. This trust relationship is summarized in the following list:
 
@@ -38,8 +25,6 @@ You can use Lync Server 2013 Control Panel to view a list of the trusted applica
 
 In Lync Server Control Panel, you can see the name of the applications, the pool where they run, and the port they use.
 
-<div>
-
 ## To view a list of trusted applications
 
 1.  From a user account that is assigned to the CsServerAdministrator, CsAdministrator, CsHelpDesk, or CsViewOnlyAdministrator role, log on to any computer in your internal deployment. For details about the predefined administrative roles available in Lync Server 2013, see [Planning for role-based access control in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md).
@@ -50,25 +35,8 @@ In Lync Server Control Panel, you can see the name of the applications, the pool
 
 4.  On the **Trusted Application** page, click a column heading to sort the applications, if needed.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Managing the Lync Server 2013 topology](lync-server-2013-managing-the-lync-server-topology.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing the Lync Server 2013 topology](lync-server-2013-managing-the-lync-server-topology.md)
 

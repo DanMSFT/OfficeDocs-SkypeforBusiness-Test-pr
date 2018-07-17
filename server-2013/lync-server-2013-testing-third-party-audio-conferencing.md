@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing third-party audio conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-01_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-11-01_
 </table>
 
 
-<div>
-
 ## Description
 
 An audio conferencing provider is a third-party company that provides organizations with conferencing services. Among other things, audio conferencing providers enable users located off site, and not connected to the corporate network or the Internet, to participate in the audio portion of a conference or meeting. Audio conferencing providers often provide high-end services such as live translation, transcription, and live per-conference operator assistance.
@@ -60,10 +45,6 @@ An audio conferencing provider is a third-party company that provides organizati
 The **Test-CsAudioConferencingProvider** cmdlet is used to verify that a user is able to make a connection to his or her audio conferencing provider. Note that this cmdlet can be run in one of two ways. Many administrators will use the CsHealthMonitoringConfiguration cmdlets to set up test users for each of their Registrar pools. These test users represent a pair of user accounts that have been preconfigured for use with synthetic transactions. (Typically these are test accounts and not accounts that belong to actual users.) If test users are configured for a pool, administrators can run the **Test-CsAudioConferencingProvider** cmdlet against that pool without having to specify the identity of (and supply the credentials for) the user account involved in the test.
 
 Alternatively, administrators can run the **Test-CsAudioConferencingProvider** cmdlet using an actual user account. If you decide to conduct the test using an actual user account you will need to supply the logon name and password for that account.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -77,10 +58,6 @@ The second command then checks to see if this user can connect to his audio conf
 
     $credential = Get-Credential "litwareinc\kenmyer" 
     Test-CsAudioConferencingProvider -TargetFqdn atl-cs-001.litwareinc.com -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -126,10 +103,6 @@ Diagnosis :
 
 For example, the previous output includes the note “the connected party did not properly respond” That typically indicates a problem with the Edge Server.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsAudioConferencingProvider** might fail:
@@ -139,16 +112,4 @@ Here are some common reasons why **Test-CsAudioConferencingProvider** might fail
   - Note that the test will fail if the user employed by the **Test-CsAudioConferencingProvider** cmdlet has not been assigned an audio conferencing provider.
 
   - This command will fail if the Edge Server is misconfigured or not yet deployed.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,25 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure media bypass in Lync Server 2013 to always bypass the Mediation Server
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-25_
-
-<div>
 
 
 > [!NOTE]
@@ -34,13 +19,9 @@ _**Topic Last Modified:** 2013-02-25_
 
 
 
-</div>
-
 In addition to enabling media bypass for individual trunk connections associated with a peer to the Mediation Server, you must also configure global settings for media bypass. If you use the steps in this topic to configure global settings for media bypass, the assumption is that you have good connectivity between Lync endpoints and any peer for which you configured media bypass on the trunk connection.
 
 If you do not have good connectivity between Lync Server endpoints and all peers to the Mediation Server whose respective trunk connections have been enabled for media bypass, you must configure global media bypass settings to use site and region information when employing media bypass. This allows for more control in determining when media bypasses the Mediation Server. To do this, use the steps in [Configure media bypass global settings in Lync Server 2013 to use site and region information](lync-server-2013-configure-media-bypass-global-settings-to-use-site-and-region-information.md) and [Associate a subnet with a network site in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md) instead.
-
-<div>
 
 ## To Enable Media Bypass Globally to Always Bypass the Mediation Server
 
@@ -56,10 +37,6 @@ If you do not have good connectivity between Lync Server endpoints and all peers
 
 6.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -68,18 +45,5 @@ If you do not have good connectivity between Lync Server endpoints and all peers
 [Media bypass and Mediation Server in Lync Server 2013](lync-server-2013-media-bypass-and-mediation-server.md)  
 
 
-[Planning for media bypass in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for media bypass in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md)
 

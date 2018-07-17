@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Backing up and restoring Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 In this section, you’ll find the best practices for backing up your Lync Server 2013 data, and for restoring it if you have a failure. These best practices apply to the following situations:
 
@@ -46,8 +33,6 @@ If you have deployed paired Front End pools, if one of these pools fails and bec
 
 The methodology described in this document involves special considerations during the planning phase. For details, see [Establishing a backup and restoration plan for Lync Server 2013](lync-server-2013-establishing-a-backup-and-restoration-plan.md).
 
-<div>
-
 ## In This Section
 
   - [Preparing for Lync Server 2013 backup and restoration](lync-server-2013-preparing-for-lync-server-backup-and-restoration.md)
@@ -57,16 +42,4 @@ The methodology described in this document involves special considerations durin
   - [Restoring data and settings in Lync Server 2013](lync-server-2013-restoring-data-and-settings.md)
 
   - [Backup and restoration worksheets for Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

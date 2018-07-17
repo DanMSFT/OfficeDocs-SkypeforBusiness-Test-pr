@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Microsoft Exchange Server 2013 Unified Messaging for Microsoft Lync Server 2013 voice mail
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-04_
 
 Microsoft Lync Server 2013 enables you to have voicemail messages stored in Microsoft Exchange Server 2013; those voicemail messages will then appear as email messages in your users' Inboxes. This capability was also found in the 2010 editions of Lync Server and Exchange; however, the process of configuring this "unified messaging" has been simplified in in the 2013 editions thanks to the introduction of the UM Call Router component. This component is installed on the Exchange 2013 Client Access server, and all calls to Exchange unified messaging (such as a voicemail) are first routed through the Call Router and then are redirected to the appropriate Mailbox server.
 
@@ -45,15 +32,11 @@ In the second command, the parameter value passed to the ConfiguredInCountryOrRe
 
   - TextComment (\*, a wildcard character indicating that any text command is allowed)
 
-<div>
-
 
 > [!NOTE]
 > Creating a new dial plan will also create a Default Mailbox Policy.
 
 
-
-</div>
 
 After creating and configuring the new dial plan you must add the new dial plan to your unified messaging server and then modify the startup mode of that server; in particular, you must set the startup mode to "Dual". You can perform both of these tasks from within the Exchange Management Shell:
 
@@ -82,25 +65,15 @@ And you can enable a user for unified messaging by using a command similar to th
 
 In the preceding command, the Extensions parameter represents the telephone extension number for the user. In this example, the user has the extension number 100.
 
-After you have enabled his mailbox, the user kenmyer@litwareinc.com should be able to use Exchange unified messaging. You can verify that the user can connect to Exchange UM by running the [Test-CsExUMConnectivity](test-csexumconnectivity.md) cmdlet from within the Lync Server Management Shell:
+After you have enabled his mailbox, the user kenmyer@litwareinc.com should be able to use Exchange unified messaging. You can verify that the user can connect to Exchange UM by running the [Test-CsExUMConnectivity](https://technet.microsoft.com/en-us/library/jj204784\(v=ocs.15\)) cmdlet from within the Lync Server Management Shell:
 
     $credential = Get-Credential "litwareinc\kenmyer"
     
     Test-CsExUMConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-If you have a second user who has been enabled for unified messaging you can use the [Test-CsExUMVoiceMail](test-csexumvoicemail.md) cmdlet to verify that this second user can leave a voicemail message for the first user.
+If you have a second user who has been enabled for unified messaging you can use the [Test-CsExUMVoiceMail](https://technet.microsoft.com/en-us/library/jj205058\(v=ocs.15\)) cmdlet to verify that this second user can leave a voicemail message for the first user.
 
     $credential = Get-Credential "litwareinc\pilar"
     
     Test-CsExUMVoiceMail -TargetFqdn "atl-cs-001.litwareinc.com" -ReceiverSipAddress "sip:kenmyer@litwareinc.com" -SenderSipAddress "sip:pilar@litwareinc.com" -SenderCredential $credential
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

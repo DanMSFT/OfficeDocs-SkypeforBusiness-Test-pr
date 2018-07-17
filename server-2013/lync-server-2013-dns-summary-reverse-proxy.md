@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS summary - Reverse proxy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-22_
 
 You configure two network adapters in your reverse proxy as follows:
-
-<div>
 
 ## Reverse Proxy Network Adapter Requirements
 
@@ -75,13 +60,12 @@ You configure two network adapters in your reverse proxy as follows:
 <td><p>webdirext.contoso.com</p></td>
 <td><p>Assigned listener for externally published resources</p></td>
 <td><p>External web services for the Directors or Director pools in your deployment. You can define as many Directors as there are distinct Directors, of which may be associated with other SIP domains.</p>
-<div>
 
 > [!IMPORTANT]
 > Defining the DNS records for and publishing the Directors is not an either the Front End pool or the Director decision. You must define and publish both the Director and the Front End pool external web services if you are using Directors. Specific traffic types (for authentication and other uses) will be sent to the Director first, if it is defined in the topology.
 
 
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p>External DNS/A</p></td>
@@ -109,17 +93,4 @@ You configure two network adapters in your reverse proxy as follows:
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

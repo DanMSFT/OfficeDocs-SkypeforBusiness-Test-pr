@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring voice routes for outbound calls in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 A Lync Server 2013 voice route associates destination phone numbers with one or more public switched telephone network (PSTN) gateways or SIP trunks and one or more PSTN usage records.
 
@@ -38,14 +25,11 @@ A Lync Server 2013 voice route associates destination phone numbers with one or 
 
 4.  Double-click a voice route to view additional properties from the list of voice routes, or select the route and click **Edit**. Then click **Show details**.
     
-    <div>
-    
 
     > [!NOTE]
     > You can only view detailed information for a single route at a time.
 
-    
-    </div>
+
 
 **To view voice routes by using Windows PowerShell**
 
@@ -67,17 +51,11 @@ A Lync Server 2013 voice route associates destination phone numbers with one or 
         SuppressCallerId  :
         AlternateCallerId :
 
-<div>
-
 
 > [!NOTE]
 > For details, see <A href="lync-server-2013-voice-routes.md">Voice routes in Lync Server 2013</A> in the Planning documentation.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -85,25 +63,8 @@ A Lync Server 2013 voice route associates destination phone numbers with one or 
 
   - [Modify a voice route in Lync Server 2013](lync-server-2013-modify-a-voice-route.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Managing voice routing in Lync Server 2013](lync-server-2013-managing-voice-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing voice routing in Lync Server 2013](lync-server-2013-managing-voice-routing.md)
 

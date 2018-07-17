@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # IP Phone Inventory Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-12_
 
 The IP Phone Inventory Report reports information about the IP phones currently in use in your organization. The IP Inventory Report provides a detailed list of the IP phones that were actually used during the specified reporting period. Among other things, this report lets administrators know if there are any old, outdated phones still in use that should be replaced; it can also alert administrators to the fact that there are expensive phones in the organization that are rarely being used. That type of information can be invaluable when it comes time to purchase new phones or to redistribute existing phones. (For example, a user who rarely uses his or her expensive phone might be asked to swap phones with a user who uses his or her phone much more frequently.)
 
@@ -34,25 +21,15 @@ It's also important to note that the inventory report could include phones that 
 
 In addition, the IP Phone Inventory Report does not report summary totals for the different types of phones. For example, suppose you have 105 Polycom CX600 phones. The report will not tell you that you have 105 of these phones; instead, you will simply see 105 separate entries for the Polycom Cx600. The only way to know that there are 105 entries for the Polycom Cx600 would be to count each of those entries manually.
 
-<div>
-
 
 > [!WARNING]
 > Or, export the data and use Microsoft Excel or Windows PowerShell to do that counting for you.
 
 
 
-</div>
-
-<div>
-
 ## Accessing the IP Phone Inventory Report
 
 The IP Phone Inventory Report is accessed from the Monitoring Reports home page. If you click the User URI metric you can access the User Activity Report for that user. Clicking the Last activity metric for a peer-to-peer call will take you to the Peer-to-Peer Session Detail Report; clicking that same metric for a conference will take you to the Conference Detail Report.
-
-</div>
-
-<div>
 
 ## Making the Best Use of the IP Phone Inventory Report
 
@@ -94,10 +71,6 @@ That returns data similar to this for each phone that has not been used:
     Last activity    :
 
 Another interesting way to use the IP Phone Inventory Report is this: if you have the MAC address of an IP Phone you can find out the user who last used that phone simply by entering that address in the MAC address text box. The IP Phone Inventory report will then report back (among other things) the SIP address of the user who last logged on with that phone. Alternatively, you can enter a user SIP address (in the User URI prefix box) to find out all the phones that have been used by that user.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -186,10 +159,6 @@ The following table lists the filters that you can use with the IP Phone Invento
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics
 
 The following table lists the information provided in the IP Phone Inventory Report.
@@ -252,17 +221,4 @@ The following table lists the information provided in the IP Phone Inventory Rep
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

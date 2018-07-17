@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Disabling or enabling a chat room in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-05_
 
 If the topic of a Persistent Chat room is no longer relevant, you can make the chat room unavailable to users by disabling it. When a chat room is disabled, all members are immediately disconnected from the room. After a chat room is disabled, users cannot rejoin it or find it in chat room searches.
 
@@ -43,14 +30,4 @@ To enabled a chat room, set the Disabled property to False:
 Note that chat rooms cannot be enabled or disabled by using the Lync Server Control Panel.
 
 For details about configuring chat rooms, see [Configure rooms in Lync Server 2013](lync-server-2013-configure-rooms.md) in the Deployment documentation.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,29 +8,14 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View status of global settings for a forest in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-20_
 
 Administrators should review the global settings for a Lync Server 2013 deployment monthly. The objective would be to review implemented settings against a set of known configurations—a baseline configuration to help guarantee that settings are valid and to determine whether the baseline documentation should be updated. Changes to global setting should be implemented through a Change Control process which should include documenting the new settings.
 
 Global settings that should be reviewed are described in the following sections:
-
-<div>
 
 ## Check general settings
 
@@ -49,10 +34,6 @@ fabrikam.com fabrikam.com True
 na.fabrikam.com na.fabrikam.com False
 
 If the IsDefault property is set to True, the corresponding domain is your default SIP domain. You can use the Set-CsSipDomain cmdlet to change the default SIP domain for your organization. However, you can't just delete the default SIP domain because that would leave you without a default domain. If you wanted to delete the fabrikam.com domain (as shown in the previous example), you would first have to configure na.fabrikam.com to be your default domain.
-
-</div>
-
-<div>
 
 ## Check meeting settings
 
@@ -85,10 +66,6 @@ When checking meeting configuration settings, you might find it useful to compar
 `New-CsMeetingConfiguration -Identity "Global" -InMemory`
 
 The previous command creates an in-memory-only instance of the global meeting configuration settings, an instance that uses the default value for each property. No actual meeting configuration settings are created when you run the command. However, all the default property values will be displayed on-screen.
-
-</div>
-
-<div>
 
 ## Check Edge Servers and their settings
 
@@ -154,8 +131,6 @@ Version : 5
 
 Role : EdgeServer
 
-<div>
-
 ## Check federation settings
 
 Check Federation settings, such as whether it is configured and, if the answer is "yes,", the FQDN and port. Federation is enabled and disabled by using the global collection of Access Edge configuration settings. Among other things, these mean that federation is configured on an all-or-nothing basis: either federation is enabled for the whole organization or federation is disabled for the whole organization
@@ -217,12 +192,6 @@ EnablePublicCloudAccessAudioVideoAccess : False
 EnableOutsideAccess : False
 
 If **EnableFederationAccess** is set to True, then users managed by the given policy can communicate with federated users.
-
-</div>
-
-</div>
-
-<div>
 
 ## Check archiving settings
 
@@ -296,10 +265,6 @@ ArchiveExternal : False
 
 Note that, by default, both internal and external archiving are disabled in an archiving policy.
 
-</div>
-
-<div>
-
 ## Check CDR settings
 
 Check Call Detail Record (CDR) settings for peer-to-peer, conferencing, and Voice call detail recording. Detailed information about your CDR settings can be returned by using the **Get-CsCdrConfiguration** cmdlet. For example, this command returns information about the global collection of CDR configuration settings:
@@ -359,10 +324,6 @@ Likewise, the default values for QoE monitoring can be retrieved by using this c
 You can also return the FQDN of your Monitoring servers by running this command:
 
 `Get-CsService -MonitoringServer`
-
-</div>
-
-<div>
 
 ## Check voice settings
 
@@ -446,10 +407,6 @@ Similarly, this command returns the identity of any voice route that has not bee
 
 `Get-CsVoiceRoute | Where-Object {$_.PstnGatewayList -eq $Null}} | Select-Object Identity`
 
-</div>
-
-<div>
-
 ## Check Conferencing Attendant settings
 
 Check conferencing Attendant settings for PSTN dial-in conferencing. Conferencing Attendant settings can only be retrieved by using the **Get-CsDialInConferencingConfiguration** cmdlet. These settings are not available in the Lync Server Control Panel. To view your Conferencing Attendant settings, use a Windows PowerShell command similar to the following, which returns the global collection of Conferencing Attendant settings:
@@ -474,35 +431,18 @@ If EntryExitAnnouncementsEnabledByDefault is set to False, that means the confer
 
 `Set-CsDialInConferencingConfiguration -Identity "Global" -EntryExitAnnouncementsEnabledByDefault $True`
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsSipDomain](get-cssipdomain.md)  
-[Get-CsMeetingConfiguration](get-csmeetingconfiguration.md)  
-[Get-CsService](get-csservice.md)  
-[Get-CsAccessEdgeConfiguration](get-csaccessedgeconfiguration.md)  
-[Get-CsExternalAccessPolicy](get-csexternalaccesspolicy.md)  
-[Get-CsArchivingConfiguration](get-csarchivingconfiguration.md)  
-[Get-CsCdrConfiguration](get-cscdrconfiguration.md)  
-[Get-CsQoEConfiguration](get-csqoeconfiguration.md)  
-[Get-CsVoicePolicy](get-csvoicepolicy.md)  
-[Get-CsVoiceRoute](get-csvoiceroute.md)  
-[Get-CsDialInConferencingConfiguration](get-csdialinconferencingconfiguration.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsSipDomain](https://technet.microsoft.com/en-us/library/gg398701\(v=ocs.15\))  
+[Get-CsMeetingConfiguration](https://technet.microsoft.com/en-us/library/gg425875\(v=ocs.15\))  
+[Get-CsService](https://technet.microsoft.com/en-us/library/gg413038\(v=ocs.15\))  
+[Get-CsAccessEdgeConfiguration](https://technet.microsoft.com/en-us/library/gg398574\(v=ocs.15\))  
+[Get-CsExternalAccessPolicy](https://technet.microsoft.com/en-us/library/gg425805\(v=ocs.15\))  
+[Get-CsArchivingConfiguration](https://technet.microsoft.com/en-us/library/gg399012\(v=ocs.15\))  
+[Get-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg398298\(v=ocs.15\))  
+[Get-CsQoEConfiguration](https://technet.microsoft.com/en-us/library/gg399004\(v=ocs.15\))  
+[Get-CsVoicePolicy](https://technet.microsoft.com/en-us/library/gg398101\(v=ocs.15\))  
+[Get-CsVoiceRoute](https://technet.microsoft.com/en-us/library/gg425926\(v=ocs.15\))  
+[Get-CsDialInConferencingConfiguration](https://technet.microsoft.com/en-us/library/gg398575\(v=ocs.15\))
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of call admission control in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-22_
 
 Real-time communications are sensitive to the latency and packet loss that can occur on congested networks. Call admission control (CAC) determines, based on available network bandwidth, whether to allow real-time communications sessions such as voice or video calls to be established. The CAC design in Lync Server 2013 offers four main attributes:
 
@@ -52,19 +39,13 @@ For calls that fail because of CAC policies, the order of precedence for rerouti
 
 Call detail recording (CDR) captures information about calls that are rerouted to the PSTN or to voice mail. CDR does not capture information about calls that are rerouted to the Internet, because the Internet is treated as an alternate path rather than a secondary option.
 
-<div>
-
 
 > [!NOTE]
 > Voice mail deposits will not be denied because of bandwidth constraints.
 
 
 
-</div>
-
 The Bandwidth Policy Service generates two types of log files in comma separated values (CSV) format. The **check failures** log file captures information when bandwidth requests are denied. The **link utilization** log file captures a snapshot of the network topology and the WAN link bandwidth utilization. Both of these log files can assist you in fine-tuning your CAC policies based on utilization.
-
-<div>
 
 ## Call Admission Control Considerations
 
@@ -72,31 +53,17 @@ The administrator selects to install the Bandwidth Policy Service on the first p
 
 The Bandwidth Policy Service provides high availability within a Front End pool; however, it does not provide redundancy across Front End pools. The Bandwidth Policy Service cannot failover from one Front End pool to another. Once service to the Front End pool is restored, the Bandwidth Policy Service is resumed and can enforce bandwidth policy checks again.
 
-<div>
-
 ## Network Considerations
 
 Although bandwidth restriction for audio and video is enforced by the Bandwidth Policy Service in Lync Server 2013, this restriction is not enforced at the network router (layer 2 and 3). Lync Server 2010 CAC cannot prevent a data application, for example, from consuming the entire network bandwidth on a WAN link, including the bandwidth that is reserved for audio and video by your CAC policy. To protect the necessary bandwidth on your network, you can deploy a Quality of Service (QoS) protocol such as Differentiated Services (DiffServ). Therefore, a best practice is to coordinate the CAC bandwidth policies you define with any QoS settings that you might deploy.
-
-</div>
-
-<div>
 
 ## Media and Signaling Paths over VPN
 
 If your enterprise supports media through VPN, ensure that either both the media stream and the signaling stream go through the VPN or both are routed through the internet. By default, the media and signaling streams go through the VPN tunnel.
 
-</div>
-
-<div>
-
 ## Call Admission Control of Outside Users
 
 Call admission control is not enforced for remote users where the network traffic flows through the Internet. Because the media traffic is traversing the Internet, which is not managed by Lync Server, CAC cannot be applied. CAC checks will be performed, however, on the portion of the call that flows through the enterprise network.
-
-</div>
-
-<div>
 
 ## Call Admission Control of PSTN Connections
 
@@ -108,11 +75,7 @@ The following figure illustrates how CAC is enforced on PSTN connections with an
 
 **Call admission control enforcement on connections to the PSTN**
 
-![Voice CAC Media Bypass Connection Enforcement](images/Gg398703.4d66d529-0912-4de1-abec-266f54272eb3(OCS.15).jpg "Voice CAC Media Bypass Connection Enforcement")
-
-</div>
-
-<div>
+![Voice CAC Media Bypass Connection Enforcement](images/Gg398529.4d66d529-0912-4de1-abec-266f54272eb3(OCS.15).jpg "Voice CAC Media Bypass Connection Enforcement")
 
 ## Compatibility of Call Admission Control with Earlier Versions of Office Communications Server
 
@@ -123,18 +86,4 @@ Call admission control cannot be enabled on endpoints running Office Communicato
 **Application of CAC on different Lync Server versions**
 
 ![Voice CAC Version Comparison diagram](images/Gg398529.fdbfee7e-15fc-445b-949d-8d61e61ac350(OCS.15).jpg "Voice CAC Version Comparison diagram")
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing service activation and group permissions in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsTopology cmdlet enables you to verify that Lync Server 2013 is functioning correctly at a global scope. By default, the cmdlet checks your whole Lync Server infrastructure, verifying that the required services are running and that the appropriate permissions are set for these services and for the universal security groups that are created when you install Lync Server.
@@ -60,10 +45,6 @@ The Test-CsTopology cmdlet enables you to verify that Lync Server 2013 is functi
 In addition to verifying the validity of the Lync Server installation, Test-CsTopology also lets you check the validity of a specific service. For example, this command checks the state of the A/V Conferencing Server on the pool atl-cs-001.litwareinc.com:
 
     Test-CsTopology -Service "ConferencingServer:atl-cs-001.litwareinc.com"
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -73,19 +54,11 @@ The following sample command runs Test-CsTopology and saves the output to a file
 
     Test-CsTopology -Report "C:\Logs\ComputerTest.html" -Verbose
 
-For more information, see the Help documentation for the [Test-CsTopology](test-cstopology.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsTopology](https://technet.microsoft.com/en-us/library/gg398127\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
 Unlike most of the test cmdlets, Test-CsTopology does report back Success or Failure. In part, that’s due to the large number of verification checks that the cmdlet must make every time that it runs. Instead, data is saved to an HTML report that can then be viewed by using Internet Explorer.
-
-</div>
-
-<div>
 
 ## Reasons why the test might have failed
 
@@ -102,16 +75,4 @@ Here are some common reasons why Test-CsTopology might fail:
   - The topology might have to be enabled. If you change the Lync Server topology (changes that might affect the local computer), then you must enable the new topology. You can enable the topology at any time by running this command:
     
         Enable-CsTopology
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

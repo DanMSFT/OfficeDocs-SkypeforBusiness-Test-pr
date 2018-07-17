@@ -8,36 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Importing the Lync Server 2013 management packs
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 You can extend the capabilities of System Center Operations Manager by installing management packs—software that dictates which items System Center Operations Manager can monitor, and how those items should be monitored and how alerts should be triggered and reported. Lync Server 2013 includes two System Center Operations Manager management packs that provide the following capabilities:
 
   - The Component and User Management Pack (Microsoft.LS.2013.Monitoring.ComponentAndUser.mp) tracks Lync Server issues recorded in event logs, registered by performance counters, or logged in the call detail records (CDR) or the Quality of Experience (QoE) databases. For critical problems, System Center Operations Manager can be configured to immediately notify administrators via email, instant message, or Short Message Service (SMS) messaging. SMS is the technology used to send text messages from one mobile device to another.)
     
-    <div>
-    
 
     > [!NOTE]
     > For details about configuring Operations Manager notification, see the Configuring Notification in the TechNet Library at <A href="http://go.microsoft.com/fwlink/p/?linkid=268785">http://go.microsoft.com/fwlink/p/?LinkId=268785</A>.
 
-    
-    </div>
+
 
   - The Active Monitoring Management Pack (Microsoft.LS.2013.Monitoring.ActiveMonitoring.mp) proactively tests key Lync Server components such as signing into to the system, exchanging instant messages, or making calls to a phone located on the public switched telephone network (PSTN). These tests are conducted using the Lync Server synthetic transaction cmdlets. For example, you can use the **Test-CsIM** cmdlet to simulate an instant messaging (IM) conversation between a pair of test users. If this simulated messaging conversation fails an alert is generated.
 
@@ -45,23 +29,17 @@ You need to import the management packs. If you do not import the management pac
 
 The Component and User Management Pack is only used to monitor Lync Server 2013. If you are in a coexistence scenario, where you have both Lync Server 2013 and Lync Server 2010 installed, you should continue to use the Lync Server 2010 management packs for your Lync Server 2010 computers.
 
-<div>
-
 
 > [!NOTE]
 > Management packs for Lync Server 2010 include the Lync Server 2010 Monitoring Management Pack and the Lync Server 2010 Group Chat Monitoring Management Pack.
 
 
 
-</div>
-
 You can use one of the following tools to import management packs:
 
   - **System Center Operations Manager**   With this method, you use the the Operations Manager to add monitoring for Lync Server.
 
   - **Operations Manager Shell**   You can use the Operations Manager Shell to import directly or to troubleshoot any issues you encounter when you import management packs by using the System Center Operations Manager console.
-
-<div>
 
 ## Importing the Management Packs by Using System Center Operations Manager
 
@@ -80,10 +58,6 @@ You can use one of the following tools to import management packs:
 7.  In the **Select Management Packs** dialog box, click **Install**. If you get an error message and installation fails, that typically means that the management pack files are in a folder protected by the Windows User Account Control. If this occurs, copy the files to a different folder and then restart the import and installation process.
 
 8.  In the **Select Management Packs** dialog box, click **Close**. Note that the import and installation process might require several minutes to complete.
-
-</div>
-
-<div>
 
 ## Importing Management Packs by Using the Operations Manager Shell
 
@@ -114,16 +88,4 @@ If you are using System Center Operations Manager 2012, complete this procedure 
 3.  After you have imported the first management pack, repeat the process using the path to your copy of the file Microsoft.LS.2013.Monitoring.ComponentAndUser.mp:
     
         Import-SCOMManagementPack -FullName "D:\MP\ Microsoft.LS.2013.Monitoring.ComponentAndUser.mp"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

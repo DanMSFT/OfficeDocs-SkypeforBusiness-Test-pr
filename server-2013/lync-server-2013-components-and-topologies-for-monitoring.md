@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Components and topologies for monitoring in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-05_
 
 Because the unified data collection agents are automatically installed and activated on each Front End server you do not need to configure a server to act as the Monitoring server; each Front End server already functions as a Monitoring server. However, you will need to install and configure a database to act as the backend data store for your monitoring data. Microsoft Lync Server 2013 can use any of the following databases as the backend store for monitoring:
 
@@ -52,23 +39,8 @@ Monitoring data can share a SQL Server instance with other types of data. Typica
 
 In other words, you cannot have two instances of the LcsCdr database in the same instance of SQL Server. If you need multiple instances of the LcsCdr database then you will need to configure multiple instances of SQL Server.
 
-<div>
-
 ## See Also
 
 
-[Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md)
 

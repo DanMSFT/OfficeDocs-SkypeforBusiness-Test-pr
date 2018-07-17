@@ -8,27 +8,12 @@ ms.date: 06/16/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Database installation using Lync Server Management Shell in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-06-16_
 
 Separation of roles and responsibilities between server administrators and SQL Server administrators can result in delays in implementation. Lync Server 2013 uses role-based access control (RBAC) to mitigate these difficulties. In some instances, the SQL Server administrator must manage the installation of databases on the SQL Server-based server outside RBAC. The Lync Server 2013 Management Shell provides a way for the SQL Server administrator to run Windows PowerShell cmdlets designed to configure the databases with the correct data and log files. For details, see [Deployment permissions for SQL Server in Lync Server 2013](lync-server-2013-deployment-permissions-for-sql-server.md).
-
-<div class=" ">
 
 
 > [!IMPORTANT]
@@ -36,19 +21,13 @@ Separation of roles and responsibilities between server administrators and SQL S
 
 
 
-</div>
-
 **Install-CsDatabase** is the Windows PowerShell cmdlet you use to install the databases. The **Install-CsDatabase** cmdlet has a large number of parameters, only a few of which are discussed here. For details about the possible parameters, see the Lync Server 2013 Management Shell documentation.
-
-<div class=" ">
 
 
 > [!WARNING]
 > To avoid performance and possible time-out issues, always use fully qualified domain names (FQDNs) when referring to SQL Server-based servers. Avoid using host name-only references. For example, use sqlbe01.contoso.net, but avoid using SQLBE01.
 
 
-
-</div>
 
 For installing databases, **Install-CsDatabase** uses three primary methods for placing the databases onto the prepared SQL Server-based server:
 
@@ -60,8 +39,6 @@ For installing databases, **Install-CsDatabase** uses three primary methods for 
 
   - The DatabasePathMap parameter can also be used to explicitly specify a location for each database and its respective log file.
 
-<div>
-
 ## To use Windows PowerShell cmdlets to configure the SQL Server Central Management store
 
 1.  On any computer, log on with administrative credentials for creating the databases on the SQL Server-based server. For details, see [Deployment permissions for SQL Server in Lync Server 2013](lync-server-2013-deployment-permissions-for-sql-server.md).
@@ -70,24 +47,17 @@ For installing databases, **Install-CsDatabase** uses three primary methods for 
 
 3.  Use the **Install-CsDatabase** cmdlet to install the Central Management store.
     
-       ```
         Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn <fully qualified domain name of SQL Server> 
         -SqlInstanceName <named instance> -DatabasePaths <logfile path>,<database file path> 
         -Report <path to report file>
-       ```
     
-       ```
         Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn sqlbe.contoso.net -SqlInstanceName rtc -DatabasePaths "C:\CSDB-Logs","C:\CSDB-CMS" -Report "C:\Logs\InstallDatabases.html"
-       ```
-    
-    <div class=" ">
     
 
     > [!TIP]
     > The Report parameter is optional but is useful if you are documenting the installation process.
 
-    
-    </div>
+
 
 4.  **Install-CsDatabase –DatabasePaths** can use up to six path parameters, each defining the paths for the drives as defined in SQL Server Data and Log File Placement. By the logical rules of the database configuration in Lync Server 2013, drives are parsed out into buckets of two, four, or six. Depending on your SQL Server configuration and the number of buckets, you will supply two paths, four paths, or six paths.
     
@@ -97,53 +67,35 @@ For installing databases, **Install-CsDatabase** uses three primary methods for 
 
 5.  When the database installation completes, you can close Lync Server 2013 Management Shell or proceed to the installation of the Lync Server 2013 configured databases defined in Topology Builder.
 
-</div>
-
-<div>
-
 ## To use Windows PowerShell cmdlets to configure the SQL Server topology configured databases
 
 1.  To install the Topology Builder configured databases for Lync Server 2013, the Lync Server 2013 administrator must publish the topology. For details, see [Publish the topology in Lync Server 2013](lync-server-2013-publish-the-topology.md) in the Deployment documentation.
 
 2.  On any computer, log on with administrative credentials for creating the databases on the SQL Server-based server. See the topic, [Deployment permissions for SQL Server in Lync Server 2013](lync-server-2013-deployment-permissions-for-sql-server.md).
     
-    <div class=" ">
-    
 
     > [!IMPORTANT]
     > To be able to configure the SQL Server-based databases, make sure the SQL Server administrator account used to run the steps described here is also a member of the sysadmins group (or equivalent) on the server running SQL Server and holding the Central Management Server role. This is especially important to check for any additional Lync Server 2013 pools which require SQL Server database installation or configuration. For example, if you are deploying a second pool (pool02) but the Central Management Server role is held by pool01. The SQL Server sysadmin group (or equivalent) must have permissions on both SQL Server-based databases.
 
-    
-    </div>
+
 
 3.  Open Lync Server 2013 Management Shell, if it’s not already open.
 
 4.  Use the **Install-CsDatabase** cmdlet to install the Topology Builder configured databases.
     
-       ```
         Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn <fully qualified domain name of SQL Server> 
          -DatabasePaths <logfile path>,<database file path> -Report <path to report file>
-       ```
     
-       ```
         Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn sqlbe.contoso.net 
         -Report "C:\Logs\InstallDatabases.html"
-       ```
-    
-    <div class=" ">
     
 
     > [!TIP]
     > The Report parameter is optional but is useful if you are documenting the installation process.
 
-    
-    </div>
+
 
 5.  When the database installation completes, close Lync Server 2013 Management Shell.
-
-</div>
-
-<div>
 
 ## To use Windows PowerShell cmdlets to configure the SQL Server topology using the DatabasePathMap parameter
 
@@ -151,14 +103,11 @@ For installing databases, **Install-CsDatabase** uses three primary methods for 
 
 2.  On any computer, log on with administrative credentials for creating the databases on the SQL Server-based server. See the topic, [Deployment permissions for SQL Server in Lync Server 2013](lync-server-2013-deployment-permissions-for-sql-server.md).
     
-    <div class=" ">
-    
 
     > [!IMPORTANT]
     > To be able to configure the SQL Server-based databases, make sure the SQL Server administrator account used to run the steps described here is also a member of the sysadmins group (or equivalent) on the server running SQL Server and holding the Central Management Server role. This is especially important to check for any additional Lync Server pools which require SQL Server database installation or configuration. For example, if you are deploying a second pool (pool02) but the Central Management Server role is held by pool01. The SQL Server sysadmin group (or equivalent) must have permissions on both SQL Server-based databases.
 
-    
-    </div>
+
 
 3.  Open Lync Server Management Shell, if it’s not already open.
 
@@ -229,16 +178,4 @@ For installing databases, **Install-CsDatabase** uses three primary methods for 
 If you configure your database data files and log files by using the **DatabasePathMap** method, you will need to make a slight change to your normal process when using Topology Builder. Typically, you would define your topology choices, publish the topology, and choose to deploy the database selections.
 
 If you have used **DatabasePathMap** you have already accomplished the third part of the Topology Builder process. In the case of having a completely configured database server in advance of running Topology Builder, you would still define all of your server roles and options, but deselect the option to create the databases.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for Enterprise Voice in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-01_
 
 The deployment process for Enterprise Voice depends on your existing topology, infrastructure, and the Enterprise Voice functionality that you want to support. The required procedures will depend on what features you choose, but there are other planning considerations that you must make at a high level.
 
 In general, consider the type and number of sites that you want to deploy and their geographical locations, the call volume at each site, the types of network links that connect sites, whether you want to provide redundancy and failover for voice functionality for each site, and whether you want to use existing PBX equipment. There are certain considerations, such as high availability, that you should consider when you plan for Lync Server  communications software as a whole. These considerations are discussed in topics throughout this section, as needed.
-
-<div>
 
 ## Planning Considerations
 
@@ -67,16 +52,4 @@ For planning decisions that pertain to the deployment of a particular Enterprise
   - [Moving users to Enterprise Voice in Lync Server 2013](lync-server-2013-moving-users-to-enterprise-voice.md)
 
   - [Lync PreCall Diagnostics Tool in Lync Server 2013](lync-server-2013-lync-precall-diagnostics-tool.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

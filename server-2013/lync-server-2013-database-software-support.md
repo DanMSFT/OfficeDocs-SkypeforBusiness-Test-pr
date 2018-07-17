@@ -8,23 +8,10 @@ ms.date: 12/02/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Database software support in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-12-01_
 
 Lync Server 2013 supports the following database management systems:
 
@@ -44,16 +31,11 @@ Lync Server 2013 supports the following database management systems:
         
         We support the patching and upgrade of Microsoft SQL Server on Front End Servers and Standard Edition servers. However, when you make any kind of upgrade or patch on Front End Servers, you must account for quorum requirements. For more information, see [Upgrade or update Front End Servers in Lync Server 2013](lync-server-2013-upgrade-or-update-front-end-servers.md) and [Topologies and components for Front End Servers, instant messaging, and presence in Lync Server 2013](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md).
     
-    <div>
-    
 
     > [!NOTE]
     > Microsoft SQL Server 2012 Express (64-bit edition) is automatically installed by Lync Server 2013 on each Standard Edition server and each Front End Server server.
 
-    
-    </div>
 
-<div>
 
 
 > [!IMPORTANT]
@@ -69,21 +51,13 @@ Lync Server 2013 supports the following database management systems:
 
 
 
-</div>
-
 In a Front End pool, the back-end database can be a single SQL Server computer.
-
-<div>
 
 
 > [!IMPORTANT]
 > If you collocate Lync Server databases with other databases, we highly recommend assessing all factors that might affect availability and performance, as well as ensuring that, if one node fails, the remaining node can handle the load. To verify failover capabilities, we recommend testing all failover scenarios.
 
 
-
-</div>
-
-<div>
 
 ## Using SQL Mirroring and SQL Clustering
 
@@ -110,16 +84,4 @@ The following support is included:
 For more information about SQL mirroring, see [Back End Server high availability in Lync Server 2013](lync-server-2013-back-end-server-high-availability.md). For details on how to deploy SQL clustering, see [Configure SQL Server clustering for Lync Server 2013](lync-server-2013-configure-sql-server-clustering.md).
 
 For more information and best practices for failover clustering in SQL Server 2012, see <http://technet.microsoft.com/en-us/library/hh231721.aspx>. For failover clustering in SQL Server 2008, see <http://technet.microsoft.com/en-us/library/ms189134(v=sql.105).aspx>.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

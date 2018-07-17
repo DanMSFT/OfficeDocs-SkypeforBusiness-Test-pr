@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Understanding Autodiscover in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-06-03_
 
 The Lync Server 2013 Autodiscover Service is a feature that was originally introduced in Microsoft Lync Server 2010 as part of the Cumulative Update for Lync Server 2010: November 2011. In addition to fixes, this cumulative update delivered support for Lync Mobile and Lync 2013 clients.
 
@@ -34,27 +21,17 @@ In Lync Server 2013, Autodiscover is expanded to communicate to the client which
 
 The best way to understand the Autodiscover response document, including how the web services communicate features to clients through this document, is to dissect and define each line in a typical response from the Lync web service Autodiscover response document.
 
-<div class="">
-
 
 > [!NOTE]
 > In the details that follow, the user has already authenticated to the home server by responding to an authentication request.
 
 
 
-</div>
-
-<div class="">
-
 
 > [!NOTE]
 > The Lync Autodiscover Web Service is defined in the <STRONG>Microsoft Office Protocols</STRONG> in the <STRONG>Open Specifications</STRONG> section of the <STRONG>Microsoft Developer Network</STRONG> (MSDN) library. For details, see the full specification document, "Lync Autodiscover Web Service Protocol," at: <A href="http://go.microsoft.com/fwlink/?linkid=273839">http://go.microsoft.com/fwlink/?LinkId=273839</A>. For details about authentication, see "OC Authentication Web Service Protocol" at <A href="http://go.microsoft.com/fwlink/?linkid=279015">http://go.microsoft.com/fwlink/?LinkId=279015</A>.
 
 
-
-</div>
-
-<div>
 
 ## The Lync Server Web Service Autodiscover Response
 
@@ -86,8 +63,6 @@ An example of an Autodiscover Response document:
        </User>
     </AutodiscoverResponse>
 
-<div>
-
 ## Autodiscover Response Document Details
 
 The Autodiscover Response document can be in one of two formats. The default format is a JavaScript Object Notation (JSON). The other format is extensible markup language (XML) document. The XML is used for this example. The request and response are predictable because the document has a defined schema that determines the format. The line in the document that describes the schema used is the first line in the request or response:
@@ -98,15 +73,11 @@ The definition of **AccessLocation=”External”** indicates that the request w
 
     <SipServerInternalAccess fqdn="pool01.contoso.com" port="5061"/>
 
-&nbsp;
-
     <SipServerExternalAccess fqdn="sip.contoso.com" port="5061"/>
 
 SipServerInternalAccess and SipServerExternalAccess are currently not used. These entries are reserved for future use.
 
     <SipClientInternalAccess fqdn=" pool01.contoso.com" port="443"/>
-
-&nbsp;
 
     <SipClientExternalAccess fqdn="sip.contoso.com " port="443"/>
 
@@ -114,15 +85,11 @@ SipClientInternalAccess and SipClientExternalAccess describe the fully qualified
 
     <Link token="Internal/Autodiscover" href="https://webinternal.contoso.net/Autodiscover/AutodiscoverService.svc/root"/>
 
-&nbsp;
-
     <Link token ="External/Autodiscover" href="https://webexternal.contoso.com/Autodiscover/AutodiscoverService.svc/root"/>
 
 The `Autodiscover` references contain the service entry points for the Autodiscover service. The token attribute contains the name of the service, and the href is a URL that defines for the client where the service can be found. Clients on an external network use the `External/Autodiscover`. The Autodiscover service is installed as part of the deployment process. `Internal/Autodiscover` is not currently used, and is reserved for future use.
 
     <Link token="Internal/AuthBroker" href="https://webinternal.contoso.net/Reach/sip.svc"/>
-
-&nbsp;
 
     <Link token="External/AuthBroker" href="https://webexternal.contoso.com/Reach/sip.svc"/>
 
@@ -130,15 +97,11 @@ The `AuthBroker` references contain the service entry points for the internal an
 
     <Link token="Internal/WebScheduler" href="https://webinternal.contoso.net/Scheduler"/>
 
-&nbsp;
-
     <Link token="External/WebScheduler" href="https://webexternal.contoso.com/Scheduler"/>
 
 The `WebScheduler` token references the URLs for client access to the web-based scheduling for Lync Server conferences. Currently, only the `External/WebScheduler` is used. The WebScheduler is installed as part of the deployment process of your internal Lync Server 2013 deployment web services.
 
     <Link token="Internal/Mcx" href="https://webexternal.contoso.net/Mcx/McxService.svc"/>
-
-&nbsp;
 
     <Link token="External/Mcx" href="https://webexternal.contoso.com/Mcx/McxService.svc"/>
 
@@ -146,11 +109,7 @@ The `WebScheduler` token references the URLs for client access to the web-based 
 
     <Link token="Internal/Ucwa" href="https://webinternal.contoso.net/ucwa/v1/applications"/>
 
-&nbsp;
-
     <Link token="External/Ucwa" href="https://webexternal.contoso.com/ucwa/v1/applications"/>
-
-&nbsp;
 
     <Link token="Ucwa" href="https://webexternal.contoso.com/ucwa/v1/applications"/>
 
@@ -158,11 +117,7 @@ The `WebScheduler` token references the URLs for client access to the web-based 
 
     <Link token="Internal/XFrame" href="https://webinternal.contoso.net/Autodiscover/XFrame/XFrame.html"/>
 
-&nbsp;
-
     <Link token="External/XFrame" href="https://webexternal.contoso.com/Autodiscover/XFrame/XFrame.html"/>
-
-&nbsp;
 
     <Link token="XFrame" href="https://webexternal.contoso.com/Autodiscover/XFrame/XFrame.html"/>
 
@@ -172,28 +127,9 @@ The `WebScheduler` token references the URLs for client access to the web-based 
 
 The `Self` token refers to information specific to the client (user response type) that is making the request. The client that made this request was external, and this Autodiscover reference is to the user portion of the Autodiscover service.
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
 [System requirements for external user access components for Lync Server 2013](lync-server-2013-system-requirements-for-external-user-access-components.md)  
-[Planning for Autodiscover in Lync Server 2013](lync-server-2013-planning-for-autodiscover.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for Autodiscover in Lync Server 2013](lync-server-2013-planning-for-autodiscover.md)
 

@@ -8,29 +8,14 @@ ms.date: 03/09/2017
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS summary - SIP, XMPP federation, and public instant messaging in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2017-03-09_
 
 The Domain Name System (DNS) records that will be required for defining a federation with Office Communications Server or Lync Server partners is determined by your decision to either allow automatic DNS discovery of your domain by other perspective partners. If you publish the \_sipfederationtls.\_tcp. *\<SIP domain name\>* SRV record, any other SIP federated domain will be able to “discover” your federation. You can control which federated domains can communicate with you by using the Allows domains and Blocked Domains settings in the Lync Server Control Panel, or by setting the allowed or blocked domains configuration using the Lync Server Management Shell and the **Get**, **Set**, **New**, **Remove-CsAllowedDomain** and **-CsBlockedDomain** PowerShell cmdlets. For additional information on how to configure theses settings and the use of the PowerShell cmdlets, see **Related Topics** at the end of this topic.
 
 The DNS records summary table depicts the required entries for an open, or discoverable, federation. If you do not want to implement Federation Discovery, You can decide to not configure the \_sipfederationtls.\_tcp. *\<SIP domain name\>* record.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -38,13 +23,9 @@ The DNS records summary table depicts the required entries for an open, or disco
 
 
 
-</div>
-
 To configure extensible messaging and presence protocol (XMPP) for your deployment, you create two domain name system (DNS) records in an external DNS server that will resolve the records to the Access Edge service of your Edge Server or Edge pool.
 
 When you configure domain name system (DNS) for public instant messaging connectivity, you will find that the configuration that supports external users will support public IM connectivity. If you have already configured your Edge Server or Edge pool, you should have the DNS records necessary to support public IM connectivity.
-
-<div>
 
 ## DNS Summary - SIP Federation including Public Instant Messaging Connectivity
 
@@ -70,21 +51,16 @@ When you configure domain name system (DNS) for public instant messaging connect
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>Access Edge service external interface Required for automatic DNS discovery of your federation to other potential federation partners, and is known as “Allowed SIP Domains” (called enhanced federation in previous releases).Repeat as necessary for all SIP domains with Lync enabled users</p>
-<div>
 
 > [!IMPORTANT]
 > This SRV record is required for mobility and the push notification clearing house. In cases where there is more than one SIP domain, create and publish an SRV record for each domain that will have Lync Mobile clients. The Push Notification Service and Apple Push Notification service may not operate as expected if there is not an explicit SRV record for each SIP domain that the deployment supports.
 
 
-</div></td>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## DNS Summary - Extensible Messaging and Presence Protocol (XMPP)
 
@@ -121,10 +97,6 @@ When you configure domain name system (DNS) for public instant messaging connect
 </table>
 
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -137,18 +109,5 @@ When you configure domain name system (DNS) for public instant messaging connect
 [Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
 
 
-[Manage SIP federated domains for your organization in Lync Server 2013](lync-server-2013-manage-sip-federated-domains-for-your-organization.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Manage SIP federated domains for your organization in Lync Server 2013](lync-server-2013-manage-sip-federated-domains-for-your-organization.md)
 

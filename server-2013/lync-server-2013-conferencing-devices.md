@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Conferencing devices in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-05_
 
 Conferencing devices bring Lync Phone Edition features into conference rooms, enabling people in the room to hear, and, depending on the device, see people in other locations.
 
 Use the topics in this section to learn how to set up and manage your conferencing devices.
-
-<div>
 
 
 > [!NOTE]
 > For more information about the conferencing devices supported for use with Lync Server 2013 see the web page <A href="http://technet.microsoft.com/en-us/lync/gg278164.aspx">Phones and devices qualified for Microsoft Lync</A>.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -51,16 +32,4 @@ Use the topics in this section to learn how to set up and manage your conferenci
   - [Enable or disable a conferencing device in Lync Server 2013](lync-server-2013-enable-or-disable-a-conferencing-device.md)
 
   - [Move a conferencing device to a new Registrar pool in Lync Server 2013](lync-server-2013-move-a-conferencing-device-to-a-new-registrar-pool.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

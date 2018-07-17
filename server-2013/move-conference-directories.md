@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Move conference directories
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-04_
 
 Before decommissioning a pool, you need to perform the following procedure for each conference directory in your Office Communications Server 2007 R2 pool.
-
-<div>
 
 ## To move a conference directory to Lync Server 2013
 
@@ -52,27 +37,11 @@ Before decommissioning a pool, you need to perform the following procedure for e
     
         Move-CsConferenceDirectory -Identity 3 -TargetPool pool02.contoso.net
 
-<div>
-
 
 > [!NOTE]
 > You may experience an error, shown below, that is caused by the Lync Server Management Shell requiring an updated set of permissions from Active Directory. To resolve the error, closed the current window and open a new Lync Server Management Shell and run the command again.
 
 
 
-</div>
-
 ![Move-CsConferenceDirectory error output](images/JJ204994.4748b9e8-9651-4527-afe1-cbdc6d5ce4a8(OCS.15).jpg "Move-CsConferenceDirectory error output")
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

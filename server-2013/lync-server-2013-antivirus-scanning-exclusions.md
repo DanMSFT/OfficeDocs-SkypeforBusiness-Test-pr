@@ -8,27 +8,12 @@ ms.date: 11/03/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Antivirus scanning exclusions for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-11-02_
 
 To ensure that the antivirus scanner does not interfere with the operation of Lync Server 2013, you must exclude specific processes and directories for each Lync Server 2013 server or server role on which you run an antivirus scanner. The following processes and directories should be excluded:
-
-<div>
 
 
 > [!NOTE]
@@ -36,17 +21,11 @@ To ensure that the antivirus scanner does not interfere with the operation of Ly
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > Please note that some antivirus programs may need absolute, not relative paths, for their exclusion list.
 
 
-
-</div>
 
   - Lync Server 2013 processes:
     
@@ -145,14 +124,4 @@ To ensure that the antivirus scanner does not interfere with the operation of Ly
       - SQL Server data and log files, including those for the back-end database, user store, archiving store, monitoring store, and application store. Database and log files can be specified in Topology Builder. For details about the data and log files for each database, including default names, see [SQL Server data and log file placement for Lync Server 2013](lync-server-2013-sql-server-data-and-log-file-placement.md) in the Deployment documentation.
     
       - SQL Server data and log files, including those for the Front-end database, Lync store, and RtcDatabase store. They are normally under %localdrive%\\CSData.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

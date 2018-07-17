@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lock or unlock a user PIN in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 You can lock or unlock a user’s PIN from the **Users** section of Lync Server 2013 Control Panel.
-
-<div>
 
 ## To lock a user’s PIN in Lync Server Control Panel
 
@@ -54,22 +39,14 @@ You can lock or unlock a user’s PIN from the **Users** section of Lync Server 
     
     4.  Depending on the user property you selected, enter the criteria that you want to use to filter the search results by typing it or by clicking the arrow in the drop-down list.
         
-        <div>
-        
 
         > [!TIP]
         > To add additional search clauses to your query, click <STRONG>Add Filter</STRONG>.
 
-        
-        </div>
     
     5.  Click **Find**.
     
     6.  Click the user, click **Action**, and then click **Lock PIN**.
-
-</div>
-
-<div>
 
 ## To unlock a user’s PIN in Lync Server Control Panel
 
@@ -95,28 +72,18 @@ You can lock or unlock a user’s PIN from the **Users** section of Lync Server 
     
     4.  Depending on the user property you selected, enter the criteria that you want to use to filter the search results by typing it or by clicking the arrow in the drop-down list.
         
-        <div>
-        
 
         > [!TIP]
         > To add additional search clauses to your query, click <STRONG>Add Filter</STRONG>.
 
-        
-        </div>
     
     5.  Click **Find**.
     
     6.  Click the user, click **Action**, and then click **Unlock PIN**.
 
-</div>
-
-<div>
-
 ## Locking and Unlocking User PINs by Using Windows PowerShell Cmdlets
 
 You can lock and unlock user PINs by using Windows PowerShell and the Lock-CsClientPin and Unlock-CsClientPin cmdlets. You can run these cmdlets either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To lock a user PIN
 
@@ -124,29 +91,11 @@ You can lock and unlock user PINs by using Windows PowerShell and the Lock-CsCli
     
         Lock-CsClientPin -Identity "Ken Myer"
 
-</div>
-
-<div>
-
 ## To unlock a user PIN
 
   - To unlock a user’s PIN, use the Unlock-CsClientPin cmdlet. For example:
     
         Unlock-CsClientPin -Identity "Ken Myer"
 
-</div>
-
-For more information, see the help topic for the [Lock-CsClientPin](lock-csclientpin.md) and [Unlock-CsClientPin](unlock-csclientpin.md) cmdlets.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [Lock-CsClientPin](https://technet.microsoft.com/en-us/library/gg398650\(v=ocs.15\)) and [Unlock-CsClientPin](https://technet.microsoft.com/en-us/library/gg412982\(v=ocs.15\)) cmdlets.
 

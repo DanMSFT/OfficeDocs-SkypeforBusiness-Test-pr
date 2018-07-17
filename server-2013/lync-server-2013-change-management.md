@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Change management in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-08-18_
 
 Changes to the IT environment are unavoidable. Changes include new technologies, systems, applications, hardware, tools, processes, and changes in roles and responsibilities. An effective change management system lets you introduce changes to the IT environment quickly and with minimal service disruption. A change management system brings together the teams involved in changing a system. For example, deciding to take advantage of the Office Web Apps. This is an integrated Lync Service application that enables users to read and edit documents in a browser. The implementation of this service, after you have gone into production, requires the involvement of several teams:
 
@@ -62,21 +49,7 @@ The following example of change management examines how different teams interact
 
   - **The cumulative update is deployed**   The Lync administrator team does the installation during the planned maintenance cycle.
 
-<div>
-
 ## Managing the timing of changes
 
 We recommend that you implement a procedure for scheduling changes to avoid disruptions in overlapping sections of your work. For example, two teams may both be planning a minor change to a system. One team may be applying a cumulative update on a pool while another team is migrating legacy users into that pool. Neither team is affected by the changes that the other team is planning, and each team may not necessarily know about changes that the other team is planning. If both changes occurred at the same time, there might be issues implementing the changes. Also, if there are issues after the changes were applied, for example, if the user migration fails, it may be difficult to decide which change should be rolled back. There should be regular maintenance periods set up between IT and management to test the changes and accept them.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

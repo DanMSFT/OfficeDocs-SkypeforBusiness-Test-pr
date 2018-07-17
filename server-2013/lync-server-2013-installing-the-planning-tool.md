@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing the Planning Tool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-07_
 
 Before you begin designing and planning your Lync Server 2013 infrastructure by using the Microsoft Lync Server 2013, Planning Tool, you must first install the Planning Tool. The Planning Tool does not need to be deployed to a workstation or server that is part of the domain or infrastructure where you plan to install Lync Server 2013. The Readme file that accompanies the Planning Tool details important information about installing and using the tool. Some of the information in the Readme file is duplicated here for clarity.
-
-<div>
 
 
 > [!IMPORTANT]
 > The Planning Tool requires installation by a user with administrator rights and permissions on the computer on which the tool is to be installed.
 
 
-
-</div>
 
 The supported operating systems for installation and operation of the Planning Tool are:
 
@@ -58,8 +41,6 @@ Additionally, the Planning Tool requires Microsoft .NET Framework 4.5.
 
 After the preinstallation requirements are met, you can then install the Planning Tool.
 
-<div>
-
 ## To install the Planning Tool
 
 1.  Log on to the local computer as a member of the Administrators group.
@@ -80,25 +61,8 @@ After the preinstallation requirements are met, you can then install the Plannin
 
 9.  The Planning Tool is ready for use.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Installing optional software in Lync Server 2013](lync-server-2013-installing-optional-software.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Installing optional software in Lync Server 2013](lync-server-2013-installing-optional-software.md)
 

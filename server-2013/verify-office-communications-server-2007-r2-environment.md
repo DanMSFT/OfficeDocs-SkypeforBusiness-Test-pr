@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Verify Office Communications Server 2007 R2 environment
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-16_
 
 Prior to deploying Lync Server 2013 in a coexistence state with Office Communications Server 2007 R2, you need to verify the Office Communications Server 2007 R2 services are configured and started.
 
@@ -36,7 +23,7 @@ Prior to deploying Lync Server 2013 in a coexistence state with Office Communica
 
 3.  Ensure that the services are running on the Standard Edition server or Enterprise pool.
     
-    ![Office Communications Server 2007 R2 Admin Console](images/JJ721906.76897b6d-f433-47d2-930d-0816fc30a3c2(OCS.15).jpg "Office Communications Server 2007 R2 Admin Console")
+    ![Office Communications Server 2007 R2 Admin Console](images/JJ204914.76897b6d-f433-47d2-930d-0816fc30a3c2(OCS.15).jpg "Office Communications Server 2007 R2 Admin Console")
 
 **Review Users configured for Office Communications Server 2007 R2**
 
@@ -56,15 +43,5 @@ Prior to deploying Lync Server 2013 in a coexistence state with Office Communica
 
 2.  Verify that the Office Communications Server XMPP Gateway service is started.
     
-    ![Office Communications Server XMPP Gateway Service](images/JJ721906.23223724-3c4b-4cb9-ace2-1cab2c3c91c3(OCS.15).jpg "Office Communications Server XMPP Gateway Service")
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+    ![Office Communications Server XMPP Gateway Service](images/JJ205231.23223724-3c4b-4cb9-ace2-1cab2c3c91c3(OCS.15).jpg "Office Communications Server XMPP Gateway Service")
 

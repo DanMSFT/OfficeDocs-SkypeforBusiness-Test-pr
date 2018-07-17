@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Phase 10: Decommission legacy site
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-16_
 
 The following topics provide guidance in decommissioning pools, and deactivating and removing servers and pools from a legacy deployment of Office Communications Server 2007 R2. Not all of the procedures listed in this section are required. Read the information in each of these topics to determine which decommissioning procedure to use.
-
-<div>
 
 
 > [!WARNING]
@@ -36,19 +21,11 @@ The following topics provide guidance in decommissioning pools, and deactivating
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > For information on migrating and upgrading Microsoft Unified Communications Managed API (UCMA) applications, prior to decommissioning your legacy environment, see <A href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</A>
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -59,16 +36,4 @@ The following topics provide guidance in decommissioning pools, and deactivating
   - [Decommissioning servers and pools](decommissioning-servers-and-pools.md)
 
   - [Remove BackCompatSite](remove-backcompatsite.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

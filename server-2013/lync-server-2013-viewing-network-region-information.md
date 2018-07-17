@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Viewing network region information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 A network region interconnects various parts of a network across multiple geographic areas. Every network region must be associated with a central site. The central site is the data center site on which the call admission control (CAC) bandwidth policy service is running. You can use Lync Server Control Panel to view network regions. Network regions include settings that determine whether alternate paths through the Internet are allowed for audio and video connections. Use this topic to view existing network regions. For details about creating or modifying existing network regions, see [Creating or modifying network regions in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md).
-
-<div>
 
 ## To view information about a network region with Lync Server Control Panel
 
@@ -40,26 +25,17 @@ A network region interconnects various parts of a network across multiple geogra
 
 4.  On the **Region** page, click the region you want to view.
     
-    <div>
-    
 
     > [!NOTE]
     > You can only view one region at a time.
 
-    
-    </div>
+
 
 5.  On the **Edit** menu, click **Show details**.
-
-</div>
-
-<div>
 
 ## Viewing Network Region Information by Using Windows PowerShell Cmdlets
 
 You can view network region information by using Windows PowerShell and the **Get-CsNetworkRegion** cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view network region information
 
@@ -77,30 +53,11 @@ You can view network region information by using Windows PowerShell and the **Ge
                            BWPolicyModality=Video;AlternatePath=True}
         NetworkRegionID  : Pacific Northwest
 
-</div>
-
-For more information, see the help topic for the [Get-CsNetworkRegion](get-csnetworkregion.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Get-CsNetworkRegion](https://technet.microsoft.com/en-us/library/gg398406\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
 [Creating or modifying network regions in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md)  
-[Deleting existing network regions in Lync Server 2013](lync-server-2013-deleting-existing-network-regions.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deleting existing network regions in Lync Server 2013](lync-server-2013-deleting-existing-network-regions.md)
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Transition a collocated Mediation Server to a stand-alone Mediation Server (optional)
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 Use the procedure that follows to transition your Mediation Server, collocated on your Standard Edition server or Front End pool, to a stand-alone Mediation Server for a single-site deployment.
-
-<div>
 
 ## To transition a collocated Mediation Server to a stand-alone Mediation Server
 
@@ -63,16 +48,4 @@ Use the procedure that follows to transition your Mediation Server, collocated o
 15. From **Topology Builder**, select the top node **Lync Server 2013**.
 
 16. From the **Action** menu, select **Publish Topology** and complete the wizard.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

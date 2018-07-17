@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Example XMPP configuration in Lync Server 2013 – XMPP federation with Google Talk
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-04-22_
 
 An example configuration for deploying the XMPP Proxy defines a federation with Google Talk.
-
-<div>
 
 ## Example XMPP configuration – XMPP federation with Google Talk
 
@@ -50,14 +35,11 @@ An example configuration for deploying the XMPP Proxy defines a federation with 
 
 7.  On the Edge Server, in the Lync Server Deployment Wizard, next to **Step 3: Request, Install, or Assign Certificates**, click **Run again**.
     
-    <div>
-    
 
     > [!TIP]
     > If you are deploying the Edge Server for the first time, you will see Run instead of Run Again.
 
-    
-    </div>
+
 
 8.  On the **Available Certificate Tasks** page, click **Create a new certificate request**.
 
@@ -87,14 +69,11 @@ An example configuration for deploying the XMPP Proxy defines a federation with 
 
 18. On the **Configure Additional Subject Alternate Names** page, specify any additional subject alternative names that are required.
     
-    <div>
-    
 
     > [!TIP]
     > If the XMPP proxy is installed, by default the domain name (such as contoso.com) is populated in the SAN entries. If you require more entries, add them in this step.
 
-    
-    </div>
+
 
 19. On the **Request Summary** page, review the certificate information to be used to generate the request.
 
@@ -116,16 +95,4 @@ An example configuration for deploying the XMPP Proxy defines a federation with 
     
         New-CsExternalAccessPolicy -Identity FedPic -EnableFederationAccess $true -EnablePublicCloudAccess $true
         Get-CsUser | Grant-CsExternalAccessPolicy -PolicyName FedPic
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

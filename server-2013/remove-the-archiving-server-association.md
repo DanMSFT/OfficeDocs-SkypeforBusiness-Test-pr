@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Remove the Archiving server association
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-04_
 
 To remove an Archiving Server, you need to change or clear the dependency on the associated Front End pool, Front End Server, Survivable Branch Appliance and Survivable Branch Server. You edit the properties of the Front End pool, Front End Server, Survivable Branch Appliance and Survivable Branch Server to remove the dependency. After you clear the dependency and you delete the server in Topology Builder, you are notified that the associated database store object in Topology Builder will also be deleted.
-
-<div>
 
 ## To remove the Archiving Server association
 
@@ -40,14 +25,11 @@ To remove an Archiving Server, you need to change or clear the dependency on the
 
 4.  If you have Survivable Branch Server associated, expand **Branch sites**, expand the branch site name, and then expand **Survivable Branch Appliances**.
     
-    <div>
-    
 
     > [!NOTE]
     > <STRONG>Survivable Branch Appliances</STRONG> in the user interface applies to both Survivable Branch Server and Survivable Branch Appliance.
 
-    
-    </div>
+
 
 5.  Right-click the pool, server, or device that is associated with the Archiving Server, and then click **Edit Properties**.
 
@@ -60,16 +42,4 @@ To remove an Archiving Server, you need to change or clear the dependency on the
 9.  On **Delete Dependent Stores**, click **OK**.
 
 10. Publish the topology, check replication status, and then run the Lync Server Deployment Wizard as needed.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

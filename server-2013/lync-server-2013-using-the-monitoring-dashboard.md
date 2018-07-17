@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using the Monitoring Dashboard in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-05_
 
 The Monitoring Dashboard provides administrators with a quick overview of their Microsoft Lync Server 2013 system health and system usage. The Dashboard is designed to show an aggregate view of key system metrics and to do so by displaying either:
 
@@ -34,13 +21,11 @@ The Monitoring Dashboard provides administrators with a quick overview of their 
 
   - Totals for the month, and trend totals for the past six months (for system usage only).
 
-Note that you can use the [Get-CsReportingConfiguration](get-csreportingconfiguration.md) cmdlet to return the URL used for accessing Lync Server 2013 Monitoring Reports:
+Note that you can use the [Get-CsReportingConfiguration](https://technet.microsoft.com/en-us/library/jj205356\(v=ocs.15\)) cmdlet to return the URL used for accessing Lync Server 2013 Monitoring Reports:
 
     Get-CsReportingConfiguration
 
 By default, the Monitoring Dashboard shows data for the following metrics for the current week (and trend totals for the previous six weeks):
-
-<div>
 
 ## System Usage Metrics
 
@@ -90,10 +75,6 @@ By default, the Monitoring Dashboard shows data for the following metrics for th
 
 In addition to the System Usage metrics, the following metrics displays total for the current day and the previous six days (if you select **Weekly View**) or for the current week and the past six weeks if you select **Monthly View**.
 
-</div>
-
-<div>
-
 ## Per-User Call Diagnostics
 
 **Users with call failures**
@@ -105,10 +86,6 @@ In addition to the System Usage metrics, the following metrics displays total fo
 **Users with poor quality calls**
 
   - Total users with poor quality calls
-
-</div>
-
-<div>
 
 ## Call Diagnostics
 
@@ -138,10 +115,6 @@ Conference
 
 Top five servers by failed sessions
 
-</div>
-
-<div>
-
 ## Media Quality Diagnostics
 
 Peer-to-peer
@@ -162,15 +135,9 @@ Conference
 
 Top worst servers by poor quality call percentage
 
-</div>
-
-<div>
-
 ## Working with the Monitoring Dashboard
 
 As noted, by default totals are shown for the current week and trend values are shown for the past six weeks. If you would prefer to see totals for the current month (as well as trend values for the past six months), click the **Monthly View** link in the upper right corner of the dashboard. If you decide to view monthly totals, the link text will change to **Weekly View**. You can switch back to the weekly view by clicking that link.
-
-<div>
 
 
 > [!TIP]
@@ -178,11 +145,7 @@ As noted, by default totals are shown for the current week and trend values are 
 
 
 
-</div>
-
 The values shown in the **This week**, **This month**, or **Today** columns link you to more detailed information about the item. Keep in mind that the column name and the values displayed in that column will often differ depending on the metric chosen and depending on whether you have selected weekly view or monthly view. For example, if you click the totals shown for the **Unique user logons** metric you will see the **User Registration Report** for the specified time period. You can return to the Monitoring Dashboard at any time by clicking **Dashboard**.
-
-<div>
 
 
 > [!TIP]
@@ -190,13 +153,7 @@ The values shown in the **This week**, **This month**, or **Today** columns link
 
 
 
-</div>
-
 The **Trend** column displays a simple line graph that shows totals for the past six weeks (or, depending on the metric and the time interval, the past six days or the past six months). These simple line graphs display one unlabeled data point for each time period (for example, one unlabeled data point for each of the past six weeks). However, you can retrieve actual values for these graphs by holding your mouse pointer over the graph. In that case, a tooltip shows you the maximum and minimum values in the graph.
-
-</div>
-
-<div>
 
 ## Exporting Data from the Monitoring Dashboard
 
@@ -233,16 +190,4 @@ You will then need to refresh the Monitoring Dashboard before the changes take e
 You can also create an Excel spreadsheet that includes live data feeds, which includes links to the latest Monitoring Dashboard data. To create a live data feed file, click the orange **Export to Data Feed** icon in the toolbar.
 
 If you would prefer to print the current Dashboard then click the printer icon in the toolbar.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Phase 8: Move from pilot deployment into production
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-15_
 
 The topics in this section describe tasks you must complete prior to moving your deployment of Lync Server 2013 from a pilot deployment to a production-level deployment.
-
-<div>
 
 ## In This Section
 
@@ -37,16 +22,4 @@ The topics in this section describe tasks you must complete prior to moving your
   - [Move remaining users to Lync Server 2013](move-remaining-users-to-lync-server-2013_1.md)
 
   - [Configure XMPP gateway on Lync Server 2013](configure-xmpp-gateway-on-lync-server-2013_1.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

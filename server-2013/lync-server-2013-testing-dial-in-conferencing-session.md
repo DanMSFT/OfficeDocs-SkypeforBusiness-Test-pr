@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing dial-in conferencing session in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsDialInConferencing cmdlet verifies whether a user can participate in a dial-in conference. Test-CsDialInConferencing works by trying to log a test user onto the system. If the logon succeeds, the cmdlet will then use the user’s credentials and permissions to try all of the available dial-in conferencing access numbers. The success or failure of each dial-in try will be noted, then the test user will be logged off from Lync Server.Test-CsDialInConferencing only verifies that the appropriate connections can be made. The cmdlet does not actually make any phone calls or create any dial-in conferences that other users can join.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -72,11 +53,7 @@ To run this check using an actual user account, you must create a Windows PowerS
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsDialInConferencing -TargetFqdn atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsDialInConferencing](test-csdialinconferencing.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsDialInConferencing](https://technet.microsoft.com/en-us/library/gg399013\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -114,10 +91,6 @@ The previous output indicates that the test user was denied access to Lync Serve
 
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object SipAddress
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsDialInConferencing might fail:
@@ -135,16 +108,4 @@ Here are some common reasons why Test-CsDialInConferencing might fail:
   - You might have an incorrect dial-in conferencing access number. You can return your currently-configured list of dial-in conferencing access numbers by using this command:
     
         Get-CsDialConferencingAccessNumber
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

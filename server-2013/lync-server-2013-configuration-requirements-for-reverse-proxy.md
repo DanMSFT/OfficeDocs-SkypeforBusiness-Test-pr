@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuration requirements for reverse proxy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-05_
 
 Lync Server 2013 imposes a few requirements on communications from the external client that are then passed on to the external Web services hosted on the Director, Director pool, Front End Server or Front End pool. The reverse proxy is also responsible for publishing the Office Web Apps Server, if you are offering conferencing to your users.
-
-<div>
 
 
 > [!NOTE]
 > Lync Server 2013 does not specify a particular reverse proxy that you must use. Lync Server 2013 only defines operational requirements that the reverse proxy must be able to do. Typically, the reverse proxy that you already have deployed in your infrastructure may be able to meet the requirements.
 
 
-
-</div>
-
-<div>
 
 ## Reverse Proxy Requirements
 
@@ -65,16 +46,4 @@ The functional operations that Lync Server 2013 expect a reverse proxy to perfor
   - Bridging of unencrypted TCP traffic from one port (for example, TCP 80) to another (for example, TCP 8080).
 
   - Allow configuration of, or accept, NTLM authentication, No authentication and Pass-through authentication.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

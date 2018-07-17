@@ -8,29 +8,14 @@ ms.date: 09/17/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying a SQL Server nonstandard port and alias in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-09-16_
 
 Microsoft Lync Server 2013 supports using a non-standard port and alias in SQL Server. Using a SQL Server non-standard port and an alias increases security and creates a more flexible environment for the Lync deployment. These steps are only a single step in properly securing your Lync Server 2013 environment. Additional steps should be taken to reduce the attack surface of a Lync Server 2013 implementation.
 
 The following article describes the steps required to setup a SQL Server non-standard port and alias in Lync Server 2013.
-
-<div>
 
 ## Deploying a SQL Server Non-Standard Port and Alias in Lync Server 2013
 
@@ -40,15 +25,11 @@ Lync Server 2013 Topology Builder supports using a SQL Server alias as the Full
 
 In order to be successful in determining the port Lync Server 2013 is using to communicate with SQL Server, the attacker would need to scan all ports to obtain the port information. A port scan by an attacker increases the chances that security can detect and stop the instruction. In addition to adding increased security with a non-standard port, you can also use a SQL Server alias to provide flexibility for the deployment. This is valuable in order to reduce configuration changes in situations where a SQL Server name change is required.
 
-<div>
-
 
 > [!NOTE]
 > SQL Server provides two fault tolerance methods (Failover Clustering and Mirroring). Both SQL Server fault tolerance methods are supported using a SQL Server non-standard port and alias with Lync Server 2013. If the SQL Server backend used by the pool is in a mirrored configuration, then the SQL browser service on the SQL Server backend servers should be running for Front End servers to connect to the mirrored database when the databases are failed over to the mirrored SQL Server.
 
 
-
-</div>
 
 When configuring SQL Server database connectivity from within Topology Builder, or when using the Install-CsDatabase cmdlet, it’s not possible to explicitly define a SQL Server non-standard port number and associate it with a SQL instance. To set a non-standard port, you’ll need to use SQL Server and Windows Server utilities.
 
@@ -62,15 +43,9 @@ To set up a SQL Server non-standard port and alias for use with Lync Server 2013
 
   - Publish the Topology, and Verify the Database.
 
-<div>
-
 ## Confirm that Lync Server 2013 has the Latest Updates Applied
 
 It is important to keep Lync Server 2013 up to date. To check for the most recent updates and information on how to apply them, see [Updates for Lync Server 2013](http://support.microsoft.com/kb/2809243).
-
-</div>
-
-<div>
 
 ## Setup the SQL Server Non-Standard Port and Alias
 
@@ -114,15 +89,11 @@ The SQL Server non-standard port and alias must be set up on the database instan
     
     ![Reset the SQL Server service for instance.](images/Dn776290.a965c8cf-f769-4b52-bb38-c48a438cf491(OCS.15).jpg "Reset the SQL Server service for instance.")
 
-<div>
-
 
 > [!IMPORTANT]
 > Make sure you update your firewall settings to accommodate the new SQL Server port.
 
 
-
-</div>
 
 **Create and Configure a SQL Server Alias**
 
@@ -140,14 +111,11 @@ The SQL Server non-standard port and alias must be set up on the database instan
     
     ![Creating a new alias](images/Dn776290.03653588-aecf-4fdd-b58a-95f5b372d478(OCS.15).jpg "Creating a new alias")
     
-    <div>
-    
 
     > [!WARNING]
     > Make sure to enter the same non-standard port you used in the previous step since that is the port SQL Server will be listening on. If a configured alias is connecting to the wrong SQL Server FQDN or Instance, disable and then re-enable the associated network protocol. Doing this clears any cached connection information and allows the client to connect correctly.
 
-    
-    </div>
+
 
 **Create a DNS CNAME Resource Record**
 
@@ -173,23 +141,15 @@ The SQL Server non-standard port and alias must be set up on the database instan
 
 7.  Choose **OK** to save the CNAME and view it in DNS Manager.
 
-</div>
-
-<div>
-
 ## Validate Database Connectivity
 
 There are many different ways to make sure it is working. You want to make sure that the SQL Server database is listening on the specified port using the alias. A quick check can be completed using the **netstat** and **telnet** commands.
-
-<div>
 
 
 > [!NOTE]
 > Telnet Client is a Feature that comes with Windows Server but that must be installed. A Windows Server Feature can be installed by opening Server Manager and selecting Add Roles and Features from the Manage menu.
 
 
-
-</div>
 
 **Use netstat and telnet to verify database connectivity**
 
@@ -201,19 +161,9 @@ There are many different ways to make sure it is working. You want to make sure 
 
 3.  Type **telnet \<alias name\> \<port \#\>** to confirm the connection to the SQL Server instance. If the connection is successful, telnet will connect and you shouldn’t see an error. This shows that the SQL Server instance is listening on the correct port with the correct alias. If there’s a problem connecting to the SQL Server database, then telnet shows an error that the connection cannot be made. Now that you have checked database connectivity on the database server, you can do the same thing from Lync Server (over the network) and make sure there aren’t any firewalls blocking access along the way.
 
-</div>
-
-<div>
-
 ## Conclusion
 
 Once the SQL Server alias has been configured, you can use it to create a Lync Server 2013 topology in the Topology Builder tool. For more information about topologies, see [Defining and configuring the topology in Lync Server 2013](lync-server-2013-defining-and-configuring-the-topology.md).
-
-</div>
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -223,18 +173,5 @@ Once the SQL Server alias has been configured, you can use it to create a Lync S
 
 [Planning for security in Lync Server 2013](lync-server-2013-planning-for-security.md)  
 [Defining and configuring the topology in Lync Server 2013](lync-server-2013-defining-and-configuring-the-topology.md)  
-[Deploying Lync Server 2013](lync-server-2013-deploying-lync-server.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying Lync Server 2013](lync-server-2013-deploying-lync-server.md)
 

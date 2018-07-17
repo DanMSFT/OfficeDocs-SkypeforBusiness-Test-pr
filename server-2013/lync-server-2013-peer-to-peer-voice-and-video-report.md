@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Peer-to-Peer Voice and Video Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-21_
 
 The Peer-to-Peer Voice and Video Report provides a detailed look at the distribution of voice and video calls over a specified period of time (for example, calls per hour or calls per day). The report also gives you the option of viewing all the voice and video calls that were made, or of viewing only the successful or failed calls. The reports shows call information broken down into the following groupings:
 
@@ -35,8 +22,6 @@ The Peer-to-Peer Voice and Video Report provides a detailed look at the distribu
   - Calls per access type (users logged on to the internal network vs. users logged on to the external network)
 
   - Calls per Mediation Server
-
-<div>
 
 ## To access the peer-to-peer voice and video report
 
@@ -50,17 +35,9 @@ You can access the Peer-to-Peer Voice and Video Report only by opening the Peer-
 
   - Total peer-to-peer video minutes
 
-</div>
-
-<div>
-
 ## To make the best use of the peer-to-peer voice and video report
 
 There are a number of ways you can filter the Peer-to-Peer Voice and Video Report. However, those filtering options are hidden from view by default. To view the filtering options available to you, click **Show/Hide Parameters** button in the upper-right corner of the Report window.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -141,10 +118,6 @@ Filters provide a way for you to return a more finely targeted set of data or to
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for peer-to-peer voice and video activity by Pool
 
 The following table lists the information provided in the Peer-to-Peer Voice and Video Report for each pool.
@@ -183,10 +156,6 @@ The following table lists the information provided in the Peer-to-Peer Voice and
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for peer-to-peer voice and video activity by call type
 
@@ -233,10 +202,6 @@ The following table lists the information provided in the Peer-to-Peer Voice and
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for peer-to-peer voice and video activity by access type
 
 The following table lists the information provided in the Peer-to-Peer Voice and Video Report for each network access type.
@@ -281,10 +246,6 @@ The following table lists the information provided in the Peer-to-Peer Voice and
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for peer-to-peer voice and video activity by mediation server
 
 The following table lists the information provided in the Peer-to-Peer Voice and Video Report for each Mediation Server.
@@ -322,17 +283,4 @@ The following table lists the information provided in the Peer-to-Peer Voice and
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

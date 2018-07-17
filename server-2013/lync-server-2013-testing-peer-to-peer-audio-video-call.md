@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing peer to peer audio/video call in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,19 +38,13 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 Test-CsP2PAV is used to determine whether a pair of test users can participate in a peer-to-peer A/V conversation. To test this scenario, the cmdlet starts off by logging on the two users to Lync Server. Assuming that the two logons succeed, the first user then invites the second user to join an A/V call. The second user accepts the call, the connection between the two users is tested, and then the call is ended and the test users are logged off from the system.
 
 Test-CsP2PAV does not actually conduct an A/V call. Multimedia information is not exchanged between the test users. Instead, the cmdlet merely verifies that the appropriate connections can be made and that the two users can conduct such a call.
 
-For more information, see the Help documentation for the [Test-CsP2PAV](test-csp2pav.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsP2PAV](https://technet.microsoft.com/en-us/library/gg412821\(v=ocs.15\)) cmdlet.
 
 ## Running the test
 
@@ -76,10 +57,6 @@ To run this check using actual user accounts, you must create two Lync Server cr
     $credential1 = Get-Credential "litwareinc\kenmyer"
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsP2PAV -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:davidlongmire@litwareinc.com" -ReceiverCredential $credential2
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -139,10 +116,6 @@ An exception 'The endpoint was unable to register. See the ErrorCode for specifi
 
 Although it might not be immediately obvious, if you examine the output carefully you’ll see that an incorrect Registrar port (port 5062) was specified. In turn, that caused the test to fail.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsP2PAV might fail:
@@ -156,16 +129,4 @@ Here are some common reasons why Test-CsP2PAV might fail:
         Get-CsUser "sip:kenmyer@litwareinc.com" | Select-Object Enabled
     
     If the Enabled property is set to False, that means that the user is currently not enabled for Lync Server.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

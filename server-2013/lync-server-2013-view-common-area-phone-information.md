@@ -8,32 +8,15 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View common area phone information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
 
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-20_
-
-You can view information about the common area phones configured for use in your organization by using the **Get-CsCommonAreaPhone** cmdlet. Used without any parameters, this cmdlet returns information about all your common area phones. Optional parameters provide different ways for you to filter information. For example, you can return all the common area phones that have contact objects in a specified organizational unit (OU) or all the contacts objects located in a specified building. For details about **Get-CsCommonAreaPhone** parameters, see [Get-CsCommonAreaPhone](get-cscommonareaphone.md).
+You can view information about the common area phones configured for use in your organization by using the **Get-CsCommonAreaPhone** cmdlet. Used without any parameters, this cmdlet returns information about all your common area phones. Optional parameters provide different ways for you to filter information. For example, you can return all the common area phones that have contact objects in a specified organizational unit (OU) or all the contacts objects located in a specified building. For details about **Get-CsCommonAreaPhone** parameters, see [Get-CsCommonAreaPhone](https://technet.microsoft.com/en-us/library/gg412934\(v=ocs.15\)).
 
 Run **Get-CsCommonAreaPhone** either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
 
-<div>
-
-
-<div>
 
 ## Viewing Information about All Your Common Area Phones
 
@@ -61,19 +44,5 @@ Run **Get-CsCommonAreaPhone** either from the Lync Server 2013 Management Shell 
         Description        :
         ExUmEnabled        : False
 
-</div>
-
-For details, see the Help topic for the [Get-CsCommonAreaPhone](get-cscommonareaphone.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see the Help topic for the [Get-CsCommonAreaPhone](https://technet.microsoft.com/en-us/library/gg412934\(v=ocs.15\)) cmdlet.
 

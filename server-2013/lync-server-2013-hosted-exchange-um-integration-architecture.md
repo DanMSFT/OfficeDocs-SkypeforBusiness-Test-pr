@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Hosted Exchange UM integration architecture in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-25_
 
 The Lync Server 2013 ExUM Routing application supports integration with an on-premises Exchange Unified Messaging (UM) deployment, with Exchange UM hosted by a service provider, or with a combination of the two. The following diagram shows all three possibilities.
 
@@ -40,16 +27,11 @@ The following modes are supported:
 
   - **Mixed deployment:** Your Lync Server 2013 deployment has some user mailboxes homed on local Exchange servers within your enterprise and some mailboxes homed in a hosted Exchange service data center.
     
-    <div>
-    
 
     > [!NOTE]
     > The mixed deployment can be used as a transitional solution during evaluation and phased migration of users to hosted Exchange UM, or a permanent solution if you opt to keep some users’ Exchange UM services on-premises after transferring others.
 
-    
-    </div>
 
-<div>
 
 ## Shared SIP Address Space
 
@@ -57,15 +39,11 @@ To integrate Lync Server 2013 with an on-premises Exchange UM deployment, you gr
 
 To integrate Lync Server 2013 with hosted Exchange UM, you must configure a *shared SIP address space*. In this configuration, the same SIP domain address space is available to both Lync Server 2013 and the hosted Exchange UM service provider.
 
-<div>
-
 
 > [!NOTE]
 > Use of the shared SIP address space is similar to the approach used in a cross-premises Lync Server 2013 environment, in which some users are homed in the on-premises deployment and some are homed in a hosted deployment (such as Lync Online). The SIP domain is split between them. When you integrate Lync Server 2013 with hosted Exchange UM, ensure that you include the Exchange UM service provider in the shared SIP address space.
 
 
-
-</div>
 
 To configure the shared SIP address space for integrating with an Exchange UM service provider, you need to configure your Edge Server as follows:
 
@@ -92,16 +70,4 @@ To configure the shared SIP address space for integrating with an Exchange UM se
       - **ProxyFQDN** specifies the fully qualified domain name (FQDN) for the proxy server used by the hosting provider, for example, **proxyserver.fabrikam.com**. Contact your hosting provider for this information. This value cannot be modified. If the hosting provider changes its proxy server, you will need to delete and then recreate the entry for that provider.
     
       - **IsLocal** indicates whether the proxy server used by the hosting provider is contained within your Lync Server 2013 topology. Must be set to **False**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

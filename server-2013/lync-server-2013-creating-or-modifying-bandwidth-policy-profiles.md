@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Creating or modifying bandwidth policy profiles in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-15_
 
 As part of call admission control (CAC), a bandwidth policy is used to define bandwidth limitations for certain modalities. In Microsoft Lync Server 2013, only audio and video modalities can be assigned bandwidth limitations. You can set overall bandwidth limitations and session limitations. You can use the Lync Server Control Panel to create, modify, or delete a container profile for these policies. Each bandwidth policy profile can be associated with one or more network sites. Use the following procedures to create or modify a bandwidth policy profile. To delete a bandwidth policy profile, see [Deleting network bandwidth policy profiles in Lync Server 2013](lync-server-2013-deleting-network-bandwidth-policy-profiles.md)
-
-<div>
 
 ## To create a new bandwidth policy profile
 
@@ -54,18 +39,11 @@ As part of call admission control (CAC), a bandwidth policy is used to define ba
 
 11. Click **Commit**.
     
-    <div>
-    
 
     > [!NOTE]
     > Creating a new bandwidth policy profile does not automatically enforce bandwidth restrictions. You must first associate the policy profile with a site. For details about how to associate a policy profile with a site, see <A href="lync-server-2013-creating-or-modifying-network-sites.md">Creating or modifying network sites in Lync Server 2013</A>.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To modify a bandwidth policy profile
 
@@ -83,18 +61,11 @@ As part of call admission control (CAC), a bandwidth policy is used to define ba
 
 7.  Click **Commit**.
     
-    <div>
-    
 
     > [!NOTE]
     > When you modify the bandwidth policy profile, it will immediately update the bandwidth limitations of all network sites associated with this bandwidth policy profile.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -103,20 +74,7 @@ As part of call admission control (CAC), a bandwidth policy is used to define ba
 
 
 [Configure call admission control in Lync Server 2013](lync-server-2013-configure-call-admission-control.md)  
-[New-CsNetworkBandwidthPolicyProfile](new-csnetworkbandwidthpolicyprofile.md)  
-[Set-CsNetworkBandwidthPolicyProfile](set-csnetworkbandwidthpolicyprofile.md)  
-[Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg398675\(v=ocs.15\))  
+[Set-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg398338\(v=ocs.15\))  
+[Get-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg425815\(v=ocs.15\))
 

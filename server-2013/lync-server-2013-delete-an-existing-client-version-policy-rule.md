@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete an existing client version policy rule in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-21_
 
 A client version policy is made up of a set of client version policy rules. These rules define the actions that should be taken when users attempt to log on with specific clients and client versions. You can delete individual rules from a client version policy from Lync Server 2013 Control Panel.
-
-<div>
 
 ## To delete client version policy rules with Lync Server Control Panel
 
@@ -41,16 +26,4 @@ A client version policy is made up of a set of client version policy rules. Thes
 4.  On the **Client Version Policy** page, double-click the client version policy for the rule you want to delete.
 
 5.  The rules appear on the **Edit Client Version Policy** page. To delete a rule, select the rule, and then click **Remove**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

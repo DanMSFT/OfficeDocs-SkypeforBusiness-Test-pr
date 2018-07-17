@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Capacity planning for Lync Server 2013 using the user models
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-01-14_
 
 This section provides guidance on how many servers you need at a site for the number of users at that site, according to the usage described in [User models in Lync Server 2013](lync-server-2013-user-models.md).
-
-<div>
 
 ## Tested Hardware Platform
 
@@ -76,10 +61,6 @@ All the performance results and deployment recommendations in this section are b
 </table>
 
 
-</div>
-
-<div>
-
 ## Summary of Results
 
 The following table summarizes these recommendations.
@@ -104,13 +85,12 @@ The following table summarizes these recommendations.
 <tr class="even">
 <td><p>A/V Conferencing</p></td>
 <td><p>The A/V Conferencing service provided by a Front End pool supports the pool’s conferences assuming a maximum conference size of 250 users, and only one such large conference running at a time.</p>
-<div>
 
 > [!NOTE]
 > Additionally, you can support large conferences of between 250 and 1000 users by deploying a separate Front End pool with two Front End Servers to host the large conferences. For details, see <A href="lync-server-2013-supporting-large-meetings.md">Supporting large meetings using Lync Server 2013</A>.
 
 
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p>One Edge Server</p></td>
@@ -138,21 +118,13 @@ The following table summarizes these recommendations.
 </table>
 
 
-</div>
-
-<div>
-
 ## Front End Server
-
-<div>
 
 
 > [!NOTE]
 > Stretched pools are not supported for this server role.
 
 
-
-</div>
 
 In a Front End pool, you should have one Front End Server for every 6,660 users homed in the pool, assuming that hyper-threading is enabled on all servers in the pool, and that the server hardware meets the recommendations in [Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md). The maximum number of users in one Front End pool is 80,000, assuming that hyper-threading is enabled on all the servers in the pool. If you have more than 80,000 users at a site, you can deploy more than one Front End pool.
 
@@ -172,15 +144,11 @@ The number of users supported with good performance by a particular Front End po
 
   - Your organization’s usage differs significantly from the user models, such as significantly more conferencing traffic.
 
-<div>
-
 
 > [!IMPORTANT]
 > In Lync Server 2013, the presence databases are now hosted on Front End Servers, unlike in Lync Server 2010 where they were hosted on the Back End Server. This means that the disk performance and capacity of your Front End Servers should not be compromised from the recommendations listed earlier in this section and in <A href="lync-server-2013-server-hardware-platforms.md">Server hardware platforms for Lync Server 2013</A>, regardless of the number of users hosted by your Front End Servers.
 
 
-
-</div>
 
 The following table shows the average bandwidth for IM and presence, given the user model, as defined in [User models in Lync Server 2013](lync-server-2013-user-models.md).
 
@@ -205,19 +173,11 @@ The following table shows the average bandwidth for IM and presence, given the u
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > To improve the media performance of the co-located A/V Conferencing and Mediation Server functionality on your Front End Servers, you should enable receive-side scaling (RSS) on the network adapters on your Front End Servers. RSS enables incoming packets to be handled in parallel by multiple processors on the server. For details, see "Receive-Side Scaling Enhancements in Windows Server 2008" at <A href="http://go.microsoft.com/fwlink/p/?linkid=268731">http://go.microsoft.com/fwlink/p/?linkId=268731</A>. For details about how to enable RSS, see your network adapter documentation.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Conferencing Maximums
 
@@ -231,13 +191,7 @@ To enable conferences with between 250 and 1000 users, you can set up a separate
 
 If your organization has many more mixed-mode conferences than are assumed in the user model, you might need to deploy more Front End Servers than the recommendations in this document (up to a limit of 12 FEs). For details about the assumptions in the user model, see [User models in Lync Server 2013](lync-server-2013-user-models.md).
 
-</div>
-
-<div>
-
 ## Edge Server
-
-<div>
 
 
 > [!NOTE]
@@ -245,13 +199,9 @@ If your organization has many more mixed-mode conferences than are assumed in th
 
 
 
-</div>
-
 You should deploy one Edge Server for every 12,000 remote users who will access a site concurrently. At a minimum we recommend two Edge Servers for high availability. These recommendations assume that the hardware for your Edge Servers meets the recommendations in [Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md).
 
 When you account for the number of users for the Edge Servers, include the users homed on Survivable Branch Appliances and Survivable Branch Servers at branch offices that are associated with a Front End pool at this site.
-
-<div>
 
 
 > [!NOTE]
@@ -259,43 +209,25 @@ When you account for the number of users for the Edge Servers, include the users
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## Director
-
-<div>
 
 
 > [!NOTE]
 > Stretched pools are not supported for this server role.
 
 
-
-</div>
 
 If you deploy the Director server role we recommend that you deploy one Director for every 12,000 remote users who will access a site concurrently. At a minimum we recommend two Directors for high availability. These recommendations assume that the hardware for your Edge Servers meets the recommendations in [Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md).
 
 When you account for the number of users for the Directors, include the users homed on Survivable Branch Appliances and Survivable Branch Servers at branch offices that are associated with a Front End pool at this site.
 
-</div>
-
-<div>
-
 ## Mediation Server
-
-<div>
 
 
 > [!NOTE]
 > Stretched pools are not supported for this server role.
 
 
-
-</div>
 
 If you collocate Mediation Server with Front End Server, Mediation Server runs on every Front End Server in the pool, and should provide enough capacity for the users in the pool.
 
@@ -339,15 +271,11 @@ All the following tables assume usage as summarized in [User models in Lync Serv
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > Although servers with 32 GB of memory were used for performance testing, servers with 16 GB of memory are supported for stand-alone Mediation Server, and are sufficient to provide the performance shown in this table.
 
 
-
-</div>
 
 ### Mediation Server Capacity (Mediation Server Collocated with Front End Server) 70% Internal Users, 30% External Users, Non-Bypass Call Capacity (Media Processing Performed by Mediation Server)
 
@@ -371,17 +299,11 @@ All the following tables assume usage as summarized in [User models in Lync Serv
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > This number is much smaller than the numbers for the stand-alone Mediation Server because the Front End Server has to handle other features and functions for the 6600 users homed on it, in addition to the transcoding needed for voice calls.
 
 
-
-</div>
-
-<div>
 
 
 > [!NOTE]
@@ -389,21 +311,11 @@ All the following tables assume usage as summarized in [User models in Lync Serv
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## Back End Server
 
 In Lync Server 2013, the presence databases are located on the Front End Servers instead of the Back End Server. This has resulted in a much simpler requirement for each Back End Server in Lync Server 2013, equivalent to the hardware requirement for the Front End Server. Contrast this to Lync Server 2010, where the Back End Server was required to be a much higher grade server with 25 disks. However, the workload of Back End Servers is still such that you should not fail to meet the hardware recommendations listed earlier in this section and in [Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md).
 
 To provide high availability of your Back End Server, we recommend deploying server mirroring. For more information, see [Back End Server high availability in Lync Server 2013](lync-server-2013-back-end-server-high-availability.md).
-
-</div>
-
-<div>
 
 ## Monitoring and Archiving
 
@@ -421,7 +333,7 @@ The following table indicates approximately how much database storage is require
 </colgroup>
 <tbody>
 <tr class="odd">
-<td></td>
+<td><p></p></td>
 <td><p><strong>CDR (Monitoring)</strong></p></td>
 <td><p><strong>QoE (Monitoring)</strong></p></td>
 <td><p><strong>Archiving</strong></p></td>
@@ -512,25 +424,9 @@ Microsoft used the hardware in the following table for the database server for M
 </table>
 
 
-</div>
-
-<div>
-
 ## In This Section
 
   - [Estimating voice usage and traffic for Lync Server 2013](lync-server-2013-estimating-voice-usage-and-traffic.md)
 
   - [Deployment guidelines for Mediation Server in Lync Server 2013](lync-server-2013-deployment-guidelines-for-mediation-server.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

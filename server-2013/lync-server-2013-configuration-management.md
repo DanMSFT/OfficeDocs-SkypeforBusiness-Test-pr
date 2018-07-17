@@ -8,23 +8,10 @@ ms.date: 05/16/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuration management in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-05-15_
 
 Configuration management is the process of recording and tracking hardware and software assets and system configuration information. It is generally used to track software licenses, maintain a standard hardware and software build for client computers and servers, and define naming standards for new computers. Configuration management generally covers the following categories:
 
@@ -37,8 +24,6 @@ Configuration management is the process of recording and tracking hardware and s
   - **Cumulative Updates and Hotfixes**   This category tracks which service packs are tested and approved for use and which computers are up to date. This information is important to reduce the risk of computers being compromised and to detect users who have installed unapproved updates.
 
   - **System Configuration Information**   This category tracks the function of a system, the interaction between system elements, and the processes that depend on a system that is running smoothly. For example, third-party proxy server may be configured on a single server. The proxy server’s dependence on this server should be understood and contingency plans may be required if there is a failure. If the proxy server can be configured to also communicate with another front-end server, dependencies and contingency plans will probably change.
-
-<div>
 
 ## Implementing configuration management
 
@@ -54,10 +39,6 @@ The configuration management database is a useful tool for support staff and man
 
   - **Planning Upgrades**   If a capacity review reveals that additional storage space is required on your Lync database servers, it’s important to know whether each server has an internal RAID controller. If they do, then are they the same model? Do they have the same number of disks installed? The configuration management database will indicate the type of disk that can be installed, the number, and the upgrade path in each case.
 
-</div>
-
-<div>
-
 ## Tools used for configuration management
 
 There are many tools to discover, audit, and report assets. Some of these tools are discussed in this section.
@@ -66,25 +47,9 @@ There are many tools to discover, audit, and report assets. Some of these tools 
 
   - **Automated Tools**   Depending on the size of your business and your organizational needs, you may want to consider using automated tools. Tools such as System Center Configuration Manager incorporate standard report templates (such as service pack level) and also enable you to create customized reports, for example, for a custom application. The System Center Configuration Manager can also be used to report on hardware and software configurations.
 
-</div>
-
-<div>
-
 ## Relationship with change management
 
 Configuration management is closely related to change management. Configuration management identifies the need for change and identifies and records that a change has occurred. For example, the configuration management database can be used to identify servers that require a hotfix. Change management then defines the process for applying the hotfix.
 
 Conversely, if a new cumulative update is rolled out, the change management process should supply this information to the configuration management system. The configuration management tools will probably need to be configured to identify the new software so that they can discover and track where and when the software is deployed.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

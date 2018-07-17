@@ -8,23 +8,10 @@ ms.date: 05/11/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Hardware load balancer requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-05-11_
 
 The Lync Server 2013 scaled consolidated Edge topology is optimized for DNS load balancing for new deployments federating primarily with other organizations using Lync Server. If high availability is required for any of the following scenarios, a hardware load balancer must be used on Edge Server pools for the following:
 
@@ -34,17 +21,11 @@ The Lync Server 2013 scaled consolidated Edge topology is optimized for DNS load
 
   - Connectivity to public IM users
 
-<div>
-
 
 > [!IMPORTANT]
 > Using DNS load balancing on one interface and hardware load balancing on the other is not supported. You must use hardware load balancing for both interfaces or DNS load balancing for both.
 
 
-
-</div>
-
-<div>
 
 
 > [!NOTE]
@@ -52,21 +33,13 @@ The Lync Server 2013 scaled consolidated Edge topology is optimized for DNS load
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > The direct server return (DSR) NAT is not supported with Lync Server 2013.
 
 
 
-</div>
-
 To determine whether your hardware load balancer supports the necessary features required by Lync Server 2013, see "Lync Server 2010 Load Balancer Partners" at [http://go.microsoft.com/fwlink/p/?linkId=202452](http://go.microsoft.com/fwlink/p/?linkid=202452).
-
-<div>
 
 ## Hardware Load Balancer Requirements for Edge Servers Running the A/V Edge Service
 
@@ -82,23 +55,15 @@ Following are the hardware load balancer requirements for Edge Servers running t
 
   - The external interface of the Edge Server running the A/V Edge Service must use publically routable IP addresses and no NAT or port translation on any of the edge external IP addresses.
 
-</div>
-
-<div>
-
 ## Hardware Load Balancer Requirements
 
 Cookie-based affinity requirements are greatly reduced in Lync Server 2013 for Web services. If you are deploying Lync Server 2013 and will not retain any Lync Server 2010 Front End Servers or Front End pools, you do not need cookie-based persistence. However, if you will temporarily or permanently retain any Lync Server 2010 Front End Servers or Front End pools, you still use cookie-based persistence as it is deployed and configured for Lync Server 2010.
-
-<div>
 
 
 > [!NOTE]
 > <STRONG>If you decide to use cookie-based affinity even though your deployment does not require it</STRONG>, there is no negative impact to doing so.
 
 
-
-</div>
 
 For deployments that **will not use** cookie-based affinity:
 
@@ -116,27 +81,19 @@ For deployments that **will use** cookie-based affinity:
 
   - Hardware load balancer cookie MUST be set in every HTTP response for which the incoming HTTP request did not have a cookie, regardless of whether a previous HTTP response on that same TCP connection had already obtained a cookie. If the load balancer optimizes cookie insert to only occur once per TCP connection, that optimization MUST NOT be used
 
-<div>
-
 
 > [!NOTE]
 > Typical hardware load balancer configurations use source-address affinity and a 20 min. TCP session lifetime, which is fine for Lync Server and Lync 2013 clients because session state is maintained through client usage and/or and application interaction.
 
 
 
-</div>
-
 If you are deploying mobile devices, your hardware load balancer must be able to load balance individual request within a TCP session (in effect, you must be able to load balance an individual request based on the target IP address).
-
-<div>
 
 
 > [!WARNING]
 > F5 hardware load balancers have a feature called OneConnect that ensures each request within a TCP connection is individually load balanced. If you are deploying mobile devices, ensure your hardware load balancer vendor supports the same functionality. The latest Apple iOS mobile apps require Transport Layer Security (TLS) version 1.2. F5 provides specific settings for this.<BR>For details on third party hardware load balancers, see <A href="http://go.microsoft.com/fwlink/p/?linkid=230700">http://go.microsoft.com/fwlink/p/?linkId=230700</A>
 
 
-
-</div>
 
 Following are the hardware load balancer requirements for Director and Front End pool Web Services:
 
@@ -146,19 +103,11 @@ Following are the hardware load balancer requirements for Director and Front End
 
   - On the firewall between the reverse proxy and the next hop pool’s hardware load balancer, create a rule to allow https: traffic on port 4443, from the reverse proxy to the hardware load balancer. The hardware load balancer must be configured to listen on ports 80, 443, and 4443.
 
-<div>
-
 
 > [!IMPORTANT]
 > For further reading on configuration of the hardware load balancer, please review <A href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Port summary - Scaled consolidated edge with hardware load balancers in Lync Server 2013</A>.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Summary of Hardware Load Balancer Affinity Requirements
 
@@ -198,10 +147,6 @@ Following are the hardware load balancer requirements for Director and Front End
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Port Monitoring for Hardware Load Balancers
 
@@ -289,17 +234,4 @@ You define port monitoring on the hardware load balancers to determine when spec
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

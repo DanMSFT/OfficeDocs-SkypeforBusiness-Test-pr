@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring a watcher node to run synthetic transactions in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-07_
 
 After the System Center agent files have been installed, you must next configure the watcher node itself. The steps you take to configure a watcher node will vary depending on whether your watcher node computer lies inside your perimeter network or outside your perimeter network.
 
@@ -64,14 +51,4 @@ When you configure a watcher node, you must also choose the type of authenticati
 
 
 You should also verify that your firewall has inbound rules for both MonitoringHost.exe and PowerShell.exe. If these processes are blocked by the firewall then your synthetic transactions will fail with a 504 (server timeout) error.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Viewing network region link information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 You can view links between two network regions as part of call admission control (CAC). Regions within a network are linked through physical wide area network (WAN) connectivity. You can use the Lync Server Control Panel to view an existing link between two network regions. For details about creating or modifying network region link, see [Configuring network region links in Lync Server 2013](lync-server-2013-configuring-network-region-links.md).
-
-<div>
 
 ## To view a network region link in Lync Server Control Panel
 
@@ -40,26 +25,17 @@ You can view links between two network regions as part of call admission control
 
 4.  On the **Region Link** page, click the region link that you want to view.
     
-    <div>
-    
 
     > [!NOTE]
     > You can only view information about one region link at a time.
 
-    
-    </div>
+
 
 5.  From the **Edit** menu, select **Show details**.
-
-</div>
-
-<div>
 
 ## Viewing Network Region Link Information by Using Windows PowerShell Cmdlets
 
 You can view network region links by using Windows PowerShell and the **Get-CsNetworkRegionLink** cmdlet. You can run this cmdlet from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view network region link information
 
@@ -75,29 +51,10 @@ You can view network region links by using Windows PowerShell and the **Get-CsNe
         NetworkRegionID1    : Pacific Northwest
         NetworkRegionID2    : California
 
-</div>
-
-For details, see [Get-CsNetworkRegionLink](get-csnetworkregionlink.md).
-
-</div>
-
-<div>
+For details, see [Get-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg398972\(v=ocs.15\)).
 
 ## See Also
 
 
-[Configuring network site links in Lync Server 2013](lync-server-2013-configuring-network-site-links.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring network site links in Lync Server 2013](lync-server-2013-configuring-network-site-links.md)
 

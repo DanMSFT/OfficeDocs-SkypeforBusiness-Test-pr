@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Managing the Lync Server 2013 topology
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-11_
 
 Topics in this section provide step-by-step procedures for tasks you can perform using the **Topology** page in Lync Server 2013 Control Panel.
-
-<div>
 
 ## In This Section
 
@@ -51,16 +36,4 @@ Topics in this section provide step-by-step procedures for tasks you can perform
   - [Managing Microsoft SIP Processing Language (MSPL) applications in Lync Server 2013](lync-server-2013-managing-microsoft-sip-processing-language-mspl-applications.md)
 
   - [Managing simple URLs in Lync Server 2013](lync-server-2013-managing-simple-urls.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

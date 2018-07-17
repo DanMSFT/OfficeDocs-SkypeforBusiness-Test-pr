@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Select the Central Management Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-01-02_
 
 Before you can define and configure your topology, you must first define the location to install the Central Management Server.
-
-<div>
 
 
 > [!NOTE]
 > This will not take effect until you have published a topology in Topology Builder. To set the Central Management Server before the topology is created and published, run <STRONG>Set-CSConfigurationStoreLocation</STRONG>.
 
 
-
-</div>
-
-<div>
 
 ## To select the Central Management Server
 
@@ -47,16 +28,4 @@ Before you can define and configure your topology, you must first define the loc
 2.  Right-click the Lync Server 2013 node, and then click **Edit Properties**.
 
 3.  In the Central Management Server pane, select the Front End Server to install the Central Management Server on and then click **OK**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

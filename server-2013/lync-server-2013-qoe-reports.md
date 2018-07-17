@@ -8,25 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # QoE reports in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-01_
-
-<div>
 
 ## QoE summary/trend reports
 
@@ -40,17 +25,9 @@ QoE summary/trend reports consist of:
 
   - Conference Summary/Trend Report
 
-</div>
-
-<div>
-
 ## QoE performance reports
 
 QoE performance reports provide details about the three reports that concentrate on the QoE performance of Mediation Servers, A/V Conferencing Servers, and endpoint locations.
-
-</div>
-
-<div>
 
 ## Mediation server performance report
 
@@ -80,10 +57,6 @@ For each Mediation Server (and for each call leg), the report displays the follo
 
   - Signal Level
 
-</div>
-
-<div>
-
 ## A/V conferencing server performance report
 
 The A/V Conferencing Server Performance report provides lists of metrics achieved by one or more A/V Conferencing Servers during the specified time period. This report can be used to compare the volume and performance of your organization’s various A/V Conferencing Servers. Your organization can also isolate the report to show only the experience for specific client types, such as Lync clients or PSTN clients.
@@ -112,10 +85,6 @@ For each A/V Conferencing Server, the report displays the following:
 
   - Signal Level
 
-</div>
-
-<div>
-
 ## Location-based performance report
 
 The Location-Based Performance report provides a list of network locations and for each location shows the number of calls in each pre-determined range of quality. The goal of this report is to provide insight into the media quality of the bulk of your organization’s telephone calls for various locations so that you can identify poorly performing locations, and see the different grades of media quality in your organization’s different locations.
@@ -137,16 +106,4 @@ When displaying the report, different tables of metrics appear—one table for e
   - Jitter
 
   - Latency
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Setting up SQL Server Log Shipping in Lync Server 2013 for the Persistent Chat Server primary database
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-12_
 
 Using SQL Server Management Studio, connect to the Persistent Chat Server secondary Log Shipping database instance, and be sure that SQL Server Agent is running.
 
@@ -44,14 +31,11 @@ Using SQL Server Management Studio connected to the Persistent Chat primary data
 
 7.  If the backup folder is located on the primary server, type the local path to the backup folder in the **If the backup folder is located on the primary server, type a local path to the folder (example: c:\\backup)** box. (If the backup folder is not on the primary server, you can leave this box empty.)
     
-    <div>
-    
 
     > [!IMPORTANT]
     > If the SQL Server service account on your primary server runs under the local system account, you must create your backup folder on the primary server and specify a local path to that folder.
 
-    
-    </div>
+
 
 8.  Configure the **Delete files older than** and **Alert if no backup occurs within** parameters.
 
@@ -80,14 +64,4 @@ Using SQL Server Management Studio connected to the Persistent Chat primary data
 20. Look at the restore schedule listed in the **Schedule** box under **Restore job**. To customize the schedule for your installation, click **Schedule**, adjust the SQL Server Agent schedule as required, and click **OK**. This schedule should be approximately the same as the backup schedule.
 
 21. On the **Database Properties** dialog box, click **OK** to begin the configuration process.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

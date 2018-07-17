@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Capacity planning for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-31_
 
 The topics in this section help you understand how to plan and deploy Lync Server 2013 so that you can adequately plan for the number of users in your organization and plan for the server load that their activities generate.
-
-<div>
 
 ## In This Section
 
@@ -41,16 +26,4 @@ The topics in this section help you understand how to plan and deploy Lync Serve
   - [User models in Lync Server 2013](lync-server-2013-user-models.md)
 
   - [Using the capacity planning calculator for Lync Server 2013](lync-server-2013-capacity-planning-calculator.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using Lync Connectivity Analyzer in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-11_
 
 Microsoft Lync Connectivity Analyzer helps Lync administrators determine whether the deployment and configuration of their Office 365 or on-premises Lync Server environment meets the requirements to support connections from Lync Windows Store app and Lync apps on mobile devices.
 
@@ -52,19 +39,17 @@ Lync Connectivity Analyzer tests the configuration of the following other compon
 
 You can download Lync Connectivity Analyzer from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkId=277056](http://go.microsoft.com/fwlink/?linkid=277056).
 
-<div>
-
 ## To Analyze Your Connectivity
 
 1.  Enter the credentials for a valid Lync account (either an on-premises Lync account or an Office 365 Lync account) that will be used by the tool to test the connection:
     
       - In **Lync Account Type**, select **Office 365** or **On-Premises**.
     
-      - In **SIP URI**, enter the SIP sign-in address for the Lync connection in the format <strong>user@domain.com</strong>.
+      - In **SIP URI**, enter the SIP sign-in address for the Lync connection in the format **user@domain.com**.
     
       - In **Password**, enter the password associated with this account.
     
-      - In **User name (optional)**, enter a user name if applicable. The user name is also known as the User Principal Name (UPN). If the user name and the SIP URI are the same, you do not need to enter a user name. If they are not the same, enter the user name in the format <strong>user@domain.com</strong> or **domain\\user**, as appropriate.
+      - In **User name (optional)**, enter a user name if applicable. The user name is also known as the User Principal Name (UPN). If the user name and the SIP URI are the same, you do not need to enter a user name. If they are not the same, enter the user name in the format **user@domain.com** or **domain\\user**, as appropriate.
     
       - **Network access**, choose **From inside my organization** if you are running Lync Connectivity Analyzer from a computer connected to your internal network. Otherwise, choose **External (Internet)**. Lync Connectivity Analyzer always performs both internal and external tests, but specifying whether you are inside or outside of your own network helps the tool interpret whether certain failures are expected.
     
@@ -85,10 +70,6 @@ The following figure shows sample results from Lync Connectivity Analyzer.
 **Lync Connectivity Analyzer**
 
 ![Screenshot of the Lync Connectivity Analyzer](images/JJ907302.a7cc0abe-fac2-4691-a7d8-9ffef59cdee5(OCS.15).png "Screenshot of the Lync Connectivity Analyzer")
-
-</div>
-
-<div>
 
 ## Components Tested by Lync Connectivity Analyzer
 
@@ -134,10 +115,6 @@ If **Lync Mobile 2013 App** is selected under **Client**, Lync Connectivity Anal
 
 While performing these tests, Lync Connectivity Analyzer validates the certificates installed on Lync Server, hardware load balancers, proxy servers, and the computer on which you are running the tests.
 
-</div>
-
-<div>
-
 ## Other Resources
 
 Microsoft also provides Microsoft Remote Connectivity Analyzer, a web-based connectivity test tool, which is available at <https://testconnectivity.microsoft.com/>. Lync Connectivity Analyzer and Remote Connectivity Analyzer differ in the following ways:
@@ -161,16 +138,4 @@ The following documentation describes the requirements and procedures for deploy
   - [Planning for mobility in Lync Server 2013](lync-server-2013-planning-for-mobility.md)
 
   - [Deploying mobility in Lync Server 2013](lync-server-2013-deploying-mobility.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

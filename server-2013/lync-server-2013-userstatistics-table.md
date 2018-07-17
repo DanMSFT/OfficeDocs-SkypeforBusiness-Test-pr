@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # UserStatistics table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 The UserStatistics table is a supporting table. Each record in the table stores information about an individual user’s usage of the system. This table was introduced in Microsoft Lync Server 2013.
 
@@ -54,38 +41,27 @@ The UserStatistics table is a supporting table. Each record in the table stores 
 <tr class="even">
 <td><p><strong>LastLogInTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Last time the user logged in.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LastConfOrganizedTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Last time the user organized a conference.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LastCallOrganizerCallFailureTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Last time the user experienced a call failure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LastConfOrganizerCallFailureTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Last time the user experienced a call failure as a conference organizer.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

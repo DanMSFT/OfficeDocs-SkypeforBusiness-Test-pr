@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing the Operation Manager agent files in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-20_
 
 To install the Operations Manager agent files on the computer, complete the following steps.
 
@@ -59,14 +46,4 @@ A list of all your Operations Manager agents will appear onscreen.
 If you are using System Center 2012, run this command from the Operations 2012 Manager Shell:
 
     Get-SCOMAgent
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

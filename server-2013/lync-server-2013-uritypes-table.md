@@ -8,23 +8,10 @@ ms.date: 06/16/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # UriTypes table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-06-16_
 
 The UriTypes Table contains the different URI (Uniform resource identifier) types monitored in Microsoft Lync Server 2013.
 
@@ -54,7 +41,7 @@ The UriTypes Table contains the different URI (Uniform resource identifier) type
 <tr class="even">
 <td><p><strong>UriType</strong></p></td>
 <td><p>nvarchar(256)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Descriptions of the different URI types. Allowed values are:</p>
 <ul>
 <li><p>1 – Phone Uri</p></li>
@@ -63,15 +50,4 @@ The UriTypes Table contains the different URI (Uniform resource identifier) type
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

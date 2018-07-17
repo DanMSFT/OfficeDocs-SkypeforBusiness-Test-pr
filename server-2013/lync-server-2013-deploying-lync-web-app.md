@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying Lync Web App in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-18_
 
 Lync Web App is an Internet Information Services (IIS) web client that installs with Lync Server 2013 and is enabled by default. No additional steps are necessary to either enable Lync Web App on the server or deploy the web client to users. Whenever a user clicks a meeting URL but does not have the Lync 2013 client installed, the user is presented with the option to join the meeting by using the latest version of Lync Web App.
 
 The voice, video, and sharing features in Lync Web App require a Microsoft ActiveX control. You can either install the ActiveX control in advance or allow users to install it when prompted, which happens the first time they use Lync Web App or the first time they access a feature that requires the ActiveX control.
-
-<div class=" ">
 
 
 > [!NOTE]
@@ -38,15 +23,9 @@ The voice, video, and sharing features in Lync Web App require a Microsoft Activ
 
 
 
-</div>
-
-<div>
-
 ## Enabling Multi-Factor Authentication for Lync Web App
 
 The Lync Server 2013 version of Lync Web App supports multi-factor authentication. In addition to user name and password, you can require additional authentication methods, such as smart cards or PINs, to authenticate users who are joining from external networks when they sign in to Lync meetings. You can enable multi-factor authentication by deploying Active Directory Federation Service (AD FS) federation server and enabling passive authentication in Lync Server 2013. After AD FS is configured, external users who attempt to join Lync meetings are presented with an AD FS multi-factor authentication webpage that contains the user name and password challenge along with any additional authentication methods that you have configured.
-
-<div class=" ">
 
 
 > [!IMPORTANT]
@@ -62,8 +41,6 @@ The Lync Server 2013 version of Lync Web App supports multi-factor authenticatio
 > <P>This configuration does not apply to Lync mobile clients.</P></LI></UL>
 
 
-
-</div>
 
 **To Configure Multi-Factor Authentication**
 
@@ -81,22 +58,12 @@ The Lync Server 2013 version of Lync Web App supports multi-factor authenticatio
 
 5.  Set the following relying party rules:
     
-       ```
         $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'
         $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
-       ```
     
-       ```
         Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
-       ```
     
-       ```
         Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
-       ```
-
-</div>
-
-<div>
 
 ## BranchCache Configuration
 
@@ -104,17 +71,9 @@ The BranchCache feature in Windows 7 and Windows Server 2008 R2 can interfere 
 
 For details about disabling BranchCache, see the BranchCache Deployment Guide, which is available in Word format at the Microsoft Download Center at [http://go.microsoft.com/fwlink/p/?LinkId=268788](http://go.microsoft.com/fwlink/p/?linkid=268788) and in HTML format in the Windows Server 2008 R2 Technical Library at [http://go.microsoft.com/fwlink/p/?LinkId=268789](http://go.microsoft.com/fwlink/p/?linkid=268789).
 
-</div>
-
-<div>
-
 ## Verifying Lync Web App Deployment
 
-You can use the Test-CsUcwaConference cmdlet to verify that a pair of test users can participate in a conference using the Unified Communications Web API (UCWA). For details about this cmdlet, see [Test-CsUcwaConference](test-csucwaconference.md) in the Lync Server Management Shell documentation.
-
-</div>
-
-<div>
+You can use the Test-CsUcwaConference cmdlet to verify that a pair of test users can participate in a conference using the Unified Communications Web API (UCWA). For details about this cmdlet, see [Test-CsUcwaConference](https://technet.microsoft.com/en-us/library/jj619178\(v=ocs.15\)) in the Lync Server Management Shell documentation.
 
 ## Troubleshooting Plug-in Installation on Windows Server 2008 R2
 
@@ -130,14 +89,11 @@ If installation of the plug-in fails on a computer running Windows Server 2008�
 
 4.  Clear **Do not save encrypted pages to disk**, and then click **OK**.
     
-    <div class=" ">
-    
 
     > [!NOTE]
     > If selected, this setting will also cause an error when trying to download an attachment from Lync Web App.
 
-    
-    </div>
+
 
 5.  Rejoin the meeting. The plug-in should download without errors.
 
@@ -153,26 +109,9 @@ If installation of the plug-in fails on a computer running Windows Server 2008�
 
 5.  Rejoin the meeting.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Configuring the meeting join page in Lync Server 2013](lync-server-2013-configuring-the-meeting-join-page.md)  
-[Lync Web App supported platforms for Lync Server 2013](lync-server-2013-lync-web-app-supported-platforms.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Lync Web App supported platforms for Lync Server 2013](lync-server-2013-lync-web-app-supported-platforms.md)
 

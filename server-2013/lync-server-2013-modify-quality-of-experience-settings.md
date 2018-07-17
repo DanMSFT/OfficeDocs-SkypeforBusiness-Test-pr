@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Modify Quality of Experience settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 By default, Quality of Experience (QoE) data is purged after 60 days. You can use the settings on the **Quality of Experience Data** page to retain the data for a longer or shorter period of time. If you disable QoE, data that was captured before QoE was enabled will also be subject to purging.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ By default, Quality of Experience (QoE) data is purged after 60 days. You can us
 
 
 
-</div>
-
 The following procedure describes how to configure purge settings for QoE data.
-
-<div>
 
 ## To specify retention of QoE data by using Lync Server Control Panel
 
@@ -58,15 +39,9 @@ The following procedure describes how to configure purge settings for QoE data.
 
 7.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Specifying QoE Retention by Using Windows PowerShell Cmdlets
 
 You can create QoE retention settings by using Windows PowerShell and the **Set-CsQoEConfiguration** cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To specify QoE retention for a specific location
 
@@ -74,39 +49,16 @@ You can create QoE retention settings by using Windows PowerShell and the **Set-
     
         Set-CsQoeConfiguration -Identity "site:Redmond" -EnablePurging -KeepQoEDataForDays 20
 
-</div>
-
-<div>
-
 ## To specify QoE retention for multiple locations
 
   - This command configures QoE retention for all the QoE configuration settings in use in an organization.
     
         Get-CsQoEConfiguration | Set-CsQoEConfiguration-EnablePurging -KeepQoEDataForDays 20 
 
-</div>
-
-For more information, see the help topic for the [Set-CsQoEConfiguration](set-csqoeconfiguration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Set-CsQoEConfiguration](https://technet.microsoft.com/en-us/library/gg398245\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
-[Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md)
 

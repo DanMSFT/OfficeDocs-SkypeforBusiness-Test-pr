@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing ability to do group IM in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsGroupIM cmdlet verifies that users in your organization can conduct group instant messaging sessions. When you run Test-CsGroupIM, the cmdlet attempts to sign in a pair of test users to Lync Server. If successful, Test-CsGroupIM creates a new conference using the first test user, then invites the second user to join the conference. After an exchange of messages, both users are then disconnected from the system. Note that all of this happens without any user interaction, and without affecting any actual users. For example, suppose that the test account sip:kenmyer@litwareinc.com corresponds to a real user who has a real Lync Server account. In that case, the test will be conducted without any disruption to the real Ken Myer. For example, even when the Ken Myer test account logs off from the system, Ken Myer the person will remain logged on. Likewise, the real Ken Myer won't receive an invitation to join the conference. That invitation will be sent to, and accepted by, the test account.
 
-For more information, see the Help documentation for the [Test-CsGroupIM](test-csgroupim.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsGroupIM](https://technet.microsoft.com/en-us/library/gg398273\(v=ocs.15\)) cmdlet.
 
 ## Running the test
 
@@ -75,11 +56,7 @@ To run this check using actual user accounts, you must create two Lync Server Ma
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsGroupIm -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:davidlongmire@litwareinc.com" -ReceiverCredential $credential2
 
-For more information, see the Help documentation for the [Test-CsGroupIM](test-csgroupim.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsGroupIM](https://technet.microsoft.com/en-us/library/gg398273\(v=ocs.15\)) cmdlet.
 
 ## Determining Success or Failure
 
@@ -137,10 +114,6 @@ An exception 'The log on was denied. Check that the correct credentials are bein
 
 As you can see, in this example the user who has the SIP address sip:kenmyer@litwareinc.com was not able to log on.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsGroupIM might fail:
@@ -170,16 +143,4 @@ Here are some common reasons why Test-CsGroupIM might fail:
     You can then ping the appropriate server to verify that it is available. For example:
     
         ping atl-archiving-001.litwareinc.com
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

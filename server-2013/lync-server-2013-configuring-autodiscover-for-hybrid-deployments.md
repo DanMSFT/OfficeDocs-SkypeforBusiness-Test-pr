@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Autodiscover in Lync Server 2013 for hybrid deployments
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-12_
 
 Hybrid Deployments are configurations that use both the Microsoft Lync Online cloud service and the on premises deployment. In this type of configuration, the Autodiscover service must be able to locate where the user is actually located. That is to say, Autodiscover aids in finding the user account and where the server that hosts the user’s account is, regardless if it is in the on premises deployment or in the Lync Online deployment.
 
@@ -40,8 +27,6 @@ For example, if a user’s account is hosted on a server in Lync Online, the att
 
 To enable clients to discover the deployment where the user home server is located, you must configure the Autodiscover service with a new uniform resource locator (URL). Do the following to configure the Autodiscover service.
 
-<div>
-
 ## Configuring Autodiscover for Hybrid Deployments
 
 1.  In the topic, [Autodiscover service requirements for Lync Server 2013](lync-server-2013-autodiscover-service-requirements.md), you use Get-CsHostingProvider to retrieve the value of the attribute ProxyFQDN.
@@ -52,26 +37,9 @@ To enable clients to discover the deployment where the user home server is locat
     
     Where \[identity\] is replaced with the domain name of the shared SIP address space.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsHostingProvider](get-cshostingprovider.md)  
-[Set-CsHostingProvider](set-cshostingprovider.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsHostingProvider](https://technet.microsoft.com/en-us/library/gg413078\(v=ocs.15\))  
+[Set-CsHostingProvider](https://technet.microsoft.com/en-us/library/gg398532\(v=ocs.15\))
 

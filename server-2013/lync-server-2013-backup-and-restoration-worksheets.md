@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Backup and restoration worksheets for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-18_
 
 The backup and restoration plan for your organization should contain details about how and when you back up data and settings. You can use the worksheets presented here to help you document this information for your specific deployment and for your organization's backup and restoration requirements.
 
 Use the following worksheets to record the information that you need to back up and restore database, File Store, and settings information for a Lync Server pool or Standard Edition server. Keep one or more copies of these worksheets in a secure location so that they are readily accessible if you need to restore Lync Server.
-
-<div>
 
 
 > [!NOTE]
 > The worksheets in this section cover only the information that is required to restore the data and settings of Lync Server databases and servers. If you need to document other restoration information, such as the information for reinstalling operating systems and other software, use your organization's deployment plans and backup and restoration plans to address those requirements.
 
 
-
-</div>
-
-<div>
 
 ## Database Backup and Restoration Worksheet
 
@@ -113,13 +94,13 @@ Use the following table to record the information that you need to back up and r
 </tr>
 <tr class="odd">
 <td><p>Persistent Chat Database</p></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>SQL Server management tool or <strong>Export-CsPersistentChatData</strong> cmdlet</p></td>
 <td><p>Name:</p>
 <p>Expiration:</p></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -136,10 +117,6 @@ No backup or restoration is required of the following databases:
   - Cpsdyn. The dynamic information for the Call Park application is not necessary for restoration of service.
 
   - MgcComp. The compliance database for Persistent Chat is not necessary for restoration of service.
-
-</div>
-
-<div>
 
 ## File Store Backup and Restoration Worksheet
 
@@ -171,20 +148,16 @@ Use the following table to record the information that you need to back up and r
 <tbody>
 <tr class="odd">
 <td><p>Lync Server File Store</p></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>Standard backup tool, such as Robocopy</p></td>
 <td><p>On file server for Enterprise Edition. On Standard Edition by default, for Standard Edition deployment. Typically, one per site.</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Files named <strong>Meeting.Active</strong> should not be backed up. These files are in use and are locked while a meeting takes place.</p></td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Settings Backup and Restoration Worksheet
 
@@ -228,7 +201,7 @@ Use the following table to record the information that you need to back up and r
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p><strong>Export-CsLisConfiguration</strong> cmdlet</p></td>
-<td></td>
+<td><p></p></td>
 <td><p> </p></td>
 <td><p>                    </p></td>
 </tr>
@@ -237,23 +210,10 @@ Use the following table to record the information that you need to back up and r
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p><strong>Export-CsRgsConfiguration</strong> cmdlet</p></td>
-<td></td>
+<td><p></p></td>
 <td><p> </p></td>
 <td><p>                    </p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

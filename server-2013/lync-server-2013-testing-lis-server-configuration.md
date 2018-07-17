@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing LIS server configuration in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsLisConfiguration cmdlet verifies your ability to contact the LIS web service. If the web service can be contacted, then the test will be considered a success, regardless of whether any specific locations can be found.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -72,11 +53,7 @@ To run this check using an actual user account, you must first create a Windows 
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsLisConfiguration -TargetFqdn "atl-cs-001.litwareinc.com"-UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsLisConfiguration](test-cslisconfiguration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsLisConfiguration](https://technet.microsoft.com/en-us/library/gg398497\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -148,25 +125,9 @@ That’s not a valid value for the Basic Service Set Identifier (BssID). Instead
 
 12-34-56-78-90-ab
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsLisConfiguration might fail:
 
   - An incorrect parameter value was supplied. As shown in the previous example, the optional parameters must be configured correctly or the test will fail. Rerun the command without the optional parameters and see whether that succeeds.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

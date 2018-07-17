@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Viewing and analyzing monitoring server reports in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-19_
 
 Monitoring Server reports provides several different measures of voice quality to monitor the QoE that is being delivered to end-users. Additionally, Monitoring Server includes several built-in reports that your organization can use to watch usage and media quality trends on your organization's network and troubleshoot media quality issues that arise.
 
@@ -34,8 +21,6 @@ A primary part of keeping Monitoring Server Reports interesting for daily and we
 
   - QoE Performance Reports
 
-<div>
-
 ## View reports from the monitoring server
 
 1.  From a web browser, locate your servers hosting the SQL reporting services.
@@ -43,10 +28,6 @@ A primary part of keeping Monitoring Server Reports interesting for daily and we
 2.  View the required reports from the browser screen.
 
 3.  (Optional) Export a report by selecting the export option and the required output format.
-
-</div>
-
-<div>
 
 ## Configure call detail recording (CDR)
 
@@ -68,10 +49,6 @@ A primary part of keeping Monitoring Server Reports interesting for daily and we
 
 9.  
 
-</div>
-
-<div>
-
 ## Configure QoE
 
 1.  Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the CsVoiceAdministrator, CsServerAdministrator, or CsAdministrator role. For details, see Delegate Setup Permissions.
@@ -87,10 +64,6 @@ A primary part of keeping Monitoring Server Reports interesting for daily and we
 6.  In **Keep call detail recordings for maximum duration (days):** select the maximum number of days that QoE data should be retained.
 
 7.  Click Commit.
-
-</div>
-
-<div>
 
 ## Change the archiving policy
 
@@ -110,10 +83,6 @@ A primary part of keeping Monitoring Server Reports interesting for daily and we
 
 8.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Apply an archiving policy to a user
 
 1.  From a user account that is assigned to the CsArchivingAdministrator or CsAdministrator role, log on to any computer in your internal deployment.
@@ -128,27 +97,10 @@ A primary part of keeping Monitoring Server Reports interesting for daily and we
 
 6.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Using Monitoring Reports in Lync Server 2013](lync-server-2013-using-monitoring-reports.md)  
 [Server Performance Report in Lync Server 2013](lync-server-2013-server-performance-report.md)  
-[Media Quality Comparison Report in Lync Server 2013](lync-server-2013-media-quality-comparison-report.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Media Quality Comparison Report in Lync Server 2013](lync-server-2013-media-quality-comparison-report.md)
 

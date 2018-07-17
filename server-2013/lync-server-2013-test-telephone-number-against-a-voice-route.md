@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Test telephone number against a voice route in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-20_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-05-20_
 </table>
 
 
-<div>
-
 ## Description
 
 Voice routes work together with voice policies to help route Enterprise Voice calls to the PSTN network. Each voice route includes a regular expression (a number pattern) that identifies the phone numbers that will be routed through a given voice route: the route will be able to handle any phone numbers that match this regular expression. For example, a voice route might have a regular expression that enables it to handle any 10-digit number. That means the route would be able to handle a phone number such as this:
@@ -66,10 +51,6 @@ The route would not be able to handle either of the following two numbers, neith
   - 12065551219
 
 The Test-CsVoiceRoute cmdlet verifies whether a given voice route can route a specified phone number.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -89,10 +70,6 @@ To use a single command to test all the voice routes against a specified target 
 
 For more information, see the Help documentation for the Test-CsVoiceRoute cmdlet.
 
-</div>
-
-<div>
-
 ## Determining success or failure
 
 If the voice route can route the target phone number the Test-CsVoiceRoute cmdlet just returns the value True:
@@ -111,35 +88,14 @@ MatchesPattern
 
 False
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 When testing voice routes, “failure” is a relative term. In this case, it doesn’t mean that the route is somehow “broken;” instead, it just means that the route can't handle the target number. That could be because the voice route was configured incorrectly. It could also mean that the route was never intended to handle numbers using this pattern. For example, if you do not want to route calls to other countries over a given route that route might be configured to reject all phone numbers that include a country code. If Test-CsVoiceRoute returns False when you expected it to return True, verify that you typed the target number in correctly. If you did, then use a command similar to this one to view the NumberPattern configured for the route:
 
 `Get-CsVoiceRoute -Identity "RedmondVoiceRoute" | Select-Object NumberPattern`
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsVoiceRoute](test-csvoiceroute.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsVoiceRoute](https://technet.microsoft.com/en-us/library/gg425873\(v=ocs.15\))
 

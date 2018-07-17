@@ -8,27 +8,12 @@ ms.date: 12/09/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Release notes for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-12-08_
 
 Welcome to the Lync Server 2013 Release Notes. Refer to this file for information regarding known issues about Lync Server 2013.
-
-<div>
 
 ## About this document
 
@@ -36,37 +21,40 @@ This document contains important information that you should know before you dep
 
 This document contains the following sections:
 
-  - Lync 2013 client
+  -  
+    Lync 2013 client
 
-  - Lync Server
+  -  
+    Lync Server
 
-  - Installation
+  -  
+    Installation
 
-  - Mobility
+  -  
+    Mobility
 
-  - Conferencing
+  -  
+    Conferencing
 
-  - Enterprise Voice
+  -  
+    Enterprise Voice
 
-  - Presence
+  -  
+    Presence
 
-  - Response Group Application and Call Park Application
+  -  
+    Response Group Application and Call Park Application
 
-  - Lync Server Control Panel, Topology Builder, and Planning Tool
+  -  
+    Lync Server Control Panel, Topology Builder, and Planning Tool
 
-  - Localization
+  -  
+    Localization
 
-  - Copyright
-
-</div>
-
-<span id="LyncClient"></span>
-
-<div>
+  -  
+    Copyright
 
 ## Lync 2013 client
-
-<div>
 
 ## Transferring a file in an instant message fails if the file is open in another application
 
@@ -78,17 +66,7 @@ If you attempt to transfer a file, such as a Word document, by including it in a
 
 To work around this issue, close the open file or application that has it open before attempting to transfer the file in an instant message.
 
-</div>
-
-</div>
-
-<span id="LyncServer"></span>
-
-<div>
-
 ## Lync Server
-
-<div>
 
 ## If Lync Server Storage Service data replication fails, administrators will need to check performance counters for stale Storage Service queue items
 
@@ -100,10 +78,6 @@ The Lync Server Storage Service uses Windows Fabric for replication. If data is 
 
 To work around this issue, if the events LYSS\_DB\_SPACE\_USED\_ERROR (Id=32058) and LYSS\_DB\_SPACE\_USED\_CRITICAL (Id=32059) are generated in the event log, administrators should check the performance counter on the Front End Server under **LS:LYSS - Storage Service API** with a name of **LYSS - Current number of Storage Service stale queue items**. If this performance counter has a high value—for example, greater than 50,000—then the administrator should run the CleanuUpStorageServiceData.exe tool in the Lync Server 2013 Resource Kit, which will delete all orphaned data from the pool. For details about the tool, see the Lync Server 2013 Resource Kit documentation.
 
-</div>
-
-<div>
-
 ## Whenever the IP Address configuration is changed for a server or pool, Lync Server services need to be restarted
 
 **Issue:**
@@ -114,17 +88,9 @@ When the IP Address configuration is changed for a Lync Server 2013 deployment, 
 
 To work around this issue, restart Lync Server services after changing the IP Address configuration for the deployment. To do so, run the following cmdlets in the Lync Server Management Shell:
 
-   ```
     Stop-CsWindowsService -graceful
-   ```
 
-   ```
     Start-CsWindowsService
-   ```
-
-</div>
-
-<div>
 
 ## The dial-in conferencing synthetic transaction cmdlet is no longer available in the Lync Server 2013 Management Pack
 
@@ -138,10 +104,6 @@ Use of the Dial-In Conferencing Synthetic Transaction cmdlet **Test-CsDialInConf
 
 Administrators may continue to use the cmdlet in Lync Server Management Shell for troubleshooting purposes. If required, an enterprise can also develop a private management pack to run the cmdlet internally.
 
-</div>
-
-<div>
-
 ## The Centralized Logging Service stops if network traffic is disrupted when log files are being copied to network share
 
 **Issue:**
@@ -154,10 +116,6 @@ The service is configured to automatically restart up to three times, so the ser
 
 There is no workaround for this issue. To identify the issue, monitor the event log for Event ID 7031 from the "Service Control Manager" that logs when the "Lync Server Centralized Logging Service Agent" service has terminated unexpectedly. If this happens more than three times, manually restart the service by using the **Start-CsWindowService** cmdlet.
 
-</div>
-
-<div>
-
 ## Storage Service Queue Items need to be imported manually
 
 **Issue:**
@@ -169,10 +127,6 @@ During the export operation, the Lync Server Storage Service records every stage
 **Workaround:**
 
 To import the data to the system, administrators will need to use the ImportStorageServiceData tool in the Lync Server Resource Kit, which will add the data back into the system to be processed and delivered to its final destination.
-
-</div>
-
-<div>
 
 ## Address Book Web Query searches will fail if the default value for UseNormalizationRules is changed to False
 
@@ -206,10 +160,6 @@ If the default value for UseNormalizationRules is set to False so that users can
     
         Update-csAddressBook
 
-</div>
-
-<div>
-
 ## Address Book Server error event 21054 is generated once daily for each Lync 2013 pool
 
 **Issue:**
@@ -226,10 +176,6 @@ If the cmdlet reports that there are no unindexed or abandoned objects, the erro
 
 Additionally, the Key Health Indicator (KHI) "Address Book Users Correctly Indexed" should be turned off in System Center Operations Manager.
 
-</div>
-
-<div>
-
 ## Requests may fail when IPv6 is configured on an Edge pool
 
 **Issue:**
@@ -240,10 +186,6 @@ When IPv6 is configured on an Edge pool, some requests to the Edge pool may fail
 
 To work around this issue, do not configure an Edge pool with IPv6.
 
-</div>
-
-<div>
-
 ## The invoke-csPoolFailback cmdlet may fail during pool failback
 
 **Issue:**
@@ -253,10 +195,6 @@ When attempting to fail back a pool, the **invoke-csPoolFailback** cmdlet may fa
 **Workaround:**
 
 To work around this issue, run the cmdlet again, and wait until the cmdlet succeeds. Note that the failback process can take several minutes to complete. It may take up to 60 minutes for a pool with 20,000 users.
-
-</div>
-
-<div>
 
 ## Data loss may occur when you add a Front End Server to an already established pool – Hybrid, Skype for Business Online
 
@@ -270,10 +208,6 @@ Users whose data is being archived may experience data loss until a stable distr
 
 When you perform maintenance, instead of starting Front End Servers in the pool one by one, you should fail over the pool to another pool, and then perform maintenance tasks on the servers. You can also make the service unavailable before performing maintenance tasks, and then restore availability when maintenance is complete.
 
-</div>
-
-<div>
-
 ## Administrators cannot get licensee count by using the Get-CsClientAccessLicense cmdlet
 
 **Issue:**
@@ -283,10 +217,6 @@ Administrators cannot get accurate client license usage by using the **Get-CsCli
 **Workaround:**
 
 To check the server license type, you can run the **Get-CsService** cmdlet to retrieve the fully qualified domain names (FDQNs) of all databases. If the FQDN of the Front End Server is the same as the FQDN of the back-end database, the license is a Standard edition license. Otherwise, the license is an Enterprise edition license.
-
-</div>
-
-<div>
 
 ## Client licensee count is not accurately reported
 
@@ -340,10 +270,6 @@ When determining client license counts, you may experience the following conditi
     
     You can manually identify the PSTN phone number that is used to join the conference and remove the license generated by the phone number.
 
-</div>
-
-<div>
-
 ## The Lync Server Control Panel stops working in a VMware environment after upgrading to Silverlight 5
 
 **Issue:**
@@ -362,10 +288,6 @@ To work around this issue, do one of the following:
     
     You can also access the Lync Server Control Panel by using a web browser. The URL will be similar to https://\<frontend\_pool\_fqdn\>/cscp.
 
-</div>
-
-<div>
-
 ## User information in the Address Book Service is not updated after the distinguished name for the user is modified in Active Directory
 
 **Issue:**
@@ -376,17 +298,7 @@ If a user’s distinguished name (also known as DN) is changed in Active Directo
 
 To work around this issue, do not change a user’s DN. If you revert the DN for the user to the previous value, updates will be reflected in the Address Book Service.
 
-</div>
-
-</div>
-
-<span id="Installation"></span>
-
-<div>
-
 ## Installation
-
-<div>
 
 ## Using non-ASCII characters may result in Lync server failing to start
 
@@ -408,10 +320,6 @@ Setup will fail if the destination folder name includes non-ASCII characters (in
 
 Use only ASCII characters in the destination folder name, computer name, domain name, user name, user SIP URI, and service account names.
 
-</div>
-
-<div>
-
 ## The hotfix for "Heap corruption occurs when a module calls the InsertEntityBody method in IIS 7.5" must be installed prior to installing Lync Server 2013
 
 **Issue:**
@@ -421,10 +329,6 @@ The hotfix for "Heap corruption occurs when a module calls the InsertEntityBody 
 **Workaround:**
 
 Download and install the hotfix from the Microsoft Download Center at [https://go.microsoft.com/fwlink/p/?LinkId=268602](https://go.microsoft.com/fwlink/p/?linkid=268602).
-
-</div>
-
-<div>
 
 ## Lync Server 2013 fails to install on ITA Windows Server 2012 OS RTM version
 
@@ -440,13 +344,9 @@ To work around this issue, update the system registry before installing Lync Ser
 
 1.  Start Windows PowerShell and run the following cmdlets:
     
-       ```
         New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS
-       ```
     
-       ```
         $a="HKU:\.Default\Control Panel\International"
-       ```
 
 2.  To view the current value, run the following cmdlet:
     
@@ -462,17 +362,7 @@ To work around this issue, update the system registry before installing Lync Ser
     
         - Set-ItemProperty $a -Name sTimeFormat -Value "<Value noted down in Step 3. above>"
 
-</div>
-
-</div>
-
-<span id="Mobility"></span>
-
-<div>
-
 ## Mobility
-
-<div>
 
 ## Issues for mobile clients during the server failover process
 
@@ -490,10 +380,6 @@ When a Lync Server fails and the failover process begins, the following issues m
 
 There is no workaround for this issue. Normal functionality will be restored once the failover process is complete.
 
-</div>
-
-<div>
-
 ## If a mobile user declines an incoming call from another Lync endpoint, the call is displayed as a missed conversion on Lync Mobile clients
 
 **Issue:**
@@ -503,10 +389,6 @@ If a mobile user declines an incoming call, and the call originated from another
 **Workaround:**
 
 There is no workaround for this issue.
-
-</div>
-
-<div>
 
 ## The mobile client may not display a federated contact’s display name when searching for contacts
 
@@ -518,10 +400,6 @@ The display name for federated contacts may not be displayed in some scenarios, 
 
 There is no workaround for this issue.
 
-</div>
-
-<div>
-
 ## In the mobile client, invitee and timestamp information are missing from a missed conversation that is an invitation to a conference
 
 **Issue:**
@@ -531,10 +409,6 @@ In the mobile client, when a missed conversation is an invitation to a conferenc
 **Workaround:**
 
 There is no workaround for this issue.
-
-</div>
-
-<div>
 
 ## Mobile client users making calls using VoIP are not be able to leave voice mail for users whose voice mail is configured in Exchange 2010 or earlier versions
 
@@ -546,10 +420,6 @@ If a mobile client user is using VoIP to place calls, the user will not be able 
 
 To work around this issue, use Exchange 2010 with SP1 or later version of Microsoft Exchange Server.
 
-</div>
-
-<div>
-
 ## When using Block with URL for Client Version Configuration on mobile clients, an incorrect error message may be displayed
 
 **Issue:**
@@ -560,17 +430,7 @@ When using **Block with URL** for Client Version Configuration on mobile clients
 
 To work around this issue, configure Client Version Configuration to use **Block** instead of **Block with URL**.
 
-</div>
-
-</div>
-
-<span id="Conferencing"></span>
-
-<div>
-
 ## Conferencing
-
-<div>
 
 ## Antivirus software running on Lync Server 2013 Front End Servers can cause Application Domain recycling, which temporarily interrupts service for Lync Web App 2013, Lync Mobile 2010, and Lync Mobile 2013 clients
 
@@ -594,10 +454,6 @@ The following folders should be excluded:
 
   - %Windir%\\Microsoft.NET\\Framework64\\v4.0.30319\\Config
 
-</div>
-
-<div>
-
 ## ActiveX Controls or native XMLHTTP support must be enabled in Windows Internet Explorer to successfully join conferences
 
 **Issue:**
@@ -607,10 +463,6 @@ If a user has disabled both ActiveX Controls and native XMLHTTP support in Windo
 **Workaround:**
 
 Enable either ActiveX Controls or "native XMLHTTP support" in Internet Explorer.
-
-</div>
-
-<div>
 
 ## Lync Server Web Conferencing service cannot recover from critical mode
 
@@ -622,10 +474,6 @@ If critical mode is turned for archiving, in case of system failures, critical m
 
 An administrator needs to manually restart the conferencing service after the system failure is fixed.
 
-</div>
-
-<div>
-
 ## Web Conferencing service ignores the HTTP proxy for external Office Web App Servers
 
 **Issue:**
@@ -636,10 +484,6 @@ If you have deployed an Office Web Apps Server external to the Web Conferencing 
 
 The only workaround is to not have a deployment configuration that requires the use of HTTP proxy to communicate with an external Office Web Apps Server.
 
-</div>
-
-<div>
-
 ## Adding video to an audio conferencing provider conference is not supported
 
 **Issue:**
@@ -649,10 +493,6 @@ Adding a video is not supported if the user is joined to an audio conferencing p
 **Workaround:**
 
 There is no workaround for this issue.
-
-</div>
-
-<div>
 
 ## Topologies with IPv6 enabled force the Lync Web App Silverlight plug-in auto-update to ensure screen sharing functionality can work from Lync Web App
 
@@ -668,29 +508,15 @@ To force an update to the most recent version of the screen-sharing plug-in when
 
   - %ProgramFiles%\\Microsoft Lync Server 15\\Web Components\\Reach\\Ext\\Client\\Plugins\\ReachAppShPluginProperties.xml
 
-</div>
-
-</div>
-
-<span id="EnterpriseVoice"></span>
-
-<div>
-
 ## Enterprise Voice
 
-<div>
-
 ## In some cases, a Lync client running on a computer configured to use IPv4 and IPv6 dual stack might not support capabilities that rely in the IP subnet of the computer such as E911, Media Bypass, Call Admission Control and Location Based Routing
-
-<div class="">
 
 
 > [!NOTE]
 > The information in this section pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
 
-
-</div>
 
 **Issue:**
 
@@ -699,10 +525,6 @@ When a Lync client is running on a computer that is enabled for IPv4 and IPv6 du
 **Workaround:**
 
 To work around this issue, disable IPv6 support on the client computer.
-
-</div>
-
-<div>
 
 ## If Enterprise Voice is not configured for a user, the user will need to use E164 format to dial out from a conference
 
@@ -714,17 +536,7 @@ If Enterprise Voice is not configured for a user, that user will need to use the
 
 To work around this issue, users who are not enabled for Enterprise Voice should dial out from a conference by using numbers in the E164 format.
 
-</div>
-
-</div>
-
-<span id="Presence"></span>
-
-<div>
-
 ## Presence
-
-<div>
 
 ## If a user has selected "Block all invites and communications" while the unified contact store is turned on for the user, Presence status is not rejected when it should be
 
@@ -742,10 +554,6 @@ For example:
 
     Set-CsUserServicesPolicy -Identity "Ken Myer" -UcsAllowed $False
 
-</div>
-
-<div>
-
 ## Office Communications Server 2007 R2 users homed on-premises are not able to see the Presence status of Skype for Business Online users in hybrid deployments - Hybrid
 
 **Issue:**
@@ -760,29 +568,15 @@ To partially work around this issue, change the Home Server (msrtcsip-presenceho
 
 This workaround will correctly display the Presence status of users homed to Office Communications Server 2007 R2 to Skype for Business Online users.
 
-</div>
-
-</div>
-
-<span id="ResponseGroup"></span>
-
-<div>
-
 ## Response Group application, Call Park application, and Group Call Pickup
 
-<div>
-
 ## A caller might hear one second of music-on-hold during the establishment of a call with the retrieving party
-
-<div class="">
 
 
 > [!NOTE]
 > The information in this section pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
 
-
-</div>
 
 **Issue:**
 
@@ -791,10 +585,6 @@ When a call is retrieved via Group Call Pickup, the caller might hear one second
 **Workaround:**
 
 There is no workaround for this issue.
-
-</div>
-
-<div>
 
 ## A Response Group agent can sign in and sign out through a Lync Server 2010 Agent Console to Lync Server 2010 formal Agent Groups only
 
@@ -806,10 +596,6 @@ A Lync Server 2013 Response Group agent can sign in and sign out through a Lync
 
 If the Response Group agent is a Lync Server 2013 user, and part of a Lync Server 2013 formal Agent Group, the user must access the Lync Server 2013 Agent Console directly via a web link in a browser to sign in to and sign out from Lync Server 2013 Agent Groups.
 
-</div>
-
-<div>
-
 ## A Lync Server 2010 Response Group agent cannot place calls on behalf of a Lync Server 2013 Response Group
 
 **Issue:**
@@ -819,10 +605,6 @@ A Lync Server 2010 user who is an Agent of a Lync Server 2013 Response Group is
 **Workaround:**
 
 To work around this issue, you must move the Lync Server 2010 user to Lync Server 2013.
-
-</div>
-
-<div>
 
 ## Removing a Response Group from Lync Server 2010 after it has been migrated to Lync Server 2013 will prevent the Response Group from accepting any incoming calls
 
@@ -836,10 +618,6 @@ To work around this issue, do not remove any Response Groups from Lync Server 20
 
 If the Response Group has already been removed, you should redeploy it in Lync Server 2013.
 
-</div>
-
-<div>
-
 ## When a new managed workflow is set to inactive when created, deployment of the workflow will fail
 
 **Issue:**
@@ -849,10 +627,6 @@ When a new managed workflow is set to inactive when created, deployment of the w
 **Workaround:**
 
 When creating and deploying a workflow, set the workflow as active and then deploy it. After the workflow is successfully deployed, the workflow can be edited and set to inactive.
-
-</div>
-
-<div>
 
 ## Removing a Response Group from the Owner pool will prevent the Response Group of the Backup pool from accepting any incoming calls during failover if the Response Group has been imported to the Backup pool
 
@@ -865,10 +639,6 @@ If a Response Group that is owned by the primary pool has been imported to the b
 You will need to redeploy the Response Group in the Primary pool. You will then need to export the Response Group configuration from the Primary pool and import it to the Backup pool again.
 
 You can also recreate the Response Group in the Backup pool. In this case, the Backup pool will be the owner pool of the Response Group.
-
-</div>
-
-<div>
 
 ## A parked call can't be retrieved from the Call Park application if the retrieve request is done on behalf of a Response Group
 
@@ -886,29 +656,15 @@ When the following conditions are true, a retrieve request for a parked call wil
 
 There are no workarounds for this issue. The parked call should be retrieved without doing so on behalf of a Response Group.
 
-</div>
-
-</div>
-
-<span id="TopoBuilder"></span>
-
-<div>
-
 ## Lync Server Control Panel, Topology Builder, and Planning Tool
 
-<div>
-
 ## Planning Tool Limitations
-
-<div class="">
 
 
 > [!NOTE]
 > The information in this section pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
 
-
-</div>
 
 **Issue:**
 
@@ -932,10 +688,6 @@ In addition, the Planning Tool does not include values for the following when ca
 
 There is no workaround for these issues. For more information about the Planning Tool, see [Designing the topology for Lync Server 2013 by using the Planning Tool](lync-server-2013-designing-the-topology-by-using-the-planning-tool.md).
 
-</div>
-
-<div>
-
 ## Planning Tool may not use previously defined IP addresses for the Edge network when updating options
 
 **Issue:**
@@ -945,10 +697,6 @@ After you complete your design using the Planning Tool, if you make changes to t
 **Workaround:**
 
 There is no workaround for this issue at this time.
-
-</div>
-
-<div>
 
 ## In Lync Server Control Panel, "Move all users to pool" may not work as expected
 
@@ -963,10 +711,6 @@ To work around this issue, do one of the following:
   - Use filters in the Lync Server Control Panel to search for legacy users, select those users, and then use the **Move selected users to pool command** instead of **Move all users to pool**.
 
   - Use the Lync Server Management Shell to move legacy users in batches by using Lync Server cmdlets.
-
-</div>
-
-<div>
 
 ## The Lync Server Control Panel stops working in a VMware environment after the Microsoft Silverlight browser plug-in is updated to version 5
 
@@ -985,10 +729,6 @@ To work around this issue, do one of the following:
     To open the Lync Server Control Panel from a remote computer, install Lync Server Administration tools on the computer, and then start the Lync Server Control Panel from the Windows **Start** menu.
     
     You can also open the Lync Server Control Panel by entering the URL in a web browser. The URL will be similar to https://\<frontend\_pool\_fqdn\>/cscp.
-
-</div>
-
-<div>
 
 ## An administrator cannot run the Uninstall-csMirrorDB cmdlet after removing the mirroring database in Topology Builder
 
@@ -1014,19 +754,11 @@ The *DropExistingDatabasesOnMirror* parameter causes the affected databases to b
 
 3.  Publish the topology.
 
-<div class="">
-
 
 > [!IMPORTANT]
 > Whenever you make a change to a back-end database mirroring relationship, you must restart all the Front End Servers in the pool.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Validation errors are returned in Topology Builder when an administrator attempts to remove a deployment with a Front End pool that has an associated witness store
 
@@ -1042,10 +774,6 @@ To work around this issue, do one of the following:
 
   - Add a witness store for the Front End pool and then remove it.
 
-</div>
-
-<div>
-
 ## Persistent Chat Server deployment information is inconsistent between the Planning Tool and Topology Builder
 
 **Issue:**
@@ -1056,21 +784,9 @@ When the Lync Server 2013, Planning Tool outputs the site topology diagram for a
 
 Currently, we do not have a workaround for this issue. The user should analyze the output of the Planning Tool for the Persistent Chat Server deployment, and modify the plan to meet their specific needs.
 
-</div>
-
-</div>
-
-<span id="Localization"></span>
-
-<div>
-
 ## Localization
 
-<div>
-
 ## Monitoring
-
-<div>
 
 ## The Deploy Monitoring Reports wizard displays incorrect characters under certain circumstances when using the East Asian version of Lync Server
 
@@ -1082,15 +798,7 @@ When using an East Asian version of Lync Server 2013—for example, Chinese (Sim
 
 To correct this issue, set the locale for the operating system and Lync Server 2013 to the same language, which will display all messages correctly.
 
-</div>
-
-</div>
-
-<div>
-
 ## Lync Server Control Panel
-
-<div>
 
 ## In certain cases, the first item in the top navigation bar on a page of Lync Server Control Panel disappears when the last item in the top navigation bar is clicked
 
@@ -1108,27 +816,15 @@ There are three known cases where clicking the last item in the top navigation b
 
 To work around this issue, refresh the page of the Lync Server Control Panel in your browser. The page will load in the browser with all of the items in the top navigation bar displayed.
 
-</div>
-
-</div>
-
-<div>
-
 ## Address Book
 
-<div>
-
 ## Indexing in the Address Book does not work as expected in some languages
-
-<div class="">
 
 
 > [!NOTE]
 > The information in this section pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
 
-
-</div>
 
 If a user’s properties contain an indexed field, and that field contains only characters that cannot be indexed, then the user will not appear in searches performed in the Address Book.
 
@@ -1158,15 +854,7 @@ The following characters and locales cannot be indexed:
 
   - All other Indic scripts
 
-</div>
-
-</div>
-
-<div>
-
 ## Lync Web App, Web Scheduler, and Web components
-
-<div>
 
 ## Language fallback for certain languages in Lync Web Scheduler, Dial-In, Join Launcher, Persistent Chat Room Management, and OCTab might not work as expected
 
@@ -1184,21 +872,13 @@ When selecting a neutral locale in a web browser (in Internet Explorer, for exam
 
 If you want to select a language with a neutral locale, always make sure that you also add the language with a specific locale (with script and/or country code) as an additional language in your browser's language preference list.
 
-</div>
-
-<div>
-
 ## There is limited support for Azeri and Uzbek locales when using Lync Web Scheduler, Dial-In, Join Launcher, Persistent Chat Room Management, and OCTab in some web browsers
-
-<div class="">
 
 
 > [!NOTE]
 > The information in this section pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
 
-
-</div>
 
 **Issue:**
 
@@ -1211,12 +891,6 @@ The Uzbek (Latin) locale is not supported in the Safari browser.
 **Workaround:**
 
 There is not workaround for these issues.
-
-</div>
-
-</div>
-
-<div>
 
 ## The drop-down arrow is missing for "Join meeting from" list in the Romanian version of Lync Web App
 
@@ -1236,10 +910,6 @@ When a user who is using the Romanian version of Lync Web App performs the follo
 
 Even though the arrow for this drop-down list is not displayed, users can still select the additional settings in the list by clicking on the default value.
 
-</div>
-
-<div>
-
 ## When using the Turkish version of Lync Web Scheduler, a meeting cannot be saved when using the "People I choose" option under "Who is a presenter"
 
 **Issue:**
@@ -1252,14 +922,6 @@ To work around this issue, users can use the default option of "People from my c
 
 Alternatively, users who understand another language can change the language selection in their browser to one of the other 43 supported languages and attempt to use the “People I choose” option.
 
-</div>
-
-</div>
-
-<span id="Copyright"></span>
-
-<div>
-
 ## Copyright
 
 This document supports a preliminary release of a software product that may be changed substantially prior to final commercial release, and is the confidential and proprietary information of Microsoft Corporation. It is disclosed pursuant to a non-disclosure agreement between the recipient and Microsoft. This document is provided for informational purposes only and Microsoft makes no warranties, either express or implied, in this document. Information in this document, including URL and other Internet website references, is subject to change without notice. The entire risk of the use or the results from the use of this document remains with the user. Unless otherwise noted, the companies, organizations, products, domain names, email addresses, logos, people, places, and events depicted in examples herein are fictitious. No association with any real company, organization, product, domain name, email address, logo, person, place, or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -1271,16 +933,4 @@ Microsoft may have patents, patent applications, trademarks, copyrights, or othe
 Microsoft, Windows, Windows Live, Active Directory, Internet Explorer, MSN, Outlook, and SQL Server are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries/regions.
 
 All other trademarks are property of their respective owners.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

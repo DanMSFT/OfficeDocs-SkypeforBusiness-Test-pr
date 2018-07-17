@@ -8,27 +8,12 @@ ms.date: 12/09/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring enhanced presence privacy mode in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-12-08_
 
 With enhanced presence privacy mode, users can restrict their presence information so that it is visible only to the contacts listed in their Lync 2013 Contacts list. The **New-CsPrivacyConfiguration** and **Set-CsPrivacyConfiguration** cmdlets have an EnablePrivacyMode parameter controls this option. When EnablePrivacyMode is set to True, the option to restrict presence information to contacts becomes available in the Lync 2013 Status options. When EnablePrivacyMode is set to False, users can choose either to always allow everyone to see their presence information or to adhere to any future changes the administrator makes to the privacy mode.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -41,10 +26,6 @@ With enhanced presence privacy mode, users can restrict their presence informati
 
 
 
-</div>
-
-<div>
-
 ## To enable enhanced presence privacy mode
 
 1.  Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.
@@ -55,27 +36,10 @@ With enhanced presence privacy mode, users can restrict their presence informati
     
     This command enables privacy mode for all the privacy configuration settings currently in use in the organization. For more information about how the Lync Server enhanced presence privacy mode policy configurations manages contact presence for the Lync 2013 client, see the Microsoft KB article [Enabling Lync Server enhanced presence privacy mode updates the presence status of some Lync contacts to "unavailable"](http://support.microsoft.com/kb/3020057).
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsPrivacyConfiguration](get-csprivacyconfiguration.md)  
-[New-CsPrivacyConfiguration](new-csprivacyconfiguration.md)  
-[Set-CsPrivacyConfiguration](set-csprivacyconfiguration.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsPrivacyConfiguration](https://technet.microsoft.com/en-us/library/gg413002\(v=ocs.15\))  
+[New-CsPrivacyConfiguration](https://technet.microsoft.com/en-us/library/gg398807\(v=ocs.15\))  
+[Set-CsPrivacyConfiguration](https://technet.microsoft.com/en-us/library/gg398484\(v=ocs.15\))
 

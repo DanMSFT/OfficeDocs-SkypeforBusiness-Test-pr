@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring DNS for Autodiscover in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-12_
 
 To support autodiscovery for Lync clients, you need to create the following Domain Name System (DNS) records:
 
@@ -35,8 +22,6 @@ To support autodiscovery for Lync clients, you need to create the following Doma
 You must create an internal DNS record and an external DNS record for each SIP domain.
 
 The DNS records can be either A (host) records or CNAME records, based on your ability to create new certificates with the additional subject alternate name (SAN). If you are not able to request and deploy a new external (public) certificate with the lyncdiscover.\<domain name\> SAN, use the procedure for using HTTP/TCP port 80. The following procedures describe how to create internal and external DNS records.
-
-<div>
 
 ## To create DNS CNAME records
 
@@ -52,14 +37,10 @@ The DNS records can be either A (host) records or CNAME records, based on your a
     
       - For an internal DNS record, in the console tree of the DNS server, expand **Forward Lookup Zones** for your Active Directory domain (for example, contoso.local).
         
-        <div>
-        
 
         > [!NOTE]
         > This domain is the Active Directory domain where your Lync Server 2013&nbsp;Director pool and Front End pool are installed.
 
-        
-        </div>
     
       - For an external DNS record, in the console tree of the DNS server, expand **Forward Lookup Zones** for your SIP domain (for example, contoso.com).
 
@@ -77,14 +58,11 @@ The DNS records can be either A (host) records or CNAME records, based on your a
 
 6.  For an internal DNS record, in the console tree of your DNS server, expand **Forward Lookup Zones** for your SIP domain (for example, contoso.com).
     
-    <div>
-    
 
     > [!NOTE]
     > If you are creating an external DNS record, <STRONG>Forward Lookup Zones</STRONG> is already expanded for your SIP domain from step 3.
 
-    
-    </div>
+
 
 7.  Right-click the SIP domain name, and then click **New Alias (CNAME)**.
 
@@ -100,27 +78,16 @@ The DNS records can be either A (host) records or CNAME records, based on your a
     
       - For an external DNS record, type or browse to the external Web Services FQDN for your Director pool (for example, lyncwebextdir.contoso.com), and then click **OK**.
     
-    <div>
-    
 
     > [!NOTE]
     > If you do not use a Director, use the internal and external Web Services FQDN for the Front End pool, or, for a single server, the FQDN for the Front End Server or Standard Edition server.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!IMPORTANT]
     > You must create a new Autodiscover CNAME record in the forward lookup zone of each SIP domain that you support in your Lync Server 2013 environment.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To create DNS A records
 
@@ -136,14 +103,10 @@ The DNS records can be either A (host) records or CNAME records, based on your a
     
       - For an internal DNS record, in the console tree of the DNS server, expand **Forward Lookup Zones** for your Active Directory domain (for example, contoso.local).
         
-        <div>
-        
 
         > [!NOTE]
         > This domain is the Active Directory domain where your Lync Server 2013&nbsp;Director pool and Front End pool are installed.
 
-        
-        </div>
     
       - For an external DNS record, in the console tree of the DNS server, expand **Forward Lookup Zones** for your SIP domain (for example, contoso.com).
 
@@ -161,14 +124,11 @@ The DNS records can be either A (host) records or CNAME records, based on your a
 
 6.  For an internal DNS record, in the console tree of your DNS server, expand **Forward Lookup Zones** for your SIP domain (for example, contoso.com).
     
-    <div>
-    
 
     > [!NOTE]
     > If you are creating an external DNS record, <STRONG>Forward Lookup Zones</STRONG> is already expanded for your SIP domain from step 3.
 
-    
-    </div>
+
 
 7.  Right-click the SIP domain name, and then click **New Host (A or AAAA)**.
 
@@ -178,27 +138,20 @@ The DNS records can be either A (host) records or CNAME records, based on your a
     
       - For an external DNS record, type lyncdiscover as the host name for the external Autodiscover Service URL.
     
-    <div>
-    
 
     > [!NOTE]
     > The domain name is assumed from the zone in which the record is defined and, therefore, does not need to be entered as part of the A record.
 
-    
-    </div>
+
 
 9.  In **IP Address**, type the IP address as follows:
     
       - For an internal DNS record, type the internal Web Services IP address of the Director (or, if you use a load balancer, type the virtual IP (VIP) of the Director load balancer).
         
-        <div>
-        
 
         > [!NOTE]
         > If you do not use a Director, type the IP address of the Front End Server or Standard Edition server, or, if you use a load balancer, type the VIP of the Front End pool load balancer.
 
-        
-        </div>
     
       - For an external DNS record, type the external or public IP address of the reverse proxy.
 
@@ -206,26 +159,11 @@ The DNS records can be either A (host) records or CNAME records, based on your a
 
 11. To create an additional A record, repeat steps 8 through 10.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > You must create a new lyncdiscover and lyncdiscoverinternal A records in the forward lookup zone of each SIP domain that you support in your Lync Server 2013 environment.
 
-    
-    </div>
+
 
 12. When you are finished creating A (for IPv6, AAAA) records, click **Done**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

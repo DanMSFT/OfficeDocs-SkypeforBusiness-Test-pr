@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # User and client authentication for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-11_
 
 A trusted user is one whose credentials have been authenticated by a trusted server in Microsoft Lync Server 2013. This server is usually a Standard Edition server, Enterprise Edition Front End Server, or Director. Lync Server 2013 relies on Active Directory Domain Services as the single, trusted back-end repository of user credentials.
 
@@ -34,14 +21,11 @@ Authentication is the provision of user credentials to a trusted server. Lync Se
 
   - **NTLM protocol** for users with Active Directory credentials who are connecting from an endpoint outside the corporate firewall. The Access Edge service passes logon requests to a Director, if present, or a Front End Server for authentication. The Access Edge service itself performs no authentication.
     
-    <div>
-    
 
     > [!NOTE]
     > NTLM protocol offers weaker attack protection than Kerberos, so some organizations minimize usage of NTLM. As a result, access to Lync Server 2013 might be restricted to internal or clients connected through a VPN or DirectAccess connection.
 
-    
-    </div>
+
 
   - **Digest protocol** for so-called anonymous users. Anonymous users are outside users who do not have recognized Active Directory credentials but who have been invited to an on-premises conference and possess a valid conference key. Digest authentication is not used for other client interactions.
 
@@ -58,14 +42,4 @@ Users with valid credentials issued by a federated partner are trusted but optio
 The ICE and TURN protocols also use the Digest challenge as described in the IETF TURN RFC.
 
 Client certificates provide an alternate way for users to be authenticated by Lync Server 2013. Instead of providing a user name and password, users have a certificate and the private key corresponding to the certificate that is required to resolve a cryptographic challenge. (This certificate must have a subject name or subject alternative name that identifies the user and must be issued by a Root CA that is trusted by servers running Lync Server 2013, be within the certificate’s validity period, and not have been revoked.) To be authenticated, users only need to type in a personal identification number (PIN). Certificates are particularly useful for telephones and other devices running Microsoft Lync 2013 Phone Edition where it is difficult to enter a user name and/or password.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

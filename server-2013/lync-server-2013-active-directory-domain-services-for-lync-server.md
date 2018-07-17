@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Active Directory Domain Services for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-13_
 
 Active Directory Domain Services functions as the directory service for Windows Server 2003, Windows Server 2008, Windows Server 2012, and Windows Server 2012 R2 networks. Active Directory Domain Services also serves as the foundation on which the Microsoft Lync Server 2013 security infrastructure is built. The purpose of this section is to describe how Lync Server 2013 uses Active Directory Domain Services to create a trustworthy environment for IM, Web conferencing, media, and voice. For details about Lync Server extensions to Active Directory Domain Services and about preparing your environment for Active Directory Domain Services, see [Preparing Active Directory Domain Services for Lync Server 2013](lync-server-2013-preparing-active-directory-domain-services.md) in the Deployment documentation. For details about the role of Active Directory Domain Services in Windows Server networks, see the documentation for the version of the operating system you are using.
 
@@ -35,8 +22,6 @@ Lync Server 2013 uses Active Directory Domain Services to store:
   - Service information that identifies the roles of all servers running Lync Server 2013 in a forest.
 
   - Some user settings.
-
-<div>
 
 ## Active Directory Infrastructure
 
@@ -50,21 +35,13 @@ Infrastructure requirements for Active Directory include the following:
 
 For details, see [Active Directory infrastructure requirements for Lync Server 2013](lync-server-2013-active-directory-infrastructure-requirements.md) in the Deployment documentation.
 
-</div>
-
-<div>
-
 ## Active Directory Domain Services Preparation
-
-<div>
 
 
 > [!NOTE]
 > We recommend that you deploy global settings to the Configuration container instead of the System container. This does not enhance security, but can result in scalability improvements for some Active Directory Domain Services topologies. If you are migrating from Microsoft Office Communications Server 2007 and have used the System container but plan to use the Configuration container, you MUST move the settings in the System container BEFORE you do any upgrade preparations. To migrate your System container settings to the Configuration container, see Office Communications Server 2007 Global Settings Migration Tool at <A href="http://go.microsoft.com/fwlink/p/?linkid=145236">http://go.microsoft.com/fwlink/p/?LinkId=145236</A>.
 
 
-
-</div>
 
 When deploying Lync Server 2013, the first step is to prepare Active Directory Domain Services. Preparing Active Directory Domain Services for Lync Server 2013 consists of the following three steps:
 
@@ -75,10 +52,6 @@ When deploying Lync Server 2013, the first step is to prepare Active Directory D
   - **Prepare Domain**. This task adds the necessary access control entries (ACEs) to universal groups that grant permissions to host and manage users within the domain. This task must be completed in all domains where you want to deploy servers running Lync Server 2013 and any domains where your Lync Server users reside. For details about preparing the domain, see [Running domain preparation for Lync Server 2013](lync-server-2013-running-domain-preparation.md) in the Deployment documentation.
 
 For an overview of the complete process for preparing Active Directory and the rights and permissions required to perform each step, see [Active Directory infrastructure requirements for Lync Server 2013](lync-server-2013-active-directory-infrastructure-requirements.md) in the Deployment documentation.
-
-</div>
-
-<div>
 
 ## Universal Groups
 
@@ -92,27 +65,15 @@ During preparation of the forest, Lync Server 2013 creates various universal gro
 
 For details about the specific universal groups created when preparing AD for Lync Server, as well as the service and administration groups that get added to the infrastructure groups, see [Changes made by forest preparation in Lync Server 2013](lync-server-2013-changes-made-by-forest-preparation.md) in the Deployment documentation.
 
-<div>
-
 
 > [!NOTE]
 > Lync Server 2013 supports the universal groups in the Windows Server 2012 for servers running Lync Server 2013, as well as Windows Server 2003 operating systems for domain controllers. Members of universal groups can include other groups and accounts from any domain in the domain tree or forest and can be assigned permissions in any domain in the domain tree or forest. Universal group support, combined with administrator delegation, simplifies the management of a Lync Server deployment. For example, it is not necessary to add one domain to another to enable an administrator to manage both.
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## Role-Based Access Control
 
 In addition to creating universal service and administration groups and adding service and administration groups to the appropriate universal groups, forest preparation also creates Role-Based Access Control (RBAC) groups. For details about the specific RBAC groups created by forest preparation, see [Changes made by forest preparation in Lync Server 2013](lync-server-2013-changes-made-by-forest-preparation.md) in the Deployment documentation. For more information about RBAC groups, see [Role-based access control (RBAC) for Lync Server 2013](lync-server-2013-role-based-access-control-rbac.md).
-
-</div>
-
-<div>
 
 ## Access Control Entries (ACEs) and Inheritance
 
@@ -124,10 +85,6 @@ For details about the public ACEs created and added by forest preparation and do
 
 Organizations often lock down Active Directory Domain Services (AD DS) to help mitigate security risks. However, a locked-down Active Directory environment can limit the permissions that Lync Server 2013 requires. This can include removal of ACEs from containers and OUs and disabling of permissions inheritance on User, Contact, InetOrgPerson, or Computer objects. In a locked down Active Directory environment, permissions must be set manually on containers and OUs that require them. For details, see [Preparing a locked-down Active Directory Domain Services in Lync Server 2013](lync-server-2013-preparing-a-locked-down-active-directory-domain-services.md) in the Deployment documentation.
 
-</div>
-
-<div>
-
 ## Server Information
 
 During activation, Lync Server 2013 publishes server information to the three following locations in Active Directory Domain Services:
@@ -138,25 +95,13 @@ During activation, Lync Server 2013 publishes server information to the three fo
 
   - Trusted servers specified in Topology Builder.
 
-</div>
-
-<div>
-
 ## Service Connection Points
 
 Each Lync Server 2013 object in Active Directory Domain Services has an SCP called RTC Services, which in turn contains a number of attributes that identify each computer and specify the services that it provides. Among the more important SCP attributes are *serviceDNSName*, *serviceDNSNameType*, *serviceClassname*, and *serviceBindingInformation*. Third-party asset management applications can retrieve server information across a deployment by querying against these and other SCP attributes.
 
-</div>
-
-<div>
-
 ## Active Directory Server Objects
 
 Each Lync Server 2013 server role has a corresponding Active Directory object whose attributes define the services provided by that role. Also, when a Standard Edition server is activated, or when an Enterprise Edition pool is created, Lync Server 2013 creates a new **msRTCSIP-Pool** object in the **msRTCSIP-Pools** container. The **msRTCSIP-Pool** class specifies the fully qualified domain name (FQDN) of the pool, along with the association between the front-end and back-end components of the pool. (A Standard Edition server is regarded as a logical pool whose front and back ends are collocated on a single computer.)
-
-</div>
-
-<div>
 
 ## Trusted Servers
 
@@ -209,16 +154,4 @@ Additionally, to enable Microsoft Office Communications Server 2007 R2 and Micro
 
 
 To support trusted servers of previous releases, you must run the best practices analyzer tool. For details about running the best practices analyzer, see [http://go.microsoft.com/fwlink/p/?LinkId=330633](http://go.microsoft.com/fwlink/p/?linkid=330633).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

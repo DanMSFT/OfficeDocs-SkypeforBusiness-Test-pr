@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Run informal voice routing tests in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-08-07_
 
 You can use the **Create voice routing test case information** dialog box to run informal tests before creating an actual test case. When you are satisfied with the outcome of a test, you have the option of saving it as a formal test case.
-
-<div>
 
 ## To run an informal voice routing test
 
@@ -70,8 +55,6 @@ You can use the **Create voice routing test case information** dialog box to run
     
     2.  Note that the remaining fields on the **Save Voice Routing Test Case Information** dialog box are read-only, and are prepopulated from the informal test configuration *and* results. Verify that this is the configuration that you want to save for the test case.
         
-        <div>
-        
 
         > [!NOTE]
         > Values from the test results are used to prepopulate fields on the <STRONG>Save Voice Routing Test Case Information</STRONG> dialog box as follows: 
@@ -83,25 +66,16 @@ You can use the **Create voice routing test case information** dialog box to run
         > <LI>
         > <P><STRONG>Expected PSTN usage record</STRONG> is prepopulated with the value in the <STRONG>First PSTN usage</STRONG> field.</P></LI></UL>If matches for any of these values were not found during the test run, the corresponding field is empty on the <STRONG>Save Voice Routing Test Case Information</STRONG> dialog box.
 
-        
-        </div>
     
     3.  Click **Ok** to save the test case, or click **Cancel** to return to return to the **View voice routing test case information** dialog box to further develop the test before saving it.
 
 11. Click **Commit**, and then click **Commit all**.
     
-    <div>
-    
 
     > [!NOTE]
     > Whenever you create a voice routing test case, you must run the <STRONG>Commit all</STRONG> command to publish the test case. For details, see <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">Publish pending changes to the voice routing configuration in Lync Server 2013</A> in the Operations documentation.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -113,18 +87,5 @@ You can use the **Create voice routing test case information** dialog box to run
 
 
 [Configuring dial plans in Lync Server 2013](lync-server-2013-configuring-dial-plans.md)  
-[Configuring voice policies, PSTN usage records, and voice routes in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring voice policies, PSTN usage records, and voice routes in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)
 

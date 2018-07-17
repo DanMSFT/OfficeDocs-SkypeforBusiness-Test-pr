@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Manage Access Edge Configuration for your organization in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 This is preliminary documentation and is subject to change. Blank topics are included as placeholders.
 
@@ -44,15 +31,11 @@ These options include the following types of access that can be configured throu
 
   - **Enable anonymous users to access conferences**   Enable this option if you want internal users to invite external anonymous users to conferences that they organize. Enabling this setting only allows anonymous users for conferences. To configure the conferencing experience and options that will define how and what your users can do with conferences and for the inclusion of anonymous users, see details at [Create or Modify Conferencing User Experience for a Site or Users](https://technet.microsoft.com/en-us/library/gg429715\(v=ocs.15\)) and [Conferencing policy settings reference for Lync Server 2013](lync-server-2013-conferencing-policy-settings-reference.md).
 
-<div>
-
 
 > [!NOTE]
 > In addition to enabling external user access support, you also configure policies to control the use of remote user access in your organization before any type of external user access is available to users. For details about creating, configuring, and applying policies for external user access, see <A href="lync-server-2013-manage-external-access-policy-for-your-organization.md">Manage external access policy in Lync Server 2013</A>.
 
 
-
-</div>
 
 **Viewing Access Edge configuration information by using Windows PowerShell cmdlets**
 
@@ -84,8 +67,6 @@ These options include the following types of access that can be configured throu
         CertificatesDeletedPercentage          : 20
         RoutingMethod                          : UseDnsSrvRouting
 
-<div>
-
 ## In This Section
 
   - [Enable or disable federation and public IM connectivity in Lync Server 2013](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)
@@ -99,16 +80,4 @@ These options include the following types of access that can be configured throu
   - [Enable or disable anonymous user access in Lync Server 2013](lync-server-2013-enable-or-disable-anonymous-user-access.md)
 
   - [Assign conferencing policies to support anonymous users in Lync Server 2013](lync-server-2013-assign-conferencing-policies-to-support-anonymous-users.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

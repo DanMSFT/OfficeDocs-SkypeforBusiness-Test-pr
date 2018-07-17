@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Certificate summary - Scaled Director pool, hardware load balancer in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-20_
 
 Certificate requirements for a Director with a hardware load balancer will use a default certificate that has a subject name and subject alternative names for services that the Director pool can receive. A certificate is requested for each Director in the pool. Additionally there is an OAuth Token certificate for server to server authentication purposes that is installed on each server.
 
@@ -64,26 +51,21 @@ Certificate requirements for a Director with a hardware load balancer will use a
 <td><p>OAuthTokenIssuer</p></td>
 <td><p>dir01.contoso.net</p></td>
 <td><p>No Entry</p></td>
-<td><div>
-
-> [!IMPORTANT]
-> Note that the minimum key length is 1024, but you may receive a warning that the minimum recommended key length is 2048 bits.
-
-
-</div>
-<p>The OAuthTokenIssuer certificate is a single-purpose certificate for the purpose of authenticating servers in a large-scale environment, and can be requested from an internal CA or from a public CA. The certificate is required.</p></td>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.important(OCS.15).gif" title="important" alt="important" />Important:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Note that the minimum key length is 1024, but you may receive a warning that the minimum recommended key length is 2048 bits.</td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+<p>The OAuthTokenIssuer certificate is a single-purpose certificate for the purpose of authenticating servers in a large-scale environment, and can be requested from an internal CA or from a public CA. The certificate is required.</p></td>
+</tr>
+</tbody>
+</table>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring network region links in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 You can configure links between two network regions as part of call admission control (CAC). Regions within a network are linked through physical wide area network (WAN) connectivity. You can use the Lync Server Control Panel to define a link between two network regions and set the bandwidth limitations on audio and video connections between these regions. For details about deleting an existing network region link, see [Deleting network region links in Lync Server 2013](lync-server-2013-deleting-network-region-links.md).
-
-<div>
 
 ## To create a network region link
 
@@ -42,14 +27,11 @@ You can configure links between two network regions as part of call admission co
 
 5.  In **New Region Link**, type a value in the **Name** field.
     
-    <div>
-    
 
     > [!NOTE]
     > This value must be unique within your Lync Server 2013 deployment.
 
-    
-    </div>
+
 
 6.  From the **Network region \#1** drop-down list, select one of the two regions to be linked.
 
@@ -58,10 +40,6 @@ You can configure links between two network regions as part of call admission co
 8.  (Optional) If you want to place bandwidth limitations on audio or video calls between these regions, select a bandwidth policy profile from the **Bandwidth policy** drop-down list.
 
 9.  Click **Commit**.
-
-</div>
-
-<div>
 
 ## To modify a network region link
 
@@ -79,31 +57,14 @@ You can configure links between two network regions as part of call admission co
 
 7.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Deleting network region links in Lync Server 2013](lync-server-2013-deleting-network-region-links.md)  
 
 
-[New-CsNetworkRegionLink](new-csnetworkregionlink.md)  
-[Set-CsNetworkRegionLink](set-csnetworkregionlink.md)  
-[Remove-CsNetworkRegionLink](remove-csnetworkregionlink.md)  
-[Get-CsNetworkRegionLink](get-csnetworkregionlink.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg398437\(v=ocs.15\))  
+[Set-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg412867\(v=ocs.15\))  
+[Remove-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg413012\(v=ocs.15\))  
+[Get-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg398972\(v=ocs.15\))
 

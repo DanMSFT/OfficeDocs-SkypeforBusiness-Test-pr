@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Creating or modifying network regions in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 A network region interconnects various parts of a network across multiple geographic areas. Every network region must be associated with a central site. The central site is the data center site on which the call admission control (CAC) bandwidth policy service is running. You can use Lync Server Control Panel to configure network regions. Network regions include settings that determine whether alternate paths through the Internet are allowed for audio and video connections. From the Lync Server Control Panel, you can create, modify, or delete a network region. Use this topic to create and modify network regions. For details about deleting existing network regions, see [Deleting existing network regions in Lync Server 2013](lync-server-2013-deleting-existing-network-regions.md).
-
-<div>
 
 ## To create a network region
 
@@ -54,10 +39,6 @@ A network region interconnects various parts of a network across multiple geogra
 
 The **Associated sites** table is not used for creating a network region. You associate a site with a region when you create or modify the site. For details, see [Creating or modifying network sites in Lync Server 2013](lync-server-2013-creating-or-modifying-network-sites.md).
 
-</div>
-
-<div>
-
 ## To modify a network region
 
 1.  From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.
@@ -76,10 +57,6 @@ The **Associated sites** table is not used for creating a network region. You as
 
 You cannot modify the **Associated sites** on this page. The list of associated sites is provided for reference so you are aware of which sites will be affected when you modify the region settings.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -87,21 +64,8 @@ You cannot modify the **Associated sites** on this page. The list of associated 
 [Configure network regions for CAC in Lync Server 2013](lync-server-2013-configure-network-regions-for-cac.md)  
 
 
-[New-CsNetworkRegion](new-csnetworkregion.md)  
-[Set-CsNetworkRegion](set-csnetworkregion.md)  
-[Remove-CsNetworkRegion](remove-csnetworkregion.md)  
-[Get-CsNetworkRegion](get-csnetworkregion.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsNetworkRegion](https://technet.microsoft.com/en-us/library/gg425829\(v=ocs.15\))  
+[Set-CsNetworkRegion](https://technet.microsoft.com/en-us/library/gg413089\(v=ocs.15\))  
+[Remove-CsNetworkRegion](https://technet.microsoft.com/en-us/library/gg398466\(v=ocs.15\))  
+[Get-CsNetworkRegion](https://technet.microsoft.com/en-us/library/gg398406\(v=ocs.15\))
 

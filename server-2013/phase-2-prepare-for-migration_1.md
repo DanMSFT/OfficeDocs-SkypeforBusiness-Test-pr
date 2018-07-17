@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Phase 2: Prepare for migration
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-08-24_
 
 Before you begin to migrate to Lync Server 2013 from Office Communications Server 2007 R2, follow the steps described in this section.
-
-<div>
 
 ## In This Section
 
@@ -43,16 +28,4 @@ Before you begin to migrate to Lync Server 2013 from Office Communications Serve
   - [Configure clients for migration](configure-clients-for-migration_1.md)
 
   - [Verify Office Communications Server 2007 R2 environment](verify-office-communications-server-2007-r2-environment.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

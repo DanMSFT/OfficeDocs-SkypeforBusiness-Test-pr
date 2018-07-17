@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Establishing a backup and restoration strategy for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-26_
 
 Before you can develop a backup and restoration plan for Lync Server, you need to develop a strategy that fits with your organization's goals. To develop an effective backup and restoration strategy, you will need to:
 
   - Establish business priorities.
 
   - Identify backup and restoration requirements.
-
-<div>
 
 ## Establishing Business Priorities
 
@@ -49,10 +34,6 @@ Evaluate the business priorities of your organization. Typically, the primary bu
   - Cost constraints
 
 Business needs such as these help to determine the service level agreements (SLAs) that you develop with your customers. Service level agreements greatly influence your backup and recovery strategy.
-
-</div>
-
-<div>
 
 ## Identifying Backup and Restoration Requirements
 
@@ -81,16 +62,4 @@ Your business priorities and service level agreements act in determining your or
       - A File Store fails. This scenario requires restoring the file server or file cluster.
     
       - An Archiving, Monitoring, or Persistent Chat database fails. This scenario requires recreating the databases, and, if the data is critical to your organization, restoring the data. Archiving, Monitoring, and Persistent Chat data is not required to get Lync Server back up and running.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 
