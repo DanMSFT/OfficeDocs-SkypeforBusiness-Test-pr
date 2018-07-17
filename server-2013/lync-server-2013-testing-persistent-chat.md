@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing persistent chat in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-03_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-11-03_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsPersistentChatMessage** cmdlet verifies that a pair of test users can exchange messages using the Persistent Chat service. To do this, the cmdlet logs the two users on to Lync Server 2013, connects the users to a persistent Chat room, exchanges a pair of messages, then exits the chat room and logs off the two users. Note that calls to this cmdlet will fail if you have not created any chat rooms or if the two test user accounts are not assigned a Persistent Chat policy that gives them access to the Persistent Chat service.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -71,10 +52,6 @@ With the credential objects in hand, the third command determines whether these 
     $cred2 = Get-Credential "litwareinc\kenmyer"
     
     Test-CsPersistentChatMessage -TargetFqdn atl-persistentchat-001.litwareinc.com -SenderSipAddress "sip:pilar@litwareinc.com" -SenderCredential $cred1 -ReceiverSipAddress "sip:kenmyer@litwareinc.com" -ReceiverCredential $cred2
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -130,10 +107,6 @@ has failed to respond
 
 Diagnosis :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsPersistentChatMessage** might fail:
@@ -142,27 +115,10 @@ Here are some common reasons why **Test-CsPersistentChatMessage** might fail:
 
   - There may have been a network issue causing an unexpected delay which timed out the test.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Grant-CsPersistentChatPolicy](grant-cspersistentchatpolicy.md)  
-[New-CsPersistentChatPolicy](new-cspersistentchatpolicy.md)  
-[Set-CsPersistentChatPolicy](set-cspersistentchatpolicy.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Grant-CsPersistentChatPolicy](https://technet.microsoft.com/en-us/library/jj204907\(v=ocs.15\))  
+[New-CsPersistentChatPolicy](https://technet.microsoft.com/en-us/library/jj205396\(v=ocs.15\))  
+[Set-CsPersistentChatPolicy](https://technet.microsoft.com/en-us/library/jj205192\(v=ocs.15\))
 

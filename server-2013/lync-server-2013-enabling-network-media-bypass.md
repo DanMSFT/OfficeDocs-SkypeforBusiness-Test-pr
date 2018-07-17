@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enabling network media bypass in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Media bypass settings apply globally across a Microsoft Lync Server 2013 deployment. Media bypass allows calls to bypass the Mediation Server. For details about when to use Media bypass, see [Planning for media bypass in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md) in the Planning section.
 
 You can enable and configure media bypass from the Lync Server Control Panel.
-
-<div>
 
 ## To enable and configure media bypass
 
@@ -60,10 +45,6 @@ You can enable and configure media bypass from the Lync Server Control Panel.
 
 8.  Click **Commit** to save your changes.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -73,18 +54,5 @@ You can enable and configure media bypass from the Lync Server Control Panel.
 [Global media bypass options in Lync Server 2013](lync-server-2013-global-media-bypass-options.md)  
 
 
-[Planning for media bypass in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for media bypass in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md)
 

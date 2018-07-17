@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure call admission control in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 Call admission control (CAC) is a solution that determines whether a real-time session can be established based on the available bandwidth to help prevent poor audio/video quality for users on congested networks. CAC controls real-time traffic only for audio and video, and does not affect data traffic. CAC may route the call through an Internet path when the default WAN path does not have the required bandwidth. For details, see [Planning for call admission control in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md) in the Planning documentation.
 
 This section provides a set of example procedures that illustrate how to deploy and manage CAC in your network.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -38,19 +23,11 @@ This section provides a set of example procedures that illustrate how to deploy 
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > All CAC deployment and management examples in this section are performed by using the Lync Server Management Shell. As an alternative, you can also use the <STRONG>Network Configuration</STRONG> section of Lync Server Control Panel to manage CAC.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -71,16 +48,4 @@ This section provides a set of example procedures that illustrate how to deploy 
   - [Enable call admission control in Lync Server 2013](lync-server-2013-enable-call-admission-control.md)
 
   - [Call admission control deployment checklist for Lync Server 2013](lync-server-2013-call-admission-control-deployment-checklist.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 09/18/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure the client experience with Skype for Business
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-09-17_
 
 **Summary:** This topic describes how to configure the client experience for Skype for Business client users in a Lync Server 2013 environment. You can configure the client experience only if you are running Lync Server 2013 with the December 2014 Cumulative Update (5.0.8308.857) or later installed. For information about updating Lync Server 2013, see [Updates for Lync Server 2013](http://go.microsoft.com/fwlink/p/?linkid=532651).
 
@@ -32,27 +19,17 @@ Skype for Business provides a new user experience that is based on the Skype con
 
 Lync Server 2013 supports the new Skype for Business client experience as well as the Lync client experience. As an administrator, you can choose the preferred client experience for your users. For example, you might want to deploy the Lync client experience until users in your organization are fully trained in the new Skype for Business experience. Or, if you have not yet upgraded all users to Skype for Business Server 2015, you might want all users to have the same client experience until all are upgraded to the new server.
 
-<div>
-
 
 > [!IMPORTANT]
 > If your organization has both Skype for Business Server 2015 and Lync Server 2013 deployed, the default client experience will differ depending on server versions and UI settings. When users launch Skype for Business for the first time, they will always see the Skype for Business user interface--even if you have selected the Lync user interface. After several minutes, users are asked to switch to Lync mode. For more information, see <STRONG>First launch client behavior</STRONG> later in this topic.
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > The Lync 2013 client experience is not an option for Skype for Business 2016 client versions. Before you attempt to configure your client environment to use the Lync 2013 client, please check the client version to ensure it does not start with the number 16; for example: 16.x.x.x.
 
 
-
-</div>
-
-<div>
 
 ## Configure the client experience
 
@@ -78,10 +55,6 @@ The next command assigns the policy, SalesClientUI, to all members of the Sales 
 
     Get-CsUser -LDAPFilter "Department=Sales" | Grant-CsClientPolicy -PolicyName SalesClientUI
 
-</div>
-
-<div>
-
 ## First launch client behaviors
 
 By default, when users launch Skype for Business for the first time, they will always see the Skype for Business user interface--even if you have selected the Lync client experience by setting the value of the EnableSkypeUI parameter to $False as described previously. After several minutes, users will then be asked to switch to Lync mode.
@@ -106,8 +79,6 @@ If you want to display the Lync user interface when users launch the Skype for B
 
 The Lync user interface will now be displayed when users launch the Skype for Business client for the first time.
 
-<div>
-
 ## Control the display of the Welcome screen tutorial
 
 When users open the Skype for Business client, the default behavior is to display a Welcome screen that includes *7 Quick tips most people ask for*. You can turn off the display of the Welcome screen but still allow users to access the tutorial by adding the following Registry value on the client computer:
@@ -118,10 +89,6 @@ The key should look like the following:
 
     "IsBasicTutorialSeenByUser"=dword:00000001
 
-</div>
-
-<div>
-
 ## Turn off the client tutorial
 
 If you do not want your users to be able to access the tutorial, you can turn off the client tutorial with the following Registry value:
@@ -131,12 +98,6 @@ In the **\[HKEY\_CURRENT\_USER\\Software\\Microsoft\\Office\\15.0\\Lync\]** key,
     "TutorialFeatureEnabled"=dword:00000000
 
 You can turn the tutorial back on by setting the **Value data** to **1**.
-
-</div>
-
-</div>
-
-<div>
 
 ## Default client experiences
 
@@ -255,10 +216,6 @@ The patch versions required to manage the configuration of the Skype for Busines
 
   - Lync Server 2013 - December 2014 Cumulative Update (5.0.8308.857) for Lync Server 2013. For information, see [Updates for Lync Server 2013](http://go.microsoft.com/fwlink/p/?linkid=532772).
 
-</div>
-
-<div>
-
 ## Create a Group Policy Object to modify the registry on a domain joined computer
 
 The registry update to display the Lync client experience the first time a user launches the Skype for Business client should be done only once. If you use a Group Policy Object (GPO) to update the registry, you need to define the object to create a new value rather than update the Value data. When the GPO is applied, if the new value does not exist, the GPO will create it and set the Value data to 0.
@@ -347,16 +304,4 @@ Next, you'll need to link the GPO you created to the group of users that you wan
     You should see "Assigned Group Policy Objects" with the name of the GPO you created displayed below.
 
 You can also verify that the GPO has successfully updated the registry on a user's computer by examining the registry. Open Registry Editor and navigate to the **\[HKEY\_CURRENT\_USER\\Software\\Microsoft\\Office\\Lync\]** key. If the GPO successfully updated the registry you will see a value named EnableSkypeUI with a value of 0.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

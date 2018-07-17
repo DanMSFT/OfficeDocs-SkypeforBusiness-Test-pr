@@ -8,37 +8,20 @@ ms.date: 10/03/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment checklist for dial-in conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-10-03_
 
 The components required for dial-in conferencing are deployed when you deploy the conferencing workload. Before you can configure dial-in conferencing, you need to deploy either Enterprise Voice or a Mediation Server and a public switched telephone network (PSTN) gateway.
 
 All the steps in the following table must be performed before users can dial in from the PSTN to join an audio/video conference.
-
-<div>
 
 
 > [!NOTE]
 > If you are migrating from Office Communications Server 2007 R2, you must apply the latest updates to your Office Communications Server 2007 R2 environment before deploying dial-in conferencing.
 
 
-
-</div>
 
 ### Dial-in Conferencing Deployment Process
 
@@ -64,13 +47,12 @@ All the steps in the following table must be performed before users can dial in 
 <li><p>Run Topology Builder to configure your topology. While configuring the topology, select the dial-in conferencing option.</p></li>
 <li><p>Publish the topology and deploy the Front End pool or Standard Edition server.</p></li>
 <li><p>If necessary, create a stand-alone Mediation Server and associate it with a PSTN gateway.</p>
-<div>
 
 > [!NOTE]
 > This step is required only if you do not deploy Enterprise Voice and do not collocate the Mediation Server with the Enterprise EditionFront End Server or Standard Edition server. If you deploy Enterprise Voice, you install and configure Mediation Servers and PSTN gateways as part of the Enterprise Voice deployment. If you collocate the Mediation Server, you install and configure the Mediation Server as part of the Front End pool or Standard Edition server deployment.
 
 
-</div></li>
+</li>
 </ol></td>
 <td><p>Domain Admins</p>
 <p>RTCUniversalServerAdmins</p>
@@ -127,13 +109,12 @@ All the steps in the following table must be performed before users can dial in 
 <tr class="even">
 <td><p><strong>Configure dial-in access numbers</strong></p></td>
 <td><p>Use Lync Server 2013 Control Panel or Lync Server Management Shell to set up dial-in access numbers that users call to dial in to a conference, and specify the regions that associate the access number with the appropriate dial plans. The first three access numbers for the region specified by the organizer's dial plan are included in the conference invitation. All access numbers are available on the Dial-in Conferencing Settings page.</p>
-<div>
 
 > [!NOTE]
 > After you create dial-in access numbers, you can use the <STRONG>Set-CsDialInConferencingAccessNumber</STRONG> cmdlet to modify the display name of the Active Directory contact objects so that users can more easily identify the correct access number.
 
 
-</div></td>
+</td>
 <td><p>RTCUniversalServerAdmins</p>
 <p>CsServerAdministrator</p>
 <p>CsAdministrator</p></td>
@@ -201,15 +182,4 @@ All the steps in the following table must be performed before users can dial in 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

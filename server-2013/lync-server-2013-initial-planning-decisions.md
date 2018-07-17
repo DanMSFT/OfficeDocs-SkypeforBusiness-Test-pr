@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Initial planning decisions for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 The first part of the planning process is deciding which Lync Server workloads and major features you want for your organization.
 
@@ -59,14 +46,4 @@ The first part of the planning process is deciding which Lync Server workloads a
 13. **Do you have Microsoft Exchange deployed?**   If your organization uses Microsoft Exchange Server for its email services, you can enable several features which enhance the usefulness of both Lync Server and Microsoft Exchange Server. Some of these features, called Exchange Unified Messaging (UM), include enabling users to receive voice mail notices and listen to voice mail from Outlook or Outlook Web Access, to access their Microsoft Exchange mailboxes using a telephone, and to receive faxes in their Microsoft Exchange mailboxes. Additionally, if you have Exchange 2013 deployed, you can integrate the contact stores for users between the two systems, use Exchange to store higher-resolution contact photos, and integrate the archiving of emails and instant messages. For more information, see [Planning for Exchange Server integration with Lync Server 2013](lync-server-2013-planning-for-exchange-server-integration.md).
 
 14. **Do you have branch offices in your organization?**   If your organization has branch offices, Lync Server supports a variety of ways to support them and ensure their resiliency for voice and other features. In particular, at a branch office that does not have a resilient WAN link to a data center, you can install a Survivable Branch Appliance or Survivable Branch Server to maintain Enterprise Voice support should the wide area network (WAN) link go down. For more information, see [Planning for branch-site voice resiliency in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md).
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

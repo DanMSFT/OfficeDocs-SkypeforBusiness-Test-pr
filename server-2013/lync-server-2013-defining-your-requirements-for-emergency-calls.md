@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Defining your requirements for emergency calls in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-06_
 
 Before you begin a Microsoft Lync Server 2013 E9-1-1 deployment, you should first be able to answer the questions detailed in the following sections. The planning you need to do depends on the type of E9-1-1 solution that you choose to deploy—a SIP trunk E9-1-1 service provider or an Emergency Location Identification Number (ELIN) gateway. The following table identifies the sections in this planning workbook that you’ll need to review for each of those solutions.
 
@@ -76,17 +63,15 @@ Before you begin a Microsoft Lync Server 2013 E9-1-1 deployment, you should firs
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-defining-the-location-policy.md">Defining the location policy for Lync Server 2013</a></p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-assigning-location-policy-scope.md">Assigning location policy scope in Lync Server 2013</a></p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 
-
-<div>
 
 ## In This Section
 
@@ -111,16 +96,4 @@ Before you begin a Microsoft Lync Server 2013 E9-1-1 deployment, you should firs
   - [Defining the location policy for Lync Server 2013](lync-server-2013-defining-the-location-policy.md)
 
   - [Assigning location policy scope in Lync Server 2013](lync-server-2013-assigning-location-policy-scope.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring the use of high-resolution photos in Microsoft Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-05_
 
 Microsoft Lync Server 2010 provided the ability for users to view photos of their contacts (and to make their own photos available to others). Typically these photos were stored as part of the user's thumbnailPhoto attribute in Active Directory. That placed a serious limitation on the size and resolution of the photos: the thumbnailPhoto attribute can only hold a photograph with a maximum size of 48 pixels by 48 pixels.
 
@@ -36,15 +23,11 @@ In Microsoft Lync Server 2013, however, photos can be stored in a user's Microso
 
   - 648 pixels by 648 pixels for use in Lync 2013 and Microsoft Lync Web App.
 
-<div>
-
 
 > [!NOTE]
 > If you have the resources, it is recommended that you upload 648x648 photos; that provides the maximum resolution and optimal picture quality in any of the Office 2013 applications. Each JPEG photo with a size of 648x648 and a depth of 24 bits results in a file size of approximately 240 kilobytes. That means you will need approximately 1 megabyte of disk space for every 4 user photos.
 
 
-
-</div>
 
 High-resolution photos, which are accessed by using Exchange Web Services, can be uploaded by users who are running Outlook 2013 Web App; users are only allowed to update their own photo. Administrators, however, can update the photo for any user by using the Exchange Management Shell and a series of Windows PowerShell commands similar to the following:
 
@@ -54,15 +37,11 @@ High-resolution photos, which are accessed by using Exchange Web Services, can b
 
 The first command in the preceding example uses the Get-Content cmdlet to read the contents of the file C:\\Photos\\Kenmyer.jpg and store that data in a variable named $photo. In the second command, the Exchange cmdlet Set-UserPhoto is used to upload the photo and attach that photo to Ken Myer's user account.
 
-<div>
-
 
 > [!NOTE]
 > In this example, Ken Myer's Active Directory display name is used as the user account Identity. You can also reference a user account by using other identifiers such as the user's SMTP address or his or her User Principal Name. See the documentation for the Set-UserPhoto cmdlet at <A href="http://go.microsoft.com/fwlink/p/?linkid=268536">http://go.microsoft.com/fwlink/p/?LinkId=268536</A> for more information
 
 
-
-</div>
 
 Uploading the photo does not equate to assigning that photo to Ken Myer's user account. Instead, uploading the photo simply results in a preview of that photo to be displayed on the Outlook Web App Options page. To actually assign that photo to the user account the user must click **Save** on the Options page or the administrator must execute the third command in the example. That third command uses the Save parameter to assign the photo to Ken Myer's user account:
 
@@ -75,14 +54,4 @@ To verify that the new photo has been assigned to the user account, Ken Myer can
 If the administrator can view the photo using Internet Explorer but the user cannot view his or her photo in Lync 2013, that typically indicates a connectivity problem with Exchange Web Services or with the Exchange autodiscover service.
 
 Note, too that no additional configuration is required in order to make this photo available in Lync 2013. Instead, the photo will be instantly available after it has been uploaded and the Set-UserPhoto cmdlet has been run.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

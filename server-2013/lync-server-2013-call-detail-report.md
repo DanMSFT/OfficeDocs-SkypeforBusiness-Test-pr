@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Call Detail Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-05_
 
 The Call Detail Report provides a detailed look at an individual call; the report includes nearly all the Quality of Experience metrics and statistics collected by Lync Server, divided into report sections such as:
 
@@ -50,8 +37,6 @@ Keep in mind that the categories and the metrics you see on a given report depen
 
 The Call Detail Report is most useful when you are trying to determine exactly why a given call experienced media quality problems.
 
-<div>
-
 ## Accessing the Call Detail Report
 
 The Call Detail Report can be accessed from any of the following reports:
@@ -74,10 +59,6 @@ From within the Call Detail Report you can access the [Device Report in Lync Ser
 
 You can also access the Server Media Quality Trend Report by clicking the A/V edge server metric.
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Call Detail Report
 
 The Call Detail Report typically includes over 250 different metrics, including such items as Microphone timestamp drift, Low SNR time, and Near end to echo time. If you can't remember what all of these metrics actually measure, try holding your mouse over the metric label; often-times, a tooltip will appear describing that metric.
@@ -86,17 +67,9 @@ If you have problems locating a metric, type part of the metric label in the sea
 
 Note that the report only tracks information about a call. The call itself is not recorded.
 
-</div>
-
-<div>
-
 ## Filters
 
 None. You cannot filter the Call Detail Report.
-
-</div>
-
-<div>
 
 ## Metrics
 
@@ -230,17 +203,4 @@ The following table lists the information provided in the Call Detail Report for
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

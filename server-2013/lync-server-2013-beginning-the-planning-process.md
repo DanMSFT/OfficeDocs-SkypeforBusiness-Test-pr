@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Beginning the planning process for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-24_
 
 While planning an on-premises unified communications deployment may seem intimidating, Lync Server provides two valuable tools to help you:
 
   - **The Planning Tool** is a wizard that presents a series of questions about your organization, the Lync Server features that you want to enable, and your capacity planning needs. It then creates a recommended deployment topology based on your answers, and produces a Microsoft Visio diagram of this deployment.
 
   - **Topology Builder** is an installation component of Lync Server. You use Topology Builder to create, adjust, and publish your planned topology. It also validates your topology before you begin server installations. When you install Lync Server on individual servers, the servers read the published topology as part of the installation process, and the installation program deploys the server as directed in the topology.
-
-<div>
 
 ## Lync Server Planning Tool
 
@@ -44,19 +29,11 @@ You can run the Planning Tool multiple times, answering questions differently, a
 
 After you are satisfied, you can use the Planning Tool to create a diagram of your planned deployment. You can use this diagram while creating the deployment in Topology Builder.
 
-<div>
-
 
 > [!NOTE]
 > The Planning Tool included with this release of Lync Server 2013 is a prerelease version. Note that the capacity planning numbers in the Planning Tool are preliminary and are not supported for the final release.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Lync Server Topology Builder
 
@@ -65,10 +42,6 @@ Once you have decided on your deployment plan, you use Topology Builder to begin
 Alternatively, if you are very familiar with Lync Server and need less prescriptive guidance, you can skip the Planning Tool and use the wizards in Topology Builder for the initial design of your deployment and also for the validation and publishing steps.
 
 Using Topology Builder to plan and publish a topology is a required step. You cannot bypass Topology Builder and install Lync Server individually on the servers in your deployment. Each server must read the topology from a validated, published topology in the Central Management store.
-
-</div>
-
-<div>
 
 ## High-Level Planning Process
 
@@ -90,23 +63,7 @@ We recommend the following general process for using both the documentation and 
 
 7.  Before you begin deployment, read [Determining your system requirements for Lync Server 2013](lync-server-2013-determining-your-system-requirements.md) and [Determining your infrastructure requirements for Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) to familiarize yourself with the prerequisites and necessary infrastructure for Lync Server. Additionally, be sure you have read all the sections of [Planning for Lync Server 2013](lync-server-2013-planning.md) that apply to the workloads and features that you plan to deploy.
 
-</div>
-
-<div>
-
 ## Migrating from Previous Versions
 
 If you are migrating to Lync Server from a previous version, see the [Migration](migration.md) documentation for specific instructions for your migration and deployment.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

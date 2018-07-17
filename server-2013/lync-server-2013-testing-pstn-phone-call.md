@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing PSTN phone call in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsPstnOutboundCall cmdlet tests the ability of a user to make a call to a phone number located on the PSTN. When you run Test-CsPstnOutboundCall, the cmdlet first attempts to log the test user on to Lync Server. If the logon succeeds, the cmdlet will then try to make a phone call across the PSTN gateway. This phone call will be made using the dial plan, voice policy, and other policies and settings assigned to the test account. When the call is answered, the cmdlet sends dual-tone multi-frequency (DTMF) codes over the network to verify media connectivity.
 
 When conducting its test, Test-CsPstnOutboundCall will make an actual phone call: the target phone will ring and must be answered for the test to succeed. This call must also be manually ended by the administrator.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -74,11 +55,7 @@ To run this check using an actual user account, you must first create a Windows 
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsPstnOutboundCall -TargetFqdn "atl-cs-001.litwareinc.com" -TargetPstnPhoneNumber "+12065551219" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsPstnOutboundCall](test-cspstnoutboundcall.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsPstnOutboundCall](https://technet.microsoft.com/en-us/library/gg398207\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -120,10 +97,6 @@ Establishing Audio Video call to 'sip:+12065551219@litwareinc.com;user=phone'.
 
 An exception 'A 404 (Not Found) response was received from the network and the operation failed.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsPstnOutboundCall might fail:
@@ -145,16 +118,4 @@ Here are some common reasons why Test-CsPstnOutboundCall might fail:
     And then you can determine the PSTN usages (if any) that are assigned to that policy by using a command similar to the following, which retrieves information about the per-user voice policy RedmondVoicePolicy:
     
         Get-CsVoicePolicy -Identity "RedmondVoicePolicy"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

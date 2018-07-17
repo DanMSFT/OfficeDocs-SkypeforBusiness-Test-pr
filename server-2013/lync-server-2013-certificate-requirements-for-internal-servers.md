@@ -8,35 +8,18 @@ ms.date: 02/17/2017
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Certificate requirements for internal servers in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2017-02-17_
 
 Internal servers that are running Lync Server and that require certificates include Standard Edition server, Enterprise Edition Front End Server, Mediation Server, and Director. The following table shows the certificate requirements for these servers. You can use the Lync Server certificate wizard to request these certificates.
-
-<div>
 
 
 > [!TIP]
 > Wildcard certificates are supported for the subject alternative names associated with the simple URLs on the Front End pool, Front End Server, or Director. For details about wildcard certificate support, see <A href="lync-server-2013-wildcard-certificate-support.md">Wildcard certificate support in Lync Server 2013</A>.
 
 
-
-</div>
 
 Although an internal enterprise certification authority (CA) is recommended for internal servers, you can also use a public CA. For a list of public CAs that provide certificates that comply with specific requirements for unified communications (UC) certificates and have partnered with Microsoft to ensure they work with the Lync Server Certificate Wizard, see article Microsoft Knowledge Base 929395, "Unified Communications Certificate Partners for Exchange Server and for Communications Server," at [https://go.microsoft.com/fwlink/p/?linkId=202834](https://go.microsoft.com/fwlink/p/?linkid=202834).
 
@@ -48,25 +31,17 @@ The following tables show certificate requirements by server role for Front End 
 
 Note that server enhanced key usage (EKU) is automatically configured when you use the certificate wizard to request certificates.
 
-<div>
-
 
 > [!NOTE]
 > Each certificate Friendly Name must be unique in the computer store.
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > If you have configured sipinternal.contoso.com or sipexternal.contoso.com in your DNS, you will need to add them in the certificate’s Subject Alternative Name.
 
 
-
-</div>
 
 ### Certificates for Standard Edition Server
 
@@ -108,9 +83,11 @@ Note that server enhanced key usage (EKU) is automatically configured when you u
 <li><p>Internal web FQDN (which is the same as the FQDN of the server)</p></li>
 <li><p>Meet simple URLs</p></li>
 <li><p>Dial-in simple URL</p></li>
-<li><p>Admin simple URL</p></li>
+<li><p>Admin simple URL</p>
+<p></p></li>
 <li><p>Or, a wildcard entry for the simple URLs</p></li>
-</ul></td>
+</ul>
+<p></p></td>
 <td><p>SN=se01.contoso.com; SAN=se01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com</p>
 <p>Using a wildcard certificate:</p>
 <p>SN=se01.contoso.com; SAN=se01.contoso.com; SAN=*.contoso.com</p></td>
@@ -181,7 +158,8 @@ Note that server enhanced key usage (EKU) is automatically configured when you u
 <li><p>Dial-in simple URL</p></li>
 <li><p>Admin simple URL</p></li>
 <li><p>Or, a wildcard entry for the simple URLs</p></li>
-</ul></td>
+</ul>
+<p></p></td>
 <td><p>SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com</p>
 <p>Using a wildcard certificate:</p>
 <p>SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN=*.contoso.com</p></td>
@@ -246,7 +224,8 @@ Note that server enhanced key usage (EKU) is automatically configured when you u
 <li><p>Dial-in simple URL</p></li>
 <li><p>Admin simple URL</p></li>
 <li><p>Or, a wildcard entry for the simple URLs</p></li>
-</ul></td>
+</ul>
+<p></p></td>
 <td><p>SN=dir01.contoso.com; SAN=dir01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com</p>
 <p>SN=dir01.contoso.com; SAN=dir01.contoso.com SAN=*.contoso.com</p></td>
 </tr>
@@ -327,23 +306,8 @@ If you have a stand-alone Mediation Server pool, the Mediation Servers in it eac
 </table>
 
 
-<div>
-
 ## See Also
 
 
-[Wildcard certificate support in Lync Server 2013](lync-server-2013-wildcard-certificate-support.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Wildcard certificate support in Lync Server 2013](lync-server-2013-wildcard-certificate-support.md)
 

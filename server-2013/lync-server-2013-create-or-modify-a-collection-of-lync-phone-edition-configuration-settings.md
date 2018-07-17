@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a collection of Lync Phone Edition configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 When you install Lync Server, you get a global collection of Lync Phone Edition settings. These settings apply to all devices running Lync Phone Edition in your deployment. You can change these settings at any time. You can also set up a new collection of settings that apply to the devices in a specific site. Site settings take precedence over global settings.
 
 Configuration settings consist of the collection name, scope (global or site), SIP security setting, logging level, voice quality of service (QoS) level, phone-lock setting, and phone-lock details, that is, how long the a) unlock personal identification number (PIN) must be and b) phone stays idle before locking itself.
-
-<div>
 
 ## To create a collection of Lync Phone Edition configuration settings or edit settings for an existing collection
 
@@ -46,26 +31,17 @@ Configuration settings consist of the collection name, scope (global or site), S
     
       - To edit any of the settings in an existing collection, click the collection, click the **Edit** menu, click **Show details**, and then make your changes.
         
-        <div>
-        
 
         > [!TIP]
         > To go back to using the default settings for the global collection, click the global collection, click the <STRONG>Edit</STRONG> menu, click <STRONG>Delete</STRONG>, and then click <STRONG>OK</STRONG>. This will not delete the global collection; it just resets the settings to the defaults.
 
-        
-        </div>
+
 
 5.  Click **Commit**.
-
-</div>
-
-<div>
 
 ## Creating New Lync Phone Edition Configuration Settings by Using Windows PowerShell Cmdlets
 
 You can create Lync Phone Edition configuration settings can (at the site scope only) by using Windows PowerShell and the **New-CsUCPhoneConfiguration** cmdlet. You can run this cmdlet from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To create new Lync Phone Edition configuration settings that use the default values
 
@@ -75,19 +51,11 @@ You can create Lync Phone Edition configuration settings can (at the site scope 
     
     Because no parameters (other than the mandatory Identity parameter) were specified in the preceding command, the new collection of configuration settings will use the default values for all its properties.
 
-</div>
-
-<div>
-
 ## To change a single property value when creating new Lync Phone Edition configuration settings
 
   - To create settings that use different property values, simply include the appropriate parameter and parameter value. For example, to create a collection of UC phone configuration settings that, by default, require phone locking, use a command like this:
     
         New-CsUCPhoneConfiguration -Identity "site:Redmond" -EnforcePhoneLock $True
-
-</div>
-
-<div>
 
 ## To change multiple property values when creating new Lync Phone Edition configuration settings
 
@@ -95,31 +63,12 @@ You can create Lync Phone Edition configuration settings can (at the site scope 
     
         New-CsUCPhoneConfiguration -Identity "site:Redmond" -EnforcePhoneLock $True -MinPhonePinLength 8
 
-</div>
-
-For details, see [New-CsUCPhoneConfiguration](new-csucphoneconfiguration.md).
-
-</div>
-
-<div>
+For details, see [New-CsUCPhoneConfiguration](https://technet.microsoft.com/en-us/library/gg398445\(v=ocs.15\)).
 
 ## See Also
 
 
 [Delete an existing collection of Lync Phone Edition configuration settings in Lync Server 2013](lync-server-2013-delete-an-existing-collection-of-lync-phone-edition-configuration-settings.md)  
 [Configure security settings for Lync Phone Edition in Lync Server 2013](lync-server-2013-configure-security-settings-for-lync-phone-edition.md)  
-[Enforce phone locking in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Enforce phone locking in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)
 

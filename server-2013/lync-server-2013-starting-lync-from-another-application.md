@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Starting Lync from another application
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-20_
 
 You can use command-line parameters to quick-start Lync 2013. For example, if a user clicks a phone number in another application, the application can start an instance of Lync 2013 and initiate a call to that number.
 
@@ -73,7 +60,8 @@ The following table shows the available parameters.
 <tr class="odd">
 <td><p>conf:</p></td>
 <td><p>SIP URI of conference to join</p></td>
-<td><p>If URI is self, instantiates the focus and brings up roster-only view. Otherwise, brings up roster view but does not send INVITE.</p></td>
+<td><p>If URI is self, instantiates the focus and brings up roster-only view. Otherwise, brings up roster view but does not send INVITE.</p>
+<p></p></td>
 </tr>
 <tr class="even">
 <td><p>im:</p></td>
@@ -123,15 +111,4 @@ The following table provides examples of these command-line parameters.
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

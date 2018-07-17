@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Changing an Archiving policy in Lync Server 2013 to enable or disable Archiving of internal or external communications for your organization, sites, or users
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 In Lync Server 2013, you use policies to enable and disable archiving for internal communications and external communications for users homed on Lync Server 2013. This includes the following Archiving policies:
 
@@ -36,17 +23,11 @@ You initially set up Archiving policies when you deploy Archiving, but you can c
 
 For details about how policies are implemented, including the hierarchy of policies, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.
 
-<div>
-
 
 > [!NOTE]
 > If you enabled Microsoft Exchange integration for your deployment, Exchange policies control whether archiving is enabled for the users who are homed on Exchange 2013 and have their mailboxes put on In-Place Hold. For details, see <A href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">Setting up policies for Archiving in Lync Server 2013 when using Exchange Server integration</A> in the Deployment documentation.<BR>You should specify all appropriate options in the Archiving configurations before enabling Archiving. For details, see <A href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">Managing Archiving configuration options in Lync Server 2013 for your organization, sites, and pools</A> in the Operations documentation.
 
 
-
-</div>
-
-<div>
 
 ## To change an archiving policy
 
@@ -72,24 +53,15 @@ For details about how policies are implemented, including the hierarchy of polic
 
 6.  Click **Commit**.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The settings of a user policy only apply to the specific users and user groups to which you apply the policy. For details, see <A href="lync-server-2013-applying-an-archiving-policy-to-users.md">Applying an Archiving policy to users in Lync Server 2013</A>
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## Enabling and Disabling Archiving by Using Windows PowerShell Cmdlets
 
 Archiving can be enabled and disabled (for both internal and external communication sessions) by using the **Set-CsArchivingPolicy** cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To enable the archiving of internal communication sessions
 
@@ -97,19 +69,11 @@ Archiving can be enabled and disabled (for both internal and external communicat
     
         Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $True
 
-</div>
-
-<div>
-
 ## To enable the archiving of external communication sessions
 
   - To enable archiving of external communication sessions, set the value of the **ArchiveExternal** property to True ($True). For example:
     
         Set-CsArchivingPolicy -Identity "global" -ArchiveExternal $True
-
-</div>
-
-<div>
 
 ## To enable the archiving of both internal and external communication sessions
 
@@ -117,39 +81,16 @@ Archiving can be enabled and disabled (for both internal and external communicat
     
         Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $True -ArchiveExternal $True
 
-</div>
-
-<div>
-
 ## To disable archiving
 
   - To disable archiving altogether, set both the **ArchiveInternal** and **ArchiveExternal** properties to False ($False). For example:
     
         Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $False -ArchiveExternal $False
 
-</div>
-
-For more information, see the help topic for the [Set-CsArchivingPolicy](set-csarchivingpolicy.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Set-CsArchivingPolicy](https://technet.microsoft.com/en-us/library/gg398294\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
-[Managing the Archiving of internal and external communications in Lync Server 2013](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing the Archiving of internal and external communications in Lync Server 2013](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md)
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing the dial plan in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsDialPlan cmdlet enables you to see the results of applying a dial plan to a given telephone number. Dial plans provide information, such as how normalization rules are applied, required to enable Enterprise Voice users to make telephone calls. Given a dialed number and a dial plan, this cmdlet will verify which normalization rule within the dial plan will be applied and what the translated number will be.
 
 You can use this cmdlet for troubleshooting issues with number translations, or for verifying how to apply rules against certain numbers.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -73,11 +54,7 @@ If you have a normalization rule that automatically adds the country code (in th
 
     Get-CsDialPlan -Identity "RedmondDialPlan" | Test-CsDialPlan -DialedNumber "5551219" | Format-List
 
-For more information, see the Help documentation for the [Test-CsDialPlan](test-csdialplan.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsDialPlan](https://technet.microsoft.com/en-us/library/gg399024\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -107,10 +84,6 @@ TranslatedNumber :
 
 MatchingRule :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsDialPlan might fail:
@@ -120,16 +93,4 @@ Here are some common reasons why Test-CsDialPlan might fail:
     12065551219
     
     However, if you enter an incorrect phone number (for example, leaving off the final digit), then Test-CsDialPlan will fail. That’s not because the dial plan is faulty but because you have entered a phone number than can’t be interpreted.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

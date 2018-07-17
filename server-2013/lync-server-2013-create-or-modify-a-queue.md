@@ -8,40 +8,22 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a queue in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Use one of the following procedures to create or modify a queue.
-
-<div>
 
 ## To use Lync Server Control Panel to create or modify a queue
 
 1.  Log on as a member of the RTCUniversalServerAdmins group, or as a member of one of the predefined administrative roles that support Response Group.
     
-    <div>
-    
 
     > [!NOTE]
     > If you are one of the delegated Response Group Managers for a managed workflow, you can create or modify response group queues and assign them to the workflows that you manage.
 
-    
-    </div>
+
 
 2.  Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel. For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).
 
@@ -65,14 +47,11 @@ Use one of the following procedures to create or modify a queue.
     
       - To change the order in which agents are searched, in the list of agent groups, click a group, and then click the up arrow or down arrow.
         
-        <div>
-        
 
         > [!NOTE]
         > When the server searches for an available agent for the queue, it uses group order. That is, the first group in the list is searched first, followed by the second group in the list, and so on.
 
-        
-        </div>
+
 
 8.  To specify a maximum period of time for a caller to wait on hold before an agent answers the call, select the **Enable queue time-out** check box, and then do the following:
     
@@ -114,22 +93,15 @@ Use one of the following procedures to create or modify a queue.
 
 10. Click **Commit**.
 
-</div>
-
-<div>
-
 ## To use Windows PowerShell to create or modify a queue
 
 1.  Log on as a member of the RTCUniversalServerAdmins group, or as a member of one of the predefined administrative roles that support Response Group.
-    
-    <div>
     
 
     > [!NOTE]
     > If you are one of the delegated Response Group Managers for a managed workflow, you will be able to create agent groups and queues, and assign agent groups to queues.
 
-    
-    </div>
+
 
 2.  Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.
 
@@ -141,27 +113,20 @@ Use one of the following procedures to create or modify a queue.
     
         "All agents are currently busy. Please call back later."
     
-    <div>
-    
 
     > [!NOTE]
-    > To use an audio file for the prompt, use the <STRONG>Import-CsRgsAudioFile</STRONG> cmdlet. For details, see <A href="import-csrgsaudiofile.md">Import-CsRgsAudioFile</A>.
+    > To use an audio file for the prompt, use the <STRONG>Import-CsRgsAudioFile</STRONG> cmdlet. For details, see <A href="https://technet.microsoft.com/en-us/library/gg412830(v=ocs.15)">Import-CsRgsAudioFile</A>.
 
-    
-    </div>
+
 
 4.  Define the action to be taken when the queue timeout threshold is met, and save it in a variable. At the command line, run:
     
         $actionTO = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken>
     
-    <div>
-    
 
     > [!NOTE]
-    > For details about possible actions and their syntax, see <A href="new-csrgscallaction.md">New-CsRgsCallAction</A>.
+    > For details about possible actions and their syntax, see <A href="https://technet.microsoft.com/en-us/library/gg398136(v=ocs.15)">New-CsRgsCallAction</A>.
 
-    
-    </div>
     
     For example:
     
@@ -175,27 +140,20 @@ Use one of the following procedures to create or modify a queue.
     
         $promptOV = New-CsRgsPrompt -TextToSpeechPrompt "Too many calls are waiting. Please call back later."
     
-    <div>
-    
 
     > [!NOTE]
-    > To use an audio file for the prompt, use the <STRONG>Import-CsRgsAudioFile</STRONG> cmdlet. For details, see <A href="import-csrgsaudiofile.md">Import-CsRgsAudioFile</A>.
+    > To use an audio file for the prompt, use the <STRONG>Import-CsRgsAudioFile</STRONG> cmdlet. For details, see <A href="https://technet.microsoft.com/en-us/library/gg412830(v=ocs.15)">Import-CsRgsAudioFile</A>.
 
-    
-    </div>
+
 
 6.  Define the action to be taken when the queue overflow threshold is met, and save it in a variable. At the command line, run:
     
         $actionOV = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken>
     
-    <div>
-    
 
     > [!NOTE]
-    > For details about possible actions and their syntax, see <A href="new-csrgscallaction.md">New-CsRgsCallAction</A>.
+    > For details about possible actions and their syntax, see <A href="https://technet.microsoft.com/en-us/library/gg398136(v=ocs.15)">New-CsRgsCallAction</A>.
 
-    
-    </div>
     
     For example:
     
@@ -209,14 +167,11 @@ Use one of the following procedures to create or modify a queue.
     
         $agid = (Get-CsRgsAgentGroup -Name "Help Desk").Identity;
     
-    <div>
-    
 
     > [!NOTE]
-    > For details about creating the agent group, see <A href="new-csrgsagentgroup.md">New-CsRgsAgentGroup</A>
+    > For details about creating the agent group, see <A href="https://technet.microsoft.com/en-us/library/gg413065(v=ocs.15)">New-CsRgsAgentGroup</A>
 
-    
-    </div>
+
 
 9.  Create the queue. At the command line, run:
     
@@ -230,31 +185,14 @@ Use one of the following procedures to create or modify a queue.
     
         Get-CsRgsQueue -Name "Help Desk"
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[New-CsRgsQueue](new-csrgsqueue.md)  
-[Set-CsRgsQueue](set-csrgsqueue.md)  
-[New-CsRgsPrompt](new-csrgsprompt.md)  
-[New-CsRgsCallAction](new-csrgscallaction.md)  
-[Get-CsRgsQueue](get-csrgsqueue.md)  
-[Import-CsRgsAudioFile](import-csrgsaudiofile.md)  
-[Remove-CsRgsQueue](remove-csrgsqueue.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsRgsQueue](https://technet.microsoft.com/en-us/library/gg398989\(v=ocs.15\))  
+[Set-CsRgsQueue](https://technet.microsoft.com/en-us/library/gg412947\(v=ocs.15\))  
+[New-CsRgsPrompt](https://technet.microsoft.com/en-us/library/gg398486\(v=ocs.15\))  
+[New-CsRgsCallAction](https://technet.microsoft.com/en-us/library/gg398136\(v=ocs.15\))  
+[Get-CsRgsQueue](https://technet.microsoft.com/en-us/library/gg412759\(v=ocs.15\))  
+[Import-CsRgsAudioFile](https://technet.microsoft.com/en-us/library/gg412830\(v=ocs.15\))  
+[Remove-CsRgsQueue](https://technet.microsoft.com/en-us/library/gg398576\(v=ocs.15\))
 

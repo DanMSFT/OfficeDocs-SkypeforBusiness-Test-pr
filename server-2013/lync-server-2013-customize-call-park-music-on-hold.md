@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Customize Call Park music on hold in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-10_
 
 You can specify your own music file to use for music on hold, instead of the default music file that ships with Lync Server 2013. To customize music on hold, use the **Set-CsCallParkServiceMusicOnHoldFile** cmdlet.
-
-<div>
 
 
 > [!NOTE]
 > If you customize music on hold and want the same music for multiple sites, you must configure the music file for each site that runs the Call Park application.
 
 
-
-</div>
-
-<div>
 
 ## To customize the music file
 
@@ -50,40 +31,19 @@ You can specify your own music file to use for music on hold, instead of the def
     
         Set-CsCallParkServiceMusicOnHoldFile -Service <ServiceID where the Call Park application resides> -Content <Byte[]>
     
-    <div>
-    
 
     > [!TIP]
-    > Use the <STRONG>Get-CsService</STRONG> cmdlet to identify the service. For details, see <A href="get-csservice.md">Get-CsService</A>.
+    > Use the <STRONG>Get-CsService</STRONG> cmdlet to identify the service. For details, see <A href="https://technet.microsoft.com/en-us/library/gg413038(v=ocs.15)">Get-CsService</A>.
 
     
-    </div>
-    
-    The following example shows how to obtain the contents of a file, soothingmusic.wma, as a byte array and assign it to a variable. Then the audio file is assigned as the music-on-hold file for Call Park. For details, see [Set-CsCallParkServiceMusicOnHoldFile](set-cscallparkservicemusiconholdfile.md).
+    The following example shows how to obtain the contents of a file, soothingmusic.wma, as a byte array and assign it to a variable. Then the audio file is assigned as the music-on-hold file for Call Park. For details, see [Set-CsCallParkServiceMusicOnHoldFile](https://technet.microsoft.com/en-us/library/gg412836\(v=ocs.15\)).
     
         $a = Get-Content -ReadCount 0 -Encoding byte "C:\MoHFiles\soothingmusic.wma"
         Set-CsCallParkServiceMusicOnHoldFile -Service Redmond1-applicationserver-1 -Content $a
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Set-CsCallParkServiceMusicOnHoldFile](set-cscallparkservicemusiconholdfile.md)  
-[Get-CsService](get-csservice.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Set-CsCallParkServiceMusicOnHoldFile](https://technet.microsoft.com/en-us/library/gg412836\(v=ocs.15\))  
+[Get-CsService](https://technet.microsoft.com/en-us/library/gg413038\(v=ocs.15\))
 

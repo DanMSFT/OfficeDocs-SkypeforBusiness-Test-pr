@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # VideoMetricsThreshold table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 The VideoMetricsThreshold table contains optimal and acceptable values for the Quality of Experience metrics used with video calls.
 
@@ -54,110 +41,99 @@ The VideoMetricsThreshold table contains optimal and acceptable values for the Q
 <tr class="even">
 <td><p><strong>VideoPostFECPLROptimal</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 0.05.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoPostFECPLRAcceptable</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 0.10.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoLocalFrameLostPercentageAverageOptimal</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 5.0.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoLocalFrameLostPercentageAverageAcceptable</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 10.0.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RecvFrameRateAverageOptimal</strong></p></td>
 <td><p>decimal(9,4)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 12.0000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RecvFramerateAverageAcceptable</strong></p></td>
 <td><p>decimal(9,4)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 7.0000.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LowFrameRateCallPercentOptimal</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 5.0.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LowFrameRateCallPercentAcceptable</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 10.0/</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LowResolutionCallPercentOptimal</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 5.0.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LowResolutionCallPercentAcceptable</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 10.0.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoPacketLossRateOptimal</strong></p></td>
 <td><p>foat</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 0.05.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoPacketLossRateAcceptable</strong></p></td>
 <td><p>float</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 0.10.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoFrameRateAvgOptimal</strong></p></td>
 <td><p>float</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 12.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoFrameRateAvgAcceptable</strong></p></td>
 <td><p>float</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 7.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DynamicCapabilityPercentOptimal</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 5.00.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DynamicCapabilityPercentAcceptable</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The default value is 10.00.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

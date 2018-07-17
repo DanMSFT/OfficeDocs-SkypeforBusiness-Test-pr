@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS requirements for Front End pool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-07_
 
 To successfully complete this procedure, you should be logged on to the server or domain minimally as a member of the Domain Admins group or a member of the DnsAdmins group.
 
 You need to configure the required Domain Name System (DNS) records prior to publishing your topology in Topology Builder. Additionally, some of the fully qualified domain names (FQDNs) used in the configuration of a Lync Server 2013 deployment are logical and not physical server FQDNs, so additional DNS configuration is required prior to publishing.
-
-<div>
 
 
 > [!WARNING]
@@ -38,17 +23,11 @@ You need to configure the required Domain Name System (DNS) records prior to pub
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > The name you specify must be identical to the computer name configured on the server. By default the computer name of a computer that is not joined to a domain is a short name, not an FQDN. Topology Builder uses FQDNs, not short names. <STRONG>Use only standard characters</STRONG> (including A–Z, a–z, 0–9, and hyphens) when assigning FQDNs of your servers running Lync Server, Edge Servers, and pools. Do not use Unicode characters or underscores. Nonstandard characters in an FQDN are often not supported by external DNS and public certification authorities (CAs) (when the FQDN must be assigned to the SN in the certificate).
 
 
-
-</div>
 
 Prior to operating the topology after it has been deployed, ensure that the following Active Directory and DNS records are created (as your needs for specific features dictate):
 
@@ -63,8 +42,6 @@ Prior to operating the topology after it has been deployed, ensure that the foll
   - The server running SQL Server must be joined to the domain, and reachable by the computer that Topology Builder is publishing from.
 
 The table follows the reference architectures presented in the Planning section. For details, see [Scenarios for external user access in Lync Server 2013](lync-server-2013-scenarios-for-external-user-access.md) in the Planning documentation.
-
-<div id="sectionSection0" class="section">
 
 ### DNS Records Required for the Front End pool
 
@@ -161,19 +138,11 @@ The table follows the reference architectures presented in the Planning section.
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > VIP = Virtual IP address for hardware load balancer
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## DNS SRV Records for the Front End pool
 
@@ -224,17 +193,4 @@ The table follows the reference architectures presented in the Planning section.
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

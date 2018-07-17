@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # What's new for clients in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-19_
 
 Microsoft Lync 2013 has a redesigned user interface and important new features. For administrators, the client is now included with the Office setup program, providing a more streamlined approach to deploying Office and customizing clients in your organization.
-
-<div>
 
 
 > [!NOTE]
 > For an illustrated view of Lync 2013 user interface updates, see “What’s New in Lync 2013” at <A href="http://go.microsoft.com/fwlink/?linkid=273885">http://go.microsoft.com/fwlink/?LinkId=273885</A>.
 
 
-
-</div>
-
-<div>
 
 ## Integration with Office Setup
 
@@ -52,31 +33,19 @@ In previous versions of Lync and Office Communicator, you could use Windows Inst
 
   - Use Setup Command-Line Options
 
-<div>
-
 
 > [!NOTE]
 > The Lync 2013 setup program does not uninstall previous versions of Lync or Office Communicator. The Lync 2013 client installs side-by-side with other Lync or Office Communicator clients
 
 
 
-</div>
-
 For details, see [Deploying Lync clients in Lync Server 2013](lync-server-2013-deploying-lync-clients.md).
-
-</div>
-
-<div>
 
 ## Group Policy Deployment
 
 Because Lync 2013 is now included in Office setup, the method for deploying Lync Group Policy settings has changed. In previous versions of Lync and Office Communicator, you could use the Communicator.adm to define Group Policy settings, whereas in Lync 2013 you can now use the Lync ADMX and ADML administrative templates that are provided along with the Office Group Policy Administrative Templates.
 
 For details, see [Group Policy settings for Lync 2013](lync-server-2013-group-policy-settings-for-lync-2013.md).
-
-</div>
-
-<div>
 
 ## Outlook Scheduling Add-in Updates
 
@@ -85,10 +54,6 @@ The Online Meeting Add-in for Lync 2013 includes meeting invite customization an
   - Administrators can customize the organization’s meeting invitations by adding a custom logo, a support URL, a legal disclaimer URL, or custom footer text. For details, see [Customizing the Online Meeting Add-in in Lync Server 2013](lync-server-2013-customizing-the-online-meeting-add-in.md).
 
   - New attendee mute controls allow meeting organizers to schedule conferences that have attendee audio and video muted by default.
-
-</div>
-
-<div>
 
 ## Virtual Desktop Infrastructure Plug-in
 
@@ -110,10 +75,6 @@ The Lync 2013 client now supports audio and video in a Virtual Desktop Infrastru
 
 For information about deploying the VDI plug-in, see [Deploying the Lync VDI plug-in in Lync Server 2013](lync-server-2013-deploying-the-lync-vdi-plug-in.md).
 
-</div>
-
-<div>
-
 ## Video Enhancements
 
 Several new features significantly enhance the video experience for conference participants.
@@ -130,10 +91,6 @@ Several new features significantly enhance the video experience for conference p
 
   - Presenters can use the Video Spotlight feature to select one person’s video feed so that every participant in the meeting sees that participant only.
 
-</div>
-
-<div>
-
 ## Chat Room Integration
 
 Lync 2013 now integrates the features previously provided by Lync 2010 Group Chat. A separate group chat client is no longer required.
@@ -144,10 +101,6 @@ Lync 2013 now integrates the features previously provided by Lync 2010 Group Cha
 
   - With the new **Persistent Chat** options page, users can set notification alerts and sounds that apply when people post messages to their chat rooms.
 
-</div>
-
-<div>
-
 ## Lync Web App Updates
 
 Lync Web App is the web-based conferencing client for Lync Server 2013 meetings. In this release, the addition of computer audio and video to Lync Web App provides a complete in-meeting experience for anyone who doesn’t have a Lync client installed locally. Meeting participants have access to all collaboration and sharing features and presenter meeting controls.
@@ -156,21 +109,11 @@ When a user tries to join a meeting but doesn’t have a locally installed clien
 
 Because of the enhancements to Lync Web App, an updated version of Attendee isn’t available for Lync Server 2013. Lync Web App is the client of choice for participants outside your organization. No local client installation is required, although audio, video, and sharing features require a plug-in to be installed at first use.
 
-</div>
-
-<div>
-
 ## Lync 2013 for Mobile Clients Updates
 
 In addition to enhanced presence, contacts, and IM capabilities, Lync 2013 mobile clients now provide voice and video calling over the Internet and cellular data connections. With a single tap of the meeting link in a calendar item, mobile users can join Lync voice and video meetings. For more information about Lync 2013 mobile clients, see [Planning for mobile clients in Lync Server 2013](lync-server-2013-planning-for-mobile-clients.md).
 
-</div>
-
-<div>
-
 ## Lync 2013 User Interface Updates
-
-<div>
 
 ## Accessibility Updates
 
@@ -184,17 +127,9 @@ Lync 2013 incorporates several new accessibility features.
 
   - Extensive screen reader support in Lync 2013 ensures that all notifications, incoming requests, and instant messages are read aloud when a screen reader is enabled.
 
-</div>
-
-<div>
-
 ## Presence While Sharing
 
 When Lync detects that a user is sharing, Lync automatically assigns the user a Presenting presence status. This status blocks all incoming communications unless the sender is assigned the Workgroup privacy relationship. If the user is using the sharing feature entirely on a secondary monitor, Lync does not assign a Presenting presence status.
-
-</div>
-
-<div>
 
 ## Conversation Window Updates
 
@@ -210,10 +145,6 @@ The redesigned Conversation window provides quicker access to important features
 
   - In a meeting where video or content is being shared, users can pop out the meeting video or shared content, and then resize the window.
 
-</div>
-
-<div>
-
 ## Lync Main Window Updates
 
 The new streamlined look retains familiar features such as the **What’s happening today?** note field, the status selector, and the **Set Your Location** selector.
@@ -223,10 +154,6 @@ The new streamlined look retains familiar features such as the **What’s happen
   - Users can click the view icons to switch to the **Contacts** view, **Chat Rooms** view, **Conversations** view, or **Phone** view.
 
   - If users have been migrated to Exchange 2013, they can upload a high resolution picture.
-
-</div>
-
-<div>
 
 ## Contacts View and Contact Card Updates
 
@@ -241,10 +168,6 @@ Lync 2013 gives users different ways to view contacts and groups in their **Cont
   - A new **Favorites** group lets users build a list of people users contact most often for quicker access.
 
   - Users can use the new **Contacts List** options page to choose how users want to sort and display contacts. Users can select an expanded, two-line view that shows contacts’ pictures, or a condensed one-line view. Users can also sort contacts alphabetically or by availability.
-
-</div>
-
-<div>
 
 ## Conferencing Updates
 
@@ -270,27 +193,8 @@ Lync 2013 offers several enhancements to conferencing features.
 
   - Users can switch between content types using **Share content and lead meeting activities** at the bottom of the meeting room. Users can also use the **Manage Presentable Content** menu to choose which content they want to share.
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
-[Planning for clients in Lync Server 2013](lync-server-2013-planning-for-clients.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for clients in Lync Server 2013](lync-server-2013-planning-for-clients.md)
 

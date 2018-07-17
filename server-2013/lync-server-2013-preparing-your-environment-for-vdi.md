@@ -8,39 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Preparing your Lync Server 2013 environment for VDI
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 To prepare the environment for the Lync VDI plug-in, the administrator must perform the following steps.
 
-1.  In Lync Server 2013, ensure that EnableMediaRedirection is set to TRUE for all VDI users. For details, see the Help topics for the [New-CsClientPolicy](new-csclientpolicy.md) cmdlet and the [Set-CsClientPolicy](set-csclientpolicy.md) cmdlet.
+1.  In Lync Server 2013, ensure that EnableMediaRedirection is set to TRUE for all VDI users. For details, see the Help topics for the [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/gg425949\(v=ocs.15\)) cmdlet and the [Set-CsClientPolicy](https://technet.microsoft.com/en-us/library/gg398300\(v=ocs.15\)) cmdlet.
 
 2.  On the data center computer, install the Lync 2013 client on all virtual machines.
 
 3.  On the local computers, install the Lync VDI plug-in.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

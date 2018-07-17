@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using Config.xml to perform installation tasks in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 Although the Office Customization Tool (OCT) is the primary tool for customization installation, administrators can use the Config.xml file to specify additional installation instructions that are not available in the OCT. The following customizations can only be made by using the Config.xml file:
 
@@ -76,7 +63,8 @@ The Config.xml elements most commonly used for Lync 2013 installation are listed
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Display</p></td>
+<td><p>Display</p>
+<p></p></td>
 <td><p>The level of UI that Setup displays to the user. Typical attributes include the following:</p>
 <ul>
 <li><p>CompletionNotice=&quot;Yes&quot; | &quot;No&quot;(default)</p></li>
@@ -122,8 +110,6 @@ The following example shows a Config.xml file for a typical silent installation 
 
 Detailed information about using the Config.xml file to perform Office installation and maintenance tasks is available at <http://go.microsoft.com/fwlink/p/?linkid=267514>.
 
-<div>
-
 ## To customize the Config.xml file
 
 1.  Open the Config.xml file by using a text editor tool, such as Notepad.
@@ -135,16 +121,4 @@ Detailed information about using the Config.xml file to perform Office installat
         < DistributionPoint Location="\\server\share\Lync15" />
 
 4.  Save the Config.xml file.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

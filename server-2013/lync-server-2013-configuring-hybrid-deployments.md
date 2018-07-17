@@ -8,27 +8,12 @@ ms.date: 06/14/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Lync Server 2013 hybrid deployments
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-05-26_
 
 This section describes the steps necessary for configuring hybrid Lync Server 2013 deployments.
-
-<div>
 
 ## In This Section
 
@@ -36,23 +21,7 @@ This section describes the steps necessary for configuring hybrid Lync Server 20
 
   - If you have users enabled for Lync in Lync Online, but that have not been enabled in an on-premises deployment, see [Moving users from Lync Online to Lync on-premises in Lync Server 2013](lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md).
 
-</div>
-
-<div>
-
 ## Related Sections
 
 [Planning for Lync Server 2013 hybrid deployments](lync-server-2013-planning-for-hybrid-deployments.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

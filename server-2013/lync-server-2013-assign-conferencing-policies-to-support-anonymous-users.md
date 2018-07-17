@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Assign conferencing policies to support anonymous users in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 By default, all users are prevented from inviting anonymous users to participate in a meeting. You control who can invite anonymous users by configuring a conferencing policy to support anonymous users, and applying that conferencing policy to specific users. For details about how to configure a conferencing policies to support anonymous users, see [Create or modify a conferencing policy in Lync Server 2013](lync-server-2013-create-or-modify-a-conferencing-policy.md) and [Managing federation and external access to Lync Server 2013](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md).
 
 Use the procedure in this section to apply a conferencing policy that you have already created to one or more users or user groups.
-
-<div>
 
 
 > [!NOTE]
 > In addition to configuring and applying a policy to enable users to invite anonymous users, you must also enable support for anonymous users for your organization. For details, see <A href="lync-server-2013-configure-policies-to-control-public-user-access.md">Configure policies to control public user access in Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## To configure a user policy for anonymous participation in meetings
 
@@ -64,26 +45,11 @@ Use the procedure in this section to apply a conferencing policy that you have a
 
 8.  In **Edit Lync Server User** under **Conferencing policy**, select the user policy with the anonymous user access configuration that you want to apply to this user.
     
-    <div>
-    
 
     > [!NOTE]
     > The <STRONG>&lt;Automatic&gt;</STRONG> settings apply the default server installation settings and are applied automatically by the server.
 
-    
-    </div>
+
 
 To enable users to invite anonymous users to conferences, you must also enable support for anonymous users in your organization. For details, see [Configure policies to control public user access in Lync Server 2013](lync-server-2013-configure-policies-to-control-public-user-access.md) in the Deployment documentation or the Operations documentation.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

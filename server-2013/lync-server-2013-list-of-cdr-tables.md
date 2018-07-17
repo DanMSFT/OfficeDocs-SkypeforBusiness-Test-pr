@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # List of CDR tables in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-18_
 
 The call detail recording (CDR) database schema consists of the following tables.
-
-<div>
 
 ## Static Tables
 
@@ -76,10 +61,6 @@ The call detail recording (CDR) database schema consists of the following tables
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Supporting Tables
 
@@ -172,10 +153,6 @@ The call detail recording (CDR) database schema consists of the following tables
 </table>
 
 
-</div>
-
-<div>
-
 ## Tables Specific to Conference CDR Records
 
 
@@ -211,10 +188,6 @@ The call detail recording (CDR) database schema consists of the following tables
 </table>
 
 
-</div>
-
-<div>
-
 ## Tables for Messages in IM Conferences
 
 
@@ -241,10 +214,6 @@ The call detail recording (CDR) database schema consists of the following tables
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Tables for Peer-to-Peer Sessions
 
@@ -277,10 +246,6 @@ The call detail recording (CDR) database schema consists of the following tables
 </table>
 
 
-</div>
-
-<div>
-
 ## Table for VoIP Call Details
 
 
@@ -299,21 +264,16 @@ The call detail recording (CDR) database schema consists of the following tables
 <tr class="odd">
 <td><p><a href="lync-server-2013-voipdetails-table.md">VoipDetails table in Lync Server 2013</a></p></td>
 <td><p>For each two-party VoIP/PSTN call, stores information about the call, such as the phone ID of VoIP phone, gateway used, and which party disconnected. Refers to the <a href="lync-server-2013-sessiondetails-table.md">SessionDetails table in Lync Server 2013</a> for call start/end times and response code.</p>
-<div>
 
 > [!NOTE]
 > If one party on a call is a VoIP user or if a Mediation Server was involved in the call, a record will be created in this table. Information about VoIP/VoIP calls not involving a public switched telephone network (PSTN) phone is captured in the <A href="lync-server-2013-sessiondetails-table.md">SessionDetails table in Lync Server 2013</A>.
 
 
-</div></td>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Table for E9-1-1 Call Auditing
 
@@ -333,21 +293,16 @@ The call detail recording (CDR) database schema consists of the following tables
 <tr class="odd">
 <td><p><a href="lync-server-2013-locations-table.md">Locations table in Lync Server 2013</a></p></td>
 <td><p>For each emergency call, such as an Enhanced 9-1-1 (E9-1-1) call, stores location information about the call. Refers to the <a href="lync-server-2013-sessiondetails-table.md">SessionDetails table in Lync Server 2013</a> for call start/end times and response code.</p>
-<div>
 
 > [!NOTE]
 > This table only contains the location blob for the E9-1-1 call. Refers to the SessionDetails table for other detailed information about the call.
 
 
-</div></td>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Tables for Troubleshooting
 
@@ -393,10 +348,6 @@ The call detail recording (CDR) database schema consists of the following tables
 
 
 The tables in the following list are used internally by Lync Server. Their details are not described in this document.
-
-</div>
-
-<div>
 
 ## Tables for Internal Use by Lync Server
 
@@ -491,17 +442,4 @@ The tables in the following list are used internally by Lync Server. Their detai
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

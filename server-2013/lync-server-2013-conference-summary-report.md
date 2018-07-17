@@ -8,23 +8,10 @@ ms.date: 09/03/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Conference Summary Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-09-03_
 
 The Conference Summary Report provides an overall view of your online conferencing sessions. A conference typically involves more than 2 users and requires the use of Microsoft Lync Server 2013 conferencing services. By comparison, a peer-to-peer session typically involves just 2 users and does not require the use of Lync Server's conferencing services. Peer-to-peer activities are reported on the [Peer-to-Peer Activity Summary Report in Lync Server 2013](lync-server-2013-peer-to-peer-activity-summary-report.md).
 
@@ -83,8 +70,6 @@ A "unique” organizer is anyone who schedules at least one conference. For exam
 
 The Conference Summary Report also indicates how many conferences included audio and/or video.
 
-<div>
-
 ## Accessing the Conference Summary Report
 
 The Conference Summary Report is accessed from the Monitoring Reports home page. You can drill down to the Conference Activity report by clicking either of the following metrics:
@@ -92,10 +77,6 @@ The Conference Summary Report is accessed from the Monitoring Reports home page.
   - Total conferences
 
   - Total participants
-
-</div>
-
-<div>
 
 ## Making the Best Use of the Conference Summary Report
 
@@ -152,10 +133,6 @@ Total values for most of the metrics used on the Conference Summary Report can b
 
 To get a better idea of the total number of unique users who organized conferences, change your time interval; for example, look at the data by month instead of by day.
 
-</div>
-
-<div>
-
 ## Filters
 
 Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways. For example, the Conference Summary Report enables you to choose how data should be grouped. In this case, conferences grouped by hour, day, week, or month.
@@ -210,10 +187,6 @@ The following table lists the filters that you can use with the Conference Summa
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics
 
@@ -291,17 +264,4 @@ The following table the information provided by the Conferences Summary Report.
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

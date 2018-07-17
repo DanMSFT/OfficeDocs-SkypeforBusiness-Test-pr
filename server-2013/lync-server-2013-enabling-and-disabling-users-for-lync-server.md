@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enabling and disabling users for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 You can enable, temporarily disable, or remove Active Directory users from Lync Server 2013.
-
-<div>
 
 ## In This Section
 
@@ -38,27 +23,10 @@ You can enable, temporarily disable, or remove Active Directory users from Lync 
 
   - [Remove a user account from Lync Server 2013](lync-server-2013-remove-a-user-account-from-lync-server.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Managing users in Lync Server 2013](lync-server-2013-managing-users-in-lync-server.md)  
-[Enable-CsUser](enable-csuser.md)  
-[Disable-CsUser](disable-csuser.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Enable-CsUser](https://technet.microsoft.com/en-us/library/gg398711\(v=ocs.15\))  
+[Disable-CsUser](https://technet.microsoft.com/en-us/library/gg398747\(v=ocs.15\))
 

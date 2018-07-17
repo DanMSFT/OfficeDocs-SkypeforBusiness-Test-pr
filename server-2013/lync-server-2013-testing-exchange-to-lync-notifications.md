@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing Exchange to Lync notifications in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-01_
 
 
 <table>
@@ -51,25 +38,15 @@ _**Topic Last Modified:** 2014-11-01_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsExStorageNotification** cmdlet is used to verify that the Microsoft Exchange Server 2013 notification service can notify Lync Server 2013 any time updates are made to a user's Contact List. This cmdlet is valid only if you are using the unified contact store.
-
-</div>
-
-<div>
 
 ## Running the test
 
 The command shown in Example 1 tests to see whether the Lync Server Storage Service can connect to the Microsoft Exchange Server mailbox notification service for the user sip:kenmyer@litwareinc.com. In this example, NetNamedPipe is used as the WCF binding.
 
     Test-CsExStorageNotification -SipUri "sip:kenmyer@litwareinc.com" -Binding "NetNamedPipe"
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -111,10 +88,6 @@ has failed to respond 10.188.116.96:5061
 
 Diagnosis :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsExStorageNotification** might fail:
@@ -123,25 +96,8 @@ Here are some common reasons why **Test-CsExStorageNotification** might fail:
 
   - This command will fail if the Microsoft Exchange Server is misconfigured or not yet deployed.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsExStorageConnectivity](test-csexstorageconnectivity.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsExStorageConnectivity](https://technet.microsoft.com/en-us/library/jj204740\(v=ocs.15\))
 

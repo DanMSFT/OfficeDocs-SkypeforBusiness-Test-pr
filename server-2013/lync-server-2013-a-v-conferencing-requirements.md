@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # A/V conferencing requirements in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-30_
 
 Lync Server 2013 infrastructure requirements for conferencing are the same as for deployment of Lync Server 2013. For details, see [Determining your infrastructure requirements for Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) in the Planning documentation.
 
@@ -32,24 +19,9 @@ It is important that you have the necessary Media bandwidth to handle media traf
 
 In order to use the conferencing features, Lync Server 2013 requires that certain ports are open. For details about Port Requirements, see [Ports and protocols for internal servers in Lync Server 2013](lync-server-2013-ports-and-protocols-for-internal-servers.md). For details about configuring ports, see [Configuring port ranges in Lync Server 2013 for your Conferencing, Application, and Mediation servers](lync-server-2013-configuring-port-ranges-for-your-conferencing-application-and-mediation-servers.md).
 
-<div>
-
 ## See Also
 
 
 [Overview of A/V conferencing in Lync Server 2013](lync-server-2013-a-v-conferencing-overview.md)  
-[Deployment checklist for A/V conferencing in Lync Server 2013](lync-server-2013-deployment-checklist-for-a-v-conferencing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deployment checklist for A/V conferencing in Lync Server 2013](lync-server-2013-deployment-checklist-for-a-v-conferencing.md)
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment process for integrating hosted Exchange UM with Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-25_
 
 Effective planning for integrating Lync Server 2013 with hosted Exchange Unified Messaging (UM) requires that you take into account the following:
 
@@ -32,15 +19,9 @@ Effective planning for integrating Lync Server 2013 with hosted Exchange Unified
 
   - Steps required during the integration process
 
-<div>
-
 ## Deployment Prerequisites for Integrating with Hosted Exchange UM
 
 Before you can begin the integration process, you must already have deployed Lync Server 2013 (at a minimum, a Front End pool or a Standard Edition server), an Edge Server, and Lync 2013 or Lync 2010 clients.
-
-</div>
-
-<div>
 
 ## Integration Process
 
@@ -97,28 +78,14 @@ The following table provides an overview of the hosted Exchange UM integration p
 <li><p>Create Subscriber Access contact objects for hosted Exchange UM.</p></li>
 </ol></td>
 <td><p>RTCUniversalUserAdmins</p>
-<div>
 
 > [!NOTE]
 > To create, modify or remove contact objects, the user who runs the New-CsExUmContact, Set-CsExUmContact or Remove-CsExUmContact cmdlet must have the correct permission to the Active Directory organizational unit where the new contact objects are stored. This permission can be granted by running the Grant-CsOUPermission cmdlet. For details, see the Lync Server Management Shell documentation.
 
 
-</div></td>
+</td>
 <td><p><a href="lync-server-2013-create-contact-objects-for-hosted-exchange-um.md">Create contact objects for hosted Exchange UM in Lync Server 2013</a></p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

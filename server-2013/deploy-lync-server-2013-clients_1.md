@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploy Lync Server 2013 clients
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 After you migrate users to Lync Server 2013, do the following:
 
@@ -38,22 +25,8 @@ After you migrate users to Lync Server 2013, do the following:
 
 5.  (Optional) If your organization requires Lync Server 2013 enhanced presence privacy mode, after migration is complete, define a Client Version Policy Rule to prevent earlier client versions from signing in. Then, enable enhanced presence privacy mode.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Do not enable Lync 2013 enhanced presence privacy mode until every user on a given server pool has the most current client versions installed.
 
-    
-    </div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

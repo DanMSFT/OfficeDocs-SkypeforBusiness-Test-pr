@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS requirements for automatic client sign-in in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-19_
 
 This section explains the Domain Name System (DNS) records that are required for automatic client sign-in. When you deploy your Standard Edition servers or Front End pools, you can configure your clients to use automatic discovery to sign in to the appropriate Standard Edition server or Front End pool. If you plan to require your clients to connect manually to Lync Server 2013, you can skip this topic.
 
@@ -34,14 +21,11 @@ To support automatic client sign-in, you must:
 
   - Create an internal DNS SRV record to support automatic client sign-in for this server or pool.
     
-    <div>
-    
 
     > [!NOTE]
     > In the following record requirements, SIP domain refers to the host portion of the SIP URIs assigned to users. For example, if SIP URIs are of the form *@contoso.com, contoso.com is the SIP domain. The SIP domain is often different from the internal Active Directory domain. An organization can also support multiple SIP domains.
 
-    
-    </div>
+
 
 To enable automatic configuration for your clients, you must create an internal DNS SRV record that maps one of the following records to the fully qualified domain name (FQDN) of the Front End pool or Standard Edition server that distributes sign-in requests from Lync clients:
 
@@ -81,17 +65,11 @@ The following table shows some example records required for the fictitious compa
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > By default, queries for DNS records adhere to strict domain name matching between the domain in the user name and the SRV record. If you prefer that client DNS queries use suffix matching instead, you can configure the DisableStrictDNSNaming Group Policy. For details, see <A href="lync-server-2013-planning-for-clients-and-devices.md">Planning for clients and devices in Lync Server 2013</A> in the Planning documentation.
 
 
-
-</div>
-
-<div>
 
 ## Example of the Certificates and DNS Records Required for Automatic Client Sign-In
 
@@ -100,16 +78,4 @@ This example uses the same example names in the preceding table. The Contoso org
   - \<user\>@retail.contoso.com
 
   - \<user\>@contoso.com
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

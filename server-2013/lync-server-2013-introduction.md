@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Introduction to Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-07_
 
 Lync Server 2013 and its client software, such as Lync 2013, enable your users to connect in new ways and to stay connected, regardless of their physical location. Lync and Lync Server bring together the different ways that people communicate in a single client interface, are deployed as a unified platform, and are administered through a single management infrastructure.
 
@@ -47,7 +34,6 @@ This table and the following sections illustrate the major feature sets, or *wor
 <td><p>IM and presence</p></td>
 <td><p>Instant messaging (IM) and presence help your users find and communicate with one another efficiently and effectively.</p>
 <p>IM provides an instant messaging platform with conversation history, and supports public IM connectivity with users of public IM networks such as MSN/Windows Live, Yahoo!, AOL, and Google Talk.</p>
-<div>
 
 > [!IMPORTANT]
 > <UL>
@@ -59,7 +45,6 @@ This table and the following sections illustrate the major feature sets, or *wor
 > <P>More than ever, Lync is a powerful tool for connecting across organizations and with individuals around the world. Federation with Windows Live Messenger requires no additional user/device licenses beyond the Lync Standard CAL. Skype federation will be added to this list, enabling Lync users to reach hundreds of millions of people with IM and voice.</P></LI></UL>
 
 
-</div>
 <p>Presence establishes and displays a user’s personal availability and willingness to communicate through the use of common states such as <strong>Available</strong> or <strong>Busy</strong>, as well as more detailed states such as <strong>Be Right Back</strong> and <strong>Do Not Disturb</strong>. This rich presence information enables other users to immediately make effective communication choices.</p></td>
 </tr>
 <tr class="even">
@@ -92,6 +77,7 @@ This table and the following sections illustrate the major feature sets, or *wor
 <tr class="odd">
 <td><p>Simple deployment</p></td>
 <td><p>To help you plan and deploy your servers and clients, Lync Server provides the Topology Builder.</p>
+<p></p>
 <p>Topology Builder is an installation component of Lync Server. You use Topology Builder to create, adjust and publish your planned topology. It also validates your topology before you begin server installations. When you install Lync Server on individual servers, the installation program deploys the server as directed in the topology.</p></td>
 </tr>
 <tr class="even">
@@ -109,8 +95,6 @@ This table and the following sections illustrate the major feature sets, or *wor
 
 While the IM and presence features are automatically installed in every Lync Server deployment, you can choose whether to deploy conferencing, Enterprise Voice, and remote user access, to tailor your deployment to your organization’s needs.
 
-<div>
-
 ## In This Section
 
   - [IM and presence in Lync Server 2013](lync-server-2013-im-and-presence.md)
@@ -120,16 +104,4 @@ While the IM and presence features are automatically installed in every Lync Ser
   - [Enterprise Voice in Lync Server 2013](lync-server-2013-enterprise-voice.md)
 
   - [Scalability with Lync Server 2013](lync-server-2013-scalability.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

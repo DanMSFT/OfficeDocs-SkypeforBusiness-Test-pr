@@ -8,51 +8,30 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Test the pool deployment in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-09-25_
 
 The following procedure describes how to test the deployment of the Front End pool.
-
-<div>
 
 ## To test the pool deployment
 
 1.  Use Active Directory Computers and Users to add the Active Directory user object of the administrator role for the Lync Server 2013 deployment (on which Lync Server 2013 Control Panel is installed) to the **CSAdministrator** group.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > If you do not add the appropriate users and groups to the CsAdministors group, you will receive an error when opening Lync Server Control Panel, which states that “Unauthorized: Access is denied due to a role-based access control (RBAC) authorization failure.”
 
-    
-    </div>
+
 
 2.  If the user object is currently logged on, log off and then log on again to register the new group assignment.
-    
-    <div>
     
 
     > [!NOTE]
     > The user account cannot be the local administrator of any server running Lync Server 2013.
 
-    
-    </div>
+
 
 3.  Use the administrative account to log on to the computer where Lync Server Control Panel is installed.
 
@@ -100,25 +79,8 @@ The following procedure describes how to test the deployment of the Front End po
 
 13. Install Lync 2013 on each of the two client computers, and then verify that both users can sign in to Lync Server 2013 and can send instant messages to each other.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Deploying clients and devices in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying clients and devices in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md)
 

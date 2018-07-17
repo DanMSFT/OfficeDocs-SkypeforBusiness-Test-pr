@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # ConferenceSessionDetails table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 Each record represents one conference session, which could be either the session with Focus or the session with a specific conferencing server.
 
@@ -66,7 +53,7 @@ Each record represents one conference session, which could be either the session
 <tr class="even">
 <td><p><strong>ConfInstance</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Identifier that differentiates between instances of recurring conferences. Each recurring conference instance has the same ConferenceURI but a different ConfInstance value.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
@@ -85,7 +72,7 @@ Each record represents one conference session, which could be either the session
 <tr class="odd">
 <td><p><strong>UserEndpointId</strong></p></td>
 <td><p>uniqueidentifier</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A GUID to identify the instance of endpoint. For example, if one user logs on to different machines with the same account, then each machine will have a different endpoint ID.</p></td>
 </tr>
 <tr class="even">
@@ -127,31 +114,31 @@ Each record represents one conference session, which could be either the session
 <tr class="even">
 <td><p><strong>IsStartedByConfServer</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Indicates if the session started by the conferencing Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>IsEndedByConfServer</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Indicates if the session ended by the conferencing server.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>IsUserInternal</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Whether user is logged on from internal or not.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ResponseCode</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Session Initiation Protocol (SIP) response code to the session invitation. This field is typically populated by data generated from the initial INVITE message in the session. If there is no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DiagnosticId</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Diagnostic ID captured from SIP header.</p></td>
 </tr>
 <tr class="odd">
@@ -193,19 +180,19 @@ Each record represents one conference session, which could be either the session
 <tr class="odd">
 <td><p><strong>InviteTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The time of the first INVITE request. This field is typically populated by data generated from the initial INVITE message in the session. If there is no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ResponseTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Time of the first SIP RESPONSE. This field is typically populated by data generated from the initial INVITE message in the session. If there is no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SessionEndTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The time when the session is ended.</p></td>
 </tr>
 <tr class="even">
@@ -218,7 +205,7 @@ Each record represents one conference session, which could be either the session
 <tr class="odd">
 <td><p><strong>UserFlag</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A bit set that indicates the user attributes. The following attribute definitions are listed:</p>
 <ul>
 <li><p>Integrated with desktop phone - 1</p></li>
@@ -227,7 +214,7 @@ Each record represents one conference session, which could be either the session
 <tr class="even">
 <td><p><strong>CallFlag</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A bit set that indicates the call attributes. The following attribute definitions are listed:</p>
 <ul>
 <li><p>Retried Session - 1</p></li>
@@ -238,14 +225,4 @@ Each record represents one conference session, which could be either the session
 
 
 \* For most sessions, SessionIdSeq will have the value of 1. If multiple sessions start at exactly the same time, the SessionIdSeq for one will be 1, for another will be 2, and so on.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

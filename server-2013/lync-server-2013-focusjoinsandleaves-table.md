@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # FocusJoinsAndLeaves table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 Each record in this table contains the CDR information about one user’s join and leave information for one conference. Each conference is represented in this table by one record for each time a user joins and leaves the conference.
 
@@ -78,7 +65,7 @@ Each record in this table contains the CDR information about one user’s join a
 <tr class="even">
 <td><p><strong>FocusUserInstance</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>If a user is logged on at multiple computers or devices at the same time, <strong>UserInstance</strong> is used to uniquely identify the user/device combination.</p></td>
 </tr>
 <tr class="odd">
@@ -114,21 +101,10 @@ Each record in this table contains the CDR information about one user’s join a
 <tr class="even">
 <td><p><strong>UserEndpointId</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Globally unique identifier (GUID) of the endpoint used in the conference.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

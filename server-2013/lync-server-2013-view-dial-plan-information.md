@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View dial plan information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 To view information for an existing dial plan, perform the steps in the following procedure. If you want to create a new dial plan, see [Create a dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md).
-
-<div>
 
 ## To view information about a dial plan from Lync Server Control Panel
 
@@ -40,18 +25,11 @@ To view information for an existing dial plan, perform the steps in the followin
 
 4.  On the **Dial Plan** page, double-click a dial plan name.
     
-    <div>
-    
 
     > [!NOTE]
     > You can view information for only one dial plan at a time.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To view dial plans by using Windows PowerShell cmdlets
 
@@ -76,26 +54,9 @@ To view information for an existing dial plan, perform the steps in the followin
         SimpleName               : DefaultProfile
         OptimizeDeviceDialing    : False
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Create a dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md)  
-[Modify a dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Modify a dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md)
 

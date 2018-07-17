@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Requirements for Location-Based Routing for conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-19_
 
 The following are the requirements needed for the installation and configuration of the Location-Based Routing Conferencing application:
 
   - Lync Server 2013 Cumulative Update 2 must be deployed on all servers or pools in your topology.
-
-<div>
 
 
 > [!NOTE]
@@ -38,13 +23,9 @@ The following are the requirements needed for the installation and configuration
 
 
 
-</div>
-
   - Lync Server 2013 Location-Based Routing is a pre-requisite for Location-Based Routing Conferencing application. For further information on configuring Lync Server 2013 Location-Based Routing, please refer to [Configuring Location-Based Routing](lync-server-2013-configuring-location-based-routing.md).
 
   - Requirements of Location-Based Routing Conferencing application are the same as the requirements for Lync Server 2013 Location-Based Routing. For more information, please refer to [Planning for Location-Based Routing](lync-server-2013-planning-for-location-based-routing.md).
-
-<div>
 
 ## Supported Servers
 
@@ -104,17 +85,9 @@ The following table identifies the combination of server roles and versions that
 </table>
 
 
-</div>
-
-<div>
-
 ## Supported Clients
 
 The Lync clients that support Location-Based Routing of Lync meetings are the same clients that support Lync Server 2013 Location-Based Routing. For more information, please refer to [Client and Server Support for Location-Based Routing](lync-server-2013-client-and-server-support-for-location-based-routing.md).
-
-</div>
-
-<div>
 
 ## Mediation Server Requirements for Consultative Call Transfers
 
@@ -140,10 +113,6 @@ To enforce Location-Based Routing of consultative call transfers, the Mediation 
     
       - When a Lync user from a given site (i.e. site 1) attempts to transfer a call with a PBX endpoint in the same site (site 1) to a Lync user from a different site (i.e. site 2) via consultative transfer, the call will be allowed as it doesn’t incur in potential PSTN toll bypassing.
 
-</div>
-
-<div>
-
 ## Capabilities Not Supported by the Location-Based Routing Conferencing Application
 
 The following capabilities are not supported by the Location-Based Routing Conferencing application:
@@ -151,16 +120,4 @@ The following capabilities are not supported by the Location-Based Routing Confe
   - Dial-in conferencing. Location-Based Routing cannot be enforced for Dial-in conferencing. Any dial-in request to a given conference will not be restricted by Location-Based Routing even if the conference organizer is a Lync user enabled for Location-Based Routing.
 
   - It’s recommended not to provision conferencing access numbers in regions where Location-Based Routing restrictions need to be enforced.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Defining your organization's requirements for Persistent Chat Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-01-15_
 
 Before you deploy Persistent Chat Server for your organization, it’s essential to consider the following key questions to optimize your deployment:
 
@@ -48,22 +35,8 @@ Before you deploy Persistent Chat Server for your organization, it’s essential
 
   - Are there regulatory requirements? If your company is in a country/region where data needs to be kept within the country, you may need to deploy multiple Persistent Chat Server pools, each local to a specific geography. A room, category, or add-in does not span pools—it belongs to only one Persistent Chat Server pool. You can manage the set of categories, add-ins and rooms for each Persistent Chat Server pool. Users can be configured to have access to rooms in one or more pools using the category AllowedMembers scope or Room’s membership scope, depending on how you design your categories.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Having multiple Persistent Chat Server pools does not give you more scale (you can still have only 80,000 concurrently connected users across all your Persistent Chat Server pools). The primary reason for supporting multiple Persistent Chat Server pools is to support regulatory concerns.
 
-    
-    </div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

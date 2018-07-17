@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment process overview for Enterprise Voice in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-22_
 
 The deployment and configuration steps that you need to follow are dependent on the Enterprise Voice feature or functionality you are adding to your Lync Server 2013 environment.
-
-<div>
 
 ## Feature Deployment Overviews
 
@@ -63,16 +48,4 @@ For an overview of the deployment of call handling features (call parking, annou
   - [Deployment process for Call Park in Lync Server 2013](lync-server-2013-deployment-process-for-call-park.md)
 
   - [Deployment process for the Announcement application in Lync Server 2013](lync-server-2013-deployment-process-for-the-announcement-application.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # CallType table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 The CallType table is a static table that stores the list of possible call types.
 
@@ -49,12 +36,12 @@ The CallType table is a static table that stores the list of possible call types
 <td><p><strong>CallTypeId</strong></p></td>
 <td><p>int</p></td>
 <td><p>Primary</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CallType</strong></p></td>
 <td><p>nvarchar</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Allowed values:</p>
 <ul>
 <li><p>0 -- Unknown</p></li>
@@ -67,15 +54,4 @@ The CallType table is a static table that stores the list of possible call types
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

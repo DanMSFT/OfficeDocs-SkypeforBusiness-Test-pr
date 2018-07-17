@@ -8,25 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Unified Messaging on Microsoft Exchange Server to work with Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-11_
-
-<div>
 
 
 > [!IMPORTANT]
@@ -34,20 +19,15 @@ _**Topic Last Modified:** 2012-10-11_
 
 
 
-</div>
-
 To configure Exchange Unified Messaging (UM) to work with Enterprise Voice, you’ll need to perform the following tasks:
 
   - Configure certificates on the server running Exchange Unified Messaging (UM) services
-    
-    <div>
     
 
     > [!NOTE]
     > Add all Client Access and Mailbox servers to all UM SIP URI dial plans. If not, outbound call routing won’t work as expected.
 
-    
-    </div>
+
 
   - Create one or more UM SIP URI dial plans, along with the subscriber access phone numbers, as needed, and then create corresponding Lync Server dial plans.
 
@@ -65,8 +45,6 @@ To configure Exchange Unified Messaging (UM) to work with Enterprise Voice, you�
 
   - Create a SIP URI for each user and associating users with a UM SIP URI dial plan.
 
-<div>
-
 ## Requirements and Recommendations
 
 Before you begin, the documentation in this section assumes that you have deployed the following Exchange 2013 roles: Client Access and Mailbox. In Microsoft Exchange Server 2013, Exchange UM runs as a service on these servers.
@@ -79,14 +57,11 @@ Also note the following:
 
   - Integration steps are performed on both the Exchange Server roles where Unified Messaging services are running, and on the server running Lync Server 2013. You should perform the Exchange Server Unified Messaging integration steps before you perform the Lync Server 2013 integration steps.
     
-    <div>
-    
 
     > [!NOTE]
     > To see which integration steps are performed on which servers and by which administrator roles, see <A href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">Deployment process for integrating on-premises Unified Messaging and Lync Server 2013</A>.
 
-    
-    </div>
+
 
 The following tools must be available on each server running Exchange UM:
 
@@ -100,25 +75,9 @@ The following tools must be available on each server running Exchange UM:
     
       - Grants Lync Server 2013 permission to read Exchange UM objects in Active Directory Domain Services.
 
-</div>
-
-<div>
-
 ## In This Section
 
   - [Configure certificates on the server running Microsoft Exchange Server Unified Messaging](lync-server-2013-configure-certificates-on-the-server-running-microsoft-exchange-server-unified-messaging.md)
 
   - [Configure Unified Messaging on Microsoft Exchange for Lync Server 2013](lync-server-2013-configure-unified-messaging-on-microsoft-exchange.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

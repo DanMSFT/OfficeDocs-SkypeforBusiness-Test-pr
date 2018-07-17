@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using the Lync Server 2010 management packs in a coexistence scenario
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 Many customers adopt a rollout program inside of their enterprises in which users are progressively migrated from Microsoft Lync Server 2010 to Lync Server 2013. The administrators at these companies will care about monitoring both versions of Lync Server to help ensure that all of their end users are getting the best possible communication experience. For this scenario, the Lync Server 2013 Management Pack supports a side-by-side migration path with the Lync Server 2010 Management Pack.
 
@@ -41,8 +28,6 @@ To support this migration, you will first need to upgrade your existing Lync Ser
 3.  Override the Central Discovery Candidate in the Microsoft Lync Server 2010 Management Pack.
 
 4.  Verify that the new Central Discovery Candidate has been discovered.
-
-<div>
 
 ## Instructing a Lync Server 2010 Computer to Run the Central Discovery script
 
@@ -74,10 +59,6 @@ It may take the computer several hours to pick up this change. To make the chang
     
         Net start HealthService
 
-</div>
-
-<div>
-
 ## Overriding the Central Discovery Candidate in the Lync Server 2010 Management Pack
 
 After instructing a Lync Server 2010 computer to report on Lync Server 2010 computers, you will need to inform the Lync Server 2010 Management Pack about this change as well. To do this, you will need to create an override in the Management Pack. That can be done by completing the following procedure:
@@ -104,23 +85,7 @@ After you have created the override, you need to restart the health service on t
     
         Net start HealthService
 
-</div>
-
-<div>
-
 ## Verifying that the New Central Discovery Candidate Was Discovered
 
 The final step before upgrading Central Management store is to make sure that the new central discovery candidate was discovered by the Lync Server 2010 Management Pack. To do this, open the Operations Manager console and then click Monitoring. On the Monitoring tab, expand **Microsoft Lync Server 2010 Health**, expand **Topology Discovery**, and then click **Discovery State View**. Verify that a row in the display has a **Path** that lists the fully qualified domain name of the central discovery candidate. You should also verify that the computer state is reported as **Healthy**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

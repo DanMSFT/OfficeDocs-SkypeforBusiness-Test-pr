@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Client and server support for Location-Based Routing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-06-18_
 
 Location-Based Routing is enforced by Lync Server. Lync Server can identify the network sites where users are connecting from within the corporate network. Since remote users are outside the corporate network, their location is considered to be unknown.
-
-<div>
 
 ## Lync Server Support
 
@@ -89,10 +74,6 @@ The following table identifies the combination of server roles and versions that
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Lync Client Support
 
@@ -158,35 +139,14 @@ The following table identifies the clients that Location-Based Routing supports.
 
   
 
-<div>
-
 
 > [!NOTE]
-> To disable VoIP for Lync Mobile 2013 clients, assign a mobility policy with the setting, IP Audio/Video, disabled for all users enabled for Location Based Routing. For more details about mobility policy, see <A href="new-csmobilitypolicy.md">New-CsMobilityPolicy</A>.
+> To disable VoIP for Lync Mobile 2013 clients, assign a mobility policy with the setting, IP Audio/Video, disabled for all users enabled for Location Based Routing. For more details about mobility policy, see <A href="https://technet.microsoft.com/en-us/library/hh689987(v=ocs.15)">New-CsMobilityPolicy</A>.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## See Also
 
 
-[Planning for Location-Based Routing in Lync Server 2013](lync-server-2013-planning-for-location-based-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for Location-Based Routing in Lync Server 2013](lync-server-2013-planning-for-location-based-routing.md)
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Setting up the Director in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-05_
 
 If you’re enabling access for external users by deploying Edge Servers, one option is to deploy a Director. A Director is a server running Microsoft Lync Server 2013 that authenticates user requests, but doesn’t home any user accounts. Now, this isn’t a requirement, but it is very helpful if you’re worried about performance and want to help streamline authentication requests. If you decide this is a good idea for your organization, the steps to set up a Director or a Director pool are similar to setting up either an Enterprise Edition Front End pool or Standard Edition server. After you’ve defined your Director(s) in Topology Builder, you’ll need to perform the steps in this section.
-
-<div>
 
 ## In This Section
 
@@ -43,16 +28,4 @@ If you’re enabling access for external users by deploying Edge Servers, one op
   - [Test the Director in Lync Server 2013](lync-server-2013-test-the-director.md)
 
   - [Configure Automatic Client Sign-In to use the Director in Lync Server 2013](lync-server-2013-configure-automatic-client-sign-in-to-use-the-director.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,29 +8,14 @@ ms.date: 02/01/2018
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Managing response groups in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2018-02-01_
 
 Response groups are a call management feature that enables you to queue calls that are made to a specific area, such as a Help Desk, and then route the calls to a designated group of people, called *agents*.
 
 To manage response groups, you configure agent groups, queues, and workflows, which define what happens to a call from the time it is placed until an agent answers it.
-
-<div>
 
 
 > [!NOTE]
@@ -38,11 +23,7 @@ To manage response groups, you configure agent groups, queues, and workflows, wh
 
 
 
-</div>
-
 Topics in this section provide step-by-step procedures for tasks that you can perform to customize and maintain the Response Group application in your deployment
-
-<div>
 
 ## In This Section
 
@@ -57,16 +38,4 @@ Topics in this section provide step-by-step procedures for tasks that you can pe
   - [Moving response groups to a new pool in Lync Server 2013](lync-server-2013-moving-response-groups-to-a-new-pool.md)
 
   - [Managing response groups in Lync Server 2013 during a disaster](lync-server-2013-managing-response-groups-during-a-disaster.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

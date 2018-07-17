@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Design interactive voice response call flows in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-25_
 
 You can use interactive voice response (IVR) to obtain information from callers and direct the call to the appropriate queue. Question-and-answer pairs determine which queue to use. Depending on the caller’s response, the caller either hears a follow-up question, or is routed to the appropriate queue. The IVR questions and the caller’s responses are provided to the responding agent who accepts the call, providing valuable information to the agent.
-
-<div>
 
 ## Overview of IVR Features
 
@@ -36,21 +21,13 @@ The Response Group application offers speech recognition and text-to-speech capa
 
 Interactive workflows support up to two levels of questions, with each question having up to four possible answers. The IVR asks the caller a question, and depending on the caller’s response, routes the caller to a queue or asks a second question. The second question can also have four possible answers. Depending on the answer to the second-level question, the caller is routed to the appropriate queue.
 
-<div>
-
 
 > [!NOTE]
 > When you design call flows by using Lync Server Management Shell, you can define any number levels of IVR questions and any number of answers. However, for caller usability, we recommend that you not use more than three levels of questions, with not more than five answers each. In addition, if you design a call flow that has more than two levels of questions with more than four answers each, you cannot edit the call flow by using Lync Server 2013 Control Panel.
 
 
 
-</div>
-
 The IVR questions and the caller’s responses are provided to the responding agent who accepts the call.
-
-</div>
-
-<div>
 
 ## Working with Speech Technologies
 
@@ -64,15 +41,9 @@ Speech technologies, such as speech recognition and text-to-speech, can enhance 
 
   - After you design your IVR, call the workflow, listen to the prompts, respond to each of the prompts using voice, and verify that the IVR sounds and behaves as expected. You can then modify the IVR to fix any interpretation issues. Following the previous example, if you need to refer to the \# key, you can rewrite your IVR prompt to use the key name, rather than the \# symbol. For example, "To talk to sales, press the pound key."
 
-</div>
-
-<div>
-
 ## IVR Design Examples
 
 The following sections contain examples of different IVR scenarios and question-and-answer pairs.
-
-<div>
 
 ## IVR with One Level of Questions
 
@@ -89,10 +60,6 @@ The following figure shows the call flow.
 **One-level interactive call flow**
 
 ![Design Call Flows by Using Interactive Voice Respo](images/Gg413020.4820a9f7-b5b0-4831-b972-baae0c015ec1(OCS.15).jpg "Design Call Flows by Using Interactive Voice Respo")
-
-</div>
-
-<div>
 
 ## IVR with Two Levels of Questions
 
@@ -126,12 +93,6 @@ The following figure shows the call flow.
 
 ![Design Call Flows by Using Interactive Voice Respo](images/Gg413020.a5b62083-312d-4419-898b-d1a225a5379f(OCS.15).jpg "Design Call Flows by Using Interactive Voice Respo")
 
-</div>
-
-</div>
-
-<div>
-
 ## Best Practices
 
 The following list describes some best practices for designing your IVR:
@@ -147,16 +108,4 @@ The following list describes some best practices for designing your IVR:
   - Make voice responses user friendly. For example, if you specify both DTMF and voice responses, use something like: "To speak to the sales team, press 1 or say sales."
 
   - Test the IVR on a group of users before you deploy it across your organization.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

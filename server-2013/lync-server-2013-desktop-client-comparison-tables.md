@@ -4,27 +4,14 @@ TOCTitle: Desktop client comparison tables
 ms:assetid: 34e24103-aec7-4471-a155-933b6fb83c95
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg425836(v=OCS.15)
 ms:contentKeyID: 48183798
-ms.date: 01/23/2018
+ms.date: 04/26/2018
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Desktop client comparison tables for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2018-01-23_
 
 The following tables compare the features and capabilities of Lync 2013 clients in the following categories:
 
@@ -46,17 +33,11 @@ The following tables compare the features and capabilities of Lync 2013 clients 
 
 These tables indicate the features that are available to Lync users in an on-premises deployment of Lync Server 2013. The same features are also available to Skype for Business Online and Office 365 users unless otherwise indicated.
 
-<div>
-
 
 > [!IMPORTANT]
 > See <A href="lync-server-2013-mobile-client-comparison-tables.md">Mobile client comparison tables for Lync Server 2013</A> for details about feature availability in Lync 2013 mobile clients.
 
 
-
-</div>
-
-<div>
 
 
 > [!NOTE]
@@ -69,12 +50,6 @@ These tables indicate the features that are available to Lync users in an on-pre
 > <P>The Lync 2013 client supports audio and video in a Virtual Desktop Infrastructure (VDI) environment. For details about Lync 2013 capabilities in a VDI environment, see <A href="lync-server-2013-supported-virtualization-technologies-and-known-limitations.md">Supported virtualization technologies and known limitations in Lync Server 2013</A>.</P></LI></UL>
 
 
-
-</div>
-
-<span id="EnhancedPresence"></span>
-
-<div>
 
 ## Enhanced Presence Support
 
@@ -118,7 +93,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -132,7 +107,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -146,7 +121,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -158,14 +133,14 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td> </td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Add a custom note</p></td>
@@ -174,10 +149,10 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 </tr>
@@ -186,24 +161,18 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td> </td>
 <td><p>●</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td> </td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<span id="Contacts"></span>
-
-<div>
 
 ## Contacts and Contact Groups Support
 
@@ -307,7 +276,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="even">
@@ -413,7 +382,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td> </td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td></td>
 <td> </td>
@@ -443,12 +412,6 @@ These tables indicate the features that are available to Lync users in an on-pre
 1 For Skype for Business Online and/or Office 365 users, Lync 2010 Attendant is not supported.
 
 2 For Skype for Business Online and/or Office 365 users, this feature is not available.
-
-</div>
-
-<span id="IMSupport"></span>
-
-<div>
 
 ## IM Support
 
@@ -495,7 +458,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 </tr>
@@ -509,7 +472,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 </tr>
@@ -523,7 +486,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Saved in Communicator for Mac</p></td>
 <td><p>Saved in Lync for Mac</p></td>
 </tr>
@@ -537,9 +500,9 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td> </td>
 <td><p>●1</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Check spelling</p></td>
@@ -550,9 +513,9 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td></td>
 <td> </td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="even">
@@ -565,23 +528,23 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td><p>● 2</p></td>
 <td><p>●1, 2</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Persistent Chat (Group Chat) integration</p></td>
 <td><p>●3</p></td>
 <td> </td>
 <td><p>●3</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●3</p></td>
 <td></td>
 <td> </td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Escalate a Persistent Chat room to a Lync Meeting with one click</p></td>
@@ -593,9 +556,9 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td> </td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Inline pictures of sender and receiver in IM window</p></td>
@@ -607,23 +570,23 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td> </td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Send ink messages</p></td>
 <td> </td>
 <td> </td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
 <td> </td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Receive ink messages</p></td>
@@ -635,9 +598,9 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td> </td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Set IM messages as high importance</p></td>
@@ -663,15 +626,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 
 3 For Skype for Business Online and/or Office 365 users, Persistent Chat is not available.
 
-</div>
-
-<span id="Conferencing"></span>
-
-<div>
-
 ## Conferencing Support
-
-<div>
 
 
 > [!NOTE]
@@ -684,8 +639,6 @@ These tables indicate the features that are available to Lync users in an on-pre
 > <P>For details, see the Skype for Business Online Service Description at <A href="https://go.microsoft.com/fwlink/?linkid=282430">https://go.microsoft.com/fwlink/?LinkID=282430</A>.</P></LI></UL>
 
 
-
-</div>
 
 
 <table>
@@ -746,7 +699,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <p>(requires plug-in)</p></td>
 <td><p>●</p></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 </tr>
@@ -774,7 +727,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td></td>
 <td><p>●</p></td>
 </tr>
@@ -788,7 +741,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
-<td></td>
+<td><p></p></td>
 <td></td>
 <td><p>●</p></td>
 </tr>
@@ -802,7 +755,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 </tr>
@@ -817,7 +770,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <p>(requires plug-in)</p></td>
 <td><p>●</p></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td><p>●2</p></td>
 <td><p>●2</p></td>
 </tr>
@@ -918,7 +871,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Use a whiteboard</p></td>
@@ -932,7 +885,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Conduct polls</p></td>
@@ -946,7 +899,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td></td>
 <td></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Upload files to share with others</p></td>
@@ -1114,23 +1067,13 @@ These tables indicate the features that are available to Lync users in an on-pre
 
 4 The Lync for Mac 2011 client cannot view Microsoft Office 2013 PowerPoint presentations when they have been shared in a conference by the Lync Web App 2013 client.
 
-</div>
-
-<span id="Telephony"></span>
-
-<div>
-
 ## Voice (Telephony) Support
-
-<div>
 
 
 > [!NOTE]
 > Lync Voice features are limited to certain Skype for Business Online subscription plans. For details, see the “Lync Voice Features” topic in the Skype for Business Online Service Description at <A href="https://go.microsoft.com/fwlink/?linkid=282430">https://go.microsoft.com/fwlink/?LinkID=282430</A>.
 
 
-
-</div>
 
 
 <table>
@@ -1172,7 +1115,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●2</p></td>
 <td><p>●</p></td>
 <td><p>●2</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●2</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
@@ -1186,7 +1129,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●2</p></td>
 <td><p>●</p></td>
 <td><p>●2</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●2</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
@@ -1200,11 +1143,11 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●2</p></td>
 <td><p>●</p></td>
 <td><p>●2</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●2</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="even">
@@ -1214,11 +1157,11 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●3</p></td>
 <td><p>●</p></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td><p>●3</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
@@ -1226,27 +1169,27 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●3</p></td>
 <td> </td>
 <td><p>●3</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●3</p></td>
 <td><p>●1</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Manage delegates</p></td>
 <td><p>●3</p></td>
 <td> </td>
 <td><p>●3</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●3</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
@@ -1254,14 +1197,14 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●3</p></td>
 <td> </td>
 <td><p>●3</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●3</p></td>
 <td><p>●1</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Support emergency services (E911)</p></td>
@@ -1269,13 +1212,13 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p>
 <p>Requires Lync Server 2013 CU8 HF1 or later</p></td>
 <td><p>●3</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●3</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●3</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
@@ -1312,12 +1255,12 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●3</p></td>
 <td><p>●</p></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●3</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="even">
@@ -1326,8 +1269,8 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
-<td><p>●</p></td>
-<td><p>●</p></td>
+<td> </td>
+<td> </td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -1339,56 +1282,56 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●3</p></td>
 <td> </td>
 <td><p>●3</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●3</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Handle another's calls if configured as a delegate</p></td>
 <td><p>●3</p></td>
 <td> </td>
 <td><p>●3</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●3</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Manage a high volume of calls</p></td>
 <td></td>
 <td> </td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td><p>●3</p></td>
 <td><p>●1</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Call park</p></td>
 <td><p>●3</p></td>
 <td> </td>
 <td><p>●3</p></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 <td> </td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Group call pickup</p></td>
@@ -1413,12 +1356,6 @@ These tables indicate the features that are available to Lync users in an on-pre
 2 For Skype for Business Online and/or Office 365 users, this feature is available for PC to PC calls only.
 
 3 For Skype for Business Online and/or Office 365 users, this feature is not available.
-
-</div>
-
-<span id="ExternalUsers"></span>
-
-<div>
 
 ## External Users Support
 
@@ -1459,10 +1396,10 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 </tr>
@@ -1472,10 +1409,10 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 </tr>
@@ -1485,7 +1422,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td><p>●2</p></td>
 <td><p>●2</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
 <td><p>●</p></td>
@@ -1499,10 +1436,6 @@ These tables indicate the features that are available to Lync users in an on-pre
 1 For Skype for Business Online and/or Office 365 users, Lync 2010 Attendant is not supported.
 
 2 For Skype for Business Online and/or Office 365 users, this feature is not available.
-
-</div>
-
-<div>
 
 ## Recording
 
@@ -1546,7 +1479,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●1</p></td>
 <td></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -1560,7 +1493,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●2</p></td>
 <td></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -1574,7 +1507,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●</p></td>
 <td></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td> </td>
 <td></td>
 <td></td>
@@ -1588,12 +1521,6 @@ These tables indicate the features that are available to Lync users in an on-pre
 1 For Skype for Business Online and/or Office 365 users, recording is unavailable in certain Skype for Business Online standalone plans. Recording requires full Lync 2013 client rights. For details, see the Skype for Business Online Service Description at [https://go.microsoft.com/fwlink/?LinkID=282430](https://go.microsoft.com/fwlink/?linkid=282430).
 
 2 For Skype for Business Online and/or Office 365 users, recording of file transfers, shared OneNote pages, and PowerPoint annotations is unavailable.
-
-</div>
-
-<span id="Archiving"></span>
-
-<div>
 
 ## Archiving, Compliance, and Logging Support
 
@@ -1637,10 +1564,10 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●2</p></td>
 <td><p>●2</p></td>
 <td><p>●2</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td><p>●1</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Saved in Communicator for Mac</p></td>
 <td><p>●</p></td>
 </tr>
@@ -1651,12 +1578,12 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●2</p></td>
 <td></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Client-side archiving of file transfers, shared OneNote pages, and PowerPoint annotations</p></td>
@@ -1665,26 +1592,26 @@ These tables indicate the features that are available to Lync users in an on-pre
 <td><p>●3</p></td>
 <td></td>
 <td></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Access sign-in logs from Lync icon in the task bar</p></td>
 <td><p>●</p></td>
 <td> </td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>●</p></td>
-<td></td>
+<td><p></p></td>
 <td> </td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -1696,17 +1623,7 @@ These tables indicate the features that are available to Lync users in an on-pre
 
 3 For Skype for Business Online and/or Office 365 users, archiving of file transfers, shared OneNote pages, and PowerPoint annotations is unavailable.
 
-</div>
-
-<span id="Types"></span>
-
-<div>
-
 ## Client limitations
-
-<span id="Full_Basic"></span>
-
-<div>
 
 ## Basic client limitations
 
@@ -1728,12 +1645,6 @@ The features below are available using the Full client and are not available wit
 
   - Group call pickup
 
-</div>
-
-<span id="Online_Hybrid"></span>
-
-<div>
-
 ## Online or Hybrid user account limitations
 
 User accounts can exist either Online or On-premises, and that will affect the features available to that user. Users with accounts on Skype for Business Online will not have access to the following features, even with the Full client:
@@ -1747,18 +1658,4 @@ User accounts can exist either Online or On-premises, and that will affect the f
   - IM Support: Escalate a Persistent Chat room to a Meeting with one click
 
   - External Users: Conduct two-party or multiparty calls with external users
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

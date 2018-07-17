@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create an announcement in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 To create a new announcement, you need to perform the following steps:
 
@@ -34,20 +21,15 @@ To create a new announcement, you need to perform the following steps:
 
 3.  Run the **New-CsAnnouncement** cmdlet to create and name the announcement. Perform this step to create announcements with an audio prompt, a text-to-speech (TTS) prompt, or no prompt.
     
-    <div>
-    
 
     > [!TIP]
     > You might want to create an announcement with no prompt (for example, if you want to transfer calls to a specific destination without playing a message).
 
-    
-    </div>
+
 
 4.  Assign the new announcement to a number range in the unassigned number table.
 
 This topic describes how to import and create announcements. For details about assigning announcements in the unassigned number table, see [Configure the unassigned number table in Lync Server 2013](lync-server-2013-configure-the-unassigned-number-table.md).
-
-<div>
 
 ## To create a new announcement
 
@@ -77,29 +59,12 @@ This topic describes how to import and create announcements. For details about a
     
         New-CsAnnouncement -Parent service:ApplicationServer:pool0.contoso.com -Name "Help Desk Announcement" -TextToSpeechPrompt "The Help Desk number has changed. Please dial 5550100." -Language "en-US"
     
-    For more detail about these cmdlets, and to see a list of the language codes to use in the **TextToSpeechPrompt** parameter, see [New-CsAnnouncement](new-csannouncement.md).
-
-</div>
-
-<div>
+    For more detail about these cmdlets, and to see a list of the language codes to use in the **TextToSpeechPrompt** parameter, see [New-CsAnnouncement](https://technet.microsoft.com/en-us/library/gg398522\(v=ocs.15\)).
 
 ## See Also
 
 
-[Import-CsAnnouncementFile](import-csannouncementfile.md)  
-[New-CsAnnouncement](new-csannouncement.md)  
-[Configure the unassigned number table in Lync Server 2013](lync-server-2013-configure-the-unassigned-number-table.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Import-CsAnnouncementFile](https://technet.microsoft.com/en-us/library/gg398472\(v=ocs.15\))  
+[New-CsAnnouncement](https://technet.microsoft.com/en-us/library/gg398522\(v=ocs.15\))  
+[Configure the unassigned number table in Lync Server 2013](lync-server-2013-configure-the-unassigned-number-table.md)
 

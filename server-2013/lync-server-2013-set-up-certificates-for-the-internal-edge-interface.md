@@ -8,33 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Set up certificates for the internal edge interface in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-07_
-
-<div>
 
 
 > [!IMPORTANT]
 > When you run the Certificate Wizard, ensure that you are logged in using an account that is a member of a group that has been assigned the appropriate permissions for the type of certificate template you will use. By default, a Lync Server 2013 certificate request will use the Web Server certificate template. If you use an account that is a member of the RTCUniversalServerAdmins group to request a certificate using this template, verify that the group has been assigned the Enroll permissions required to use that template.
 
 
-
-</div>
 
 A single certificate is required on the internal interface of each Edge Server. Certificates for the internal interface can be issued by an internal enterprise certification authority (CA) or a public CA. If your organization has an internal CA deployed you can save on the expense of using public certificates by using the internal CA to issue the certificate for the internal interface. You can use an internal Windows Server 2008 CA or Windows Server 2008 R2 CA to create these certificates.
 
@@ -56,17 +39,11 @@ To set up certificates on the internal edge interface at a site, use the procedu
 
 If you have more than one site with Edge Servers (that is, a multiple-site edge topology), or separate sets of Edge Servers deployed behind different load balancers, you need to follow these steps for each site that has Edge Servers, and for each set of Edge Servers deployed behind a different load balancer.
 
-<div>
-
 
 > [!NOTE]
 > The steps for procedures in this section are based on using a Windows Server&nbsp;2008 CA, Windows Server&nbsp;2008&nbsp;R2 CA, Windows Server 2012 CA, or Windows Server 2012 R2 CA to create a certificate for each Edge Server. For step-by-step guidance for any other CA, consult the documentation for that CA. By default, all authenticated users have the appropriate user rights to request certificates.<BR>The procedures in this section are based on creating certificate requests on the Edge Server as part of the Edge Server deployment process. It is possible to create certificate requests using the Front End Server. You can do this to complete the certificate request early in the planning and deployment process, before you start deployment of the Edge Servers. To do this, you must ensure that the certificate you request is defined with an exportable private key.<BR>The procedures in this section describe using a .cer and a .p7b file for the certificate. If you use a different type of file, modify these procedures as appropriate.
 
 
-
-</div>
-
-<div>
 
 ## To download the CA certification chain for the internal interface using certsrv Web site
 
@@ -80,14 +57,11 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
     
         https://ca01.contoso.net/certsrv
     
-    <div>
-    
 
     > [!NOTE]
     > If you are using a Windows Server 2008 or Windows Server 2008 R2 enterprise CA, you must use https, not http.
 
-    
-    </div>
+
 
 3.  On the issuing CA’s certsrv web page, under **Select a task**, click **Download a CA certificate, certificate chain, or CRL**.
 
@@ -97,18 +71,11 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
 
 6.  Save the .p7b file to the hard disk drive on the server, and then copy it to a folder on each Edge Server.
     
-    <div>
-    
 
     > [!NOTE]
     > The .p7b file contains all of the certificates that are in the certification path. To view the certification path, open the server certificate and click the certification path.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To export the CA certification chain for the internal interface using MMC
 
@@ -130,10 +97,6 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
 
 9.  Review the summary of actions, and click **Finish** to complete the export of the certificate. Click **OK** to confirm the successful export.
 
-</div>
-
-<div>
-
 ## To import the CA certification chain for the internal interface
 
 1.  On each Edge Server, open the Microsoft Management Console (MMC) by clicking **Start**, clicking **Run**, typing **mmc** in the **Open** box, and then clicking **OK**.
@@ -154,22 +117,15 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
 
 9.  Repeat this procedure on each Edge Server.
 
-</div>
-
-<div>
-
 ## To create the certificate request for the internal interface
 
 1.  On one of the Edge Servers, start the Deployment Wizard, and next to **Step 3: Request, Install, or Assign Certificates**, click **Run**.
-    
-    <div>
     
 
     > [!NOTE]
     > If you have multiple Edge Servers in one location in a pool, you can run the Certificate Wizard on any one of the Edge Servers.<BR>After you run Step 3 the first time, the button changes to <STRONG>Run again</STRONG>, and a green check mark that indicates successful completion of the task is not displayed until all require certificates have been requested, installed, and assigned.
 
-    
-    </div>
+
 
 2.  On the **Available Certificate Tasks** page, click **Create a new certificate request**.
 
@@ -187,14 +143,10 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
     
       - In **Bit length**, specify the bit length (typically, the default of **2048**).
         
-        <div>
-        
 
         > [!NOTE]
         > Higher bit lengths offer more security, but they have a negative impact on speed.
 
-        
-        </div>
     
       - If the certificate needs to be exportable, select the **Mark certificate private key as exportable** check box.
 
@@ -222,10 +174,6 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
 
 15. Submit this file to your CA (by email or other method supported by your organization for your enterprise CA) and, when you receive the response file, copy the new certificate to this computer so that it is available for import.
 
-</div>
-
-<div>
-
 ## To import the certificate for the internal interface
 
 1.  Log on to the Edge Server on which you created the certificate request as a member of the local Administrators group.
@@ -239,10 +187,6 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
 4.  On the **Import Certificate** page, type the full path and file name of the certificate that you requested and received for the internal interface of this Edge Server (or, click **Browse** to locate and select the file).
 
 5.  If you are importing certificates for other members of the pool a certificate containing a private key, select the **Certificate file contains certifcate’s private key** check box and specify the password.
-
-</div>
-
-<div>
 
 ## To export the certificate with the private key for Edge Servers in a pool
 
@@ -258,27 +202,21 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
 
 6.  Double-click **Certificates (Local Computer)** to expand the certificate stores. Double-click **Personal**, then double-click **Certificates**.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > If there are no certificates in the Certificates Personal store for the local computer, there is no private key associated with the certificate that was imported. Review the request and import steps. If the problem persists, contact your certification authority administrator or provider.
 
-    
-    </div>
+
 
 7.  In the Certificates Personal store for the local computer, right-click the certificate that you are exporting. Click **All Tasks**, click **Export**.
 
 8.  In the Certificate Export Wizard, click **Next**. Select **Yes, export the private key**. Click **Next**.
     
-    <div>
-    
 
     > [!NOTE]
     > If the selection <STRONG>Yes, export the private key</STRONG> is not available, the private key associated with this certificate was not marked for export. You will need to request the certificate again, ensuring that the certificate is marked to allow for the export of the private key before you can continue with the export. Contact your certification authority administrator or provider.
 
-    
-    </div>
+
 
 9.  On the Export File Formats dialog, select **Personal Information Exchange – PKCS\#12 (.PFX)** and then select the following:
     
@@ -286,14 +224,10 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
     
       - Export all extended properties
         
-        <div>
-        
 
         > [!WARNING]
         > When exporting the certificate from an Edge server, do not select <STRONG>Delete the private key if the export is successful</STRONG>. Selecting this option will require that you import the certificate and the private key to this Edge server.
 
-        
-        </div>
     
     Click **Next** to continue.
 
@@ -306,10 +240,6 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
 13. Click **OK** in the successful export dialog.
 
 14. Import the exported certificate file to the other Edge servers following the steps outlined in the [Set up certificates for the external edge interface for Lync Server 2013](lync-server-2013-set-up-certificates-for-the-external-edge-interface.md) procedures.
-
-</div>
-
-<div>
 
 ## To assign the internal certificate on the Edge Servers
 
@@ -328,16 +258,4 @@ If you have more than one site with Edge Servers (that is, a multiple-site edge 
 7.  After using this procedure to assign the internal edge certificate, open the Certificate snap-in on each server, expand **Certificates (Local computer)**, expand **Personal**, click **Certificates**, and then verify in the details pane that the internal edge certificate is listed.
 
 8.  If your deployment includes multiple Edge Servers, repeat this procedure for each Edge Server.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

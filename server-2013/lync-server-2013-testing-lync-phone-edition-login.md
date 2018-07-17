@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing Lync Phone Edition login in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsPhoneBootstrap cmdlet enables administrators to verify that a given user—using the phone number and PIN assigned to him or her—can log on to the system from a Lync 2013 Phone Edition-compatible device. (No device is actually needed to run the test.)
 
 In order for Test-CsPhoneBootstrap to make its check, the Registrar pool that hosts the user account being tested must be discoverable using DHCP. To determine whether a Registrar is discoverable in this manner, use the cmdlet Get-CsRegistrarConfiguration and check the value of the EnableDHCPServer property. If this property is set to False, you must use Set-CsRegistrarConfiguration to set the property value to True and make the Registrar discoverable using DHCP. This can also be done by using Enterprise DHCP Server and configuring the Lync Server-specific options.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -73,11 +54,7 @@ For a more comprehensive check, you can also include the user’s SIP address. I
 
     Test-CsPhoneBootstrap -PhoneOrExt "+12065551219" -Pin "0712" -UserSipAddress "sip:kenmyer@litwareinc.com"
 
-For more information, see the Help documentation for the [Test-CsPhoneBootstrap](test-csphonebootstrap.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsPhoneBootstrap](https://technet.microsoft.com/en-us/library/gg412852\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -135,10 +112,6 @@ CHECK :
 
 \- If using NTLM\\Kerberos auth, make sure you provided valid credentials
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsPhoneBootstrap might fail:
@@ -158,16 +131,4 @@ Here are some common reasons why Test-CsPhoneBootstrap might fail:
   - The Registrar pool is not DHCP-enabled. To determine whether your Registrar pool is enabled for DHCP, run the Get-CsRegistrarConfiguration cmdlet and check the value of the EnableDHCPServer property. For example:
     
         Get-CsRegistrarConfiguration -Identity "global"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

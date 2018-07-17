@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using cmdlets to reverse domain preparation for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-29_
 
 Use the **Disable-CsAdDomain** cmdlet to reverse the domain preparation step.
-
-<div>
 
 ## To use cmdlets to reverse domain preparation
 
@@ -47,18 +32,11 @@ Use the **Disable-CsAdDomain** cmdlet to reverse the domain preparation step.
     
     If the Force parameter is present, domain preparation is rolled back, even if one or more Front End Servers or A/V Conferencing Servers in the domain are activated. If the Force parameter is not present, domain preparation rollback is terminated if any Front End Servers or A/V Conferencing Servers in the domain are activated.
     
-    <div>
-    
 
     > [!NOTE]
     > The parameter GlobalSettingsDomainController allows you to indicate where global settings are stored. If your settings are stored in the System container (which is typical with upgrade deployments that have not had the global setting migrated to the Configuration container), you define a domain controller in the root of your Active Directory forest. If the global settings are in the Configuration container (which is typical with new deployments or upgrade deployments where the settings have been migrated to the Configuration container), you define any domain controller in the forest. If you do not specify this parameter, the cmdlet assumes that the settings are stored in the Configuration container and refers to any domain controller in AD&nbsp;DS.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -66,18 +44,5 @@ Use the **Disable-CsAdDomain** cmdlet to reverse the domain preparation step.
 [Running domain preparation for Lync Server 2013](lync-server-2013-running-domain-preparation.md)  
 
 
-[Preparing domains for Lync Server 2013](lync-server-2013-preparing-domains.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Preparing domains for Lync Server 2013](lync-server-2013-preparing-domains.md)
 

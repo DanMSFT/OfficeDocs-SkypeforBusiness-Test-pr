@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Preparing for Lync Server 2013 backup and restoration
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-17_
 
 The following topics describe the settings, configuration, and other data that you need to back up, in order to be able to restore servers and databases in the event of a failure or outage.
-
-<div>
 
 ## In This Section
 
@@ -41,16 +26,4 @@ The following topics describe the settings, configuration, and other data that y
   - [Developing a backup and restoration strategy and plan for Lync Server 2013](lync-server-2013-developing-a-backup-and-restoration-strategy-and-plan.md)
 
   - [Best practices for backup and restoration for Lync Server 2013](lync-server-2013-best-practices-for-backup-and-restoration.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

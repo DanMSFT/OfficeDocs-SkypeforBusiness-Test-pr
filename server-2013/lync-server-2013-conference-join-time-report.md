@@ -8,35 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Conference Join Time Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-04-23_
 
 The Conference Join Time Summary enables you to determine how long it takes your users to join a conference. The report shows the average join time (in milliseconds), and also provides a breakdown that lets you know how many users were able to join a conference in 2 seconds or less, how many users required between 2 and 5 seconds to join the conference, and so on.
-
-<div>
 
 ## Accessing the Conference Join Time Report
 
 The Conference Join Time Report is accessed from the Monitoring Reports home page.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -106,10 +87,6 @@ Filters provide a way for you to return a more finely-targeted set of data or to
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics
 
 The following table lists the information provided in the Conference Join Time Report.
@@ -154,7 +131,7 @@ The following table lists the information provided in the Conference Join Time R
 <tr class="odd">
 <td><p><strong>Sessions &lt; 2 seconds, Percentage</strong></p></td>
 <td><p>No</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Sessions 2-5 seconds, Volume</strong></p></td>
@@ -188,17 +165,4 @@ The following table lists the information provided in the Conference Join Time R
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

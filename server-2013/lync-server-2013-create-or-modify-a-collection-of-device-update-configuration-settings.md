@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a collection of Device Update configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Device update configuration settings can be created (at the site scope only) by using Windows PowerShell and the **New-CsDeviceUpdateConfiguration** cmdlet and modified by using the **Set-CsDeviceUpdateConfiguration** cmdlet. These cmdlets can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
@@ -36,12 +21,6 @@ Device update configuration settings can be created (at the site scope only) by 
 
 
 
-</div>
-
-<div>
-
-
-<div>
 
 ## To create device update configuration settings that use the default values
 
@@ -51,19 +30,11 @@ Device update configuration settings can be created (at the site scope only) by 
     
     Because no parameters other than the mandatory Identity parameter were specified in the preceding command, the new collection of configuration settings will use the default values for all its properties.
 
-</div>
-
-<div>
-
 ## To change a single property value when creating device update configuration settings
 
   - To create settings that use different property values, simply include the appropriate parameter and parameter value. For example, to create a collection of device update configuration settings that, by default, deletes old log files every 21 days, use a command like this one:
     
         New-CsDeviceUpdateConfiguration -Identity "site:Redmond" -LogCleanupInterval "21.00:00:00"
-
-</div>
-
-<div>
 
 ## To change multiple property values when creating device update configuration settings
 
@@ -71,19 +42,5 @@ Device update configuration settings can be created (at the site scope only) by 
     
         New-CsDeviceUpdateConfiguration -Identity "site:Redmond" -LogCleanupInterval "21.00:00:00" -LogFlushInterval "00:30:00"
 
-</div>
-
-For details about modifying existing device configuration settings, see the Help topic for the [Set-CsDeviceUpdateConfiguration](set-csdeviceupdateconfiguration.md) cmdlet. For details about creating collections of configuration settings, see the Help topic for the [New-CsDeviceUpdateConfiguration](new-csdeviceupdateconfiguration.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details about modifying existing device configuration settings, see the Help topic for the [Set-CsDeviceUpdateConfiguration](http://technet.microsoft.com/en-us/library/gg398320.aspx) cmdlet. For details about creating collections of configuration settings, see the Help topic for the [New-CsDeviceUpdateConfiguration](https://technet.microsoft.com/en-us/library/gg425761\(v=ocs.15\)) cmdlet.
 

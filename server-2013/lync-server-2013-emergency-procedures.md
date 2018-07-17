@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Emergency procedures in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-08-18_
 
 Emergency procedures are on-demand procedures that fall outside the standard procedures previously discussed and should be handled by the change management function (refer to the [MOF](http://go.microsoft.com/fwlink/p/?linkid=40939) for a description on the "change management" function). These procedures usually relate to one of the following:
 
@@ -36,23 +23,8 @@ Impact to the business should be evaluated to determine whether a temporary chan
 
 We recommend implementing emergency change procedures. For example, document how to deal with these types of procedures and help with reducing a state of confusion when an emergency change is presented.
 
-<div>
-
 ## See Also
 
 
-[Microsoft Operations Framework 4.0](http://go.microsoft.com/fwlink/p/?linkid=40939)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Microsoft Operations Framework 4.0](http://go.microsoft.com/fwlink/p/?linkid=40939)
 

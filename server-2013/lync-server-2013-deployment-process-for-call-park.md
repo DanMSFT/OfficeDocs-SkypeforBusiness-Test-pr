@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment process for Call Park in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-25_
 
 This section provides an overview of the steps involved in deploying the Call Park application. You must deploy Enterprise Edition or Standard Edition with Enterprise Voice before you configure Call Park. The components required by Call Park are installed and enabled when you deploy Enterprise Voice.
 
@@ -49,13 +36,12 @@ This section provides an overview of the steps involved in deploying the Call Pa
 <tr class="odd">
 <td><p>Configure the call park orbit ranges in the orbit table</p></td>
 <td><p>Use Lync Server Control Panel or the <strong>New-CSCallParkOrbit</strong> cmdlet to create the orbit ranges in the call park orbit table and associate them with the Application service that hosts the Call Park application.</p>
-<div>
 
 > [!NOTE]
 > For seamless integration with existing dial plans, orbit ranges are typically configured as a block of virtual extensions. Assigning Direct Inward Dialing (DID) numbers as orbit numbers in the call park orbit table is not supported.
 
 
-</div></td>
+</td>
 <td><p>RTCUniversalServerAdmins</p>
 <p>CsVoiceAdministrator</p>
 <p>CsServerAdministrator</p>
@@ -88,20 +74,17 @@ This section provides an overview of the steps involved in deploying the Call Pa
 <tr class="even">
 <td><p>Configure voice policy to enable Call Park for users</p></td>
 <td><p>Use Lync Server Control Panel or the <strong>Set-CSVoicePolicy</strong> cmdlet with the <strong>EnableCallPark</strong> option to enable Call Park for users in voice policy.</p>
-<div>
 
 > [!NOTE]
 > By default, Call Park is disabled for all users.
 
 
-</div>
-<div>
 
 > [!NOTE]
 > If you have multiple voice policies, make sure the EnableCallPark property is set for each voice policy, not just for the default policy.
 
 
-</div></td>
+</td>
 <td><p>RTCUniversalServerAdmins</p>
 <p>CsVoiceAdministrator</p>
 <p>CsUserAdministrator</p>
@@ -125,15 +108,4 @@ This section provides an overview of the steps involved in deploying the Call Pa
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

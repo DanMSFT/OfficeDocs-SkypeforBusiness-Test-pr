@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a conferencing device Contact object in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-02_
 
 To create a conferencing room object, first create an Active Directory user account to represent the device. Then, use the **Enable-CsMeetingRoom** cmdlet to enable that account to function as a conferencing device. If you need to change the properties of an existing conferencing device, use the **Set-CsMeetingRoom** cmdlet.
 
 These cmdlets can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
@@ -38,12 +23,6 @@ These cmdlets can be run either from the Lync Server 2013 Management Shell or fr
 
 
 
-</div>
-
-<div>
-
-
-<div>
 
 ## Creating a Conferencing Device
 
@@ -51,29 +30,11 @@ These cmdlets can be run either from the Lync Server 2013 Management Shell or fr
     
         Enable-CsMeetingRoom -Identity "Redmond Conferencing device" -RegistrarPool "atl-cs-001.litwareinc.com" -SipAddress "sip:RedmondMeetingRoom@litwareinc.com"
 
-</div>
-
-<div>
-
 ## Modifying a Conferencing Device
 
   - To modify the property values of an existing conferencing device, use the **Set-CsMeetingRoom** cmdlet. For example, the following command updates the phone number (LineUri) associated with a conferencing device:
     
         Set-CsMeetingRoom -Identity "Redmond Conferencing device" -LineUri "tel:+12065551219"
 
-</div>
-
-For details, see the Help topics for the [Enable-CsMeetingRoom](enable-csmeetingroom.md) cmdlet and the [Set-CsMeetingRoom](set-csmeetingroom.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see the Help topics for the [Enable-CsMeetingRoom](https://technet.microsoft.com/en-us/library/jj205062\(v=ocs.15\)) cmdlet and the [Set-CsMeetingRoom](https://technet.microsoft.com/en-us/library/jj204831\(v=ocs.15\)) cmdlet.
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of E9-1-1 in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-29_
 
 Microsoft Lync Server 2013 supports Enhanced 9-1-1 (E9-1-1) calling from Lync clients and Lync Phone Edition devices. When you configure Lync Server for E9-1-1, emergency calls placed from Lync 2013 or Lync Phone Edition include Emergency Response Location (ERL) information from the Location Information service database. ERLs consist of civic (that is, street) addresses and other information that helps to identify a more precise location in office buildings and other multitenant facilities. When a user makes an emergency call, Lync Server routes the call audio, along with the location and callback information, through a Mediation Server to an E9-1-1 service provider. The E9-1-1 service provider uses the civic address of the caller to route the call to the Public Safety Answering Point (PSAP) that serves the caller's location, and sends along an Emergency Service Query Key (ESQK) that the PSAP uses to look up the caller's ERL.
 
@@ -40,8 +27,6 @@ Unlike time division multiplexing (TDM) and IP-based private branch exchange (PB
 
 When you use an ELIN gateway, you also add ERLs to the Location Information service database, but you include also an ELIN number for each location. The ELIN number becomes the emergency calling number during the emergency call. You must then make sure that your PSTN carrier uploads the ELINs to the Automatic Location Identification (ALI) database.
 
-<div>
-
 
 > [!NOTE]
 > Lync-connected analog devices cannot receive location information from the Location Information service or transmit location to the E9-1-1 service provider. If you use the SIP trunk E9-1-1 service provider option and need to support E9-1-1 from analog phones, you have two options: 
@@ -53,8 +38,6 @@ When you use an ELIN gateway, you also add ERLs to the Location Information serv
 
 
 
-</div>
-
 From a Lync Server perspective, the E9-1-1 process can be separated into two stages:
 
   - Stage 1: Acquiring a location
@@ -65,8 +48,6 @@ This section describes how these stages work.
 
 If you plan to configure your infrastructure to automatically detect client location, first you need to decide which network elements you will use to map callers to locations. For details about the possible options, see [Defining the network elements used to determine location in Lync Server 2013](lync-server-2013-defining-the-network-elements-used-to-determine-location.md).
 
-<div>
-
 ## In This Section
 
   - [Acquiring a location in Lync Server 2013](lync-server-2013-acquiring-a-location.md)
@@ -74,16 +55,4 @@ If you plan to configure your infrastructure to automatically detect client loca
   - [Routing E9-1-1 calls by using a SIP trunk in Lync Server 2013](lync-server-2013-routing-e9-1-1-calls-by-using-a-sip-trunk.md)
 
   - [Routing E9-1-1 calls by using an ELIN gateway in Lync Server 2013](lync-server-2013-routing-e9-1-1-calls-by-using-an-elin-gateway.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

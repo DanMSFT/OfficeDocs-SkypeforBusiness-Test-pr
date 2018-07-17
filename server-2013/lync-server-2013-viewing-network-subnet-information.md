@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Viewing network subnet information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 You can use the following procedure to view a network subnet. From the Lync Server Control Panel, you can create, modify, or delete a network subnet. For details about creating or modifying network subnets, see [Create or modify network subnets in Lync Server 2013](lync-server-2013-create-or-modify-network-subnets.md).
-
-<div>
 
 ## To view a network subnet
 
@@ -40,26 +25,17 @@ You can use the following procedure to view a network subnet. From the Lync Serv
 
 4.  On the **Subnet** page, click the subnet that you want to view.
     
-    <div>
-    
 
     > [!NOTE]
     > You can only view one subnet at a time.
 
-    
-    </div>
+
 
 5.  On the **Edit** menu, click **Show details…**.
-
-</div>
-
-<div>
 
 ## Viewing Network Subnet Configuration Information by Using Windows PowerShell Cmdlets
 
 Network subnet information can be viewed by using Windows PowerShell and the Get-CsNetworkSubnet cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view network subnet information
 
@@ -75,30 +51,11 @@ Network subnet information can be viewed by using Windows PowerShell and the Get
         NetworkSiteID : Redmond
         SubnetID      : 172.11.15.0
 
-</div>
-
-For more information, see the help topic for the [Get-CsNetworkSubnet](get-csnetworksubnet.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Get-CsNetworkSubnet](https://technet.microsoft.com/en-us/library/gg412825\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
 [Create or modify network subnets in Lync Server 2013](lync-server-2013-create-or-modify-network-subnets.md)  
-[Deleting network subnets in Lync Server 2013](lync-server-2013-deleting-network-subnets.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deleting network subnets in Lync Server 2013](lync-server-2013-deleting-network-subnets.md)
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Security framework for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-08_
 
 This section provides an overview of the fundamental elements that form the security framework for Microsoft Lync Server 2013. Understanding how these elements work together is essential to making informed decisions about securing your particular Lync Server 2013 deployment.
 
@@ -44,8 +31,6 @@ These elements are as follows:
 
 These fundamental security elements work together to define trusted users, servers, connections, and operations to help ensure a secure foundation for Lync Server 2013.
 
-<div>
-
 ## In This Section
 
 The topics in this section describe how each of these fundamental elements works to enhance the security of your Lync Server infrastructure.
@@ -63,16 +48,4 @@ The topics in this section describe how each of these fundamental elements works
   - [User and client authentication for Lync Server 2013](lync-server-2013-user-and-client-authentication.md)
 
   - [Windows PowerShell and Lync Server 2013 management tools](lync-server-2013-windows-powershell-and-lync-server-management-tools.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

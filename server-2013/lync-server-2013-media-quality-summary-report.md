@@ -8,23 +8,10 @@ ms.date: 06/29/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Media Quality Summary Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-06-29_
 
 The Media Quality Summary Report is perhaps your best bet for analyzing call quality in your organization: this report provides detailed Quality of Experience (QoE) call metrics broken down into the following categories:
 
@@ -47,8 +34,6 @@ When you first open the report, you see summary information for each of these ca
 In Microsoft Lync Server 2013 the Media Quality Summary Report further breaks the data down into three call types: audio calls, video calls, and application sharing calls. Each call type has its own section in the report, and its own custom set of call metrics.
 
 The Media Quality Summary Report also allows you to apply filters that enable you to compare the call quality of wired calls vs. wireless calls, internal calls vs. external calls, and VPN calls vs. non-VPN calls.
-
-<div>
 
 ## Accessing the Media Quality Summary Report
 
@@ -73,10 +58,6 @@ In addition, you can access the Media Quality Metrics Distribution Report by cli
   - Healer stretched ratio
 
   - Healer compressed ratio
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -148,10 +129,6 @@ The following table lists the filters that you can use with the Media Quality Su
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics
 
@@ -345,7 +322,7 @@ The following table lists the information provided in the Media Quality Summary 
 </tr>
 <tr class="even">
 <td><p><strong>Client health %</strong></p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Indicates the relative health of the client device during the call.</p></td>
 </tr>
 </tbody>
@@ -429,17 +406,4 @@ The following table lists the information provided in the Media Quality Summary 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create bandwidth policy profiles in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 *Bandwidth policies* define limitations on bandwidth usage for real-time audio and video modalities. Bandwidth policies are applied to *bandwidth policy profiles*, which can be applied to multiple network sites for call admission control.
 
@@ -32,13 +19,13 @@ For guidelines about what bandwidth limits you should set in your CAC deployment
 
 For details about working with bandwidth policies and policy profiles, see the Lync Server Management Shell documentation for the following cmdlets:
 
-  - [New-CsNetworkBandwidthPolicyProfile](new-csnetworkbandwidthpolicyprofile.md)
+  - [New-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg398675\(v=ocs.15\))
 
-  - [Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md)
+  - [Get-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg425815\(v=ocs.15\))
 
-  - [Set-CsNetworkBandwidthPolicyProfile](set-csnetworkbandwidthpolicyprofile.md)
+  - [Set-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg398338\(v=ocs.15\))
 
-  - [Remove-CsNetworkBandwidthPolicyProfile](remove-csnetworkbandwidthpolicyprofile.md)
+  - [Remove-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg398609\(v=ocs.15\))
 
 The example policies created in the following procedure set limits for overall audio traffic, individual audio sessions, overall video traffic, and individual video sessions. For example, the 5Mb\_Link bandwidth policy profile sets the following limits:
 
@@ -50,17 +37,11 @@ The example policies created in the following procedure set limits for overall a
 
   - Video Session Limit: 700 kbps
 
-<div class=" ">
-
 
 > [!NOTE]
 > The minimum Audio Session Limit value is 40 kbps. The minimum Video Session Limit value is 100 kbps.
 
 
-
-</div>
-
-<div>
 
 ## To create bandwidth policy profiles by using Management Shell
 
@@ -68,25 +49,13 @@ The example policies created in the following procedure set limits for overall a
 
 2.  For each bandwidth policy profile that you want to create, run the New-CsNetworkBandwidthPolicyProfile cmdlet. For example, run:
     
-       ```
         New-CsNetworkBandwidthPolicyProfile -Identity 5Mb_Link -Description "BW profile for 5Mb links" -AudioBWLimit 2000 -AudioBWSessionLimit 200 -VideoBWLimit 1400  -VideoBWSessionLimit 700
-       ```
     
-       ```
         New-CsNetworkBandwidthPolicyProfile -Identity 10Mb_Link -Description "BW profile for 10Mb links" -AudioBWLimit 4000 -AudioBWSessionLimit 200 -VideoBWLimit 2800 -VideoBWSessionLimit 700
-       ```
     
-       ```
         New-CsNetworkBandwidthPolicyProfile -Identity 50Mb_Link -Description "BW profile for 50Mb links" -AudioBWLimit 20000 -AudioBWSessionLimit 200 -VideoBWLimit 14000 -VideoBWSessionLimit 700
-       ```
     
-       ```
         New-CsNetworkBandwidthPolicyProfile -Identity 25Mb_Link -Description "BW profile for 25Mb links" -AudioBWLimit 10000 -AudioBWSessionLimit 200 -VideoBWLimit 7000 -VideoBWSessionLimit 700
-       ```
-
-</div>
-
-<div>
 
 ## To create bandwidth policy profiles by using Lync Server Control Panel
 
@@ -113,16 +82,4 @@ The example policies created in the following procedure set limits for overall a
 11. Click **Commit**.
 
 12. To finish creating bandwidth policy profiles for your topology, repeat steps 4 through 11 with settings for other bandwidth policy profiles.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

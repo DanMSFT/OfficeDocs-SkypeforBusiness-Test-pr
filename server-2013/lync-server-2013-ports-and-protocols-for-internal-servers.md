@@ -8,27 +8,12 @@ ms.date: 04/06/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Ports and protocols for internal servers in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-04-06_
 
 This section summarizes the ports and protocols used by servers, load balancers, and clients in a Lync Server deployment.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -36,21 +21,13 @@ This section summarizes the ports and protocols used by servers, load balancers,
 
 
 
-</div>
-
-<div>
-
 ## Port and Protocol Details
-
-<div>
 
 
 > [!NOTE]
 > Windows Firewall must be running before you start the Lync Server services on a server, because that is when Lync Server opens the required ports in the firewall.
 
 
-
-</div>
 
 For details about firewall configuration for edge components, see [Determine external A/V firewall and port requirements for Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md).
 
@@ -181,14 +158,14 @@ The following table lists the ports that need to be open on each internal server
 <td><p>Web server component</p></td>
 <td><p>8060</p></td>
 <td><p>TCP (MTLS)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Front End Servers</p></td>
 <td><p>Web server component</p></td>
 <td><p>8061</p></td>
 <td><p>TCP (MTLS)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Front End Servers</p></td>
@@ -209,7 +186,7 @@ The following table lists the ports that need to be open on each internal server
 <td><p>Mobility Services component</p></td>
 <td><p>443</p></td>
 <td><p>HTTPS</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Front End Servers</p></td>
@@ -247,15 +224,19 @@ The following table lists the ports that need to be open on each internal server
 <td><p>Used for incoming SIP requests from the PSTN gateway to the Mediation Server.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Front End Servers that also run a Collocated Mediation Server</p></td>
-<td><p>Lync Server Mediation service</p></td>
+<td><p>Front End Servers that also run a Collocated Mediation Server</p>
+<p></p></td>
+<td><p>Lync Server Mediation service</p>
+<p></p></td>
 <td><p>5081</p></td>
 <td><p>TCP</p></td>
 <td><p>Used for outgoing SIP requests from the Mediation Server to the PSTN gateway.</p></td>
 </tr>
 <tr class="even">
-<td><p>Front End Servers that also run a Collocated Mediation Server</p></td>
-<td><p>Lync Server Mediation service</p></td>
+<td><p>Front End Servers that also run a Collocated Mediation Server</p>
+<p></p></td>
+<td><p>Lync Server Mediation service</p>
+<p></p></td>
 <td><p>5082</p></td>
 <td><p>TCP (TLS)</p></td>
 <td><p>Used for outgoing SIP requests from the Mediation Server to the PSTN gateway.</p></td>
@@ -353,9 +334,9 @@ The following table lists the ports that need to be open on each internal server
 </tr>
 <tr class="even">
 <td><p>Office Web Apps Servers</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>443</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Used by Lync Server 2013 to connect to Office Web Apps Server.</p></td>
 </tr>
 <tr class="odd">
@@ -427,35 +408,31 @@ The following table lists the ports that need to be open on each internal server
 <td><p>Persistent Chat SIP</p></td>
 <td><p>5041</p></td>
 <td><p>TCP (MTLS)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Persistent Chat Front End Server</p></td>
 <td><p>Persistent Chat Windows Communication Foundation (WCF)</p></td>
 <td><p>881</p></td>
 <td><p>TCP (TLS) and TCP (MTLS)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Persistent Chat Front End Server</p></td>
 <td><p>Persistent Chat File Transfer Service</p></td>
 <td><p>443</p></td>
 <td><p>TCP (TLS)</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 
-
-<div>
 
 
 > [!NOTE]
 > Some remote call control scenarios require a TCP connection between the Front End Server or Director and the PBX. Although Lync Server no longer uses TCP port 5060, during remote call control deployment you create a trusted server configuration, which associates the RCC Line Server FQDN with the TCP port that the Front End Server or Director will use to connect to the PBX system. For details, see the <STRONG>CsTrustedApplicationComputer</STRONG> cmdlet in the Lync Server Management Shell documentation.
 
 
-
-</div>
 
 For your pools that use only hardware load balancing (not DNS load balancing), the following table shows the ports that need to open the hardware load balancers.
 
@@ -516,42 +493,50 @@ For your pools that use only hardware load balancing (not DNS load balancing), t
 <td><p>TCP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Front End Server load balancer</p></td>
+<td><p>Front End Server load balancer</p>
+<p></p></td>
 <td><p>5073</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Front End Server load balancer</p></td>
+<td><p>Front End Server load balancer</p>
+<p></p></td>
 <td><p>5075</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Front End Server load balancer</p></td>
+<td><p>Front End Server load balancer</p>
+<p></p></td>
 <td><p>5076</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Front End Server load balancer</p></td>
+<td><p>Front End Server load balancer</p>
+<p></p></td>
 <td><p>5071</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Front End Server load balancer</p></td>
+<td><p>Front End Server load balancer</p>
+<p></p></td>
 <td><p>5080</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Front End Server load balancer</p></td>
+<td><p>Front End Server load balancer</p>
+<p></p></td>
 <td><p>448</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Mediation Server load balancer</p></td>
+<td><p>Mediation Server load balancer</p>
+<p></p></td>
 <td><p>5070</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Front End Server load balancer (if the pool also runs Mediation Server)</p></td>
+<td><p>Front End Server load balancer (if the pool also runs Mediation Server)</p>
+<p></p></td>
 <td><p>5070</p></td>
 <td><p>TCP</p></td>
 </tr>
@@ -566,7 +551,8 @@ For your pools that use only hardware load balancing (not DNS load balancing), t
 <td><p>HTTPS</p></td>
 </tr>
 <tr class="odd">
-<td><p>Director load balancer</p></td>
+<td><p>Director load balancer</p>
+<p></p></td>
 <td><p>5061</p></td>
 <td><p>TCP</p></td>
 </tr>
@@ -661,7 +647,8 @@ Your Front End pools and Director pools that use DNS load balancing also must ha
 <td><p>Used by Lync Server to find the Registrar FQDN (that is, if DNS SRV fails and manual settings are not configured).</p></td>
 </tr>
 <tr class="even">
-<td><p>Clients</p></td>
+<td><p>Clients</p>
+<p></p></td>
 <td><p>443</p></td>
 <td><p>TCP (TLS)</p></td>
 <td><p>Used for client-to-server SIP traffic for external user access.</p></td>
@@ -705,7 +692,8 @@ Your Front End pools and Director pools that use DNS load balancing also must ha
 <tr class="odd">
 <td><p>Clients</p></td>
 <td><p>1024-65535 *</p></td>
-<td><p>TCP/UDP</p></td>
+<td><p>TCP/UDP</p>
+<p></p></td>
 <td><p>Video port range (minimum of 20 ports required).</p></td>
 </tr>
 <tr class="even">
@@ -739,35 +727,14 @@ Your Front End pools and Director pools that use DNS load balancing also must ha
 
 **\*** To configure specific ports for these media types, use the CsConferencingConfiguration cmdlet (ClientMediaPortRangeEnabled, ClientMediaPort, and ClientMediaPortRange parameters).
 
-<div>
-
 
 > [!NOTE]
 > The set programs for Lync clients automatically create the required operating-system firewall exceptions on the client computer.
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > The ports that are used for external user access are required for any scenario in which the client must traverse the organization’s firewall (for example, any external communications or meetings hosted by other organizations).
 
-
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Change simple URLs after migration
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-22_
 
 Lync Server supports three simple URLs:
 
@@ -35,8 +22,6 @@ Lync Server supports three simple URLs:
   - **Admin** enables quick access to the Lync Server Control Panel. The Admin simple URL is internal to your organization.
 
 After migrating to Lync Server 2013, you must be aware of how the change impacts your DNS records and certificates for simple URLs. If the legacy Lync Server 2010 Director remains in use in the topology, no changes to your simple URLs are required. If the Lync Server 2010 Director is removed from the topology after migration, the simple URL DNS records must be updated to point to one of the Lync Server 2013 pools. Whenever you change a simple URL name, however, you must run Enable-CsComputer on each Director and Front End Server to register the change.
-
-<div>
 
 ## Changing Simple URLs after Migration
 
@@ -54,34 +39,14 @@ After migrating to Lync Server 2013, you must be aware of how the change impacts
 
 2.  Select **Simple URLs** in the left pane, then below **Administrative access URL** box, enter the simple URL you want for administrative access to Lync Server 2013 Control Panel, and then click **OK**.
     
-    <div>
-    
 
     > [!TIP]
     > We recommend using the simplest possible URL for the Admin URL. The simplest option is <STRONG>https://admin.</STRONG>&lt;domain&gt;.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
 
-[Planning for simple URLs in Lync Server 2013](lync-server-2013-planning-for-simple-urls.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for simple URLs in Lync Server 2013](lync-server-2013-planning-for-simple-urls.md)
 

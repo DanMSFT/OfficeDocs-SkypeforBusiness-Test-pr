@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Define a Mediation Server in Topology Builder in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-25_
 
 Follow the steps in this topic to use Topology Builder to define a stand-alone Mediation Server or a pool collocated with a Front End pool at a site for which you did not previously deploy Enterprise Voice.
 
 You can define a topology using an account that is a member of the Administrators group.
 
-<div>
-
 ## Define Mediation Server collocated to a Front End pool
 
 Follow the steps in this topic to use Topology Builder to define a Mediation Server collocated to a Front End pool in a site where Enterprise Voice has not been previously deployed.
-
-<div>
 
 ## To Add a Mediation Server to a Front End pool
 
@@ -50,8 +33,6 @@ Follow the steps in this topic to use Topology Builder to define a Mediation Ser
 
 5.  In **Select collocated server roles**, check the option **Collocate Mediation Server**.
     
-    <div>
-    
 
     > [!NOTE]
     > <UL>
@@ -62,29 +43,19 @@ Follow the steps in this topic to use Topology Builder to define a Mediation Ser
     > <LI>
     > <P>The <STRONG>Edge pool</STRONG> used by the Mediation Server will be the same Edge pool associated with the Front End pool where the Mediation Server is collocated on.</P></LI></UL>
 
-    
-    </div>
+
 
 6.  Click **Make Default** to use this Front End pool to route calls from Microsoft Office Communications Server 2007 R2 to the PSTN.
 
 7.  Click **Finish** when you are finished associating one or more peers to the Front End pool.
     
-    <div>
-    
 
     > [!NOTE]
     > Before you proceed to the next step in the Enterprise Voice deployment process, make sure that the Mediation Server pool (i.e. Front End pool with the Mediation Server component collocated) is using the FQDNs that you specified.
 
-    
-    </div>
+
 
 8.  Next, follow the procedures in [Publish the topology in Lync Server 2013](lync-server-2013-publish-the-topology.md) in the Deployment Guide documentation to add the Mediation Server to your topology before proceeding to the next step of modifying the listening ports of the Mediation Server if needed. You must publish your topology each time you use Topology Builder to define or modify your topology.
-
-</div>
-
-</div>
-
-<div>
 
 ## Define stand-alone Mediation Server
 
@@ -92,17 +63,11 @@ Follow the steps in this topic to use Topology Builder to define a stand-alone M
 
 If you already deployed Mediation Servers collocated to Front End pools at this site, you can skip this section and [Install the files for Mediation Server in Lync Server 2013](lync-server-2013-install-the-files-for-mediation-server.md) before proceeding to [Configuring trunks in Lync Server 2013](lync-server-2013-configuring-trunks.md).
 
-<div>
-
 
 > [!NOTE]
 > This section assumes that you have already setup at least one Front End pool, as described in <A href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">Define and configure a Front End pool or Standard Edition server in Lync Server 2013</A> and <A href="lync-server-2013-publish-the-topology.md">Publish the topology in Lync Server 2013</A> in the Deployment Guide documentation.
 
 
-
-</div>
-
-<div>
 
 ## To Add a Mediation Server
 
@@ -118,14 +83,10 @@ If you already deployed Mediation Servers collocated to Front End pools at this 
     
       - If you want to deploy multiple Mediation Servers in the pool to provide high availability, then select **Multiple computer pool**.
         
-        <div>
-        
 
         > [!NOTE]
         > You must deploy DNS load balancing to support Mediation Server pools that have multiple Mediation Servers. For details, see the Using DNS Load Balancing on Mediation Server Pools section of <A href="lync-server-2013-dns-load-balancing.md">DNS load balancing in Lync Server 2013</A> in the Planning documentation.
 
-        
-        </div>
     
       - If you want to deploy only one Mediation Server in the pool because you do not require high availability, then select **Single computer pool**. Skip the following step.
 
@@ -141,17 +102,9 @@ If you already deployed Mediation Servers collocated to Front End pools at this 
 
 9.  Next, follow the procedures in [Publish the topology in Lync Server 2013](lync-server-2013-publish-the-topology.md) in the Deployment documentation to add the Mediation Server to the topology. You must publish your topology each time you use Topology Builder to build or modify your topology so that the data can be used to install the files for servers that are running Lync Server. Then continue to the next steps to modify the listening ports on the Mediation Server, if necessary.
 
-</div>
-
-</div>
-
-<div>
-
 ## Define the Mediation Server Listening Ports
 
 Follow the steps in this topic to use Topology Builder to define the listening ports a Mediation Server or pool will accept incoming connections from a gateway peer.
-
-<div>
 
 ## To Modify the Mediation Server Listening Ports
 
@@ -163,28 +116,11 @@ Follow the steps in this topic to use Topology Builder to define the listening p
 
 4.  Specify the desired TLS or TCP listening port range the Mediation Server will accept incoming connections from PSTN gateways.
     
-    <div>
-    
 
     > [!NOTE]
     > Entering a TCP port range is not required if <STRONG>Enable TCP port</STRONG> is not checked. This setting is optional.
 
-    
-    </div>
+
 
 Next, [Define a gateway in Topology Builder in Lync Server 2013](lync-server-2013-define-a-gateway-in-topology-builder.md) and install the files on each Mediation Server in the pool by following the procedures in [Install the files for Mediation Server in Lync Server 2013](lync-server-2013-install-the-files-for-mediation-server.md).
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

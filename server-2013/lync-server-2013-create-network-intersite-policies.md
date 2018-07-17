@@ -8,37 +8,22 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create network intersite policies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 A *network intersite policy* defines bandwidth limitations between sites that have direct WAN links between them.
 
 For details, see the Lync Server Management Shell documentation for the following cmdlets:
 
-  - [New-CsNetworkInterSitePolicy](new-csnetworkintersitepolicy.md)
+  - [New-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398994\(v=ocs.15\))
 
-  - [Get-CsNetworkInterSitePolicy](get-csnetworkintersitepolicy.md)
+  - [Get-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg412769\(v=ocs.15\))
 
-  - [Set-CsNetworkInterSitePolicy](set-csnetworkintersitepolicy.md)
+  - [Set-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398772\(v=ocs.15\))
 
-  - [Remove-CsNetworkInterSitePolicy](remove-csnetworkintersitepolicy.md)
-
-<div>
+  - [Remove-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398963\(v=ocs.15\))
 
 
 > [!IMPORTANT]
@@ -46,11 +31,7 @@ For details, see the Lync Server Management Shell documentation for the followin
 
 
 
-</div>
-
 In the example topology North America region, there is a direct link between the Reno and Albuquerque sites. These two sites require an intersite policy that applies an appropriate bandwidth policy profile. The following example applies the 20Mb\_Link profile.
-
-<div>
 
 ## To create a network intersite policy
 
@@ -61,16 +42,4 @@ In the example topology North America region, there is a direct link between the
         New-CsNetworkInterSitePolicy -InterNetworkSitePolicyID Reno_Albuquerque -NetworkSiteID1 Reno -NetworkSiteID2 Albuquerque -BWPolicyProfileID 20Mb_Link
 
 3.  Repeat step 2 as needed to create network intersite policies for all network sites pairs that have a direct cross link.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,33 +8,16 @@ ms.date: 07/28/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Troubleshooting Lync Server 2013 Control Panel
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-07-28_
 
 This topic provides information and procedures that can help you troubleshoot access to Lync Server 2013 Control Panel.
-
-<div>
 
 ## Internet Browser Requirements
 
 Lync Server Control Panel requires that Microsoft Silverlight browser plug-in version 4.0.50524.0 or latest version is installed. If Silverlight is not installed or if an earlier version is installed, follow the instructions in the message to install the required version.
-
-<div>
 
 
 > [!NOTE]
@@ -42,15 +25,9 @@ Lync Server Control Panel requires that Microsoft Silverlight browser plug-in ve
 
 
 
-</div>
-
 If your Internet browser blocks installation of Silverlight due to security considerations, add the Uniform Resource Locator (URL) that opens Lync Server Control Panel to the list of trusted sites. In Internet Explorer security settings, ensure that **Run ActiveX controls and plug-ins** is set to **Enabled**. For details, see [http://go.microsoft.com/fwlink/p/?linkId=214060](http://go.microsoft.com/fwlink/p/?linkid=214060). Furthermore, ensure that the browser is configured to use SSL 3.0.
 
 If the Internet browser is configured to use a proxy server, verify that the browser is configured to bypass the proxy server for sites that are automatically detected as internal sites. Or, add the address to the browser's exception list in the proxy server configuration settings.
-
-</div>
-
-<div>
 
 ## DNS Record and Certificate Requirements for the Administrative Access URL
 
@@ -64,15 +41,9 @@ If you configured a simple URL to access Lync Server Control Panel, ensure that 
 
 For step-by-step procedures to configure the administrative access URL, see [Edit or configure simple URLs in Lync Server 2013](lync-server-2013-edit-or-configure-simple-urls.md) in the Deployment documentation.
 
-</div>
-
-<div>
-
 ## Internet Information Services (IIS) Requirements
 
 Lync Server Control Panel is one of the components of Lync Server 2013 that requires Internet Information Services (IIS). In particular, ensure that HTTP redirection and Windows authentication features are enabled, and that the World Wide Web Publishing Service (W3SVC) is running.
-
-<div>
 
 ## World Wide Publishing Service (Windows Service) Dependency
 
@@ -86,19 +57,9 @@ When the World Wide Web Publishing Service is stopped, you cannot access Lync Se
 
 3.  Right-click **World Wide Web Publishing Service**, and then click **Start**.
 
-</div>
-
-<div>
-
 ## Application Pool Mode
 
 Configure IIS so that the CsManagementAppPool application pool uses the Network Service account as its process model identity.
-
-</div>
-
-</div>
-
-<div>
 
 ## User Rights and Permissions
 
@@ -106,25 +67,8 @@ You must sign in to Lync Server Control Panel either by using a domain account t
 
 If you use a simple URL to access Lync Server Control Panel, ensure that web servers are added to the RTCUniversalServerAdmins and RTCUniversalUserAdmins groups.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Lync Server 2013 administrative tools](lync-server-2013-lync-server-administrative-tools.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Lync Server 2013 administrative tools](lync-server-2013-lync-server-administrative-tools.md)
 

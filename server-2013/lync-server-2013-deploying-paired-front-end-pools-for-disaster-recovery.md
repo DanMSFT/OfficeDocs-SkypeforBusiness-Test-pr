@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying paired Front End pools for disaster recovery in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 You can easily deploy the disaster recovery topology of paired Front End pools using Topology Builder.
-
-<div>
 
 ## To deploy a pair of Front End pools
 
@@ -64,43 +49,18 @@ You can easily deploy the disaster recovery topology of paired Front End pools u
 
 10. Force the user and conference data of both pools to be synchronized with each other, with the following cmdlets:
     
-       ```
         Invoke-CsBackupServiceSync -PoolFqdn <Pool1 FQDN>
-       ```
     
-       ```
         Invoke-CsBackupServiceSync -PoolFqdn <Pool2 FQDN>
-       ```
     
     Synchronizing the data may take some time. You can use the following cmdlets to check the status. Make sure that the status in both directions is in steady state.
     
-       ```
         Get-CsBackupServiceStatus -PoolFqdn <Pool1 FQDN>
-       ```
     
-       ```
         Get-CsBackupServiceStatus -PoolFqdn <Pool2 FQDN>
-       ```
-
-<div class="">
 
 
 > [!NOTE]
 > The <STRONG>Automatic failover and failback for Voice</STRONG> option and the associated time intervals in Topology Builder apply only to the voice resiliency features that were introduced in Lync Server 2010. Selecting this option does not imply that the pool failover discussed in this document is automatic. Pool failover and failback always require an administrator to manually invoke the failover and failback cmdlets, respectively.
 
-
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

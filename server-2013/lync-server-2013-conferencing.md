@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-11_
 
 With unified conferencing in Lync Server 2013, users can collaborate, share information, and coordinate their efforts in real time. All your users can use the full breadth of spontaneous collaboration, scheduled meetings, and meeting tools. Voice and video conferencing capabilities can be used from any location with an Internet connection, and users away from a computer can participate in audio conferences by dialing in with a public switched telephone network (PSTN) phone.
 
 Meeting tools integrated into Outlook enable organizers to schedule a meeting or start an impromptu conference with a single click, and also make it just as easy for attendees to join. A web client extends rich conference features to participants who are not running the desktop version of Lync.
-
-<div>
 
 ## Audio and Video Conferencing
 
@@ -48,10 +33,6 @@ High-definition video (resolution 1270 x 720; aspect ratio 16:9) and VGA video (
 
 IT administrators can set policies to restrict or disable high-definition or VGA video on clients, depending on computer capability, network bandwidth, and the presence of a camera able to deliver the required resolution. These policies are enforced through in-band provisioning.
 
-</div>
-
-<div>
-
 ## Web conferencing
 
 Lync Server integrates conferencing sharing features such as desktop, application, attachment, whiteboard, poll and PowerPoint into the streamlined Lync. Combined with audio or video conferencing, the result is a highly immersive and collaborative session that is simple to facilitate.
@@ -62,23 +43,7 @@ Desktop sharing enables presenters to broadcast any visuals, applications, webpa
 
 Application sharing enables presenters to share control of software on their desktops without losing sight of participant feedback or text questions. Presenters can also delegate control of the application to meeting participants.
 
-</div>
-
-<div>
-
 ## Dial-in Conferencing
 
 For users that are not using a personal computer, there are several methods available for joining a Lync Server conference call. A PSTN user can dial an access number, access the meeting bridge, and then enter the meeting ID. For more secure meetings, the user can also be required to enter his or her PIN to authenticate against Active Directory. Lync Server also supports Lync Phone Edition devices, which are stand-alone IP phone devices provided by Microsoft partners.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

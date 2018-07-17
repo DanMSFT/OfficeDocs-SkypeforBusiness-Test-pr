@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Internet Information Services (IIS) requirements in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-19_
 
 Several Lync Server 2013 components require Internet Information Services (IIS). This topic describes the specific IIS features required to support Lync Server. The topics in this section describe the requirements of specific components for IIS.
 
@@ -91,8 +78,6 @@ When the Web Server (IIS) role is enabled on Windows Server 2008, various role s
 </table>
 
 
-<div>
-
 <table>
 <thead>
 <tr class="header">
@@ -107,23 +92,7 @@ When the Web Server (IIS) role is enabled on Windows Server 2008, various role s
 </table>
 
 
-</div>
-
-<div>
-
 ## In This Section
 
   - [IIS requirements for Front End pools and Standard Edition servers in Lync Server 2013](lync-server-2013-iis-requirements-for-front-end-pools-and-standard-edition-servers.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

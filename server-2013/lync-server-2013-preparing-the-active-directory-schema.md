@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Preparing the Active Directory schema in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-08-27_
 
 Before you begin preparing Active Directory Domain Services, you can open the schema files by using a text editor, such as Windows Notepad, or see [Active Directory schema extensions, classes, and attributes used by Lync Server 2013](lync-server-2013-active-directory-schema-extensions-classes-and-attributes-used-by-lync-server.md) to review all the Active Directory Domain Services schema extensions that will be modified for Lync Server 2013. Lync Server uses four schema files:
 
@@ -40,17 +27,11 @@ All .ldf files are installed during schema preparation, regardless of whether yo
 
 The Lync Server schema extensions are replicated across all domains, which impacts network traffic. Run schema preparation at a time when network usage is low.
 
-<div>
-
 
 > [!NOTE]
 > If you need to add support for Microsoft® Office Communicator Mobile 2007 R2 for Java and Microsoft® Office Communicator Mobile for Nokia 1.0 mobile clients to your Lync Server 2013 deployment, you need to prepare the Active Directory schema for Microsoft Office Communications Server 2007 R2 during installation of Lync Server 2013. For the necessary software and documentation, see <A href="http://go.microsoft.com/fwlink/p/?linkid=207172">http://go.microsoft.com/fwlink/p/?linkId=207172</A>.
 
 
-
-</div>
-
-<div>
 
 ## ADSI Edit
 
@@ -60,36 +41,15 @@ ADSI Edit is installed by default when you install the AD DS role to make a ser
 
 For Windows Server 2003, ADSI Edit is included with the Support Tools. The Support Tools are available from the Windows Server 2003 CD in the \\SUPPORT\\TOOLS folder, or you can download them from “Windows Server 2003 Service Pack 2 32-bit Support Tools” at [http://go.microsoft.com/fwlink/p/?linkId=125770](http://go.microsoft.com/fwlink/p/?linkid=125770). Instructions for installing the Support Tools from the product CD are available from “Install Windows Support Tools” at [http://go.microsoft.com/fwlink/p/?linkId=125771](http://go.microsoft.com/fwlink/p/?linkid=125771). Adsiedit.dll is automatically registered when you install the support tools. If, however, you copied the files to your computer, you must run the **regsvr32** command to register the adsiedit.dll file before you can run the tool.
 
-</div>
-
-<div>
-
 ## In This Section
 
   - [Running Active Directory schema preparation in Lync Server 2013](lync-server-2013-running-schema-preparation.md)
 
   - [Verifying Active Directory schema replication in Lync Server 2013](lync-server-2013-verifying-schema-replication.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Preparing the forest for Lync Server 2013](lync-server-2013-preparing-the-forest.md)  
-[Preparing domains for Lync Server 2013](lync-server-2013-preparing-domains.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Preparing domains for Lync Server 2013](lync-server-2013-preparing-domains.md)
 

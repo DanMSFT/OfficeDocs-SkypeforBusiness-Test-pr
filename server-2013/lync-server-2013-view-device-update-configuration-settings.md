@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View Device Update configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-20_
 
 You can view the Device Update Service configuration settings by using Lync Server Management Shell and the **Get-CsDeviceUpdateConfiguration** cmdlet, which you can run from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell
-
-<div>
 
 
 > [!NOTE]
@@ -36,15 +21,11 @@ You can view the Device Update Service configuration settings by using Lync Serv
 
 
 
-</div>
-
-<div>
 
 
-<div>
-
-
-  - To view information about all your voice routes, type the following command in the Lync Server Management Shell and press Enter:
+  - 
+    
+    To view information about all your voice routes, type the following command in the Lync Server Management Shell and press Enter:
     
         Get-CsDeviceUpdateConfiguration
     
@@ -59,19 +40,5 @@ You can view the Device Update Service configuration settings by using Lync Serv
         LogFlushInterval       : 00:05:00
         LogCleanUpTimeOfDay    :
 
-</div>
-
-For details about this cmdlet, see Help topic at [Get-CsDeviceUpdateConfiguration](get-csdeviceupdateconfiguration.md).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details about this cmdlet, see Help topic at [Get-CsDeviceUpdateConfiguration](http://technet.microsoft.com/en-us/library/gg399030\(v=ocs.14\).aspx).
 

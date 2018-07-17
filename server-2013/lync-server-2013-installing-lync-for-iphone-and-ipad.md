@@ -8,37 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing Lync for iPhone and iPad in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-03-10_
 
 Lync 2013 for iPhone and Lync 2013 for iPad are user-installable applications that are available in the Apple App Store.
-
-<div>
 
 ## Installing Lync for iPhone and Lync for iPad
 
 You can instruct your users to install Lync 2013 for iPhone and Lync 2013 for iPad by directing them to the App Store from their devices. The App Store for each device is also available online.
 
-  - Lync for iPhone is available in the App Store at \< h<span></span>ttp://www.apple.com/iphone/from-the-app-store/>
+  - Lync for iPhone is available in the App Store at \< http://www.apple.com/iphone/from-the-app-store/\>
 
-  - Lync for iPad is available in the App Store at \< ht<span></span>tp://www.apple.com/ipad/from-the-app-store/>
-
-<div>
+  - Lync for iPad is available in the App Store at \< http://www.apple.com/ipad/from-the-app-store/\>
 
 
 > [!IMPORTANT]
@@ -50,12 +33,6 @@ You can instruct your users to install Lync 2013 for iPhone and Lync 2013 for iP
 > <P>Manually open the App Store, search for "Lync 2013," and download the app.</P></LI></UL>
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Verifying Mobile Client Installation
 
@@ -96,16 +73,4 @@ After you configure the client and sign in successfully, use the following tests
 4.  Send an IM from user B to user A.
 
 5.  Verify that the IM notification appears on user A’s mobile device.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

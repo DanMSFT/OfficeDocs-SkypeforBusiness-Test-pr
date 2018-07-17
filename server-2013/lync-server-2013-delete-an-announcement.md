@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete an announcement in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Use the following procedure to delete an announcement that is used for calls to unassigned numbers.
-
-<div>
 
 ## To delete an announcement
 
@@ -48,18 +33,11 @@ Use the following procedure to delete an announcement that is used for calls to 
     
         Remove-CsAnnouncement -Identity "ApplicationServer:Redmond.contoso.com/1951f734-c80f-4fb2-965d-51807c792b90"
     
-    <div>
-    
 
     > [!NOTE]
-    > For details about more options, see <A href="get-csannouncement.md">Get-CsAnnouncement</A> and <A href="remove-csannouncement.md">Remove-CsAnnouncement</A>.
+    > For details about more options, see <A href="https://technet.microsoft.com/en-us/library/gg398937(v=ocs.15)">Get-CsAnnouncement</A> and <A href="https://technet.microsoft.com/en-us/library/gg412766(v=ocs.15)">Remove-CsAnnouncement</A>.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -67,19 +45,6 @@ Use the following procedure to delete an announcement that is used for calls to 
 [Create an announcement in Lync Server 2013](lync-server-2013-create-an-announcement.md)  
 
 
-[Remove-CsAnnouncement](remove-csannouncement.md)  
-[Get-CsAnnouncement](get-csannouncement.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Remove-CsAnnouncement](https://technet.microsoft.com/en-us/library/gg412766\(v=ocs.15\))  
+[Get-CsAnnouncement](https://technet.microsoft.com/en-us/library/gg398937\(v=ocs.15\))
 

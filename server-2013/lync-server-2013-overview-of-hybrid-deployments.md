@@ -8,23 +8,10 @@ ms.date: 05/25/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of Lync Server 2013 hybrid deployments
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-05-25_
 
 A Lync Server hybrid deployment is a deployment where users of a domain, such as contoso.com, are split between using Lync Server on-premises and Microsoft Lync Online. Some of the domain users are homed on the on-premises Lync Server, and some users are homed in Skype for Business Online.
 
@@ -39,14 +26,4 @@ For information about configuring your on-premises Lync Server deployment for hy
   - [Configuring Lync Server 2013 hybrid deployments](lync-server-2013-configuring-hybrid-deployments.md)
 
 For more information about Skype for Business Online, see [Lync Online](http://go.microsoft.com/fwlink/p/?linkid=282396).
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

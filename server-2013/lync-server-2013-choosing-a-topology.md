@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Choosing a topology in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 When you choose a topology, you can use one the following supported topology options:
-
-<div>
 
 
 > [!NOTE]
 > Unless otherwise noted, if you have experience with Microsoft Lync Server 2010, you will find the guidance here is largely unchanged.
 
 
-
-</div>
 
   - [Single consolidated edge with private IP addresses and NAT in Lync Server 2013](lync-server-2013-single-consolidated-edge-with-private-ip-addresses-and-nat.md)
 
@@ -48,15 +31,11 @@ When you choose a topology, you can use one the following supported topology opt
 
   - [Scaled consolidated edge with hardware load balancers in Lync Server 2013](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
-<div>
-
 
 > [!IMPORTANT]
 > The internal Edge interface and external Edge interface must use the same type of load balancing. You cannot use DNS load balancing on one Edge interface and hardware load balancing on the other Edge interface.
 
 
-
-</div>
 
 The following table summarizes the functionality available with the supported Microsoft Lync Server 2013 topologies. The column headings indicate the functionality available for a given Edge configuration option. Using the Scaled Edge (DNS load balanced) option as an example, you can see that it supports high availability, can use non-routable private IP addresses (with NAT) or routable public IP addresses assigned to the Edge external interfaces, and reduces cost because a hardware load balancer is not required.
 
@@ -123,15 +102,13 @@ Edge failover scenarios supported with DNS Load Balancing are Lync-to-Lync point
 
 **\*** Failover for public instant messaging (IM) connectivity, and federation with servers running Office Communications Server is not available with DNS load balancing. Exchange UM (remote user) failover using DNS load balancing requires Exchange Server 2010 SP1 or newer.
 
-<div>
-
 <table>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />Note:</th>
+<th><img src="images/Gg398066.note(OCS.15).gif" title="note" alt="note" />Note:</th>
 </tr>
 </thead>
 <tbody>
@@ -141,7 +118,7 @@ Single Edge and Scaled Edge (DNS load balanced) topologies can use:
 <ul>
 <li><p>Routable public IP addresses</p></li>
 <li><p>Non-routable private IP address if symmetric network address translation (NAT) is used</p>
-<div>
+<div class="alert">
 
 > [!NOTE]
 > If you use public IP address or private IP address with NAT, you will still use the same number of IP addresses based on your configuration choice in Topology Builder. You can configure the Edge Server to use a single IP address with distinct ports per service, or use distinct IP addresses per service, but use the same port (by default, TCP 443).
@@ -159,8 +136,6 @@ Scaled Edge (hardware load balanced) topology must use public IP addresses.</td>
 </tbody>
 </table>
 
-
-</div>
 
 Lync Server 2013 supports placing Access, Web Conferencing, and A/V Edge external interfaces behind a router or firewall that performs network address translation (NAT) for both single and scaled consolidated Edge Server topologies.
 
@@ -254,14 +229,11 @@ The primary decision points for topology selection are high availability and loa
 
   - **High availability**   If you need high availability, deploy at least two Edge Servers in a pool. A single Edge pool will support up to twelve Edge Servers. If more capacity is required, you can deploy multiple Edge pools. As a general rule, 10% of a given user base will need external access.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Topology Builder will allow you to configure up to twenty Edge Servers in a single Edge pool. The tested and supported maximum number of Edge Servers in a pool is twelve and Topology Builder allowing for a number larger than twelve should not be construed as implied support for more than twelve Edge Servers in a single Edge pool.
 
-    
-    </div>
+
 
   - **Hardware load balancing**   Hardware load balancing is supported for load balancing Lync Server 2013 Edge Servers when using publicly routable IP addresses for the Edge external interfaces. For example, you would use this approach in situations where failover is required for any of the following applications:
     
@@ -271,34 +243,15 @@ The primary decision points for topology selection are high availability and loa
     
       - External access to Exchange 2007 Unified Messaging (UM) or Exchange 2010 UM
         
-        <div>
-        
 
         > [!IMPORTANT]
         > DNS load balancing for Exchange 2010 SP1 and newer is supported for Exchange UM.
 
-        
-        </div>
     
     These three applications will continue to operate, but they are not DNS load balancing aware and will only connect to the first Edge Server in the pool. If that server is unavailable, the connection will fail. For example, if multiple Edge Servers are deployed in a pool to handle the federated traffic load, only one access proxy actually receives traffic while the others are idle.
-
-<div>
 
 
 > [!IMPORTANT]
 > Using DNS load balancing is recommended if you are federating with companies using Lync Server 2010 and Microsoft Office 365. Be aware that there are significant performance impacts if most of your federated partners are using Office Communications Server 2007 or Office Communications Server 2007 R2.
 
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

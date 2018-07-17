@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Conferences table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 Each record in this table contains call details about one conference.
 
@@ -96,7 +83,7 @@ Each record in this table contains call details about one conference.
 <tr class="odd">
 <td><p><strong>Flag</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A bit mask that contains Conference Attributes. Possible values are:</p>
 <ul>
 <li><p>0X01</p></li>
@@ -107,7 +94,7 @@ Each record in this table contains call details about one conference.
 <tr class="even">
 <td><p><strong>Processed</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Internal field used by the Monitoring service.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
@@ -116,14 +103,4 @@ Each record in this table contains call details about one conference.
 
 
 \* For most sessions, SessionIdSeq will have the value of 1. If two sessions start at exactly the same time, the SessionIdSeq for one will be 1, and for the other will be 2, and so on.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

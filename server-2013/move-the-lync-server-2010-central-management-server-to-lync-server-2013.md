@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Move the Lync Server 2010 Central Management Server to Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-25_
 
 After migrating from Lync Server 2010 to Lync Server 2013, you need to move the Lync Server 2010 Central Management Server to the Lync Server 2013 Front End Server or pool, before you can remove the legacy Lync Server 2010 server.
 
@@ -34,13 +21,9 @@ After you have successfully moved the Central Management Server, you should remo
 
 You use the Windows PowerShell cmdlet **Move-CsManagementServer** in the Lync Server Management Shell to move the database from the Lync Server 2010 SQL Server database to the Lync Server 2013 SQL Server database, and then update the SCP to point to the Lync Server 2013 Central Management Server location.
 
-<div>
-
 ## Preparing Lync Server 2013 Front End Servers before moving the Central Management Server
 
 Use the procedures in this section to prepare the Lync Server 2013 Front End Servers before you move the Lync Server 2010 Central Management Server.
-
-<div>
 
 ## To prepare an Enterprise Edition Front End pool
 
@@ -54,10 +37,6 @@ Use the procedures in this section to prepare the Lync Server 2013 Front End Se
 
 4.  Confirm that the status of the **Lync Server Front-End** service is **Started**.
 
-</div>
-
-<div>
-
 ## To prepare a Standard Edition Front End Server
 
 1.  On the Lync Server 2013 Standard Edition Front End Server where you want to relocate the Central Management Server: Log on to the computer where the Lync Server Management Shell is installed as a member of the **RTCUniversalServerAdmins** group.
@@ -68,26 +47,17 @@ Use the procedures in this section to prepare the Lync Server 2013 Front End Se
 
 4.  On the **Executing Commands** page, SQL Server Express is installed as the Central Management Server. Necessary firewall rules are created. When the installation of the database and prerequisite software is completed, click **Finish**.
     
-    <div>
-    
 
     > [!NOTE]
     > The initial installation may take some time with no visible updates to the command output summary screen. This is due to the installation of the SQL Server Express. If you need to monitor the installation of the database, use Task Manager to monitor the setup.
 
-    
-    </div>
+
 
 5.  To create the new Central Management store on the Lync Server 2013 Standard Edition Front End Server, in the Lync Server Management Shell, type:
     
         Install-CsDatabase -CentralManagementDatabase -SQLServerFQDN <FQDN of your Standard Edition Server> -SQLInstanceName <name of instance - RTC by default>
 
 6.  Confirm that the status of the **Lync Server Front-End** service is **Started**.
-
-</div>
-
-</div>
-
-<div>
 
 ## To move the Lync Server 2010 Central Management Server to Lync Server 2013
 
@@ -99,14 +69,11 @@ Use the procedures in this section to prepare the Lync Server 2013 Front End Se
     
         Enable-CsTopology
     
-    <div>
-    
 
     > [!WARNING]
     > If <CODE>Enable-CsTopology</CODE> is not successful, resolve the problem preventing the command from completing before continuing. If <STRONG>Enable-CsTopology</STRONG> is not successful, the move will fail and it may leave your topology in a state where there is no Central Management store.
 
-    
-    </div>
+
 
 4.  On the Lync Server 2013 Front End Server or Front End pool, in the Lync Server Management Shell, type:
     
@@ -130,18 +97,11 @@ Use the procedures in this section to prepare the Lync Server 2013 Front End Se
     
         Get-CsManagementStoreReplicationStatus
     
-    <div>
-    
 
     > [!NOTE]
     > The replication may take some time to update all current replicas.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To remove Lync Server 2010 Central Management store files after a move
 
@@ -149,14 +109,11 @@ Use the procedures in this section to prepare the Lync Server 2013 Front End Se
 
 2.  Open Lync Server Management Shell
     
-    <div>
-    
 
     > [!WARNING]
     > Do not proceed with the removal of the previous database files until replication is complete and is stable. If you remove the files prior to completing replication, you will disrupt the replication process and leave the newly moved Central Management Server in an unknown state. Use the cmdlet <STRONG>Get-CsManagementStoreReplicationStatus</STRONG> to confirm the replication status.
 
-    
-    </div>
+
 
 3.  To remove the Central Management store database files from the Lync Server 2010 Central Management Server, type:
     
@@ -167,16 +124,4 @@ Use the procedures in this section to prepare the Lync Server 2013 Front End Se
         Uninstall-CsDatabase -CentralManagementDatabase -SqlServerFqdn sql.contoso.net -SqlInstanceName rtc
     
     Where the \<FQDN of SQL Server\> is either the Lync Server 2010 Back End Server in an Enterprise Edition deployment or the FQDN of the Standard Edition server.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

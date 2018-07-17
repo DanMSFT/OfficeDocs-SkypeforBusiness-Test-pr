@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Peer-to-Peer Activity Diagnostic Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 The Peer-to-Peer Activity Diagnostic Report provides information about the success and failure of your peer-to-peer communication sessions. Note that Microsoft Lync Server 2013 distinguishes between different kinds of failure:
 
@@ -63,8 +50,6 @@ Note that the Success, Expected failure, and Unexpected failure metrics might no
 
 If you add 2024 + 469 + 16 you get a total of 2,509 sessions, yet the Total sessions column shows a total of 2,521 sessions. The "missing" 12 sessions are sessions that the system was unable to categorize as successful or unsuccessful. That will sometimes be the case when a third-party product introduces a new diagnostic code that is unfamiliar to Lync Server. When that happens, calls made using that product, and reporting that diagnostic code, cannot always be categorized as being a Success, an Expected failure, or an Unexpected failure.
 
-<div>
-
 ## Accessing the Peer-to-Peer Activity Diagnostic Report
 
 The Peer-to-Peer Diagnostic Report is accessed from the Monitoring Reports home page. You can access the [Failure Distribution Report in Lync Server 2013](lync-server-2013-failure-distribution-report.md) by clicking either of the following metrics:
@@ -73,17 +58,9 @@ The Peer-to-Peer Diagnostic Report is accessed from the Monitoring Reports home 
 
   - Expected failure volume
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Peer-to-Peer Activity Diagnostic Report
 
 There are a number of ways you can filter the Peer-to-Peer Activity Diagnostic Report but, by default, those filtering options are hidden from view. To view the filtering options available to you, click the Show/Hide Parameters button in the upper right-hand corner of the report window. Once you do that the filtering options will be available for use.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -156,10 +133,6 @@ The following table lists the filters that you can use with the Peer-to-Peer Act
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics (per modality)
 
 The following table lists the information provided in the Peer-to-Peer Activity Diagnostic Report for each modality.
@@ -219,17 +192,4 @@ The following table lists the information provided in the Peer-to-Peer Activity 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Additional server support and requirements in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-12-09_
 
 In addition to the software support described in the other sections of this Supportability documentation, Lync Server 2013 has the following support limitations:
 
@@ -62,14 +49,11 @@ Lync Server 2013 requires the installation of other software on specific compone
 
   - Microsoft Visual C++ 2012 Redistributable
     
-    <div>
-    
 
     > [!NOTE]
     > Microsoft Visual C++ 2012 Redistributable is automatically installed when you install Lync Server 2013. You should not install and use any other version.
 
-    
-    </div>
+
 
   - URL Rewrite Module version 2.0 Redistributable
 
@@ -82,14 +66,4 @@ Lync Server 2013 requires the installation of other software on specific compone
   - Active Directory Domain Services tools
 
 Some of these software requirements only apply to specific server roles or components. For details about these software requirements, see [Additional software requirements for Lync Server 2013](lync-server-2013-additional-software-requirements.md) in the Planning documentation.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

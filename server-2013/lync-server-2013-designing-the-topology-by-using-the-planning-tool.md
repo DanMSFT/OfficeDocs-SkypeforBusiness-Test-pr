@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Designing the topology for Lync Server 2013 by using the Planning Tool
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-04_
 
 The Microsoft Lync Server 2013, Planning Tool is a wizard driven, interview-like tool that asks questions about the Lync Server 2013 topology that you are designing. The Planning Tool uses the information supplied, coupled with preferred practices for topology design and capacity, to present a recommended topology based on the answers supplied. You can download the Planning Tool from the Microsoft Downloads Center ([http://go.microsoft.com/fwlink/?LinkID=282725](http://go.microsoft.com/fwlink/?linkid=282725)).
 
@@ -40,8 +27,6 @@ The Planning Tool also provides the ability to export information in two formats
 
 The following topics introduce and detail the Planning Tool.
 
-<div>
-
 ## In This Section
 
   - [Installing the Planning Tool in Lync Server 2013](lync-server-2013-installing-the-planning-tool.md)
@@ -54,26 +39,9 @@ The following topics introduce and detail the Planning Tool.
 
   - [Reviewing the Administrator Reports in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Deploying Lync Server 2013](lync-server-2013-deploying-lync-server.md)  
-[Planning for Front End Servers, instant messaging, and presence in Lync Server 2013](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for Front End Servers, instant messaging, and presence in Lync Server 2013](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md)
 

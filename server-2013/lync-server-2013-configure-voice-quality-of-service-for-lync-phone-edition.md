@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure voice Quality of Service for Lync Phone Edition in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-29_
 
 You can configure voice Quality of Service (QoS) requirements for Lync Phone Edition devices in a pool by setting the QoS level for IP phones that connect to Lync Server 2013.
-
-<div>
 
 ## To configure voice Quality of Service for Lync Phone Edition
 
@@ -40,25 +25,8 @@ You can configure voice Quality of Service (QoS) requirements for Lync Phone Edi
 
 4.  In **Edit Device Configuration**, under **Voice quality of service**, specify the QoS level. The default level is **40**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Managing the Lync Server 2013 network infrastructure](lync-server-2013-managing-the-lync-server-2013-network-infrastructure.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing the Lync Server 2013 network infrastructure](lync-server-2013-managing-the-lync-server-2013-network-infrastructure.md)
 

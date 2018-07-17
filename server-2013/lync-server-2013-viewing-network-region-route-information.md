@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Viewing network region route information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Every region within a call admission control (CAC) configuration must have some way to access every other region. While region links set bandwidth limitations on the connections between regions and also represent the physical links, a route determines which linked path the connection will traverse from one region to another. Use the following procedures to view existing network region routes in Lync Server 2013 Control Panel or Lync Server 2013 Management Shell. For details about creating or modifying network region routes, see [Creating or modifying network region routes in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md).
-
-<div>
 
 ## To view network region route information in Lync Server Control Panel
 
@@ -40,26 +25,17 @@ Every region within a call admission control (CAC) configuration must have some 
 
 4.  On the **Region Route** page, click the region route that you want to view.
     
-    <div>
-    
 
     > [!NOTE]
     > You can only view one region route at a time.
 
-    
-    </div>
+
 
 5.  On the **Edit** menu, click **Show details**.
-
-</div>
-
-<div>
 
 ## Viewing Network Region Route Information by Using Windows PowerShell Cmdlets
 
 Network region route information can be viewed by using Windows PowerShell and the Get-CsNetworkInterRegionRoute cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view network region route information
 
@@ -75,30 +51,11 @@ Network region route information can be viewed by using Windows PowerShell and t
         NetworkRegionID1          : Pacific Northwest
         NetworkRegionID2          : Northeast
 
-</div>
-
-For more information, see the help topic for the [Get-CsNetworkInterRegionRoute](get-csnetworkinterregionroute.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Get-CsNetworkInterRegionRoute](https://technet.microsoft.com/en-us/library/gg425817\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
 [Creating or modifying network region routes in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md)  
-[Deleting existing network region routes in Lync Server 2013](lync-server-2013-deleting-existing-network-region-routes.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deleting existing network region routes in Lync Server 2013](lync-server-2013-deleting-existing-network-region-routes.md)
 

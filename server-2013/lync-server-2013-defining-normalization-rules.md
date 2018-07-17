@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Defining normalization rules in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-04-22_
 
 Lync Server 2013 normalization rules use .NET Framework regular expressions to translate dialed phone numbers to E.164 format; in other words, normalization rules take the phone number dialed by a user and convert that number to the format used internally by Lync Server. Each dial plan must be assigned one or more normalization rules.
 
@@ -38,34 +25,15 @@ You can use either of the following methods to define or edit a normalization ru
 
   - Write regular expressions manually to define the matching pattern and translation rule.
 
-<div>
-
 ## In This Section
 
   - [Create or modify a normalization rule by using Build a Normalization Rule in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule.md)
 
   - [Create or modify a normalization rule manually in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-manually.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Create a dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md)  
-[Modify a dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Modify a dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md)
 

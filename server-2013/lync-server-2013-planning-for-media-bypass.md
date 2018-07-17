@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for media bypass in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 Media bypass refers to removing the Mediation Server from the media path whenever possible for calls whose signaling traverses the Mediation Server.
 
@@ -38,11 +25,9 @@ The following figure shows basic media and signaling pathways in topologies with
 
 **Media and signaling pathways with and without media bypass**
 
-![Voice CAC Media Bypass Connection Enforcement](images/Gg398703.4d66d529-0912-4de1-abec-266f54272eb3(OCS.15).jpg "Voice CAC Media Bypass Connection Enforcement")
+![Voice CAC Media Bypass Connection Enforcement](images/Gg398529.4d66d529-0912-4de1-abec-266f54272eb3(OCS.15).jpg "Voice CAC Media Bypass Connection Enforcement")
 
 As a general rule, enable media bypass wherever possible.
-
-<div>
 
 ## In This Section
 
@@ -54,17 +39,9 @@ As a general rule, enable media bypass wherever possible.
 
   - [Technical requirements for media bypass in Lync Server 2013](lync-server-2013-technical-requirements-for-media-bypass.md)
 
-</div>
-
-<div>
-
 ## Related Sections
 
 [Deploying advanced Enterprise Voice features in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -72,18 +49,5 @@ As a general rule, enable media bypass wherever possible.
 [Configure a trunk with media bypass in Lync Server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md)  
 
 
-[Global media bypass options in Lync Server 2013](lync-server-2013-global-media-bypass-options.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Global media bypass options in Lync Server 2013](lync-server-2013-global-media-bypass-options.md)
 

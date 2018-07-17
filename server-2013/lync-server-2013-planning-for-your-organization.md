@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Organization planning for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-24_
 
 The topics in this section help you get started with planning your Lync Server deployment.
-
-<div>
 
 ## In This Section
 
@@ -43,16 +28,4 @@ The topics in this section help you get started with planning your Lync Server 
   - [Clients for Lync Server 2013](lync-server-2013-clients.md) describes the different types of client software that you can deploy to your organization’s users, including computer-installed client software, web-based clients, and mobile devices.
 
   - [Reference topologies in Lync Server 2013](lync-server-2013-reference-topologies.md) shows three sample topologies that illustrate good topology design in three typical organization types, and explains the reasoning behind many of the decisions in designing those topologies.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

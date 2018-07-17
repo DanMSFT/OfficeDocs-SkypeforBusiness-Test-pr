@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Failure List Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-07-02_
 
 The Failure List report provides information about the individual participants who took part in a failed peer-to-peer or conferencing session. This information includes the URI of the user who experienced the problem, as well as the SIP Response code and Diagnostic ID associated with the failure.
-
-<div>
 
 ## Accessing the Failure List Report
 
@@ -51,10 +36,6 @@ The Failure List Report is accessed by clicking any of the following metrics on 
   - Top from user agents (sessions)
 
 From the Failure List Report you can access the [Peer-to-Peer Session Detail Report in Lync Server 2013](lync-server-2013-peer-to-peer-session-detail-report.md) by clicking the Session detail metric for a peer-to-peer session. You can also access the Conference Detail Report by clicking the Conference metric for a conference.
-
-</div>
-
-<div>
 
 ## Making the Best Use of the Failure List Report
 
@@ -92,17 +73,9 @@ That will return data similar to this:
         16    Ken.Myero@litwareinc.com
         14    Henrik.Jensen@litwareinc.com
 
-</div>
-
-<div>
-
 ## Filters
 
 None. You cannot filter the Failure List Report.
-
-</div>
-
-<div>
 
 ## Metrics
 
@@ -166,17 +139,4 @@ The following table lists the information provided in the Failure List Report fo
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

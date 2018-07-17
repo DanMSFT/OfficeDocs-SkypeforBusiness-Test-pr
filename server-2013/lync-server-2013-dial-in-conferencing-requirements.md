@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Dial-in conferencing requirements in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-30_
 
 Before you start the Lync Server 2013 deployment process you need to plan for the following:
 
@@ -34,8 +21,6 @@ Before you start the Lync Server 2013 deployment process you need to plan for th
 
   - Your strategy for creating conference directories
 
-<div>
-
 ## Planning for Dial-in PSTN Connectivity
 
 Dial-in conferencing requires at least one Mediation Server and at least one PSTN gateway.
@@ -44,23 +29,13 @@ You can deploy a Mediation Server in a central site or in a branch site. In a ce
 
 You can deploy a PSTN gateway in a central site or in a branch site. In a branch site, the PSTN gateway can be stand-alone or a component of the Survivable Branch Appliance.
 
-<div>
-
 
 > [!NOTE]
 > Dial-in conferencing does not use media bypass because A/V Conferencing Server do not support media bypass.
 
 
 
-</div>
-
 For details about planning your configuration for Mediation Server and PSTN gateways for dial-in conferencing, see [Components and topologies for Mediation Server in Lync Server 2013](lync-server-2013-components-and-topologies-for-mediation-server.md) in the Planning documentation.
-
-</div>
-
-<span id="bkmk_PlanningforDialinConferencingRegions"></span>
-
-<div>
 
 ## Planning for Dial-in Conferencing Regions
 
@@ -88,10 +63,6 @@ Before you configure the dial plans, is it important to plan how you want to nam
 
   - Any user from any location can call any dial-in access number to join a conference.
 
-</div>
-
-<div>
-
 ## Planning for Conference Directories
 
 Conference directories maintain a mapping between the alphanumeric meeting ID that a participant uses to join a conference when using Lync 2013, and the numeric-only conference ID that a dial-in conferencing participant uses to join the conference. The format of the conference ID is as follows:
@@ -100,26 +71,9 @@ Conference directories maintain a mapping between the alphanumeric meeting ID th
 
 Creating multiple conference directories will ensure that conference IDs will stay short until a significant amount of conferences have been created. In an organization with a typical number of conferences per user, we recommend that you create one conference directory for every 999 users in the pool. Using this guideline the conference IDs can generally be kept small. However, once the number of conference directories (across the pools) exceed 9, the Conference ID number will grow to support additional conferences.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Mediation Server component in Lync Server 2013](lync-server-2013-mediation-server-component.md)  
-[Dial plans and normalization rules in Lync Server 2013](lync-server-2013-dial-plans-and-normalization-rules.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Dial plans and normalization rules in Lync Server 2013](lync-server-2013-dial-plans-and-normalization-rules.md)
 

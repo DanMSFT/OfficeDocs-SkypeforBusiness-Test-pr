@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of Location-Based Routing for conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-19_
 
 The Location-Based Routing Conferencing application provides to Lync Conferences a mechanism for the prevention of PSTN toll bypass. The application monitors active conferences and enforces Location-Based Routing restrictions based on the location of the Lync users participating.
 
@@ -66,14 +53,16 @@ These conferencing Location-Based Routing restrictions are summarized in the fol
 <p>Lync VoIP client user from an unknown network site</p>
 <p>Federated Lync VoIP client user</p>
 <p>User joining from a PSTN endpoint</p></td>
-<td><p>None</p></td>
+<td><p>None</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Lync VoIP client user(s) from an unknown network site</p></td>
 <td><p>Lync VoIP client user from any site</p>
 <p>Lync VoIP client user from an unknown site</p>
 <p>Federated Lync VoIP client user</p></td>
-<td><p>User joining via a PSTN endpoint</p></td>
+<td><p>User joining via a PSTN endpoint</p>
+<p></p></td>
 </tr>
 <tr class="even">
 <td><p>Lync VoIP client users from different network sites</p></td>
@@ -84,7 +73,8 @@ These conferencing Location-Based Routing restrictions are summarized in the fol
 </tr>
 <tr class="odd">
 <td><p>Lync VoIP client user(s) from a single network site and users joining from a PSTN endpoint</p></td>
-<td><p>Lync VoIP client user from the same network site</p></td>
+<td><p>Lync VoIP client user from the same network site</p>
+<p></p></td>
 <td><p>Lync VoIP client user from a different network site</p>
 <p>Lync VoIP client user from an unknown network site</p>
 <p>Federated Lync VoIP client user</p></td>
@@ -100,14 +90,4 @@ The following are additional characteristics of the Location-Based Routing Confe
   - A PSTN endpoint joining a conference with Location-Based Routing enforcements will not be restricted to join the conference regardless of its state if the endpoint joins via a trunk that is not enabled for Location-Based Routing.
 
   - A PBX system connected to a Mediations Server over a SIP trunk that does not egress calls to the PSTN will have the same enforcements as Lync users located in the same network site where the SIP trunk is defined. For example, a PSTN endpoint will be able to join a conference with a PBX user and a Lync user if they are located in the same network site; otherwise, the PSTN endpoint will not be allowed to join the conference if the PBX user is in a different network site than the Lync user.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

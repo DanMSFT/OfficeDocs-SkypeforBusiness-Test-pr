@@ -8,23 +8,10 @@ ms.date: 12/29/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Frequently Asked Questions: Provisioning Lync Server 2013 for Skype connectivity
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-12-27_
 
 **Q: What features are supported between Microsoft Lync and Skype?**
 
@@ -86,14 +73,11 @@ _**Topic Last Modified:** 2016-12-27_
 
   - Session Initiation Protocol (SIP) domain(s). This is the domain suffix of the SIP URI that users currently use for instant messaging. If your organization has more than one SIP domain, specify the domain suffix for each domain used for instant messaging. For example, for user1@contoso.com, specify contoso.com for the SIP domain; for user1@example.fabrikam.com, specify example.fabrikam.com as the SIP domain.
     
-    <div>
-    
 
     > [!NOTE]
     > Specify only the domain suffix for the SIP domain. Do not specify any FQDNs, including the FQDN for the Access Edge service, for the SIP domain.
 
-    
-    </div>
+
 
   - Contact information. Specify an e-mail address for the administrator of each SIP domain that you specify.
 
@@ -132,14 +116,4 @@ This order is important.  You must set up the on-premise connectivity before yo
 **Q: How can I update the configuration or contact details that I submit?**
 
 **A:** You can update your information at the same web site that you used to request provisioning, after provisioning is complete. Enter your agreement number, and then click Update service.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

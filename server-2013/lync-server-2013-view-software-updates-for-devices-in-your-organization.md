@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View software updates for devices in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
 
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
-
-With Lync Server 2013, you use Device Update Web service to view and manage software updates for your organization’s devices. These updates are available in .cab (cabinet) files from the Microsoft Support website at [http://go.microsoft.com/fwlink/p/?linkId=204091](http://go.microsoft.com/fwlink/p/?linkid=204091). After you download the .cab file, run the **Import-CSDeviceUpdate** cmdlet to import the device update rules from the .cab file. For details about the **Import-CSDeviceUpdate** cmdlet, see [Import-CsDeviceUpdate](import-csdeviceupdate.md) in the Lync Server Management Shell documentation.
-
-<div>
+With Lync Server 2013, you use Device Update Web service to view and manage software updates for your organization’s devices. These updates are available in .cab (cabinet) files from the Microsoft Support website at [http://go.microsoft.com/fwlink/p/?linkId=204091](http://go.microsoft.com/fwlink/p/?linkid=204091). After you download the .cab file, run the **Import-CSDeviceUpdate** cmdlet to import the device update rules from the .cab file. For details about the **Import-CSDeviceUpdate** cmdlet, see [Import-CsDeviceUpdate](https://technet.microsoft.com/en-us/library/gg398861\(v=ocs.15\)) in the Lync Server Management Shell documentation.
 
 
 > [!TIP]
 > Before deploying a new update to your organization, verify that it functions correctly on a test device.
 
 
-
-</div>
-
-<div>
 
 ## To view software updates for UC devices
 
@@ -68,25 +49,8 @@ With Lync Server 2013, you use Device Update Web service to view and manage soft
     
       - **Restore an update.** To allow a previously approved update to be deployed to your organization’s devices, click the **Action** menu, and then click **Restore**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Managing devices, phones, and client applications in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing devices, phones, and client applications in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)
 

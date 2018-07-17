@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for central site voice resiliency in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-30_
 
 Increasingly, enterprises have multiple sites spread across the globe. Maintaining emergency services, access to help desk, and the ability to conduct critical business tasks when a central site is out of service is essential for any Enterprise Voice resiliency solution. When a central site becomes unavailable, the following conditions must be met:
 
@@ -35,8 +22,6 @@ Increasingly, enterprises have multiple sites spread across the globe. Maintaini
   - Calls to and from users located at other sites must be rerouted to the PSTN.
 
 This topic describes the recommended solution for securing central site voice resiliency.
-
-<div>
 
 ## Architecture and Topology
 
@@ -58,14 +43,11 @@ The following steps describe the client discovery and registration process:
 
 1.  A client discovers Lync Server through DNS SRV records. In Lync Server 2013, DNS SRV records can be configured to return more than one FQDN to the DNS SRV query. For example, if enterprise Contoso has three central sites (North America, Europe, and Asia-Pacific) and a Director pool at each central site, DNS SRV records can point to the Director pool FQDNs in each of the three locations. As long as the Director pool in one of the locations is available, the client can connect to the first hop Lync Server.
     
-    <div>
-    
 
     > [!NOTE]
     > Using a Director pool is optional. A Front End pool can be used instead.
 
-    
-    </div>
+
 
 2.  The Director pool informs the Lync client about the user’s primary Registrar pool and backup Registrar pool.
 
@@ -76,10 +58,6 @@ The following figure shows the recommended topology for assuring central site re
 **Recommended topology for central site voice resiliency**
 
 ![Topology for central site voice resliency](images/Gg398347.19ea3e74-8a5c-488c-a34e-fc180ab9a50a(OCS.15).jpg "Topology for central site voice resliency")
-
-</div>
-
-<div>
 
 ## Requirements and Recommendations
 
@@ -100,10 +78,6 @@ The following requirements and recommendations for implementing central site voi
   - Configure a failover route, as described in the “[Configuring a failover route in Lync Server 2013](lync-server-2013-configuring-a-failover-route.md)” topic in the Planning documentation. When configuring the route, specify a gateway that is located at a different site from the gateway specified in the primary route.
 
   - If the central site contained your primary management server and the site is likely to be down for an extended period, you will need to reinstall your management tools at the backup site; otherwise, you won’t be able to change any management settings.
-
-</div>
-
-<div>
 
 ## Dependencies
 
@@ -139,10 +113,6 @@ Lync Server depends on the following infrastructure and software components to a
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Survivable Voice Features
 
@@ -196,25 +166,8 @@ The following voice features do not work when a primary central site is out of s
 
   - Address Book Web Search
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Planning for branch-site voice resiliency in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for branch-site voice resiliency in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md)
 

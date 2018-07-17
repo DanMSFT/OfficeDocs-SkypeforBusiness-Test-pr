@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Technical requirements for Archiving in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-09_
 
 Lync Server 2013 technical requirements include the following:
 
@@ -38,25 +25,15 @@ Lync Server 2013 technical requirements include the following:
 
   - Performance requirements and considerations for your Archiving databases.
 
-<div>
-
 
 > [!NOTE]
 > Scaling and performance information is not available in this Lync Server 2013 release.
 
 
 
-</div>
-
-<div>
-
 ## Infrastructure Requirements
 
 Lync Server 2013 Archiving infrastructure requirements are the same as for deployment of Lync Server 2013. For details, see [Determining your infrastructure requirements for Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) in the Planning documentation.
-
-</div>
-
-<div>
 
 ## Archiving Prerequisites
 
@@ -67,10 +44,6 @@ Lync Server 2013 streamlines prerequisites for Archiving because of the followin
   - Archiving uses the Lync Server 2013 file storage for temporary storage of meeting content files, so you do not set up a separate file store for archiving.
 
   - In Lync Server 2013, Message Queuing is not required.
-
-</div>
-
-<div>
 
 ## Data Storage Requirements for Archiving
 
@@ -88,26 +61,10 @@ Additionally, you need to set up the infrastructure for Archiving storage. This 
     
       - Microsoft SQL Server 2012 Standard
     
-    <div>
-    
 
     > [!NOTE]
     > Microsoft SQL Server 2008 R2 Express and Microsoft SQL Server 2012 Express are not supported for Archiving. 32-bit versions of SQL Server are not supported. For additional SQL Server requirements and restrictions, see <A href="lync-server-2013-database-software-support.md">Database software support in Lync Server 2013</A> in the Planning documentation or in the Supportability documentation.
 
     
-    </div>
-    
     You must set up the SQL Server platforms prior to deploying and enabling Archiving. If the account to be used to publish the topology has the appropriate administrator rights and permissions, you can create the Archiving database (LcsLog) when you publish your topology. You can also create the database later, including as part of the installation procedure. For details about SQL Server, see the SQL Server TechCenter at [http://go.microsoft.com/fwlink/p/?linkID=129045](http://go.microsoft.com/fwlink/p/?linkid=129045).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

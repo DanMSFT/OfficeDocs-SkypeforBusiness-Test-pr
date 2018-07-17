@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment checklist for Archiving in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-18_
 
 Archiving is automatically installed on each Front End Server in your Lync Server 2013 deployment, but you still need to set it up before you can use it. The steps required to set it up, as summarized in this section, constitute the deployment of Archiving.
-
-<div>
 
 ## Deployment Sequence
 
@@ -40,19 +25,11 @@ How you set up Archiving depends on which storage option you choose:
 
 If you enable archiving in one Front End pool or Standard Edition server, you should enable it for all other Front End pools and Standard Edition servers in your deployment. This is because users whose communications are required to be archived can be invited to a group IM conversation or meetings hosted on a different pool. If archiving is not enabled on the pool where the conversation or meeting is hosted, the complete session may not be archived. In these cases, IMs with archiving-enabled users still can be archived, but not for conferencing content files, and conference join or leave events.
 
-<div>
-
 
 > [!IMPORTANT]
 > If archiving is critical in your organization for compliance reasons, be sure to deploy Archiving, configure policies and other options at the appropriate level, and enable it for all appropriate users, before you enable those users for Lync Server 2013.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Archiving Deployment Process
 
@@ -81,13 +58,12 @@ The following table provides an overview of the steps required to deploy archivi
 <li><p>To use Microsoft Exchange integration (using Exchange 2013 for archiving storage for some or all users), you need an existing Exchange 2013 deployment.</p></li>
 <li><p>To use separate Archiving databases (using SQL Server databases) for archiving storage for some or all users, SQL Server on the server that will store archiving data.</p></li>
 </ul>
-<div>
 
 > [!NOTE]
 > Archiving runs on Front End Servers of an Enterprise pool and Standard Edition servers. It has no additional hardware or software requirements beyond what is required to install those servers.
 
 
-</div></td>
+</td>
 <td><p>Domain user who is a member of the local administrators group.</p></td>
 <td><p><a href="lync-server-2013-supported-hardware.md">Supported hardware for Lync Server 2013</a> in the Supportability documentation.</p>
 <p><a href="lync-server-2013-server-software-and-infrastructure-support.md">Server software and infrastructure support in Lync Server 2013</a> in the Supportability documentation.</p>
@@ -120,10 +96,6 @@ The following table provides an overview of the steps required to deploy archivi
 </table>
 
 
-</div>
-
-<div>
-
 ## Deploying Lync Server and Microsoft Exchange in Different Forests
 
 If Microsoft Exchange Server is not deployed in the same forest as Lync Server, you must make sure that the following Exchange Active Directory attributes are synchronized to the forest where Lync Server is deployed:
@@ -133,16 +105,4 @@ If Microsoft Exchange Server is not deployed in the same forest as Lync Server, 
 2.  proxyAddresses
 
 This is a multi-value attribute. When synchronizing this attribute, you need to merge the values, not replace them to ensure the existing values are not lost.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

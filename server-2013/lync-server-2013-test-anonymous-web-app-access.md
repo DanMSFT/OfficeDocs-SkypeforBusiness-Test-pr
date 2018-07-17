@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Test anonymous Web App access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-07_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-07_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsWebAppAnonymous cmdlet verifies that an anonymous user can join Lync Server conferences by using the Lync Web App. When you run the cmdlet, Test-CsWebAppAnonymous contacts the Web Ticket service to obtain a web ticket for the anonymous user. If the cmdlet succeeds in obtaining this ticket, Test-CsWebAppAnonymous will then contact Lync Server and attempt to establish separate conferences for instant messaging, application sharing, and data collaboration.
 
 Note that Test-CsWebAppAnonymous only verifies the APIs and connections used to create these conferences. The cmdlet does not actually create and conduct any conferences.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -76,10 +57,6 @@ To run this check using actual user accounts, you must create two Lync Server Ma
     Test-CsWebApp -TargetFqdn atl-cs-001.litwareinc.com -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $cred1
 
 For more information, see the help topic for the Test-CsWebAppAnonymous cmdlet. Note that Test-CsWebAppAnonymous is deprecated for use on Lync Server 2013.
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -111,10 +88,6 @@ authentication scheme 'Ntlm'. The authentication
 
 header received from the server was 'Negotiate,NTLM'.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Test-CsWebAppAnonymous failures usually revolve around user authentication errors: you must run the test using a valid user account even though the cmdlet is checking the ability of an anonymous user to connect to Lync Server. If Test-CsWebAppAnonymous fails, you should verify that the specified user has valid a Lync Server user account. You can retrieve Lync Server account information by using a command similar to this:
@@ -130,16 +103,4 @@ Configuration problems with Office Web Apps Server can also cause Test-CsWebAppA
 The HTTP request is unauthorized with client authentication scheme 'Ntlm'. The authentication header received from the server was 'Negotiate,NTLM'.
 
 For more information on diagnosing and resolving Office Web Apps Server problems see the blog post [Office Web Apps Server 2013 - machines are always reported as Unhealthy](http://www.wictorwilen.se/office-web-apps-server-2013---machines-are-always-reported-as-unhealthy).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

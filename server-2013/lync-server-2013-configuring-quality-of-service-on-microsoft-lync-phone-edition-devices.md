@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Quality of Service on Microsoft Lync Phone Edition devices in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Although Quality of Service (QoS) is not enabled by default for devices such as iPhones, QoS is enabled by default for devices running Lync Phone Edition. (These devices are commonly referred to as UC or Unified Communication phones.) To verify this, run the following Windows PowerShell command from within the Lync Server Management Shell:
 
@@ -44,15 +31,11 @@ If you have not made any changes to your UC phone configuration settings then yo
 
 For Quality of Service purposes, only one of these properties is of interest: VoiceDiffServTag. The VoiceDiffServTag represents the DSCP value assigned to voice traffic emanating from a Lync Phone Edition device.
 
-<div>
-
 
 > [!NOTE]
 > The Voice8021p parameter is no longer supported in Lync Server 2013. The parameter is still valid for backward compatibility with Microsoft Lync Server 2010; however, it has no effect on devices used with Lync Server 2013.
 
 
-
-</div>
 
 In most networks, marking Lync Phone Edition packets with a VoiceDiffServTag of 40 should not cause any problems. However, 40 is not the value typically used for audio traffic; instead, audio traffic is almost always marked with the DSCP code 46. In order to maintain consistency throughout your network, you might want to change the VoiceDiffServTag property of your UC phones to 46.
 
@@ -79,14 +62,4 @@ If you prefer to make this change using Lync Server Control Panel, then start th
 If you have multiple collections you will need to repeat this process for each collection of UC phone settings. Lync Server Control Panel will not allow you to simultaneously modify multiple setting collections.
 
 If you have devices that are not based on the Windows operating system (such as iPhones) in your organization these devices will not be affected by changing the VoiceDiffServTag setting. If you want to change DSCP values on those devices you will need to refer to the administration manual for each of your device types.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

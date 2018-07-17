@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Verify pilot pool coexistence with legacy pool
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-29_
 
 After you deploy the pilot pool, you need to verify the coexistence of the two pools by using the administrative tools to view the pool information. For the Lync Server 2013 pools and legacy pools, you must use the Lync Server 2013 Control Panel and Topology Builder tools.
-
-<div>
 
 ## Verify that Lync Server 2013 services have started
 
@@ -40,10 +25,6 @@ After you deploy the pilot pool, you need to verify the coexistence of the two p
 
 ![List of Lync Server Services Started](images/JJ205420.cfff9385-6bf6-461c-982c-e727c9f20b70(OCS.15).png "List of Lync Server Services Started")
 
-</div>
-
-<div>
-
 ## Open the Lync Server 2013 Control Panel
 
 From the Front End Server in your Lync Server 2013 deployment, open the Lync Server 2013 Control Panel and select the Lync Server 2010 pool. Repeat the procedure to open the Lync Server 2013 pool.
@@ -52,25 +33,17 @@ From the Front End Server in your Lync Server 2013 deployment, open the Lync Ser
 
 ![Select URL dialog box](images/JJ205420.b1f8e650-9c3c-4563-a403-5069f198342f(OCS.15).png "Select URL dialog box")
 
-<div>
-
 
 > [!IMPORTANT]
 > On Lync Server 2013, you must upgrade Silverlight to Silverlight version 5 prior to using the Lync Server Control Panel.
 
 
 
-</div>
-
 This topology now includes Lync Server 2010 and Lync Server 2013 server roles.
 
 **Lync Server 2013 Control Panel Topology page**
 
 ![Lync Server Control Panel - Topology page](images/JJ205420.4ed1cc7a-cb3e-42f6-82e2-6d4d71d19352(OCS.15).jpg "Lync Server Control Panel - Topology page")
-
-</div>
-
-<div>
 
 ## Don’t attempt to open the topology in Lync Server 2010 Topology Builder
 
@@ -79,16 +52,4 @@ If you attempt to open the topology using Lync Server 2010 Topology Builder, you
 **Lync Server 2010 Topology Builder error message**
 
 ![Lync Server Topology Builder MMC Snap Error](images/JJ205420.f6666343-c348-4d81-ae0e-6ba5a44e16c4(OCS.15).png "Lync Server Topology Builder MMC Snap Error")
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

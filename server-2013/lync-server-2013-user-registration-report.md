@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # User Registration Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-21_
 
 The User Registration Report provides an overview of user logon activity, most notably information about the number of users who logged on to Microsoft Lync Server 2013 during a specified time period (hourly, daily, weekly, monthly). Keep in mind that the report only tells you how many people logged on. It does not tell you *which* people logged on. Monitoring Reports do not provide information about which specific users are using Lync Server 2013 (and which ones are not). However, you can get a rough estimate of user information by using the User Activity Report.
 
@@ -32,15 +19,9 @@ When providing information about user logons, the User Registration Report draws
 
 In addition, the User Registration Report notes how many *active* users were present during a given time period. An active user is a user who took part in an instant messaging (IM) session, participated in a Lync Meeting, made or received a phone call, or otherwise used Lync Server during that period of time. This is different from a user who logged on, but never actually used the system.
 
-<div>
-
 ## Accessing the User Registration Report
 
 You access the User Registration Report only from the Monitoring Reports home page. The User Registration Report does not link to any other reports.
-
-</div>
-
-<div>
 
 ## Making the Best Use of the User Registration Report
 
@@ -95,23 +76,15 @@ In addition to knowing the number of unique logons, you need to know the total n
 
 If the preceding command returns a value of 1,236 and Unique logon users metric returns an average value of 667, that suggests that a little over half of your users enable for Lync are actually logging on to the system each day (that is, 667 divided by 1,236, which is approximately 54%).
 
-<div>
-
 
 > [!WARNING]
 > Keep in mind that the logon metrics record users who actually logged on during the specified time period. They don't keep track of users who were already logged on to the system. For example, if your Unique logon users metric shows 667 logons and you have 1,236 users, that suggests that about half your users are logging on to the system. However, suppose 300 users were already logged on to the system at the time you began checking the logon data. That would mean that you actually had nearly 1,000 users logged on to Lync Server, which would mean that closer to 80% of your users were logged on.
 
 
 
-</div>
-
 You should also compare the Unique logon users value with the value of the Unique active users metric. The Unique active users metric tells you how many unique users actually used Lync Server: they made a phone call, they joined a Lync Meeting, or they participated in an IM session. This is useful information, because Microsoft Lync 2013 can be configured to automatically start each time a user starts Windows. Because of that, you might have a large number of users who automatically log on to Lync when they log on to Windows each day, but then never actually use Lync Server during that time period.
 
 The Unique active users metric also provides more meaningful data in an organization where users typically do not log off Windows at the end of the day. Instead, they simply lock their computers and leave Windows and Lync running. In a situation like that, you might end up with very few logons per day because your users logged on several days ago and never logged off. However, Unique active users tells you whether users are actively using Lync or another Lync Server client.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -172,10 +145,6 @@ The following table lists the filters that you can use with the User Registratio
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics
 
 The following table lists the information provided in the User Registration Report.
@@ -231,17 +200,4 @@ The following table lists the information provided in the User Registration Repo
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

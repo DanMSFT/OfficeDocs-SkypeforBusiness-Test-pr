@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Determining your system requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-01-02_
 
 All servers running Lync Server must meet certain minimum system requirements. System requirements for Lync Server include the server hardware, the operating system to be installed on each server, and related software requirements, such as the Windows updates and other software that must be installed on the servers.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -36,19 +21,11 @@ All servers running Lync Server must meet certain minimum system requirements. S
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > For details about Active Directory support, supported topologies, server collocation, and other supportability issues, see <A href="lync-server-2013-supportability.md">Supportability for Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -60,26 +37,9 @@ All servers running Lync Server must meet certain minimum system requirements. S
 
   - [Additional software requirements for Lync Server 2013](lync-server-2013-additional-software-requirements.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Client and device hardware support in Lync Server 2013](lync-server-2013-client-and-device-hardware-support.md)  
-[Supportability for Lync Server 2013](lync-server-2013-supportability.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Supportability for Lync Server 2013](lync-server-2013-supportability.md)
 

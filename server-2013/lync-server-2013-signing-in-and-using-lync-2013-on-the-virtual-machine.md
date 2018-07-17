@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Signing in and using Lync 2013 on the virtual machine
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-03_
 
 After the VDI plug-in is enabled, the following steps occur when the user signs in to Lync 2013.
 
@@ -41,14 +28,4 @@ After the VDI plug-in is enabled, the following steps occur when the user signs 
     ![Lync VDI pairing icon showing success](images/JJ204948.57be3387-a3e5-4949-831e-f5ff9fcc5598(OCS.15).png "Lync VDI pairing icon showing success")  
 
 5.  After Lync pairs with the VDI plug-in, the user can see his or her presence on Lync compatible devices that are connected to the local computer. The user can now place and answer calls as usual.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

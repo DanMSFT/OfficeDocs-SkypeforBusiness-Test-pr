@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Peer-to-Peer Activity Summary Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-21_
 
 The Peer-to-Peer Activity Summary Report provides an overall view of your peer-to-peer communication sessions. A peer-to-peer session typically involves just two users, and does not require the use of the Lync Server conferencing services. By comparison, a conference typically involves more than two users and requires the use of Microsoft Lync Server 2013 conferencing services. Conference activity is reported on the Conference Summary Report.
 
@@ -35,8 +22,6 @@ The Peer-to-Peer Activity Summary Report helps you answer questions like the fol
   - Are any of my users actually taking advantage of the Lync Server application sharing and file transfer capabilities?
 
   - Users have been complaining that the network seems slow at certain times of the day. How many minutes are devoted to peer-to-peer audio and video sessions during those time periods?
-
-<div>
 
 ## Accessing the Peer-to-Peer Activity Summary Report
 
@@ -56,17 +41,9 @@ Likewise, you can open the Peer-to-Peer Voice and Video Report by clicking any o
 
   - Total peer-to-peer audio session minutes
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Peer-to-Peer Activity Summary Report
 
 At the bottom of the Peer-to-Peer Activity Summary Report you'll find totals for metrics such as Total peer-to-peer IM sessions and Total peer-to-peer IM messages. This provides a quick summary of the detailed information found in the body of the report.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -122,10 +99,6 @@ The following table lists the filters that you can use with the Peer-to-Peer Act
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics
 
@@ -212,17 +185,4 @@ The following table lists the information provided in the Peer-to-Peer Activity 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

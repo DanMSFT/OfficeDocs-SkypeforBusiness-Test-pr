@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploy pilot Edge Server
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 This topic highlights configuration settings you should be aware of prior to deploying your Lync Server 2013 Edge Server. This section only highlights key points you should consider as part of your pilot Edge pool deployment. For detailed steps, see [Deploying external user access in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) in the Deployment documentation, which describes the deployment process and also gives configuration information for external user access.
 
@@ -65,14 +52,4 @@ It’s very important that you follow the guidelines in the topics [Deploying ex
 You should now have a legacy Office Communications Server 2007 R2 Edge server deployment, indicated by the presence of the BackCompatSite, in parallel with a Lync Server 2013 Edge server deployment. Federation is configured to use the Office Communications Server 2007 R2 Director. Verify that both deployments are running properly, services are started, and you can administer each deployment prior to moving to the next phase.
 
 ![Topology Builder showing OCS Edge Server](images/JJ204682.171363a3-eaf0-4c94-bd41-02b1ab6fa7dc(OCS.15).jpg "Topology Builder showing OCS Edge Server")
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

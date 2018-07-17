@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete an unassigned number range in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Use one of the following procedures to delete an unassigned number range for Announcements.
-
-<div>
 
 ## To use Lync Server Control Panel to delete an unassigned number range
 
@@ -44,10 +29,6 @@ Use one of the following procedures to delete an unassigned number range for Ann
 
 6.  Click **Commit all**.
 
-</div>
-
-<div>
-
 ## To use Windows PowerShell to delete an unassigned number range
 
 1.  Log on to the computer where Lync Server Management Shell is installed as a member of the RTCUniversalServerAdmins group or with the necessary user rights as described in [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
@@ -62,18 +43,11 @@ Use one of the following procedures to delete an unassigned number range for Ann
     
         Remove-CsUnassignedNumber -Identity "Unassigned range 1"
     
-    <div>
-    
 
     > [!NOTE]
-    > For details about more options, see <A href="remove-cscallparkorbit.md">Remove-CsCallParkOrbit</A>.
+    > For details about more options, see <A href="https://technet.microsoft.com/en-us/library/gg412901(v=ocs.15)">Remove-CsCallParkOrbit</A>.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -81,19 +55,6 @@ Use one of the following procedures to delete an unassigned number range for Ann
 [Create or modify an unassigned number range in Lync Server 2013](lync-server-2013-create-or-modify-an-unassigned-number-range.md)  
 
 
-[Remove-CsUnassignedNumber](remove-csunassignednumber.md)  
-[Get-CsUnassignedNumber](get-csunassignednumber.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Remove-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/gg398209\(v=ocs.15\))  
+[Get-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/gg412792\(v=ocs.15\))
 

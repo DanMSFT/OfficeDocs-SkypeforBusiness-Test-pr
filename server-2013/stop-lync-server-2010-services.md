@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Stop Lync Server 2010 services
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-04_
 
 You can use Lync Server Control Panel to start or stop all the Lync Server 2010 services running on a specific computer or to start or stop a specific Lync Server 2010 service.
-
-<div>
 
 ## To start or stop all Lync Server services on a computer
 
@@ -41,10 +26,6 @@ You can use Lync Server Control Panel to start or stop all the Lync Server 2010 
 4.  Click **Action**.
 
 5.  Click **Start All services** or **Stop All services**.
-
-</div>
-
-<div>
 
 ## To start or stop a specific service
 
@@ -63,16 +44,4 @@ You can use Lync Server Control Panel to start or stop all the Lync Server 2010 
 7.  Click **Start service** or **Stop service**.
 
 8.  Click **Close**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

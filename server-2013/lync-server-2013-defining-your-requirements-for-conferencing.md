@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Defining your requirements for conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-30_
 
 When you are determining which conferencing capabilities to deploy, you need to consider the features that you want available to your users and your network bandwidth capabilities. The following list of questions guides you through the conferencing planning process to determine what features of conferencing you should deploy, based on your organization’s requirements.
 
@@ -46,14 +33,11 @@ When you are determining which conferencing capabilities to deploy, you need to 
     
     If you do want to enable audio conferences but not video conferences, you can enable A/V conferencing and use meeting policies to prevent video conferences. Alternatively, you can enable A/V conferencing and enable only certain users to start or participate in A/V conferences.
     
-    <div>
-    
 
     > [!NOTE]
     > Enterprise Voice is not required for you to use A/V conferencing. If you enable A/V conferencing, your users can add audio to their conferences if they have audio devices, even if you use a PBX for your telephone solution.
 
-    
-    </div>
+
 
   - **Do you want to enable users to join the audio portion of conferences when using a PSTN phone?**
     
@@ -71,8 +55,6 @@ When you are determining which conferencing capabilities to deploy, you need to 
     
     If so, you should configure the meeting join page so that only the client options that you want to support are available. Each time a user clicks a link to join a scheduled meeting, Lync Server 2013 detects whether a client is already installed on the computer. It then starts the default client and opens the meeting join page, which contains links for alternate clients. The meeting join page always contains the option to use Microsoft Lync Web App. In addition to this option, you can decide whether to include links for Attendee and previous versions of Communicator. For details, see [Configuring the meeting join page in Lync Server 2013](lync-server-2013-configuring-the-meeting-join-page.md).
 
-<div>
-
 ## In This Section
 
   - [Web conferencing requirements in Lync Server 2013](lync-server-2013-web-conferencing-requirements.md)
@@ -81,26 +63,9 @@ When you are determining which conferencing capabilities to deploy, you need to 
 
   - [Dial-in conferencing requirements in Lync Server 2013](lync-server-2013-dial-in-conferencing-requirements.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Planning for conferencing in Lync Server 2013](lync-server-2013-planning-for-conferencing.md)  
-[Deployment checklist for conferencing in Lync Server 2013](lync-server-2013-deployment-checklist-for-conferencing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deployment checklist for conferencing in Lync Server 2013](lync-server-2013-deployment-checklist-for-conferencing.md)
 

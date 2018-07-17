@@ -8,45 +8,22 @@ ms.date: 01/28/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for role-based access control in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-01-27_
 
 To enable you to delegate administrative tasks while maintaining high standards for security, Lync Server 2013 offers role-based access control (RBAC). With RBAC, administrative privilege is granted by assigning users to administrative roles. Lync Server 2013 includes a rich set of built-in administrative roles, and also enables you to create new roles and specify a custom list of cmdlets for each new role. You can also add scripts of cmdlets to the allowed tasks of both predefined and custom RBAC roles.
-
-<div>
 
 ## Better Server Security and Centralization
 
 With RBAC, access and authorization is based precisely on a user’s Lync Server role. This enables use of the security practice of "least privilege," granting administrators and users only the rights that are necessary for their job.
-
-<div>
 
 
 > [!IMPORTANT]
 > RBAC restrictions work only on administrators working remotely, using either the Lync Server Control Panel or Lync Server Management Shell. A user sitting at a server running Lync Server is not restricted by RBAC. Therefore, physical security of your Lync Server is important to preserve RBAC restrictions.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Roles and Scope
 
@@ -144,8 +121,6 @@ The following table lists the predefined roles in Lync Server, and gives a gener
 
 All predefined roles shipped in Lync Server have a global scope. To follow least privilege practices, you should not assign users to roles with global scope if they are going to administer only a limited set of servers or users. To accomplish this, you can create roles which are based on an existing role, but with a more limited scope.
 
-<div>
-
 ## Creating a Scoped Role
 
 When you create a role with limited scope (a scoped role), you specify the scope, along with the existing role it is based on and the Active Directory group to be assigned the role. The Active Directory group you specify must already be created. The following cmdlet is an example of a creating a role which has the privileges of one of the pre-defined administrative roles, but with limited scope. It creates a new role called `Site01 Server Administrators`. The role has the abilities of the predefined CsServerAdministrator role, but only for the servers located in the Site01 site. For this cmdlet to work, the Site01 site must already be defined, and a universal security group named `Site01 Server Administrators` must already exist.
@@ -157,10 +132,6 @@ After this cmdlet runs, all users who are members of the `Site01 Server Administ
 The following example limits user scope instead of server scope. It creates a `Sales Users Administrator` role to administer the user accounts in the Sales organizational unit. The SalesUsersAdministrator universal security group must already be created for this cmdlet to work.
 
     New-CsAdminRole -Identity "Sales Users Administrator " -Template CsUserAdministrator -UserScopes "OU:OU=Sales, OU=Lync Tenants, DC=Domain, DC=com"
-
-</div>
-
-<div>
 
 ## Creating a New Role
 
@@ -180,10 +151,6 @@ For this cmdlet to work, you must have first created the universal security grou
 
 After this cmdlet runs, you can assign users directly to this role (in which case they have global scope), or create a scoped role based on this role, as explained in Creating a Scoped Role, previously in this document.
 
-</div>
-
-<div>
-
 ## Assigning Roles to Users
 
 Each Lync Server role is associated with an underlying Active Directory universal security group. Any users who you add to the underlying group gain the abilities of that role.
@@ -196,10 +163,6 @@ A user can be given multiple RBAC roles by being added to the underlying Active 
 
 Note that when you create a role, users who are later added to the underlying Active Directory group gain the abilities of that role.
 
-</div>
-
-<div>
-
 ## Modifying the Abilities of a Role
 
 You can modify the list of cmdlets and scripts that a role can run. You can modify both the cmdlets and scripts that custom roles can run, but you can modify only the scripts for predefined roles. Each cmdlet you type can add, remove, or replace cmdlets or scripts.
@@ -208,27 +171,9 @@ To modify a role, use the **Set-CsAdminRole** cmdlet. The following cmdlet remov
 
     Set-CsAdminRole -Identity "MyHelpDeskScriptRole" -ScriptModules @{Remove="testScript.ps1"}
 
-</div>
-
-</div>
-
-<div>
-
 ## Planning for RBAC
 
 For each person who is to be given any kind of administrative rights for your Lync Server deployment, consider exactly which tasks they need to perform, then assign them to roles with the least privilege and scope necessary for their job. If necessary, you can use the **Set-CsAdminRole** cmdlet to create a new role with only the cmdlets necessary for this person’s tasks.
 
 Users who have the CsAdministrator role can create all types of roles, including roles based on CsAdministrator, and assign users to them. The best practice is to assign the CsAdministrator role to a very small set of trusted users.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

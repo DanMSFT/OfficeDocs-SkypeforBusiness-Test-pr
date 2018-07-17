@@ -8,39 +8,24 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create network region links in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 Regions within a network are linked through physical WAN connectivity. A *network region link* creates a link between two regions configured for call admission control (CAC) and sets the bandwidth limitations on audio and video traffic between these regions.
 
 For details about working with network region links, see the Lync Server Management Shell documentation for the following cmdlets:
 
-  - [New-CsNetworkRegionLink](new-csnetworkregionlink.md)
+  - [New-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg398437\(v=ocs.15\))
 
-  - [Get-CsNetworkRegionLink](get-csnetworkregionlink.md)
+  - [Get-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg398972\(v=ocs.15\))
 
-  - [Set-CsNetworkRegionLink](set-csnetworkregionlink.md)
+  - [Set-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg412867\(v=ocs.15\))
 
-  - [Remove-CsNetworkRegionLink](remove-csnetworkregionlink.md)
+  - [Remove-CsNetworkRegionLink](https://technet.microsoft.com/en-us/library/gg413012\(v=ocs.15\))
 
 The example topology has a link between the North America and APAC regions, and a link between the EMEA and APAC regions. Each of these region links is constrained by WAN bandwidth, as described in Region Link Bandwidth Information table in the [Example: Gathering your requirements for call admission control in Lync Server 2013](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md) section of the Planning documentation.
-
-<div>
 
 ## To create network region links by using Lync Server Management Shell
 
@@ -48,17 +33,9 @@ The example topology has a link between the North America and APAC regions, and 
 
 2.  Run the New-CsNetworkRegionLink cmdlet to create the region links and apply appropriate bandwidth policy profiles. For example, run:
     
-      ```
         New-CsNetworkRegionLink -NetworkRegionLinkID NA-EMEA-LINK -NetworkRegionID1 NorthAmerica -NetworkRegionID2 EMEA -BWPolicyProfileID 50Mb_Link
-      ```
     
-      ```
         New-CsNetworkRegionLink -NetworkRegionLinkID EMEA-APAC-LINK -NetworkRegionID1 EMEA -NetworkRegionID2 APAC -BWPolicyProfileID 25Mb_Link
-      ```
-
-</div>
-
-<div>
 
 ## To create network region links by using Lync Server Control Panel
 
@@ -78,28 +55,13 @@ The example topology has a link between the North America and APAC regions, and 
 
 8.  Optionally, click **Bandwidth policy**, and then select the bandwidth policy profile that you want to apply to the network region link.
     
-    <div class=" ">
-    
 
     > [!NOTE]
     > Apply a bandwidth policy only if the network region link is bandwidth-constrained and you want to use CAC to control media traffic on that link.
 
-    
-    </div>
+
 
 9.  Click **Commit**.
 
 10. To finish creating network region links for your topology, repeat steps 4 through 9 with settings for other regions.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

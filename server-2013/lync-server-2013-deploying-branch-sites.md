@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying branch sites in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 Branch site users get most of their Lync Server 2013 functionality from the server at the central site that the branch site is associated with. Each branch site is associated with exactly one central site. To provide calls to and from the public switched telephone network (PSTN), a branch site might contain any of the following:
 
@@ -42,23 +29,9 @@ Branch sites with a Survivable Branch Appliance or a Survivable Branch Server ar
 
 For details about which branch site deployment is right for your organization, including prerequisites and other planning considerations, see [Planning for PSTN connectivity in Lync Server 2013](lync-server-2013-planning-for-pstn-connectivity.md) and [Planning for branch-site voice resiliency in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md) in the Planning documentation.
 
-<div>
-
 ## In This Section
 
   - [Providing PSTN connectivity at a branch site in Lync Server 2013](lync-server-2013-providing-pstn-connectivity-at-a-branch-site.md)
 
   - [Deploying a Survivable Branch Appliance or Server with Lync Server 2013](lync-server-2013-deploying-a-survivable-branch-appliance-or-server.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

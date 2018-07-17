@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Enterprise CA for smart card authentication in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-03_
 
 The following section describes how to configure an Enterprise Root Certification Authority (CA) to support smart card authentication. For information on how to install an Enterprise Root CA, see Install an Enterprise Root Certification Authority at [http://go.microsoft.com/fwlink/p/?LinkID=313364](http://go.microsoft.com/fwlink/p/?linkid=313364).
-
-<div>
 
 ## Configuring an Enterprise Root Certificate Authority to Support Smart Card Authentication
 
@@ -63,16 +48,4 @@ The following steps describe how to configure an Enterprise Root CA to support S
       - Add a security group containing smart card users with Read/Enroll (Allow) permissions, or
     
       - Add the Domain Users group with Read/Enroll (Allow) permissions
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing Lync Client authentication in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsClientAuth cmdlet enables you to determine whether a user can log on to the Lync Server by using a client certificate, you can run the Test-CsClientAuth cmdlet. After calling Test-CsClientAuth, the cmdlet will contact the certificate provisioning service and download a copy of any client certificates for the specified user. If a client certificate can be found and downloaded, Test-CsClientAuth will then attempt to log on by using that certificate. If logon succeeds, Test-CsClientAuth will log off and report that the test succeeded. If a certificate cannot be found or downloaded, or if the cmdlet is unable to logon using that certificate, then Test-CsClientAuth will report that the test failed.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -69,10 +50,6 @@ The Test-CsClientAuth cmdlet is run by using the account of any user who is enab
     Test-CsClientAuth -TargetFqdn "atl-cs-001.litwareinc.com"-UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
 For more information, see the Help documentation for the [Test-CsClientAuth](http://technet.microsoft.com/en-us/library/gg398712\(v=ocs.14\).aspx) cmdlet.
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -127,10 +104,6 @@ CHECK:
 
 \- If using NTLM\\Kerberos auth, make sure you provided valid credentials
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsClientAuth might fail:
@@ -148,16 +121,4 @@ Here are some common reasons why Test-CsClientAuth might fail:
   - The test user might not have a valid client certificate. You can return information about the client certificates assigned to a user by using a command similar to this:
     
         Get-CsClientCertificate -Identity "sip:kenmyer@litwareinc.com"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

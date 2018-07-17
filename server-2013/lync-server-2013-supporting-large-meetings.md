@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Supporting large meetings using Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-03_
 
 Large meetings do not follow the test model described in the previous section because they have the following characteristics:
 
@@ -50,23 +37,9 @@ We recommend that a dedicated person run and monitor the online portion of a lar
 
 In the following sections, we describe how to implement a dedicated pool for large meetings, including best practices for using Lync Server 2013 to support large meeting scenarios.
 
-<div>
-
 ## In This Section
 
   - [Setting up support for large meetings in Lync Server 2013](lync-server-2013-setting-up-support-for-large-meetings.md)
 
   - [Managing large meetings in Lync Server 2013](lync-server-2013-managing-large-meetings.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

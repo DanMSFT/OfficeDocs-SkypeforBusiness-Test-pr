@@ -8,35 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create a per-user hosted voice mail policy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-24_
 
 A *per-user* policy can only impact individual users, groups, and contact objects. To deploy a per-user policy, you must explicitly assign the policy to one or more users, groups, or contact objects. For details, see [Assign a per-user hosted voice mail policy in Lync Server 2013](lync-server-2013-assign-a-per-user-hosted-voice-mail-policy.md).
 
 For details about working with per-user hosted voice mail policies, see the Lync Server Management Shell documentation for the following cmdlets:
 
-  - [New-CsHostedVoicemailPolicy](new-cshostedvoicemailpolicy.md)
+  - [New-CsHostedVoicemailPolicy](https://technet.microsoft.com/en-us/library/gg398653\(v=ocs.15\))
 
-  - [Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)
+  - [Set-CsHostedVoicemailPolicy](https://technet.microsoft.com/en-us/library/gg412722\(v=ocs.15\))
 
-  - [Get-CsHostedVoicemailPolicy](get-cshostedvoicemailpolicy.md)
-
-<div>
+  - [Get-CsHostedVoicemailPolicy](https://technet.microsoft.com/en-us/library/gg398348\(v=ocs.15\))
 
 ## To create a per-user hosted voice mail policy
 
@@ -56,25 +41,8 @@ For details about working with per-user hosted voice mail policies, see the Lync
     
       - **Organization** specifies a comma-separated list of the Exchange tenants that home Lync Server 2013 users. Each tenant must be specified as the FQDN of that tenant on the hosted Exchange UM service.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Assign a per-user hosted voice mail policy in Lync Server 2013](lync-server-2013-assign-a-per-user-hosted-voice-mail-policy.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Assign a per-user hosted voice mail policy in Lync Server 2013](lync-server-2013-assign-a-per-user-hosted-voice-mail-policy.md)
 

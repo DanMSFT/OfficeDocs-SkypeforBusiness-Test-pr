@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # AudioSignal table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-12_
 
 Each record represents audio signal metrics for one endpoint. Usually, each call has two records, one is for caller, and one is for callee.
 
@@ -171,7 +158,7 @@ Each record represents audio signal metrics for one endpoint. Usually, each call
 <tr class="odd">
 <td><p><strong>EchoPercentSend</strong></p></td>
 <td><p>decimal(5,2)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Percentage of time when echo is detected in sent stream. High echo percentage in send streams an indication of echo leak.</p></td>
 </tr>
 <tr class="even">
@@ -201,70 +188,59 @@ Each record represents audio signal metrics for one endpoint. Usually, each call
 <tr class="even">
 <td><p><strong>RecvSignalLevelCh1</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Signal level as received on channel 1.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RecvSignalLevelCh2</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Signal level as received on channel 2.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RecvNoiseLevelCh1</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Noise level as received on channel 1.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RecvNoiseLevelCh2</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Noise level as received on channel 2.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SendSignalLevelCh1</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Signal level as sent on channel 1.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SendSignalLevelCh2</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Signal level as sent on channel 2.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SendNoiseLevelCh1</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Noise level as sent on channel 1.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SendNoiseLevelCh2</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Noise level as sent on channel 2.</p>
 <p>This column was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

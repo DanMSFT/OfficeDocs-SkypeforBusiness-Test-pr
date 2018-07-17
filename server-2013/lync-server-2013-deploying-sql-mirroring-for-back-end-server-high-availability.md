@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying SQL mirroring for Back End Server high availability in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-01-08_
 
 To be able to deploy SQL mirroring, your servers must run a minimum of SQL Server 2008 R2. This version must run on all the involved servers: the primary, mirror, and the witness. For details, see [http://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=2083921](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2083921).
 
@@ -52,8 +39,12 @@ With SQL mirroring, database recovery mode is always set to **Full**, which mean
 
 With SQL mirroring, you can either configure the topology for mirroring when you create the pools, or after the pools are already created.
 
+
 > [!IMPORTANT]
 > Using Topology Builder or cmdlets to set up and remove SQL mirroring is supported only when the primary, mirror, and witness (if desired) servers all belong to the same domain. If you want to set up SQL mirroring among servers in different domains, see your SQL Server documentation.
+
+
+
 
 > [!IMPORTANT]
 > Whenever you make a change to a Back End Database mirroring relationship, you must restart all the Front End Servers in the pool.<BR>For a change in mirroring, (such as changing the location of a mirror), you must use Topology Builder to perform these three steps: 
@@ -63,12 +54,15 @@ With SQL mirroring, you can either configure the topology for mirroring when you
 > <LI>
 > <P>Add mirroring to the new mirror server.</P>
 > <LI>
-> <p>Publish the topology.</p></LI></OL>
+> <P>Publish the topology.</P></LI></OL>
+
+
+
 
 > [!NOTE]
-> A file share has to be created for the mirror files to be written to, and the service that SQL Server and SQL Agent are running under needs read/write access. If the SQL Server service is running under the context of Network Service, you can add &lt;Domain&gt;\\&lt;SQLSERVERNAME&gt;$ of both the Principal and Mirror SQL Servers to the share permissions. The $ is important to identify that this is a computer account.
+> A file share has to be created for the mirror files to be written to, and the service that SQL Server and SQL Agent are running under needs read/write access. If the SQL Server service is running under the context of Network Service, you can add &lt;Domain&gt;\&lt;SQLSERVERNAME&gt;$ of both the Principal and Mirror SQL Servers to the share permissions. The $ is important to identify that this is a computer account.
 
-<div>
+
 
 ## To configure SQL mirroring while creating a pool in Topology Builder
 
@@ -95,10 +89,6 @@ With SQL mirroring, you can either configure the topology for mirroring when you
     Click **OK** and then **Next** to create the databases and publish the topology. The mirroring and the witness (if specified) will be deployed.
 
 You can use Topology Builder to edit the properties of an already existing pool to enable SQL mirroring.
-
-</div>
-
-<div>
 
 ## To add SQL mirroring to an existing Front End pool in Topology Builder
 
@@ -133,10 +123,6 @@ You should keep the following in mind when setting up SQL mirroring:
       - "Specify a Server Network Address (Database Mirroring)" in the MSDN Library at [http://go.microsoft.com/fwlink/p/?LinkId=247346](http://go.microsoft.com/fwlink/p/?linkid=247346)
     
       - "The Database Mirroring Endpoint (SQL Server)" at [http://go.microsoft.com/fwlink/p/?LinkId=247347](http://go.microsoft.com/fwlink/p/?linkid=247347)
-
-</div>
-
-<div>
 
 ## Using Lync Server Management Shell Cmdlets to Set Up SQL Mirroring
 
@@ -256,10 +242,6 @@ For example, if you add the following option to **Install-CsMirrorDatabase**, on
 
 `-DatabaseType User`
 
-</div>
-
-<div>
-
 ## Removing or Changing SQL Mirroring
 
 To remove the SQL mirroring of a pool in Topology Builder, you must first use a cmdlet to remove the mirror in SQL Server. You can then use Topology Builder to remove the mirror from the topology. To remove the mirror in SQL Server, use the following cmdlet:
@@ -280,10 +262,6 @@ Then, to remove the mirror from the topology, do the following:
 
 3.  Publish the topology.
 
-</div>
-
-<div>
-
 ## Removing a Mirroring Witness
 
 Use this procedure if you need to remove the witness from a Back End Server mirroring configuration.
@@ -301,16 +279,4 @@ Use this procedure if you need to remove the witness from a Back End Server mirr
     However, do not follow that step, and do not type `Uninstall-CsMirrorDatabase` as that would uninstall the entire mirroring configuration.
 
 4.  To remove just the witness from the SQL Server configuration, follow the instructions in "Remove the Witness from a Database Mirroring Session (SQL Server)" at [http://go.microsoft.com/fwlink/p/?LinkId=268456](http://go.microsoft.com/fwlink/p/?linkid=268456).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

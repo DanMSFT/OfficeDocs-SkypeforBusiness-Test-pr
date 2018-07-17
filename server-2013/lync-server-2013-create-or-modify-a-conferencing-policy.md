@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a conferencing policy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-07_
 
 Follow these steps to create a user-level or a site-level conferencing policy. For details about how to assign a user-level policy to a user, see [Assign a per-user conferencing policy in Lync Server 2013](lync-server-2013-assign-a-per-user-conferencing-policy.md). For a list of all available conferencing policy settings, see [Conferencing policy settings reference for Lync Server 2013](lync-server-2013-conferencing-policy-settings-reference.md).
-
-<div>
 
 ## To create a new user or site policy
 
@@ -44,14 +29,11 @@ Follow these steps to create a user-level or a site-level conferencing policy. F
     
       - To create a site-level policy, click **Site policy**. In the **Select a Site** search field, type all or part of the name of the site for which you want to create a policy. In the list of sites, click the site that you want, and then click **OK**.
         
-        <div>
-        
 
         > [!NOTE]
         > The site name becomes the conferencing policy name, and it cannot be changed.
 
-        
-        </div>
+
 
 5.  In **Description**, type a description for the policy.
 
@@ -127,10 +109,6 @@ Follow these steps to create a user-level or a site-level conferencing policy. F
 
 21. Click **Commit**.
 
-</div>
-
-<div>
-
 ## To modify an existing user or site policy
 
 1.  From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.
@@ -144,16 +122,4 @@ Follow these steps to create a user-level or a site-level conferencing policy. F
 5.  In **Edit Conferencing Policy**, modify any of the policy settings, except for the policy name, which cannot be modified.
 
 6.  Click **Commit**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

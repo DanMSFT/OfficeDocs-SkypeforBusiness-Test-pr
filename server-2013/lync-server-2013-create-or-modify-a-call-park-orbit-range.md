@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a Call Park orbit range in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Use one of the following procedures to create or modify a call park orbit range.
-
-<div>
 
 ## To use Lync Server Control Panel to create or modify a range of numbers for parking calls
 
@@ -42,20 +27,14 @@ Use one of the following procedures to create or modify a call park orbit range.
     
       - To create a new orbit range, click **New**. In **Name**, type an identifying name for this range of numbers.
         
-        <div>
-        
 
         > [!NOTE]
         > After you commit the orbit range to the database, you cannot change this name.
 
-        
-        </div>
     
       - To modify an existing orbit range, type all or part of the name of the orbit range in the search field. In the resulting list of orbits, click the orbit you want, click **Edit**, and then click **Show details**.
 
 5.  In the first **Number range** field, type the beginning number of the range of extensions for this call park orbit, and in the second **Number range** field, type the ending number of the range.
-    
-    <div>
     
 
     > [!NOTE]
@@ -73,16 +52,11 @@ Use one of the following procedures to create or modify a call park orbit range.
     > <LI>
     > <P>You should not have more than a total of 50,000 orbits per pool. Each orbit range typically encompasses 100 or fewer orbits, but it can be much larger as long as it includes fewer than 10,000 orbits. For example, instead of specifying a starting number of "7000000" and an ending number of "8000000," consider specifying a starting number of "7000000" and an ending number of "7000100."</P></LI></UL>
 
-    
-    </div>
+
 
 6.  In **FQDN of destination server**, click the fully qualified domain name (FQDN) or service ID of the Application service that hosts the Call Park application. All calls parked to numbers within the range specified by the start number and end number in the orbit range will be routed to this server or pool.
 
 7.  Click **Commit**.
-
-</div>
-
-<div>
 
 ## To use Windows PowerShell to create or modify a range of numbers for parking calls
 
@@ -104,29 +78,12 @@ Use one of the following procedures to create or modify a call park orbit range.
     
         Set-CsCallParkOrbit -Identity "Redmond orbit 1" -NumberRangeStart 500 -NumberRangeEnd 699
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Delete a Call Park orbit range in Lync Server 2013](lync-server-2013-delete-a-call-park-orbit-range.md)  
 
 
-[New-CsCallParkOrbit](new-cscallparkorbit.md)  
-[Set-CsCallParkOrbit](set-cscallparkorbit.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsCallParkOrbit](https://technet.microsoft.com/en-us/library/gg398936\(v=ocs.15\))  
+[Set-CsCallParkOrbit](https://technet.microsoft.com/en-us/library/gg398796\(v=ocs.15\))
 

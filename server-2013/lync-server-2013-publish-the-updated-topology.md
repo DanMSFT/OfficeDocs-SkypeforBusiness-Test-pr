@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Publish the updated topology in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 After updating your topology in Topology Builder, you must publish the topology to the Central Management store before you can configure and use Persistent Chat Server. Read-only copies of the data are replicated to all servers in the topology to keep all servers in sync with topology and other configuration changes.
-
-<div>
 
 ## To publish an updated topology
 
@@ -44,24 +29,8 @@ Before you publish your topology, install the databases for Persistent Chat Serv
 
 5.  On the **Publishing wizard complete** page, verify that the topology was successfully published, and then click **Finish**.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > After publishing the topology, you must configure support for Persistent Chat Server before any content can be archived.
 
-    
-    </div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

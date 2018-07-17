@@ -8,23 +8,10 @@ ms.date: 04/11/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Adding commands to Lync menus in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-04-11_
 
 You can add custom commands to Lync 2013 menus and pass the SIP Uniform Resource Identifier (URI) of the current user and selected contacts to the application that the custom command starts.
 
@@ -51,8 +38,6 @@ The custom command can be invoked in the following ways:
   - Select one or more users, and then choose the custom command.
 
   - Start a two-party or multiparty conversation, and then choose the custom command.
-
-<div>
 
 ## To add a custom command
 
@@ -87,26 +72,23 @@ Use the registry settings in the following table to add a command to the menus. 
 <td><p>ApplicationType</p></td>
 <td><p>DWORD</p></td>
 <td><p>0 = Executable (default)</p>
-<div>
 
 > [!NOTE]
 > Requires ApplicationInstallPath.
 
 
-</div>
 <p>1 = Protocol</p></td>
 </tr>
 <tr class="odd">
 <td><p>ApplicationInstallPath</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Full path of the executable.</p>
-<div>
 
 > [!NOTE]
 > Must be specified if ApplicationType is 0 (Executable).
 
 
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Path</p></td>
@@ -147,10 +129,6 @@ For example, the following Registry Editor (.REG) file shows the results of addi
     "SessionType"=dword:00000001
     "ExtensibleMenu"="ConversationWindowActions;MainWindowRightClick"
 
-</div>
-
-<div>
-
 ## To access a custom command
 
 To access a custom command after it is added, do one of the following, depending on the ExtensibleMenu values that you define:
@@ -162,16 +140,4 @@ To access a custom command after it is added, do one of the following, depending
   - **ConversationWindowActions**   In the Conversation window, click the **More Options** icon, and then click your custom command.
 
   - **ConversationWindowRightClick**   In the Conversation window, right-click a contact name, and then click your custom command.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

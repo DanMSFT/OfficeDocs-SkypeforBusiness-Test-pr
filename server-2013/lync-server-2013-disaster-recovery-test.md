@@ -8,29 +8,14 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Disaster recovery test in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-01-26_
 
 Perform a system recovery for a Lync Server 2013 pool server to test your documented disaster recovery process. This test will simulate a complete hardware failure for one server, and will help guarantee that the resources, plans, and data is available for recovery. Try to rotate the focus of the test each month so that your organization tests the failure of a different server or other piece of equipment every time.
 
 Note that the schedule by which organizations perform Disaster Recovery testing will vary. It is very important that disaster recovery testing is not ignored or neglected.
-
-<div>
 
 
 Export your Lync Server 2013 topology, policies, and configuration settings to a file. Among other things, this file can then be used to restore this information to the Central Management store after an upgrade, a hardware failure, or some other issue has resulted in data loss.
@@ -87,41 +72,20 @@ To facilitate the failover, this CNAME record must be updated to reference the D
 
   - OCSServices.\<domain\>
 
-<div>
-
 
 > [!IMPORTANT]
 > For detailed administration and management procedures, see <A href="lync-server-2013-backing-up-and-restoring-lync-server.md">Backing up and restoring Lync Server 2013</A>.
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
 [Planning for high availability and disaster recovery in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)  
-[Backup and high availability cmdlets in Lync Server 2013](lync-server-2013-backup-and-high-availability-cmdlets.md)  
+[Backup and high availability cmdlets in Lync Server 2013](https://technet.microsoft.com/en-us/library/jj204925\(v=ocs.15\))  
 
 
-[Import-CsConfiguration](import-csconfiguration.md)  
+[Import-CsConfiguration](https://technet.microsoft.com/en-us/library/gg398800\(v=ocs.15\))  
 [Backing up and restoring Lync Server 2013](lync-server-2013-backing-up-and-restoring-lync-server.md)  
-[Managing Lync Server 2013 disaster recovery, high availability, and Backup Service](lync-server-2013-managing-lync-server-disaster-recovery-high-availability-and-backup-service.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing Lync Server 2013 disaster recovery, high availability, and Backup Service](lync-server-2013-managing-lync-server-disaster-recovery-high-availability-and-backup-service.md)
 

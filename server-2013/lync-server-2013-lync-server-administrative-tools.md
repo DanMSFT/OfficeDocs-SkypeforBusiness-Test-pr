@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lync Server 2013 administrative tools
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 This topic describes the administrative tools for Lync Server 2013.
 
@@ -48,33 +35,21 @@ The administrative tools consist of the following:
 
 You can manage your deployment by primarily using Topology Builder and Lync Server Control Panel.
 
-<div>
-
 ## Deployment Wizard
 
 You must use the Lync Server Deployment Wizard included on the installation media to install all administrative tools onto a computer on which you have not already installed Lync Server. During the administrative tools installation process, the Lync Server Deployment Wizard is installed locally along with the other tools so that you can later use it to install files for additional components or remove files for components that you do not want on the computer.
 
 For details about how to run the Lync Server Deployment Wizard for the first time from the Lync Server installation media, see [Install Lync Server 2013 administrative tools](lync-server-2013-install-lync-server-administrative-tools.md).
 
-</div>
-
-<div>
-
 ## Topology Builder
 
 For details about deployment tasks that you can you perform by using Topology Builder, see the Deployment documentation for each server role.
-
-</div>
-
-<div>
 
 ## Lync Server Control Panel
 
 You can use Lync Server 2013 Control Panel to perform most of the administrative tasks required to manage and maintain Lync Server 2013. Lync Server Control Panel provides you with a graphical user interface (GUI) to manage the configuration of the servers running Lync Server, in addition to the users, clients, and devices in your organization. Lync Server Management Shell uses Lync Server Control Panel as the underlying mechanism to perform Lync Server configuration.
 
 Lync Server Control Panel is automatically installed on every Lync Server Front End Server or Standard Edition server. In this release, you administer Edge Servers remotely. You can also install Lync Server Control Panel on another computer, such as a management console from which you want to centrally manage Lync Server. For details, see [Install Lync Server 2013 administrative tools](lync-server-2013-install-lync-server-administrative-tools.md).
-
-<div>
 
 
 > [!IMPORTANT]
@@ -86,37 +61,19 @@ Lync Server Control Panel is automatically installed on every Lync Server Front 
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## Lync Server Management Shell
 
-In Lync Server, the Lync Server Management Shell provides a new method for administration and management. Lync Server Management Shell is a powerful management interface, built on the Windows PowerShell command-line interface, that includes a comprehensive set of cmdlets that are specific to Lync Server. With Lync Server Management Shell, you gain a rich set of configuration and automation controls. Topology Builder and Lync Server Control Panel both implement subsets of these cmdlets to support management of Lync Server. The Lync Server Management Shell includes cmdlets for all Lync Server administration tasks, and you can use the cmdlets individually to manage your deployment. For details, see [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md) documentation or the command-line help for each cmdlet.
-
-</div>
-
-<div>
+In Lync Server, the Lync Server Management Shell provides a new method for administration and management. Lync Server Management Shell is a powerful management interface, built on the Windows PowerShell command-line interface, that includes a comprehensive set of cmdlets that are specific to Lync Server. With Lync Server Management Shell, you gain a rich set of configuration and automation controls. Topology Builder and Lync Server Control Panel both implement subsets of these cmdlets to support management of Lync Server. The Lync Server Management Shell includes cmdlets for all Lync Server administration tasks, and you can use the cmdlets individually to manage your deployment. For details, see [Lync Server 2013 Management Shell](https://technet.microsoft.com/en-us/library/gg398474\(v=ocs.15\)) documentation or the command-line help for each cmdlet.
 
 ## Logging Tool
 
 The Lync Server Logging Tool facilitates troubleshooting by capturing logging and tracing information from the product while the product is running. You can use the tool to run debug sessions on any Lync Server server role. For details about the Logging Tool, see the Lync Server 2010 Logging Tool documentation on the TechNet Library at [http://go.microsoft.com/fwlink/p/?linkId=199265](http://go.microsoft.com/fwlink/p/?linkid=199265).
-
-<div>
 
 
 > [!IMPORTANT]
 > The Centralized Logging Service is recommended for all logging collection over the Lync Server Logging Tool in all circumstances. The Lync Server Logging Tool will still work, but it will interfere or be rendered mostly ineffective if the Centralized Logging Service is already running. You should use only the Centralized Logging Service or the Lync Server Logging Tool, but never both concurrently. For more information on the Centralized Logging Service and why you should use it exclusively, see <A href="lync-server-2013-using-the-centralized-logging-service.md">Using the Centralized Logging Service in Lync Server 2013</A>.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -138,25 +95,8 @@ The Lync Server Logging Tool facilitates troubleshooting by capturing logging an
 
   - [Using the Centralized Logging Service in Lync Server 2013](lync-server-2013-using-the-centralized-logging-service.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Lync Server 2013 Management Shell](https://technet.microsoft.com/en-us/library/gg398474\(v=ocs.15\))
 

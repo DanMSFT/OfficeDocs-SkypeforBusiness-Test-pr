@@ -8,33 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Conferencing policy settings reference for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
 
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-04-22_
-
-For the most up-to-date list of conferencing policy settings see the help topic for the [Set-CsClientPolicy](set-csclientpolicy.md) cmdlet.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For the most up-to-date list of conferencing policy settings see the help topic for the [Set-CsClientPolicy](https://technet.microsoft.com/en-us/library/gg398300\(v=ocs.15\)) cmdlet.
 

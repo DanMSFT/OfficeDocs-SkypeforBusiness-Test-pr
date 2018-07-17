@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Scenarios for reverse proxy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-21_
 
 Reverse proxies are required in Lync Server 2013 for providing access to services and resources such as the meeting and dial-in Simple URLs, address book, meeting content, distribution list expansion, mobility services, and others. The typical reverse proxy scenario in Lync Server 2013 is to allow external clients (for example, the desktop client or Lync Web App client) access to the Director or Front End Server external Web Services.
 
@@ -48,14 +35,11 @@ When planning your Lync Server 2013 deployment, you map the actual requirements 
 
 2.  Lync Server 2013 external web services (deployed on the Front End Server and/or the Director) expect a connection from a reverse proxy on port TCP 4443, and it expects that the connection will be SSL/TLS.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The suggested default listening ports for the external web services are TCP 8080 for HTTP traffic, and TCP 4443 for HTTPS traffic. Topology Builder provides an opportunity to override the defaults and define your own listening ports for the external web services. It’s important to note that the reverse proxy communicates with the external web services, and the external clients communicate with the reverse proxy. The external client communicates with the reverse proxy on port TCP 443, but you can redefine what port the reverse proxy communicates with the external web services on. The options in Topology Builder to override the default listening ports for the web services allows you to resolve listening port conflicts that may arise in your infrastructure.
 
-    
-    </div>
+
 
 3.  Lync Server 2013 external web services expect an unmodified Host Header from the client to identify what service and web server directory the client is attempting to use. Requests should appear as if they came from the reverse proxy
 
@@ -71,14 +55,11 @@ When planning your Lync Server 2013 deployment, you map the actual requirements 
     
       - The Office Web Apps Server when conferencing is defined and configured as part of the Lync Server topology
         
-        <div>
-        
 
         > [!NOTE]
         > The Office Web Apps Server is a separate role server and is not configured as part of the external web services. This server is separately published for client access.
 
-        
-        </div>
+
 
 5.  Define SSL bridging for each service. The external port TCP 443 is mapped to the external web services port of TCP 4443. For unencrypted HTTP, port TCP 80 is mapped to the external web services port TCP 8080
 
@@ -95,14 +76,4 @@ Resources available for planning your reverse proxy deployment:
   - [Port summary - Reverse proxy in Lync Server 2013](lync-server-2013-port-summary-reverse-proxy.md)
 
   - [DNS summary - Reverse proxy in Lync Server 2013](lync-server-2013-dns-summary-reverse-proxy.md)
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

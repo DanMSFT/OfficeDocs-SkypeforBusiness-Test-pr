@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Location-Based Routing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-12_
 
 Lync Server 2013 CU1, Location-Based Routing is a feature of Enterprise Voice. Location-Based Routing is a call management feature that controls how calls are routed by Lync Server 2013 CU1. It enforces restrictions on whether calls can be routed to PBX or PSTN destinations based on the Lync caller’s location. Location-Based Routing applies call authorization rules to PSTN calls based on the caller’s network location. The caller’s location is determined based on the network site associated with the network subnet the caller is connected on. Configuring Location-Based Routing requires first deploying Enterprise Voice, then configuring network regions, sites and subnets. This sets up the foundation for enabling Location-Based Routing.
 
@@ -138,8 +125,6 @@ The following table represents the systems illustrated in this example environme
 </table>
 
 
-<div>
-
 ## In This Section
 
   - [Configuring Enterprise Voice in Lync Server 2013](lync-server-2013-configuring-enterprise-voice.md)
@@ -148,25 +133,8 @@ The following table represents the systems illustrated in this example environme
 
   - [Enabling Location-Based Routing in Lync Server 2013](lync-server-2013-enabling-location-based-routing.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Deploying advanced Enterprise Voice features in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying advanced Enterprise Voice features in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
 

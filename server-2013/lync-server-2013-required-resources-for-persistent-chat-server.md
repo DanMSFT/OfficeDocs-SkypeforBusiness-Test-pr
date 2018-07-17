@@ -8,23 +8,10 @@ ms.date: 02/05/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Required resources for Persistent Chat Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-02-05_
 
 High availability and disaster recovery for Persistent Chat Server requires additional resources beyond what is typically needed for full operation. Before configuring Persistent Chat Server for high availability and disaster recovery, ensure that you have the following resources in addition to what is required for standard Persistent Chat Server operation. For additional configuration information, see [Configuring Persistent Chat Server in Lync Server 2013](lync-server-2013-configuring-persistent-chat-server.md).
 
@@ -40,15 +27,11 @@ High availability and disaster recovery for Persistent Chat Server requires addi
 
   - A file share on the secondary database server to serve as the destination folder for the SQL Server transaction logs that are copied from the primary server file share.
 
-<div>
-
 
 > [!NOTE]
 > Active Persistent Chat servers in a Persistent Chat Server pool MUST reside in the same time zone as the next hop Lync Pool defined in the topology.
 
 
-
-</div>
 
 The following figures provide examples about how the entire Persistent Chat Server pool can be configured in the two different stretched pool topologies:
 
@@ -67,14 +50,4 @@ The following figure shows a stretched Persistent Chat Server pool topology wher
 **Stretched Persistent Chat Server pool when data centers are geo-located with low bandwidth/high latency.**
 
 ![Persistent Chat Server pool LBW configuration exam](images/JJ205211.586b0a3a-3767-4991-944f-ee54389512aa(OCS.15).jpg "Persistent Chat Server pool LBW configuration exam")
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Prevent new connections to Lync Server 2013 for server maintenance
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Lync Server enables you to take a server offline (for example, to apply software or hardware upgrades) without any loss of service to users.
 
@@ -46,17 +33,11 @@ For details about DNS load balancing, see [DNS load balancing in Lync Server 201
 
 In addition to preventing new connections for all services on a server running Lync Server, you can also prevent new connections for individual Lync Server services. For example, this method is useful in a situation where you need to apply a Lync Server update that does not require the whole server to be shut down. Note that when you prevent connections for one service, you must select a service as it is grouped and displayed in the Windows list of services. For example, the Lync Server Front-End service and the data collection agent for Monitoring are separate Lync Server services, but in the Windows services list they are consolidated and shown as the Lync Server Front End service. You can prevent new connections for the Lync Server Front End service, but you cannot prevent new connections for these two individual underlying Lync Server services separately.
 
-<div>
-
 
 > [!IMPORTANT]
 > When you set a server to prevent new connections, and then restart the server, by default the server will immediately begin accepting new connections after it starts. To prevent this, set the server to only pause and resume manually, before you restart the server.
 
 
-
-</div>
-
-<div>
 
 ## To prevent new connections to Lync Server:
 
@@ -70,26 +51,11 @@ In addition to preventing new connections for all services on a server running L
 
 5.  Optionally, but recommended, next to **Startup type**, click **Manual**.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > When you set a server to prevent new connections, and then restart the server, by default the server will immediately begin accepting new connections after it starts. To prevent this, set the server to only pause and resume manually, before you restart the server.
 
-    
-    </div>
+
 
 6.  When you are finished, click **OK**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a translation rule by using the Build a Translation Rule tool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-05_
 
 Follow these steps if you want to define a translation rule by entering a set of values in the **Build a Translation Rule** tool and enabling Lync Server Control Panel to generate the corresponding matching pattern and translation rule for you. Alternatively, you can a write regular expression manually to define the matching pattern and translation rule. For details, see [Create or modify a translation rule manually in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-manually.md).
-
-<div>
 
 ## To define a rule by using the Build a Translation Rule tool
 
@@ -72,18 +57,11 @@ Follow these steps if you want to define a translation rule by entering a set of
 
 9.  On the **Trunk Configuration** page, click **Commit**, and then click **Commit all**.
     
-    <div>
-    
 
     > [!NOTE]
     > Whenever you create or modify a translation rule, you must run the <STRONG>Commit all</STRONG> command to publish the configuration change. For details, see <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">Publish pending changes to the voice routing configuration in Lync Server 2013</A> in the Operations documentation.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## See Also
 
@@ -94,18 +72,5 @@ Follow these steps if you want to define a translation rule by entering a set of
 [Publish pending changes to the voice routing configuration in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
 
 
-[Global media bypass options in Lync Server 2013](lync-server-2013-global-media-bypass-options.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Global media bypass options in Lync Server 2013](lync-server-2013-global-media-bypass-options.md)
 

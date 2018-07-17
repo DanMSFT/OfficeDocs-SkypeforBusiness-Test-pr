@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # ErrorReport table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 The ErrorReport table stores information about errors that have occurred. Each record is one error occurrence. The errors are captured either by the CDR agent running on the front-end server or sent from the client.
 
@@ -124,26 +111,26 @@ The ErrorReport table stores information about errors that have occurred. Each r
 <tr class="odd">
 <td><p><strong>IsCapturedByServer</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Is the error report captured by the CDR agent running on the front-end server, or sent by the client.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Flag</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Reserved for future use.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TelemetryId</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Unique identifier correlating join time information for the different components involved in a conference.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionSetupTime</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Time (in milliseconds) required for a specific component to join a conference.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
@@ -161,15 +148,4 @@ The ErrorReport table stores information about errors that have occurred. Each r
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

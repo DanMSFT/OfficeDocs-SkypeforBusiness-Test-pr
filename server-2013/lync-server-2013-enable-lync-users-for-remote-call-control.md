@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enable Lync users for remote call control in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 You can configure Lync users for remote call control by using in-band provisioning policies that are server-based. You can manage in-band provisioning settings by using Lync Server Control Panel or the Lync Server Management Shell command-line interface. These tools replace the Windows Management Instrumentation (WMI) snap-in that was used to manage Group Policy settings in earlier releases.
 
@@ -32,17 +19,11 @@ If you prefer to let users to configure their own remote call control settings i
 
 If you have an existing Communications Server 2007 R2 or Communications Server 2007 deployment, Communicator 2007 R2 and Communicator 2007 clients will continue to use Group Policy during side-by-side migration. However, if you want policy settings to carry over to Lync clients, you need to configure the equivalent Lync Server in-band provisioning settings.
 
-<div>
-
 
 > [!NOTE]
 > To enable a user for remote call control, you need to provide the user with both a Line URI and a Line Server URI. As described in <A href="lync-server-2013-deployment-tasks-for-remote-call-control.md">Deployment tasks for remote call control in Lync Server 2013</A>, you need to be sure to use the syntax that is required by the gateway for these settings.<BR>Be sure that the domain in the Line Server URI is the same as the destination domain that you specified in the MatchUri parameter when you configured the static route to the gateway.<BR>The Line URI specifies the phone number assigned to the user in E.164 format, with the "TEL:" prefix (for example, tel:+14255550150). If you want to configure an extension number, then the format is tel:+14255550150;ext=111. If you previously configured the user’s Line URI and the value has not changed, you do not need to specify the Line URI when you enable the user for remote call control.
 
 
-
-</div>
-
-<div>
 
 ## To enable remote call control for Lync-enabled users by using Management Shell
 
@@ -57,10 +38,6 @@ If you have an existing Communications Server 2007 R2 or Communications Server 2
     For example:
     
         Set-CsUser -Identity "Katie Jordan" -EnterpriseVoiceEnabled $false -LineServerUri sip:rccgateway@contoso.net -LineUri tel:+14255550150 -RemoteCallControlTelephonyEnabled $true
-
-</div>
-
-<div>
 
 ## To configure users for remote call control by using Lync Server Control Panel
 
@@ -83,16 +60,4 @@ If you have an existing Communications Server 2007 R2 or Communications Server 2
       - To enable remote call control, but disable PC-to-PC audio calls, and to enable only the user to control their PBX phone from Lync 2013 to make PC-to-phone calls, click **Remote call control only**. In **Line URI**, specify the telephone number of the user. In **Line Server URI**, specify the SIP URI of the SIP/CSTA gateway.
 
 8.  When you are finished, click **Commit**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

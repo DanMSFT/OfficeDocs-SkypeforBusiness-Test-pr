@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # About network regions, sites, and subnets in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-24_
 
 The advanced Enterprise Voice features described in this section share certain configuration requirements for network regions, network sites, and subnets. For example, all three advanced features require that each subnet in your topology be associated with a specific *network site*, and each network site must be associated with a *network region*.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -36,15 +21,11 @@ The advanced Enterprise Voice features described in this section share certain c
 
 
 
-</div>
-
 Call admission control and E9-1-1 have additional configuration requirements for network sites:
 
   - Call admission control requires that a *bandwidth policy profile* be specified for each site that is constrained by WAN bandwidth limitations. If you plan to deploy call admission control, you must [Create bandwidth policy profiles in Lync Server 2013](lync-server-2013-create-bandwidth-policy-profiles.md) before you configure your network sites.
 
   - E9-1-1 requires that a *location policy* be specified for each site. If you plan to deploy E9-1-1, you must [Create location policies in Lync Server 2013](lync-server-2013-create-location-policies.md) before you configure your network sites.
-
-<div>
 
 ## Create or Modify Network Regions, Network Sites, and Subnets
 
@@ -55,16 +36,4 @@ The following topics provide steps to create or modify network regions and netwo
   - [Create or modify a network site in Lync Server 2013](lync-server-2013-create-or-modify-a-network-site.md)
 
   - [Associate a subnet with a network site in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

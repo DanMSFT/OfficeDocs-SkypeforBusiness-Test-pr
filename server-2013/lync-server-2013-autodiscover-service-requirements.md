@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Autodiscover service requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-25_
 
 The Microsoft Lync Server 2013 Autodiscover Service runs on the Director and Front End pool servers, and when published in DNS, can be used by mobile devices running Lync Mobile to locate mobility services. Before mobile devices running Lync Mobile can take advantage of automatic discovery, you need to modify certificate subject alternative name lists on any Director and Front End Server running the Autodiscover Service. In addition, it may be necessary to modify the subject alternative name lists on certificates used for external web service publishing rules on reverse proxies.
 
@@ -39,8 +26,6 @@ The decision about using subject alternative name lists on reverse proxies is ba
 Reissuing certificates using an internal certificate authority is typically a simple process but for public certificates used on the web service publishing rule, adding multiple subject alternative name entries can become expensive. To work around this issue, we support the initial automatic discovery connection over port 80, which is then redirected to port 8080 on the Director or Front End Server.
 
 For example, assume that a mobile client running Lync Mobile is configured to sign in to Lync Server 2013 using the automatic discovery feature using HTTP for the initial request.
-
-<div>
 
 ## Initial Autodiscover Process for Mobile Devices Using Port 80
 
@@ -62,14 +47,11 @@ For example, assume that a mobile client running Lync Mobile is configured to si
     
     In this scenario, there are no certificate changes required to support mobility.
     
-    <div>
-    
 
     > [!NOTE]
     > If the target web server has a certificate that does not have a matching value for lyncdiscover.contoso.com as a subject alternative name list value:<BR>a.&nbsp;&nbsp;&nbsp;Web server responds with a “Server Hello” and no certificate.<BR>b.&nbsp;&nbsp;&nbsp;Mobile device running Lync Mobile immediately terminates the session.<BR>If the target web server has a certificate that includes lyncdiscover.contoso.com as a subject alternative name list value:<BR>a.&nbsp;&nbsp;&nbsp;Web server responds with a “Server hello” and a certificate.<BR>b.&nbsp;&nbsp;&nbsp;Mobile device running Lync Mobile validates the certificate and completes the handshake.
 
-    
-    </div>
+
 
 To support an initial connection to the Autodiscover Service using port 80 on your reverse proxy server, you can create an http publishing rule similar to this example for a Forefront Threat Management Gateway 2010 reverse proxy web publishing rule:
 
@@ -82,10 +64,6 @@ To support an initial connection to the Autodiscover Service using port 80 on yo
 4.  On the **Authentication** tab, select **No authentication**, and **Client cannot authenticate directly**.
 
 5.  Commit changes, and move the rule to the top of the list of Lync rules (first in processing order).
-
-</div>
-
-<div>
 
 ## Mobility for the Split Domain Deployment
 
@@ -108,16 +86,4 @@ You will need to collect and record the following deployed attributes:
   - If you will define blocked and allowed domains, determine the domains that you will explicitly allow or explicitly block
 
   - For online federation, you must plan for firewall exceptions, certificates and DNS host (A or AAAA, if using IPv6) records. Additionally, you must configure federation policies. For details, see [Planning for Lync Server 2013 and Office Communications Server federation](lync-server-2013-planning-for-lync-server-and-office-communications-server-federation.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,29 +8,14 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View Edge Server settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-20_
 
 General Edge Server configurations should be reviewed against the data in the configuration management database—to help guarantee that all changes were documented as per the defined change control procedures.
 
 Additional checks could include those that are described in the following sections:
-
-<div>
 
 ## Verify the Allow and block lists
 
@@ -72,37 +57,16 @@ And this command verifies the connection between your Edge Server and all of the
 
 `Get-CsAllowedDomain | ForEach-Object {Test-CsFederatedPartner -TargetFqdn "atl-edge-001.litwareinc.com" -Domain $_.Domain}`
 
-</div>
-
-<div>
-
 ## Verify multiple Edge Servers are identical
 
 If multiple Edge Servers are deployed in a load balanced array, we recommend verifying that all Edge Servers in the array are configured in the same manner.
 
 You can view settings for Edge Servers in the details pane of the Lync Server 2013 extension for the Computer Management snap-in.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsAllowedDomain](get-csalloweddomain.md)  
-[Get-CsBlockedDomain](get-csblockeddomain.md)  
-[Test-CsFederatedPartner](test-csfederatedpartner.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsAllowedDomain](https://technet.microsoft.com/en-us/library/gg398164\(v=ocs.15\))  
+[Get-CsBlockedDomain](https://technet.microsoft.com/en-us/library/gg398424\(v=ocs.15\))  
+[Test-CsFederatedPartner](https://technet.microsoft.com/en-us/library/gg398281\(v=ocs.15\))
 

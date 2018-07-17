@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View meeting configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 In Lync Server 2013 Control Panel, you use meeting configuration setting to control how meetings are implemented in your deployment. This includes the following meeting configurations:
 
   - A global configuration that is created by default when you deploy Lync Server 2013.
 
   - Optional site-level and user-level configurations that you can create and use to specify how meetings are implemented for specific sites or users.
-
-<div>
 
 ## To view meeting configuration settings
 
@@ -48,15 +33,9 @@ In Lync Server 2013 Control Panel, you use meeting configuration setting to cont
     
     **Edit Meeting Configuration - \<policy\>** opens displaying the settings for the selected policy. For details about configuring the settings, see [Create or modify a collection of meeting configuration settings in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-meeting-configuration-settings.md).
 
-</div>
-
-<div>
-
 ## Viewing Meeting Configuration Information by Using Windows PowerShell Cmdlets
 
 Meeting configuration settings can be viewed by using Windows PowerShell and the Get-CsMeetingConfiguration cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view meeting configuration information
 
@@ -79,19 +58,5 @@ Meeting configuration settings can be viewed by using Windows PowerShell and the
         CustomFooterText                :
         AllowConferenceRecording        : True
 
-</div>
-
-For more information, see the help topic for the [Get-CsMeetingConfiguration](get-csmeetingconfiguration.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [Get-CsMeetingConfiguration](https://technet.microsoft.com/en-us/library/gg425875\(v=ocs.15\)) cmdlet.
 

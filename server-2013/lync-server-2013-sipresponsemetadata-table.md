@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # SIPResponseMetaData table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 The SIPResponseMetaDataTable contains a list of SIP response codes and the classification and definition of each of those codes. These codes are generated in response to events affecting SIP devices and SIP communication sessions; for example, the response code 403 is generated when a SIP device makes a request, but the server declines to honor that request.
 
@@ -56,7 +43,7 @@ This table was introduced in Microsoft Lync Server 2013.
 <tr class="even">
 <td><p><strong>Class</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>General classification for the response code. Classifications include:</p>
 <ul>
 <li><p>1 – Informational Responses</p></li>
@@ -70,21 +57,10 @@ This table was introduced in Microsoft Lync Server 2013.
 <tr class="odd">
 <td><p><strong>Description</strong></p></td>
 <td><p>nvarchar(256)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Description of the SIP response code. For example, response code 181 has the following description:</p>
 <p>Call Is Being Forwarded</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

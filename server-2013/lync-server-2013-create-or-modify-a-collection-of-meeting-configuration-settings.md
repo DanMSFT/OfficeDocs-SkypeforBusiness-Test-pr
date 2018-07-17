@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a collection of meeting configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 You can use the settings on the Meeting Configuration page to define various characteristics of the meeting join experience. By default, the global settings define the join experience. You can also create site-level and pool-level meeting join settings. If you create pool-level settings, those settings apply to all meetings hosted by that pool. If you do not create pool-level settings, site-level settings apply, if they exist. If you do not define site-level settings, the global settings apply to all meetings.
-
-<div>
 
 ## To create new meeting join settings
 
@@ -62,14 +47,10 @@ You can use the settings on the Meeting Configuration page to define various cha
     
       - To customize the logo that appears in the meeting invite, in **Logo URL**, enter the location of the logo.
         
-        <div>
-        
 
         > [!NOTE]
         > The logo must be a GIF or JPG image with a size of 188 by 30 pixels.
 
-        
-        </div>
     
       - To customize the help text that appears in the meeting invite, in **Help URL**, enter the location of the help text.
     
@@ -78,10 +59,6 @@ You can use the settings on the Meeting Configuration page to define various cha
       - To customize the footer text that appears in the meeting invite, in **Custom footer text**, enter text.
 
 10. Click **Commit**.
-
-</div>
-
-<div>
 
 ## To modify an existing collection of meeting configurations
 
@@ -97,15 +74,9 @@ You can use the settings on the Meeting Configuration page to define various cha
 
 6.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## Creating New Meeting Configuration Settings by Using Windows PowerShell Cmdlets
 
 Meeting configuration settings can be created (at the site scope only) by using Windows PowerShell and the New-CsMeetingConfiguration cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To create meeting configuration settings that use the default values
 
@@ -115,19 +86,11 @@ Meeting configuration settings can be created (at the site scope only) by using 
     
     Because no parameters (other than the mandatory Identity parameter) were specified in the preceding command, the new meeting configuration settings will use the default values for all its properties.
 
-</div>
-
-<div>
-
 ## To change a property value when creating meeting configuration settings
 
   - To create settings that use different property values, simply include the appropriate parameter and parameter value. For example, to create a collection of meeting configuration settings that, by default, admit everyone to a meeting as a presenter use a command like this:
     
         New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone"
-
-</div>
-
-<div>
 
 ## To change multiple property values when creating meeting configuration settings
 
@@ -135,19 +98,5 @@ Meeting configuration settings can be created (at the site scope only) by using 
     
         New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone" -PSTNUCallersBypassLobby $True
 
-</div>
-
-For more information, see the help topic for the [New-CsMeetingConfiguration](new-csmeetingconfiguration.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [New-CsMeetingConfiguration](https://technet.microsoft.com/en-us/library/gg398065\(v=ocs.15\)) cmdlet.
 

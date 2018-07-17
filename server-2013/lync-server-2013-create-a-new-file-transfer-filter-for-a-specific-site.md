@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create a new file transfer filter in Lync Server 2013 for a specific site
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-18_
 
 In addition to modifying the global file transfer filter, you can configure custom file transfer filters for specific sites within your Lync Server 2013 deployment. For details about file transfer filtering, see [Configuring file transfer and URL filtering for instant messaging (IM) in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md).
-
-<div>
 
 ## To create a file transfer filter for a specific site
 
@@ -60,10 +45,6 @@ In addition to modifying the global file transfer filter, you can configure cust
 
 10. Click **Commit**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -72,18 +53,5 @@ In addition to modifying the global file transfer filter, you can configure cust
 [Modify the default file transfer filter in Lync Server 2013](lync-server-2013-modify-the-default-file-transfer-filter.md)  
 
 
-[Modify the default URL filter in Lync Server 2013](lync-server-2013-modify-the-default-url-filter.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Modify the default URL filter in Lync Server 2013](lync-server-2013-modify-the-default-url-filter.md)
 

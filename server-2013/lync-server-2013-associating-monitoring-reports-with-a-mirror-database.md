@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Associating Monitoring Reports with a mirror database in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-07_
 
 If you configure a mirror for your monitoring database, that mirror database will take over as the primary database if a failover occurs. However, if you use Lync Server Monitoring Reports and a failover occurs, you might find that your Monitoring Reports are not connecting to the mirror database. This is because, when you install Monitoring Reports, you specify only the location of the primary database; you do not specify the location of the mirror database.
 
@@ -68,24 +55,9 @@ To get Monitoring Reports to automatically failover to the mirror database, you 
 
 8.  Click **Apply**.
 
-<div>
-
 ## See Also
 
 
 [Installing Lync Server 2013 Monitoring Reports](lync-server-2013-installing-lync-server-2013-monitoring-reports.md)  
-[Using Monitoring Reports in Lync Server 2013](lync-server-2013-using-monitoring-reports.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Using Monitoring Reports in Lync Server 2013](lync-server-2013-using-monitoring-reports.md)
 

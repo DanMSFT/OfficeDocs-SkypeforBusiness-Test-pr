@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Backing up core data and settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-04-23_
 
 The following procedures use Lync Server Management Shell cmdlets to create backup files for settings and data for core services. For details about the tools used in this section, including where they are located, see [Backup and restoration requirements in Lync Server 2013: tools and permissions](lync-server-2013-backup-and-restoration-requirements-tools-and-permissions.md). For details about backing up Archiving and Monitoring data, see [Backing up Archiving and Monitoring databases in Lync Server 2013](lync-server-2013-backing-up-archiving-and-monitoring-databases.md).
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ The following procedures use Lync Server Management Shell cmdlets to create back
 
 
 
-</div>
-
 You can run the cmdlets described in this section locally or remotely.
-
-<div>
 
 ## To back up core data and settings
 
@@ -58,14 +39,11 @@ You can run the cmdlets described in this section locally or remotely.
     
         Export-CsConfiguration -FileName "C:\Config.zip"
     
-    <div>
-    
 
     > [!NOTE]
     > This step exports your Lync Server topology, policies, and configuration settings to a file. No other step is required to backup topology data.
 
-    
-    </div>
+
 
 5.  Copy the backed-up Central Management store configuration file to $Backup\\.
 
@@ -100,16 +78,4 @@ You can run the cmdlets described in this section locally or remotely.
             Export-CsRgsConfiguration -Source ApplicationServer:pool01.contoso.com -FileName C:\RgsConfiguration.zip
 
 11. Copy the backed up Response Group configuration file to $Backup\\.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

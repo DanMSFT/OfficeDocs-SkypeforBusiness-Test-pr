@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # FocusJoinsAndLeaves view in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 The FocusJoinsAndLeaves view stores information about join and leave information for one conference. Each conference is represented in this view by a record written each time a user joins and leaves the conference. This view was introduced in Microsoft Lync Server 2013.
 
@@ -91,7 +78,7 @@ The FocusJoinsAndLeaves view stores information about join and leave information
 <tr class="even">
 <td><p><strong>FocusUserInstance</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>IsuserInternal</strong></p></td>
@@ -130,15 +117,4 @@ The FocusJoinsAndLeaves view stores information about join and leave information
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

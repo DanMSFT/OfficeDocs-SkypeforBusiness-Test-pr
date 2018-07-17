@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Checking event logs in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-08-06_
 
 You can use [Windows Event Viewer](http://go.microsoft.com/fwlink/p/?linkid=314067) to view event logs and obtain information about service failures, replication errors in the AD DS, and warnings about system resources such as virtual memory and disk space. Event Viewer is included with Windows Server 2008 and 2012.
 
@@ -50,15 +37,11 @@ A server that is running Lync Server on a Windows Server operating system recor
 
   - **Lync Server 2013**   The logging tool records significant events related to authentication, connections, and user actions. After enabling diagnostic logging, you can view the log entries in Event Viewer.
 
-<div>
-
 
 > [!NOTE]
 > We do not recommend that you use the maximum logging settings unless you are instructed to do this by Microsoft Customer Support Services. Maximum logging drains significant resources and can give many “false positives,” that is, errors that get logged only at maximum logging but are really expected and are not a cause of concern. We also recommend that you do not enable diagnostic logging permanently. Use it only when troubleshooting.
 
 
-
-</div>
 
 Within each Event Viewer log, Lync Server 2013 records informational, warning, and error events. Monitor these logs closely to track the types of transactions being conducted on the Lync Server 2013 servers. You should periodically archive the logs or use automatic rollover to avoid running out of space. Because log files can occupy a finite amount of space, increase the log size (for example, to 50 MB) and set it to overwrite so that the Lync Server 2013 Server can continue to write new events.
 
@@ -86,23 +69,8 @@ For more information about Lync Server 2013 Management Pack, refer to [Monitorin
 
 **Event triggers**   In Windows Server 2012 you can "Attach a Task to This Event" within the Windows Event Viewer—where an administrator can either run a program, send an email message or display an on-screen message. For more information about this feature, see the Windows Server 2008 R2 topic [Run a Task in Response to a Given Event](http://technet.microsoft.com/en-us/library/cc748900.aspx). You can also use command-line tools such as ‘Eventtrigger.exe’ to create and query event logs and associate programs with particular logged events. By using Eventtriggers.exe, you can create event triggers that run programs when specific events occur.
 
-<div>
-
 ## See Also
 
 
-[Windows Event Viewer](http://go.microsoft.com/fwlink/p/?linkid=314067)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Windows Event Viewer](http://go.microsoft.com/fwlink/p/?linkid=314067)
 

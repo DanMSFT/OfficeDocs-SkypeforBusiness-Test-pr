@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Front End pool ABC failover procedure in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-22_
 
 Use the following steps to perform the ABC failover procedure. This procedure contains a high-level description of each step, followed by commands and cmdlets to be run for each step.
 
 To run the cmdlets, open a Lync Server Management Shell using Run as Administrator.
-
-<div>
 
 ## To Perform an ABC Failover
 
@@ -46,7 +31,7 @@ To run the cmdlets, open a Lync Server Management Shell using Run as Administrat
     
         Invoke-CsManagementServerFailover -BackupSqlServerFqdn <Pool B BE FQDN> -BackupSqlInstanceName <Pool B BE instance name> [-BackupMirrorSqlServerFqdn <Pool B Mirror BE FQDN> -BackupMirrorSqlInstanceName <Pool B Mirror BE Instance name>] -Force -Verbose
     
-    After you do this, we recommend that you move the CMS from pool B to another existing paired pool for extra resiliency. For details, see [Move-CsManagementServer](move-csmanagementserver.md)..
+    After you do this, we recommend that you move the CMS from pool B to another existing paired pool for extra resiliency. For details, see [Move-CsManagementServer](https://technet.microsoft.com/en-us/library/gg412921\(v=ocs.15\))..
 
 3.  If Pool A contains CMS, import the LIS configuration from pool A into pool B’s LIS database (Lis.mdf). This will work only if you have been backing up LIS data on a regular basis. To import the LIS configuration, run the following cmdlets:
     
@@ -55,14 +40,10 @@ To run the cmdlets, open a Lync Server Management Shell using Run as Administrat
 
 4.  Import backed-up Lync Server Response Group service workflows from pool A into pool B.
     
-    <div>
-    
 
     > [!NOTE]
     > Currently, the <STRONG>Import-CsRgsConfiguration</STRONG> cmdlet requires that the queue and workflow names on pool A are distinct from the queue and workflow names on pool B. If the names are not distinct, you will get an error when running the <STRONG>Import-CsRgsConfiguration</STRONG> cmdlet, and the queues and workflows will need to be renamed in pool B before proceeding with <STRONG>Import-CsRgsConfiguration</STRONG> cmdlet.
 
-    
-    </div>
     
     You have two options for importing the Response Group configuration from pool A to pool B. Which option you use depends on whether you want to overwrite the application-level settings of pool B with the application-level settings in pool A.
     
@@ -74,14 +55,11 @@ To run the cmdlets, open a Lync Server Management Shell using Run as Administrat
         
             Import-CsRgsConfiguration -Destination "service:ApplicationServer:<Pool B FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    <div>
-    
 
     > [!WARNING]
     > Keep in mind that if you do not want to overwrite the application-level settings of the backup pool (pool B) with the settings of the primary pool (pool A), pool A’s application-level settings will be lost if pool A is lost, because the Response Group application can store only one set of application-level settings per pool. When pool C is deployed to replace pool A, the application-level settings must be reconfigured, including the default music-on-hold audio file.
 
-    
-    </div>
+
 
 5.  Verify that the Response Group configuration import was successful by running the following cmdlets to display the imported response groups. Note that the imported response groups are still owned by pool A.
     
@@ -99,14 +77,11 @@ To run the cmdlets, open a Lync Server Management Shell using Run as Administrat
         
             Set-CsUnassignedNumber -Identity "<Range Name>" -AnnouncementService "<Pool B FQDN>" -AnnouncementName "<New Announcement in pool B>"
     
-    <div>
-    
 
     > [!NOTE]
     > This step is not required for unassigned number ranges that use "Exchange UM" as the selected announcement service.
 
-    
-    </div>
+
 
 7.  Fail over Pool A to Pool B in Disaster Recovery (DR) mode, by running the following cmdlet:
     
@@ -179,14 +154,11 @@ To run the cmdlets, open a Lync Server Management Shell using Run as Administrat
         
             Import-CsRgsConfiguration -Destination "service:ApplicationServer:<Pool B FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    <div>
-    
 
     > [!WARNING]
     > Keep in mind that if you do not want to overwrite the application-level settings of Pool C with the settings of the backup pool (pool B), pool B’s application-level settings will be lost because the Response Group application can store only one set of application-level settings per pool.
 
-    
-    </div>
+
 
 18. Verify that the Response Group configuration import was successful by running the following cmdlets to display the response groups that have been imported to Pool C.
     
@@ -210,14 +182,11 @@ To run the cmdlets, open a Lync Server Management Shell using Run as Administrat
     
       - (Optional) Remove from pool B the announcements that were re-created in pool C if they are no longer in use in pool B. To remove announcements, use the **Remove-CsAnnouncement** cmdlet.
         
-        <div>
-        
 
         > [!NOTE]
         > This step is not required for unassigned number ranges that use "Exchange UM" as the announcement service.
 
-        
-        </div>
+
 
 21. Clean up user data of pool A in pool B by running the following cmdlet:
     
@@ -288,14 +257,11 @@ To run the cmdlets, open a Lync Server Management Shell using Run as Administrat
             Update-CsUserData -FileName c:\logs\exportedUserDAta.xml -UserFilter $user - 
             }
         
-        <div>
-        
 
         > [!NOTE]
         > A service outage will occur for users who are homed on SBAs that are associated with pool A until these users are moved to pool C.
 
-        
-        </div>
+
 
 28. In Topology Builder, for each SBA X previously associated with Pool A, do the following:
     
@@ -312,16 +278,4 @@ To run the cmdlets, open a Lync Server Management Shell using Run as Administrat
       - Move users who were originally homed on SBA X from pool C to SBA X by running the following cmdlet.
         
             Import-Csv d:\sbaxusers.txt | Move-CsUser -Target <SBA X FQDN> -Force
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

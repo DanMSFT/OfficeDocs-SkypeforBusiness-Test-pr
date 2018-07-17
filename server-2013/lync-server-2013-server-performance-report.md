@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Server Performance Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-01_
 
 The Server Performance Report provides a list of Microsoft Lync Server 2013 servers that have experienced the highest-percentage of poor calls. The report breaks down servers by server type, reporting separate statistics for the following types:
 
@@ -44,8 +31,6 @@ The Server Performance Report provides a list of Microsoft Lync Server 2013 serv
 
 It’s important to note that the ranking shown in this report as relative rankings. For example, suppose your worst-performing server had one poor call among its 1,000 placed calls. That's a more-than-acceptable percentage of .1%. However, if that's the worst-performing server you have (that is, if all your other servers have a poor call percentage even lower than .1%), then that server will still appear on the Server Performance Report.
 
-<div>
-
 ## Accessing the Server Performance Report
 
 The Server Performance Report is accessed from the Monitoring Reports home page. You can drill down to the [Call List Report in Lync Server 2013](lync-server-2013-call-list-report.md) by clicking either of the following metrics:
@@ -58,17 +43,9 @@ In addition, you can drill down to the Server Media Quality Trend Report by clic
 
   - Trend
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Server Performance Report
 
 The Server Performance Report provides a number of ways to filter data; for example, you can filter on network type (calls made from a wired connection vs. calls made from a wireless connection) and access type (calls made from inside the firewall vs. calls made from outside the firewall). It's a good idea when viewing the server performance report to make use of these filters. For example, suppose you have a Mediation Server that has a poor call percentage of 3.24%. If you look solely at wireless calls, that same server might have a poor call percentage approaching 20%. That means that the server was having difficulty with wireless calls, a problem that is partially obscured because the server was not having problems with wired calls.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -159,10 +136,6 @@ The following table lists the filters that you can use with the Server Performan
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics
 
@@ -332,7 +305,7 @@ The following table lists the information provided in the Server Performance Rep
 </tr>
 <tr class="even">
 <td><p><strong>Client health %</strong></p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Indicates the relative health of the client device during the call.</p></td>
 </tr>
 </tbody>
@@ -416,17 +389,4 @@ The following table lists the information provided in the Server Performance Rep
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

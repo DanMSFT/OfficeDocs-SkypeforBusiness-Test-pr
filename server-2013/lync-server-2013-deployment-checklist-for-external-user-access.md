@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment checklist for external user access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-04_
 
 Before you deploy your perimeter network and implement support for external users, you must already have deployed your Microsoft Lync Server 2013 internal servers, including a Front End pool or a Standard Edition server. If you plan to deploy the optional Directors in your internal network, you should also deploy them prior to deploying Edge Servers. For details about the Director deployment process, see [Scenarios for the Director in Lync Server 2013](lync-server-2013-scenarios-for-the-director.md) in the Planning documentation.
 
@@ -40,15 +27,11 @@ For details about the Planning Tool and Topology Builder, see [Beginning the pla
 
 The following table provides an overview of the Edge Server deployment process. To review the planning decisions that must be made before deploying external user access, see [Scenarios for external user access in Lync Server 2013](lync-server-2013-scenarios-for-external-user-access.md).
 
-<div>
-
 
 > [!WARNING]
 > The information in the following table focuses on a new deployment. If you have deployed Edge Servers in a Lync Server 2010, Office Communications Server 2007 R2 or Office Communications Server 2007 environment, see the <A href="migration.md">Migration</A> for details about migrating to Lync Server 2013. Migration is not supported from any version prior to Office Communications Server 2007 R2, including Office Communications Server 2007, Live Communications Server 2005, and Live Communications Server 2003.
 
 
-
-</div>
 
 To enhance Edge Server performance and security, and to facilitate deployment, apply the following best practices when you deploy your perimeter network and Edge Servers:
 
@@ -57,8 +40,6 @@ To enhance Edge Server performance and security, and to facilitate deployment, a
   - We recommend that you deploy Edge Servers in a workgroup rather than a domain. Doing so simplifies installation and keeps Active Directory Domain Services (AD DS) out of the perimeter network. Locating AD DS in the perimeter network can present a significant security risk.
 
   - Joining an Edge Server to a domain located entirely in the perimeter network is supported but not recommended. An Edge Server as part of the internal domain violates trusted network boundaries, where the Internet is least trusted, perimeter network is more trusted than the Internet, and the internal network is most trusted. An Edge server as a member of the domain is automatically a part of the most trusted network, but resides in a less trusted network (the perimeter).
-
-<div>
 
 ## Deployment Process for Edge Servers
 
@@ -83,15 +64,15 @@ To enhance Edge Server performance and security, and to facilitate deployment, a
 <td><p>Create the appropriate edge topology and determine the appropriate components.</p></td>
 <td><ul>
 <li><p>Run Topology Builder to configure Edge Server settings and create and publish the topology, and then use Lync Server Management Shell to export the topology configuration file.</p></li>
-</ul></td>
+</ul>
+<p></p></td>
 <td><p><strong>Domain Admins</strong> group and <strong>RTCUniversalServerAdmins</strong> or <strong>CsAdmins</strong> group</p>
-<div>
 
 > [!NOTE]
 > You can define a topology using an account that is a member of the local users group, but publishing a topology requires an account that is a member of the <STRONG>Domain Admins</STRONG> group and the <STRONG>RTCUniversalServerAdmins</STRONG> group.
 
 
-</div></td>
+</td>
 <td><p><a href="lync-server-2013-building-an-edge-and-director-topology.md">Building an edge and Director topology in Lync Server 2013</a> in the Deployment documentation</p></td>
 </tr>
 <tr class="even">
@@ -102,7 +83,6 @@ To enhance Edge Server performance and security, and to facilitate deployment, a
 <li><p>Configure internal and external DNS records (host A and AAAA for IPv4 and IPv6), including configuring the DNS suffix on the computer to be deployed as an Edge Server.</p></li>
 <li><p>(Optional) Create and install public certificates. The time required to obtain certificates depends on which certification authority (CA) issues the certificate. If you do not perform this step at this point, you must do it during Edge Server installation. The Edge Server services cannot be started until certificates are obtained and installed.</p></li>
 <li><p>Provision support for public IM connectivity, if your deployment is to support communications with Windows Live, AOL, or Yahoo! users.</p>
-<div>
 
 > [!IMPORTANT]
 > <UL>
@@ -114,7 +94,7 @@ To enhance Edge Server performance and security, and to facilitate deployment, a
 > <P>More than ever, Lync is a powerful tool for connecting across organizations and with individuals around the world. Federation with Windows Live Messenger requires no additional user/device licenses beyond the Lync Standard CAL. Skype federation will be added to this list, enabling Lync users to reach hundreds of millions of people with IM and voice.</P></LI></UL>
 
 
-</div></li>
+</li>
 <li><p>Provision support for XMPP and federation support for Office Communications Server 2007, Office Communications Server 2007 R2, Lync Server 2010 partners, if your deployment will use these</p></li>
 <li><p>Configure firewalls.</p></li>
 </ol></td>
@@ -128,7 +108,8 @@ To enhance Edge Server performance and security, and to facilitate deployment, a
 <p>Prepare the reverse proxy for Mobility services if you have planned for Mobility and are deploying the Mobility services on the Front End pool or Standard Edition server.</p></li>
 </ul></td>
 <td><p><strong>Administrators</strong> group or Reverse Proxy administrator</p></td>
-<td><p><a href="lync-server-2013-setting-up-reverse-proxy-servers.md">Setting up reverse proxy servers for Lync Server 2013</a> in the Deployment documentation</p></td>
+<td><p></p>
+<p><a href="lync-server-2013-setting-up-reverse-proxy-servers.md">Setting up reverse proxy servers for Lync Server 2013</a> in the Deployment documentation</p></td>
 </tr>
 <tr class="even">
 <td><p>Setup a Director (optional).</p></td>
@@ -166,7 +147,8 @@ To enhance Edge Server performance and security, and to facilitate deployment, a
 </ul></li>
 <li><p>Configure user accounts for remote user access, federation, public IM connectivity, XMPP and anonymous user support (as applicable)</p></li>
 </ol></td>
-<td><p><strong>RTCUniversalServerAdmins</strong> group or user account that is assigned to the <strong>CSAdministrator</strong> role</p></td>
+<td><p><strong>RTCUniversalServerAdmins</strong> group or user account that is assigned to the <strong>CSAdministrator</strong> role</p>
+<p></p></td>
 <td><p><a href="lync-server-2013-configuring-support-for-external-user-access.md">Configuring support for external user access in Lync Server 2013</a> in the Deployment documentation</p></td>
 </tr>
 <tr class="odd">
@@ -184,17 +166,4 @@ To enhance Edge Server performance and security, and to facilitate deployment, a
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

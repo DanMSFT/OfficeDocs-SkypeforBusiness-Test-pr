@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Mobility features and capabilities in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-19_
 
     The information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
@@ -32,15 +19,11 @@ The mobility feature introduced in the Cumulative Updates for Lync Server 2013: 
 
 The mobility feature introduced in the Cumulative Updates for Lync Server 2013: February 2013 supports Lync 2013 Mobile client functionality. The Cumulative Updates for Lync Server 2013: February 2013 install Unified Communications Web API, or UCWA. UCWA is the component used for Lync 2013 Mobile clients. In Lync Server 2013, Mcx is used for Lync 2010 Mobile clients. Cumulative Updates for Lync Server 2013: February 2013 introduce UCWA as the new entry point for mobility services. Lync Server 2013 concurrently implements the Mobility Service (Mcx), introduced in the Cumulative Updates for Lync Server 2010: November 2011, and provides support for Lync 2010 Mobile. When you deploy the Cumulative Updates for Lync Server 2013: February 2013, users can use supported Apple iOS, Android, and Windows Phone mobile devices to perform such activities as:
 
-<div>
-
 
 > [!IMPORTANT]
 > Features supported by the Mobility Service from the Cumulative Updates for Lync Server 2010: November 2011 are noted with (Mcx). All listed features are supported by the UCWA, introduced in the Cumulative Updates for Lync Server 2013: February 2013.
 
 
-
-</div>
 
   - Send and receive instant messages (Mcx)
 
@@ -62,19 +45,13 @@ The mobility feature introduced in the Cumulative Updates for Lync Server 2013: 
 
   - Attendee video (H.264)
 
-<div>
-
 
 > [!NOTE]
 > Lync 2010 Mobile provided a client for Nokia Symbian devices. Lync 2013 Mobile will not have a client for Nokia Symbian-based devices.
 
 
 
-</div>
-
 Apple iPad users will have access to enhanced capabilities. After joining a meeting by using audio call back, an iPad user will be able to view uploaded Microsoft PowerPoint presentations within a meeting, share applications and desktops, view the meeting participant list, and receive notifications of other content types that are being shared within the meeting.
-
-<div>
 
 
 > [!TIP]
@@ -82,21 +59,13 @@ Apple iPad users will have access to enhanced capabilities. After joining a meet
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > Not all features work exactly the same on all mobile devices. For details about features supported on mobile devices, see the Mobile Client Comparison Tables at <A href="http://go.microsoft.com/fwlink/p/?linkid=234777">http://go.microsoft.com/fwlink/p/?LinkId=234777</A>. For details about supported devices and operating systems, see the requirements topics under <A href="lync-server-2013-planning-for-mobile-clients.md">Planning for mobile clients in Lync Server 2013</A>.
 
 
 
-</div>
-
 When you use the Lync Server 2013 Autodiscover feature, mobile applications can automatically locate Lync Server 2013 Web Services without requiring users to manually enter the URLs in their device settings. Manually entering URLs in mobile device settings is also supported, primarily for troubleshooting purposes.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -104,19 +73,7 @@ When you use the Lync Server 2013 Autodiscover feature, mobile applications can 
 
 
 
-</div>
-
 The mobility feature also supports *push notifications* for mobile devices that do not support applications running in the background. A push notification is a notification that is sent to a mobile device about an event that occurs while a mobile application is inactive. For example, a missed instant messaging (IM) invitation can result in a push notification.
 
 Mcx, UCWA, Autodiscover Service, and support for push notifications are provided in Lync Server 2013. Updated client features, capabilities, and the use of UCWA as the mobility entry point are introduced in the Cumulative Updates for Lync Server 2013: February 2013.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

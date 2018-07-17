@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Restoring monitoring or archiving data in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-18_
 
 Restoring monitoring and archiving data is not required to get Lync Server up and running after a failure. However, if monitoring and archiving data is critical to your organization, you will want to restore the data after you re-create the databases.
 
 The following procedure describes how to use SQL Server Management Studio to restore archiving or monitoring data.
-
-<div>
 
 ## To restore monitoring or archiving data from a backup file
 
@@ -56,10 +41,6 @@ The following procedure describes how to use SQL Server Management Studio to res
 
 8.  Under **Select a page**, click **Options**, verify that the data file path and log path are in the correct folder, and then click **OK**.
 
-</div>
-
-<div>
-
 ## To make sure that access control lists (ACLs) are correct
 
 1.  Expand **Databases**, expand the archiving or monitoring database, expand **Security**, and then expand **Users**.
@@ -74,24 +55,8 @@ The following procedure describes how to use SQL Server Management Studio to res
     
     3.  Under **Database role membership**, select the **ServerRole** permission, and then click **OK**.
     
-    <div>
-    
 
     > [!NOTE]
     > You do not need to restart the archiving or monitoring service.
 
-    
-    </div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

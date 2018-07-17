@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # User models in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-07_
 
 The user models described here provide the basis for the capacity planning measurements and recommendations described in [Capacity planning for Lync Server 2013 using the user models](lync-server-2013-capacity-planning-using-the-user-models.md).
-
-<div>
 
 ## Lync Server 2013 User Models
 
@@ -94,7 +79,6 @@ The following table describes the user model for registration, contacts, instant
 <li><p>50% of the contacts are within the organization. 10% of those users are remote users, connecting from outside the firewall.</p></li>
 <li><p>40% of the contacts are public cloud users (such as users of AOL, Yahoo!, MSN, or Google Talk).</p></li>
 <li><p>10% of the contacts are from federated partners.</p>
-<div>
 
 > [!IMPORTANT]
 > <UL>
@@ -106,7 +90,7 @@ The following table describes the user model for registration, contacts, instant
 > <P>More than ever, Lync is a powerful tool for connecting across organizations and with individuals around the world. Federation with Windows Live Messenger requires no additional user/device licenses beyond the Lync Standard CAL. Skype federation will be added to this list, enabling Lync users to reach hundreds of millions of people with IM and voice.</P></LI></UL>
 
 
-</div></li>
+</li>
 </ul>
 <p>Average of 50 contacts for users without public cloud connectivity. Of these users:</p>
 <ul>
@@ -163,7 +147,8 @@ The following table describes the user model for registration, contacts, instant
 </tr>
 <tr class="even">
 <td><p>Presence Publication</p></td>
-<td><p>Presence state is published at an average of 4 publications per user per hour, with a maximum 6 per user per hour.</p></td>
+<td><p>Presence state is published at an average of 4 publications per user per hour, with a maximum 6 per user per hour.</p>
+<p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Presence Document Size</p></td>
@@ -256,13 +241,11 @@ The following table describes the conferencing model.
 <td><p>Media mix for conferences</p></td>
 <td><p>75% of conferences are web conferences, which include audio plus some other collaboration modalities.</p>
 <p>For these conferences, the other collaboration methods are as follows:</p>
-<div>
 
 > [!NOTE]
 > These numbers add up to more than 100% because one conference can have multiple collaboration methods.
 
 
-</div>
 <ul>
 <li><p>50% add application sharing. We assume one users sends data at a peak of 1.1 MB per second.</p></li>
 <li><p>50% add instant messaging (with an average of 2 messages per user).</p></li>
@@ -420,10 +403,6 @@ The following table describes the user model for policies.
 </table>
 
 
-</div>
-
-<div>
-
 ## Busy Hour
 
 For peer-to-peer sessions, peak load is calculated using busy hour call attempts (BHCA). This voice industry term assumes that 50% of all calls for the day will be completed in 20% of the time. It is calculated using the following formula:
@@ -433,10 +412,6 @@ For peer-to-peer sessions, peak load is calculated using busy hour call attempts
 Performance testing simulated busy hour by running VoIP and other peer-to-peer sessions at a busy hour load for at least 1.6 hours per day.
 
 Conferencing peak load assumes that 75% of all conferences for an eight-hour day happen in 4 peak time hours. Those peak hours have 1.5 times the average conferencing load.
-
-</div>
-
-<div>
 
 ## Enterprise Voice to PSTN Calls
 
@@ -448,17 +423,9 @@ The following assumptions apply to Enterprise Voice calls:
 
   - 65% of these PSTN voice calls use media bypass.
 
-</div>
-
-<div>
-
 ## Mobility
 
 40% of registered users are assumed to be enabled for Mobility. For each user that has mobility enabled, we assume that the activity of the mobile client is additive to that of the other MPOP instances for that user, with the exception of conferencing interactions, for which the mobility client is just another client type that can be used to participate in conferences.
-
-</div>
-
-<div>
 
 ## Persistent Chat
 
@@ -468,23 +435,7 @@ We assume that 25% of registered users will be involved in Persistent chat sessi
 
   - Each chat room results in 12 polling requests per hour, targeting an average of 10 users each
 
-</div>
-
-<div>
-
 ## Response Group and Call Park
 
 We assume that 0.15% of registered users belong to response groups. We assume that 0.02% of registered users have parked calls at any given point of time.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

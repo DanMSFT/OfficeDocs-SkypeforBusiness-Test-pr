@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Check voice normalization rules in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-20_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-05-20_
 </table>
 
 
-<div>
-
 ## Description
 
 Voice normalization rules are used to convert a phone number dialed by a user (for example, 2065551219) to the E.164 format that is used by Lync Server (+12065551219). For example, if users are in the habit of dialing a phone number without including the country code or the area code (e.g., 5551219) then you must have a voice normalization rule that can convert that number to the E.164 format: +12065551219. Without such a rule, the user won't be able to call 555-1219.
@@ -60,10 +45,6 @@ Voice normalization rules are used to convert a phone number dialed by a user (f
 The Test-CsVoiceNormalizationRule cmdlet verifies that a specified voice normalization rule can successfully convert a specified phone number. For example, this command checks whether the global normalization rule NoAreaCode can normalize and convert the dial string 5551219.
 
 `Get-CsVoiceNormalizationRule -Identity "global/NoAreaCode" | Test-CsVoiceNormalizationRule -DialedNumber "5551219"`
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -75,15 +56,11 @@ Instead, use syntax such as the following, which combines both the Get-CsVoiceNo
 
 Get-CsVoiceNormalizationRule -Identity "global/Prefix All" | Test-CsVoiceNormalizationRule -DialedNumber "12065551219"
 
-<div>
-
 
 > [!NOTE]
 > . Or, you can also use this approach to retrieve an instance of a rule and then test that rule against a specified phone number:
 
 
-
-</div>
 
 `$x = Get-CsVoiceNormalizationRule -Identity "global/Prefix All"`
 
@@ -96,10 +73,6 @@ Enter the value for the DialedNumber parameter exactly as you expect that number
 If the rule is configured correctly, it will automatically add the country code when translating the number to the E.164 format that is used by Lync Server.
 
 For more information, see the Help documentation for the Test-CsVoiceNormalizationRule cmdlet.
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -117,10 +90,6 @@ TranslatedNumber
 
 \----------------
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 If the Test-CsVoiceNormalizationRule does return a translated number that means that the specified voice normalization rule was unable to translate the supplied telephone number into the E.164 format that is used by Lync Server. To verify that, first make sure that you typed the telephone number in correctly. For example, you would expect your voice normalization rule to have problems translating a number similar to this:
@@ -135,25 +104,8 @@ To return detailed information about all the voice normalization rules, run this
 
 `Get-CsVoiceNormalizationRule | Format-List`
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsVoiceNormalizationRule](test-csvoicenormalizationrule.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsVoiceNormalizationRule](https://technet.microsoft.com/en-us/library/gg399003\(v=ocs.15\))
 

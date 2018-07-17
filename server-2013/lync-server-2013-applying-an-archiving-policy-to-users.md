@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Applying an Archiving policy to users in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 If a user has been enabled for Lync Server 2013 and you have created one or more user policies for archiving for users homed on Lync Server 2013, you can implement archiving support for specific users by applying the appropriate policies to those users or user groups. For example, if you create a policy to support archiving of internal communications, you can apply it to at least one user or user group to support archiving of the user’s Lync Server 2013 communications.
-
-<div>
 
 
 > [!NOTE]
@@ -36,11 +21,7 @@ If a user has been enabled for Lync Server 2013 and you have created one or more
 
 
 
-</div>
-
 Use the procedure in this topic to apply a previously created Archiving user policy to one or more user accounts or user groups.
-
-<div>
 
 ## To apply an archiving user policy to a user account
 
@@ -54,26 +35,17 @@ Use the procedure in this topic to apply a previously created Archiving user pol
 
 5.  In **Edit Lync Server User** under **Archiving policy**, select the archiving user policy that you want to apply.
     
-    <div>
-    
 
     > [!NOTE]
     > The <STRONG>&lt;Automatic&gt;</STRONG> settings apply the default server installation settings. These settings are applied automatically by the server.
 
-    
-    </div>
+
 
 6.  Click **Commit**.
-
-</div>
-
-<div>
 
 ## Assigning a Per-User Archiving Policy by Using Windows PowerShell Cmdlets
 
 Per-user archiving policies can be assigned by using Windows PowerShell and the **Grant-CsArchivingPolicy** cmdlet. You can run this cmdlet from either the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To assign a per-user archiving policy to a single user
 
@@ -81,19 +53,11 @@ Per-user archiving policies can be assigned by using Windows PowerShell and the 
     
         Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName "RedmondArchivingPolicy"
 
-</div>
-
-<div>
-
 ## To assign a per-user archiving policy to multiple users
 
-  - This command assigns the per-user archiving policy RedmondArchivingPolicy to all users who have accounts homed on the Registrar pool atl-cs-001.litwareinc.com. For details about the Filter parameter used in this command, see the [Get-CsUser](get-csuser.md) cmdlet documentation.
+  - This command assigns the per-user archiving policy RedmondArchivingPolicy to all users who have accounts homed on the Registrar pool atl-cs-001.litwareinc.com. For details about the Filter parameter used in this command, see the [Get-CsUser](https://technet.microsoft.com/en-us/library/gg398125\(v=ocs.15\)) cmdlet documentation.
     
         Get-CsUser -Filter {RegistrarPool -eq "atl-cs-001.litwareinc.com"} | Grant-CsArchivingPolicy -PolicyName "RedmondArchivingPolicy"
-
-</div>
-
-<div>
 
 ## To assign a per-user archiving policy
 
@@ -101,30 +65,11 @@ Per-user archiving policies can be assigned by using Windows PowerShell and the 
     
         Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName $Null
 
-</div>
-
-For details, see the [Grant-CsArchivingPolicy](grant-csarchivingpolicy.md) cmdlet documentation.
-
-</div>
-
-<div>
+For details, see the [Grant-CsArchivingPolicy](https://technet.microsoft.com/en-us/library/gg398475\(v=ocs.15\)) cmdlet documentation.
 
 ## See Also
 
 
 [Managing the Archiving of internal and external communications in Lync Server 2013](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md)  
-[Assigning per-user policies in Lync Server 2013](lync-server-2013-assigning-per-user-policies.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Assigning per-user policies in Lync Server 2013](lync-server-2013-assigning-per-user-policies.md)
 

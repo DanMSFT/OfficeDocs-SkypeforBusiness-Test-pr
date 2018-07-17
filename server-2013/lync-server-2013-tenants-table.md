@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Tenants table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 The Tenants table is a supporting table that stores a list of the various tenants. Each record in the table represents one tenant.
-
-<div>
 
 
 > [!NOTE]
 > In on-premises deployment, CDR uses the build-in Tenant ID to indicate different authentication type, such as public IM connectivity, Federated and Anonymous.
 
 
-
-</div>
 
 
 <table>
@@ -64,7 +47,7 @@ The Tenants table is a supporting table that stores a list of the various tenant
 <tr class="even">
 <td><p><strong>TenantKey</strong></p></td>
 <td><p>nvarchar(256)</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Allowed values:</p>
 <ul>
 <li><p>00000000-0000-0000-0000-000000000000 – Enterprise</p></li>
@@ -75,15 +58,4 @@ The Tenants table is a supporting table that stores a list of the various tenant
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

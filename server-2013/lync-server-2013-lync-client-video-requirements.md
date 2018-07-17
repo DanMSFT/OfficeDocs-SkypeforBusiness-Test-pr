@@ -8,33 +8,16 @@ ms.date: 01/29/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lync client video requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-01-29_
 
 This section describes video hardware support for Lync 2013 video calls and describes how to determine the expected video quality for various computer, tablet, and mobile device configurations.
-
-<div>
 
 ## Windows Desktop and Tablet Video Requirements and Capabilities
 
 Lync 2013 introduces hardware acceleration for video encoding and decoding based on the H.264/MPEG-4 Part 10 Advanced Video Coding standard. This feature allows computers with lower CPU clock speeds to encode and decode higher resolution video. Video hardware requirements vary depending on the computer configuration and the video resolution wanted.
-
-<div>
 
 ## Video Hardware Requirements
 
@@ -57,13 +40,12 @@ Lync 2013 introduces hardware acceleration for video encoding and decoding based
 <li><p>Graphics card must support DirectX 9.0 and must expose the DXVA2_ModeH264_VLD_NoFGT decoding mode.</p></li>
 <li><p>The latest graphics card driver must be installed.</p></li>
 </ul>
-<div>
 
 > [!NOTE]
 > For details about decoding modes, see <A href="http://go.microsoft.com/fwlink/p/?linkid=268530">http://go.microsoft.com/fwlink/p/?LinkId=268530</A>.
 
 
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Hardware accelerated H.264 encoding: Chipset Requirements</p></td>
@@ -83,21 +65,16 @@ Lync 2013 introduces hardware acceleration for video encoding and decoding based
 <tr class="odd">
 <td><p>Hardware accelerated H.264 encoding: Camera Requirements</p></td>
 <td><p>USB video cameras with integrated H.264 hardware encoder that conforms to the USB Video Class (UVC) specification version 1.5.</p>
-<div>
 
 > [!NOTE]
 > Lync 2013 supports UVC 1.5 cameras with Windows 8 or Windows 8.1, which includes support for UVC 1.5. Because Windows 7 does not include support for UVC 1.5, Lync 2013 treats UVC 1.5 cameras as regular cameras with no hardware encoding support.
 
 
-</div></td>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Determining H.264 Video Encoding and Decoding Capabilities
 
@@ -219,15 +196,11 @@ The following three tables explain the maximum encoding and decoding capability 
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > The WinSAT score on Windows 7 is limited to a maximum of 7.9. Therefore, the encoding capability for a computer without a hardware accelerated encoder can only be achieved on Windows 8 or Windows 8.1, where the maximum WinSAT score is 9.9.
 
 
-
-</div>
 
 ### Computer With DXVA And With Intel HD Graphics Hardware Accelerated Encoder
 
@@ -258,12 +231,6 @@ The following three tables explain the maximum encoding and decoding capability 
 </tbody>
 </table>
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Mobile Device Video Capabilities
 
@@ -310,17 +277,4 @@ The following table describes the maximum video capabilities for supported mobil
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

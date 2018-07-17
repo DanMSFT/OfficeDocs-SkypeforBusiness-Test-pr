@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # SIP trunking support in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-03_
 
 If you plan to use Enterprise Voice with SIP trunking, you must deploy a Mediation Server and make sure that other infrastructure and components meet the support requirements appropriate to your deployment model. For details about determining whether to implement SIP trunking, see [Overview of SIP trunking in Lync Server 2013](lync-server-2013-overview-of-sip-trunking.md) in the Planning documentation.
 
 You can use the Microsoft Unified Communications Open Interoperability Program for enterprise telephony infrastructure to find qualified public switched telephone network (PSTN) gateways, IP-PBXs, and SIP trunking services, including qualified IP telephony service providers. For details, see the Microsoft Unified Communications Open Interoperability Program website at [http://go.microsoft.com/fwlink/p/?LinkId=203309](http://go.microsoft.com/fwlink/p/?linkid=203309).
-
-<div>
 
 ## Mediation Server Support
 
 To implement SIP trunking, you must route the connection through a Mediation Server, which acts as a proxy for communications sessions between Lync Server 2013 clients and the service provider. The Mediation Server decodes the media traffic from clients and servers and re-encodes it before sending it to the service provider. The re-encoding is needed because SIP trunks do not support some codecs used, such as Real Time Audio (RTA) or Interactive Connectivity Establishment (ICE) protocol negotiation for firewall traversal.
 
 Each Mediation Server can have two network adapters, which provide an internal and an external network interface. The external interface is commonly called the gateway interface because, traditionally, it has been used to connect to a PSTN gateway or an IP-PBX. To implement a SIP trunk, you connect the external interface to a Session Border Controller (SBC) at a service provider.
-
-</div>
-
-<div>
 
 ## Centralized vs. Distributed SIP Trunking
 
@@ -62,19 +43,11 @@ Distributed SIP trunking is required only in the following cases:
 
 Deciding whether to deploy centralized or distributed SIP trunking requires a cost-benefit analysis. In some cases, it may be advantageous to opt for the distributed deployment mode, even if it is not required. In a completely centralized deployment, all branch site traffic is routed over WAN links. Instead of paying for the bandwidth required for WAN linking, you may want to use distributed SIP trunking.
 
-<div>
-
 
 > [!NOTE]
 > For details about why and how you might use distributed SIP trunking, see <A href="lync-server-2013-branch-site-sip-trunking.md">Branch site SIP trunking in Lync Server 2013</A> in the Planning documentation.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Supported SIP Trunking Connection Types
 
@@ -86,8 +59,6 @@ Lync Server 2013 supports the following connection types for SIP trunking:
 
   - The public Internet is the least expensive connection type, but also the least reliable, and the one with the lowest call-carrying capacity. Your Internet Telephony Service Provider (ITSP) can help secure this SIP trunk connection type if it supports Transport Layer Security (TLS) and Secure Real-Time Transport Protocol (SRTP) to encrypt signaling and media traffic. If you cannot configure a SIP trunk connection through the Internet to use TLS and SRTP, we strongly recommend that you use a VPN tunnel to provide a more secure connection. Contact your ITSP to determine whether it provides support for TLS with SRTP.
 
-<div>
-
 ## Selecting a Connection Type
 
 The most appropriate SIP trunking connection type for your enterprise depends on your needs and your budget.
@@ -98,12 +69,6 @@ The most appropriate SIP trunking connection type for your enterprise depends on
 
   - For a small enterprise or branch site with low call volume, SIP trunking through the Internet may be the best choice. However, this connection type is not recommended for mid-size or larger sites.
 
-</div>
-
-</div>
-
-<div>
-
 ## Codec Support
 
 The service provider proxy must support the following codecs:
@@ -111,16 +76,4 @@ The service provider proxy must support the following codecs:
   - G.711 a-law (used primarily outside North America)
 
   - G.711 µ-law (used in North America)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Modify the default file transfer filter in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Lync Server 2013 provides a global file transfer filter that blocks specific types of files during the following file-related activities within your Lync Server 2013 deployment:
 
@@ -35,8 +22,6 @@ Lync Server 2013 provides a global file transfer filter that blocks specific typ
   - Multimedia playback during conferences
 
 Depending on the types of files you want to block or allow, you can use Lync Server Control Panel to modify the global filter. For details about file transfer filtering, see [Configuring file transfer and URL filtering for instant messaging (IM) in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md).
-
-<div>
 
 ## To modify the default file transfer filter
 
@@ -66,10 +51,6 @@ Depending on the types of files you want to block or allow, you can use Lync Ser
 
 9.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -78,18 +59,5 @@ Depending on the types of files you want to block or allow, you can use Lync Ser
 [Create a new URL filter in Lync Server 2013 to handle hyperlinks in IM conversations](lync-server-2013-create-a-new-url-filter-to-handle-hyperlinks-in-im-conversations.md)  
 
 
-[Modify the default URL filter in Lync Server 2013](lync-server-2013-modify-the-default-url-filter.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Modify the default URL filter in Lync Server 2013](lync-server-2013-modify-the-default-url-filter.md)
 

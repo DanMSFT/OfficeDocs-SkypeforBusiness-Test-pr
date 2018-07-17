@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Peer-to-Peer Session Detail Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-06_
 
 The Peer-to-Peer Session Detail Report returns detailed information about a peer-to-peer session. For example, if you select an instant messaging session, the report will tell you the number of messages sent by each of the two users in the session.
-
-<div>
 
 ## Accessing the Peer-to-Peer Session Detail Report
 
@@ -48,10 +33,6 @@ From within the Peer-to-Peer Session Detail Report you can access the [Diagnosti
 
   - Diagnostic ID
 
-</div>
-
-<div>
-
 ## Making the Best Use of the Peer-to-Peer session Detail Report
 
 The Peer-to-Peer Session Detail Report includes a large number of metrics, many of which might not be familiar to system administrators. Often-times, however, you can view a tooltip that offers a brief description of that metric simply by holding your mouse over the metric label.
@@ -60,17 +41,9 @@ Note that the actual metrics shown on a given report will depend on the type of 
 
 You can also hold your mouse over the Response code and Diagnostic ID metrics in order to obtain a description of those values:
 
-</div>
-
-<div>
-
 ## Filters
 
 None. You cannot filter the Peer-to-Peer Session Detail Report.
-
-</div>
-
-<div>
 
 ## Session Information Metrics
 
@@ -166,10 +139,6 @@ The following table lists the information provided in the Peer-to-Peer Session D
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Modalities
 
 The following table lists the information provided in the Peer-to-Peer Session Detail Report for each session modality.
@@ -208,10 +177,6 @@ The following table lists the information provided in the Peer-to-Peer Session D
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for Diagnostic Reports
 
@@ -265,17 +230,4 @@ The following table lists the information provided in the Peer-to-Peer Session D
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

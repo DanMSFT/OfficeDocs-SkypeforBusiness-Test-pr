@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Scenarios for the Director in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 A Director is a server running Microsoft Lync Server 2013 communications software that can authenticate user requests, but does not home any user accounts. The Director also hosts web services similar to the Front End Server and will authenticate web ticket requests and provide other services.
-
-<div>
 
 
 > [!IMPORTANT]
 > If you deploy Directors, you must publish the Director web services externally through the reverse proxy as well as the web services of the Front End Server. The topics following describe the planning process for the possible Director topologies.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -52,26 +33,9 @@ A Director is a server running Microsoft Lync Server 2013 communications softwa
 
   - [Scaled Director pool in Lync Server 2013](lync-server-2013-scaled-director-pool.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Supported topologies in Lync Server 2013](lync-server-2013-supported-topologies.md)  
-[Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md)
 

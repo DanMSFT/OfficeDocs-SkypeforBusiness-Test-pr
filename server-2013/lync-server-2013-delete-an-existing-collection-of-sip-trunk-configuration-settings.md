@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete an existing collection of SIP trunk configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 SIP trunk configuration settings define the relationship and capabilities between a Mediation Server and the public switched telephone network (PSTN) gateway, an IP-public branch exchange (PBX), or a Session Border Controller (SBC) at the service provider. These settings do such things as specify:
 
@@ -34,15 +21,13 @@ SIP trunk configuration settings define the relationship and capabilities betwee
 
   - Whether or not secure real-time protocol (SRTP) encryption is required on each trunk.
 
-When you install Microsoft Lync Server 2013, a global collection of SIP trunk configuration settings is created for you. This global collection of settings cannot be deleted. However, you can use the Lync Server Control Panel or the [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md) cmdlet to "reset" the properties in the global collection to their default values. For example, if you have set the Enable3pccRefer property to True, when you reset the global collection the Enable3pccRefer property will revert to its default value of False.
+When you install Microsoft Lync Server 2013, a global collection of SIP trunk configuration settings is created for you. This global collection of settings cannot be deleted. However, you can use the Lync Server Control Panel or the [Remove-CsTrunkConfiguration](https://technet.microsoft.com/en-us/library/gg425943\(v=ocs.15\)) cmdlet to "reset" the properties in the global collection to their default values. For example, if you have set the Enable3pccRefer property to True, when you reset the global collection the Enable3pccRefer property will revert to its default value of False.
 
 Administrators can also create custom trunk configuration settings at the site scope or at the service scope (for an individual PSTN gateway); these custom settings can be removed. When removing these custom settings keep the following in mind:
 
   - If you remove service scope settings, then the SIP trunk managed by those settings will be managed by the settings applied to their site, if they exist. If site settings do not exist, those trunks will then be managed by the global collection of trunk configuration settings.
 
   - If you remove site-scoped settings then any SIP trunks managed by those settings will now be managed by the global collection of trunk configuration settings.
-
-<div>
 
 ## To remove trunk configuration settings with Lync Server Control Panel
 
@@ -58,15 +43,9 @@ Administrators can also create custom trunk configuration settings at the site s
 
 6.  If you change your mind and decide not to delete the collection, click **Commit** and then click **Cancel All Uncommitted Changes**. When the **Microsoft Lync Server 2013 Control Panel** dialog box appears, click **OK**.
 
-</div>
-
-<div>
-
 ## Removing Trunk Configuration Settings by Using Windows PowerShell Cmdlets
 
 You can delete trunk configuration settings by using Windows PowerShell and the **Remove-CsTrunkConfiguration** cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To remove a specified collection of settings
 
@@ -74,19 +53,11 @@ You can delete trunk configuration settings by using Windows PowerShell and the 
     
         Remove-CsTrunkConfiguration -Identity site:Redmond
 
-</div>
-
-<div>
-
 ## To remove all the collections applied to the site scope
 
   - This command removes all the trunk configuration settings applied to the service scope:
     
         Get-CsTrunkConfiguration -Filter "service:*" | Remove-CsTrunkConfiguration
-
-</div>
-
-<div>
 
 ## To remove all the collections where media bypass is enabled
 
@@ -94,19 +65,5 @@ You can delete trunk configuration settings by using Windows PowerShell and the 
     
         Get-CsTrunkConfiguration | Where-Object {$_.EnableBypass -eq $True} | Remove-CsTrunkConfiguration
 
-</div>
-
-For more information, see the help topic for the [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [Remove-CsTrunkConfiguration](https://technet.microsoft.com/en-us/library/gg425943\(v=ocs.15\)) cmdlet.
 

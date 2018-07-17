@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enable Quality of Experience in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Quality of Experience (QoE) records numeric data that indicates the media quality and information about participants, device names, drivers, IP addresses, and endpoint types involved in calls and sessions. For details, see [Planning for monitoring in Lync Server 2013](lync-server-2013-planning-for-monitoring.md) in the Planning documentation.
 
 Use the following procedure to enable QoE for your whole organization or each site in your organization.
-
-<div>
 
 
 > [!NOTE]
 > To enable QoE, you must first configure monitoring and a monitoring back-end database. For details, see <A href="lync-server-2013-deploying-monitoring.md">Deploying monitoring in Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## To enable QoE by using Lync Server Control Panel
 
@@ -52,15 +33,9 @@ Use the following procedure to enable QoE for your whole organization or each si
 
 4.  On the **Quality of Experience Data** page, click the appropriate collection from the table, click **Action**, and then click **Enable QoE**.
 
-</div>
-
-<div>
-
 ## Enabling QoE by Using Windows PowerShell Cmdlets
 
 You can enable QoE by using Windows PowerShell and the **Set-CsQoEConfiguration** cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To enable QoE for a single location
 
@@ -68,19 +43,11 @@ You can enable QoE by using Windows PowerShell and the **Set-CsQoEConfiguration*
     
         Set-CsQoEConfiguration -Identity "site:Redmond" -EnableQoE $True
 
-</div>
-
-<div>
-
 ## To disable QoE for a single location
 
   - To disable QoE, set the EnableQoE parameter to False ($False). This does not uninstall monitoring. It pauses the collection and storage of QoE data.
     
         Set-CsQoEConfiguration -Identity "site:Redmond" -EnableQoE $False
-
-</div>
-
-<div>
 
 ## To use a single command to enable QoE in multiple locations
 
@@ -88,30 +55,11 @@ You can enable QoE by using Windows PowerShell and the **Set-CsQoEConfiguration*
     
         Get-CsQoEConfiguration | Set-CsQoEConfiguration "site:Redmond" -EnableQoE $True
 
-</div>
-
-For details, see [Set-CsQoEConfiguration](set-csqoeconfiguration.md).
-
-</div>
-
-<div>
+For details, see [Set-CsQoEConfiguration](https://technet.microsoft.com/en-us/library/gg398245\(v=ocs.15\)).
 
 ## See Also
 
 
 [Planning for monitoring in Lync Server 2013](lync-server-2013-planning-for-monitoring.md)  
-[Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md)
 

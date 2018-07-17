@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Port summary - SIP, XMPP federation, and public instant messaging in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-15_
 
 Port, protocol and firewall requirements for federation with Microsoft Lync Server 2013, Lync Server 2010 and Office Communications Server are similar to those for the deployed Edge Server. Clients initiate communication with the Access Edge service over TLS/SIP/TCP 443. Federated partners however, will initiate communications to the Access Edge service over MTLS/SIP/TCP 5061.
 
@@ -32,19 +19,13 @@ To configure your firewall for ports and protocols necessary to support public i
 
 Windows Live Messenger can participate in audio/video communications with Lync clients. This accounts for the very similar firewall port and protocol configuration that you would typically have on the firewall to support Lync clients as external users.
 
-<div>
-
 
 > [!IMPORTANT]
 > More than ever, Lync is a powerful tool for connecting across organizations and with individuals around the world. Federation with Windows Live Messenger requires no additional user/device licenses beyond the Lync Standard Client Access License (CAL). Skype federation will be added to this list, enabling Lync users to reach hundreds of millions of people with IM and voice.<BR>Federation with Messenger client contacts will officially end on March 15, 2013, except for mainland China. Skype will become the federation client for federated users who previously used Messenger.
 
 
 
-</div>
-
 The ports and protocols defined for the extensible messaging and presence protocol (XMPP) proxy deployed on the Edge Server allow communications from the XMPP federated partner to the Edge Server, and also allows communication from your Edge Server to the XMPP federated partner. A rule is also defined on the internal-facing firewall from the Front End Server or Front End pool to the Edge Server or Edge pool.
-
-<div>
 
 ## Firewall Summary - SIP Federation
 
@@ -74,10 +55,6 @@ The ports and protocols defined for the extensible messaging and presence protoc
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Firewall Summary – Public Instant Messaging Connectivity
 
@@ -138,10 +115,6 @@ The ports and protocols defined for the extensible messaging and presence protoc
 </table>
 
 
-</div>
-
-<div>
-
 ## Firewall Summary - Extensible Messaging and Presence Protocol (XMPP)
 
 
@@ -183,10 +156,6 @@ The ports and protocols defined for the extensible messaging and presence protoc
 </table>
 
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -194,18 +163,5 @@ The ports and protocols defined for the extensible messaging and presence protoc
 [Determine external A/V firewall and port requirements for Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)  
 
 
-[Manage XMPP federated partners in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Manage XMPP federated partners in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)
 

@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enable call detail recording in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Call detail recording (CDR) records usage and diagnostic information about peer-to-peer activities including instance messaging, Voice over Internet Protocol (VoIP) calls, application sharing, file transfer, and meetings. The usage data can be used to calculate return on investment (ROI) and the diagnostic data can be used to troubleshoot peer-to-peer activities and meetings.
 
 Use the following procedure to enable CDR for your whole organization or each site in your organization.
-
-<div>
 
 
 > [!NOTE]
 > In order to enable CDR you must configure monitoring and a monitoring database. For details, see <A href="lync-server-2013-deploying-monitoring.md">Deploying monitoring in Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## To enable CDR with Lync Server Control Panel
 
@@ -52,24 +33,15 @@ Use the following procedure to enable CDR for your whole organization or each si
 
 4.  On the **Call Detail Recording** page, click the appropriate site from the table, click **Action**, and then click **Enable CDR**.
     
-    <div>
-    
 
     > [!NOTE]
     > CDR is enabled by default.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## Enabling CDR by Using Windows PowerShell Cmdlets
 
 You can enable CDR by using Windows PowerShell and the **Set-CsCdrConfiguration** cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To enable CDR for a single location
 
@@ -77,19 +49,11 @@ You can enable CDR by using Windows PowerShell and the **Set-CsCdrConfiguration*
     
         Set-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $True
 
-</div>
-
-<div>
-
 ## To disable CDR for a single location
 
   - To disable CDR, set the EnableCDR parameter to False ($False). Disabling CDR does not uninstall monitoring. It pauses the collection and storage of CDR data.
     
         Set-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $False
-
-</div>
-
-<div>
 
 ## To use a single command to enable CDR in multiple locations
 
@@ -97,30 +61,11 @@ You can enable CDR by using Windows PowerShell and the **Set-CsCdrConfiguration*
     
         Get-CsCdrConfiguration | Set-CsCdrConfiguration "site:Redmond" -EnableCDR $True
 
-</div>
-
-For more information, see the help topic for the [Set-CsCdrConfiguration](set-cscdrconfiguration.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Set-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg398774\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
 [Planning for monitoring in Lync Server 2013](lync-server-2013-planning-for-monitoring.md)  
-[Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md)
 

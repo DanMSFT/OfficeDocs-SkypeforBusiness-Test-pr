@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Manage rooms
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 To create a new Persistent Chat Server room
 
     New-CsPersistentChatRoom -Name Foo1 -PersistentChatPoolFqdn client.contoso.com -Category client.contoso.com\Foo [other parameters]
-
-<div>
 
 
 > [!IMPORTANT]
@@ -45,8 +30,6 @@ To create a new Persistent Chat Server room
 
 
 
-</div>
-
 To make changes to an existing Persistent Chat Server room
 
     Set-CsPersistentChatRoom -Identity testCat -Members @{Add="sip:user1@contoso.com", "CN=container,DC=contoso,DC=com"}
@@ -54,8 +37,6 @@ To make changes to an existing Persistent Chat Server room
     Set-CsPersistentChatRoom -Identity testCat -Presenters @{Add="sip:user1@contoso.com"}
 
 Windows PowerShell: Members, Managers and Presenters can be set simultaneously. They all should be the subset of AllowedMembers minus DeniedMembers of the host Category. A room that is type=normal cannot include Presenters.
-
-<div>
 
 ## Create, Get, Set, Clear, or Remove a Room
 
@@ -92,16 +73,4 @@ To remove a room
 or
 
     Remove-CsPersistentChatRoom [-Instance] <ChatRoomObject> [-Force] [-WhatIf] [-Confirm]  [<CommonParameters>]
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

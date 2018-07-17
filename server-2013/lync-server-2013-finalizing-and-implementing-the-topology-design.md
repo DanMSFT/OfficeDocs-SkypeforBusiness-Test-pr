@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Finalizing and implementing the topology design in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-06-19_
 
 After you complete the preparation of your environment, you should be ready to finalize and implement your topology design. This includes using Topology Builder to publish your topology, which is required in order to install Lync Server 2013 server roles.
-
-<div>
 
 ## In This Section
 
@@ -37,16 +22,4 @@ After you complete the preparation of your environment, you should be ready to f
   - [Verify the topology design in Lync Server 2013](lync-server-2013-verify-the-topology-design.md)
 
   - [Publish the topology in Lync Server 2013](lync-server-2013-publish-the-topology.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

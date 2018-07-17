@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Device Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-12_
 
 The Device Report might be better titled the Microphone and Speakers Report; that's because the Device Report retrieves call-related metrics (such as poor call percentage, echo, and voice switch time) grouped by the microphones and speakers used in the call. If you are interested in IP phones (also commonly referred to as "devices"), use the [IP Phone Inventory Report in Lync Server 2013](lync-server-2013-ip-phone-inventory-report.md) instead.
 
@@ -116,8 +103,6 @@ If you would rather see combined totals for a given device (for example, for the
 </table>
 
 
-<div>
-
 ## Accessing the Device Report
 
 The Device Report is typically accessed from the Monitoring Reports home page. However, if you are viewing the [Call Detail Report in Lync Server 2013](lync-server-2013-call-detail-report.md) you can drill down to the Device Report for a specific device by clicking either of the following metrics:
@@ -131,10 +116,6 @@ From the Device Report you can drill down to the [Call List Report in Lync Serve
   - Call volume
 
   - Poor call percentage
-
-</div>
-
-<div>
 
 ## Making the Best Use of the Device Report
 
@@ -176,15 +157,11 @@ When it comes to device names, the Device Report is extremely detailed; for exam
 
   - Aastra 6725ip Microphone (USB Audio Device)-V0
 
-<div>
-
 
 > [!NOTE]
 > Keep in mind that capture device names might not be the same if you are running localized versions of Lync Server 2013. A device named Aastra 6725ip Microphone (Aastra 6725ip)-V0 in US English could have a different name in French or Spanish.
 
 
-
-</div>
 
 Often times you'll want that level of detail; at other times, however, you might only be interested in how many calls use any Aastra microphone, regardless of model number. One way to get information like that is to export the Device Report data to Microsoft Excel and then save that data to a comma-separated values file (for example, C:\\Data\\Devices\_Report.csv). You can then use a set of commands similar to these to import the .CSV file into Windows PowerShell and report back the total number of calls made using an Aastra capture device:
 
@@ -196,10 +173,6 @@ Often times you'll want that level of detail; at other times, however, you might
 That will return a single value representing the total number of calls made using an Aastra capture device. For example:
 
     384
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -388,10 +361,6 @@ The following table lists the filters that you can use with the Device Report.
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics
 
 The following table lists the information provided in the Device Report.
@@ -470,21 +439,9 @@ The following table lists the information provided in the Device Report.
 <tr class="even">
 <td><p><strong>Calls with echo (%)</strong></p></td>
 <td><p>Yes</p></td>
-<td><p>Percentage of the total calls that had echo exceeding the acceptable level.</p></td>
+<td><p>Percentage of the total calls that had echo exceeding the acceptable level.</p>
+<p></p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

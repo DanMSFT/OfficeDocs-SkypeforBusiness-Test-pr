@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Preparing Active Directory Domain Services in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-19_
 
 In Lync Server 2013, you can use the Lync Server Deployment Wizard to prepare Active Directory Domain Services, or you can use Lync Server Management Shell cmdlets directly. You can also use the ldifde.exe command line tool directly on your domain controllers, as described later in this topic.
 
 The Lync Server Deployment Wizard guides you through each Active Directory preparation task. The Deployment Wizard runs Lync Server Management Shell cmdlets. This tool is useful for environments with a single domain and single forest topology, or other similar topology.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -38,11 +23,7 @@ The Lync Server Deployment Wizard guides you through each Active Directory prepa
 
 
 
-</div>
-
 You can use Lync Server Management Shell cmdlets to run tasks remotely or for more complex environments.
-
-<div>
 
 ## Active Directory Preparation Prerequisites
 
@@ -52,55 +33,39 @@ The following components are required to run Active Directory preparation tasks:
 
   - Lync Server Core components (OCScore.msi)
     
-    <div>
-    
 
     > [!NOTE]
     > If you plan to use Lync Server Management Shell for Active Directory preparation, you must run the Lync Server Deployment Wizard first to install Core components.
 
-    
-    </div>
+
 
   - Microsoft .NET Framework 4.5
-    
-    <div>
     
 
     > [!NOTE]
     > For Windows Server 2012 and Windows Server 2012 R2, you install and activate .NET Framework 4.5 by using Server Manager. For details, see "Microsoft .NET Framework 4.5" in <A href="lync-server-2013-additional-software-requirements.md">Additional software requirements for Lync Server 2013</A>. For Windows Server&nbsp;2008&nbsp;R2, download and install <A href="http://www.microsoft.com/en-us/download/details.aspx?id=30653">.Net Framework 4.5</A> from the Microsoft web site.
 
-    
-    </div>
+
 
   - Remote Server Administration Tools (RSAT)
-    
-    <div>
     
 
     > [!NOTE]
     > Some RSAT tools are required if you run Active Directory preparation steps on a member server rather than on a domain controller. Install the AD DS snap-ins and command-line tools and the Active Directory Module for Windows PowerShell from the AD DS and AD LDS Tools node in Server Manager.
 
-    
-    </div>
+
 
   - Microsoft Visual C++ 11 Redistributable
-    
-    <div>
     
 
     > [!NOTE]
     > Setup prompts you to install this prerequisite if it is not already installed on the computer. The package is supplied for you, and you will not have to acquire it separately.
 
-    
-    </div>
+
 
   - Windows PowerShell 3.0 (64-bit)
     
     For Windows Server 2012 and Windows Server 2012 R2, Windows PowerShell 3.0 should be included with your Lync Server 2013 installation. For Windows Server 2008 R2, you need to install or upgrade to Windows PowerShell 3.0. For details, see [Installing Windows PowerShell 3.0 for Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md)
-
-</div>
-
-<div>
 
 ## Administrator Rights and Roles
 
@@ -135,10 +100,6 @@ The following table shows the administrative rights and roles required for each 
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Active Directory Preparation Cmdlets
 
@@ -194,25 +155,13 @@ The following table compares the Lync Server Management Shell cmdlets used to pr
 </table>
 
 
-</div>
-
-<div>
-
 ## Locked Down Active Directory Requirements
 
 If permissions inheritance is disabled or authenticated user permissions must be disabled in your organization, you must perform additional steps during domain preparation. For details, see [Preparing a locked-down Active Directory Domain Services in Lync Server 2013](lync-server-2013-preparing-a-locked-down-active-directory-domain-services.md).
 
-</div>
-
-<div>
-
 ## Custom Container Permissions
 
 If your organization uses custom containers instead of the three built-in containers (that is, Users, Computers, and Domain Controllers), you must grant read access to the custom containers for the Authenticated Users group. Read access to the containers is required for domain preparation. For details, see [Preparing domains for Lync Server 2013](lync-server-2013-preparing-domains.md).
-
-</div>
-
-<div>
 
 ## Using Cmdlets and Ldifde.exe
 
@@ -228,15 +177,11 @@ If you use Ldifde.exe to import the schema files, you must import all four files
 
 4.  VersionSchema.ldf
 
-<div>
-
 
 > [!NOTE]
 > The four .ldf files are located in \Support\Schema directory of your installation media or download.
 
 
-
-</div>
 
 To use Ldifde.exe to import the four schema files on a domain controller that is the schema master, use the following format:
 
@@ -246,25 +191,17 @@ For example:
 
     ldifde -i -v -k -s DC1 -f ServerSchema.ldf -c DC=X "DC=contoso,DC=com" -j C:\BatchImportLogFile -b Administrator contoso password
 
-<div>
-
 
 > [!NOTE]
 > Use the b parameter only if you are logged in as a different user. For details about the required user rights, see the "Administrator Rights and Roles" section earlier in this topic.
 
 
 
-</div>
-
 To use Ldifde.exe to import the four schema files on a domain controller that is not the schema master, use the following format:
 
     ldifde -i -v -k -s <SchemaMasterFQDN> -f <Schema filename> -c DC=X <rootDomainNamingContext> -j logFilePath -b <administrator account> <domain> <password>
 
 For details about using Ldifde, see Microsoft Knowledge Base article 237677, "Using LDIFDE to import and export directory objects to Active Directory," at [http://go.microsoft.com/fwlink/p/?linkId=132204](http://go.microsoft.com/fwlink/p/?linkid=132204).
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -273,16 +210,4 @@ For details about using Ldifde, see Microsoft Knowledge Base article 237677, "Us
   - [Preparing the forest for Lync Server 2013](lync-server-2013-preparing-the-forest.md)
 
   - [Preparing domains for Lync Server 2013](lync-server-2013-preparing-domains.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Restoring an Enterprise Edition Back End Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-18_
 
 Use the procedure described in this topic in the following two cases:
 
@@ -36,43 +23,31 @@ If you have a mirrored Enterprise Edition Back End and only the mirror or primar
 
 If the Central Management store fails, see [Restoring the server hosting the Central Management store in Lync Server 2013](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md). If an Enterprise Edition member server that is not the Back End Server fails, see [Restoring an Enterprise Edition member server in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).
 
-<div>
-
 
 > [!TIP]
 > We recommend that you take an image copy of the system before you start restoration. You can use this image as a rollback point, in case something goes wrong during restoration. You might want to take the image copy after you install the operating system and SQL Server, and restore or reenroll the certificates.
 
 
 
-</div>
-
-<div>
-
 ## To restore an Enterprise Edition Back End Server
 
 1.  Start with a clean or new server that has the same fully qualified domain name (FQDN) as the failed computer, install the operating system, and then restore or reenroll the certificates.
-    
-    <div>
     
 
     > [!NOTE]
     > Follow your organization's server deployment procedures to perform this step.
 
-    
-    </div>
+
 
 2.  From a user account that is a member of the RTCUniversalServerAdmins group, log on to the server that you are restoring.
 
 3.  Install SQL Server 2012 or SQL Server 2008 R2, keeping the instance names the same as before the failure.
     
-    <div>
-    
 
     > [!NOTE]
     > Depending on your deployment, the Back End Server might include multiple collocated or separate databases. Follow the same procedure to install SQL Server that you used originally to deploy the server, including SQL Server permissions and logins.
 
-    
-    </div>
+
 
 4.  After you install SQL Server, perform the following:
     
@@ -86,27 +61,20 @@ If the Central Management store fails, see [Restoring the server hosting the Cen
     
     5.  Follow the **Publish the Topology** wizard. On the **Create databases** page, select the databases that you want to re-create.
         
-        <div>
-        
 
         > [!NOTE]
         > Only stand-alone databases are displayed on the <STRONG>Create databases</STRONG> page.
 
-        
-        </div>
     
     6.  If you are restoring a Back End that was mirrored, continue to follow the rest of the wizard until the prompt **Create Mirror Database** appears. Select the database that you want to install, and complete the process.
     
     7.  Follow the rest of the wizard, and then click **Finish**.
     
-    <div>
-    
 
     > [!TIP]
     > Instead of running Topology Builder, you can use the <STRONG>Install-CsDatabase</STRONG> cmdlet to create each database, and the <STRONG>Install-CsMirrorDatabase</STRONG> cmdlet to configure mirroring. For details, see the Lync Server Management Shell documentation.
 
-    
-    </div>
+
 
 5.  Restore user data by performing the following:
     
@@ -133,16 +101,4 @@ If the Central Management store fails, see [Restoring the server hosting the Cen
 6.  If you deployed Response Group on this pool, restore the Response Group configuration data. For details, see [Restoring Response Group settings in Lync Server 2013](lync-server-2013-restoring-response-group-settings.md).
 
 7.  If you are restoring a Back End Server that included Archiving or Monitoring databases, restore the Archiving or Monitoring data by using a SQL Server tool, such as SQL Server Management Studio. For details, see [Restoring monitoring or archiving data in Lync Server 2013](lync-server-2013-restoring-monitoring-or-archiving-data.md).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

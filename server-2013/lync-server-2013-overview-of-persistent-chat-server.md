@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of Persistent Chat Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-29_
 
 Lync Server 2013, Persistent Chat Server enables users to participate in multiparty, topic-based conversations that persist over time. Persistent Chat Server can help your organization do the following:
 
@@ -41,14 +28,4 @@ Lync Server 2013, Persistent Chat Server enables users to participate in multipa
 To enable chat rooms in Lync Server 2013, deploy Lync Server 2013 Persistent Chat. For information about enabling chat rooms, see the Persistent Chat Help at <http://go.microsoft.com/fwlink/p/?linkid=270945>. If users are enabled for Lync Server, and Lync Server support is deployed, users can install and use Lync 2013 Persistent Chat to provide chat room support.
 
 If your organization is required to follow compliance regulations, you can optionally deploy Persistent Chat Compliance service.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 12/12/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for simple URLs in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-12-11_
 
 Simple URLs make joining meetings easier for your users, and make getting to Lync Server administrative tools easier for your administrators.
 
@@ -38,29 +25,19 @@ Lync Server supports three simple URLs:
 
   - **Admin** enables quick access to the Lync Server Control Panel. From any computer within your organization’s firewalls, an admin can open the Lync Server Control Panel by typing the Admin simple URL into a browser. The Admin simple URL is internal to your organization. An example of the Admin simple URL is https://admin.contoso.com
 
-<div>
-
 ## Simple URL Scope
 
 You can configure your simple URLs to have global scope, or you can specify different simple URLs for each central site in your organization. If both a global scope simple URL and a site scope simple URL are specified, the site scope simple URL has precedence.
 
 In most cases, we recommend that you set simple URLs only at the global level, so that a user’s Meet simple URL does not change if they move from one site to another. The exception would be organizations that need to use different telephone numbers for dial-in users at different sites. Note that if you set one simple URL (such as the Dial-in simple URL) at a site to be a site-level simple URL, you must also set the other simple URLs at that site to be site-level as well.
 
-<div>
-
 
 > [!NOTE]
-> If you choose to use site scoped simple URLs, your users won't be able to move between Front-End pools in different sites without those users rescheduling all of their scheduled meetings as the meeting simple URLs are different between sites. This includes fail-over scenarios where pools in backup relationships are in separate sites. When you need to fail-over between sites where site scoped simple URLs are deployed, users won't be able to join their meetings because of the scope for URL. For further information, check <A href="get-cssimpleurlconfiguration.md">Get-CsSimpleUrlConfiguration</A>.
+> If you choose to use site scoped simple URLs, your users won't be able to move between Front-End pools in different sites without those users rescheduling all of their scheduled meetings as the meeting simple URLs are different between sites. This includes fail-over scenarios where pools in backup relationships are in separate sites. When you need to fail-over between sites where site scoped simple URLs are deployed, users won't be able to join their meetings because of the scope for URL. For further information, check <A href="https://technet.microsoft.com/en-us/library/gg398392(v=ocs.15)">Get-CsSimpleUrlConfiguration</A>.
 
 
-
-</div>
 
 You can set global simple URLs in Topology Builder. To set a simple URL at the site level, you must use the Set-CsSimpleURLConfiguration cmdlet.
-
-</div>
-
-<div>
 
 ## Naming Your Simple URLs
 
@@ -163,8 +140,6 @@ Option 3 is most useful if you have many SIP domains, and you want them to have 
 </table>
 
 
-<div>
-
 ## Simple URL Naming and Validation Rules
 
 Topology Builder and the Lync Server Management Shell cmdlets enforce several validation rules for your simple URLs. You are required to set simple URLs for Meet and Dialin, but setting one for Admin is optional. Each SIP domain must have a separate Meet simple URL, but you need only one Dialin simple URL and one Admin simple URL for your whole organization.
@@ -173,37 +148,14 @@ Each simple URL in your organization must have a unique name, and cannot be a pr
 
 Simple URLs can contain only alphanumeric characters (that is, a-z, A-Z, 0-9, and the period (.). If you use other characters, the simple URLs might not work as expected.
 
-</div>
-
-<div>
-
 ## Changing Simple URLs after Deployment
 
 If you change a simple URL after initial deployment, you must be aware of how the change impacts your DNS records and certificates for simple URLs. If the base of a simple URL changes, then you must change the DNS records and certificates as well. For example, changing from https://lync.contoso.com/Meet to https://meet.contoso.com changes the base URL from lync.contoso.com to meet.contoso.com, so you would need to change the DNS records and certificates to refer to meet.contoso.com. If you changed the simple URL from https://lync.contoso.com/Meet to https://lync.contoso.com/Meetings, the base URL of lync.contoso.com stays the same, so no DNS or certificate changes are needed.
 
 Whenever you change a simple URL name, however, you must run **Enable-CsComputer** on each Director and Front End Server to register the change.
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
-[DNS requirements for simple URLs in Lync Server 2013](lync-server-2013-dns-requirements-for-simple-urls.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[DNS requirements for simple URLs in Lync Server 2013](lync-server-2013-dns-requirements-for-simple-urls.md)
 

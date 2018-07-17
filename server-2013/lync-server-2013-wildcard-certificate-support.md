@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Wildcard certificate support in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-21_
 
 Lync Server 2013 uses certificates to provide communications encryption and server identity authentication. In some cases, such as web publishing through the reverse proxy, strong subject alternative name (SAN) entry matching to the fully qualified domain name (FQDN) of the server presenting the service is not required. In these cases, you can use certificates with wildcard SAN entries (commonly known as “wildcard certificates”) to reduce the cost of a certificate requested from a public certification authority and to reduce the complexity of the planning process for certificates.
-
-<div>
 
 
 > [!WARNING]
@@ -36,29 +21,27 @@ Lync Server 2013 uses certificates to provide communications encryption and serv
 
 
 
-</div>
-
 There is no support for a wildcard entry as the subject name (also referred to as the common name or CN) for any role. The following server roles are supported when using wildcard entries in the SAN:
 
-  - <span></span>  
+  -  
     **Reverse proxy.**   Wildcard SAN entry is supported for Simple URL (meet and dialin) publishing certificate.
 
-  - <span></span>  
+  -  
     **Reverse proxy.**   Wildcard SAN entry is supported for the SAN entries for LyncDiscover on the publishing certificate.
 
-  - <span></span>  
+  -  
     **Director.**   Wildcard SAN entry is supported for Simple URLs (meet and dialin) and for SAN entries for LyncDiscover and LyncDiscoverInternal in Director web components.
 
-  - <span></span>  
+  -  
     **Front End Server (Standard Edition) and Front End pool (Enterprise Edition).** Wildcard SAN entry is supported for Simple URLs (meet and dialin) and for SAN entries for LyncDiscover and LyncDiscoverInternal in Front End web components.
 
-  - <span></span>  
+  -  
     **Exchange Unified Messaging (UM).**   The server does not use SAN entries when deployed as a stand-alone server.
 
-  - <span></span>  
+  -  
     **Microsoft Exchange Server Client Access server.**   Wildcard entries in the SAN are supported for internal and external clients.
 
-  - <span></span>  
+  -  
     **Exchange Unified Messaging (UM) and Microsoft Exchange Server Client Access server on same server.**   Wildcard SAN entries are supported.
 
 Server roles that are not addressed in this topic:
@@ -69,14 +52,11 @@ Server roles that are not addressed in this topic:
 
   - Internal Edge Server
     
-    <div>
-    
 
     > [!NOTE]
     > For the internal Edge Server interface, a wildcard entry can be assigned to the SAN, and is supported. The SAN on the internal Edge Server is not queried, and a wildcard SAN entry is of limited value.
 
-    
-    </div>
+
 
 For details about certificate configurations, including the use of wildcards in certificates, see the following topics:
 
@@ -95,14 +75,4 @@ For details about certificate configurations, including the use of wildcards in 
   - [Guidelines for integrating on-premises Unified Messaging and Lync Server 2013](lync-server-2013-guidelines-for-integrating-on-premises-unified-messaging.md)
 
 For details about configuring certificates for Exchange, including the use of wildcards, see the Exchange 2013 product documentation.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

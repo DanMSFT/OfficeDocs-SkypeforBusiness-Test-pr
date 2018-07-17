@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Understanding reports created by Best Practices Analyzer in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-10_
 
 Best Practices Analyzer provides multiple types of reports that are organized to facilitate the analysis and resolution of issues. Best Practices Analyzer identifies issues such as errors, warnings, and other information.
-
-<div>
 
 ## Reports
 
@@ -39,10 +24,6 @@ You can access the results of a scan by viewing each of the following reports:
   - **Tree reports**   Tree reports are organized by the rules that are used to run the scan and other options that you specified at the time the scan was run. For example, issues related to the Test Topology rules are included under the Test Topology section of the report. You can view the details of all the issues, or just a summary of the issues. You can search a tree report for specific items, such as memory. You can also print the report or export it.
 
   - **Other reports**   Items in other reports include the run-time log of tasks that were included in the scan. You can search the items in other reports for specific items, such as memory. You can also print the report or export it.
-
-</div>
-
-<div>
 
 ## Issues
 
@@ -75,16 +56,4 @@ If you click an issue, an explanation and some options are displayed for specifi
     To see the issues you have stopped showing in reports, go to the **Hidden Items** tab of the **Other Reports** view. From there, you can specify to start showing issues in reports again.
 
 For details about resolving specific issues, see [Analyzing and resolving issues identified by Best Practices Analyzer in Lync Server 2013](lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

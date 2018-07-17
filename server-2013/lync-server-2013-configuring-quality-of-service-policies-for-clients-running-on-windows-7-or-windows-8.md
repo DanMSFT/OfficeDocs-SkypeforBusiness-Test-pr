@@ -8,23 +8,10 @@ ms.date: 03/29/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Quality of Service policies in Lync Server 2013 for clients running on Windows 7 or Windows 8
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-03-29_
 
 In addition to specifying port ranges for use by your Lync clients you must also create separate Quality of Service policies that will be applied to client computers. (The Quality of Service policies created for Conferencing, Application, and Mediation servers should not be applied to client computers.) This information applies only to computers running the Lync 2013 client and either Windows 7 or Windows 8.
 
@@ -139,8 +126,6 @@ To help ensure that network packets are marked with the appropriate DSCP value, 
 
 7.  Close the Registry Editor and then reboot your computer.
 
-<div>
-
 ## Configuring Quality of Service on Computers with Multiple Network Adapters
 
 If you have a computer that has multiple network adapters you might occasionally run into issues where DSCP values are shown as 0x00 rather than the configured value. This will typically occur on computers where one or more of the network adapters are not able to access your Active Directory domain (for example, if these adapters are used for a private network). In cases like that, DSCP values will be tagged for the adapters that can access the domain, but will not be tagged for adapters that cannot access the domain.
@@ -160,16 +145,4 @@ If you would like to tag DSCP values for all the network adapters in a computer,
 6.  Double-click **Do not use NLA**. In the **Edit String** dialog box, type **1** in the **Value data** box and then click **OK**.
 
 After creating and configuring the new registry value you will need to reboot your computer in order for the changes to take effect.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

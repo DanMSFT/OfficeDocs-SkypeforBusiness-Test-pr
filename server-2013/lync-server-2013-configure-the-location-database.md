@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure the location database in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-17_
 
 To enable clients to automatically detect their location within a network, you first need to configure the location database. If you do not configure a location database, and **Location Required** in the location policy is set to **Yes** or **Disclaimer**, the user will be prompted to manually enter a location.
 
@@ -36,17 +23,11 @@ To configure the location database, you will perform the following tasks:
 
 3.  Publish the updated database.
 
-<div>
-
 
 > [!NOTE]
 > Alternately, you can define a secondary location source database that can be used in placed of the location database. For details, see <A href="lync-server-2013-configure-a-secondary-location-information-service.md">Configure a secondary Location Information service in Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## In This Section
 
@@ -55,16 +36,4 @@ To configure the location database, you will perform the following tasks:
   - [Validate addresses in Lync Server 2013](lync-server-2013-validate-addresses.md)
 
   - [Publish the location database from Lync Server 2013](lync-server-2013-publish-the-location-database.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

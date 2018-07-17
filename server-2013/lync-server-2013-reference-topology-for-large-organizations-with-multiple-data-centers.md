@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Reference topology for Lync Server 2013 in large organizations with multiple data centers
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 The reference topology for a large organization with multiple data centers support is for any size of organization with more than one central site. The exact topology in the following diagram is for an organization of 50,000 users, with 20,000 users at Central Site A, 20,000 at Central Site B. and a total of 10,000 at Central Site C and branch sites. The type of topology shown in this diagram can accommodate organizations with any number of users.
 
@@ -81,14 +68,4 @@ This topology is shown in multiple diagrams, with an overview first followed by 
   - **System Center Operations Manager is deployed.**  We recommend that you monitor the health of your Lync Server deployment to ensure service availability for end-users. You can monitor Lync with the System Center Operations Manager Management Pack for Lync that is available as a free download from Microsoft. With the Lync Management Pack, you can proactively get real-time alerts when issues occur, run synthetic transactions to test end-to-end Lync functionality, get reports for service availability, and so on.  This helps you to proactively respond to issues with your deployment before end-users experience them.
     
     This organization has deployed a System Center Operations Manager server in each central site.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

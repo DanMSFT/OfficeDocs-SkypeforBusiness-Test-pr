@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Migrate Mediation Server
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 Your Mediation Server is merged into your Lync Server 2013 pilot topology when you run the Merge wizard. You configure the Lync Server 2013 Mediation Server, however, after all users are migrated because an Office Communications Server 2007 R2 pool cannot communicate with a Lync Server 2013 Mediation Server. During the side-by-side migration, the Lync Server 2013 pool communicates with the Office Communications Server 2007 R2 Mediation Server.
 
@@ -37,14 +24,4 @@ The topics in this section describe configuration tasks that you need to perform
   - [Change voice routes to use the new Lync Server 2013 Mediation Server](change-voice-routes-to-use-the-new-lync-server-2013-mediation-server.md)
 
   - [Transition a collocated Mediation Server to a stand-alone Mediation Server (optional)](transition-a-collocated-mediation-server-to-a-stand-alone-mediation-server-optional.md)
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

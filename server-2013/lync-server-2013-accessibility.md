@@ -8,27 +8,12 @@ ms.date: 01/15/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Accessibility in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-10-09_
 
 Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that help make Lync Server 2013 more accessible for people with disabilities.
-
-<div>
 
 ## Accessibility features of Lync Server 2013
 
@@ -39,12 +24,6 @@ The following features in Lync Server 2013 help make it more accessible for peop
   - Alternate text for figures
 
 In addition, some accessibility features and tools of Windows may benefit Lync Server users with disabilities. Windows PowerShell size and color changes provide accessibility options when using the Lync Server Management Shell. For details about Windows PowerShell accessibility options, see “Accessibility in Windows PowerShell 2.0” in the TechNet Library at [http://go.microsoft.com/fwlink/p/?linkId=98964](http://go.microsoft.com/fwlink/p/?linkid=98964).
-
-</div>
-
-<span id="BKMK_KeyboardShortcuts"></span>
-
-<div>
 
 ## Keyboard shortcuts
 
@@ -121,37 +100,19 @@ By using keyboard shortcuts, you can quickly accomplish the following common tas
 </table>
 
 
-</div>
-
-<span id="BKMK_AltText"></span>
-
-<div>
-
 ## Alternate text for figures
 
 Every figure in Lync Server 2013 Help, including screenshots, diagrams, flow charts, and other figures, has associated alternate text. Users who have difficulty viewing figures can pause the cursor on the figure to read the alternate text. The alternate text describes what is shown in the figure.
 
-</div>
-
-<span id="BKMK_AccessMS"></span>
-
-<div>
-
 ## Accessibility products and services from Microsoft
 
 The following sections provide information about the features, products, and services that make Windows more accessible for people with disabilities.
-
-<div>
 
 
 > [!NOTE]
 > The information in this section applies only to users who license Microsoft products in the United States. If you obtained this product outside the United States, you can use the subsidiary information card that came with your software package or visit the Microsoft Accessibility website at <A href="http://go.microsoft.com/fwlink/p/?linkid=18139">http://go.microsoft.com/fwlink/p/?linkId=18139</A> for a list of telephone numbers and addresses for Microsoft support services. You can contact your subsidiary to find out whether the type of products and services described in this section are available in your area. You can learn more about the accessibility features included in Microsoft products on the Accessibility in Microsoft Products website.
 
 
-
-</div>
-
-<div>
 
 ## Accessibility features of Windows
 
@@ -164,10 +125,6 @@ The Windows operating system has many built-in accessibility features that are u
   - **Assistive technology products for Windows**   A wide variety of assistive technology products are available to make computers easier to use for people with disabilities. You can search a catalog of assistive technology products that run on Windows on the Microsoft Accessibility website at [http://go.microsoft.com/fwlink/p/?linkId=18139](http://go.microsoft.com/fwlink/p/?linkid=18139).
     
     If you use assistive technology, be sure to contact your assistive technology vendor before you upgrade your software or hardware to check for possible compatibility issues.
-
-</div>
-
-<div>
 
 ## Documentation in alternative formats
 
@@ -192,10 +149,6 @@ In addition, you can obtain additional Microsoft publications from Recording for
 </table>
 
 
-</div>
-
-<div>
-
 ## Customer service for people with disabilities
 
 Microsoft wants to provide the best possible experience for all our customers, including people with disabilities. If you need help, contact our Accessibility Support team, who are trained to help people with disabilities by telephone or email.
@@ -210,10 +163,6 @@ Weekdays: 5 A.M. - 9 P.M. (Pacific Time)
 
 Weekends: 6 A.M. - 3 P.M. (Pacific Time)
 
-</div>
-
-<div>
-
 ## Customer service for people with hearing impairments
 
 If you're deaf or hard-of-hearing, complete access to Microsoft product and customer services is available through a text telephone (TTY/TDD) service:
@@ -224,25 +173,7 @@ If you're deaf or hard-of-hearing, complete access to Microsoft product and cust
 
 Microsoft Support Services are subject to the prices, terms, and conditions in place at the time the service is used. For details, see Microsoft Support at [http://go.microsoft.com/fwlink/p/?linkId=18142](http://go.microsoft.com/fwlink/p/?linkid=18142).
 
-</div>
-
-</div>
-
-<div>
-
 ## For more information
 
 For details about how accessible technology for computers helps to improve the lives of people with disabilities, see Microsoft Accessibility at [http://go.microsoft.com/fwlink/p/?linkId=18139](http://go.microsoft.com/fwlink/p/?linkid=18139).
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring a reverse proxy for Autodiscover in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-12-12_
 
 Autodiscover and the support of clients using autodiscover requires modification of an existing web publishing rule or creating a new web publishing rule for the reverse proxy. The modification or creation of a new publishing rule is not dependent on the decision to update or not update the subject alternative name lists on the reverse proxy certificates.
 
 If you decide to use HTTPS for initial Lync Server 2013 Autodiscover Service requests and update the subject alternative names lists on the reverse proxy certificates, you need to assign the updated public certificate to the Secure Sockets Layer (SSL) Listener on your reverse proxy. The required update to the external (public) certificate will include the subject alternate name (SAN) entry for lyncdiscover.\<domain name\>. You then need to modify the existing listener for the external web services or create a new web publishing rule for the external Autodiscover Service URL, for example **lyncdiscover.contoso.com**. If you do not already have a web publishing rule for the external Lync Server 2013 Web Services URL for your Front End pool and Director pool (if you have deployed Directors), you also need to publish a rule for that.
-
-<div>
 
 
 > [!NOTE]
@@ -38,23 +23,15 @@ If you decide to use HTTPS for initial Lync Server 2013 Autodiscover Service req
 
 
 
-</div>
-
 If you decide to use HTTP for initial Autodiscover Service requests so that you do not need to update subject alternative names for the reverse proxy, you need to create or modify a web publishing rule for port 80.
 
 The procedures in this section describe how to create or modify the web publishing rules in Microsoft Forefront Threat Management Gateway 2010 for automatic discovery.
-
-<div>
 
 
 > [!NOTE]
 > These procedures assume that you have installed the Standard Edition of Forefront Threat Management Gateway (TMG) 2010. If you are using another reverse proxy, the procedures are similar, but will need to be mapped to the documentation for the third-party product.
 
 
-
-</div>
-
-<div>
 
 ## To create a web publishing rule for the external Autodiscover URL
 
@@ -112,22 +89,15 @@ The procedures in this section describe how to create or modify the web publishi
 
 19. Click **Test Rule** to verify that your new rule is set up correctly.
 
-</div>
-
-<div>
-
 ## To modify an existing web publishing rule to add the external Autodiscover SAN and URL
 
 1.  Click **Start**, point to **Programs**, point to **Microsoft Forefront TMG**, and then click **Forefront TMG Management**.
-    
-    <div>
     
 
     > [!IMPORTANT]
     > You will repeat the modification for each publishing rule and listener that you have. Typically, this will be one rule and listener for the Front End pools and one for the optional Directors or Director pools, if you have deployed them.
 
-    
-    </div>
+
 
 2.  In the left pane, expand **ServerName**, right-click **Firewall Policy**, click the applicable rule. On the **Tasks** tab, click **Edit Selected rule**.
 
@@ -140,10 +110,6 @@ The procedures in this section describe how to create or modify the web publishi
 6.  Click **Apply** in the details pane to save the changes and update the configuration.
 
 7.  Click **Test Rule** to verify that your new rule is set up correctly.
-
-</div>
-
-<div>
 
 ## To create a web publishing rule for port 80
 
@@ -197,25 +163,8 @@ The procedures in this section describe how to create or modify the web publishi
 
 19. Verify that the external Autodiscover Service URL is not defined on any other web publishing rule.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Setting up reverse proxy servers for Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Setting up reverse proxy servers for Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md)
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of monitoring in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-05_
 
 In Microsoft Lync Server 2013, monitoring is used to collect usage information and Quality of Experience (QoE) data about the communication sessions that your users are involved in. A session is a generic term that covers a user’s connection to a:
 
@@ -34,15 +21,11 @@ In Microsoft Lync Server 2013, monitoring is used to collect usage information a
 
   - Another user via a peer-to-peer conversation such as instant messaging or an audio call
 
-<div>
-
 
 > [!NOTE]
 > Lync Server 2013 keeps track of information about each session: who called who; which endpoints were used in the session; how long did the session last; what was the perceived quality of the session; and so on. However, Lync Server does not record and store the actual call itself. That includes instant messaging sessions as well: although Lync Server records information about instant messaging sessions, it does not maintain a record of each instant message that was sent during the session.
 
 
-
-</div>
 
 The call detail information collected by Lync Server can be employed for any number of uses, including:
 
@@ -71,14 +54,4 @@ Note that the process of installing and configuring monitoring has been simplifi
   - Reduces the complexity of Lync Server 2013 setup and administration. By collocating the monitoring services on each Front End server you no longer have to install, configure, and manage the Monitoring Server role.
 
 For more information see the topic [Deploying monitoring in Lync Server 2013](lync-server-2013-deploying-monitoring.md) in the Lync Server 2013 2013 deployment guide.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

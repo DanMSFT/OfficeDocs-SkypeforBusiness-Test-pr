@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Restoring a Standard Edition server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 If a Standard Edition server that does not host the Central Management store fails, follow the procedures in this section. If the Central Management store fails, see [Restoring the server hosting the Central Management store in Lync Server 2013](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md).
-
-<div>
 
 
 > [!TIP]
@@ -36,35 +21,25 @@ If a Standard Edition server that does not host the Central Management store fai
 
 
 
-</div>
-
-<div>
-
 ## To restore a Standard Edition server
 
 1.  Start with a clean or new server that has the same fully qualified domain name (FQDN) as the failed computer, install the operating system, and then restore or reenroll the certificates.
-    
-    <div>
     
 
     > [!NOTE]
     > Follow your organization's server deployment procedures to perform this step.
 
-    
-    </div>
+
 
 2.  From a user account that is a member of the RTCUniversalServerAdmins group and the Local Administrators group, log on to the server that you are restoring.
 
 3.  Restore the File Store by copying the appropriate File Store from $Backup to the File Store location on the server and share the folder.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The path and file name for the restored File Store should be exactly the same as the backed up File Store so that components that use the files can access them.
 
-    
-    </div>
+
 
 4.  Run Topology Builder:
     
@@ -113,16 +88,4 @@ If a Standard Edition server that does not host the Central Management store fai
     If you used SQL Server Backup to back up the Persistent Chat database, use SQL Server restore procedures to restore it.
     
     If you used the Export-CsPersistentChatData cmdlet to back it up, use the Import-CsPersistentChatData to restore it.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

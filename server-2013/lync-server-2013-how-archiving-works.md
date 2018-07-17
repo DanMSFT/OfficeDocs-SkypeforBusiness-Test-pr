@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # How Archiving works in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-04_
 
 Lync Server 2013 Archiving provides options to help you meet your compliance needs. To implement and maintain it in a way that most effectively meets your organization’s requirements, you should understand:
 
@@ -33,8 +20,6 @@ Lync Server 2013 Archiving provides options to help you meet your compliance nee
   - How to enable and disable Archiving in your deployment.
 
   - The archiving options that you can configure to control how Archiving is implemented.
-
-<div>
 
 ## What Information Can Be Archived?
 
@@ -58,10 +43,6 @@ The following types of content are not archived:
 
 Lync Server also does not archive Persistent Chat conversations. To archive Persistent Chat conversations, you must enable and configure the compliance service, which is a component that can be deployed with Microsoft Lync Server 2013, Persistent Chat Server. For details, see [Planning for Persistent Chat Server in Lync Server 2013](lync-server-2013-planning-for-persistent-chat-server.md) in the Planning documentation.
 
-</div>
-
-<div>
-
 ## How Do I Start Using Archiving?
 
 Archiving is automatically installed on each Front End Server when you deploy the server, but Archiving is not enabled until you configure it. How you configure it is determined by how you deploy Archiving:
@@ -69,8 +50,6 @@ Archiving is automatically installed on each Front End Server when you deploy th
   - **Archiving using Microsoft Exchange integration.** If you have users who are homed on Exchange 2013 and their mailboxes have been put on In-Place Hold, you can select the option to integrate Lync Server 2013 storage with Exchange storage. If you choose the Microsoft Exchange integration option, you use Exchange 2013 policies and configurations to control the archiving of Lync Server 2013 data for those users.
 
   - **Archiving using Lync Server Archiving databases.** If you have users who are not homed on Exchange 2013 or who have not had their mailboxes put on In-Place Hold, or if you don’t want to use Microsoft Exchange integration for any or all users in your deployment, you can deploy Lync Server Archiving databases using SQL Server to store Archiving data for those users. In this case, Lync Server 2013 Archiving policies and configurations determine whether Archiving is enabled and how it is implemented. To use Lync Server 2013, you must add the appropriate SQL Server databases to your topology and publish the topology.
-
-<div>
 
 ## Archiving Setup When Using Microsoft Exchange Integration
 
@@ -83,10 +62,6 @@ If your users are homed on Exchange 2013 and their mailboxes have been put on In
   - Selection of the Microsoft Exchange integration option to use Exchange 2013 for storage of archived data.
 
 These Lync Server 2013 Archiving configuration options are described later in this section. For information about how to configure Exchange In-Place Hold policies and settings to support archiving, see the Exchange 2013 product documentation.
-
-</div>
-
-<div>
 
 ## Archiving Setup When Using Lync Server Archiving Database Storage
 
@@ -108,25 +83,15 @@ Lync Server 2013 Archiving policies include the following:
 
 For details about how to set up initial Archiving policies when you deploy Archiving, see [Configuring and assigning Archiving policies in Lync Server 2013](lync-server-2013-configuring-and-assigning-archiving-policies.md) in the Deployment documentation. For details about using Archiving policies to enable and disable communications after deployment, see [Managing the Archiving of internal and external communications in Lync Server 2013](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md) in the Operations documentation.
 
-<div>
-
 
 > [!NOTE]
 > If you implement both Lync Server 2013 Archiving databases and enable Microsoft Exchange integration, Exchange 2013 policies override Lync Server Archiving policies, but only for users who are homed on Exchange 2013 and have had had their mailboxes put on In-Place Hold. Lync Archiving depends on Microsoft Exchange In-Place Hold policy only.
 
 
 
-</div>
-
-</div>
-
-<div>
-
 ## What Options Do I Have for Configuring Archiving?
 
 In addition to using policies and to enable and disable Archiving, you have other Archiving options that can be configure for your entire deployment and, optionally, for specific sites and pools. You control most Archiving options by using one or more Archiving configurations, which are available in Lync Server 2013 Control Panel, but also have another option that is only available for configuration using Lync Server 2013 Management Shell.
-
-<div>
 
 ## Archiving Configuration Options Available in Lync Server 2013 Control Panel
 
@@ -152,14 +117,11 @@ The global-level configuration is created automatically when you deploy archivin
     
       - After the archiving data has been exported (which includes data that has been uploaded to Exchange, if you enable Microsoft Exchange integration).
     
-    <div>
-    
 
     > [!NOTE]
     > If you enable Microsoft Exchange integration, purging for users homed on Exchange 2013 and with their mailboxes put on In-Place Hold is controlled by Exchange. The only qualification is for conferencing files, which are stored on the Lync Server file share. These files are purged from the file share only after the files have been exported (uploaded to Exchange), if you select the option to purge data after the archiving data has been exported, or after the specified maximum number of days, if you specify a maximum number of days for retention.
 
-    
-    </div>
+
 
 By default, no archiving options are enabled. You can manage Archiving configurations using Lync Server 2013 Control Panel.
 
@@ -173,25 +135,13 @@ You can specify the following Archiving configurations:
 
 For details about how to set up initial Archiving configurations when you deploy Archiving, see [Configuring Archiving options in Lync Server 2013](lync-server-2013-configuring-archiving-options.md) in the Deployment documentation. For details about using Archiving policies to enable and disable communications after deployment, see [Managing Archiving configuration options in Lync Server 2013 for your organization, sites, and pools](lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md) in the Operations documentation.
 
-</div>
-
-<div>
-
 ## Archiving Options Available Only in Windows PowerShell
 
 Using Lync Server 2013 Management Shell, you can use cmdlets to implement options that are not available in Lync Server 2013 Control Panel. These options include the following:
 
-  - **Archive duplicate messages**. For details, see [New-CsArchivingConfiguration](new-csarchivingconfiguration.md) and [Set-CsArchivingConfiguration](set-csarchivingconfiguration.md) in the Operations documentation.
+  - **Archive duplicate messages**. For details, see [New-CsArchivingConfiguration](https://technet.microsoft.com/en-us/library/gg398471\(v=ocs.15\)) and [Set-CsArchivingConfiguration](https://technet.microsoft.com/en-us/library/gg413030\(v=ocs.15\)) in the Operations documentation.
 
-  - **Export archived data**. For details, see [Export-CsArchivingData](export-csarchivingdata.md)
-
-</div>
-
-</div>
-
-</div>
-
-<div>
+  - **Export archived data**. For details, see [Export-CsArchivingData](https://technet.microsoft.com/en-us/library/gg398452\(v=ocs.15\))
 
 ## How Do I Access Archived Data?
 
@@ -202,16 +152,4 @@ Access to archived data is dependent on where the data is stored:
   - **Lync Server storage**. If you set up Lync Server 2013 Archiving databases for storage of Lync Server data, Lync Server deposits archiving content in the Lync Server Archiving databases (SQL Server databases) for any users not homed on Exchange 2013, and who have not had their mailboxes put on In-Place Hold. This data is not searchable, but it can be exported to formats that are searchable using other tools. For details about exporting data stored in Archiving databases, see [Exporting archived data from Lync Server 2013](lync-server-2013-exporting-archived-data.md) in the Operations documentation.
 
 For more details about how Lync Server 2013 and Exchange 2013 work together, see [Exchange Server and SharePoint integration support in Lync Server 2013](lync-server-2013-exchange-and-sharepoint-integration-support.md) in the Supportability documentation.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

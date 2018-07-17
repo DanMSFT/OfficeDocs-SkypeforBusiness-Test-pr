@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Establishing a backup and restoration plan for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-17_
 
 Creating a backup and restoration plan involves the following steps:
 
@@ -33,8 +20,6 @@ Creating a backup and restoration plan involves the following steps:
   - Implementing the plan.
 
   - Maintaining the plan.
-
-<div>
 
 ## Developing a Backup and Restoration Plan
 
@@ -52,23 +37,15 @@ As you develop your plan, you need to consider, and account for, the following:
 
 Modify the backup and restoration procedures in this topic, adding and deleting procedures as appropriate, to reflect the servers and components in your deployment. You can also add appropriate details, such as the backup schedule, to the appropriate procedures to make sure that the information is not overlooked.
 
-<div>
-
 
 > [!NOTE]
 > It is good practice to create scripts for as many steps as possible, to help ensure the quality and reproducibility of procedures.
 
 
 
-</div>
-
 In your plan, specify who is responsible for reviewing the plan, who is responsible for testing and validating any new procedures or tools, and who must approve any changes to the plan and related procedures.
 
 To make sure that your backup and restoration plan fully meets all established goals and priorities, get the approval of the appropriate business decision makers and technical decision makers in your organization before you implement the plan.
-
-</div>
-
-<div>
 
 ## Implementing the Backup and Restoration Plan
 
@@ -80,15 +57,9 @@ Implementing a backup and restoration plan requires the following steps:
 
   - Validating backup and restoration operations.
 
-<div>
-
 ## Testing and Validating the Plan
 
 The procedures described here have been tested and validated in a lab environment. To make sure that these or any other procedures work in your environment, you should test and validate each procedure you intend to implement. Complete the testing and the validation before you submit your plan for final approval.
-
-</div>
-
-<div>
 
 ## Communicating the Plan
 
@@ -128,10 +99,6 @@ The backup and restoration plan should include all information required to resto
 
   - Information required to restore data and settings. Worksheets are provided in [Backup and restoration worksheets for Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md).
 
-</div>
-
-<div>
-
 ## Validating Backup and Restoration Operations
 
 After completing initial backup efforts in your production environment and at specified intervals (as covered in your backup and restoration plan), you should verify the following:
@@ -146,25 +113,7 @@ After completing initial backup efforts in your production environment and at sp
 
   - Restoration procedures have been tested and verified to work as expected, as specified in your backup and restoration plan.
 
-</div>
-
-</div>
-
-<div>
-
 ## Maintaining the Backup and Restoration Plan
 
 A Lync Server topology is a dynamic environment that changes with your organization. Reassess your backup and restoration plan as your organization changes, and review it periodically to make sure that it continues to meet the needs of your business.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

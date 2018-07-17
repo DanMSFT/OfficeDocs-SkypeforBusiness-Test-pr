@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Moving response groups to a new pool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Lync Server 2013 introduces new cmdlet support for moving response groups from one pool to another pool, even when the fully qualified domain name (FQDN) is different.
 
 Use the steps in the following procedure to move response groups from one Front End pool to another Front End pool with a different FQDN.
-
-<div>
 
 
 > [!NOTE]
 > In a coexistence environment, you can move response groups only between Lync Server 2013&nbsp;Front End pools.
 
 
-
-</div>
-
-<div>
 
 ## To move response groups to a pool with a different FQDN
 
@@ -68,14 +49,11 @@ Use the steps in the following procedure to move response groups from one Front 
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:destination.contoso.com" -FileName "C:\RgsExportSource.zip" -OverwriteOwner -ReplaceExistingSettings
     
-    <div>
-    
 
     > [!NOTE]
-    > Application-level settings include the default music-on-hold configuration, the default music-on-hold audio file, the agent ringback grace period, and the call context configuration. To view these configuration settings, run the <STRONG>Get-CsRgsConfiguration</STRONG> cmdlet. For details about this cmdlet, see <A href="get-csrgsconfiguration.md">Get-CsRgsConfiguration</A>.
+    > Application-level settings include the default music-on-hold configuration, the default music-on-hold audio file, the agent ringback grace period, and the call context configuration. To view these configuration settings, run the <STRONG>Get-CsRgsConfiguration</STRONG> cmdlet. For details about this cmdlet, see <A href="https://technet.microsoft.com/en-us/library/gg412762(v=ocs.15)">Get-CsRgsConfiguration</A>.
 
-    
-    </div>
+
 
 4.  Verify that the import was successful by displaying the imported response group configuration by doing the following:
     
@@ -110,16 +88,4 @@ Use the steps in the following procedure to move response groups from one Front 
     For example:
     
         Export-CsRgsConfiguration -Source "service:ApplicationServer:source.contoso.com" -RemoveExportedConfiguration -FileName "C:\TempRGsConfiguration.zip"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

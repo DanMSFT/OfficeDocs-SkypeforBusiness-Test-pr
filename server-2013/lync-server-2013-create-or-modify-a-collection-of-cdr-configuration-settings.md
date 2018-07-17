@@ -8,29 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify a collection of CDR configuration settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 Call detail recording (CDR) enables you to track usage of such things as peer-to-peer instant messaging sessions, Voice over Internet Protocol (VoIP) phone calls, and conferencing calls. This usage data includes information about who called whom, when they called, and how long they talked.
 
 When you install Microsoft Lync Server 2013 a single, global collection of CDR configuration settings is created for you. Administrators also have the option of creating custom settings at the site scope. Whenever these site-scoped settings are used, they take precedence over the global settings. For example, if you create site-scoped settings for the Redmond site then those settings (rather than the global settings) will be used to manage CDR in Redmond.
 
-You can create CDR configuration settings by using either Lync Server Control Panel or the [New-CsCdrConfiguration](new-cscdrconfiguration.md) cmdlet. You can use Lync Server Control Panel or the [Set-CsCdrConfiguration](set-cscdrconfiguration.md) cmdlet to modify existing settings. If you are using Lync Server Control Panel to create or modify settings, the following options will be available to you:
+You can create CDR configuration settings by using either Lync Server Control Panel or the [New-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg399018\(v=ocs.15\)) cmdlet. You can use Lync Server Control Panel or the [Set-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg398774\(v=ocs.15\)) cmdlet to modify existing settings. If you are using Lync Server Control Panel to create or modify settings, the following options will be available to you:
 
 
 <table>
@@ -76,17 +63,11 @@ You can create CDR configuration settings by using either Lync Server Control Pa
 </table>
 
 
-<div>
-
 
 > [!NOTE]
-> The New-CsCdrConfiguration and Set-CsCdrConfiguration cmdlets include additional options not available in Lync Server Control Panel. See the <A href="new-cscdrconfiguration.md">New-CsCdrConfiguration</A> and the <A href="set-cscdrconfiguration.md">Set-CsCdrConfiguration</A> help topics for more information.
+> The New-CsCdrConfiguration and Set-CsCdrConfiguration cmdlets include additional options not available in Lync Server Control Panel. See the <A href="https://technet.microsoft.com/en-us/library/gg399018(v=ocs.15)">New-CsCdrConfiguration</A> and the <A href="https://technet.microsoft.com/en-us/library/gg398774(v=ocs.15)">Set-CsCdrConfiguration</A> help topics for more information.
 
 
-
-</div>
-
-<div>
 
 ## To create CDR configuration settings by using Lync Server Control Panel
 
@@ -98,10 +79,6 @@ You can create CDR configuration settings by using either Lync Server Control Pa
 
 4.  In the **New Call Detail Recording (CDR) Setting** dialog, make the desired selections and then click **Commit**.
 
-</div>
-
-<div>
-
 ## To modify existing CDR configuration settings by using Lync Server Control Panel
 
 1.  In Lync Server Control Panel click **Monitoring and Archiving**.
@@ -110,15 +87,9 @@ You can create CDR configuration settings by using either Lync Server Control Pa
 
 3.  In the **Edit Call Detail Recording (CDR) Setting** dialog, make the desired selections and then click **Commit**.
 
-</div>
-
-<div>
-
 ## Creating CDR Configuration Settings by Using Windows PowerShell Cmdlets
 
 You can create CDR configuration settings can also be created by using Windows PowerShell and the **New-CsCdrConfiguration** cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To create a new collection of CDR configuration settings
 
@@ -126,19 +97,11 @@ You can create CDR configuration settings can also be created by using Windows P
     
         New-CsCdrConfiguration -Identity "site:Redmond"
 
-</div>
-
-<div>
-
 ## To create a collection of CDR configuration settings that disable call detail recording
 
   - Because no parameters (other than the mandatory Identity parameter) were specified in the preceding command, the new collection of configuration settings will use the default values for all its properties. To create settings that use different property values, simply include the appropriate parameter and parameter value. For example, to create a collection of Call Detail configuration settings that, by default, allow disable Call Detail recording use a command like this:
     
         New-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $False
-
-</div>
-
-<div>
 
 ## To specify multiple property values when creating a new collection of CDR configuration settings
 
@@ -146,19 +109,5 @@ You can create CDR configuration settings can also be created by using Windows P
     
         New-CsCdrConfiguration -Identity "site:Redmond" -KeepCallDetailForDays 30 -KeepErrorReportForDays 90
 
-</div>
-
-For more information, see the help topic for the [New-CsCdrConfiguration](new-cscdrconfiguration.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [New-CsCdrConfiguration](https://technet.microsoft.com/en-us/library/gg399018\(v=ocs.15\)) cmdlet.
 

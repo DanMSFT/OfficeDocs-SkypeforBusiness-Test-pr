@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing PSTN peer to peer call in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsPstnPeerToPeerCall cmdlet verifies the ability a pair of users has to conduct a peer-to-peer call over the public switched telephone network (PSTN) gateway. When you call Test-CsPstnPeerToPeerCall, the cmdlet will first attempt to log on two test users to Lync Server. Assuming that the logons succeed, the cmdlet will then have user 1 attempt to call user 2 over the PSTN gateway. Test-CsPstnPeerToPeerCall will make this call using the dial plan, voice policy, and other policy and configuration settings assigned to the test user. If the test goes as planned, the cmdlet will verify that user 2 was able to answer the call, and then log off both test accounts from the system.
 
 Test-CsPstnPeerToPeerCall makes an actual phone call, one that verifies that a connection can be made and that also transmits DTMF codes over the network to determine whether media can be sent over the connection. The call is answered by the cmdlet itself, and no manual termination of the call is necessary. (That is, no one must answer and then hang up the phone that was called.)
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -75,11 +56,7 @@ To run this check using actual user accounts, you must create two Windows PowerS
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsPstnPeerToPeerCall -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:davidlongmire@litwareinc.com" -ReceiverCredential $credential2
 
-For more information, see the Help documentation for the [Test-CsPstnPeerToPeerCall](test-cspstnpeertopeercall.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/en-us/library/gg398662\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -121,10 +98,6 @@ Establishing Audio Video call to 'sip:+12065551219@litwareinc.com;user=phone'.
 
 An exception 'A 404 (Not Found) response was received from the network and the operation failed.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsPstnPeerToPeerCall might fail:
@@ -146,16 +119,4 @@ Here are some common reasons why Test-CsPstnPeerToPeerCall might fail:
     And then you can determine the PSTN usages (if any) that are assigned to that policy by using a command similar to the following, which retrieves information about the per-user voice policy RedmondVoicePolicy:
     
         Get-CsVoicePolicy -Identity "RedmondVoicePolicy"
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

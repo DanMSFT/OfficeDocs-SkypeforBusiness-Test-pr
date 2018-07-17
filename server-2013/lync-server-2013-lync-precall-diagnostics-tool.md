@@ -8,23 +8,10 @@ ms.date: 11/04/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lync PreCall Diagnostics Tool in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-11-04_
 
 The Lync PreCall Diagnostics Tool (PCD) is a client-based application that allows you to see how the current state of your network might impact the audio quality in an upcoming Enterprise Voice call.
 
@@ -56,25 +43,13 @@ This topic includes the following sections:
 
   - Uninstalling Lync PCD
 
-<span id="Version"></span>
-
-<div>
-
 ## Lync PCD Versions
 
 This topic describes the following versions of the tool, available for free download:
 
   - Windows Desktop App ([http://go.microsoft.com/fwlink/?LinkId=327914](http://go.microsoft.com/fwlink/p/?linkid=327914))
 
-</div>
-
-<span id="Requirements"></span>
-
-<div>
-
 ## Lync PCD System Requirements
-
-<div>
 
 
 > [!NOTE]
@@ -82,23 +57,11 @@ This topic describes the following versions of the tool, available for free down
 
 
 
-</div>
-
-<div>
-
 ## Windows Desktop App Requirements
 
   - Any edition of the Windows 7 or Windows 8 operating system
 
   - Microsoft .NET Framework 4.5 available at [http://go.microsoft.com/fwlink/?LinkId=327790](http://go.microsoft.com/fwlink/p/?linkid=327790)
-
-</div>
-
-</div>
-
-<span id="features"></span>
-
-<div>
 
 ## Lync PCD Features
 
@@ -124,15 +87,7 @@ Lync PCD includes the following features:
 
 ![PreCall Diagnostic Tool Utilization test results](images/Dn451255.30501ba7-22d1-4db1-9297-56cf7dc6721c(OCS.15).png "PreCall Diagnostic Tool Utilization test results")
 
-</div>
-
-<span id="running"></span>
-
-<div>
-
 ## Running Lync PCD
-
-<div>
 
 ## Running Windows Desktop App
 
@@ -150,14 +105,6 @@ Lync PCD includes the following features:
     
     If you selected the **Let me enter my credentials** option, the **Windows Security** dialog box opens. After you enter your credentials, the test starts.
 
-</div>
-
-</div>
-
-<span id="uninstall"></span>
-
-<div>
-
 ## Uninstalling Lync PCD
 
 To remove Lync PCD, follow the procedure for your operating system:
@@ -165,16 +112,4 @@ To remove Lync PCD, follow the procedure for your operating system:
   - On a Windows 7 system, open the **Control Panel**, select **Programs and Features**, and double-click **Lync 2013 PreCall Diagnostics**.
 
   - On a Windows 8 system, right-click on the PCD tile and click **Uninstall** from the app bar at the bottom of the start screen.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Manage Group Call Pickup during disaster recovery in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-30_
 
 When a Front End pool becomes unavailable due an unplanned incident, service is failed over to the backup pool. During failover to the backup pool, users are redirected to the backup pool and are in resiliency mode. While in resiliency mode, users cannot pick up other users' calls or have their calls picked up by other users. When failover is complete, users can again use Group Call Pickup as usual.
 
@@ -32,19 +19,13 @@ During failback to the primary pool, users are redirected to the primary pool an
 
 This section discusses some considerations for Group Call Pickup during disaster recovery and also describes the user experience.
 
-<div>
-
 ## Considerations for Group Call Pickup During Disaster Recovery
 
 During disaster recovery, users who have been redirected to the backup pool as part of the failover process use the Call Park application running in the backup pool for the call pickup group numbers. Therefore, support for Group Call Pickup during disaster recovery requires the Call Park application to be deployed and enabled in both the primary pool and the backup pool.
 
 The Group Call Pickup number ranges in the call park orbit table must be redirected to the backup pool after the failover process to the backup pool is complete. The number ranges must be redirected back to the primary pool after the failback process to the primary pool is complete. To redirect the Group Call Pickup ranges, use the **Set-CsCallParkOrbit** cmdlet.
 
-If you deploy a new pool with a different fully qualified domain name (FQDN) to replace the primary pool, you need to reassign all the Group Call Pickup number ranges that were associated with the primary pool to the FQDN of the new pool. To reassign number ranges to the new pool, you can use the **Set-CsCallParkOrbit** cmdlet. For details about the **Set-CsCallParkOrbit** cmdlet, see [Set-CsCallParkOrbit](set-cscallparkorbit.md).
-
-</div>
-
-<div>
+If you deploy a new pool with a different fully qualified domain name (FQDN) to replace the primary pool, you need to reassign all the Group Call Pickup number ranges that were associated with the primary pool to the FQDN of the new pool. To reassign number ranges to the new pool, you can use the **Set-CsCallParkOrbit** cmdlet. For details about the **Set-CsCallParkOrbit** cmdlet, see [Set-CsCallParkOrbit](https://technet.microsoft.com/en-us/library/gg398796\(v=ocs.15\)).
 
 ## Group Call Pickup Experience During Pool Failure
 
@@ -125,17 +106,4 @@ The following table summarizes the Group Call Pickup experience through the phas
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

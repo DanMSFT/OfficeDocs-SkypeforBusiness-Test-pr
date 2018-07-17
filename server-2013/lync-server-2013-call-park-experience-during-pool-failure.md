@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Call Park experience in Lync Server 2013 during pool failure
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-10_
 
 When a Front End pool becomes unavailable due an unplanned incident, calls that have been parked but not yet retrieved are disconnected. During failover to a backup pool, users are redirected to the backup pool and are in resiliency mode. While in resiliency mode, users cannot park calls, but they can place calls on hold and transfer them. When failover is complete, calls can again be parked and retrieved as usual. During failback, users cannot park calls until they are out of resiliency mode.
 
@@ -76,15 +63,4 @@ The following table summarizes the Call Park experience through the phases of di
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

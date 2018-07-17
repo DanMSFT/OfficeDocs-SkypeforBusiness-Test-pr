@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Central management store replication status in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-01-26_
 
 When an administrator makes a change of some kind to Lync Server (for example, when an administrator creates a new voice policy or changes the Address Book Server configuration settings) that change is recorded in the Central Management store. In turn, the change must then be replicated to all the computers that are running Lync Server services or server roles.
 
@@ -38,23 +25,8 @@ To return a list of all RBAC roles this cmdlet was assigned to (including any cu
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Get-CsManagementStoreReplicationStatus"}
 
-<div>
-
 ## See Also
 
 
-[Get-CsManagementStoreReplicationStatus](get-csmanagementstorereplicationstatus.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsManagementStoreReplicationStatus](https://technet.microsoft.com/en-us/library/gg399052\(v=ocs.15\))
 

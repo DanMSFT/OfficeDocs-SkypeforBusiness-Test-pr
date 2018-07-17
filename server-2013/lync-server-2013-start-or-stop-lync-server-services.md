@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Start or stop Lync Server 2013 services
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-05_
 
 You can use Lync Server Control Panel to start or stop all the Lync Server 2013 services running on a specific computer or to start or stop a specific service.
-
-<div>
 
 ## To start or stop all Lync Server services on a computer
 
@@ -45,10 +30,6 @@ You can use Lync Server Control Panel to start or stop all the Lync Server 2013 
 5.  Click **Action**.
 
 6.  Click **Start All services** or **Stop All services**.
-
-</div>
-
-<div>
 
 ## To start or stop a specific service
 
@@ -70,28 +51,11 @@ You can use Lync Server Control Panel to start or stop all the Lync Server 2013 
 
 9.  Click **Close**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Prevent sessions for services in Lync Server 2013](lync-server-2013-prevent-sessions-for-services.md)  
 
 
-[Managing the Lync Server 2013 topology](lync-server-2013-managing-the-lync-server-topology.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing the Lync Server 2013 topology](lync-server-2013-managing-the-lync-server-topology.md)
 

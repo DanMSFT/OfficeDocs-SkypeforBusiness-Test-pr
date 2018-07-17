@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Performing physical environmental checks
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-04-30_
 
 Before checking the performance, availability, and functionality of the Lync Server 2013 deployment, you should check the physical environment. For example, the server room temperature might have to be lowered, or a network cable might have to be replaced. For best results, perform the following physical environmental inspections:
 
@@ -52,11 +39,11 @@ The specifics on how to perform these checks will depend greatly on your install
 <tbody>
 <tr class="odd">
 <td><p>Temperature</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Humidity</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Front of server faces</p></td>
@@ -64,19 +51,8 @@ The specifics on how to perform these checks will depend greatly on your install
 </tr>
 <tr class="even">
 <td><p>Unimpeded exhaust clearance</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

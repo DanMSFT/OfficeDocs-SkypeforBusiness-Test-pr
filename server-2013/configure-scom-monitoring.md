@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure SCOM monitoring
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-04_
 
 After migrating to Microsoft Lync Server 2013, you must complete a few tasks to configure Lync Server 2013 to work with System Center Operations Manager.
 
@@ -48,22 +35,15 @@ Instructions for carrying out each of these tasks are provided below.
 
 2.  At the command line, type the following:
     
-       ```
         New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"
-       ```
     
-       ```
         New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health\CentralDiscoveryCandidate"
-       ```
-    
-    <div class="">
     
 
     > [!NOTE]
     > Whenever you edit the registry, you may experience an error that the command failed if the registry key already exists. If you experience this, you can safely ignore the error.
 
-    
-    </div>
+
 
 **Configure your primary System Center Operations Manager management server to override the candidate central discovery watcher node.**
 
@@ -76,14 +56,4 @@ Instructions for carrying out each of these tasks are provided below.
 4.  Override the **LS Discovery Candidate Effective Value** to the name of the candidate server elected in the earlier procedure.
 
 Lastly, to finalize your changes, restart the health service on the System Center Operations Manager Root Management Server.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

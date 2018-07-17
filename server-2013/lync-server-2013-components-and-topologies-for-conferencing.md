@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Components and topologies for conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-04_
 
 When you select conferencing in Topology Builder, conferencing is deployed as part of the Front End Server or Standard Edition server. Dial-in conferencing and PowerPoint sharing requires additional components and configuration. The following sections describe the supported components and topologies for web conferencing, A/V conferencing, and dial-in conferencing.
-
-<div>
 
 ## Supported Components
 
@@ -54,14 +39,11 @@ In addition to the requirements for web conferencing and A/V conferencing, dial-
     
       - Session Border Controller (SBC) (for an Internet telephony service provider to which you connect by configuring a SIP trunk)
     
-    <div>
-    
 
     > [!NOTE]
     > If you are also deploying Enterprise Voice, Mediation Server and PSTN gateways are part of the Enterprise Voice deployment. If you are not deploying Enterprise Voice, you need to deploy at least one Mediation Server and at least one PSTN gateway, IP-PBX, or SBC for dial-in conferencing.
 
-    
-    </div>
+
 
   - **File store**   File store is used for recorded name audio files. File Store is a standard component in every Enterprise Edition or Standard Edition deployment.
 
@@ -71,15 +53,9 @@ In addition to the requirements for web conferencing and A/V conferencing, dial-
 
   - **Lync Server Management Shell**   All dial-in settings can be configured by using Lync Server Management Shell cmdlets. Lync Server Management Shell cmdlets are available for deploying, configuring, running, monitoring, and troubleshooting Conferencing Attendant application and Conferencing Announcement application. For details about specific cmdlets, see Lync Server Management Shell documentation.
 
-</div>
-
-<div>
-
 ## Supported Topologies
 
 In Lync Server 2013, the server running conferencing services is always collocated with the Front End Servers or Standard Edition servers. During your initial deployment, Topology Builder gives you the option to include conferencing in your topology. You can also use Topology Builder to add conferencing to an existing deployment. For details, see [Defining and configuring the topology in Lync Server 2013](lync-server-2013-defining-and-configuring-the-topology.md).
-
-<div>
 
 ## Dial in Conferencing Toplogies
 
@@ -93,19 +69,11 @@ You can deploy dial-in conferencing in the following topologies and configuratio
 
 You can deploy Application service, Conferencing Attendant application, and Conferencing Announcement application in a central site, but not in a branch site.
 
-<div>
-
 
 > [!NOTE]
 > If you deploy dial-in conferencing, you must deploy it in every pool where you deploy Lync Server 2013 conferencing. You do not need to assign access numbers in every pool, but you must deploy the dial-in conferencing feature in every pool. This requirement supports the recorded name feature when a user calls an access number from one pool to join a Lync Server 2013 conference in a different pool.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Supported Topologies for Lync Server 2013 and Office Web Apps
 
@@ -125,27 +93,8 @@ Lync Server 2013 provides the following ways to configure Office Web Apps Server
 
 Regardless of the topology you select, it is critical that the correct firewall ports be opened. You must make sure that DNS names, IP addresses, and ports are not blocked by firewalls on the Office Web Apps Server, the load balancer, or Lync Server.
 
-<div>
-
 
 > [!NOTE]
 > Another option for providing external access to Office Web Apps Server is to deploy the server in the perimeter network. If you elect to do this, keep in mind that Office Web Apps Server setup requires the server computer to be a member of your Active Directory domain. Unless your network policy allows computers in the perimeter network to be Active Directory domain members, it is recommended that you do not install Office Web Apps Server in the perimeter network. Instead, you should install Office Web Apps Server in the internal network and provide external user access through your reverse proxy server.
 
-
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

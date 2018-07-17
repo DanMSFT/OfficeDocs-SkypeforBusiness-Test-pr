@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring for push notifications in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-12_
 
 Push notifications, in the form of badges, icons, or alerts, can be sent to a mobile device even when the mobile application is inactive. Push notifications notify a user of events such as a new or missed IM invitation and voice mail. The Lync Server 2013 Mobility Service sends the notifications to the cloud-based Lync Server Push Notification Service, which then sends the notifications to the Apple Push Notification Service (APNS) (for an Apple device running the Lync 2010 Mobile client) or the Microsoft Push Notification Service (MPNS) (for a Windows Phone device running the Lync 2010 Mobile or the Lync 2013 Mobile client).
-
-<div>
 
 
 > [!IMPORTANT]
@@ -36,28 +21,21 @@ Push notifications, in the form of badges, icons, or alerts, can be sent to a mo
 
 
 
-</div>
-
 Configure your topology to support push notifications by doing the following:
 
   - If your environment has a Lync Server 2010 or Lync Server 2013 Edge Server, you need to add a new hosting provider, Microsoft Lync Online, and then set up hosting provider federation between your organization and Lync Online.
 
   - If your environment has a Office Communications Server 2007 R2 Edge Server, you need to set up direct SIP federation with push.lync.com.
     
-    <div>
-    
 
     > [!NOTE]
     > Push.lync.com is a Microsoft Office 365 domain for Push Notification Service.
 
-    
-    </div>
+
 
   - To enable push notifications, you need to run the **Set-CsPushNotificationConfiguration** cmdlet. By default, push notifications are turned off.
 
   - Test the federation configuration and push notifications.
-
-<div>
 
 ## To configure for push notifications with Lync Server 2013 or Lync Server 2010 Edge Server
 
@@ -73,22 +51,15 @@ Configure your topology to support push notifications by doing the following:
     
         New-CsHostingProvider -Identity "LyncOnline" -Enabled $True -ProxyFqdn "sipfed.online.lync.com" -VerificationLevel UseSourceVerification
     
-    <div>
-    
 
     > [!NOTE]
     > You cannot have more than one federation relationship with a single hosting provider. That is, if you have already set up a hosting provider that has a federation relationship with sipfed.online.lync.com, do not add another hosting provider for it, even if the identity of the hosting provider is something other than LyncOnline.
 
-    
-    </div>
+
 
 4.  Set up hosting provider federation between your organization and the Push Notification Service at Lync Online. At the command line, type:
     
         New-CsAllowedDomain -Identity "push.lync.com"
-
-</div>
-
-<div>
 
 ## To configure for push notifications with Office Communications Server 2007 R2 Edge Server
 
@@ -108,10 +79,6 @@ Configure your topology to support push notifications by doing the following:
     
       - Click **OK**.
 
-</div>
-
-<div>
-
 ## To enable push notifications
 
 1.  Log on to a computer where Lync Server Management Shell and Ocscore are installed as a member of the CsAdministrator role.
@@ -125,10 +92,6 @@ Configure your topology to support push notifications by doing the following:
 4.  Enable federation. At the command line, type:
     
         Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
-
-</div>
-
-<div>
 
 ## To test federation and push notifications
 
@@ -152,26 +115,9 @@ Configure your topology to support push notifications by doing the following:
     
         Test-CsMcxPushNotification -AccessEdgeFqdn accessproxy.contoso.com
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsFederatedPartner](test-csfederatedpartner.md)  
-[Test-CsMcxPushNotification](test-csmcxpushnotification.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsFederatedPartner](https://technet.microsoft.com/en-us/library/gg398281\(v=ocs.15\))  
+[Test-CsMcxPushNotification](https://technet.microsoft.com/en-us/library/hh690043\(v=ocs.15\))
 

@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Preparing the infrastructure and systems for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 Deployment of Lync Server 2013 requires the use of Topology Builder to define and publish the topology design. To identify the components required for your topology, you use Topology Builder to create and save a topology design. Prior to publishing your topology in Topology Builder, you do the following:
 
@@ -46,8 +33,6 @@ Deployment of Lync Server 2013 requires the use of Topology Builder to define an
 
 After you complete all of the preparation tasks as described in this topic, but prior to publishing the topology, you also need to perform the other preparation tasks, including installing the Windows operating systems and other prerequisite software, setting up IIS, and configuring DNS. For details about these tasks, see [System requirements for servers running Lync Server 2013](lync-server-2013-system-requirements-for-servers-running-lync-server-2013.md), [Configure IIS for Lync Server 2013](lync-server-2013-configure-iis.md), and [Preparing the infrastructure and systems for Lync Server 2013](lync-server-2013-preparing-the-infrastructure-and-systems.md). Additionally, you should familiarize yourself with the clients and client requirements. For details, see [Deploying clients and devices in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md).
 
-<div>
-
 ## In This Section
 
   - [Hardware setup for Lync Server 2013](lync-server-2013-hardware-setup.md)
@@ -61,16 +46,4 @@ After you complete all of the preparation tasks as described in this topic, but 
   - [Configure DNS records in Lync Server 2013 for a Front End pool or Standard Edition server](lync-server-2013-configure-dns-records-for-a-front-end-pool-or-standard-edition-server.md)
 
   - [Install Lync Server 2013 administrative tools](lync-server-2013-install-lync-server-administrative-tools.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 02/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # User Activity Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-02-27_
 
 The User Activity Report provides a detailed list of the peer-to-peer and conferencing sessions carried out by your users in a given time period. Unlike many of the Monitoring Reports, the User Activity Report ties each call to individual users. For example, peer-to-peer sessions specify the SIP URIs of the person who initiated the call (the From user) and the person who was being called (the To user). If you expand the information for a conference, you'll see a list of all the conference participants and the role they held for that conference.
 
@@ -44,29 +31,19 @@ To ensure that information only for Ken Myer is returned, either type his full U
 
 Ken.my
 
-<div>
-
 ## To access the user activity report
 
 The User Activity Report is accessed from the Monitoring Reports home page. You can also reach the User Activity Report by clicking the User URI metric on the [IP Phone Inventory Report in Lync Server 2013](lync-server-2013-ip-phone-inventory-report.md). From within the User Activity Report, clicking the Conference URI (for a conference) takes you to the Conference Detail Report. Similarly, clicking the Detail metric for a peer-to-peer call takes you to the [Peer-to-Peer Session Detail Report in Lync Server 2013](lync-server-2013-peer-to-peer-session-detail-report.md).
 
-</div>
-
-<div>
-
 ## Making the best use of the user activity report
 
 Although there is a lot of good information in the User Activity Report, that information can sometimes be difficult to locate. For example, all the user activity that takes place in your organization during a specified period is included in the User Activity Report; that means that, buried, within the report is information about which users actually used Microsoft Lync Server 2013 in some way.
-
-<div>
 
 
 > [!WARNING]
 > Technically, it’s possible that some user activity might go unrecorded: while Lync Server strives to keep information about all phone calls it's possible that a call could have been made without the information about that call being written to the database. Lync Server is designed to give an extremely accurate but not necessarily perfect look at how Lync Server 2013 is being used. (The fact that there is no guarantee that 100% of all calls are recorded explains why Lync Server monitoring should not be used as a billing system.)<BR>Second, a Monitoring Report report can only display, at most, 1,000 records. Depending on the amount of user activity you have, and depending on the time period you are working with, that means your query might not return all the data actually stored in the database.
 
 
-
-</div>
 
   - Which users actually used the system during this time period?
 
@@ -111,10 +88,6 @@ This command limits the reported sessions to those that included audio as a moda
     $x | Where-Object {$_.Modalities -match "audio"} | Group-Object "From user" | Select Count, Name | Sort-Object Count -Descending
 
 If you hold your mouse over any Diagnostic ID shown on the report, a tooltip will appear describing that ID.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -190,10 +163,6 @@ The following table lists the filters that you can use with the User Activity Re
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for peer-to-peer sessions
 
 The following table lists the information provided in the User Activity Report for peer-to-peer sessions (that is, sessions involving just two participants).
@@ -258,10 +227,6 @@ The following table lists the information provided in the User Activity Report f
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for conferencing sessions
 
 The following table lists the information provided in the User Activity Report for conferencing sessions (that is, sessions involving three or more participants).
@@ -310,10 +275,6 @@ The following table lists the information provided in the User Activity Report f
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for conference participants
 
@@ -367,17 +328,4 @@ The following table lists the information provided in the User Activity Report p
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

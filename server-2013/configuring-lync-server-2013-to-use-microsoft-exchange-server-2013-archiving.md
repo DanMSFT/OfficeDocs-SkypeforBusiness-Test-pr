@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Microsoft Lync Server 2013 to use Microsoft Exchange Server 2013 archiving
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-24_
 
 Microsoft Lync Server 2013 gives administrators the option of having instant messaging and Web conferencing transcripts archived to a user's Microsoft Exchange Server 2013 mailbox rather than a SQL Server database. If you enable this option, transcripts are written to the Purges folder in the user's mailbox. The Purges folder is a hidden folder found in the Recoverable Items folder. Although this folder is not visible to end-users, the folder is indexed by the Exchange search engine and can be discovered by using Exchange mailbox search and/or Microsoft SharePoint Server 2013. Because information is stored in the same folder used by the Exchange In-Place Hold feature (responsible for archiving email and other Exchange communications), administrators can use a single tool to search for all the electronic communications archived for a user.
 
-<div>
-
 
 > [!IMPORTANT]
-> To completely disable archiving of Lync conversation, you must also disable Lync conversation history. For more information, see the following topics: <A href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">Managing the Archiving of internal and external communications in Lync Server 2013</A>, <A href="new-csclientpolicy.md">New-CsClientPolicy</A>, and <A href="set-csclientpolicy.md">Set-CsClientPolicy</A>.
+> To completely disable archiving of Lync conversation, you must also disable Lync conversation history. For more information, see the following topics: <A href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">Managing the Archiving of internal and external communications in Lync Server 2013</A>, <A href="https://technet.microsoft.com/en-us/library/gg425949(v=ocs.15)">New-CsClientPolicy</A>, and <A href="https://technet.microsoft.com/en-us/library/gg398300(v=ocs.15)">Set-CsClientPolicy</A>.
 
 
-
-</div>
 
 In order to archive transcripts to Exchange 2013 you must begin by configuring server-to-server authentication between the two servers. After server-to-server authentication is in place you can then carry out the following tasks in Microsoft Lync Server 2013 (note that, depending on your setup and configuration, you might not need to complete all of these tasks):
 
@@ -45,8 +28,6 @@ In order to archive transcripts to Exchange 2013 you must begin by configuring s
 2.  Enable archiving for internal and/or external communications for your users. This step is required for all deployments.
 
 3.  Configure the ExchangeArchivingPolicy property for each user. This step is only required in Lync Server and Exchange are located in different forests.
-
-<div>
 
 ## Step 1: Enabling Exchange Archiving
 
@@ -66,15 +47,11 @@ To disable Exchange archiving, use a command similar to the following, which ena
 
     Set-CsArchivingConfiguration -Identity "global" -EnableArchiving ImOnly -EnableExchangeArchiving $False
 
-<div>
-
 
 > [!NOTE]
 > If the EnableArchiving property is set to None then Lync Server will not archive instant messaging and Web conferencing transcripts at all. In that case, the server will simply ignore the value configured for EnableExchangeArchiving.
 
 
-
-</div>
 
 Exchange archiving can also be enabled (or disabled) by using the Lync Server Control Panel. To do that, complete the following procedure:
 
@@ -86,23 +63,15 @@ Exchange archiving can also be enabled (or disabled) by using the Lync Server Co
 
 4.  After choosing the items to be archived, select the **Exchange Server integration** checkbox to enable Exchange archiving. To disable Exchange archiving, clear this checkbox.
 
-<div>
-
 
 > [!NOTE]
 > The <STRONG>Exchange Server integration</STRONG> checkbox will not be available if the <STRONG>Archiving setting</STRONG> is set to <STRONG>Disable archiving</STRONG>. You must enable archiving first and then enable Exchange archiving.
 
 
 
-</div>
-
 If Lync Server 2013 and Exchange 2013 are located in the same forest then archiving for individual users (or at least for users who have email accounts on Exchange 2013) is managed by using Exchange In-Place Hold policies. If you have users who are homed on a previous version of Exchange then archiving for those users will be managed by using Lync Server archiving policies. Note that only users with accounts on Exchange 2013 can have their Lync transcripts archived to Exchange.
 
 If Lync Server 2013 and Exchange 2013 are located in different forests then archiving for individual users is managed by configuring the ExchangeArchivingPolicy property for each individual user account. See Step 3 for more information.
-
-</div>
-
-<div>
 
 ## Step 2: Enabling the Archiving of Internal and/or External Communications
 
@@ -125,10 +94,6 @@ If you create a per-user policy you will then need to assign that policy to the 
     Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName  "RedmondArchivingPolicy"
 
 Archiving policies can also be managed by using the Lync Server Control Panel. Within the Control Panel, click **Monitoring and Archiving** and then click **Archiving Policy**. To modify an existing policy, double-click the policy (e.g., Global) and then, in the **Edit Archiving Policy** pane, select or clear the **Archive internal communications** and the **Archive external communications** checkboxes as needed. To create a new archiving policy, click **New** and then select either **Site policy** or **User policy**. If you create a new user policy then you must access the appropriate user accounts (from the **Users** tab) and assign those users the new policy.
-
-</div>
-
-<div>
 
 ## Step 3: Configuring the ExchangeArchivingPolicy Property
 
@@ -159,16 +124,4 @@ If you would like to view a list of all the users who have been assigned a speci
 Likewise, this command returns the display name of the users who have not have the ExchangeArchivingPolicy property set to UseLyncArchivingPolicy:
 
     Get-CsUser | Where-Object {$_.ExchangeArchivingPolicy -ne "UseLyncArchivingPolicy"} | Select-Object DisplayName
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

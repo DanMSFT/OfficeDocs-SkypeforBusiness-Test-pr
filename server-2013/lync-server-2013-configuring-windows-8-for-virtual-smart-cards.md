@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Windows 8 for using Virtual Smart Cards with Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-03_
 
 One factor to consider when deploying two-factor authentication and smart card technology is the cost of implementation. Windows 8 provides a number of new security capabilities, and one of the most interesting new features is support for virtual smart cards.
 
 For computers equipped with a Trusted Platform Module (TPM) chip that meets specification version 1.2, organizations can now get the benefits of smart card logon without making any additional investments in hardware. For more information, see Using Virtual Smart Cards with Windows 8 at [http://go.microsoft.com/fwlink/p/?LinkId=313365](http://go.microsoft.com/fwlink/p/?linkid=313365).
-
-<div>
 
 ## To Configure Windows 8 for Virtual Smart Cards
 
@@ -48,14 +33,11 @@ For computers equipped with a Trusted Platform Module (TPM) chip that meets spec
 
 6.  From the TPM management console, verify that your TPM specification version is at least 1.2
     
-    <div>
-    
 
     > [!NOTE]
     > If you receive a dialog stating that a Compatible Trust Platform Module (TPM) cannot be found, verify that the computer has a compatible TPM module and that it is enabled in the system BIOS.
 
-    
-    </div>
+
 
 7.  Close the TPM management console
 
@@ -63,14 +45,11 @@ For computers equipped with a Trusted Platform Module (TPM) chip that meets spec
     
         TpmVscMgr create /name MyVSC /pin default /adminkey random /generate
     
-    <div>
-    
 
     > [!NOTE]
     > To provide a custom PIN value when creating the virtual smart card, use /pin prompt instead.
 
-    
-    </div>
+
 
 9.  From the command prompt, open the Computer Management console by running the following command:
     
@@ -81,16 +60,4 @@ For computers equipped with a Trusted Platform Module (TPM) chip that meets spec
 11. Expand **Smart card readers**.
 
 12. Verify that the new virtual smart card reader has been created successfully.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

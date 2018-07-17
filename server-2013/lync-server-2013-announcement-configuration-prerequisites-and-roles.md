@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Announcement configuration prerequisites and roles in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-25_
 
 Announcement is an Enterprise Voice call management feature. This topic describes what you need to have in place before you can configure Announcement and the role assignments that you need to perform configuration tasks.
 
 This section assumes that you have read the planning documentation related to Announcement (see [Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)).
-
-<div>
 
 ## Announcement Configuration Prerequisites
 
@@ -43,10 +28,6 @@ The Announcement application requires the following components:
   - File Store, to hold audio files
 
 All of these components are installed by default when you deploy Enterprise Voice.
-
-</div>
-
-<div>
 
 ## Announcement Configuration Roles
 
@@ -66,19 +47,11 @@ Configuring Announcement application requires one of the following administrativ
 
   - **CsViewOnlyAdministrator**   This administrator role can view the deployment to monitor deployment health.
 
-<div>
-
 
 > [!NOTE]
 > For details about administrative user rights, see <A href="lync-server-2013-planning-for-role-based-access-control.md">Planning for role-based access control in Lync Server 2013</A> in the Planning documentation.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -86,18 +59,5 @@ Configuring Announcement application requires one of the following administrativ
 [Deploying Enterprise Voice in Lync Server 2013](lync-server-2013-deploying-enterprise-voice.md)  
 
 
-[Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)
 

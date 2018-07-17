@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Modify the default action for clients not explicitly supported or restricted in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 In addition to specifying the version of clients that you want to support in your Lync Server 2013 environment, you can also specify a default action for clients that do not already have a version policy defined. This enables you to restrict which client versions are used in your Lync Server environment, which can help you control the costs associated with supporting multiple client versions.
-
-<div>
 
 ## To modify the default action for clients not explicitly supported or restricted
 
@@ -54,23 +39,13 @@ In addition to specifying the version of clients that you want to support in you
 
 7.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## To disable client version control
 
   - To disable version control to allow all clients to log on regardless of the client version, clear the **Enable version control** check box, and then click **Commit**.
 
-</div>
-
-<div>
-
 ## Modifying the Default Action by Using Windows PowerShell Cmdlets
 
 The default action to be taken when users try to sign on using clients that are not explicitly supported or restricted by a client version policy can be managed by using Windows PowerShell command-line interface and the **Set-CsClientVersionPolicy** cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To configure the default action to block access
 
@@ -78,39 +53,16 @@ The default action to be taken when users try to sign on using clients that are 
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -DefaultAction Block
 
-</div>
-
-<div>
-
 ## To configure the default action to allow access
 
   - In this example, the default action for the Redmond site is set to Allow. This will allow registration for any client for which no client version configuration rule exists.
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -DefaultAction Allow
 
-</div>
-
-For details, see the Help topic for the [Set-CsClientVersionPolicy](set-csclientversionpolicy.md) cmdlet.
-
-</div>
-
-<div>
+For details, see the Help topic for the [Set-CsClientVersionPolicy](https://technet.microsoft.com/en-us/library/gg398876\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
-[Managing devices, phones, and client applications in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing devices, phones, and client applications in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)
 

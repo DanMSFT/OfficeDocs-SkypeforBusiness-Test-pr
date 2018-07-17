@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Test Web App access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-07_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-07_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsWebApp cmdlet verifies that authenticated users can join Lync Server conferences by using the Lync Web App. When you run the cmdlet, Test-CsWebApp contacts the Web Ticket service to obtain web tickets for the specified users. These tickets effectively act as ‘admission tickets” to the Lync Server conference. If the tickets can be retrieved, and if the users can be authenticated, Test-CsWebApp will then contact Lync Server and attempt to establish separate conferences for instant messaging, application sharing, and data collaboration.
 
 Note that Test-CsWebApp just verifies the APIs and connections used to create these conferences. The cmdlet is designed to verify that Lync Web App could be used to create and join conferences. However,, it does not actually create and conduct a conference.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -76,11 +57,7 @@ To run this check using actual user accounts, you must create two Windows PowerS
     
     Test-CsWebApp -TargetFqdn atl-cs-001.litwareinc.com -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $cred1 -User2SipAddress "sip:pilar@litwareinc.com" -User2Credential $cred2
 
-For more information, see the help topic for the [Test-CsWebApp](test-cswebapp.md) cmdlet. Note that Test-CsWebApp was deprecated for use on Lync Server 2013.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Test-CsWebApp](https://technet.microsoft.com/en-us/library/hh689989\(v=ocs.15\)) cmdlet. Note that Test-CsWebApp was deprecated for use on Lync Server 2013.
 
 ## Determining success or failure
 
@@ -112,10 +89,6 @@ authentication scheme 'Ntlm'. The authentication
 
 header received from the server was 'Negotiate,NTLM'.
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Test-CsWebApp failures typically involve user authentication errors. If Test-CsWebApp fails, you should first verify that the specified users have valid user accounts and are enabled for Lync Server. You can retrieve account information by using a command similar to this:
@@ -123,16 +96,4 @@ Test-CsWebApp failures typically involve user authentication errors. If Test-CsW
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object Enabled
 
 If the Enabled property is not equal to True or if the command fails, that means that the user does not have a valid Lync Server account.You should also verify that the passwords that you supplied to the cmdlet are valid.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

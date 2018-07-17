@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # (Optional) Verify dial-in conferencing settings in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2010-11-02_
 
 As final verification of your dial-in conferencing configuration, you can search for dial plans that have a dial-in conferencing region that is not used by any access number and for access numbers that have not specified a dial-in conferencing region. This step is optional.
-
-<div>
 
 ## To find dial plans with a dial-in conferencing region that is not used by an access number
 
@@ -42,10 +27,6 @@ As final verification of your dial-in conferencing configuration, you can search
     
     This cmdlet returns all of the dial plans that have a dial-in conferencing region that is not used by an access number.
 
-</div>
-
-<div>
-
 ## To find access numbers without assigned regions
 
 1.  Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the **Cs-ServerAdministrator** or **CsAdministrator** role.
@@ -57,16 +38,4 @@ As final verification of your dial-in conferencing configuration, you can search
         Get-CsDialinConferencingAccessNumber -Region NULL
     
     This cmdlet returns all the dial-in conferencing access numbers that are not associated with a region.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Called ID presentation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 With Lync Server 2010, the called party’s phone number (that is, the phone number called) can be translated from E.164 format to the local dialing format that is required by the trunk peer (that is, the associated gateway, private branch exchange (PBX), or SIP trunk). To do this, you must define one or more translation rules to translate the Request URI before routing it to the trunk peer.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -36,15 +21,11 @@ With Lync Server 2010, the called party’s phone number (that is, the phone num
 
 
 
-</div>
-
 You can use either of the following methods to create or modify a translation rule:
 
   - Use the **Build a Translation Rule** tool to specify values for the starting digits, length, digits to remove and digits to add, and then let Lync Server Control Panel generate the corresponding matching pattern and translation rule for you.
 
   - Write regular expressions manually to define the matching pattern and translation rule.
-
-<div>
 
 
 > [!NOTE]
@@ -52,35 +33,14 @@ You can use either of the following methods to create or modify a translation ru
 
 
 
-</div>
-
-<div>
-
 ## In This Section
 
   - [Create or modify a translation rule by using the Build a Translation Rule tool in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool.md)
 
   - [Create or modify a translation rule manually in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-manually.md)
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Caller ID presentation in Lync Server 2013](lync-server-2013-caller-id-presentation.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Caller ID presentation in Lync Server 2013](lync-server-2013-caller-id-presentation.md)
 

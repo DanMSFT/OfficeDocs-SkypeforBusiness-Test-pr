@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Supported devices in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-08_
 
 Lync Server supports all of the phones listed in the following table. Note that not all of the supported phones can run Lync Phone Edition (some can run only earlier versions). Use the table to learn which phones can run Lync Phone Edition and where to get detailed information about all of the supported phones.
-
-<div>
 
 
 > [!NOTE]
 > Three types of phones are supported: desk phones (handset IP or USB devices that are designed to be used by employees at their desk), conferencing devices (hands-free IP or USB phones that are designed to be used in meeting rooms), and common area phones (IP phones that are designed to be used in shared areas—such as lobbies, kitchens, factory floors, and shared workspaces—and can be customized to provide different sets of Lync Phone Edition features.
 
 
-
-</div>
 
 For detailed comparison tables about all devices that are optimized to work with Lync, see "Phones and Devices Qualified for Microsoft Lync" at <http://go.microsoft.com/fwlink/p/?linkid=208938>. The phone comparison tables at this website include pricing information and technical specifications.
 
@@ -77,7 +60,7 @@ For detailed comparison tables about all devices that are optimized to work with
 </tr>
 <tr class="odd">
 <td><p>Polycom CX300 USB desk phone</p></td>
-<td></td>
+<td><p></p></td>
 <td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx300.html">CX300</a> at the Polycom website</p></td>
 </tr>
 <tr class="even">
@@ -92,7 +75,7 @@ For detailed comparison tables about all devices that are optimized to work with
 </tr>
 <tr class="even">
 <td><p>Polycom CX700 IP desk phone</p></td>
-<td></td>
+<td><p></p></td>
 <td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx700.html">CX700</a> at the Polycom website</p></td>
 </tr>
 <tr class="odd">
@@ -102,30 +85,15 @@ For detailed comparison tables about all devices that are optimized to work with
 </tr>
 <tr class="even">
 <td><p>Polycom CX5000 USB conferencing device</p></td>
-<td></td>
+<td><p></p></td>
 <td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/cx5000.html">CX5000</a> at the Polycom website</p></td>
 </tr>
 </tbody>
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > Support for analog devices is also provided. For details, see <A href="http://go.microsoft.com/fwlink/p/?linkid=257502">Planning to Deploy Analog Devices</A> in the Lync Server 2010 TechNet Library. (Lync Phone Edition works the same way in Lync Server 2013 and Lync Server 2010).
 
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

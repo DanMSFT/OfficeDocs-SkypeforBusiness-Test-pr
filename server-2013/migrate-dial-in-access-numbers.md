@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Migrate dial-in access numbers
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 Migrating dial-in access numbers from Lync Server 2010 to Lync Server 2013 requires running the **Move-CsApplicationEndpoint** cmdlet to migrate the contact objects. During the Lync Server 2010 and Lync Server 2013 coexistence period, dial-in access numbers that you created in Lync Server 2013 behave similarly to the dial-in access numbers that you create in Lync Server 2010, as described in this section.
 
@@ -46,25 +33,17 @@ Dial-in access numbers that you created in Lync Server 2010 but moved to Lync Se
 
 You must finish migrating dial-in access numbers that point to a Lync Server 2010 pool before you decommission the Lync Server 2010 pool. If you do not complete dial-in access number migration as described in the following procedure, incoming calls to the access numbers will fail.
 
-<div>
-
 
 > [!IMPORTANT]
 > You must perform this procedure prior to decommissioning the Lync Server 2010 pool.
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > We recommend that you move dial-in access numbers when network usage is low, in case there is a short period of service outage.
 
 
-
-</div>
 
 **To identify and move dial-in access numbers**
 
@@ -82,14 +61,11 @@ You must finish migrating dial-in access numbers that point to a Lync Server 201
 
 6.  Verify that no dial-in access numbers remain for the Lync Server 2010 pool from which you are migrating.
     
-    <div>
-    
 
     > [!NOTE]
     > When all dial-in access numbers point to the Lync Server 2013 pool, you can then decommission the Lync Server 2010 pool.
 
-    
-    </div>
+
 
 **Verify the dial-in access number migration using Lync Server Control Panel**
 
@@ -112,14 +88,4 @@ You must finish migrating dial-in access numbers that point to a Lync Server 201
         Get-CsDialInConferencingAccessNumber -Filter {Pool -eq "<FQDN of the pool to which the access number is moved>"}
 
 3.  Verify all the dial-in access numbers are migrated to the pool hosted on Lync Server 2013.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

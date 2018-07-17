@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Media table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 Each record represents one media type used in a peer-to-peer session. One session would be represented by multiple records in the table, if more than one media type is used.
-
-<div>
 
 
 > [!NOTE]
 > The Media table should not be used to calculate the media duration for a session. This table contains the signaling details of media exchange in a session. Media exchange is done by the INVITE request, and StartTime indicates the time that the INVITE was sent out. The invite time does not necessarily mean the media start time, because media starts only after the sessionee accepts the session. The EndTime usually means the end time of this session.
 
 
-
-</div>
 
 
 <table>
@@ -82,20 +65,9 @@ Each record represents one media type used in a peer-to-peer session. One sessio
 <tr class="odd">
 <td><p><strong>EndTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>This is the end time of the session.</p></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

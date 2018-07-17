@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Call Park configuration prerequisites and user rights in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-10_
 
 Call Park is a call management feature that is installed by default when you deploy Enterprise Voice. This topic describes what you need to have in place before you can configure Call Park and the user rights that you need to perform configuration tasks.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -36,11 +21,7 @@ Call Park is a call management feature that is installed by default when you dep
 
 
 
-</div>
-
 This section assumes that you have read the planning documentation related to Call Park (see [Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)).
-
-<div>
 
 ## Call Park Configuration Prerequisites
 
@@ -53,10 +34,6 @@ Call Park requires the following components:
 These components are installed automatically when you deploy Enterprise Voice.
 
 If you want callers to hear music while the call is parked, a music-on-hold file is also required. A default music-on-hold file is installed automatically when you deploy Enterprise Voice. You can substitute the default file with your own music-on-hold file. Call Park uses File Store to hold the audio file.
-
-</div>
-
-<div>
 
 ## Call Park Configuration User Rights
 
@@ -78,19 +55,11 @@ Configuring Call Park requires any of the following administrative roles, depend
 
   - **CsAdministrator:** This administrator role can perform all of the tasks of CsVoiceAdministrator, CsServerAdministrator, and CsUserAdministrator.
 
-<div>
-
 
 > [!NOTE]
 > For details about administrative rights, see <A href="lync-server-2013-planning-for-role-based-access-control.md">Planning for role-based access control in Lync Server 2013</A> in the Planning documentation.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -98,18 +67,5 @@ Configuring Call Park requires any of the following administrative roles, depend
 [Deploying Enterprise Voice in Lync Server 2013](lync-server-2013-deploying-enterprise-voice.md)  
 
 
-[Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)
 

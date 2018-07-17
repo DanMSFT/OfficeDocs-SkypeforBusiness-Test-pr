@@ -8,27 +8,12 @@ ms.date: 02/07/2017
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Supported virtualization technologies and known limitations in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2017-02-06_
 
 The Lync VDI plug-in allows audio and video calling for supported virtualization technologies. This extends the functionality outlined for Microsoft Lync Server 2010 in the [Client Virtualization in Microsoft Lync 2010](https://go.microsoft.com/fwlink/?linkid=330447) white paper. In compliance with standard telephone regulations, support for E911 is also included. The following sections describe the virtualization technologies that are supported by the Lync VDI plug-in and the known feature limitations.
-
-<div>
 
 ## Support for Virtualization Technologies
 
@@ -41,10 +26,6 @@ The Lync VDI plug-in supports full desktop remoting in the personal virtual desk
 The Lync VDI plug-in does not support other virtualization technologies, such as application virtualization, which allows the use of an application without requiring installation of the full application locally. Example implementations include Citrix XenApp and Microsoft Application Virtualization (App-V). Application streaming, application remoting, and mixed virtualization modes (for example, application remoting in full desktop remoting) are not supported.
 
 To allow extensibility, the Lync VDI plug-in was designed to use platform-independent APIs called Dynamic Virtual Channels (DVCs). For scenarios that are not explicitly supported by Lync, refer to support statements from the VDI solution provider.
-
-</div>
-
-<div>
 
 ## Known Feature Limitations
 
@@ -71,16 +52,4 @@ The following are known limitations when you use Lync 2013 in a VDI environment:
       - Customized ringtones and music-on-hold features.
 
   - The Lync VDI plug-in is not supported in an Office 365 environment.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

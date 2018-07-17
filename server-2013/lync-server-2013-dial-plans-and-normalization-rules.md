@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Dial plans and normalization rules in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 A dial plan is a named set of normalization rules that translates phone numbers for a named location, individual user, or contact object into a single standard (E.164) format for purposes of phone authorization and call routing.
 
 Normalization rules define how phone numbers expressed in various formats are to be routed for each specified location, user, or contact object. The same dial string may be interpreted and translated differently, depending on the location from which it is dialed and the person or contact object making the call.
-
-<div>
 
 ## Dial Plan Scope
 
@@ -38,15 +23,11 @@ A dial plan’s *scope* determines the hierarchical level at which the dial plan
 
 Clients obtain dial plan scope levels through in-band provisioning settings that are provided when users log on to Lync Server. As the administrator, you can manage and assign dial plan scope levels by using Lync Server Control Panel.
 
-<div>
-
 
 > [!NOTE]
 > The service level public switched telephone network (PSTN) gateway dial plan is applied to the incoming calls from a particular gateway.
 
 
-
-</div>
 
 Dial plan scope levels are defined as follows:
 
@@ -57,10 +38,6 @@ Dial plan scope levels are defined as follows:
   - **Site dial plan:** Can be created for an entire site, except for any users, groups, or contact objects that are assigned a pool dial plan or user dial plan. To define a site dial plan, you must specify the site to which the dial plan applies.
 
   - **Global dial plan:** The default dial plan installed with the product. You can edit the global dial plan, but you cannot delete it. This dial plan applies to all Enterprise Voice users, groups, and contact objects in your deployment, unless you configure and assign a dial plan with a more specific scope.
-
-</div>
-
-<div>
 
 ## Planning for Dial Plans
 
@@ -88,53 +65,29 @@ To plan a dial plan, follow these steps:
 
 To create a dial plan, you specify values in the following fields, as required, by using Lync Server Control Panel or Lync Server Management Shell.
 
-<div>
-
 ## Name and Simple Name
 
 For user dial plans, you should specify a descriptive name that identifies the users, groups, or contact objects to which the dial plan will be assigned. For site dial plans, the Name field is prepopulated with the site name and cannot be changed. For pool dial plans, the Name field is prepopulated with the PSTN gateway or Front End pool fully qualified domain name (FQDN) and cannot be changed.
 
 The dial plan *Simple Name* is prepopulated with a string that is derived from the dial plan name. The Simple Name field is editable, which enables you to create a more descriptive naming convention for your dial plans. The *Simple Name* value cannot be empty and must be unique. A best practice is to develop a naming convention for your entire organization and then use this convention consistently across all sites and users.
 
-</div>
-
-<div>
-
 ## Description
 
 We recommend that you type the common, recognizable name of the geographic location to which the corresponding dial plan applies. For example, if the dial plan name is London.Contoso.com, the recommended description would be London.
-
-</div>
-
-<div>
 
 ## Dial-in Conferencing Region
 
 If you are deploying dial-in conferencing, you will need to specify a dial-in conferencing region to associate dial-in conferencing access numbers with a dial plan.
 
-</div>
-
-<div>
-
 ## External Access Prefix
 
 You can specify an external access prefix of up to four characters (\#, \*, and 0-9) if users need to dial one or more additional leading digits (for example, 9) to get an external line.
-
-<div>
 
 
 > [!NOTE]
 > If you specify an external access prefix, you do not need to create an additional normalization rule to accommodate the prefix.
 
 
-
-</div>
-
-</div>
-
-</div>
-
-<div>
 
 ## Normalization Rules
 
@@ -158,19 +111,11 @@ The following number fields are among those that your normalization rules may ne
 
   - Site prefix
 
-<div>
-
 ## Creating Normalization Rules
 
 Normalization rules use .NET Framework regular expressions to specify numeric match patterns that the server uses to translate dial strings to E.164 format for the purpose of performing reverse number lookup. You create normalization rules in the Lync Server Control Panel either by entering the expressions manually, or by entering the starting digits and the length of the dial strings to be matched and letting the Lync Server Control Panel generate the corresponding regular expression for you. Either way, when you finish, you can enter a test number to verify that the normalization rule works as expected.
 
 For details about using .NET Framework regular expressions, see ".NET Framework Regular Expressions" at [http://go.microsoft.com/fwlink/p/?linkId=140927](http://go.microsoft.com/fwlink/p/?linkid=140927).
-
-</div>
-
-<span id="BKMK_SampleNormalizationRules"></span>
-
-<div>
 
 ## Sample Normalization Rules
 
@@ -319,27 +264,8 @@ The following table illustrates a sample dial plan for Redmond, Washington, Unit
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > The normalization rules names shown in the preceding table do not include spaces, but this is a matter of choice. The first name in the table, for example, could have been written "5 digit extension" or "5-digit Extension" and still be valid.
 
-
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

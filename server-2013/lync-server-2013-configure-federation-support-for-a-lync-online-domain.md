@@ -8,49 +8,28 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure federation support for a Lync Online domain in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Federating with a Microsoft Lync Online 2010 customer requires you to complete the following steps:
 
-  - Configure support for the domain of the Lync Online 2010 customer (for example, contoso.onmicrosoft.com). As specified in the [Prerequisites for federating with a Lync Online customer in Lync Server 2013](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md) section of this documentation, you should have already enabled federation for your organization. Enabling federation requires specifying the method to be used to control access by federated domains. If you configured your organization to use discovery, adding the domain to your organization’s allowed list is optional. If you did not enable domain discovery, then you must add the domain name of the Lync Online customer to your allowed domains list. You can add a domain name either by using Lync Server Control Panel or by running the **New-CSAllowedDomain** cmdlet. For details about using Lync Server Control Panel, including enabling discovery of domains, see [Manage SIP federated providers for your organization in Lync Server 2013](lync-server-2013-manage-sip-federated-providers-for-your-organization.md) in the Operations documentation. For details about using the **New-CSAllowedDomain** cmdlet to add a domain, see [New-CsAllowedDomain](new-csalloweddomain.md) in the Operations documentation.
-    
-    <div>
+  - Configure support for the domain of the Lync Online 2010 customer (for example, contoso.onmicrosoft.com). As specified in the [Prerequisites for federating with a Lync Online customer in Lync Server 2013](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md) section of this documentation, you should have already enabled federation for your organization. Enabling federation requires specifying the method to be used to control access by federated domains. If you configured your organization to use discovery, adding the domain to your organization’s allowed list is optional. If you did not enable domain discovery, then you must add the domain name of the Lync Online customer to your allowed domains list. You can add a domain name either by using Lync Server Control Panel or by running the **New-CSAllowedDomain** cmdlet. For details about using Lync Server Control Panel, including enabling discovery of domains, see [Manage SIP federated providers for your organization in Lync Server 2013](lync-server-2013-manage-sip-federated-providers-for-your-organization.md) in the Operations documentation. For details about using the **New-CSAllowedDomain** cmdlet to add a domain, see [New-CsAllowedDomain](https://technet.microsoft.com/en-us/library/gg398628\(v=ocs.15\)) in the Operations documentation.
     
 
     > [!NOTE]
     > A Lync Online customer can have multiple domains. If you want to federate with more than one of the domains, you must configure support for each individual domain with which you want to support federation, and the administrator of the Lync Online customer must enable federation for each of the domains to be federated.
 
-    
-    </div>
+
 
   - Configure support for the hosting provider of the Lync Online 2010 customer domain with which you want to federate. Use the procedure in this section to configure support for hosting provider.
-    
-    <div>
     
 
     > [!NOTE]
     > This step is required only for federation with a domain of a Lync Online customer, not for federation with any domain that is deployed on-premises at a federated partner’s location.
 
-    
-    </div>
 
-<div>
 
 ## To configure support for a hosting provider
 
@@ -76,17 +55,5 @@ Federating with a Microsoft Lync Online 2010 customer requires you to complete t
     
       - **IsLocal** indicates whether the proxy server used by the hosting provider is contained within your Lync Server topology.
     
-    For details about using this cmdlet, see [New-CsHostingProvider](new-cshostingprovider.md) in the Operations documentation.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+    For details about using this cmdlet, see [New-CsHostingProvider](https://technet.microsoft.com/en-us/library/gg398490\(v=ocs.15\)) in the Operations documentation.
 

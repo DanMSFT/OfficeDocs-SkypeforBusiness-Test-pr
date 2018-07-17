@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Conference Activity Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 The Conference Activity Report makes it easy for you to answer questions like these: how many conferences are being held each day, and when are those conferences being held? Information like this is useful not only in its own right, but also as a troubleshooting tool. For example, suppose users are complaining that the network seems particularly slow in the middle of the day. A quick glance at the Conference Activity reports might suggest one possible reason: far more conferences are being scheduled between the hours of 10:00 AM and 2:00 PM then at any other time.
 
 If the slow network is causing problems, you can encourage users to reschedule some of their conferences during the less-heavily trafficked times of the day.
-
-<div>
 
 ## Accessing the Conference Activity Report
 
@@ -39,10 +24,6 @@ The Conference Activity Report is accessed from the [Conference Summary Report i
   - Total conferences
 
   - Total participants
-
-</div>
-
-<div>
 
 ## Making the Best Use of the Conference Activity Report
 
@@ -53,10 +34,6 @@ By default the Conference Activity Report shows you the total number of conferen
   - Participant minutes
 
   - Conference count
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -120,10 +97,6 @@ Filters provide a way for you to return a more finely-targeted set of data or to
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Conferences by Pool
 
 The following table lists the information in the Conference Activity Report for each pool.
@@ -162,10 +135,6 @@ The following table lists the information in the Conference Activity Report for 
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for Conferences by Server Type
 
@@ -211,17 +180,4 @@ The following table lists the information in the Conference Activity Report for 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS requirements for a Standard Edition server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 This section describes the Domain Name System (DNS) records that are required for deployment of Standard Edition servers.
-
-<div>
 
 ## DNS Records for Standard Edition Servers
 
@@ -67,10 +52,6 @@ The following table specifies DNS requirements for Lync Server 2013 Standard Edi
 </table>
 
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -78,18 +59,5 @@ The following table specifies DNS requirements for Lync Server 2013 Standard Edi
 [Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
 
 
-[Device Update Web service in Lync Server 2013](lync-server-2013-device-update-web-service.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Device Update Web service in Lync Server 2013](lync-server-2013-device-update-web-service.md)
 

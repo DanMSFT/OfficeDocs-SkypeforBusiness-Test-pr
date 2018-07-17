@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Reset a Device Update rule in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-23_
 
 If you don’t like the way that an update works on your test devices, you can reset the device update rule, which removes the rule’s pending status and uninstalls the update from the test devices.
 
 You can remove a device update rule by using either Lync Server Control Panel or Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
 > To uninstall a rule that you’ve already approved (that is, rolled out), restore it. For details, see <A href="lync-server-2013-restore-a-device-update-rule.md">Restore a Device Update rule in Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## To reset a device update rule by using Lync Server Control Panel
 
@@ -60,24 +41,15 @@ You can remove a device update rule by using either Lync Server Control Panel or
 
 5.  Click **Action**, and then click **Cancel pending updates**.
     
-    <div>
-    
 
     > [!TIP]
     > If you’re sure you’ll never want to roll out the device update rule(s) that you cancelled, you might want to delete them. For details, see <A href="lync-server-2013-remove-a-device-update-rule.md">Remove a Device Update rule in Lync Server 2013</A>.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## Resetting a Device Update Rule by Using Windows PowerShell Cmdlets
 
 Device update rules can also be reset by using Windows PowerShell and the **Reset-CsDeviceUpdateRule** cmdlet. This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
@@ -85,19 +57,11 @@ Device update rules can also be reset by using Windows PowerShell and the **Rese
 
 
 
-</div>
-
-<div>
-
 ## To reset a specific device update rule on a server
 
   - The following command resets the device update rule d5ce3c10-2588-420a-82ac-dc2d9b1222ff9 on the Web server atl-cs-001.litwareinc.com:
     
         Reset-CsDeviceUpdateRule -Identity "service:WebServer:atl-cs-001.litwareinc.com/d5ce3c10-2588-420a-82ac-dc2d9b1222ff9"
-
-</div>
-
-<div>
 
 ## To reset all the device update rules on a server
 
@@ -105,39 +69,16 @@ Device update rules can also be reset by using Windows PowerShell and the **Rese
     
         Get-CsDeviceUpdateRule -Filter "service:WebServer:atl-cs-001.litwareinc.com*"  | Reset-CsDeviceUpdateRule
 
-</div>
-
-<div>
-
 ## To reset all the device updates rules that have a specific brand
 
   - In this example, all the device updates throughout the organization that have a Brand equal to Microsoft are reset:
     
         Get-CsDeviceUpdateRule | Where-Object {$_.Brand -eq "Microsoft"} | Reset-CsDeviceUpdateRule
 
-</div>
-
-For details, see the Help topic for the [Reset-CsDeviceUpdateRule](reset-csdeviceupdaterule.md) cmdlet.
-
-</div>
-
-<div>
+For details, see the Help topic for the [Reset-CsDeviceUpdateRule](https://technet.microsoft.com/en-us/library/gg398181\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
 
-[Approve a Device Update rule in Lync Server 2013](lync-server-2013-approve-a-device-update-rule.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Approve a Device Update rule in Lync Server 2013](lync-server-2013-approve-a-device-update-rule.md)
 

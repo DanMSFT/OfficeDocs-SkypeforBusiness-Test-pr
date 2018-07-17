@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing and configuring watcher nodes in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-07_
 
 *Watcher nodes* are computers that periodically run Lync Server synthetic transactions. *Synthetic transactions* are Windows PowerShell cmdlets that verify that key end user scenarios—such as the ability to sign in to the system, or the ability to exchange instant messages—are working as expected. For Lync Server 2013, System Center Operations Manager can run the synthetic transactions shown in the following table. There are three different synthetic transaction types shown in the table:
 
@@ -149,19 +136,13 @@ The synthetic transactions available to watcher nodes include the following:
 
 You do not need to install watcher nodes in order to use System Center Operations Manager. If you do not install these nodes, you can still get real-time alerts from Lync Server 2013 components when an issue occurs. (The Component and User Management Pack does not use watcher nodes.) However, watcher nodes are required if you want to monitor end-to-end scenarios by using the Active Monitoring Management pack.
 
-<div>
-
 
 > [!NOTE]
-> Administrators can also run synthetic transactions manually, without needing to use, or install, Operations Manager. For details about the various Test-Cs cmdlets, see the <A href="lync-server-2013-cmdlets-index.md">Lync Server 2013 cmdlets index</A>.
+> Administrators can also run synthetic transactions manually, without needing to use, or install, Operations Manager. For details about the various Test-Cs cmdlets, see the <A href="https://technet.microsoft.com/en-us/library/gg398867(v=ocs.15)">Lync Server 2013 cmdlets index</A>.
 
 
-
-</div>
 
 Depending on the size of your deployment, synthetic transactions may use a large amount of computer memory and processor time. For this reason, we recommend that you use a dedicated computer as a watcher node. For example, you should not configure a Front End Server to act as a watcher node. Watcher nodes should meet the following hardware specifications:
-
-<div>
 
 
 > [!NOTE]
@@ -169,20 +150,18 @@ Depending on the size of your deployment, synthetic transactions may use a large
 
 
 
-</div>
-
 Lync Server 2013 watcher nodes may be deployed inside or outside of an enterprise to help verify:
 
-  - <span></span>  
+  -  
     Connectivity to pools for users inside the enterprise.
 
-  - <span></span>  
+  -  
     Connectivity through perimeter networks for remote users who work outside the enterprise.
 
-  - <span></span>  
+  -  
     Connectivity to branch office appliances.
 
-  - <span></span>  
+  -  
     Connectivity to Lync Server 2010 inside the enterprise and through perimeter networks.
 
 Different authentication options are available for inside and outside of the enterprise to help simplify administration. For details, see [Configuring a watcher node to run synthetic transactions in Lync Server 2013](lync-server-2013-configuring-a-watcher-node-to-run-synthetic-transactions.md).
@@ -243,14 +222,4 @@ As soon as all these prerequisites have been met, you can configure the watcher 
   - Running the Watchernode.msi executable file.
 
   - Using the **CsWatcherNodeConfiguration** cmdlets to configure test users to be employed by the watcher node.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

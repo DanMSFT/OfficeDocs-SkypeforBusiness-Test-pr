@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Negotiation settings for XMPP federated partners in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-21_
 
 The settings for the negotiation types in the configuration of an XMPP Partner have a wide variety of possible combinations. Not all of these combinations are valid. The table detailed in this topic will define the valid and not valid settings. Common configurations are presented in the first table, the second table detailing all possible combinations. Note that you cannot have *Simple Authentication and Security Layer* (SASL) **unless** *Transport Layer Security* (TLS) is also available. SASL is sent in an unencrypted (readable) format and should never be transmitted unless protected by another means, such as TLS.
 
@@ -105,150 +92,227 @@ The settings for the negotiation types in the configuration of an XMPP Partner h
 <td><p>Required</p></td>
 <td><p>True</p></td>
 <td><p>SASL over TLS</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dialback will not operate if both SASL and TLS are required.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> Dialback will not operate if both SASL and TLS are required.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Required</p></td>
 <td><p>Required</p></td>
 <td><p>False</p></td>
 <td><p>SASL over TLS</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Optional</p></td>
 <td><p>Required</p></td>
 <td><p>True</p></td>
 <td><p>SASL over TLS, TLS Dialback, TCP Dialback</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Optional</p></td>
 <td><p>Required</p></td>
 <td><p>False</p></td>
 <td><p>SASL over TLS</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p>Not Supported</p></td>
 <td><p>Required</p></td>
 <td><p>True</p></td>
 <td><p>TCP Dialback</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Not Supported</p></td>
 <td><p>Required</p></td>
 <td><p>False</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Not Valid Configuration</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> Not Valid Configuration
+</td>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Because SASL requires TLS, and TLS is not available, SASL/TLS cannot succeed. TCP Dialback is set to false, and cannot be used.</td>
+</tr>
+</tbody>
+</table>
 
-
-</div></td>
-<td><div>
-
-> [!WARNING]
-> Because SASL requires TLS, and TLS is not available, SASL/TLS cannot succeed. TCP Dialback is set to false, and cannot be used.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p>Required</p></td>
 <td><p>Optional</p></td>
 <td><p>True</p></td>
 <td><p>SASL over TLS, TLS Dialback</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Required</p></td>
 <td><p>Optional</p></td>
 <td><p>False</p></td>
 <td><p>SASL over TLS</p></td>
-<td></td>
+<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Optional</p></td>
 <td><p>Optional</p></td>
 <td><p>True</p></td>
 <td><p>SASL over TLS, TLS Dialback, TCP Dialback</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Optional</p></td>
 <td><p>Optional</p></td>
 <td><p>False</p></td>
 <td><p>SASL over TLS</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p>Not Supported</p></td>
 <td><p>Optional</p></td>
 <td><p>True</p></td>
 <td><p>TCP Dialback</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Not Supported</p></td>
 <td><p>Optional</p></td>
 <td><p>False</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Not Valid Configuration</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> Not Valid Configuration
+</td>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.</td>
+</tr>
+</tbody>
+</table>
 
-
-</div></td>
-<td><div>
-
-> [!WARNING]
-> SASL requires TLS. Allowing TLS to be optional may result in failed session negotiations.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p>Required</p></td>
@@ -262,13 +326,20 @@ The settings for the negotiation types in the configuration of an XMPP Partner h
 <td><p>Not Supported</p></td>
 <td><p>False</p></td>
 <td><p>Not Valid Configuration</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL or Dialback must be enabled.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> SASL or Dialback must be enabled.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p>Optional</p></td>
@@ -282,13 +353,20 @@ The settings for the negotiation types in the configuration of an XMPP Partner h
 <td><p>Not Supported</p></td>
 <td><p>False</p></td>
 <td><p>Not Valid Configuration</p></td>
-<td><div>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL or Dialback must be enabled.</td>
+</tr>
+</tbody>
+</table>
 
-> [!WARNING]
-> SASL or Dialback must be enabled.
-
-
-</div></td>
+</td>
 </tr>
 <tr class="odd">
 <td><p>Not Supported</p></td>
@@ -302,25 +380,21 @@ The settings for the negotiation types in the configuration of an XMPP Partner h
 <td><p>Not Supported</p></td>
 <td><p>False</p></td>
 <td><p>Not Valid Configuration</p></td>
-<td><div>
-
-> [!WARNING]
-> SASL or Dialback must be enabled.
-
-
-</div></td>
+<td><table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg412910.warning(OCS.15).gif" title="warning" alt="warning" />Warning:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SASL or Dialback must be enabled.</td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+</td>
+</tr>
+</tbody>
+</table>
 

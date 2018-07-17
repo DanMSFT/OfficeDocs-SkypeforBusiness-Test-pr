@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Define optional Director topologies in your topology for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-08_
 
 Lync Server 2013 Directors can be single-instance servers or they can be installed as a load-balanced pool of multiple Directors for higher availability and capacity. Both hardware load balancing and Domain Name System (DNS) load balancing are supported. This topic explains how to configure DNS load balancing for Director pools.
 
@@ -35,8 +22,6 @@ This topic describes the steps to define and publish the topology for the two Di
   - To define the Director (single instance)
 
   - To define the Director (multiple Director pool)
-
-<div>
 
 ## To define the Director (single instance)
 
@@ -60,40 +45,26 @@ This topic describes the steps to define and publish the topology for the two Di
     
     2.  To create a new file share, click **Define a new file share**, type the FQDN for the location of the file share in **File Server FQDN**, type the name of the share in **File Share**, and then click **Next**.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The file share that you specify or create in this step must exist or be created prior to publishing the topology.<BR>The file share assigned to a Director is not actually used, so you can assign the file share of any pool in the organization.
 
-    
-    </div>
+
 
 7.  In the **Specify the Web Services URL** dialog box, in **External Base URL**, specify the FQDN for the Directors, and then click **Finish**.
-    
-    <div>
     
 
     > [!IMPORTANT]
     > The name must be resolvable from Internet DNS servers and point to the public IP address of the reverse proxy, which listens for HTTP/HTTPS requests to that URL and proxies them to the external Web Services virtual directory on that Director.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!WARNING]
     > If you have more than one Front End pool or Front End Server the external Web services FQDN must be unique. For example, if you define the external Web services FQDN of a Front End Server as <STRONG>pool01.contoso.com</STRONG>, you cannot use <STRONG>pool01.contoso.com</STRONG> for another Front End pool or Front End Server. If you are also deploying Directors, the external Web services FQDN defined for any Director or Director pool must be unique from any other Director or Director pool as well as any Front End pool or Front End Server. If decide to override the Internal web services with a self-defined FQDN, each FQDN must be unique from any other Front End pool, Director or a Director pool.
 
-    
-    </div>
+
 
 8.  Publish the topology.
-
-</div>
-
-<div>
 
 ## To define the Director (multiple Director pool)
 
@@ -123,46 +94,24 @@ This topic describes the steps to define and publish the topology for the two Di
     
       - To create a new file share, click **Define a new file share**, type the FQDN for the location of the file share in **File Server FQDN**, type the name of the share in **File Share**, and then click **Next**.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The file share that you specify or create in this step must exist or be created prior to publishing the topology.<BR>The file share assigned to a Director is not actually used, so you can assign the file share of any pool in the organization.
 
-    
-    </div>
+
 
 8.  In the **Specify the Web Services URL** dialog box, in **External Base URL**, specify the FQDN for the Directors, and then click **Finish**.
-    
-    <div>
     
 
     > [!IMPORTANT]
     > The name must be resolvable from Internet DNS servers and point to the public IP address of the reverse proxy, which listens for HTTP/HTTPS requests sent to that URL and proxies them to the external Web Services virtual directory on that Director pool.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!WARNING]
     > If you have more than one Front End pool or Front End Server the external Web services FQDN must be unique. For example, if you define the external Web services FQDN of a Front End Server as <STRONG>pool01.contoso.com</STRONG>, you cannot use <STRONG>pool01.contoso.com</STRONG> for another Front End pool or Front End Server. If you are also deploying Directors, the external Web services FQDN defined for any Director or Director pool must be unique from any other Director or Director pool as well as any Front End pool or Front End Server. If decide to override the Internal web services with a self-defined FQDN, each FQDN must be unique from any other Front End pool, Director or a Director pool.
 
-    
-    </div>
+
 
 9.  Publish the topology.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

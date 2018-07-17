@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Test voice configuration in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-20_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-05-20_
 </table>
 
 
-<div>
-
 ## Description
 
 Lync Server includes several Windows PowerShell cmdlets (such as Test-CsVoiceRoute and Test-CsVoicePolicy, Test-CsTrunkConfiguration) that enable you to verify that the individual pieces of your Enterprise Voice infrastructure – voice routes, voice policies, SIP trunks – are working as expected.
 
 While it’s important with Enterprise Voice that all the individual pieces work: it’s possible to have a valid voice route, a valid voice policy, and a valid SIP trunk, but still have users unable to make or receive phone calls. Because of that, Lync Server also provides the ability to create voice test configurations. Voice test configurations represent common Enterprise Voice scenarios: you can specify such things as a voice route, a voice policy, and a dial plan, and then verify that those individual items are work able to work together to provide phone service. In addition, you can validate your expectations in a given scenario. For example, suppose that you expect that the combination of dial plan A and voice policy B would result in calls being routed over voice route C. You can enter voice route C as the ExpectedRoute. When you run the test, if voice route C is not employed then the test will be marked as having failed.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -74,10 +55,6 @@ To validate all the voice test configuration settings at the same time, use this
 `Get-CsVoiceTestConfiguration | Test-CsVoiceTestConfiguration`
 
 For more information, see the Help documentation for the Test-CsVoiceTestConfiguration cmdlet.
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -103,10 +80,6 @@ FirstMatchingRoute:
 
 MatchingUsage:      
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Because voice test configuration testing tests several different items – including voice policies, dial plans, voice routes, and so on – there are several different factors that could result in a failed test. If a test fails, your first step should be to review the configuration settings themselves by using the Get-CsVoiceTestConfiguration cmdlet:
@@ -127,25 +100,8 @@ This step-by-step account might provide a useful clue as to where the test actua
 
 In addition to that, be aware that it’s possible for a test to be able to route a call and yet still be marked as a failure; that can occur if you enter values for ExpectedRoute, ExpectedTranslatedNumber, and ExpectedUsage, and any of those expectations are not met. For example, suppose that you enter voice route C as your expected voice route, but the test actually completes the call using voice route D. In that case the test will be marked as Failed because the expected voice route was not used. If a test fails, you might remove the values for ExpectedRoute, ExpectedTranslatedNumber, and ExpectedUsage and then re-run the test. That will help you determine whether the failure was because the call couldn't be completed, or because you expect one thing and actually received another.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsVoiceTestConfiguration](test-csvoicetestconfiguration.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsVoiceTestConfiguration](https://technet.microsoft.com/en-us/library/gg398260\(v=ocs.15\))
 

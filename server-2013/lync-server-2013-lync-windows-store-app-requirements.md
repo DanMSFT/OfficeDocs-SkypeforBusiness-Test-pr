@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Lync Windows Store app requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-12-03_
 
 Organizations with an on-premises deployment of Lync Server must meet the following requirements to support Lync Windows Store app.
-
-<div>
 
 
 > [!NOTE]
 > For Lync Server 2010, run the cumulative update for Lync Server 2010: February 2012 (available at <A class=uri href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2670352</A>) or later on all servers. To enable users to join meetings, run the cumulative update for Lync Server 2010: October 2012 (available at <A class=uri href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2737915</A>) on the servers.
 
 
-
-</div>
 
   - Enable the Autodiscover, Lync Web App, and Web Ticket services on the server.
 
@@ -52,23 +35,8 @@ Organizations with an on-premises deployment of Lync Server must meet the follow
 
 If your organization subscribes to Lync Online or Office 365 and you are using your own domain name, you must take some extra steps to set up your network for autodiscovery of the Lync servers. The network configuration requirements are the same for Lync Windows Store app and Lync on mobile devices. Follow the instructions “Set up your network” in the Office 365 wiki article “Set up Lync mobile devices,” available at [http://go.microsoft.com/fwlink/?LinkId=271822](http://go.microsoft.com/fwlink/?linkid=271822).
 
-<div>
-
 ## See Also
 
 
-[Deploying Lync Windows Store app in Lync Server 2013](lync-server-2013-deploying-lync-windows-store-app.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Deploying Lync Windows Store app in Lync Server 2013](lync-server-2013-deploying-lync-windows-store-app.md)
 

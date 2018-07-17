@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Schema attributes by class in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-08-29_
 
 This section lists the schema attributes that can be contained in each Lync Server 2013 class and the classes that can be contained in other classes. For a list of all the classes and their descriptions, see [Schema classes and descriptions in Lync Server 2013](lync-server-2013-schema-classes-and-descriptions.md). For a list of all the attributes and their descriptions, see [Schema attributes and descriptions in Lync Server 2013](lync-server-2013-schema-attributes-and-descriptions.md).
-
-<div>
 
 ## Attributes by Class
 
@@ -287,8 +272,6 @@ This section lists the schema attributes that can be contained in each Lync Serv
 </table>
 
 
-<div>
-
 ## Classes Contained in Other Classes
 
 
@@ -377,19 +360,4 @@ This section lists the schema attributes that can be contained in each Lync Serv
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

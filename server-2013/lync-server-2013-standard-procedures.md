@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Standard procedures in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-08-18_
 
 Several resources can help you define what standard procedures are required in the organization, and how to perform them. Because each organization is unique, you may have to additionally customize and adapt these resources to suit everyday requirements.Standard operational procedures change, and documentation occasionally has to be revised. As changes are made, the change management process, as defined in the Service Management Functions of the Microsoft Operational Framework, should identify how each change is likely to affect how and when administrative tasks are performed. Use the change management function to update and control the procedural documentation.We recommend that operational tasks be separated into manageable workloads, where tasks are performed on a daily, weekly, monthly, and as-needed basis. Daily tasks would focus efforts on aspects that are very important to the functioning of a system and monthly tasks would focus more on ensuring the long-term health of a system. The tasks that must be performed can be separated into the following categories:
 
@@ -40,25 +27,10 @@ When preparing documentation for operations management, use checklists to help e
 
 Frequently, change management takes over where system administration finishes. If a task is covered by a standard procedure, it is part of the system administration function. If there is no standard procedure for a task, it should be handled by using the change management function.
 
-<div>
-
 ## See Also
 
 
 [Daily task checklist](lync-server-2013-operations-checklists.md)  
 [Weekly task checklist](lync-server-2013-operations-checklists.md)  
-[Monthly task checklist](lync-server-2013-operations-checklists.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Monthly task checklist](lync-server-2013-operations-checklists.md)
 

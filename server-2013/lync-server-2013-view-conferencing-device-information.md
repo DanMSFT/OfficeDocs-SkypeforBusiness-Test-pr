@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View conferencing device information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-20_
 
 You can view information about the conferencing devices configured for use in your organization by using Windows PowerShell and the **Get-CsMeetingRoom** cmdlet. Run the **Get-CsMeetingRoom** cmdlet from either the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
@@ -36,14 +21,8 @@ You can view information about the conferencing devices configured for use in yo
 
 
 
-</div>
+If you use the **Get-CsMeetingRoom** cmdlet without any parameters, it returns information about all your conferencing devices. Optional parameters provide different ways for you to filter information. For details, see the Parameters section of [Get-CsMeetingRoom](https://technet.microsoft.com/en-us/library/jj205277\(v=ocs.15\)).
 
-If you use the **Get-CsMeetingRoom** cmdlet without any parameters, it returns information about all your conferencing devices. Optional parameters provide different ways for you to filter information. For details, see the Parameters section of [Get-CsMeetingRoom](get-csmeetingroom.md).
-
-<div>
-
-
-<div>
 
 ## Viewing Information about All Your Conferencing Devices
 
@@ -71,29 +50,11 @@ If you use the **Get-CsMeetingRoom** cmdlet without any parameters, it returns i
         HostedVoiceMail                   :
         DisplayName                       : Room 1219
 
-</div>
-
-<div>
-
 ## Viewing Information about a Specific Conferencing Device
 
   - To view information for a specific conferencing device, include the Identity parameter followed by the conferencing device identity (typically, the Active Directory display name). For example:
     
         Get-CsMeetingRoom -Identity "Room 1219"
 
-</div>
-
-For details, see the Help topic for the [Get-CsMeetingRoom](get-csmeetingroom.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see the Help topic for the [Get-CsMeetingRoom](https://technet.microsoft.com/en-us/library/jj205277\(v=ocs.15\)) cmdlet.
 

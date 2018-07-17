@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Planning for conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-29_
 
 Lync Server 2013 offers a rich set of conferencing capabilities:
 
@@ -40,8 +27,6 @@ Lync Server 2013 supports both scheduled conferences and impromptu conferences.
 
 When you deploy Lync Server 2013, Front End Server, you can choose whether to also deploy the web conferencing, A/V conferencing, and dial-in conferencing capabilities. IM conferencing capabilities are always automatically deployed along with IM conversation capabilities on Lync Server 2013 Front End Servers.
 
-<div>
-
 
 > [!NOTE]
 > If your deployment includes meetings organized using Office Communicator 2007 R2 clients (including the Live Meeting console or Conferencing Add-in for Microsoft Office Outlook), the meetings will have the following limitations after they are migrated to Lync Server 2013: 
@@ -53,11 +38,7 @@ When you deploy Lync Server 2013, Front End Server, you can choose whether to a
 
 
 
-</div>
-
 The following sections describe what is required to deploy the various types of conferencing capabilities, including the planning process, components, hardware and software requirements, and the deployment process.
-
-<div>
 
 ## In This Section
 
@@ -72,16 +53,4 @@ The following sections describe what is required to deploy the various types of 
   - [Deployment checklist for conferencing in Lync Server 2013](lync-server-2013-deployment-checklist-for-conferencing.md)
 
   - [Support for large meetings in Lync Server 2013](lync-server-2013-support-for-large-meetings.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

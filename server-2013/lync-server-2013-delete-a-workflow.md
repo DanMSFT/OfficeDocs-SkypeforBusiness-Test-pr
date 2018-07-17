@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Delete a workflow in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Use one of the following procedures to delete a workflow.
-
-<div>
 
 ## To use Lync Server Control Panel delete a workflow
 
@@ -44,22 +29,15 @@ Use one of the following procedures to delete a workflow.
 
 6.  In the list of services, click the service that you want, and then click **OK**.
     
-    <div>
-    
 
     > [!NOTE]
     > The Response Group Configuration Tool webpage opens. You can also open the Response Group Configuration Tool webpage directly from a web browser by connecting to <STRONG>https://&lt;webPoolFqdn&gt;/RgsConfig</STRONG>.
 
-    
-    </div>
+
 
 7.  Under **Manage an Existing Workflow**, locate the workflow you want to delete, and then under **Action**, click **Delete**.
 
 8.  Click **Yes**.
-
-</div>
-
-<div>
 
 ## To use Windows PowerShell to delete a workflow
 
@@ -74,16 +52,4 @@ Use one of the following procedures to delete a workflow.
     For example:
     
         Get-CsRgsWorkflow -Identity service:ApplicationServer:redmond.contoso.com -Name "Help Desk" | Remove-CsRgsWorkflow
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify network subnets in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 A network subnet must be associated with a network site for the purposes of determining the geographic location of the host belonging to this subnet. You can use Lync Server Control Panel to configure subnets. From the Lync Server Control Panel, you can create, modify, or delete a network subnet. For details about deleting network subnets, see [Deleting network subnets in Lync Server 2013](lync-server-2013-deleting-network-subnets.md).
 
-In most deployments of Microsoft Lync Server 2013 where call admission control (CAC) is implemented, there will typically be a large number of subnets. Because of this, it is often best to configure subnets from the Lync Server Management Shell. From there you can call **New-CsNetworkSubnet** in conjunction with the Windows PowerShell cmdlet **Import-CSV**. By using these cmdlets together, you can read in subnet settings from a comma-separated values (.csv) file and create multiple subnets at the same time. For examples of how to create subnets from a .csv file, see [New-CsNetworkSubnet](new-csnetworksubnet.md).
-
-<div>
+In most deployments of Microsoft Lync Server 2013 where call admission control (CAC) is implemented, there will typically be a large number of subnets. Because of this, it is often best to configure subnets from the Lync Server Management Shell. From there you can call **New-CsNetworkSubnet** in conjunction with the Windows PowerShell cmdlet **Import-CSV**. By using these cmdlets together, you can read in subnet settings from a comma-separated values (.csv) file and create multiple subnets at the same time. For examples of how to create subnets from a .csv file, see [New-CsNetworkSubnet](https://technet.microsoft.com/en-us/library/gg398226\(v=ocs.15\)).
 
 ## To create a network subnet
 
@@ -46,24 +31,17 @@ In most deployments of Microsoft Lync Server 2013 where call admission control (
 
 6.  In the **Mask** field, enter a numeric value from 1 through 32.
     
-    <div>
-    
 
     > [!NOTE]
     > This value is the bitmask that is to be applied to the subnet being created.
 
-    
-    </div>
+
 
 7.  In **Network site ID**, select the site to which this subnet belongs.
 
 8.  (Optional) Type a value in the **Description** field to provide more information about this subnet that cannot be expressed by the name alone.
 
 9.  Click **Commit**.
-
-</div>
-
-<div>
 
 ## To modify a network subnet
 
@@ -81,10 +59,6 @@ In most deployments of Microsoft Lync Server 2013 where call admission control (
 
 7.  Click **Commit**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -94,21 +68,8 @@ In most deployments of Microsoft Lync Server 2013 where call admission control (
 [About network regions, sites, and subnets in Lync Server 2013](lync-server-2013-about-network-regions-sites-and-subnets.md)  
 
 
-[New-CsNetworkSubnet](new-csnetworksubnet.md)  
-[Set-CsNetworkSubnet](set-csnetworksubnet.md)  
-[Remove-CsNetworkSubnet](remove-csnetworksubnet.md)  
-[Get-CsNetworkSubnet](get-csnetworksubnet.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsNetworkSubnet](https://technet.microsoft.com/en-us/library/gg398226\(v=ocs.15\))  
+[Set-CsNetworkSubnet](https://technet.microsoft.com/en-us/library/gg412739\(v=ocs.15\))  
+[Remove-CsNetworkSubnet](https://technet.microsoft.com/en-us/library/gg425726\(v=ocs.15\))  
+[Get-CsNetworkSubnet](https://technet.microsoft.com/en-us/library/gg412825\(v=ocs.15\))
 

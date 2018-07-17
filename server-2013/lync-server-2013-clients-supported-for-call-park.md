@@ -8,41 +8,22 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Clients supported for Call Park in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-13_
 
 This section identifies the clients that can be used to park calls and the clients that can be used to retrieve parked calls.
-
-<div>
 
 ## Clients Supported for Parking Calls
 
 Calls from any IP, private branch exchange (PBX), public switched telephone network (PSTN), or mobile phone can be parked.
-
-<div>
 
 
 > [!NOTE]
 > Only audio calls can be parked. Instant messages and conferences cannot be parked.
 
 
-
-</div>
 
 The following clients can use Call Park to park calls:
 
@@ -54,19 +35,11 @@ The following clients can use Call Park to park calls:
 
   - Lync Phone Edition
 
-<div>
-
 
 > [!NOTE]
 > Mobile phones cannot use Call Park to park calls.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Clients Supported for Retrieving Calls
 
@@ -87,16 +60,4 @@ The following clients can retrieve calls that are parked on Call Park:
   - IP common area phones
 
   - Non-IP phones that are connected to the Lync Server 2013 infrastructure, including common area phones and private branch exchange (PBX) phones
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

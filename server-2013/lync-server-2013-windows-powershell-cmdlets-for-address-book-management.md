@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Windows PowerShell cmdlets for Address Book Services in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Lync Server provides a number of Windows PowerShell command-line interface cmdlets to manage and configure the Address Book service. Some of these cmdlets are replacements for the ABServer.exe commands used in previous versions of Office Communications Server. In the following topics are the cmdlets that are used to set, create, and retrieve information about the Address Book service, its configuration and information about the Web services that the Address Book service uses when clients retrieve Address Book service files and settings.
 
 All of these cmdlets are issued through the Lync Server Management Shell found in the Lync Server tools on a server or workstation where the administration tools have been installed.
-
-<div>
 
 ## In This Section
 
@@ -62,31 +47,10 @@ All of these cmdlets are issued through the Lync Server Management Shell found i
 
   - [Remove-CsWebServiceConfiguration for Address Book management in Lync Server 2013](lync-server-2013-remove-cswebserviceconfiguration-for-address-book-management.md)
 
-</div>
-
-<div>
-
 ## Related Sections
-
-</div>
-
-<div>
 
 ## See Also
 
 
-[http://go.microsoft.com/fwlink/p/?linkId=205826](http://go.microsoft.com/fwlink/p/?linkid=205826)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[http://go.microsoft.com/fwlink/p/?linkId=205826](http://go.microsoft.com/fwlink/p/?linkid=205826)
 

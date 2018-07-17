@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Using the capacity planning calculator for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-11-21_
 
 The Microsoft® Lync™ Server 2013 capacity planning calculator is available for download at <http://www.microsoft.com/en-us/download/details.aspx?id=36828>. It is designed to assist you in determining server requirements based on numbers of users and communication modalities that are enabled at your organization. You enter your organization’s profile, and the calculator provides recommendations that help you plan your topology.
 
@@ -35,8 +22,6 @@ After you have determined your user profile and the modalities that you want to 
 This calculator complements the [Microsoft Lync Server](http://go.microsoft.com/fwlink/?linkid=282725) and [Microsoft Lync Server](lync-server-2013-planning.md). Use the calculator after you have reviewed the guide and created a recommended topology by using the Planning Tool.
 
 You can benefit most from the calculator if you have accurate, detailed information about your specific user profile. For example, the percentage of voice-enabled users, average calls per user per hour, call duration, and the percentage of concurrent users in conferences can make a huge difference in server requirements. The accuracy of the recommendations created by the calculator depends on the accuracy of the information that you provide.
-
-<div>
 
 ## Using the Capacity Calculator
 
@@ -112,25 +97,9 @@ Additionally, in the row next to Total Front End Servers, more information is pr
 
   - Memory in GB: Memory, in gigabytes, required for each Front End server.
 
-</div>
-
-<div>
-
 ## Adjusting For Your Processors
 
 All the CPU usage figures in the spreadsheet assume that each server has a dual processor, hex-core with 2.26 GHz, at least 32 GB of memory, and 8 or more 10,000-RPM hard disk drives with at least 72 GB free disk space.
 
 If your servers have different processors, you can adjust the figures to match your hardware.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

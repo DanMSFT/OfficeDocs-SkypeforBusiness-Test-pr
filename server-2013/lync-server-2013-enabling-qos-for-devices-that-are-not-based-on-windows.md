@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enabling QoS in Lync Server 2013 for devices that are not based on Windows
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 When you install Microsoft Lync Server 2013, Quality of Service (QoS) will not be enabled for any devices used in your organization that use an operating system other than Windows. You can verify this by running the following command from within the Lync Server 2013 Management Shell:
 
@@ -51,15 +38,11 @@ The preceding command enables QoS at the global scope; however, it's important t
 
     Set-CsMediaConfiguration -Identity site:Redmond -EnableQoS $True
 
-<div>
-
 
 > [!NOTE]
 > Do you need to enable QoS at the site scope? That depends. Settings assigned to the site scope take precedence over settings assigned to the global scope. Suppose you have QoS enabled at the global scope but disabled at the site scope (for the Redmond site.) In that case, Quality of Service will be disabled for the Redmond site; that's because the site settings take precedence. To enable QoS for the Redmond site you will have to do so using the media configuration settings applied to that site.
 
 
-
-</div>
 
 If you want to simultaneously enable QoS for all your media configuration settings (regardless of scope) then run this command from within the Lync Server Management Shell:
 
@@ -72,14 +55,4 @@ You can disable QoS for devices that use an operating system other than Windows 
 This gives you the ability to implement QoS on some portions of your network (for example, on the Redmond site) while leaving Quality of Service disabled on other portions of your network.
 
 QoS can only be enabled and disabled by using Windows PowerShell These options are not available in the Lync Server Control Panel.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

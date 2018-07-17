@@ -8,23 +8,10 @@ ms.date: 06/23/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Certificate infrastructure requirements for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-06-23_
 
 Lync Server 2013 requires a public key infrastructure (PKI) to support TLS and mutual TLS (MTLS) connections.
 
@@ -50,14 +37,11 @@ For Lync Server, the following common requirements apply:
 
   - All certificates must be signed using a signing algorithm supported by the operating system. Lync Server 2013 supports the SHA-1 and SHA-2 suite of digest sizes (224, 256, 384 and 512-bit), and meets or exceeds the operating system requirements. For operating system support, see [http://go.microsoft.com/fwlink/?LinkId=287002](http://go.microsoft.com/fwlink/?linkid=287002).
     
-    <div>
-    
 
     > [!NOTE]
     > Using the RSASSA-PSS signature algorithm is unsupported, and may lead to errors on login and call forwarding issues, among other problems.
 
-    
-    </div>
+
 
   - Auto-enrollment is supported for internal servers running Lync Server.
 
@@ -71,8 +55,6 @@ For Lync Server, the following common requirements apply:
 
   - The default digest, or hash signing, algorithm is RSA. The ECDH\_P256, ECDH\_P384, and ECDH\_P521 algorithms are also supported. 
 
-<div>
-
 ## In This Section
 
   - [Certificate requirements for internal servers in Lync Server 2013](lync-server-2013-certificate-requirements-for-internal-servers.md)
@@ -82,16 +64,4 @@ For Lync Server, the following common requirements apply:
   - [Certificate requirements for Persistent Chat server in Lync Server 2013](lync-server-2013-certificate-requirements-for-persistent-chat-server.md)
 
   - [Certificate requirements for mobility in Lync Server 2013](lync-server-2013-certificate-requirements-for-mobility.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

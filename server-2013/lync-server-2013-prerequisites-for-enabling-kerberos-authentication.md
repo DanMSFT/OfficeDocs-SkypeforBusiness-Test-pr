@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Prerequisites for enabling Kerberos authentication in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 Before enabling Kerberos authentication, make sure that you complete all prerequisite configuration and infrastructure preparations:
 
@@ -43,14 +30,4 @@ Before enabling Kerberos authentication, make sure that you complete all prerequ
   - Internet Information Services (IIS) is configured and deployed with the recommended role services to support Web Services in Lync Server 2013.
 
 After the prerequisites have been met, you should be ready to create one or more accounts for Web Services to use for Kerberos authentication for your deployment. At a minimum, you need to create one Kerberos authentication account for each deployment. However, you can create an account for each site to provide local Kerberos authentication at the site. You can only specify one Kerberos authentication account per site.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

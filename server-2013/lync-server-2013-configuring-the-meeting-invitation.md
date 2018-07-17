@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring the meeting invitation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-07-16_
 
 You can customize meeting invitations sent by the Online Meeting Add-in for Lync 2013 by including the following optional items in the body of the meeting invitation:
 
@@ -37,8 +24,6 @@ You can customize meeting invitations sent by the Online Meeting Add-in for Lync
   - **Custom footer text** Add text that will be rendered as a custom footer in the invitation. The maximum length of text that can be added is 2 KB.
 
 You can configure these options by using either Lync Server Control Panel or Lync Server Management Shell.
-
-<div>
 
 
 **To Customize the Meeting Invitation by using Lync Server Control Panel**
@@ -72,16 +57,4 @@ You can configure these options by using either Lync Server Control Panel or Lyn
 2.  Run the **New-CsMeetingConfiguration** or **Set-CsMeetingConfiguration** cmdlet to create or configure the meeting invitation options. For example, run:
     
         New-CsMeetingConfiguration -Identity site:Redmond -LogoURL "http://www.contoso.com/logo/contosobanner.gif" -HelpURL "http://www.contoso.com/support" -LegalURL "http://www.contoso.com/disclaimer" -CustomFooterText "Communications may be monitored or recorded."
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

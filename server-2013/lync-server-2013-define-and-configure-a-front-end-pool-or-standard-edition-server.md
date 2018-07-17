@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Define and configure a Front End pool or Standard Edition server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-08_
 
 This procedure does not require membership in a local administrator or privileged domain group. You should log on to a computer as a standard user.
 
@@ -71,8 +58,6 @@ If you are deploying an Enterprise server, a minimum number of Front End Servers
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > For Lync Server 2013, any time you add or remove a Front End Server from the pool, you must restart services. Removing and adding servers should be done as separate operations. For example, if you are going to add two Front End Servers and remove two Front End Servers, use the following process: 
@@ -92,11 +77,7 @@ If you are deploying an Enterprise server, a minimum number of Front End Servers
 
 
 
-</div>
-
 After you have defined your topology, use the following procedure to define a Front End pool for your site. For details about defining the topology, see [Define and configure a topology in Topology Builder for Lync Server 2013](lync-server-2013-define-and-configure-a-topology-in-topology-builder.md).
-
-<div>
 
 ## To define a Front End pool
 
@@ -106,7 +87,9 @@ After you have defined your topology, use the following procedure to define a Fr
 
 3.  On the **Define the computers in this pool** page, enter a computer FQDN for the first Front End Server in the pool, and then click **Add**. Repeat this step for any additional computers (up to twelve) that you want to add to the pool, and then click **Next**.
 
-4.  On the **Select features** page, select the check boxes for the features that you want on this Front End pool. For example, if you are deploying only instant messaging (IM) and presence features, you would select the **Conferencing** check box to allow multiparty IM but would not select the **Dial-in (PSTN) conferencing**, **Enterprise Voice**, or **Call Admission Control** check boxes, because they represent voice, video, and collaborative conferencing features.
+4.  
+    
+    On the **Select features** page, select the check boxes for the features that you want on this Front End pool. For example, if you are deploying only instant messaging (IM) and presence features, you would select the **Conferencing** check box to allow multiparty IM but would not select the **Dial-in (PSTN) conferencing**, **Enterprise Voice**, or **Call Admission Control** check boxes, because they represent voice, video, and collaborative conferencing features.
     
       - **Conferencing**   This selection enables a rich set of features including:
         
@@ -126,14 +109,10 @@ After you have defined your topology, use the following procedure to define a Fr
     
       - **Monitoring**   Monitoring Server enables you to collect numerical data that describes the media quality on your network and endpoints, usage information related to VoIP calls, IM messages, A/V conversations, meetings, application sharing, and file transfers, and call error and troubleshooting information for failed calls.
     
-    <div>
-    
 
     > [!NOTE]
     > If you would like to enable CAC in your deployment, it is required that you enable CAC in exactly one pool per central site. CAC is recommended if you are deploying voice features or A/V conferencing.
 
-    
-    </div>
     
     The following table shows the available features (top) and the functions offered to users (left). The selections in the table are what you should select to enable those features for your organization.
     
@@ -159,28 +138,28 @@ After you have defined your topology, use the following procedure to define a Fr
     <tr class="odd">
     <td><p>Instant messaging and presence</p></td>
     <td><p>X</p></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><p></p></td>
+    <td><p></p></td>
+    <td><p></p></td>
     </tr>
     <tr class="even">
     <td><p>Conferencing</p></td>
     <td><p>X</p></td>
     <td><p>X</p></td>
-    <td></td>
-    <td></td>
+    <td><p></p></td>
+    <td><p></p></td>
     </tr>
     <tr class="odd">
     <td><p>A/V conferencing</p></td>
     <td><p>X</p></td>
     <td><p>X</p></td>
-    <td></td>
+    <td><p></p></td>
     <td><p>X</p></td>
     </tr>
     <tr class="even">
     <td><p>Enterprise Voice</p></td>
-    <td></td>
-    <td></td>
+    <td><p></p></td>
+    <td><p></p></td>
     <td><p>X</p></td>
     <td><p>X</p></td>
     </tr>
@@ -196,14 +175,11 @@ After you have defined your topology, use the following procedure to define a Fr
     
       - If you intend to deploy the Mediation Server as a stand-alone server, clear the appropriate check box. You will deploy Mediation Server in a separate deployment step after you completely deploy the Front End Server.
     
-    <div>
-    
 
     > [!NOTE]
     > We recommend that you collocate the Mediation Server if possible. For details about support for collocated or stand-alone Mediation Servers, see <A href="lync-server-2013-components-and-topologies-for-mediation-server.md">Components and topologies for Mediation Server in Lync Server 2013</A> in the Planning documentation.
 
-    
-    </div>
+
 
 6.  The **Associate server roles with this Front End pool** page lets you define and associate server roles with the Front End pool. The following role is available:
     
@@ -239,56 +215,38 @@ After you have defined your topology, use the following procedure to define a Fr
     
       - To define a new file share, select **Define a new file share**, in the **File Server FQDN** box, enter the FQDN of the existing file server where the file share is to reside, and then enter a name for the file share in the **File Share** box.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The file share for Lync Server 2013 cannot be located on the Front End Server. Note that in this example, the file share has been located on the SQL Server-based Back End Server. This might not be an optimal location for your organization’s requirements, and a file server might be a better choice. You can define the file share without the file share having been created. You will need to create the file share in the location you define before you publish the topology.
 
-    
-    </div>
+
 
 9.  On the **Specify the Web Services URL** page, do one or both of the following:
-    
-    <div>
     
 
     > [!IMPORTANT]
     > The base URL is the Web Services identity for the URL, minus the https://. For example, if the full URL for the Web Services of the pool is https://pool01.contoso.net, the base URL is pool01.contoso.net.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!WARNING]
     > If you have more than one Front End pool or Front End Server, the external Web services FQDN must be unique. For example, if you define the external Web services FQDN of a Front End Server as <STRONG>pool01.contoso.com</STRONG>, you cannot use <STRONG>pool01.contoso.com</STRONG> for another Front End pool or Front End Server.
 
     
-    </div>
-    
     1.  If you are configuring DNS load balancing, select the **Override internal Web Services pool FQDN** check box, enter the internal base URL (which must be different from the pool FQDN and could be, for example, internal-\<your base URL\>) in **Internal Base URL**.
-        
-        <div>
         
 
         > [!WARNING]
         > If you decide to override the Internal web services with a self-defined FQDN, each FQDN must be unique from any other Front End pool, Director or a Director pool. <STRONG>Use only standard characters</STRONG> (including A–Z, a–z, 0–9, and hyphens) when defining URLs or fully qualified domain names. Do not use Unicode characters or underscores. Nonstandard characters in a URL or FQDN are often not supported by external DNS and public CAs (that is, when the URL or FQDN must be assigned to the subject name or subject alternative name in the certificate).
 
-        
-        </div>
     
     2.  Optionally enter the external base URL in **External Base URL**. You would enter the external base URL to differentiate it from your internal domain naming. For example, your internal domain is contoso.net, but your external domain name is contoso.com. You would define the URL using the contoso.com domain name. This is also important in the case of a reverse proxy. The external base URL domain name would be the same as the domain name of the FQDN of the reverse proxy. Instant messaging and presence does require HTTP access to the Front End pool.
-    
-    <div>
     
 
     > [!NOTE]
     > To use DNS load balancing, you must create the appropriate DNS records. For details, see <A href="lync-server-2013-configure-dns-for-load-balancing.md">Configure DNS for load balancing in Lync Server 2013</A>.
 
-    
-    </div>
+
 
 10. If you selected **Conferencing** on the **Select Features** page, on the **Select an Office Web Apps Server** page select **Associate pool with an Office Web Apps Server** and then click **New** (or select an existing Office Web Apps Server from the drop-down list).
 
@@ -298,14 +256,11 @@ After you have defined your topology, use the following procedure to define a Fr
     
     If the Office Web Apps Server is deployed outside your internal firewall, then select the option **Office Web Apps Server is deployed in an external network (that is, perimeter/Internet)**.
     
-    <div>
-    
 
     > [!NOTE]
     > For details, see <A href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">Configuring integration with Office Web Apps Server and Lync Server 2013</A>.
 
-    
-    </div>
+
 
 12. On the **Define the Archiving SQL store** page, select an existing instance or SQL Server, or define a new instance to store the data associated with archiving data.
 
@@ -316,16 +271,4 @@ After you have defined your topology, use the following procedure to define a Fr
     [Deploying external user access in Lync Server 2013](lync-server-2013-deploying-external-user-access.md)
 
 15. If you did not select additional server roles to configure and deploy, or when you have finished the configuration of the additional role servers, click **Finish**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Technical requirements for Persistent Chat Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-06_
 
 Each computer that hosts Persistent Chat Server must have access to an existing Lync Server 2013 topology with the following components:
 
   - **Lync Server 2013, Front End Server.** The Front End Server is the foundation for Session Initiation Protocol (SIP) routing, which makes communication between computers running Persistent Chat Server and the Persistent Chat functionality possible. Before you begin to deploy Persistent Chat Server, verify the deployment of Lync Server 2013, Standard Edition, or a Lync Server Front End pool and any other internal computers running Lync Server, as appropriate to your organization.
 
 The following sections describe the specific requirements for the Persistent Chat Server and the database that stores the Persistent Chat data.
-
-<div>
 
 ## Persistent Chat Server Requirements
 
@@ -64,23 +49,15 @@ For details about additional software required for deploying Persistent Chat Ser
 </table>
 
 
-</div>
-
-<div>
-
 ## Persistent Chat Server Database Requirements
 
 Persistent Chat Server uses the Persistent Chat database to store chat history, configuration, and user provisioning data. Optionally, it uses the Persistent Chat compliance database to store compliance data.
-
-<div>
 
 
 > [!IMPORTANT]
 > The Persistent Chat database (mgc) and the compliance database (mgccomp) can be located in the same instance of SQL Server or on different SQL Servers.
 
 
-
-</div>
 
 To prepare a database server platform, be sure that each computer meets the hardware requirements, and then install the prerequisite software.
 
@@ -92,23 +69,7 @@ On the database server, be sure that one of the following software applications 
 
   - Microsoft SQL Server 2008 R2. For details about how to install Microsoft SQL Server 2008 R2, see "SQL Server Installation (SQL Server 2008 R2)" at [http://go.microsoft.com/fwlink/?LinkId=275702](http://go.microsoft.com/fwlink/?linkid=275702).
 
-</div>
-
-<div>
-
 ## Persistent Chat Server Certificate Requirements
 
 For details about acquiring certificates, creating the SQL Server database, and creating file stores, see [Deploying Lync Server 2013](lync-server-2013-deploying-lync-server.md) in the Deployment documentation.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

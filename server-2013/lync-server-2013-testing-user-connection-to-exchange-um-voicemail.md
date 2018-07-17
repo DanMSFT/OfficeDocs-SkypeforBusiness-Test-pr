@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing user connection to Exchange UM voicemail in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-01_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-11-01_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsExUMVoiceMail** cmdlet enables administrators to verify that a user can access and use the Microsoft Exchange Server 2013 unified messaging service. To do this, the cmdlet connects to the unified messaging service and leaves a voice mail in the specified mailbox. This can be a system-supplied voice mail, or it can be a custom .WAV file that you have recorded yourself.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -80,10 +61,6 @@ The command shown in the next example is a variation of the command shown in Exa
     Test-CsExUMVoiceMail -TargetFqdn "atl-cs-001.litwareinc.com" -ReceiverSipAddress "sip:kenmyer@litwareinc.com" -OutLoggerVariable VoicemailTest 
      
     $VoicemailTest.ToXML() | Out-File C:\Logs\VoicemailTest.xml
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -137,10 +114,6 @@ has failed to respond 10.188.116.96:5061
 
 Diagnosis :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsExUMVoiceMail** might fail:
@@ -149,25 +122,8 @@ Here are some common reasons why **Test-CsExUMVoiceMail** might fail:
 
   - This command will fail if the Exchange Server is misconfigured or not yet deployed.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsExUMConnectivity](test-csexumconnectivity.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsExUMConnectivity](https://technet.microsoft.com/en-us/library/jj204784\(v=ocs.15\))
 

@@ -8,23 +8,10 @@ ms.date: 03/15/2017
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Test push notifications to smart phones in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2017-03-15_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2017-03-15_
 </table>
 
 
-<div>
-
 ## Description
 
 The push notification service (Apple Push Notification Service and Microsoft Push Notification Service) can send notifications about events such as new instant messages or new voice mail to mobile devices such as iPhones and Windows Phones, even if the Lync client on those devices is currently suspended or running in the background. The push notification service is a cloud-based service that is running on Microsoft servers. In order to take advantage of push notifications, you must be able to connect to, and be authenticated by, the push notification clearinghouse. The Test-CsMcxPushNotification cmdlet enables administrators to verify that push notification requests can be routed through your Edge server to the push notification clearinghouse.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -67,11 +48,7 @@ To test the push notification service, call the Test-CsMcxPushNotification cmdle
 
     Test-CsMcxPushNotification -AccessEdgeFqdn "atl-edge-001.litwareinc.com"
 
-For more information, see the help topic for the [Test-CsMcxPushNotification](test-csmcxpushnotification.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Test-CsMcxPushNotification](https://technet.microsoft.com/en-us/library/hh690043\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -99,10 +76,6 @@ At line:1 char:27
 
 \+ FullyQualifiedErrorId : WorkflowNotCompleted,Microsoft.Rtc.Management.SyntheticTransactions.TestMcxPushNotificationCmdlet
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 If the push notification service fails that usually indicates either problems communicating with your Edge server, or problems communicating with the Push Notification Clearing House. If you encounter problems when you run Test-CsMcxPushNotification, the first thing that you should do is verify that your Edge server is working correctly. One way to do that is to use the Test-CsAVEdgeConnectivity cmdlet:
@@ -121,7 +94,7 @@ If the PushNotificationProxyUri property is set to anything other than sip:push@
 
     Get-CsMcxConfiguration | Set-CsMcxConfiguration -PushNotificationProxyUri "sip:push@push.lync.com"
 
-For more information, see the help topic for the [Set-CsMcxConfiguration](set-csmcxconfiguration.md) cmdlet.
+For more information, see the help topic for the [Set-CsMcxConfiguration](https://technet.microsoft.com/en-us/library/hh690050\(v=ocs.15\)) cmdlet.
 
 If the URI is configured correctly, your next step should be to verify that you have a DNS SRV record that resolves to your SIP domain and your Edge server. For more information about how to configure these records, see the help topic DNS Requirements for Mobility. Note that the following error message usually indicates a problem with DNS records:
 
@@ -150,17 +123,5 @@ If http: or https: appear in the results, you must remove them from the blocked 
     Set-CsImFilterConfiguration -Identity site:Redmond -Prefixes @{remove="http:"}
     Set-CsImFilterConfiguration -Identity site:Redmond -Prefixes @{remove="https:"}
 
-For more information, see the help topic for the [Set-CsImFilterConfiguration](set-csimfilterconfiguration.md)cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For more information, see the help topic for the [Set-CsImFilterConfiguration](https://technet.microsoft.com/en-us/library/gg412960\(v=ocs.15\))cmdlet.
 

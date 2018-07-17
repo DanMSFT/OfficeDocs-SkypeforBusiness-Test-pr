@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Validating address book web query in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,17 +38,11 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 The Test-CsAddressBookWebQuery cmdlet enables administrators to verify that users can use the Address Book Web Query service to search for a specific contact. When you run the cmdlet, Test-CsAddressBookWebQuery will first connect to the Web Ticket service to be authenticated. If authentication is successful, the cmdlet will then connect to the Address Book Web Query service and search for the specified contact. If that contact is found, the cmdlet will attempt to return that information to the local computer. The test will be marked a success only if all those steps can be completed.
 
-For more information, see the Help documentation for the [Test-CsAddressBookWebQuery](test-csaddressbookwebquery.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsAddressBookWebQuery](https://technet.microsoft.com/en-us/library/gg398773\(v=ocs.15\)) cmdlet.
 
 ## Running the test
 
@@ -74,11 +55,7 @@ To run this check using an actual user account, you must create a Windows PowerS
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsAddressBookWebQuery -TargetFqdn "atl-cs-001.litwareinc.com" -TargetSipAddress "sip:davidlongmire@litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsAddressBookWebQuery](test-csaddressbookwebquery.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsAddressBookWebQuery](http://technet.microsoft.com/en-us/library/gg398773\(v=ocs.14\).aspx) cmdlet.
 
 ## Determining success or failure
 
@@ -130,10 +107,6 @@ https://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
 
 Address book query exception : Address Book Web service request has failed with response code NoEntryFound.
 
-</div>
-
-<div>
-
 ## Reasons Why the Test Might Have Failed
 
 Here are some common reasons why Test-CsAddressBookWebQuery might fail:
@@ -153,16 +126,4 @@ Here are some common reasons why Test-CsAddressBookWebQuery might fail:
   - The Address Book might not have fully updated and replicated. You can force an update of all the Address Book Servers in your organization by running the following command:
     
         Update-CsAddressBook
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

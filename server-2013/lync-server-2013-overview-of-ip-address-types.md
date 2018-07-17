@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Overview of IP address types for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-01-29_
 
 You have three options when configuring IP addresses in Lync Server 2013. You can configure Lync Server 2013 to support only IP version 4 (IPv4), only IP version 6 (IPv6), or a combination of both (known as a *dual stack*). There are several issues to consider with each type of configuration:
 
@@ -36,17 +23,11 @@ You have three options when configuring IP addresses in Lync Server 2013. You ca
 
 The following sections outline the compatibility among these three configurations for various Lync Server features.
 
-<div>
-
 
 > [!NOTE]
 > Client or server configuration with IPv6 only is supported only for lab or validation purposes. IPv6 only configuration is not supported in the production deployment.
 
 
-
-</div>
-
-<div>
 
 ## Client Registration
 
@@ -95,10 +76,6 @@ The following sections outline the compatibility among these three configuration
 </table>
 
 
-</div>
-
-<div>
-
 ## Peer-to-Peer Client
 
 Peer-to-peer communications include audio, audio/video, application sharing, and file transfer. After both clients have successfully registered, the following combinations are supported.
@@ -139,10 +116,6 @@ Peer-to-peer communications include audio, audio/video, application sharing, and
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Conferencing
 
@@ -193,10 +166,6 @@ Conferencing includes audio/video, application sharing, and data collaboration (
 </table>
 
 
-</div>
-
-<div>
-
 ## Mediation Server/PSTN
 
 Lync Server 2013 does not support media bypass for public switched telephone network (PSTN) calls if the traffic is through an IPv6 interface. If media bypass is required, we recommend that the PSTN gateway is configured to IPv4.
@@ -236,10 +205,6 @@ Lync Server 2013 does not support media bypass for public switched telephone net
 
 
 \* The primary interface is the interface that communicates with the Lync Server components.
-
-</div>
-
-<div>
 
 ## Remote User Peer-to-Peer Communications
 
@@ -282,10 +247,6 @@ Peer-to-peer communications with remote users include instant messaging, audio/v
 </table>
 
 
-</div>
-
-<div>
-
 ## Front End Pool and Edge Pool Configuration
 
 The following table shows the support matrix between the Front End Server pool and the internal Edge Server pool.
@@ -301,7 +262,7 @@ The following table shows the support matrix between the Front End Server pool a
 </colgroup>
 <tbody>
 <tr class="odd">
-<td></td>
+<td><p></p></td>
 <td><p><strong>Edge Pool: IPv4</strong></p></td>
 <td><p><strong>Edge Pool: Dual Stack</strong></p></td>
 <td><p><strong>Edge Pool: IPv6</strong></p></td>
@@ -343,7 +304,7 @@ The following table is a matrix of the supported combinations of internal and ex
 </colgroup>
 <tbody>
 <tr class="odd">
-<td></td>
+<td><p></p></td>
 <td><p><strong>Edge Pool (External Edge) : IPv4</strong></p></td>
 <td><p><strong>Edge Pool (External Edge): Dual Stack</strong></p></td>
 <td><p><strong>Edge Pool (External Edge): IPv6</strong></p></td>
@@ -372,15 +333,9 @@ The following table is a matrix of the supported combinations of internal and ex
 
 \* Use this combination only in a lab environment.
 
-</div>
-
-<div>
-
 ## Advanced Enterprise Voice Support for IPv6
 
 Deployments that include call admission control (CAC), Enhanced 9-1-1 (E9-1-1), or media bypass must be configured as IPv4 only or as a dual-stacked implementation.
-
-<div>
 
 
 > [!NOTE]
@@ -388,15 +343,9 @@ Deployments that include call admission control (CAC), Enhanced 9-1-1 (E9-1-1), 
 
 
 
-</div>
-
 Location Information service with IPv6 addresses is not supported.
 
 Exchange Unified Messaging (UM) does not support IPv6. For Exchange UM, be sure that DNS resolution does not return an IPv6 address. Using IPv6 may cause failure when calls are sent to voice mail.
-
-</div>
-
-<div>
 
 ## Other Lync Server 2013 Feature Support for IPv6
 
@@ -409,16 +358,4 @@ In addition to the features and components mentioned previously, Lync Server 201
   - **Quality of Experience (QoE) and call detail recording (CDR) reports**
     
     Monitoring reports include the IP address as it is stored in the Monitoring Server database, whether of type IPv4 or IPv6.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

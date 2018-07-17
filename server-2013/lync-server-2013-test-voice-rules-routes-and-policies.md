@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Test voice rules, routes, and policies in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-20_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2014-05-20_
 </table>
 
 
-<div>
-
 ## Description
 
 When a user makes a phone call, the route the call takes to reach its destination depends on both the policies and dial plans assigned to that user. Given a user’s SIP address and a phone number, the Test-CsVoiceUser cmdlet verifies whether the user in question can complete a call to that number. If the test succeeds, Test-CsVoiceUser returns the following:
@@ -66,10 +51,6 @@ When a user makes a phone call, the route the call takes to reach its destinatio
   - The phone usage that linked the user’s voice policy to the voice route.
 
 Test-CsVoiceUser enables you to determine whether a specific phone number will route and translate as expected, and can help troubleshoot call-related problems that are experienced by individual users.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -88,10 +69,6 @@ If you want to run this same test against each of your user accounts, you can us
 `Get-CsUser | ForEach-Object {$_.DisplayName; Test-CsVoiceUser -DialedNumber "+12065551219" -SipUri $_.SipAddress} | Format-List`
 
 For more information, see the Help documentation for the Test-CsVoiceUser cmdlet.
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -125,10 +102,6 @@ TranslatedNumber MatchingRule FirstMatchingRoute MatchingUsage
 
 \---------------- ------------ ------------------ -------------
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 There are any number of reasons why the Test-CsVoiceUser cmdlet might fail: there might not be a normalization rule that can translate the provided phone number. There could be problems with the voice route. There could be a configuration issue with the dial plan assigned to the user in question. Because of that, you might want to include the Verbose parameter when you are running the Test-CsVoiceUser cmdlet:
@@ -143,25 +116,8 @@ VERBOSE: Loading dial plan: "RedmondDialPlan"
 
 This additional information can provide hints as to the steps that you can take to pinpoint the cause of the failure. For example, the verbose output shown here tells us that the user being tested was assigned the dial plan RedmondDialPlan. If the test has failed, one logical next step would be to verify that RedmondDialPlan can translate the supplied phone number.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Test-CsVoiceUser](test-csvoiceuser.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Test-CsVoiceUser](https://technet.microsoft.com/en-us/library/gg413013\(v=ocs.15\))
 

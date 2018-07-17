@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify an interactive workflow in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-09-11_
 
 Use one of the following procedures to create or modify an interactive workflow.
-
-<div>
 
 
 > [!NOTE]
 > You can use Lync Server Management Shell or the Response Group Configuration Tool to create and modify interactive workflows. You can access the Response Group Configuration Tool from Lync Server Control Panel, or by opening the webpage directly from a web browser by typing the following URL: <STRONG>https://</STRONG>&lt;webPoolFqdn&gt;<STRONG>/RgsConfig</STRONG>.
 
 
-
-</div>
-
-<div>
 
 ## To use Response Group Configuration Tool to create or modify an Interactive workflow
 
@@ -52,14 +33,11 @@ Use one of the following procedures to create or modify an interactive workflow.
 
 5.  In the **Select a Service** search field, type all or part of the name of the **ApplicationServer** service that hosts the workflow that you want to create or modify. In the resulting list of services, click the service that you want, and then click **OK**.
     
-    <div>
-    
 
     > [!NOTE]
     > The Response Group Configuration Tool opens. You can also open the Response Group Configuration Tool directly from a web browser by typing the following URL: <STRONG>https://</STRONG>&lt;webPoolFqdn&gt;<STRONG>/RgsConfig</STRONG>.
 
-    
-    </div>
+
 
 6.  Do one of the following:
     
@@ -69,58 +47,42 @@ Use one of the following procedures to create or modify an interactive workflow.
 
 7.  If you are not ready for users to start calling the workflow, clear the **Activate the workflow** check box.
     
-    <div>
-    
 
     > [!NOTE]
     > If you are to creating a managed workflow, you need to select <STRONG>Activate the workflow</STRONG>. After you save the active, managed workflow, you can then modify and deactivate it.
 
-    
-    </div>
+
 
 8.  To allow federated users to call the group, select the **Enable for federation** check box. You must also have an external access policy that applies to the Response Group application configured for federation.
-    
-    <div>
     
 
     > [!NOTE]
     > The global external access policy applies to the Response Group application. You can configure the global policy for response group federation by using Lync Server Control Panel or by using the <STRONG>Set-CsExternalAccessPolicy</STRONG> cmdlet to set the EnableOutsideAccess parameter to True. Keep in mind that global policy settings apply to all users unless they are assigned a site or user policy. Therefore, before changing this setting for response groups, make sure that the federation setting meets the requirements of your organization. For details about how policies apply to users, see <A href="lync-server-2013-manage-external-access-policy-for-your-organization.md">Manage external access policy in Lync Server 2013</A>. For details about the federation setting, see <STRONG>Set-CsExternalAccessPolicy</STRONG> in Lync Server Management Shell documentation.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!NOTE]
     > Users who are hosted in Lync Online can’t place calls to response groups that are hosted in an on-premise deployment. This is true in both hybrid deployments and in cases where an on-premise deployment is federated with a Lync Online deployment.
 
-    
-    </div>
+
 
 9.  To hide the identity of agents during calls, select the **Enable agent anonymity** check box.
-    
-    <div>
     
 
     > [!NOTE]
     > Anonymous calls cannot start with instant messaging (IM) or video, although the agent or the caller can add IM and video after the call is established. An anonymous agent can also put calls on hold, transfer calls (both blind and consultative transfers), and park and retrieve calls. Anonymous calls do not support conferencing, application sharing and desktop sharing, file transfer, whiteboarding and data collaboration, and call recording. Agents using the Lync VDI Plugin can receive incoming calls anonymously, but they cannot make outgoing calls anonymously.
 
-    
-    </div>
+
 
 10. Under **Enter the address of the group that will receive the calls**, type the primary SIP uniform resource identifier (URI) address of the group that will answer calls to the workflow.
 
 11. In **Display name**, type the name that you want to display for the workflow (for example, Sales IVR Response Group).
     
-    <div>
-    
 
     > [!NOTE]
     > Do not include the "&lt;" or "&gt;" characters in the display name. Do not use the following display names because they are reserved: RGS Presence Watcher or Announcement Service.
 
-    
-    </div>
+
 
 12. In **Telephone number**, type the line URI for the response group (for example, +14255550165).
 
@@ -134,14 +96,11 @@ Use one of the following procedures to create or modify an interactive workflow.
     
     2.  Type the SIP URI of additional managers to add to the workflow, and click **Add**..
     
-    <div>
-    
 
     > [!IMPORTANT]
     > Every user who is designated as a manager of a response group must be assigned the CsResponseGroupManager role. If users are not assigned this role, they cannot manage response groups.
 
-    
-    </div>
+
 
 16. Under **Step 2 Select a Language**, click the language to use for speech recognition and text-to-speech.
 
@@ -149,49 +108,35 @@ Use one of the following procedures to create or modify an interactive workflow.
     
       - To enter the welcome message as text that is converted to speech for callers, click **Use text-to-speech**, and then type the welcome message in the text box.
         
-        <div>
-        
 
         > [!NOTE]
         > Do not include HTML tags in the text you enter. If you include HTML tags, you will receive an error message.
 
-        
-        </div>
     
       - To use a Wave or Windows Media Audio file recording for the welcome message, click **Select a recording**. If you want to upload a new audio file, click the **a recording** link. In the new browser window, click **Browse**, select the audio file that you want to use, and then click **Open**. Click **Upload** to load the audio file.
-        
-        <div>
         
 
         > [!NOTE]
         > All user-provided audio files must meet certain requirements. For details about supported file formats, see <A href="lync-server-2013-technical-requirements-for-response-group.md">Technical requirements for Response Group in Lync Server 2013</A>.
 
-        
-        </div>
+
 
 18. Under **Step 4 Specify Your Business Hours**, in the **Your time zone** box, click the time zone of the workflow.
-    
-    <div>
     
 
     > [!NOTE]
     > The time zone is the time zone where the callers and agents of the workflow reside. It is used to calculate the open and close hours. For example, if the workflow is configured to use the North American Eastern Time zone and the workflow is scheduled to open at 7:00 A.M. and close at 11:00 P.M., the open and close times are assumed to be 7:00 Eastern Time and 11:00 Eastern Time respectively. (You must enter the times in 24-hour time notation.)
 
-    
-    </div>
+
 
 19. Select the type of business hours schedule you want to use by doing one of the following:
     
       - To use a predefined schedule of business hours, click **Use a preset schedule**, and then select the schedule you want to use from the drop-down list.
         
-        <div>
-        
 
         > [!NOTE]
         > You must have defined at least one preset schedule previously to be able to select this option. You define preset schedules by using the <STRONG>New-CSRgsHoursOfBusiness</STRONG> cmdlet. For details, see <A href="lync-server-2013-optional-define-response-group-business-hours.md">(Optional) Define Response Group business hours in Lync Server 2013</A>. When you select a preset schedule, <STRONG>Day</STRONG>, <STRONG>Open</STRONG>, and <STRONG>Close</STRONG> are automatically filled with the days and hours that the response group is available.
 
-        
-        </div>
     
       - To use a custom schedule that applies only to this workflow, click **Use a custom schedule**.
 
@@ -199,38 +144,28 @@ Use one of the following procedures to create or modify an interactive workflow.
 
 21. If you are creating a custom schedule, type the **Open** and **Close** hours when the response group available.
     
-    <div>
-    
 
     > [!NOTE]
     > The <STRONG>Open</STRONG> and <STRONG>Close</STRONG> hours must be in 24-hour time notation. For example, if your office works a 9-to-5 work day and closes at noon for lunch, the business hours are specified as <STRONG>Open</STRONG> 9:00, <STRONG>Close</STRONG> 12:00, <STRONG>Open</STRONG> 13:00, and <STRONG>Close</STRONG> 17:00.
 
-    
-    </div>
+
 
 22. If you want to play a message when the office is not open, select the **Play a message when the response group is outside of business hours** check box, and then specify the message to play by doing one of the following:
     
       - To enter the message as text that is converted to speech for the caller, click **Use text-to-speech**, and then type the message in the text box.
         
-        <div>
-        
 
         > [!NOTE]
         > Do not include HTML tags in the text you enter. If you include HTML tags, you will receive an error message.
 
-        
-        </div>
     
       - To use an audio file recording for the message, click **Select a recording**. If you want to upload a new audio file, click the **a recording** link. In the new browser window, click **Browse**, select the file that you want to use, and then click **Open**. Click **Upload** to load the audio file.
-        
-        <div>
         
 
         > [!NOTE]
         > All user-provided audio files must meet certain requirements. For details about supported file formats, see <A href="lync-server-2013-technical-requirements-for-response-group.md">Technical requirements for Response Group in Lync Server 2013</A>.
 
-        
-        </div>
+
 
 23. Specify how to handle calls after the message is played (if a message is configured):
     
@@ -244,38 +179,28 @@ Use one of the following procedures to create or modify an interactive workflow.
 
 24. Under **Step 5 Specify Your Holidays**, click the check boxes for one or more sets of holidays that define the days when the response group is closed for business.
     
-    <div>
-    
 
     > [!NOTE]
     > You need to define holidays and holiday sets before you configure the workflow. Use the <STRONG>New-CsRgsHoliday</STRONG> and <STRONG>New-CsRgsHolidaySet</STRONG> cmdlets to define holidays and holiday sets. For details, see <A href="lync-server-2013-optional-define-response-group-holiday-sets.md">(Optional) Define Response Group holiday sets in Lync Server 2013</A>.
 
-    
-    </div>
+
 
 25. If you want to play a message on holidays, select the **Play a message during holidays** check box, and then specify the message to play by doing one of the following:
     
       - To enter the message as text that is converted to speech for the caller, click **Use text-to-speech**, and then type the message in the text box.
         
-        <div>
-        
 
         > [!NOTE]
         > Do not include HTML tags in the text you enter. If you include HTML tags, you will receive an error message.
 
-        
-        </div>
     
       - To use an audio file recording for the message, click **Select a recording**. If you want to upload a new audio file, click the **a recording** link. In the new browser window, click **Browse**, select the file that you want to use, and then click **Open**. Click **Upload** to load the audio file.
-        
-        <div>
         
 
         > [!NOTE]
         > All user-provided audio files must meet certain requirements. For details about supported audio file formats, see <A href="lync-server-2013-technical-requirements-for-response-group.md">Technical requirements for Response Group in Lync Server 2013</A>.
 
-        
-        </div>
+
 
 26. Specify how to handle calls after the message is played (if a message is configured):
     
@@ -293,67 +218,45 @@ Use one of the following procedures to create or modify an interactive workflow.
     
       - To use an audio file recording for the on-hold music, click **Select a music file**. If you want to upload a new audio file, click the **a music file** link. In the new browser window, click **Browse**, select the file that you want to use, and then click **Open**. Click **Upload** to load the audio file.
         
-        <div>
-        
 
         > [!NOTE]
         > All user-provided audio files must meet certain requirements. For details about supported file formats, see <A href="lync-server-2013-technical-requirements-for-response-group.md">Technical requirements for Response Group in Lync Server 2013</A>.
 
-        
-        </div>
+
 
 28. Under **Step 7 Configure Interactive Voice Response**, under the **The user will hear the following text or recorded message** heading, specify the question to ask callers as follows:
     
       - To enter the question in text format, click **Use text-to-speech**, and type the question in the text box.
-        
-        <div>
         
 
         > [!NOTE]
         > Do not include HTML tags in the text you enter. If you include HTML tags, you will receive an error message.
 
         
-        </div>
-        
-        <div>
-        
 
         > [!NOTE]
         > The "#" symbol is translated by the text-to-speech engine as the word "number". If you need to refer to the # key, you should use the key name, rather than the symbol, in your prompt. For example, "To talk to sales, press the pound key."
 
-        
-        </div>
     
       - To use a prerecorded audio file that contains the question, click **Select a recording**, and then click the **a recording** link to upload the file. In the new browser window, click **Browse**, select the audio file, and then click **Open**. Click **Upload** to load the file, and then optionally you can type the question in the text box (this enables the question, and the caller’s response, to be forwarded to the responding agent).
-        
-        <div>
         
 
         > [!NOTE]
         > All user-provided audio files must meet certain requirements. For details about supported file formats, see <A href="lync-server-2013-technical-requirements-for-response-group.md">Technical requirements for Response Group in Lync Server 2013</A>.
 
-        
-        </div>
+
 
 29. Under **Response 1**, specify the first possible answer to the question by doing the following:
-    
-    <div>
     
 
     > [!IMPORTANT]
     > Do not use quotation marks (") in any voice responses. Quotation marks cause the IVR to fail.
 
     
-    </div>
-    
-    <div>
-    
 
     > [!NOTE]
     > You can choose to allow callers to answer using speech, alphanumeric keypad input, or both.
 
-    
-    </div>
     
       - If you want to allow the caller to respond using speech, enter the answer in **Enter a voice response**.
     
@@ -368,10 +271,6 @@ Use one of the following procedures to create or modify an interactive workflow.
 31. Specify up to three more possible answers to the original question by repeating steps 28 and 29 to specify the possible responses and the action to take for each response. To specify a third or fourth possible answer, click the **Response 3** check box or the **Response 4** check box.
 
 32. Click **Deploy**.
-
-</div>
-
-<div>
 
 ## To use Windows PowerShell to create or modify an Interactive workflow
 
@@ -430,24 +329,8 @@ Use one of the following procedures to create or modify an interactive workflow.
         $IVRAction = New-CsRgsCallAction -Action TransferToQuestion [-Question $Question]
         $IVRWorkflow = New-CsRgsWorkflow -Parent $ServiceId -Name "Contoso Helpdesk" [-Description "The Contoso Helpdesk line."] -PrimaryUri "sip:helpdesk@contoso.com" [-LineUri tel:+14255554321] [-DisplayNumber "+1 (425) 555-4321"] [-Active $true] [-Anonymous $true] [-DefaultAction $IVRAction] [-Managed $true] [-ManagersByURI ("sip:mindy@contoso.com", "sip:bob@contoso.com")]
     
-    <div>
-    
 
     > [!NOTE]
     > All users who have been designated as manager of a response group must be assigned th CsResponseGroupManager role. If users are not assigned this role, they cannot manage response groups.
 
-    
-    </div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

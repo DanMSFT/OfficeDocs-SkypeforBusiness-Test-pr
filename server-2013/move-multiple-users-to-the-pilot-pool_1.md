@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Move multiple users to the pilot pool
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-02_
 
 You can move multiple users from your Office Communications Server 2007 R2 pool to your Lync Server 2013 pilot pool using Lync Server 2013 Control Panel or Lync Server 2013 Management Shell.
-
-<div>
 
 ## To move multiple users by using the Lync Server 2013 Control Panel
 
@@ -52,13 +37,9 @@ You can move multiple users from your Office Communications Server 2007 R2 pool 
 
 9.  Click **Action** and then click **Move selected users to pool**. Click OK.
     
-    ![Move Users, destination registrar pool dialog box](images/JJ205401.8a375003-dc00-4541-b578-4d88f2010601(OCS.15).png "Move Users, destination registrar pool dialog box")  
+    ![Move Users, destination registrar pool dialog box](images/JJ688143.8a375003-dc00-4541-b578-4d88f2010601(OCS.15).png "Move Users, destination registrar pool dialog box")  
 
 10. Verify that the **Registrar pool** column for the users now contains the Lync Server 2013 pool, which indicates that the users have been successfully moved.
-
-</div>
-
-<div>
 
 ## To move multiple users by using the Lync Server 2013 Management Shell
 
@@ -76,11 +57,7 @@ You can move multiple users from your Office Communications Server 2007 R2 pool 
 
 4.  The **Registrar Pool** identity should now point to the pool you specified as **pool\_FQDN** in the previous step. The presence of this identity confirms that the user has been successfully moved. Repeat step to verify **User2** has been moved.
     
-    ![Output of PowerShell Get-UsUser -Identity cmdlet](images/JJ205096.8ff04c67-37a0-4156-bfbc-28f9f7b137c8(OCS.15).jpg "Output of PowerShell Get-UsUser -Identity  cmdlet")  
-
-</div>
-
-<div>
+    ![Output of PowerShell Get-UsUser -Identity cmdlet](images/JJ688143.8ff04c67-37a0-4156-bfbc-28f9f7b137c8(OCS.15).jpg "Output of PowerShell Get-UsUser -Identity  cmdlet")  
 
 ## To move all users at the same time by using the Lync Server 2013 Management Shell
 
@@ -102,17 +79,5 @@ In this example, all users have been returned to the Office Communications Serve
 
 5.  Additionally, we can view the list of users in the Lync Server 2013 Control Panel and verify that the Registrar Pool value now points to the Lync Server 2013 pool.
     
-    ![Lync Server 2013 Control Panel user list](images/JJ205096.3f2e87a7-ec59-43c5-82cb-e770108bfb04(OCS.15).jpg "Lync Server 2013 Control Panel user list")  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+    ![Lync Server 2013 Control Panel user list](images/JJ688143.3f2e87a7-ec59-43c5-82cb-e770108bfb04(OCS.15).jpg "Lync Server 2013 Control Panel user list")
 

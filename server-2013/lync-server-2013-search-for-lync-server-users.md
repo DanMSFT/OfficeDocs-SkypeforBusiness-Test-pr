@@ -8,39 +8,20 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Search for Lync Server users in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-14_
 
 You can use the results of a search query to configure users for Lync Server 2013. You can search for users by display name, first name, last name, Security Accounts Manager (SAM) account name, SIP address, or line Uniform Resource Identifier (URI).
 
 You can search for users by using the Lync Server Control Panel or the Active Directory Users and Computers snap-in. The following procedure describes how to use Lync Server Control Panel to search for users.
-
-<div>
 
 
 > [!NOTE]
 > In an environment with a central forest topology, search results might not be accurate when you search for a user by the user’s email address. Instead, you can search for users by specifying a SIP address prefix, for example, sip:name, add a search filter and select a SIP address that contains a partial email address, or use the <STRONG>Get-CSUser</STRONG> cmdlet.
 
 
-
-</div>
-
-<div>
 
 ## To search for one or more users
 
@@ -64,26 +45,9 @@ You can search for users by using the Lync Server Control Panel or the Active Di
 
 6.  The search results appear under **Search Results**. You can select any or all of the users in the list and perform configuration tasks on the users you select.
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Viewing information about user accounts enabled for Lync Server 2013](lync-server-2013-viewing-information-about-user-accounts-enabled-for-lync-server.md)  
-[Enabling and disabling users for Lync Server 2013](lync-server-2013-enabling-and-disabling-users-for-lync-server.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Enabling and disabling users for Lync Server 2013](lync-server-2013-enabling-and-disabling-users-for-lync-server.md)
 

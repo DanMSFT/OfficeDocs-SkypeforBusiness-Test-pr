@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Install server components for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-05-05_
 
 Before following these steps, make sure you’re logged onto the server with a domain user account that’s both a local administrator and a member of the RTCUniversalReadOnlyAdmins group in Active Directory.
 
 The Lync Server Deployment Wizard is used to install the needed components for each Lync server role and to activate the server. This article walks you through the steps of deploying a Standard Edition server or a Front End Server in your Lync infrastructure.
-
-<div>
 
 ## To install Lync Server components
 
@@ -48,24 +33,8 @@ The Lync Server Deployment Wizard is used to install the needed components for e
 
 7.  When Lync Server 2013 components setup is done, and you’ve reviewed the logs as needed, click **Finish** to complete this step in the installation.
     
-    <div>
-    
 
     > [!NOTE]
     > If you’re prompted to restart the server (which might happen if Windows Desktop Experience needed to be installed), definitely do that. When the computer is back up and running, you need to do these steps over again, starting from step three listed above (basically run Step 2 in the Deployment Wizard one more time).
 
-    
-    </div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

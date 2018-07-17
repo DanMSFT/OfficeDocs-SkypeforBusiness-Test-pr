@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # IM and presence in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-10-07_
 
 Instant messaging (IM) and presence are automatically installed in any Lync Server deployment.
 
@@ -38,8 +25,6 @@ With the integration between Lync Server and other products such as Outlook and 
 
 With instant messaging in Lync Server, users can quickly message each other with timely information. If you prefer, your users can also communicate with users of public IM networks such as MSN/Windows Live, Yahoo\!, and AOL. Note that a separate license might be required for public IM connectivity with Windows Live, AOL, and Yahoo\! Lync Server also includes Extensible Messaging and Presence Protocol (XMPP) compatibility, so your users can exchange IM messages and presence information with users of XMPP services such as Google Talk.
 
-<div>
-
 
 > [!IMPORTANT]
 > <UL>
@@ -52,21 +37,9 @@ With instant messaging in Lync Server, users can quickly message each other with
 
 
 
-</div>
-
 Conversation history enables users to keep track of old IM conversations, and retrieve information that may have been communicated by IM months ago.
 
 The Persistent Chat feature enables users to participate in multiparty, topic-based conversations that persist over time. Messages posted to chat rooms (discussion forums) can be persistent (that is, available over time), so that people from different locations and departments can participate, even when they are not all online at the same time.
 
 If your organization must follow compliance regulations, you can deploy a message archiving feature to archive the content of instant messages for all users in your organization, or for only certain users you specify. If you also deploy Exchange 2013, your IM archive can be integrated with the In-Place Hold feature of Exchange, to provide a single administration experience for your compliance.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Microsoft Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-03-14_
 
 Microsoft Lync Server 2013 communications software offers instant messaging (IM), presence, conferencing, and telephony solutions that can support enterprise-level collaboration requirements.
 
 Want to download a copy of the Lync Server 2013 documentation? You can download the **LyncServer2013\_ITPro** compiled help (.chm) file from the Microsoft Download Center at [http://go.microsoft.com/fwlink/p/?LinkID=331103](http://go.microsoft.com/fwlink/p/?linkid=331103).
 
 The following tables list the topics in the Lync Server 2013 documentation library.
-
-<div>
 
 ## Technical Diagrams
 
@@ -49,10 +34,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </table>
 
 
-</div>
-
-<div>
-
 ## Getting Started
 
 
@@ -68,10 +49,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </table>
 
 
-</div>
-
-<div>
-
 ## Supportability
 
 
@@ -86,10 +63,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Planning
 
@@ -163,10 +136,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </table>
 
 
-</div>
-
-<div>
-
 ## Deployment
 
 
@@ -233,10 +202,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </table>
 
 
-</div>
-
-<div>
-
 ## Lync Server Hybrid Deployments
 
 
@@ -251,10 +216,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Migration
 
@@ -279,10 +240,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Operations
 
@@ -356,21 +313,17 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 <td><p>View online: <a href="lync-server-2013-monitoring-and-health-configuration.md">Monitoring and health configuration in Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
-<td><p>View online: <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 2013 Management Shell</a></p></td>
+<td><p>View online: <a href="https://technet.microsoft.com/en-us/library/gg398474(v=ocs.15)">Lync Server 2013 Management Shell</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>View online: <a href="lync-server-2013-lync-server-best-practices-analyzer.md">Lync Server 2013 Best Practices Analyzer</a></p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Security
 
@@ -386,10 +339,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Schema Reference
 
@@ -418,10 +367,6 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </table>
 
 
-</div>
-
-<div>
-
 ## Glossary
 
 
@@ -435,17 +380,4 @@ The following tables list the topics in the Lync Server 2013 documentation libra
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

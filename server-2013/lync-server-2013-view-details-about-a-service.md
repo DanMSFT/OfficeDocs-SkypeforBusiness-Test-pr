@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View details about a service in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-21_
 
 You can use Lync Server Control Panel to view details about each service that is running on a specific computer in your topology. You can view the status of each service and details such as the associated databases, ports, and dependent services.
-
-<div>
 
 ## To view details for a service
 
@@ -52,25 +37,8 @@ You can use Lync Server Control Panel to view details about each service that is
     
       - To return to the list of all computers in your topology, click **Close**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Managing the Lync Server 2013 topology](lync-server-2013-managing-the-lync-server-topology.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing the Lync Server 2013 topology](lync-server-2013-managing-the-lync-server-topology.md)
 

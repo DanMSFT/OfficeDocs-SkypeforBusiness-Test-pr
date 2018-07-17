@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring network site links in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 Within a call admission control (CAC) configuration, you can create network inter-site policies that define bandwidth limitations between sites that are directly linked. When network sites share a direct link, bandwidth limitations for audio and video connections can be defined between those two sites. You cannot use the Lync Server Control Panel to configure network site policies, this can be done only by using cmdlets from the Lync Server Management Shell. You can create, modify, and remove a network site link (also known as a network inter-site policy) from the Lync Server Management Shell.
-
-<div>
 
 ## To create a network site link
 
@@ -42,11 +27,7 @@ Within a call admission control (CAC) configuration, you can create network inte
     
     This example creates a new network site link named Reno\_Portland that sets bandwidth limitations between the Reno and Portland network sites. The network sites and the bandwidth policy profile must already exist before running this command.
 
-For detailed parameter descriptions, see [New-CsNetworkInterSitePolicy](new-csnetworkintersitepolicy.md) in the Lync Server Management Shell documentation. To retrieve a list of bandwidth policy profiles that can be applied to the network site link, call the **Get-CsNetworkBandwidthPolicyProfile** cmdlet. For details, see [Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md) in the Lync Server Management Shell documentation.
-
-</div>
-
-<div>
+For detailed parameter descriptions, see [New-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398994\(v=ocs.15\)) in the Lync Server Management Shell documentation. To retrieve a list of bandwidth policy profiles that can be applied to the network site link, call the **Get-CsNetworkBandwidthPolicyProfile** cmdlet. For details, see [Get-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg425815\(v=ocs.15\)) in the Lync Server Management Shell documentation.
 
 ## To modify a network site link
 
@@ -58,11 +39,7 @@ For detailed parameter descriptions, see [New-CsNetworkInterSitePolicy](new-csne
     
         Set-CsNetworkInterSitePolicy -Identity Reno_Portland -BWPolicyProfileID HighBWLimits
 
-For detailed parameter descriptions, see [Set-CsNetworkInterSitePolicy](set-csnetworkintersitepolicy.md) in the Lync Server Management Shell documentation.
-
-</div>
-
-<div>
+For detailed parameter descriptions, see [Set-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398772\(v=ocs.15\)) in the Lync Server Management Shell documentation.
 
 ## To delete a network site link
 
@@ -74,34 +51,17 @@ For detailed parameter descriptions, see [Set-CsNetworkInterSitePolicy](set-csne
     
         Remove-CsNetworkInterSitePolicy -Identity Reno_Portland
 
-For detailed parameter descriptions, see [Remove-CsNetworkInterSitePolicy](remove-csnetworkintersitepolicy.md) in the Lync Server Management Shell documentation.
-
-</div>
-
-<div>
+For detailed parameter descriptions, see [Remove-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398963\(v=ocs.15\)) in the Lync Server Management Shell documentation.
 
 ## See Also
 
 
-[Call admission control cmdlets in Lync Server 2013](lync-server-2013-call-admission-control-cmdlets.md)  
+[Call admission control cmdlets in Lync Server 2013](https://technet.microsoft.com/en-us/library/gg415676\(v=ocs.15\))  
 
 
-[New-CsNetworkInterSitePolicy](new-csnetworkintersitepolicy.md)  
-[Set-CsNetworkInterSitePolicy](set-csnetworkintersitepolicy.md)  
-[Remove-CsNetworkInterSitePolicy](remove-csnetworkintersitepolicy.md)  
-[Get-CsNetworkInterSitePolicy](get-csnetworkintersitepolicy.md)  
-[Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398994\(v=ocs.15\))  
+[Set-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398772\(v=ocs.15\))  
+[Remove-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg398963\(v=ocs.15\))  
+[Get-CsNetworkInterSitePolicy](https://technet.microsoft.com/en-us/library/gg412769\(v=ocs.15\))  
+[Get-CsNetworkBandwidthPolicyProfile](https://technet.microsoft.com/en-us/library/gg425815\(v=ocs.15\))
 

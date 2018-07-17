@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Enable or disable a conferencing device in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-20_
 
 Enable and disable a conferencing device by using the **Enable-CsMeetingRoom** cmdlet and the **Disable-CsMeetingRoom** cmdlet. These cmdlets can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
-
-<div>
 
 
 > [!NOTE]
@@ -36,12 +21,6 @@ Enable and disable a conferencing device by using the **Enable-CsMeetingRoom** c
 
 
 
-</div>
-
-<div>
-
-
-<div>
 
 ## Enabling a Conferencing Device
 
@@ -49,29 +28,11 @@ Enable and disable a conferencing device by using the **Enable-CsMeetingRoom** c
     
         Enable-CsMeetingRoom -Identity "Redmond Conferencing device" -RegistrarPool "atl-cs-001.litwareinc.com" -SipAddress "sip:RedmondMeetingRoom@litwareinc.com"
 
-</div>
-
-<div>
-
 ## Disabling a Conferencing Device
 
   - To disable a conferencing device, use the **Disable-CsMeetingRoom** cmdlet. Make sure that you specify the identity of the conferencing device to be disabled:
     
         Disable-CsMeetingRoom -Identity "sip:RedmondMeetingRoom@litwareinc.com"
 
-</div>
-
-For details, see the Help topics for the [Enable-CsMeetingRoom](enable-csmeetingroom.md) cmdlet and the [Disable-CsMeetingRoom](disable-csmeetingroom.md) cmdlet.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+For details, see the Help topics for the [Enable-CsMeetingRoom](https://technet.microsoft.com/en-us/library/jj205062\(v=ocs.15\)) cmdlet and the [Disable-CsMeetingRoom](https://technet.microsoft.com/en-us/library/jj204723\(v=ocs.15\)) cmdlet.
 

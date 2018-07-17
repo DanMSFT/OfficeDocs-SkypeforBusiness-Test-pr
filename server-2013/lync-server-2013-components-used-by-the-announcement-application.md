@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Components used by the Announcement application in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-13_
 
 In Lync Server 2013, the Announcement application is a component of the Response Group application. When you deploy Enterprise Voice, the Announcement application is automatically installed and activated along with the Response Group application. This section describes the components that support the Announcement application.
-
-<div>
 
 ## Announcement Application Components
 
@@ -45,16 +30,4 @@ The following Lync Server components support the Announcement application:
   - **Lync Server Control Panel**   You can use Lync Server Control Panel to configure the unassigned number table.
 
   - **Lync Server Management Shell**   You can use Lync Server Management Shell cmdlets to configure Announcement settings and the unassigned number table.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

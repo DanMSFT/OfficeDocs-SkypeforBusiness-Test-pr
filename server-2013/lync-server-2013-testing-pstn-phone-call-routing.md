@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing PSTN phone call routing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-11-01_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2014-11-01_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsInterTrunkRouting** cmdlet verifies that calls can be routed from one SIP to another. To do this, the cmdlet is given a phone number and a trunk configuration. **Test-CsInterTrunkRouting** will then report back matching routes and matching PSTN usages for the specified number. Note that calls can be routed between trunks only if the trunks have a number pattern that matches the specified phone number and only if the trunks share at least one PSTN usage.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -68,10 +49,6 @@ The commands shown below return the matching routes and matching phone usages th
     $trunk = Get-CsTrunkConfiguration -Identity "site:Redmond"
     
     Test-CsInterTrunkRouting -TargetNumber "tel:+12065551219" -TrunkConfiguration $trunk
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -109,36 +86,15 @@ ameterBindingArgumentTransformationException
 
 tc.Management.Voice.Cmdlets.TestOcsInterTrunkRoutingCmdlet
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsInterTrunkRouting** might fail:
 
   - You specified invalid parameters. The trunk might not yet be correctly configured and the specified target number might be incorrect or invalid.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsTrunk](get-cstrunk.md)  
-[Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsTrunk](https://technet.microsoft.com/en-us/library/jj205244\(v=ocs.15\))  
+[Get-CsTrunkConfiguration](https://technet.microsoft.com/en-us/library/gg398224\(v=ocs.15\))
 

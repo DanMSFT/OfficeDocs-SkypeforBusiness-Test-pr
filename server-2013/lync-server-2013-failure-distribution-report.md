@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Failure Distribution Report in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-21_
 
 The Failure Distribution Report ranks failed sessions in the following categories:
 
@@ -45,8 +32,6 @@ The Failure Distribution Report ranks failed sessions in the following categorie
   - Top from user agents
 
 You can use these categories to determine exactly where a problem is occurring and, in some cases, why the problem is occurring. For example, suppose you recorded 242 failed audio/video sessions during a given day. If you look at the Failure Distribution Report, it might show that 237 of those failed sessions took place in your Dublin pool. That gives you a good place to start when it comes to tracking down and diagnosing the causes behind those failures. If you click on the Dublin pool under the **Top pools** category, you will see a Failure Distribution Report just for that pool. You can then begin analyzing why the Dublin pool was experiencing so many difficulties.
-
-<div>
 
 ## Viewing the Failure Distribution Report
 
@@ -76,10 +61,6 @@ From the Failure Distribution Report, you can click any of the following metrics
 
   - Top from user agents (sessions)
 
-</div>
-
-<div>
-
 ## Using the Failure Distribution Report
 
 Depending on your monitor size and screen resolution, it's possible that some of the data shown in the Failure Distribution Report might be truncated when you view it onscreen. This is especially true for metrics such as user agents, which can have very long labels. For example, a user agent with a name like "UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Lync 2013)" might only partially appear onscreen:
@@ -89,10 +70,6 @@ UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Ly...
 Fortunately, you can see the entire label simply by holding your mouse over the truncated value.
 
 One interesting metric that you can filter on by using the Failure Distribution Report is Diagnostic ID. If you see the same Diagnostic ID cropping up in other reports you can filter on that ID in the Failure Distribution Report and get a very detailed look at exactly where, and how often, that ID has been reported during a failed session.
-
-</div>
-
-<div>
 
 ## Filters
 
@@ -166,10 +143,6 @@ The following table lists the filters that you can use with the Failure Distribu
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Top Diagnostic Reasons
 
 The following table lists the information provided in the Failure Distribution Report based on the most frequently reported diagnostic ID.
@@ -208,10 +181,6 @@ The following table lists the information provided in the Failure Distribution R
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for Top Modalities
 
@@ -252,10 +221,6 @@ The following table lists the information provided in the Failure Distribution R
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Top Pools
 
 The following table lists the information provided in the Failure Distribution Report based on the pools that experienced the most failures.
@@ -294,10 +259,6 @@ The following table lists the information provided in the Failure Distribution R
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for Top Sources
 
@@ -338,10 +299,6 @@ The following table lists the information provided in the Failure Distribution R
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Top Components
 
 The following table lists the information provided in the Failure Distribution Report based on the Microsoft Lync Server 2010 components that experienced the most failures.
@@ -380,10 +337,6 @@ The following table lists the information provided in the Failure Distribution R
 </tbody>
 </table>
 
-
-</div>
-
-<div>
 
 ## Metrics for Top From Users
 
@@ -424,10 +377,6 @@ The following table lists the information provided in the Failure Distribution R
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Top To Users
 
 The following table lists the information provided in the Failure Distribution Report based on the users who experienced the most failures when another user tried to call them (known as "To" users).
@@ -466,10 +415,6 @@ The following table lists the information provided in the Failure Distribution R
 </table>
 
 
-</div>
-
-<div>
-
 ## Metrics for Top User Agents
 
 The following table lists the information provided in the Failure Distribution Report based on the endpoint software that experienced the most failures.
@@ -507,17 +452,4 @@ The following table lists the information provided in the Failure Distribution R
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

@@ -8,23 +8,10 @@ ms.date: 01/27/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing ability to connect to a federated domain from Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-05_
 
 
 <table>
@@ -51,19 +38,13 @@ _**Topic Last Modified:** 2014-06-05_
 </table>
 
 
-<div>
-
 ## Description
 
 Test-CsFederatedPartner verifies your ability to connect to the domain of a federated partner. To verify the connectivity to a domain, that domain must be listed in the collection of allowed (federated) domains. You can retrieve a list of the domains on your allowed domains list by using this command:
 
     Get-CsAllowedDomain
 
-For more information, see the Help documentation for the [Test-CsFederatedPartner](test-csfederatedpartner.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsFederatedPartner](https://technet.microsoft.com/en-us/library/gg398281\(v=ocs.15\)) cmdlet.
 
 ## Running the test
 
@@ -75,11 +56,7 @@ This command enables you to test the connections to all the domains currently on
 
     Get-CsAllowedDomain | ForEach-Object {Test-CsFederatedPartner -TargetFqdn "atl-edge-001.litwareinc.com" -Domain $_.Identity}
 
-For more information, see the Help documentation for the [Test-CsFederatedPartner](test-csfederatedpartner.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the Help documentation for the [Test-CsFederatedPartner](https://technet.microsoft.com/en-us/library/gg398281\(v=ocs.15\)) cmdlet.
 
 ## Determining success or failure
 
@@ -117,10 +94,6 @@ If Test-CsFederatedPartner fails, then you might want to rerun the test, this ti
 
     Test-CsFederatedPartner -TargetFqdn "atl-edge-001.litwareinc.com" -Domain "contoso.com" -Verbose
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why Test-CsFederatedPartner might fail:
@@ -140,16 +113,4 @@ Here are some common reasons why Test-CsFederatedPartner might fail:
     If you’d like to see a list of domains that users were blocked from communicating with, then use this command:
     
         Get-CsBlockedDomain
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

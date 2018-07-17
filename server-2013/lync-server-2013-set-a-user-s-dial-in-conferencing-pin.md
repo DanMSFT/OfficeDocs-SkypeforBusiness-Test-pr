@@ -8,37 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Set a user's dial-in conferencing PIN in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-10_
 
 To join a dial-in conference as an authenticated user, a Lync Server 2013 user with Active Directory Domain Services (AD DS) credentials requires a personal identification number (PIN). If a user forgets the dial-in conferencing PIN or has not set the PIN by using Lync Server, you can set the user’s PIN from Lync Server Control Panel. You can automatically generate the PIN or create one manually.
-
-<div>
 
 
 > [!NOTE]
 > Specific characteristics of the PIN, such as its minimum length, can be configured as a policy. In addition to the global policy, you can configure a PIN policy for individual sites or users. For details about configuring a PIN policy, see <A href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">Configure dial-in conferencing personal identification number (PIN) rules in Lync Server 2013</A>.
 
 
-
-</div>
-
-<div>
 
 ## To set a user’s PIN
 
@@ -64,25 +45,18 @@ To join a dial-in conference as an authenticated user, a Lync Server 2013 user w
     
     4.  Depending on the user property you selected, enter the criteria that you want to use to filter the search results by typing it or by clicking the arrow in the drop-down list.
         
-        <div>
-        
 
         > [!TIP]
         > To add additional search clauses to your query, click <STRONG>Add Filter</STRONG>.
 
-        
-        </div>
     
     5.  Click **Find**.
-    
-    <div>
     
 
     > [!NOTE]
     > If the PIN is locked, you must unlock the PIN before you can set it. To unlock the PIN, click the user, click <STRONG>Action</STRONG>, and then click <STRONG>Unlock PIN</STRONG>.
 
-    
-    </div>
+
 
 6.  Click a user in the search results, click **Action**, and then click **Set PIN**.
 
@@ -102,15 +76,9 @@ To join a dial-in conference as an authenticated user, a Lync Server 2013 user w
 
 10. Click **Close**.
 
-</div>
-
-<div>
-
 ## Assigning a User PIN by Using Windows PowerShell Cmdlets
 
 You can assign PIN numbers can also be assigned by using the Set-CsClientPin cmdlet. You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To auto-assign a PIN number to a user
 
@@ -118,23 +86,13 @@ You can assign PIN numbers can also be assigned by using the Set-CsClientPin cmd
     
         Set-CsClientPin -Identity "Ken Myer" 
 
-</div>
-
-<div>
-
 ## To assign a specific PIN number to a user
 
   - This command uses the Pin parameter to assign the PIN number 121989 to the user Ken Myer.
     
         Set-CsClientPin -Identity "Ken Myer" -Pin 121989
 
-</div>
-
-For more information, see the help topic for the [Set-CsClientPin](set-csclientpin.md) cmdlet.
-
-</div>
-
-<div>
+For more information, see the help topic for the [Set-CsClientPin](https://technet.microsoft.com/en-us/library/gg398929\(v=ocs.15\)) cmdlet.
 
 ## See Also
 
@@ -142,18 +100,5 @@ For more information, see the help topic for the [Set-CsClientPin](set-csclientp
 [Dial-in Access Number](https://technet.microsoft.com/en-us/library/gg133674\(v=ocs.15\))  
 
 
-[Configure dial-in conferencing personal identification number (PIN) rules in Lync Server 2013](lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configure dial-in conferencing personal identification number (PIN) rules in Lync Server 2013](lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md)
 

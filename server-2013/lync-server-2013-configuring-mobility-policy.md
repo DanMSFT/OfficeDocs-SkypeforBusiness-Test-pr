@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring mobility policy in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-13_
 
     Some information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
@@ -46,19 +33,13 @@ For users to be able to use Call via Work, they must meet the following two addi
 
   - Users must be assigned a mobility policy that has the **EnableOutsideVoice** option set to True.
 
-<div>
-
 
 > [!NOTE]
 > Users who are not enabled for Enterprise Voice can use their mobile devices to make Lync to Lync Voice over IP (VoIP) calls, or can join conferences by using the Click to Join link on their mobile devices, if you assign those users the appropriate options for voice policy. For details, see <A href="lync-server-2013-defining-your-mobility-requirements.md">Defining your mobility requirements for Lync Server 2013</A>.
 
 
 
-</div>
-
 For details about enabling users for Lync Server 2013, see [Disable or re-enable user account for Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md). For details about enabling users for Enterprise Voice, see [Enable users for Enterprise Voice in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md). For details about setting voice policy options, see [Modify a voice policy and configure PSTN usage records in Lync Server 2013](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md).
-
-<div>
 
 ## To modify global mobility policy
 
@@ -70,18 +51,11 @@ For details about enabling users for Lync Server 2013, see [Disable or re-enable
     
         Set-CsMobilityPolicy -EnableMobility $False -EnableOutsideVoice $False
     
-    <div>
-    
 
     > [!NOTE]
     > You can turn off Call via Work without turning off access to mobility. However, you cannot turn off mobility without also turning off Call via Work.
 
-    
-    </div>
 
-</div>
-
-<div>
 
 ## To modify mobility policy by site
 
@@ -92,10 +66,6 @@ For details about enabling users for Lync Server 2013, see [Disable or re-enable
 3.  Create a site-level policy, and turn off VoIP and video, and enable Require WiFi for IP Audio and for IP Video by site. At the command line, type:
     
         New-CsMobilityPolicy -Identity site:<site identifier> -EnableIPAudioVideo $False -RequireWiFiForIPAudio $True -RequireWiFiForIPVideo $True
-
-</div>
-
-<div>
 
 ## To modify mobility policy by user
 
@@ -115,10 +85,6 @@ For details about enabling users for Lync Server 2013, see [Disable or re-enable
         New-CsMobilityPolicy "tag:disableOutsideVoice" -EnableOutsideVoice $False
         Grant-CsMobilityPolicy -Identity -MobileUser1@contoso.com -PolicyName Tag:disableOutsideVoice
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -130,22 +96,9 @@ For details about enabling users for Lync Server 2013, see [Disable or re-enable
 [Defining your mobility requirements for Lync Server 2013](lync-server-2013-defining-your-mobility-requirements.md)  
 
 
-[New-CsMobilityPolicy](new-csmobilitypolicy.md)  
-[Set-CsMobilityPolicy](set-csmobilitypolicy.md)  
-[Get-CsMobilityPolicy](get-csmobilitypolicy.md)  
-[Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)  
-[Remove-CsMobilityPolicy](remove-csmobilitypolicy.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh689987\(v=ocs.15\))  
+[Set-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh690021\(v=ocs.15\))  
+[Get-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh690017\(v=ocs.15\))  
+[Grant-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh690038\(v=ocs.15\))  
+[Remove-CsMobilityPolicy](https://technet.microsoft.com/en-us/library/hh690048\(v=ocs.15\))
 

@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify an agent group in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-07_
 
 Use one of the following procedures to create or modify an agent group.
-
-<div>
 
 
 > [!NOTE]
@@ -36,32 +21,21 @@ Use one of the following procedures to create or modify an agent group.
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > When you assign users as response group agents, inform them that, if they have Privacy mode enabled, they need to search for "RGS Presence Watcher" contacts and add them to their Contacts list. Agents who have Privacy mode enabled, but who do not have "RGS Presence Watcher" in their Contacts list, cannot receive calls to the response group. Agents who do not have Privacy mode enabled are not affected.
 
 
 
-</div>
-
-<div>
-
 ## To use Lync Server Control Panel to create or modify an agent group
 
 1.  Log on as a member of the RTCUniversalServerAdmins group, or as a member of one of the predefined administrative roles that support Response Group.
-    
-    <div>
     
 
     > [!NOTE]
     > If you are one of the delegated Response Group Managers for a managed workflow, you can create groups and use them in the workflows that you manage.
 
-    
-    </div>
+
 
 2.  Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel. For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).
 
@@ -85,14 +59,11 @@ Use one of the following procedures to create or modify an agent group.
 
 8.  In **Alert time (seconds)**, specify the number of seconds to ring an agent before offering the call to the next available agent (the default is 20 seconds).
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The agent alert time setting cannot exceed 180 seconds. If the agent alert time exceeds 180 seconds, the client application rejects the call because the SIP transaction timer reaches its maximum wait time.
 
-    
-    </div>
+
 
 9.  In **Routing method**, select the method for routing calls to agents in the group as follows:
     
@@ -128,14 +99,10 @@ Use one of the following procedures to create or modify an agent group.
         
           - If the distribution list contains users for which Lync Server 2010 is enabled but Enterprise Voice is not enabled, they will be added to the agent group as dysfunctional agents. Make sure that all members of the distribution list have Enterprise Voice enabled for their user accounts.
         
-        <div>
-        
 
         > [!IMPORTANT]
         > If you use an email distribution list, hidden memberships or hidden lists might become visible to the Response Group administrator or users.
 
-        
-        </div>
         
         Hidden memberships or hidden lists can become visible as follows:
         
@@ -144,10 +111,6 @@ Use one of the following procedures to create or modify an agent group.
           - If a distribution list was configured so that it is hidden in the Exchange Global Address List, the Response Group administrator might be able to see the distribution list and assign it to the agent list if the Response Group process has the appropriate user rights and permissions, even if the administrator does not have the appropriate user rights and permissions.
 
 11. Click **Commit**.
-
-</div>
-
-<div>
 
 ## To use Windows PowerShell to create or modify an agent group
 
@@ -163,22 +126,15 @@ Use one of the following procedures to create or modify an agent group.
     
         New-CsRgsAgentGroup -Name "Help Desk" -Parent "service:ApplicationServer:atl-cs-001.contoso.com"  -Description "Contoso Help Desk" -AgentAlertTime 20 -ParticipationPolicy Formal -RoutingMethod RoundRobin -AgentsByUri("sip:mindy@contoso.com","sip:bob@contoso.com")
     
-    <div>
-    
 
     > [!IMPORTANT]
     > The agent alert time setting cannot exceed 180 seconds. If the agent alert time is greater than 180 seconds, the client application rejects the call because the SIP transaction timer reaches its maximum wait time.
 
-    
-    </div>
+
 
 4.  Confirm that the agent group is created. Run:
     
         Get-CsRgsAgentGroup -Name "Help Desk"
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -187,21 +143,8 @@ Use one of the following procedures to create or modify an agent group.
 
 
 [Managing Response Group agent groups in Lync Server 2013](lync-server-2013-managing-response-group-agent-groups.md)  
-[Get-CsService](get-csservice.md)  
-[New-CsRgsAgentGroup](new-csrgsagentgroup.md)  
-[Set-CsRgsAgentGroup](set-csrgsagentgroup.md)  
-[Get-CsRgsAgentGroup](get-csrgsagentgroup.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsService](https://technet.microsoft.com/en-us/library/gg413038\(v=ocs.15\))  
+[New-CsRgsAgentGroup](https://technet.microsoft.com/en-us/library/gg413065\(v=ocs.15\))  
+[Set-CsRgsAgentGroup](https://technet.microsoft.com/en-us/library/gg425955\(v=ocs.15\))  
+[Get-CsRgsAgentGroup](https://technet.microsoft.com/en-us/library/gg425793\(v=ocs.15\))
 

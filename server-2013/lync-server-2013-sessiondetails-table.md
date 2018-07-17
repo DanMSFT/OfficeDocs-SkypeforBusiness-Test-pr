@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # SessionDetails table in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-28_
 
 Each record represents one peer-to-peer session, which could be a VoIP-VoIP phone call, two-party IM session, or other type of session. You can perform a table join with the [Media table in Lync Server 2013](lync-server-2013-media-table.md) to find the details of each media involved in this session.
 
@@ -62,7 +49,7 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 <tr class="odd">
 <td><p><strong>CorrelationId</strong></p></td>
 <td><p>uniqueidentifier</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A GUID to correlate multiple sessions.</p></td>
 </tr>
 <tr class="even">
@@ -92,14 +79,14 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 <tr class="even">
 <td><p><strong>User1EndpointId</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>GUID that identifies the endpoint used by the first user in the session.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User2EndpointId</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>GUID that identifies the endpoint used by the second user in the session.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
@@ -172,37 +159,37 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 <tr class="odd">
 <td><p><strong>IsUser1Internal</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Whether User1 is logged on from internal or not.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>IsUser2Internal</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Whether User2 is logged on from internal or not.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>InviteTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The time of the first INVITE request. This field is typically populated by data generated from the initial INVITE message in the session. If there is no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO). This field is typically populated by data generated from the initial INVITE message in the session. If there is no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ResponseTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>The time of the response to the first INVITE message. This field is typically populated by data generated from the initial INVITE message in the session. If there is no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ResponseCode</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>SIP response code to the session invitation. This field is typically populated by data generated from the initial INVITE message in the session. If there is no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DiagnosticId</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Diagnostic ID captured from SIP header.</p></td>
 </tr>
 <tr class="odd">
@@ -214,25 +201,25 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 <tr class="even">
 <td><p><strong>User1MessageCount</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Number of messages sent by User1 during the session.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User2MessageCount</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Number of messages sent by User2 during the session.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionEndTime</strong></p></td>
 <td><p>datetime</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>Time at the end of the session.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MediaTypes</strong></p></td>
 <td><p>int</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A bit set that indicates the media type of this session. Listed are the definitions of the types:</p>
 <h3 id="section-1"> </h3>
 <div>
@@ -278,7 +265,7 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 <tr class="even">
 <td><p><strong>User1Flag</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A bit set that indicates the User1 attributes. The following attribute definitions are listed:</p>
 <ul>
 <li><p>0x01 - Integrated with desktop phone</p></li>
@@ -287,7 +274,7 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 <tr class="odd">
 <td><p><strong>User2Flag</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A bit set that indicates the User2 attributes. The following attribute definitions are listed:</p>
 <ul>
 <li><p>0x01 - Integrated with desktop phone</p></li>
@@ -296,7 +283,7 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 <tr class="even">
 <td><p><strong>CallFlag</strong></p></td>
 <td><p>smallint</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>A bit set that indicates the call attributes. The following attribute definitions are listed:</p>
 <ul>
 <li><p>0x01 - Retried Session</p></li>
@@ -306,7 +293,7 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 <tr class="odd">
 <td><p><strong>Processed</strong></p></td>
 <td><p>bit</p></td>
-<td></td>
+<td><p></p></td>
 <td><p>For internal use by the Monitoring service.</p>
 <p>This field was introduced in Microsoft Lync Server 2013.</p></td>
 </tr>
@@ -315,14 +302,4 @@ Note that the IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPh
 
 
 \* For most sessions, SessionIdSeq will have the value of 1. If multiple sessions start at exactly the same time, the SessionIdSeq for one will be 1, for another will be 2, and so on.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

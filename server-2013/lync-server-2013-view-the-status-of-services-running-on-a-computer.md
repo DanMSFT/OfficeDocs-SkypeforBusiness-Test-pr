@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # View the status of services running on a computer in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-22_
 
 You can use Lync Server 2013 Control Panel to view all the services that are running on a specific computer in your Lync Server topology and see the status of each service.
-
-<div>
 
 ## To view the status of services running on a computer
 
@@ -46,15 +31,9 @@ You can use Lync Server 2013 Control Panel to view all the services that are run
     
       - To see a list of specific services running on the computer and the status of each service, click **Properties**, and then click **Close** to return to the list.
 
-</div>
-
-<div>
-
 ## Viewing Service Status by Using Windows PowerShell Cmdlets
 
 You can also view service status by using Windows PowerShell and the **Get-CsWindowsService** cmdlet. You can run this cmdlet from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell. For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).
-
-<div>
 
 ## To view service status
 
@@ -74,29 +53,10 @@ You can also view service status by using Windows PowerShell and the **Get-CsWin
         {ConferencingServer}                      Running
         {MediationServer}                         Running
 
-</div>
-
-For details, see [Get-CsWindowsService](get-cswindowsservice.md).
-
-</div>
-
-<div>
+For details, see [Get-CsWindowsService](https://technet.microsoft.com/en-us/library/gg398803\(v=ocs.15\)).
 
 ## See Also
 
 
-[Managing devices, phones, and client applications in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Managing devices, phones, and client applications in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)
 

@@ -8,35 +8,16 @@ ms.date: 11/13/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Migrating Lync Online users to Lync on-premises in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-11-13_
-
-<div class="">
 
 
 > [!IMPORTANT]
 > These steps are necessary only for migrating user accounts that were originally enabled for Lync in Lync Online, before you deployed Lync on-premises. To move users who were originally enabled for Lync on-premises, then later moved to Lync Online, see <A href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">Administering users in a hybrid Lync Server 2013 deployment</A>.<BR>Additionally, all users being moved must have accounts in the on-premises Active Directory.
 
 
-
-</div>
-
-<div>
 
 ## Migrating User Accounts Originally Enabled in Lync Online to Lync On-Premises
 
@@ -48,13 +29,9 @@ _**Topic Last Modified:** 2015-11-13_
     
       - On your on-premises deployment, in Lync Server Management Shell, type the following cmdlets to create the hosting provider for Lync Online:
         
-           ```
-           Set-CsAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
-           ```
+            Set-CsAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
         
-           ```
             New-CsHostingProvider -Identity LyncOnline -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
-           ```
 
 2.  Confirm that on your on-premises Edge Servers, you have the certificate chain that enables connection to Lync Online, as shown in the following table. You can download this chain here: [https://corp.sts.microsoft.com/Onboard/ADFS\_Onboarding\_Pack/corp\_sts\_certs.zip](https://corp.sts.microsoft.com/onboard/adfs_onboarding_pack/corp_sts_certs.zip) .
     
@@ -119,13 +96,9 @@ _**Topic Last Modified:** 2015-11-13_
     
     To move a single user, type this:
     
-       ```
-       $cred = Get-Credential
-       ```
+        $cred = Get-Credential
     
-       ```
-       Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
-       ```
+        Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
     
     You can move multiple users by using the **Get-CsUSer** cmdlet with the –Filter parameter to select the users with a specific property. For example, you could select all Lync Online users by filtering for {Hosting Provider –eq “sipfed.online.lync.om”}. You can then pipe the returned users to the **Move-CsUSer** cmdlet, as shown below.
     
@@ -134,8 +107,6 @@ _**Topic Last Modified:** 2015-11-13_
     The format of the URL specified for the **HostedMigrationOverrideUrl** parameter must be the URL to the pool where the Hosted Migration service is running, in the following format: *Https://\<Pool FQDN\>/HostedMigration/hostedmigrationService.svc*.
     
     You can determine the URL to the Hosted Migration Service by viewing the URL for the Lync Online Control Panel for your Office 365 tenant account.
-    
-    <div>
     
     ## To determine the Hosted Migration Service URL for your Office 365 tenant
     
@@ -157,16 +128,11 @@ _**Topic Last Modified:** 2015-11-13_
         
         `https://admin0a.online.lync.com/HostedMigration/hostedmigrationservice.svc`
     
-    </div>
-    
-    <div class="">
-    
 
     > [!NOTE]
     > The default maximum size for transaction log files of the rtcxds database is 16 GB. This might not be big enough if you’re moving a large number of users at once, especially if you have mirroring enabled. To get around this you can increase the file size or back up the log files regularly. For more information, see <A class=uri href="http://support.microsoft.com/kb/2756725">http://support.microsoft.com/kb/2756725</A>.
 
-    
-    </div>
+
 
 8.  This is an optional step. If you need to integrate with Exchange 2013 Online, you need to use an additional hosting provider. For details, see [Configuring on-premises Lync Server 2013 integration with Exchange Online](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md).
 
@@ -218,16 +184,4 @@ _**Topic Last Modified:** 2015-11-13_
     Note that scheduled meetings are not migrated from Lync Online to Lync on-premises. Users will need to reschedule these meetings after being moved.
     
     After the DNS records are updated and all users are directed to On premise, the HostingProvider attribute directs the Lync user to either use SRV records or direct them to the Online provider “sipfed.online.lync.com.”
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

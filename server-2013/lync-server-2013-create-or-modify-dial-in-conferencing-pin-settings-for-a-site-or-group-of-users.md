@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Create or modify dial-in conferencing PIN settings in Lync Server 2013 for a site or group of users
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-18_
 
 Follow these steps to create or modify a user-level or a site-level dial-in conferencing personal identification number (PIN) policy. For details about how to change the global PIN policy, see [Modify the default dial-in conferencing PIN settings in Lync Server 2013](lync-server-2013-modify-the-default-dial-in-conferencing-pin-settings.md).
-
-<div>
 
 ## To create a user or site PIN policy
 
@@ -60,20 +45,13 @@ Follow these steps to create or modify a user-level or a site-level dial-in conf
 
 12. To allow common patterns of digits in PINs, such as sequential numbers and repetitive sets of numbers, select the **Allow common patterns** check box. If you do not select this option, only complex patterns of digits are allowed. By default, only complex patterns of digits are allowed.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > We recommend that you do not allow common patterns.
 
-    
-    </div>
+
 
 13. Click **Commit**.
-
-</div>
-
-<div>
 
 ## To change a user or site PIN policy
 
@@ -88,16 +66,4 @@ Follow these steps to create or modify a user-level or a site-level dial-in conf
 5.  In **Edit PIN Policy**, modify any of the policy settings (except for the policy name, which cannot be modified).
 
 6.  Click **Commit**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

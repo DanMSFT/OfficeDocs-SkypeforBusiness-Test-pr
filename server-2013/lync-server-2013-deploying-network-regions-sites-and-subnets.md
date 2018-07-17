@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deploying network regions, sites, and subnets in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-12_
 
 Once Enterprise Voice is deployed, you need to configure:
 
@@ -34,28 +21,18 @@ Once Enterprise Voice is deployed, you need to configure:
 
   - Network subnets
 
-<div>
-
 ## Define Network Regions
 
 Use the Lync Server Windows PowerShell command, New-CsNetworkRegion, or Lync Server Control Panel to define network regions.
 
     New-CsNetworkRegion -NetworkRegionID <region ID> -CentralSite <site ID>
 
-For more information, see [New-CsNetworkRegion](new-csnetworkregion.md).
+For more information, see [New-CsNetworkRegion](https://technet.microsoft.com/en-us/library/gg425829\(v=ocs.15\)).
 
 For this example, the following Windows PowerShell command illustrates the network region, region 1 (India), defined in this scenario.
 
     New-CsNetworkRegion -NetworkRegionID "India" -CentralSite "India Central Site"
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Define Network Sites
 
@@ -63,7 +40,7 @@ Use the Lync Server Windows PowerShell command, New-CsNetworkSite, or the Lync 
 
     New-CsNetworkSite -NetworkSiteID <site ID> -NetworkRegionID <region ID>
 
-For more information, see [New-CsNetworkSite](new-csnetworksite.md).
+For more information, see [New-CsNetworkSite](https://technet.microsoft.com/en-us/library/gg398365\(v=ocs.15\)).
 
 For this example, the following table and Lync Server Windows PowerShell command illustrate the network sites defined in this scenario. Only settings that are specific to Location-Based Routing are included in the table for illustration purposes.
 
@@ -99,14 +76,6 @@ For this example, the following table and Lync Server Windows PowerShell comman
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Define Network Subnets
 
@@ -114,7 +83,7 @@ Use the Lync Server Windows PowerShell command, New-CsNetworkSubnet, or the Lyn
 
     New-CsNetworkSubnet -SubnetID <Subnet IP address> -MaskBits <Subnet bitmask> -NetworkSiteID <site ID>
 
-For more information, see [New-CsNetworkSubnet](new-csnetworksubnet.md).
+For more information, see [New-CsNetworkSubnet](https://technet.microsoft.com/en-us/library/gg398226\(v=ocs.15\)).
 
 For this example, the following table and Windows PowerShell commands illustrate the assignment of network subnets to the network sites, Delhi and Hyderabad, defined in this scenario. Only settings that are specific to Location-Based Routing are included in the table for illustration purposes.
 
@@ -155,30 +124,9 @@ For this example, the following table and Windows PowerShell commands illustrate
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## See Also
 
 
-[Configuring Location-Based Routing in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring Location-Based Routing in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)
 

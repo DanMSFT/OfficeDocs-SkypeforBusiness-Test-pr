@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Viewing location policy information in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-01_
 
 In Lync Server 2013, you can use the location policy to apply settings that relate to Enhanced 9-1-1 (E9-1-1) functionality and to location settings for users or contacts. The location policy determines whether a user is enabled for E9-1-1, and if so what the behavior is of an emergency call. For example, you can use the location policy to define what number constitutes an emergency call (for example, 911 in the United States), whether corporate security should be automatically notified, and how the call should be routed.
 
 You can configure location policies from the **Network Configuration** group in Lync Server 2013 Control Panel. From Lync Server Control Panel you can view, create, modify, or delete location policies. Use the following procedure to view information about location policies. For details on creating or modifying location policies, see [Creating or modifying a location policy in Lync Server 2013](lync-server-2013-creating-or-modifying-a-location-policy.md).
-
-<div>
 
 ## To view information about a location policy
 
@@ -44,20 +29,13 @@ You can configure location policies from the **Network Configuration** group in 
 
 5.  On the **Edit** menu, click **Show details**.
     
-    <div>
-    
 
     > [!NOTE]
     > You can only view information about one location policy at a time.
 
-    
-    </div>
+
 
 A single policy, called Global, exists by default and cannot be deleted or renamed. However, you can modify the Global policy. This policy will apply to all users and contacts, unless you create site policies or per-user policies. Per-user policies must be applied to specific users.
-
-</div>
-
-<div>
 
 ## See Also
 
@@ -67,21 +45,8 @@ A single policy, called Global, exists by default and cannot be deleted or renam
 [Create or modify a network site in Lync Server 2013](lync-server-2013-create-or-modify-a-network-site.md)  
 
 
-[New-CsLocationPolicy](new-cslocationpolicy.md)  
-[Set-CsLocationPolicy](set-cslocationpolicy.md)  
-[Remove-CsLocationPolicy](remove-cslocationpolicy.md)  
-[Get-CsLocationPolicy](get-cslocationpolicy.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsLocationPolicy](https://technet.microsoft.com/en-us/library/gg398231\(v=ocs.15\))  
+[Set-CsLocationPolicy](https://technet.microsoft.com/en-us/library/gg412987\(v=ocs.15\))  
+[Remove-CsLocationPolicy](https://technet.microsoft.com/en-us/library/gg398727\(v=ocs.15\))  
+[Get-CsLocationPolicy](https://technet.microsoft.com/en-us/library/gg398911\(v=ocs.15\))
 

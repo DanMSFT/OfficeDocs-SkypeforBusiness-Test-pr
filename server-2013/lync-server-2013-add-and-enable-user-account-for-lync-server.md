@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Add and enable user account for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-11-02_
 
 After enabling a user account in Active Directory Users and Computers, you can use Lync Server Control Panel to create and enable new Lync Server 2013 user accounts by adding an Active Directory user to Lync Server.
-
-<div>
 
 ## To add and enable a new Lync Server user
 
@@ -48,10 +33,6 @@ After enabling a user account in Active Directory Users and Computers, you can u
 
 8.  Assign the user to a pool, specify any additional details, and assign the policies to the user you want, and then click **Enable**.
 
-</div>
-
-<div>
-
 ## See Also
 
 
@@ -59,18 +40,5 @@ After enabling a user account in Active Directory Users and Computers, you can u
 [Remove a user account from Lync Server 2013](lync-server-2013-remove-a-user-account-from-lync-server.md)  
 
 
-[Enabling and disabling users for Lync Server 2013](lync-server-2013-enabling-and-disabling-users-for-lync-server.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Enabling and disabling users for Lync Server 2013](lync-server-2013-enabling-and-disabling-users-for-lync-server.md)
 

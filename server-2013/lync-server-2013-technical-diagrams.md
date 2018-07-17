@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Technical diagrams for Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-03-14_
 
 **Summary:** These diagrams provide visual representations of recommended solutions for Lync 2013.
 
@@ -61,8 +48,6 @@ You might need additional software to view these files. See the following table 
 </tbody>
 </table>
 
-
-<div>
 
 ## Posters
 
@@ -143,12 +128,6 @@ These posters detail a specific technical area, and are intended to be used with
 </table>
 
 
-</div>
-
-<span id="tips"></span>
-
-<div>
-
 ## Tips for printing posters
 
 If you have a plotter, you can print these posters in their full size. If you don't have plotter, use the following steps to print on smaller paper.
@@ -166,16 +145,4 @@ If you have a plotter, you can print these posters in their full size. If you do
 5.  On the **Page Size** tab, click **Size to fit drawing contents**, and then click **OK**.
 
 6.  On the **File** menu, click **Print**.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

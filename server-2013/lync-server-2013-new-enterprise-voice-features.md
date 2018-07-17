@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # New Enterprise Voice features in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-05-01_
 
 Lync Server 2013 introduces several new routing and call management features that enhance Enterprise Voice.
 
@@ -45,14 +32,4 @@ Lync Server 2013 introduces the following new enhancements to Enterprise Voice:
   - [New intertrunk feature in Lync Server 2013](lync-server-2013-new-intertrunk-feature.md)
 
   - [New call management features in Lync Server 2013](lync-server-2013-new-call-management-features.md)
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

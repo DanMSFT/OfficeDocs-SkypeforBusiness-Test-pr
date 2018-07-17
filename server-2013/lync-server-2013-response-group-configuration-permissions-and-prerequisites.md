@@ -8,29 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Response Group configuration permissions and prerequisites in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-05_
 
 Response Group is an Enterprise Voice call management feature. This topic describes what you need to have in place before you can configure Response Group and the administrative credentials and permissions you need to perform configuration tasks.
 
 This section assumes that you have read the planning documentation related to Response Group. For details, see [Planning for call management features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md) in the Planning documentation.
-
-<div>
 
 ## Configuration Tools and Administrative Roles
 
@@ -123,19 +108,11 @@ To configure response groups, you must be a member of at least one of the follow
 </table>
 
 
-<div>
-
 
 > [!NOTE]
 > <STRONG>(1)</STRONG> An Active Directory Domain Services user object must be a member of the specified Active Directory security group listed. An administrator or other delegated Active Directory group member with appropriate permissions to add users to a security group (For example, Administrator, Account Operators) must add a user object to the listed security group or group for the user to be able to perform the functions listed. <STRONG>(2)</STRONG> Only for workflows that the CsResponseGroupAdministrator has assigned to the CsResponseGroupManager. <STRONG>(3)</STRONG> A Response Group Manager can assign another member of CsResponseGroupManager to a workflow that the current manager already manages. <STRONG>(4)</STRONG> CsViewOnlyAdministrator can only run verb "Get" Lync Server Management Shell cmdlets.
 
 
-
-</div>
-
-</div>
-
-<div>
 
 ## Response Group Configuration Prerequisites
 
@@ -161,15 +138,9 @@ You might need to perform the following tasks before configuring Response Group:
 
   - Modify the database collation to support Yi, Meng, and Zang characters for queue names and agent group names.
 
-<div>
-
 ## Enabling Users
 
 The first step in configuring Response Group is to create agent groups. Before you can create an agent group, you must enable the users who will be agents for Response Group for Lync Server 2013 and Enterprise Voice. Enabling users for Lync Server 2013 is typically a step in the Enterprise Edition server or Standard Edition server deployment. For details about enabling users for Lync Server 2013, see [Disable or re-enable user account for Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md). Enabling users for Enterprise Voice is typically a step in the Enterprise Voice deployment. For details, see [Enable users for Enterprise Voice in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md).
-
-</div>
-
-<div>
 
 ## Complying with FIPS requirements
 
@@ -193,23 +164,15 @@ To modify the Web.config file, do the following:
     
         iisreset
 
-</div>
-
-<div>
-
 ## Supporting Yi, Meng, and Zang Characters
 
 This section applies to you only if your organization needs to support Yi, Meng, or Zang characters.
-
-<div>
 
 
 > [!NOTE]
 > For information on what the Yi, Meng, and Zang characters are and why they may be important to your deployment, see the information on the GB18030 character sets <A href="http://go.microsoft.com/fwlink/p/?linkid=240223">http://go.microsoft.com/fwlink/p/?linkId=240223</A>.
 
 
-
-</div>
 
 To support Yi, Meng, or Zang characters, you need to modify the collation for the Rgsconfig database. Change the collation of the **Name** column in the following tables in each Rgsconfig database:
 
@@ -234,18 +197,4 @@ You can change the collation by using Microsoft SQL Server Management Studio. Fo
 3.  Find the table you want to change in the Rgsconfig database, right-click the table, and click **Design**.
 
 4.  Change the collation of the **Name** column and save the table.
-
-</div>
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

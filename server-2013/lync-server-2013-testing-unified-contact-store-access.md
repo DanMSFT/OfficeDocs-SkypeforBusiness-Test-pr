@@ -8,23 +8,10 @@ ms.date: 05/16/2015
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing Unified Contact Store access in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2015-05-15_
 
 
 <table>
@@ -51,8 +38,6 @@ _**Topic Last Modified:** 2015-05-15_
 </table>
 
 
-<div>
-
 ## Description
 
 The unified contact store introduced in Lync Server 2013 gives administrators the option of storing a user's contacts in Microsoft Exchange Server 2013 instead of in Lync Server. This allows the user to access the same set of contacts in Outlook Web Access in addition to Lync 2013. (Or, you can continue to store contacts in Lync Server. In that case, users will have to maintain two separate sets of contacts: one for use with Outlook and Outlook Web Access, and one for use with Lync 2013.)
@@ -60,10 +45,6 @@ The unified contact store introduced in Lync Server 2013 gives administrators th
 You can determine whether or not a user's contacts were moved to the unified contact store by running the **Test-CsUnifiedContactStore** cmdlet. The **Test-CsUnifiedContactStore** cmdlet will take the specified user account, connect to the unified contact store, and attempt to retrieve a contact for the user. If no contacts can be retrieved then the command will fail together with the message "No contacts were received for the user. Verify that contacts exist for the user."
 
 Note that the **Test-CsUnifiedContactStore** cmdlet will fail if the user has successfully migrated to the unified contact store but has no contacts on his or her Contacts list. The specified user must have at least one contact for the **Test-CsUnifiedContactStore** cmdlet to complete successfully.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -74,10 +55,6 @@ The second command in the example uses the supplied credentials object ($x) and 
     $credential = Get-Credential "litwareinc\kenmyer"
     
     Test-CsUnifiedContactStore -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -131,10 +108,6 @@ has failed to respond 10.188.116.96:5061
 
 Diagnosis :
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsUnifiedContactStore** might fail:
@@ -143,26 +116,9 @@ Here are some common reasons why **Test-CsUnifiedContactStore** might fail:
 
   - Connect to the unified contact store failed, and the attempt to retrieve a contact for the user was not possible. There may be network connectivity issues.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[New-CsUserServicesPolicy](new-csuserservicespolicy.md)  
-[Set-CsUserServicesPolicy](set-csuserservicespolicy.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[New-CsUserServicesPolicy](https://technet.microsoft.com/en-us/library/jj205072\(v=ocs.15\))  
+[Set-CsUserServicesPolicy](https://technet.microsoft.com/en-us/library/jj205414\(v=ocs.15\))
 

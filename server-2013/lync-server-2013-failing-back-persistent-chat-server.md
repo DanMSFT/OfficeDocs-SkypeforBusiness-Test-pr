@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Failing back Persistent Chat Server in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-05_
 
 This procedure outlines the steps necessary to recover from a Persistent Chat Server failure, and to reestablish operations from the primary data center.
 
@@ -36,13 +23,9 @@ The procedure also assumes that no new mirror and backup servers were deployed d
 
 These steps are designed to recover configuration as it existed prior to the disaster, resulting in failover from the primary server to the backup server.
 
-<div>
-
 ## To fail back Persistent Chat Server
 
 1.  Clear all servers from the Persistent Chat Server Active Server list by using the `Set-CsPersistentChatActiveServer` cmdlet from the Lync Server Management Shell. This stops all Persistent Chat Servers from connecting to the mgc database and the mgccomp database during failback.
-    
-    <div>
     
 
     > [!IMPORTANT]
@@ -53,8 +36,7 @@ These steps are designed to recover configuration as it existed prior to the dis
     > <LI>
     > <P>Write access to the specific local directory that the backups are being copied to.</P></LI></UL>
 
-    
-    </div>
+
 
 2.  Disable mirroring on the backup mgc database:
     
@@ -112,30 +94,15 @@ These steps are designed to recover configuration as it existed prior to the dis
 
 6.  Set the Persistent Chat Server active servers. From the Lync Server Management Shell, use the **Set-CsPersistentChatActiveServer** cmdlet to set the list of active servers.
     
-    <div>
-    
 
     > [!IMPORTANT]
     > All the active servers must be located within the same data center as the new primary database, or in a data center that has a low latency/high bandwidth connection to the database.
 
-    
-    </div>
+
 
 The restore the pool to its normal state run the following Windows PowerShell command:
 
     Set-CsPersistentChatState -Identity "service: lyncpc.dci.discovery.com" -PoolState Normal
 
-See the help topic for the [Set-CsPersistentChatState](set-cspersistentchatstate.md) cmdlet for more information.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+See the help topic for the [Set-CsPersistentChatState](https://technet.microsoft.com/en-us/library/jj205109\(v=ocs.15\)) cmdlet for more information.
 

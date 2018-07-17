@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment checklist for call admission control in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-08_
 
 To plan effectively for call admission control (CAC), you need to consider the following:
 
@@ -32,15 +19,9 @@ To plan effectively for call admission control (CAC), you need to consider the f
 
   - Information required for CAC and configuration decisions that you must make in advance of deployment.
 
-<div>
-
 ## Deployment Prerequisites for Call Admission Control
 
 Before you deploy call admission control, you must already have deployed your Lync Server 2013 internal servers, including either a Front End pool or a Standard Edition server.
-
-</div>
-
-<div>
 
 ## Information Requirements for Call Admission Control
 
@@ -74,7 +55,8 @@ The following table summarizes the required information for deploying call admis
 <td><p>Topologies and components to be deployed</p></td>
 <td><ul>
 <li><p>CAC related components are automatically installed as part of Lync Server 2013</p></li>
-</ul></td>
+</ul>
+<p></p></td>
 <td><p><a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">Defining your requirements for call admission control in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
@@ -83,7 +65,8 @@ The following table summarizes the required information for deploying call admis
 <li><p>Hardware requirements</p></li>
 <li><p>Software requirements</p></li>
 <li><p>Collocation requirements</p></li>
-</ul></td>
+</ul>
+<p></p></td>
 <td><p><a href="lync-server-2013-determining-your-system-requirements.md">Determining your system requirements for Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
@@ -123,17 +106,4 @@ The following table summarizes the required information for deploying call admis
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

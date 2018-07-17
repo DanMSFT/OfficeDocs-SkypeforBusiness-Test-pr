@@ -8,29 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Capacity planning for Response Group in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-29_
-
-<div id="sectionSection0" class="section">
 
 The following table describes the Response Group user model that you can use as the basis for capacity planning requirements.
-
-<div>
 
 
 > [!NOTE]
@@ -38,17 +21,11 @@ The following table describes the Response Group user model that you can use as 
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > Keep in mind that for disaster recovery capacity planning, each pool of a paired pool should be able to handle the workloads for all the response groups in both pools.
 
 
-
-</div>
 
 ### Response Group User Model
 
@@ -103,17 +80,4 @@ The following table describes the Response Group user model that you can use as 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

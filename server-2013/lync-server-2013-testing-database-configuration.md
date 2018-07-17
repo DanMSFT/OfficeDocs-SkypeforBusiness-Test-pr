@@ -8,23 +8,10 @@ ms.date: 07/07/2016
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Testing database configuration in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2016-07-07_
 
 
 <table>
@@ -51,15 +38,9 @@ _**Topic Last Modified:** 2016-07-07_
 </table>
 
 
-<div>
-
 ## Description
 
 The **Test-CsDatabase** cmdlet verifies connectivity to one or more Lync Server 2013 databases. When run, the **Test-CsDatabase** cmdlet reads the Lync Server topology, attempts to connect to relevant databases, and then reports back the success or failure of each try. If a connection can be made, the cmdlet will also report back such information as the database name, SQL Server version information, and the location of any installed mirror databases.
-
-</div>
-
-<div>
 
 ## Running the test
 
@@ -78,10 +59,6 @@ In Example 3, verification is performed only for the Archiving database installe
 The command shown in Example 4 verifies the databases installed on the local computer.
 
     Test-CsDatabase -LocalService
-
-</div>
-
-<div>
 
 ## Determining success or failure
 
@@ -181,10 +158,6 @@ WARNING: Detailed results can be found at
 
 04d593cce8e6.html".
 
-</div>
-
-<div>
-
 ## Reasons why the test might have failed
 
 Here are some common reasons why **Test-CsDatabase** might fail:
@@ -193,27 +166,10 @@ Here are some common reasons why **Test-CsDatabase** might fail:
 
   - This command will fail if the database is misconfigured or not yet deployed.
 
-</div>
-
-<div>
-
 ## See Also
 
 
-[Get-CsDatabaseMirrorState](get-csdatabasemirrorstate.md)  
-[Get-CsService](get-csservice.md)  
-[Get-CsUserDatabaseState](get-csuserdatabasestate.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Get-CsDatabaseMirrorState](https://technet.microsoft.com/en-us/library/jj204845\(v=ocs.15\))  
+[Get-CsService](https://technet.microsoft.com/en-us/library/gg413038\(v=ocs.15\))  
+[Get-CsUserDatabaseState](https://technet.microsoft.com/en-us/library/gg398831\(v=ocs.15\))
 

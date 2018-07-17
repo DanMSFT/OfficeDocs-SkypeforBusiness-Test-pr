@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Components and topologies for Archiving in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-09_
 
 If you want to archive Lync Server 2013 IM and conferencing content, you can implement Archiving in Lync Server.
-
-<div>
 
 ## Archiving Components
 
@@ -46,10 +31,6 @@ Archiving also requires file storage, but Archiving uses the same file storage a
 
 For a list of hardware and software requirements for Archiving, see [Supported hardware for Lync Server 2013](lync-server-2013-supported-hardware.md) and [Server software and infrastructure support in Lync Server 2013](lync-server-2013-server-software-and-infrastructure-support.md) in the Supportability documentation.
 
-</div>
-
-<div>
-
 ## Supported Topologies
 
 You deploy Archiving in each pool that has users that require archiving support. Archiving runs on Front End Servers in Enterprise Edition pools and on Standard Edition servers. Archiving data storage can be the following:
@@ -59,10 +40,6 @@ You deploy Archiving in each pool that has users that require archiving support.
   - Deployed using separate SQL Server databases
 
 If your Exchange 2013 deployment does not include all users in your Lync Server deployment, you must use Microsoft Exchange integration for the users whose mailboxes are home on Exchange 2013 servers, and you must deploy separate SQL Server databases for all other Lync users to use for archiving.
-
-</div>
-
-<div>
 
 ## Supported Collocation
 
@@ -76,31 +53,15 @@ If you use separate SQL Server databases for Archiving, instead of or in additio
 
   - Back-end database of an Enterprise Edition Front End pool
 
-<div>
-
 
 > [!NOTE]
 > The server hosting the Archiving database can host other databases. However, when you consider collocating the Archiving database with other databases, be aware that if you are archiving the messages of more than a few users, the disk space needed by the Archiving database can grow very large. For this reason, we do not recommend collocating the Archiving database with the back-end database.
 
 
 
-</div>
-
 If you collocate the Archiving database with the Monitoring database, back-end database, or both of these databases, you can either use a single SQL instance for any or all of the databases, or you can use a separate SQL instance for each database, with the following limitation:
 
   - Each SQL instance can contain only a single back-end database, single Monitoring database, and single Archiving database.
 
 For details about collocation of all server roles and databases, see [Supported server collocation in Lync Server 2013](lync-server-2013-supported-server-collocation.md) in the Supportability documentation.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

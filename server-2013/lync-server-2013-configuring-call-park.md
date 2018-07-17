@@ -8,31 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Call Park in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-30_
 
 Call Park enables an Enterprise Voice user to put a call on hold from one telephone and then retrieve the call later by dialing an internal number (known as a Call Park *orbit*) from any telephone.
 
 The components that Call Park uses are automatically installed and enabled on the Front End Server or Standard Edition server when you deploy Enterprise Voice. However, you must configure Call Park before it is available to users.
 
 This section guides you through the configuration of Call Park.
-
-<div>
 
 ## In This Section
 
@@ -51,16 +36,4 @@ This section guides you through the configuration of Call Park.
   - [Verify normalization rules for Call Park in Lync Server 2013](lync-server-2013-verify-normalization-rules-for-call-park.md)
 
   - [(Optional) Verify Call Park deployment in Lync Server 2013](lync-server-2013-optional-verify-call-park-deployment.md)
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

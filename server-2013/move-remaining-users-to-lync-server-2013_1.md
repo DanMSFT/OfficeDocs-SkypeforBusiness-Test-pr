@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Move remaining users to Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-26_
 
 You can move users to the new Lync Server 2013 deployment by using either Lync Server Control Panel or Lync Server Management Shell. You must meet some requirements to ensure a smooth transition to Lync Server 2013. For details about prerequisites to completing the procedures in this topic, see [Configure clients for migration](configure-clients-for-migration_1.md). For detailed steps about moving users, see [Phase 6: Move users to the pilot pool](phase-6-move-users-to-the-pilot-pool.md).
-
-<div>
 
 
 > [!IMPORTANT]
@@ -36,21 +21,13 @@ You can move users to the new Lync Server 2013 deployment by using either Lync S
 
 
 
-</div>
-
-<div>
-
 
 > [!IMPORTANT]
 > The <STRONG>Move-CsLegacyUser</STRONG> cmdlet requires that user names are properly formed and do not have leading or trailing spaces. You cannot move a user account using the <STRONG>Move-CsLegacyUser</STRONG> cmdlet if it contains leading or trailing spaces.
 
 
 
-</div>
-
 When you move a user to an Lync Server 2013 pool, the data for the user is moved to the back-end database that is associated with the new pool.
-
-<div>
 
 
 > [!IMPORTANT]
@@ -58,19 +35,11 @@ When you move a user to an Lync Server 2013 pool, the data for the user is moved
 
 
 
-</div>
-
-<div>
-
 
 > [!NOTE]
 > Homing users on Lync Server 2013 does not require that you deploy upgraded clients at the same time. New functionality will be available to users only when they have upgraded to the new client software.
 
 
-
-</div>
-
-<div>
 
 ## Post Migration Task
 
@@ -80,17 +49,5 @@ When you move a user to an Lync Server 2013 pool, the data for the user is moved
 
 3.  Conferencing policies that allow anonymous participants have **Allow participants to invite anonymous users** selected in Lync Server 2013 Control Panel and have **AllowAnonymousParticipantsInMeetings** set to **True** in the output from the **Get-CsConferencingPolicy** cmdlet in the Lync Server Management Shell.
 
-4.  For details about configuring conferencing policy by using Lync Server Management Shell, see [Set-CsConferencingPolicy](set-csconferencingpolicy.md) in the Lync Server Management Shell documentation.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+4.  For details about configuring conferencing policy by using Lync Server Management Shell, see [Set-CsConferencingPolicy](https://technet.microsoft.com/en-us/library/gg425788\(v=ocs.15\)) in the Lync Server Management Shell documentation.
 

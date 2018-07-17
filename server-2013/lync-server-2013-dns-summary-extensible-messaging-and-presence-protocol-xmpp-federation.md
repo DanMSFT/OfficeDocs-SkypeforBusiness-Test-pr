@@ -8,27 +8,12 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # DNS summary - Extensible messaging and presence protocol (XMPP) federation in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-04-08_
 
 To configure extensible messaging and presence protocol (XMPP) for your deployment, you create two Domain Name System (DNS) records in an external DNS server that will resolve the records to the Access Edge service of your Edge Server or Edge pool.
-
-<div>
 
 ## DNS Summary for Extensible Messaging and Presence Protocol
 
@@ -65,28 +50,11 @@ To configure extensible messaging and presence protocol (XMPP) for your deployme
 </table>
 
 
-</div>
-
-<div>
-
 ## See Also
 
 
 [Setting up XMPP federation in Lync Server 2013](lync-server-2013-setting-up-xmpp-federation.md)  
 
 
-[Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md)
 

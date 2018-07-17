@@ -8,35 +8,16 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing Lync for Windows Phone in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-02-03_
 
 Lync 2013 for Windows Phone is a user-installable application that is available in the Windows Phone Marketplace.
-
-<div>
 
 ## Installing Lync for Windows Mobile
 
 You can instruct your users to install Lync 2013 for Windows Phone on their devices by directing them to the Windows Phone Marketplace at <http://go.microsoft.com/fwlink/p/?linkid=231901>.
-
-</div>
-
-<div>
 
 ## If You Use a DNS SRV Record to Publish Exchange Web Services
 
@@ -50,20 +31,13 @@ Instruct your users to configure the Lync settings on their Windows Phones as fo
 
 3.  Tap the empty field and enter the fully qualified domain name (FQDN) or URL for Exchange Web Services.
     
-    <div>
-    
 
     > [!NOTE]
     > You can specify either the fully qualified domain name (FQDN) or the full URL of your Exchange Web Services server. If you specify the FQDN, the protocol (https://) and the Exchange Web Services path (/ews/exchange.asmx) are added automatically. If your Exchange Web Services path is different, you can specify the full URL.
 
-    
-    </div>
+
 
 4.  Close the screen.
-
-</div>
-
-<div>
 
 ## Verifying Mobile Client Installation
 
@@ -106,16 +80,4 @@ After you configure the client and sign in successfully, use the following tests
 4.  Send an IM from user B to user A.
 
 5.  Verify that the IM notification appears on user A’s mobile device.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

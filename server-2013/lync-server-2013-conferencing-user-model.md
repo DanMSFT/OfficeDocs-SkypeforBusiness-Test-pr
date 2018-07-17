@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # The conferencing user model in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-22_
 
 A critical part of the Lync Server conferencing user model is meeting size. After collecting data from the multiple data points (as described in the previous section), we determined the following:
 
@@ -57,14 +44,4 @@ To determine the number of meetings and users to use for testing, we did the fol
   - To get the per media load on each Front End Server, we estimated the media mix. For example, assuming that 75% of the meetings require more than just audio support and 50% of those meetings require application sharing, an average of 47 meetings and 188 users connect concurrently to each Front End Server for application sharing.
 
   - Tested a variety of meeting sizes (based our user model of up to 250 users in a shared pool) to ensure server scalability.
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

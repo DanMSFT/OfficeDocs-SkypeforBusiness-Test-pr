@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configuring Enterprise Voice in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-03-12_
 
 To deploy Enterprise Voice, you’ll need to configure the following:
 
@@ -35,8 +22,6 @@ To deploy Enterprise Voice, you’ll need to configure the following:
   - Define a Voice Route
 
   - Enable Users for Enterprise Voice
-
-<div>
 
 ## Create a Trunk
 
@@ -95,14 +80,6 @@ For more information, see [Define additional trunks in Topology Builder in Lync 
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Defines Voice Policies
 
@@ -144,14 +121,6 @@ For more information, see [Configuring voice policies and PSTN usage records to 
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Define Voice Routes
 
@@ -203,14 +172,6 @@ For more information, see [Configuring voice routes for outbound calls in Lync S
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## Enable Users for Enterprise Voice
 
@@ -247,30 +208,9 @@ For more information, see [Enable users for Enterprise Voice in Lync Server 2013
 </table>
 
 
-<div>
-
-
-</div>
-
-</div>
-
-<div>
 
 ## See Also
 
 
-[Configuring Location-Based Routing in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Configuring Location-Based Routing in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)
 

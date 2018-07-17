@@ -8,23 +8,10 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Deployment process for mobility in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-19_
 
     Some information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013. It is noted accordingly.
 
@@ -86,14 +73,14 @@ This section describes the sequence of steps required to deploy the Lync Server 
 <tr class="even">
 <td><p>Test your mobility deployment for Lync 2010 Mobile using the Mcx Mobility Service</p></td>
 <td><p>Run <strong>Test-CsMcxP2PIM</strong> to test sending an instant message from one person to another.</p>
-<p>See the Lync Server Management Shell cmdlet documentation for <a href="test-csmcxp2pim.md">Test-CsMcxP2PIM</a> for a complete list of options.</p></td>
+<p>See the Lync Server Management Shell cmdlet documentation for <a href="https://technet.microsoft.com/en-us/library/hh690020(v=ocs.15)">Test-CsMcxP2PIM</a> for a complete list of options.</p></td>
 <td><p>CsAdministrator</p></td>
 <td><p><a href="lync-server-2013-verifying-your-mobility-deployment.md">Verifying your mobility deployment in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Test your mobility deployment for Lync 2013 Mobile clients using the UCWA Web components</p></td>
 <td><p>Use the <strong>Test-CsUcwaConference</strong> cmdlet to test and verify that pre-defined test users or a pair of actual users can use UCWA to create and participate in a conference.</p>
-<p>See the Lync Server Management Shell cmdlet documentation for <a href="test-csucwaconference.md">Test-CsUcwaConference</a> for a complete list of options.</p></td>
+<p>See the Lync Server Management Shell cmdlet documentation for <a href="https://technet.microsoft.com/en-us/library/jj619178(v=ocs.15)">Test-CsUcwaConference</a> for a complete list of options.</p></td>
 <td><p>CsAdministrator</p></td>
 <td><p><a href="lync-server-2013-verifying-your-mobility-deployment.md">Verifying your mobility deployment in Lync Server 2013</a></p></td>
 </tr>
@@ -106,13 +93,12 @@ This section describes the sequence of steps required to deploy the Lync Server 
 <li><p>If you want to support push notifications over a Wi-Fi network, configure a firewall rule outbound for TCP port 5223.</p></li>
 <li><p>Use the <strong>Set-CsPushNotificationConfiguration</strong> cmdlet to enable push notifications to the Apple Push Notification Service (APNS) and Microsoft Push Notification Service (MPNS). This feature is disabled by default.</p></li>
 <li><p>Use the <strong>Test-CsFederatedPartner</strong> cmdlet to test the federation configuration and the <strong>Test-CsMCXPushNotification</strong> cmdlet to test push notifications.</p>
-<div>
 
 > [!NOTE]
 > Push notifications are used for Lync 2010 Mobile clients on Apple devices and Windows Phone<BR>Push notification is required for Lync 2013 Mobile clients on Windows Phone only
 
 
-</div></li>
+</li>
 </ul></td>
 <td><p>RtcUniversalServerAdmins</p></td>
 <td><p><a href="lync-server-2013-configuring-for-push-notifications.md">Configuring for push notifications in Lync Server 2013</a></p></td>
@@ -130,15 +116,4 @@ This section describes the sequence of steps required to deploy the Lync Server 
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

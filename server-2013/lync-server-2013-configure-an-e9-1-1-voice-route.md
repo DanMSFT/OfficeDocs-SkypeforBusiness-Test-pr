@@ -8,35 +8,18 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure an E9-1-1 voice route in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-09-17_
 
 To deploy E9-1-1, you first need to configure an emergency call voice route. For details about creating voice routes, see [Create a voice route in Lync Server 2013](lync-server-2013-create-a-voice-route.md). You may define more than one route if, for example, your deployment includes a primary SIP trunk and a secondary SIP trunk.
-
-<div>
 
 
 > [!NOTE]
 > To include location information in an E9-1-1 INVITE, you need to configure the SIP trunk that connects to the E9-1-1 service provider to route emergency calls through the gateway. To do this, set the EnablePIDFLOSupport flag on the <STRONG>Set-CsTrunkConfiguration</STRONG> cmdlet to True. The default value for EnablePIDFLOSupport is False. For example: <CODE>Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</CODE><BR>It is not necessary to enable receiving locations for fallback public switched telephone network (PSTN) gateways and Emergency Location Identification Number (ELIN) gateways.
 
 
-
-</div>
 
 For details about working with voice routes, see the Lync Server Management Shell documentation for the following cmdlets:
 
@@ -51,8 +34,6 @@ For details about working with voice routes, see the Lync Server Management Shel
   - **Set-CsVoiceRoute**
 
   - **Remove-CsVoiceRoute**
-
-<div>
 
 ## To configure an E9-1-1 voice route
 
@@ -77,16 +58,4 @@ For details about working with voice routes, see the Lync Server Management Shel
     The following example assumes that user has "Local" usage in their voice policy.
     
         New-CsVoiceRoute -Name "LocalEmergencyRoute" -NumberPattern "^\+911$" -PstnUsages @{add="Local"} -PstnGatewayList @{add="co1-pstngateway-2"}
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

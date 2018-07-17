@@ -8,31 +8,16 @@ ms.date: 06/26/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Technical requirements for conferencing in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2014-06-25_
 
 For Lync Server 2013, dial-in conferencing, A/V conferencing, instant messaging (IM) conferencing and web conferencing capabilities always run on Front End Servers.
 
 This section details the hardware and software requirements for these servers, along with the supported collocation.
 
 Dial-in conferencing is a feature that includes a variety of components. Some of the components are specific to dial-in conferencing and some are Enterprise Voice components. This section describes the requirements for the components that are specific to dial-in conferencing. For details about Mediation Server and public switched telephone network (PSTN) gateway requirements, see [Mediation Server component in Lync Server 2013](lync-server-2013-mediation-server-component.md) and [Components and topologies for Mediation Server in Lync Server 2013](lync-server-2013-components-and-topologies-for-mediation-server.md) in the Planning documentation.
-
-<div>
 
 ## Hardware Requirements
 
@@ -46,10 +31,6 @@ Because web conferencing and A/V conferencing are collocated with the Front End 
 
 The hardware requirements for Front End Server are the same as for many other server roles in Lync Server 2013 are outlined in the following table.
 
-</div>
-
-<div>
-
 ## Software Requirements
 
 Because web conferencing and A/V conferencing are collocated with the Front End Server, the server software requirements are the same as for the Front End Servers. For details about software requirements, see [Server and tools operating system support in Lync Server 2013](lync-server-2013-server-and-tools-operating-system-support.md) in the Supportability documentation.
@@ -60,25 +41,17 @@ For dial-in conferencing, Application service, Conferencing Attendant applicatio
 
 Conferencing Attendant application and Conferencing Announcement application require that Windows Media Format Runtime is installed on Front End Servers. The Windows Media Format Runtime is required to play Windows Media audio (WMA) files that are used for music on hold, recorded names, and prompts. Except for Windows Server 2012 and Windows Server 2012 R2, the Windows Media Format Runtime is installed automatically as part of the Windows Desktop Experience when you run Setup, but you might need to restart the computer. Therefore, we recommend that you install as part of the Windows Desktop Experience, which includes Windows Media Format Runtime before you run Setup. Windows Server 2012 and Windows Server 2012 R2 requires Microsoft Media Foundation.
 
-</div>
-
-<div>
-
 ## Port Requirements for dial-in conferencing
 
 The following table describes the ports that are used by dial-in conferencing. If you use a load balancer, ensure that the load balancer is configured for the ports used by any applications that will run in the pool.
 
 These ports are default settings that you can change by using the **Set-CsApplicationServer** cmdlet. For details about this cmdlet, see the Lync Server Management Shell documentation.
 
-<div>
-
 
 > [!NOTE]
 > All instances of the same application in a pool use the same SIP listening port.
 
 
-
-</div>
 
 ### Ports used by dial-in conferencing
 
@@ -106,33 +79,21 @@ These ports are default settings that you can change by using the **Set-CsApplic
 </table>
 
 
-</div>
-
-<div>
-
 ## Supported Clients for Dial-In Conferencing
 
 You can use the following client to schedule on-premises conferences that support dial-in access:
 
   - Online Meeting Add-in for Lync 2013 (installed automatically when you install Lync 2013 or Attendee)
 
-</div>
-
-<div>
-
 ## Dial-in Conferencing Settings page Requirements
 
 The Dial-in Conferencing Settings page supports the combinations of operating systems and web browsers described in the following table.
-
-<div>
 
 
 > [!NOTE]
 > 32-bit and 64-bit versions of the operating systems are supported.
 
 
-
-</div>
 
 ### Supported Operating Systems and Web Browsers
 
@@ -177,10 +138,6 @@ The Dial-in Conferencing Settings page supports the combinations of operating sy
 </table>
 
 
-</div>
-
-<div>
-
 ## Audio File Requirements for dial-in conferencing
 
 Lync Server 2013 does not support customization of voice prompts and music for dial-in conferencing. However, if you have a strong business need that requires you to change the default audio files, see Microsoft Knowledge Base article 961177, [How to customize voice prompts or music files for dial-in audio conferencing in Microsoft Office Communications Server 2007 R2](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=961177).
@@ -197,23 +154,7 @@ Conferencing Attendant application and Conferencing Announcement application hav
 
   - Speech level at -24DB
 
-</div>
-
-<div>
-
 ## User Requirements for Dial-In Conferencing
 
 Dial-in conferencing users must have a unique phone number or extension assigned to their account. This requirement supports authentication during dial-in conferencing. Enterprise users (that is, users who have Active Directory Domain Services credentials and Lync Server accounts within your organization) enter their phone number (or extension) and a personal identification number (PIN) to dial in to conferences as an authenticated user.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

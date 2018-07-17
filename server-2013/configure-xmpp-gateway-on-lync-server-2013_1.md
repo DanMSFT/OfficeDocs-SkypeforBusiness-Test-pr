@@ -8,40 +8,22 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Configure XMPP gateway on Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2012-10-19_
 
 When you configure policies for support of extensible messaging and presence protocol (XMPP) federated partners, the policies apply to users of XMPP federated domains, but not to users of session initiation protocol (SIP) instant messaging (IM) service providers (for example, Windows Live), or SIP federated domains. You configure an XMPP Federated Partner for each XMPP federated domain that you want to allow your users to add contacts and communicate with. Once the policies are in place, additional tasks include configuring the XMPP Gateway certificates, deploying the Lync Server 2013 XMPP Gateway, and finally updating the DNS records for the XMPP Gateway.
-
-<div>
 
 ## Configure XMPP Gateway Certificates on the Lync Server 2013 Edge Server
 
 1.  On the Edge Server, in the Deployment Wizard, next to **Step 3: Request, Install, or Assign Certificates**, click **Run again**.
     
-    <div class=" ">
-    
 
     > [!TIP]
     > If you are deploying the Edge Server for the first time, you will see Run instead of Run Again.
 
-    
-    </div>
+
 
 2.  On the **Available Certificate Tasks** page, click **Create a new certificate request**.
 
@@ -71,14 +53,11 @@ When you configure policies for support of extensible messaging and presence pro
 
 12. On the **Configure Additional Subject Alternate Names** page, specify any additional subject alternative names that are required.
     
-    <div class=" ">
-    
 
     > [!TIP]
     > If the XMPP proxy is installed, by default the domain name (such as contoso.com) is populated in the SAN entries. If you require more entries, add them in this step.
 
-    
-    </div>
+
 
 13. On the **Request Summary** page, review the certificate information to be used to generate the request.
 
@@ -90,17 +69,9 @@ When you configure policies for support of extensible messaging and presence pro
 
 17. After receiving, importing and assigning the public certificate, you must stop and restart the Edge Server services. You do this by typing in the Lync Server Management console:
     
-       ```
         Stop-CsWindowsService
-       ```
     
-       ```
         Start-CsWindowsService
-       ```
-
-</div>
-
-<div>
 
 ## Configure a new Lync Server 2013 XMPP Gateway
 
@@ -136,47 +107,39 @@ When you configure policies for support of extensible messaging and presence pro
     
       - **TLS Negotiation**   Defines the TLS negotiation rules. An XMPP service can require TLS, can make TLS optional, or you define that TLS is not supported. Choosing Optional leaves the requirement up to the XMPP service for a mandatory-to-negotiate decision. To view all possible settings and details for SASL, TLS and Dialback negotiation – including not valid and known error configurations - see [Negotiation settings for XMPP federated partners in Lync Server 2013](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md)
         
-           - **Required**   The XMPP service requires TLS negotiation.
+          -  
+            **Required**   The XMPP service requires TLS negotiation.
         
-           - **Optional**   The XMPP service indicates that TLS is mandatory-to-negotiate.
+          -  
+            **Optional**   The XMPP service indicates that TLS is mandatory-to-negotiate.
         
-           - **Not Supported**   The XMPP service does not support TLS.
+          -  
+            **Not Supported**   The XMPP service does not support TLS.
     
       - **SASL negotiation**   Defines the SASL negotiation rules. An XMPP service can require SASL, can make SASL optional, or you define that SASL is not supported. Choosing Optional leaves the requirement up to the partner XMPP service for a mandatory-to-negotiate decision.
         
-           - **Required**   The XMPP service requires SASL negotiation.
+          -  
+            **Required**   The XMPP service requires SASL negotiation.
         
-           - **Optional**   The XMPP service indicates that SASL is mandatory-to-negotiate.
+          -  
+            **Optional**   The XMPP service indicates that SASL is mandatory-to-negotiate.
         
-           - **Not Supported**   The XMPP service does not support SASL.
+          -  
+            **Not Supported**   The XMPP service does not support SASL.
     
       - **Support server dialback negotiation** The support server dialback negotiation process uses the domain name system (DNS) and an authoritative server to verify that the request came from a valid XMPP partner. To do this, the originating server creates a message of a specific type with a generated dialback key and looks up the receiving server in DNS. The originating server sends the key in an XML stream to the resulting DNS lookup, presumably the receiving server. On receipt of the key over the XML stream, the receiving server does not respond to the originating server, but sends the key to a known authoritative server. The authoritative server verifies that the key is either valid or not valid. If not valid, the receiving server does not respond to the originating server. If the key is valid, the receiving server informs the originating server that the identity and key is valid and the conversation can commence.
         
         There are two valid states for **Dialback negotiation**:
         
-           - **True**   The XMPP server is configured to use Dialback negotiation if a request should be received from an originating server.
+          -  
+            **True**   The XMPP server is configured to use Dialback negotiation if a request should be received from an originating server.
         
-           - **False**   The XMPP server is not configured to use Dialback negotiation and if a request should be received from an originating server, it will be ignored.
+          -  
+            **False**   The XMPP server is not configured to use Dialback negotiation and if a request should be received from an originating server, it will be ignored.
 
 10. Click **Commit** to save your changes to the site or user policy.
-
-</div>
-
-<div>
 
 ## Update DNS Records for Lync Server 2013 XMPP Gateway
 
 1.  To configure DNS for XMPP federation, you add the following SRV record to your external DNS:\_xmpp-server.\_tcp.\<domain name\> The SRV record will resolve to the Access Edge FQDN of the Edge server, with a port value of 5269.
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
 

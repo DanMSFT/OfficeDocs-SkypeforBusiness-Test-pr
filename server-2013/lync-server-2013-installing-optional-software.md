@@ -8,31 +8,14 @@ ms.date: 07/23/2014
 mtps_version: v=OCS.15
 ---
 
-<div data-xmlns="http://www.w3.org/1999/xhtml">
-
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
-
-<div data-asp="http://msdn2.microsoft.com/asp">
-
 # Installing optional software in Lync Server 2013
 
-</div>
+ 
 
-<div id="mainSection">
-
-<div id="mainBody">
-
-<span> </span>
-
-_**Topic Last Modified:** 2013-02-21_
 
 The Microsoft Lync Server 2013, Planning Tool is designed to export to Microsoft Excel and Microsoft Visio. While these applications are not required for the operation of the Planning Tool, they do add significant value to the deployment and documentation of your design.
 
-<div>
-
 ## Optional Software
-
-<div>
 
 ## Microsoft Excel
 
@@ -52,15 +35,9 @@ Exporting your design to Microsoft Excel creates a report that displays seven ta
 
   - DNS Report – Displays the fully qualified domain name (FQDN) and IP/VIP addresses required for each DNS entry that you create.
 
-</div>
-
-<div>
-
 ## Microsoft Visio
 
 Exporting your design to Microsoft Visio creates a diagram for use in your documentation purposes of your configured topology and infrastructure. The imported diagram can be edited and rearranged to meet your documentation needs. The typical Visio diagram will include:
-
-<div>
 
 
 > [!NOTE]
@@ -68,35 +45,14 @@ Exporting your design to Microsoft Visio creates a diagram for use in your docum
 
 
 
-</div>
-
   - Global Topology – Diagram of configured Lync Server 2013 sites.
 
   - Site Name tab – Displays the site configuration topology with Edge Server, firewall, public switched telephone network (PSTN) with gateways, and the internal server deployment. Internal deployment consists of configured servers and pools, including the Front End pools, SQL Server-based servers, Active Directory Domain Services, Directors, Exchange Unified Messaging (UM) servers, Exchange Mailbox Servers, Office Web Apps Servers, Mediation Servers, and Persistent Chat Servers.
 
   - Edge Network Diagram – Diagram detailing the Edge Server configuration with associated IP addresses and FQDNs. DNS load balancing and hardware load balancers are also included. Additionally, Directors and the Front End Server or Front End pool are displayed, with associated DNS LB or HLB and the assigned IP address (the Planning Tool supports both IPv4 and IPv6 addresses) and FQDN.
 
-</div>
-
-</div>
-
-<div>
-
 ## See Also
 
 
-[Installing the Planning Tool in Lync Server 2013](lync-server-2013-installing-the-planning-tool.md)  
-  
-
-</div>
-
-</div>
-
-<span> </span>
-
-</div>
-
-</div>
-
-</div>
+[Installing the Planning Tool in Lync Server 2013](lync-server-2013-installing-the-planning-tool.md)
 
